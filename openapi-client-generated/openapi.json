@@ -1205,18 +1205,12 @@
         "type" : "object",
         "properties" : {
           "AdditionalDataURL" : {
-            "type" : "array",
-            "description" : "A URL that references additional data associated with a call.",
-            "items" : {
-              "type" : "string"
-            }
+            "type" : "string",
+            "description" : "A URL that references additional data associated with a call."
           },
           "AdditionalDataDetail" : {
-            "type" : "array",
-            "description" : "Additional data associated with a call.",
-            "items" : {
-              "type" : "object"
-            }
+            "type" : "string",
+            "description" : "Additional data associated with a call."
           },
           "Notes" : {
             "type" : "array",
@@ -1282,7 +1276,11 @@
             "description" : "The nearest cell tower and sector/face of the tower receiving a call associated with an incident."
           },
           "AdditionalData" : {
-            "$ref" : "#/components/schemas/AdditionalDataType"
+            "type" : "array",
+            "description" : "Additional information associated with an incident call, location, or person.",
+            "items" : {
+              "$ref" : "#/components/schemas/AdditionalDataType"
+            }
           },
           "Notes" : {
             "type" : "array",
@@ -1308,7 +1306,11 @@
             "$ref" : "#/components/schemas/PersonRoleRegistry"
           },
           "AdditionalData" : {
-            "$ref" : "#/components/schemas/AdditionalDataType"
+            "type" : "array",
+            "description" : "Additional information associated with an incident call, location, or person.",
+            "items" : {
+              "$ref" : "#/components/schemas/AdditionalDataType"
+            }
           },
           "lastUpdateTimeStamp" : {
             "type" : "string",

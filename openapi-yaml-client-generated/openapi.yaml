@@ -1103,15 +1103,11 @@ components:
       type: object
       properties:
         AdditionalDataURL:
-          type: array
+          type: string
           description: A URL that references additional data associated with a call.
-          items:
-            type: string
         AdditionalDataDetail:
-          type: array
+          type: string
           description: Additional data associated with a call.
-          items:
-            type: object
         Notes:
           type: array
           description: Notes and comments associated with an incident.
@@ -1167,7 +1163,11 @@ components:
           description: The nearest cell tower and sector/face of the tower receiving
             a call associated with an incident.
         AdditionalData:
-          $ref: '#/components/schemas/AdditionalDataType'
+          type: array
+          description: Additional information associated with an incident call, location,
+            or person.
+          items:
+            $ref: '#/components/schemas/AdditionalDataType'
         Notes:
           type: array
           description: Notes and comments associated with an incident.
@@ -1187,7 +1187,11 @@ components:
         PersonIncidentRoleRegistryText:
           $ref: '#/components/schemas/PersonRoleRegistry'
         AdditionalData:
-          $ref: '#/components/schemas/AdditionalDataType'
+          type: array
+          description: Additional information associated with an incident call, location,
+            or person.
+          items:
+            $ref: '#/components/schemas/AdditionalDataType'
         lastUpdateTimeStamp:
           type: string
           description: The last time the object was changed
