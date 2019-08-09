@@ -694,18 +694,12 @@
   "type" : "object",
   "properties" : {
     "AdditionalDataURL" : {
-      "type" : "array",
-      "description" : "A URL that references additional data associated with a call.",
-      "items" : {
-        "type" : "string"
-      }
+      "type" : "string",
+      "description" : "A URL that references additional data associated with a call."
     },
     "AdditionalDataDetail" : {
-      "type" : "array",
-      "description" : "Additional data associated with a call.",
-      "items" : {
-        "type" : "object"
-      }
+      "type" : "string",
+      "description" : "Additional data associated with a call."
     },
     "Notes" : {
       "type" : "array",
@@ -1289,7 +1283,11 @@
       "description" : "The nearest cell tower and sector/face of the tower receiving a call associated with an incident."
     },
     "AdditionalData" : {
-      "$ref" : "#/components/schemas/AdditionalDataType"
+      "type" : "array",
+      "description" : "Additional information associated with an incident call, location, or person.",
+      "items" : {
+        "$ref" : "#/components/schemas/AdditionalDataType"
+      }
     },
     "Notes" : {
       "type" : "array",
@@ -1364,7 +1362,11 @@
       "$ref" : "#/components/schemas/PersonRoleRegistry"
     },
     "AdditionalData" : {
-      "$ref" : "#/components/schemas/AdditionalDataType"
+      "type" : "array",
+      "description" : "Additional information associated with an incident call, location, or person.",
+      "items" : {
+        "$ref" : "#/components/schemas/AdditionalDataType"
+      }
     },
     "lastUpdateTimeStamp" : {
       "type" : "string",
@@ -10170,6 +10172,12 @@ except ApiException as e:
   
         this.element.innerHTML = this.template();
   
+        if (this.schema && this.schema.example) {
+          var exampleDiv = document.createElement('div');
+          exampleDiv.innerHTML = '<div style="display: block" class="example">\n          <span style="color: #808080" class="name">example: ' + this.schema.example + '</span>\n        </div>';
+          this.element.appendChild(exampleDiv.querySelector('.example'));
+        }
+  
         if (!this.schema) {
           return this.element;
         }
@@ -10207,7 +10215,13 @@ except ApiException as e:
         }
   
         if (this.isArray) {
-          var view = new JSONSchemaView(this.schema.items, Infinity);
+          var schemaItems = this.schema.items;
+          if (this.schema.items.$ref) {
+             var elements = this.schema.items.$ref.split('/');
+             var schemaName = elements.pop();
+             schemaItems = defs[schemaName];
+          }
+          var view = new JSONSchemaView(schemaItems, Infinity);
           inner.appendChild(view.render());
         }
   
