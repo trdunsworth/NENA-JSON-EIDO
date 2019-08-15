@@ -865,7 +865,6 @@ components:
       - esinetNetworkOperationsSupervisor
       - 9-1-1AuthorityDirector
       - 9-1-1AuthorityAgent
-      - databaseAdministrator
       - itSystemsAnalyst
       - recordsProductionSpecialist
       - recordsProduction
