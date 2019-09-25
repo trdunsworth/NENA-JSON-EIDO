@@ -25,7 +25,7 @@
           "content" : {
             "application/json" : {
               "schema" : {
-                "$ref" : "#/components/schemas/EmergencyIncidentDataDocumentType"
+                "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
               }
             }
           },
@@ -84,7 +84,7 @@
           "content" : {
             "application/json" : {
               "schema" : {
-                "$ref" : "#/components/schemas/EmergencyIncidentDataDocumentType"
+                "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
               }
             }
           },
@@ -143,7 +143,7 @@
           "content" : {
             "application/json" : {
               "schema" : {
-                "$ref" : "#/components/schemas/EmergencyIncidentDataDocumentType"
+                "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
               }
             }
           },
@@ -202,7 +202,7 @@
           "content" : {
             "application/json" : {
               "schema" : {
-                "$ref" : "#/components/schemas/EmergencyIncidentDataDocumentType"
+                "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
               }
             }
           },
@@ -261,7 +261,7 @@
           "content" : {
             "application/json" : {
               "schema" : {
-                "$ref" : "#/components/schemas/EmergencyIncidentDataDocumentType"
+                "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
               }
             }
           },
@@ -320,7 +320,7 @@
           "content" : {
             "application/json" : {
               "schema" : {
-                "$ref" : "#/components/schemas/EmergencyIncidentDataDocumentType"
+                "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
               }
             }
           },
@@ -379,7 +379,7 @@
           "content" : {
             "application/json" : {
               "schema" : {
-                "$ref" : "#/components/schemas/EmergencyIncidentDataDocumentType"
+                "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
               }
             }
           },
@@ -438,7 +438,7 @@
           "content" : {
             "application/json" : {
               "schema" : {
-                "$ref" : "#/components/schemas/EmergencyIncidentDataDocumentType"
+                "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
               }
             }
           },
@@ -546,7 +546,7 @@
           "content" : {
             "application/json" : {
               "schema" : {
-                "$ref" : "#/components/schemas/EmergencyIncidentDataDocumentType"
+                "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
               }
             }
           },
@@ -558,7 +558,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/EmergencyIncidentDataDocumentType"
+                  "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
                 }
               }
             }
@@ -605,7 +605,7 @@
           "content" : {
             "application/json" : {
               "schema" : {
-                "$ref" : "#/components/schemas/EmergencyIncidentDataDocumentType"
+                "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
               }
             }
           },
@@ -664,7 +664,7 @@
           "content" : {
             "application/json" : {
               "schema" : {
-                "$ref" : "#/components/schemas/EmergencyIncidentDataDocumentType"
+                "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
               }
             }
           },
@@ -737,7 +737,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/EmergencyIncidentDataDocumentType"
+                  "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
                 }
               }
             }
@@ -784,7 +784,7 @@
           "content" : {
             "application/json" : {
               "schema" : {
-                "$ref" : "#/components/schemas/EmergencyIncidentDataDocumentType"
+                "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
               }
             }
           },
@@ -843,7 +843,7 @@
           "content" : {
             "application/json" : {
               "schema" : {
-                "$ref" : "#/components/schemas/EmergencyIncidentDataDocumentType"
+                "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
               }
             }
           },
@@ -902,7 +902,7 @@
           "content" : {
             "application/json" : {
               "schema" : {
-                "$ref" : "#/components/schemas/EmergencyIncidentDataDocumentType"
+                "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
               }
             }
           },
@@ -1067,7 +1067,7 @@
       },
       "AgencyType" : {
         "title" : "Agency Type",
-        "required" : [ "AgencyRoleDescriptionRegistryText" ],
+        "required" : [ "AgencyRoleDescriptionRegistryText", "LastUpdateTimeStamp" ],
         "type" : "object",
         "properties" : {
           "AgencyRoleDescriptionRegistryText" : {
@@ -1085,7 +1085,7 @@
             "type" : "boolean",
             "description" : "True if an agency owns the emergency incident; false otherwise."
           },
-          "lastUpdateTimeStamp" : {
+          "LastUpdateTimeStamp" : {
             "type" : "string",
             "description" : "The last time the AgencyType was changed",
             "format" : "date-time"
@@ -1095,7 +1095,7 @@
       },
       "AgentType" : {
         "title" : "Agent Type",
-        "required" : [ "AgentIdentification", "PersonRoleRegistryText" ],
+        "required" : [ "AgentIdentification", "LastUpdateTimeStamp", "PersonRoleRegistryText" ],
         "type" : "object",
         "properties" : {
           "AgentIdentification" : {
@@ -1112,7 +1112,7 @@
           "Agency" : {
             "$ref" : "#/components/schemas/AgencyType"
           },
-          "lastUpdateTimeStamp" : {
+          "LastUpdateTimeStamp" : {
             "type" : "string",
             "description" : "The last time the AgentType was changed",
             "format" : "date-time"
@@ -1129,7 +1129,7 @@
       },
       "MergeInformationType" : {
         "title" : "MergeInformationType",
-        "required" : [ "IncidentMergeDirectionCode", "IncidentTrackingIdentification" ],
+        "required" : [ "IncidentMergeDirectionCode", "IncidentTrackingIdentification", "LastUpdateTimeStamp" ],
         "type" : "object",
         "properties" : {
           "IncidentTrackingIdentification" : {
@@ -1142,7 +1142,7 @@
           "Agent" : {
             "$ref" : "#/components/schemas/AgentType"
           },
-          "lastUpdateTimeStamp" : {
+          "LastUpdateTimeStamp" : {
             "type" : "string",
             "description" : "The last time the object was changed",
             "format" : "date-time"
@@ -1159,7 +1159,7 @@
       },
       "LinkInformationType" : {
         "title" : "Link Information Type",
-        "required" : [ "IncidentTrackingIdentification", "LinkDirectionCode" ],
+        "required" : [ "IncidentTrackingIdentification", "LastUpdateTimeStamp", "LinkDirectionCode" ],
         "type" : "object",
         "properties" : {
           "IncidentTrackingIdentification" : {
@@ -1172,7 +1172,7 @@
           "Agent" : {
             "$ref" : "#/components/schemas/AgentType"
           },
-          "lastUpdateTimeStamp" : {
+          "LastUpdateTimeStamp" : {
             "type" : "string",
             "description" : "The last time the object was changed",
             "format" : "date-time"
@@ -1182,7 +1182,7 @@
       },
       "NotesType" : {
         "title" : "Notes Type",
-        "required" : [ "NotesActionComments" ],
+        "required" : [ "LastUpdateTimeStamp", "NotesActionComments" ],
         "type" : "object",
         "properties" : {
           "NotesActionComments" : {
@@ -1192,7 +1192,7 @@
           "Agent" : {
             "$ref" : "#/components/schemas/AgentType"
           },
-          "lastUpdateTimeStamp" : {
+          "LastUpdateTimeStamp" : {
             "type" : "string",
             "description" : "The last time the object was changed",
             "format" : "date-time"
@@ -1202,6 +1202,7 @@
       },
       "AdditionalDataType" : {
         "title" : "Additional Data Type",
+        "required" : [ "LastUpdateTimeStamp" ],
         "type" : "object",
         "properties" : {
           "AdditionalDataURL" : {
@@ -1219,7 +1220,7 @@
               "$ref" : "#/components/schemas/NotesType"
             }
           },
-          "lastUpdateTimeStamp" : {
+          "LastUpdateTimeStamp" : {
             "type" : "string",
             "description" : "The last time the object was changed",
             "format" : "date-time"
@@ -1229,7 +1230,7 @@
       },
       "LocationInformationType" : {
         "title" : "Location Information Type",
-        "required" : [ "LocationTypeDescriptionRegistryText" ],
+        "required" : [ "LastUpdateTimeStamp", "LocationTypeDescriptionRegistryText" ],
         "type" : "object",
         "properties" : {
           "LocationTypeDescriptionRegistryText" : {
@@ -1289,7 +1290,7 @@
               "$ref" : "#/components/schemas/NotesType"
             }
           },
-          "lastUpdateTimeStamp" : {
+          "LastUpdateTimeStamp" : {
             "type" : "string",
             "description" : "The last time the object was changed",
             "format" : "date-time"
@@ -1299,7 +1300,7 @@
       },
       "PersonInformationType" : {
         "title" : "Person Information Type",
-        "required" : [ "PersonIncidentRoleRegistryText" ],
+        "required" : [ "LastUpdateTimeStamp", "PersonIncidentRoleRegistryText" ],
         "type" : "object",
         "properties" : {
           "PersonIncidentRoleRegistryText" : {
@@ -1312,7 +1313,7 @@
               "$ref" : "#/components/schemas/AdditionalDataType"
             }
           },
-          "lastUpdateTimeStamp" : {
+          "LastUpdateTimeStamp" : {
             "type" : "string",
             "description" : "The last time the object was changed",
             "format" : "date-time"
@@ -1322,7 +1323,7 @@
       },
       "DispositionType" : {
         "title" : "Disposition Type",
-        "required" : [ "DispositionCommonRegistryText" ],
+        "required" : [ "DispositionCommonRegistryText", "LastUpdateTimeStamp" ],
         "type" : "object",
         "properties" : {
           "DispositionCommonRegistryText" : {
@@ -1332,7 +1333,7 @@
             "type" : "boolean",
             "description" : "True if the common disposition is the primary disposition for an agency for an incident; false otherwise."
           },
-          "lastUpdateTimeStamp" : {
+          "LastUpdateTimeStamp" : {
             "type" : "string",
             "description" : "The last time the object was changed",
             "format" : "date-time"
@@ -1342,7 +1343,7 @@
       },
       "IncidentInformationType" : {
         "title" : "Incident Information Type",
-        "required" : [ "IncidentTypeCommonRegistryText" ],
+        "required" : [ "IncidentTypeCommonRegistryText", "LastUpdateTimeStamp" ],
         "type" : "object",
         "properties" : {
           "IncidentTypeCommonRegistryText" : {
@@ -1402,7 +1403,7 @@
               "$ref" : "#/components/schemas/DispositionType"
             }
           },
-          "lastUpdateTimeStamp" : {
+          "LastUpdateTimeStamp" : {
             "type" : "string",
             "description" : "The last time the object was changed",
             "format" : "date-time"
@@ -1412,7 +1413,7 @@
       },
       "UpdatedCBNType" : {
         "title" : "Updated CBN Type",
-        "required" : [ "UpdatedCBNIdentifierURI" ],
+        "required" : [ "LastUpdateTimeStamp", "UpdatedCBNIdentifierURI" ],
         "type" : "object",
         "properties" : {
           "UpdatedCBNIdentifierURI" : {
@@ -1423,7 +1424,7 @@
             "type" : "string",
             "description" : "Additional descriptive text about an updated caller call back number such as the days and hours to use it and the type of number (e.g., work, home, friend, etc.)."
           },
-          "lastUpdateTimeStamp" : {
+          "LastUpdateTimeStamp" : {
             "type" : "string",
             "description" : "The last time the object was changed",
             "format" : "date-time"
@@ -1433,7 +1434,7 @@
       },
       "CallInformationType" : {
         "title" : "CallInformationType",
-        "required" : [ "CallIdentifier", "CallStatusRegistryText", "CallTypeDescriptionRegistryText" ],
+        "required" : [ "CallIdentifier", "CallStatusRegistryText", "CallTypeDescriptionRegistryText", "LastUpdateTimeStamp" ],
         "type" : "object",
         "properties" : {
           "CallIdentifier" : {
@@ -1488,7 +1489,7 @@
               "$ref" : "#/components/schemas/PersonInformationType"
             }
           },
-          "lastUpdateTimeStamp" : {
+          "LastUpdateTimeStamp" : {
             "type" : "string",
             "description" : "The last time the object was changed",
             "format" : "date-time"
@@ -1498,7 +1499,7 @@
       },
       "EmergencyResourceType" : {
         "title" : "Emergency Resource Type",
-        "required" : [ "Agent", "EmergencyResourceTypeCommonRegistryText", "PrimaryUnitStatusRegistryText", "SecondaryUnitStatusRegistryText" ],
+        "required" : [ "Agent", "EmergencyResourceTypeCommonRegistryText", "LastUpdateTimeStamp", "PrimaryUnitStatusRegistryText", "SecondaryUnitStatusRegistryText" ],
         "type" : "object",
         "properties" : {
           "EmergencyResourceTypeCommonRegistryText" : {
@@ -1568,7 +1569,7 @@
               "$ref" : "#/components/schemas/DispositionType"
             }
           },
-          "lastUpdateTimeStamp" : {
+          "LastUpdateTimeStamp" : {
             "type" : "string",
             "description" : "The last time the object was changed",
             "format" : "date-time"
@@ -1578,6 +1579,7 @@
       },
       "DispatchInformationType" : {
         "title" : "Dispatch Information Type",
+        "required" : [ "LastUpdateTimeStamp" ],
         "type" : "object",
         "properties" : {
           "Agent" : {
@@ -1590,7 +1592,7 @@
               "$ref" : "#/components/schemas/EmergencyResourceType"
             }
           },
-          "lastUpdateTimeStamp" : {
+          "LastUpdateTimeStamp" : {
             "type" : "string",
             "description" : "The last time the object was changed",
             "format" : "date-time"
@@ -1600,6 +1602,7 @@
       },
       "AlarmsSensorsType" : {
         "title" : "AlarmsSensorsType",
+        "required" : [ "LastUpdateTimeStamp" ],
         "type" : "object",
         "properties" : {
           "CSAAAlarmInformation" : {
@@ -1613,7 +1616,7 @@
           "Agent" : {
             "$ref" : "#/components/schemas/AgentType"
           },
-          "lastUpdateTimeStamp" : {
+          "LastUpdateTimeStamp" : {
             "type" : "string",
             "description" : "The last time the object was changed",
             "format" : "date-time"
@@ -1621,9 +1624,9 @@
         },
         "description" : "A data type for alarms and sensors information associated with an incident."
       },
-      "EmergencyIncidentDataDocumentType" : {
+      "EmergencyIncidentDataObjectType" : {
         "title" : "Emergency Incident Data Document Type",
-        "required" : [ "Agent", "IssuingElementIdentification", "ReasonForIssueRegistryText" ],
+        "required" : [ "Agent", "IssuingElementIdentification", "LastUpdateTimeStamp", "ReasonForIssueRegistryText" ],
         "type" : "object",
         "properties" : {
           "IncidentTrackingIdentification" : {
@@ -1710,7 +1713,7 @@
               "$ref" : "#/components/schemas/AlarmsSensorsType"
             }
           },
-          "lastUpdateTimeStamp" : {
+          "LastUpdateTimeStamp" : {
             "type" : "string",
             "description" : "The last time the object was changed",
             "format" : "date-time"
