@@ -974,11 +974,25 @@ components:
       - suspectVehicle
       - victimVehicle
       - witnessVehicle
+    DateRangeType:
+      title: DateRangeType
+      type: object
+      properties:
+        StartDate:
+          type: string
+          description: A date on which something begins.
+          format: date-time
+        EndDate:
+          type: string
+          description: A date on which something ends.
+          format: date-time
+      description: A data type for a range of dates.
     AgencyType:
       title: Agency Type
       required:
       - AgencyRoleDescriptionRegistryText
       - LastUpdateTimeStamp
+      - OrganizationIdentification
       type: object
       properties:
         AgencyRoleDescriptionRegistryText:
@@ -996,6 +1010,9 @@ components:
           type: string
           description: The last time the AgencyType was changed
           format: date-time
+        OrganizationIdentification:
+          type: string  
+          description: Agency Identifier. This includes private and public providers. Agencies are globally unique. See NENA-STA-010 Agency Identifier section for the format and requirements 
       description: A data type for an organization that owns or is otherwise related
         to an emergency incident.
     AgentType:
@@ -1193,7 +1210,9 @@ components:
       type: object
       properties:
         PersonIncidentRoleRegistryText:
-          $ref: '#/components/schemas/PersonRoleRegistry'
+          type: array
+          items:
+            $ref: '#/components/schemas/PersonRoleRegistry'
         AdditionalData:
           type: array
           description: Additional information associated with an incident call, location,
@@ -1208,11 +1227,11 @@ components:
     DispositionType:
       title: Disposition Type
       required:
-      - DispositionCommonRegistryText
+      - DispositionCommonRegistryCode
       - LastUpdateTimeStamp
       type: object
       properties:
-        DispositionCommonRegistryText:
+        DispositionCommonRegistryCode:
           $ref: '#/components/schemas/DispositionCommonRegistry'
         DispositionPrimaryIndicator:
           type: boolean
@@ -1311,6 +1330,7 @@ components:
       - CallIdentifier
       - CallStatusRegistryText
       - CallTypeDescriptionRegistryText
+      - DateRangeType
       - LastUpdateTimeStamp
       type: object
       properties:
@@ -1325,6 +1345,12 @@ components:
             or person.
           items:
             $ref: '#/components/schemas/AdditionalDataType'
+        ActivityDateRange:
+          $ref: '#/components/schemas/DateRangeType'
+        AnswerDate:
+          type: string
+          description: A date on which the call was answered by an agent.
+          format: date-time
         CallStatusRegistryText:
           $ref: '#/components/schemas/CallStatusRegistry'
         CallMediaURL:
@@ -1401,10 +1427,7 @@ components:
           items:
             $ref: '#/components/schemas/AgentType'
         UnitLocation:
-          type: array
-          description: A location of an emergency resource in PIDF-LO format.
-          items:
-            $ref: '#/components/schemas/LocationInformationType'
+          $ref: '#/components/schemas/LocationInformationType'
         Person:
           type: array
           description: Information about a person associated with an incident.
