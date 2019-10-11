@@ -22,7 +22,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/EmergencyIncidentDataDocumentType'
+              $ref: '#/components/schemas/EmergencyIncidentDataObjectType'
         required: true
       responses:
         200:
@@ -59,7 +59,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/EmergencyIncidentDataDocumentType'
+              $ref: '#/components/schemas/EmergencyIncidentDataObjectType'
         required: true
       responses:
         200:
@@ -96,7 +96,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/EmergencyIncidentDataDocumentType'
+              $ref: '#/components/schemas/EmergencyIncidentDataObjectType'
         required: true
       responses:
         200:
@@ -133,7 +133,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/EmergencyIncidentDataDocumentType'
+              $ref: '#/components/schemas/EmergencyIncidentDataObjectType'
         required: true
       responses:
         200:
@@ -170,7 +170,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/EmergencyIncidentDataDocumentType'
+              $ref: '#/components/schemas/EmergencyIncidentDataObjectType'
         required: true
       responses:
         200:
@@ -207,7 +207,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/EmergencyIncidentDataDocumentType'
+              $ref: '#/components/schemas/EmergencyIncidentDataObjectType'
         required: true
       responses:
         200:
@@ -244,7 +244,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/EmergencyIncidentDataDocumentType'
+              $ref: '#/components/schemas/EmergencyIncidentDataObjectType'
         required: true
       responses:
         200:
@@ -281,7 +281,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/EmergencyIncidentDataDocumentType'
+              $ref: '#/components/schemas/EmergencyIncidentDataObjectType'
         required: true
       responses:
         200:
@@ -349,7 +349,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/EmergencyIncidentDataDocumentType'
+              $ref: '#/components/schemas/EmergencyIncidentDataObjectType'
         required: true
       responses:
         200:
@@ -357,7 +357,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/EmergencyIncidentDataDocumentType'
+                $ref: '#/components/schemas/EmergencyIncidentDataObjectType'
         501:
           description: Unknown or bad EIDO ID
           content:
@@ -386,7 +386,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/EmergencyIncidentDataDocumentType'
+              $ref: '#/components/schemas/EmergencyIncidentDataObjectType'
         required: true
       responses:
         200:
@@ -423,7 +423,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/EmergencyIncidentDataDocumentType'
+              $ref: '#/components/schemas/EmergencyIncidentDataObjectType'
         required: true
       responses:
         200:
@@ -472,7 +472,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/EmergencyIncidentDataDocumentType'
+                $ref: '#/components/schemas/EmergencyIncidentDataObjectType'
         501:
           description: Unknown or bad EIDO ID
           content:
@@ -501,7 +501,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/EmergencyIncidentDataDocumentType'
+              $ref: '#/components/schemas/EmergencyIncidentDataObjectType'
         required: true
       responses:
         200:
@@ -538,7 +538,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/EmergencyIncidentDataDocumentType'
+              $ref: '#/components/schemas/EmergencyIncidentDataObjectType'
         required: true
       responses:
         200:
@@ -575,7 +575,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/EmergencyIncidentDataDocumentType'
+              $ref: '#/components/schemas/EmergencyIncidentDataObjectType'
         required: true
       responses:
         200:
@@ -978,6 +978,7 @@ components:
       title: Agency Type
       required:
       - AgencyRoleDescriptionRegistryText
+      - LastUpdateTimeStamp
       type: object
       properties:
         AgencyRoleDescriptionRegistryText:
@@ -991,7 +992,7 @@ components:
         IncidentOwningAgencyIndicator:
           type: boolean
           description: True if an agency owns the emergency incident; false otherwise.
-        lastUpdateTimeStamp:
+        LastUpdateTimeStamp:
           type: string
           description: The last time the AgencyType was changed
           format: date-time
@@ -1002,6 +1003,7 @@ components:
       required:
       - AgentIdentification
       - PersonRoleRegistryText
+      - LastUpdateTimeStamp
       type: object
       properties:
         AgentIdentification:
@@ -1017,7 +1019,7 @@ components:
           $ref: '#/components/schemas/PersonRoleRegistry'
         Agency:
           $ref: '#/components/schemas/AgencyType'
-        lastUpdateTimeStamp:
+        LastUpdateTimeStamp:
           type: string
           description: The last time the AgentType was changed
           format: date-time
@@ -1038,6 +1040,7 @@ components:
       required:
       - IncidentMergeDirectionCode
       - IncidentTrackingIdentification
+      - LastUpdateTimeStamp
       type: object
       properties:
         IncidentTrackingIdentification:
@@ -1047,7 +1050,7 @@ components:
           $ref: '#/components/schemas/IncidentMergeDirectionCodeSimpleType'
         Agent:
           $ref: '#/components/schemas/AgentType'
-        lastUpdateTimeStamp:
+        LastUpdateTimeStamp:
           type: string
           description: The last time the object was changed
           format: date-time
@@ -1067,6 +1070,7 @@ components:
       required:
       - IncidentTrackingIdentification
       - LinkDirectionCode
+      - LastUpdateTimeStamp
       type: object
       properties:
         IncidentTrackingIdentification:
@@ -1076,7 +1080,7 @@ components:
           $ref: '#/components/schemas/LinkDirectionCodeSimpleType'
         Agent:
           $ref: '#/components/schemas/AgentType'
-        lastUpdateTimeStamp:
+        LastUpdateTimeStamp:
           type: string
           description: The last time the object was changed
           format: date-time
@@ -1085,6 +1089,7 @@ components:
       title: Notes Type
       required:
       - NotesActionComments
+      - LastUpdateTimeStamp
       type: object
       properties:
         NotesActionComments:
@@ -1092,13 +1097,15 @@ components:
           description: A note about an incident created by an agent; in HTML5 format.
         Agent:
           $ref: '#/components/schemas/AgentType'
-        lastUpdateTimeStamp:
+        LastUpdateTimeStamp:
           type: string
           description: The last time the object was changed
           format: date-time
       description: A data type for notes and comments associated with an incident.
     AdditionalDataType:
       title: Additional Data Type
+      required:
+      - LastUpdateTimeStamp
       type: object
       properties:
         AdditionalDataURL:
@@ -1112,7 +1119,7 @@ components:
           description: Notes and comments associated with an incident.
           items:
             $ref: '#/components/schemas/NotesType'
-        lastUpdateTimeStamp:
+        LastUpdateTimeStamp:
           type: string
           description: The last time the object was changed
           format: date-time
@@ -1122,12 +1129,13 @@ components:
       title: Location Information Type
       required:
       - LocationTypeDescriptionRegistryText
+      - LastUpdateTimeStamp
       type: object
       properties:
         LocationTypeDescriptionRegistryText:
           $ref: '#/components/schemas/LocationTypeDescriptionRegistry'
         LocationByValue:
-          type: object
+          type: string
           description: A type for an external adapter for a Presence Information Data
             Format-Location Object (PIDF-LO).
         LocationByReferenceURL:
@@ -1172,7 +1180,7 @@ components:
           description: Notes and comments associated with an incident.
           items:
             $ref: '#/components/schemas/NotesType'
-        lastUpdateTimeStamp:
+        LastUpdateTimeStamp:
           type: string
           description: The last time the object was changed
           format: date-time
@@ -1181,6 +1189,7 @@ components:
       title: Person Information Type
       required:
       - PersonIncidentRoleRegistryText
+      - LastUpdateTimeStamp
       type: object
       properties:
         PersonIncidentRoleRegistryText:
@@ -1191,7 +1200,7 @@ components:
             or person.
           items:
             $ref: '#/components/schemas/AdditionalDataType'
-        lastUpdateTimeStamp:
+        LastUpdateTimeStamp:
           type: string
           description: The last time the object was changed
           format: date-time
@@ -1200,6 +1209,7 @@ components:
       title: Disposition Type
       required:
       - DispositionCommonRegistryText
+      - LastUpdateTimeStamp
       type: object
       properties:
         DispositionCommonRegistryText:
@@ -1208,7 +1218,7 @@ components:
           type: boolean
           description: True if the common disposition is the primary disposition for
             an agency for an incident; false otherwise.
-        lastUpdateTimeStamp:
+        LastUpdateTimeStamp:
           type: string
           description: The last time the object was changed
           format: date-time
@@ -1218,6 +1228,7 @@ components:
       title: Incident Information Type
       required:
       - IncidentTypeCommonRegistryText
+      - LastUpdateTimeStamp
       type: object
       properties:
         IncidentTypeCommonRegistryText:
@@ -1264,7 +1275,7 @@ components:
             agent and/or a responding emergency resource.
           items:
             $ref: '#/components/schemas/DispositionType'
-        lastUpdateTimeStamp:
+        LastUpdateTimeStamp:
           type: string
           description: The last time the object was changed
           format: date-time
@@ -1275,6 +1286,7 @@ components:
       title: Updated CBN Type
       required:
       - UpdatedCBNIdentifierURI
+      - LastUpdateTimeStamp
       type: object
       properties:
         UpdatedCBNIdentifierURI:
@@ -1286,7 +1298,7 @@ components:
           description: Additional descriptive text about an updated caller call back
             number such as the days and hours to use it and the type of number (e.g.,
             work, home, friend, etc.).
-        lastUpdateTimeStamp:
+        LastUpdateTimeStamp:
           type: string
           description: The last time the object was changed
           format: date-time
@@ -1299,6 +1311,7 @@ components:
       - CallIdentifier
       - CallStatusRegistryText
       - CallTypeDescriptionRegistryText
+      - LastUpdateTimeStamp
       type: object
       properties:
         CallIdentifier:
@@ -1342,7 +1355,7 @@ components:
           description: Information about a person associated with an incident.
           items:
             $ref: '#/components/schemas/PersonInformationType'
-        lastUpdateTimeStamp:
+        LastUpdateTimeStamp:
           type: string
           description: The last time the object was changed
           format: date-time
@@ -1355,6 +1368,7 @@ components:
       - EmergencyResourceTypeCommonRegistryText
       - PrimaryUnitStatusRegistryText
       - SecondaryUnitStatusRegistryText
+      - LastUpdateTimeStamp
       type: object
       properties:
         EmergencyResourceTypeCommonRegistryText:
@@ -1407,7 +1421,7 @@ components:
             agent and/or a responding emergency resource.
           items:
             $ref: '#/components/schemas/DispositionType'
-        lastUpdateTimeStamp:
+        LastUpdateTimeStamp:
           type: string
           description: The last time the object was changed
           format: date-time
@@ -1416,6 +1430,8 @@ components:
         that responds to an emergency incident.
     DispatchInformationType:
       title: Dispatch Information Type
+      required:
+      - LastUpdateTimeStamp
       type: object
       properties:
         Agent:
@@ -1427,13 +1443,15 @@ components:
             that responds to an emergency incident.
           items:
             $ref: '#/components/schemas/EmergencyResourceType'
-        lastUpdateTimeStamp:
+        LastUpdateTimeStamp:
           type: string
           description: The last time the object was changed
           format: date-time
       description: A data type for dispatch information related to an incident.
     AlarmsSensorsType:
       title: AlarmsSensorsType
+      required:
+      - LastUpdateTimeStamp
       type: object
       properties:
         CSAAAlarmInformation:
@@ -1446,18 +1464,19 @@ components:
             data associated with an incident.
         Agent:
           $ref: '#/components/schemas/AgentType'
-        lastUpdateTimeStamp:
+        LastUpdateTimeStamp:
           type: string
           description: The last time the object was changed
           format: date-time
       description: A data type for alarms and sensors information associated with
         an incident.
-    EmergencyIncidentDataDocumentType:
+    EmergencyIncidentDataObjectType:
       title: Emergency Incident Data Document Type
       required:
       - Agent
       - IssuingElementIdentification
       - ReasonForIssueRegistryText
+      - LastUpdateTimeStamp
       type: object
       properties:
         IncidentTrackingIdentification:
@@ -1528,7 +1547,7 @@ components:
           description: Alarms and sensors information associated with an incident.
           items:
             $ref: '#/components/schemas/AlarmsSensorsType'
-        lastUpdateTimeStamp:
+        LastUpdateTimeStamp:
           type: string
           description: The last time the object was changed
           format: date-time
