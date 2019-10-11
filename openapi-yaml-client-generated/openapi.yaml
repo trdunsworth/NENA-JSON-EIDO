@@ -974,6 +974,19 @@ components:
       - suspectVehicle
       - victimVehicle
       - witnessVehicle
+    DateRangeType:
+      title: DateRangeType
+      type: object
+      properties:
+        StartDate:
+          type: string
+          description: A date on which something begins.
+          format: date-time
+        EndDate:
+          type: string
+          description: A date on which something ends.
+          format: date-time
+      description: A data type for a range of dates.
     AgencyType:
       title: Agency Type
       required:
@@ -1313,6 +1326,7 @@ components:
       - CallIdentifier
       - CallStatusRegistryText
       - CallTypeDescriptionRegistryText
+      - DateRangeType
       - LastUpdateTimeStamp
       type: object
       properties:
@@ -1327,6 +1341,12 @@ components:
             or person.
           items:
             $ref: '#/components/schemas/AdditionalDataType'
+        ActivityDateRange:
+          $ref: '#/components/schemas/DateRangeType'
+        AnswerDate:
+          type: string
+          description: A date on which the call was answered by an agent.
+          format: date-time
         CallStatusRegistryText:
           $ref: '#/components/schemas/CallStatusRegistry'
         CallMediaURL:
