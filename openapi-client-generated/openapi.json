@@ -7,7 +7,7 @@
       "name" : "Richard Maw",
       "email" : "rmaw@msn.com"
     },
-    "version" : "1.0"
+    "version" : "1.0.1"
   },
   "servers" : [ {
     "url" : "http://localhost/EIDO"
@@ -15,715 +15,15 @@
     "url" : "https://localhost/EIDO"
   } ],
   "paths" : {
-    "/CallAnswered" : {
-      "post" : {
-        "tags" : [ "Calls" ],
-        "summary" : "Call Answered",
-        "operationId" : "CallAnsweredPost",
-        "requestBody" : {
-          "description" : "An emergency call was answered by an agent",
-          "content" : {
-            "application/json" : {
-              "schema" : {
-                "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
-              }
-            }
-          },
-          "required" : true
-        },
-        "responses" : {
-          "200" : {
-            "description" : "OK",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response200"
-                }
-              }
-            }
-          },
-          "501" : {
-            "description" : "Unknown or bad EIDO ID",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response501"
-                }
-              }
-            }
-          },
-          "503" : {
-            "description" : "Not available here, no referral available",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response503"
-                }
-              }
-            }
-          },
-          "default" : {
-            "description" : "Unspecified Error",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response504"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/CallOffered" : {
-      "post" : {
-        "tags" : [ "Calls" ],
-        "summary" : "Call Offered",
-        "operationId" : "CallOfferedPost",
-        "requestBody" : {
-          "content" : {
-            "application/json" : {
-              "schema" : {
-                "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
-              }
-            }
-          },
-          "required" : true
-        },
-        "responses" : {
-          "200" : {
-            "description" : "OK",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response200"
-                }
-              }
-            }
-          },
-          "501" : {
-            "description" : "Unknown or bad EIDO ID",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response501"
-                }
-              }
-            }
-          },
-          "503" : {
-            "description" : "Not available here, no referral available",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response503"
-                }
-              }
-            }
-          },
-          "default" : {
-            "description" : "Unspecified Error",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response504"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/CallReceived" : {
-      "post" : {
-        "tags" : [ "Calls" ],
-        "summary" : "Call Received",
-        "operationId" : "CallReceivedPost",
-        "requestBody" : {
-          "content" : {
-            "application/json" : {
-              "schema" : {
-                "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
-              }
-            }
-          },
-          "required" : true
-        },
-        "responses" : {
-          "200" : {
-            "description" : "OK",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response200"
-                }
-              }
-            }
-          },
-          "501" : {
-            "description" : "Unknown or bad EIDO ID",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response501"
-                }
-              }
-            }
-          },
-          "503" : {
-            "description" : "Not available here, no referral available",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response503"
-                }
-              }
-            }
-          },
-          "default" : {
-            "description" : "Unspecified Error",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response504"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/EmergencyResourceStatusChanged" : {
-      "post" : {
-        "tags" : [ "Resources" ],
-        "summary" : "Emergency Resource Status Changed",
-        "operationId" : "EmergencyResourceStatusChangedPost",
-        "requestBody" : {
-          "content" : {
-            "application/json" : {
-              "schema" : {
-                "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
-              }
-            }
-          },
-          "required" : true
-        },
-        "responses" : {
-          "200" : {
-            "description" : "OK",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response200"
-                }
-              }
-            }
-          },
-          "501" : {
-            "description" : "Unknown or bad EIDO ID",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response501"
-                }
-              }
-            }
-          },
-          "503" : {
-            "description" : "Not available here, no referral available",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response503"
-                }
-              }
-            }
-          },
-          "default" : {
-            "description" : "Unspecified Error",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response504"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/IncidentClosed" : {
-      "post" : {
-        "tags" : [ "Incidents" ],
-        "summary" : "Incident Closed",
-        "operationId" : "IncidentClosedPost",
-        "requestBody" : {
-          "content" : {
-            "application/json" : {
-              "schema" : {
-                "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
-              }
-            }
-          },
-          "required" : true
-        },
-        "responses" : {
-          "200" : {
-            "description" : "OK",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response200"
-                }
-              }
-            }
-          },
-          "501" : {
-            "description" : "Unknown or bad EIDO ID",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response501"
-                }
-              }
-            }
-          },
-          "503" : {
-            "description" : "Not available here, no referral available",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response503"
-                }
-              }
-            }
-          },
-          "default" : {
-            "description" : "Unspecified Error",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response504"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/IncidentReopened" : {
-      "post" : {
-        "tags" : [ "Incidents" ],
-        "summary" : "Incident Reopened",
-        "operationId" : "IncidentReopenedPost",
-        "requestBody" : {
-          "content" : {
-            "application/json" : {
-              "schema" : {
-                "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
-              }
-            }
-          },
-          "required" : true
-        },
-        "responses" : {
-          "200" : {
-            "description" : "OK",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response200"
-                }
-              }
-            }
-          },
-          "501" : {
-            "description" : "Unknown or bad EIDO ID",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response501"
-                }
-              }
-            }
-          },
-          "503" : {
-            "description" : "Not available here, no referral available",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response503"
-                }
-              }
-            }
-          },
-          "default" : {
-            "description" : "Unspecified Error",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response504"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/IncidentUpdate" : {
-      "post" : {
-        "tags" : [ "Incidents" ],
-        "summary" : "Incident Update",
-        "operationId" : "IncidentUpdatePost",
-        "requestBody" : {
-          "content" : {
-            "application/json" : {
-              "schema" : {
-                "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
-              }
-            }
-          },
-          "required" : true
-        },
-        "responses" : {
-          "200" : {
-            "description" : "OK",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response200"
-                }
-              }
-            }
-          },
-          "501" : {
-            "description" : "Unknown or bad EIDO ID",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response501"
-                }
-              }
-            }
-          },
-          "503" : {
-            "description" : "Not available here, no referral available",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response503"
-                }
-              }
-            }
-          },
-          "default" : {
-            "description" : "Unspecified Error",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response504"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/LinkIncidents" : {
-      "post" : {
-        "tags" : [ "Incidents" ],
-        "summary" : "Link Incidents",
-        "operationId" : "LinkIncidentsPost",
-        "requestBody" : {
-          "content" : {
-            "application/json" : {
-              "schema" : {
-                "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
-              }
-            }
-          },
-          "required" : true
-        },
-        "responses" : {
-          "200" : {
-            "description" : "OK",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response200"
-                }
-              }
-            }
-          },
-          "501" : {
-            "description" : "Unknown or bad EIDO ID",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response501"
-                }
-              }
-            }
-          },
-          "503" : {
-            "description" : "Not available here, no referral available",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response503"
-                }
-              }
-            }
-          },
-          "default" : {
-            "description" : "Unspecified Error",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response504"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/MergedIncidents" : {
-      "post" : {
-        "tags" : [ "Incidents" ],
-        "summary" : "Merged Incidents",
-        "operationId" : "MergedIncidentsPost",
-        "responses" : {
-          "200" : {
-            "description" : "OK",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response200"
-                }
-              }
-            }
-          },
-          "501" : {
-            "description" : "Unknown or bad EIDO ID",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response501"
-                }
-              }
-            }
-          },
-          "503" : {
-            "description" : "Not available here, no referral available",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response503"
-                }
-              }
-            }
-          },
-          "default" : {
-            "description" : "Unspecified Error",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response504"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/QueryResponse" : {
-      "post" : {
-        "tags" : [ "Queries" ],
-        "summary" : "Query Response",
-        "operationId" : "QueryResponsePost",
-        "requestBody" : {
-          "content" : {
-            "application/json" : {
-              "schema" : {
-                "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
-              }
-            }
-          },
-          "required" : true
-        },
-        "responses" : {
-          "200" : {
-            "description" : "OK",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
-                }
-              }
-            }
-          },
-          "501" : {
-            "description" : "Unknown or bad EIDO ID",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response501"
-                }
-              }
-            }
-          },
-          "503" : {
-            "description" : "Not available here, no referral available",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response503"
-                }
-              }
-            }
-          },
-          "default" : {
-            "description" : "Unspecified Error",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response504"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/SplitIncidents" : {
-      "post" : {
-        "tags" : [ "Incidents" ],
-        "summary" : "Split Incidents",
-        "operationId" : "SplitIncidentPost",
-        "requestBody" : {
-          "content" : {
-            "application/json" : {
-              "schema" : {
-                "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
-              }
-            }
-          },
-          "required" : true
-        },
-        "responses" : {
-          "200" : {
-            "description" : "OK",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response200"
-                }
-              }
-            }
-          },
-          "501" : {
-            "description" : "Unknown or bad EIDO ID",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response501"
-                }
-              }
-            }
-          },
-          "503" : {
-            "description" : "Not available here, no referral available",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response503"
-                }
-              }
-            }
-          },
-          "default" : {
-            "description" : "Unspecified Error",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response504"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/TransferredCall" : {
-      "post" : {
-        "tags" : [ "Calls" ],
-        "summary" : "Transferred Call",
-        "operationId" : "TransferredCallPost",
-        "requestBody" : {
-          "content" : {
-            "application/json" : {
-              "schema" : {
-                "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
-              }
-            }
-          },
-          "required" : true
-        },
-        "responses" : {
-          "200" : {
-            "description" : "OK",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response200"
-                }
-              }
-            }
-          },
-          "501" : {
-            "description" : "Unknown or bad EIDO ID",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response501"
-                }
-              }
-            }
-          },
-          "503" : {
-            "description" : "Not available here, no referral available",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response503"
-                }
-              }
-            }
-          },
-          "default" : {
-            "description" : "Unspecified Error",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response504"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/TransferredCall/{nena-CallId}" : {
+    "/EIDO/{IncidentId}" : {
       "get" : {
-        "tags" : [ "Calls" ],
-        "summary" : "Get Transferred Call",
-        "description" : "Gets a transferred call by nena-CallId",
-        "operationId" : "TransferredCallGet",
+        "tags" : [ "Dereference" ],
+        "summary" : "Dereference an EIDO reference",
+        "operationId" : "GetEIDO",
         "parameters" : [ {
-          "name" : "nena-CallId",
+          "name" : "IncidentId",
           "in" : "path",
-          "description" : "nena-callId to retrieve",
+          "description" : "The id of the incident represented in the EIDO",
           "required" : true,
           "style" : "simple",
           "explode" : false,
@@ -741,213 +41,6 @@
                 }
               }
             }
-          },
-          "501" : {
-            "description" : "Unknown or bad EIDO ID",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response501"
-                }
-              }
-            }
-          },
-          "503" : {
-            "description" : "Not available here, no referral available",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response503"
-                }
-              }
-            }
-          },
-          "default" : {
-            "description" : "Unspecified Error",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response504"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/UnitStatusUpdate" : {
-      "post" : {
-        "tags" : [ "Units" ],
-        "summary" : "Unit Status Update",
-        "operationId" : "UnitStatusUpdatePost",
-        "requestBody" : {
-          "content" : {
-            "application/json" : {
-              "schema" : {
-                "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
-              }
-            }
-          },
-          "required" : true
-        },
-        "responses" : {
-          "200" : {
-            "description" : "OK",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response200"
-                }
-              }
-            }
-          },
-          "501" : {
-            "description" : "Unknown or bad EIDO ID",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response501"
-                }
-              }
-            }
-          },
-          "503" : {
-            "description" : "Not available here, no referral available",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response503"
-                }
-              }
-            }
-          },
-          "default" : {
-            "description" : "Unspecified Error",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response504"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/UnLinkIncidents" : {
-      "post" : {
-        "tags" : [ "Incidents" ],
-        "summary" : "UnLink Incidents",
-        "operationId" : "UnLinkIncidentsPost",
-        "requestBody" : {
-          "content" : {
-            "application/json" : {
-              "schema" : {
-                "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
-              }
-            }
-          },
-          "required" : true
-        },
-        "responses" : {
-          "200" : {
-            "description" : "OK",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response200"
-                }
-              }
-            }
-          },
-          "501" : {
-            "description" : "Unknown or bad EIDO ID",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response501"
-                }
-              }
-            }
-          },
-          "503" : {
-            "description" : "Not available here, no referral available",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response503"
-                }
-              }
-            }
-          },
-          "default" : {
-            "description" : "Unspecified Error",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response504"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/UnMergeIncidents" : {
-      "post" : {
-        "tags" : [ "Incidents" ],
-        "summary" : "UnMerge Incidents",
-        "operationId" : "UnMergeIncidentsPost",
-        "requestBody" : {
-          "content" : {
-            "application/json" : {
-              "schema" : {
-                "$ref" : "#/components/schemas/EmergencyIncidentDataObjectType"
-              }
-            }
-          },
-          "required" : true
-        },
-        "responses" : {
-          "200" : {
-            "description" : "OK",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response200"
-                }
-              }
-            }
-          },
-          "501" : {
-            "description" : "Unknown or bad EIDO ID",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response501"
-                }
-              }
-            }
-          },
-          "503" : {
-            "description" : "Not available here, no referral available",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response503"
-                }
-              }
-            }
-          },
-          "default" : {
-            "description" : "Unspecified Error",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Response504"
-                }
-              }
-            }
           }
         }
       }
@@ -955,26 +48,6 @@
   },
   "components" : {
     "schemas" : {
-      "Response200" : {
-        "type" : "string",
-        "description" : "OK",
-        "enum" : [ "OK" ]
-      },
-      "Response501" : {
-        "type" : "string",
-        "description" : "Unknown or bad EIDO ID",
-        "enum" : [ "Unknown or bad EIDO ID" ]
-      },
-      "Response503" : {
-        "type" : "string",
-        "description" : "Not available here, no referral available",
-        "enum" : [ "Not available here, no referral available" ]
-      },
-      "Response504" : {
-        "type" : "string",
-        "description" : "Unspecified Error",
-        "enum" : [ "Unspecified Error" ]
-      },
       "AgencyRoleDescriptionRegistry" : {
         "title" : "Agency Role Description Registry",
         "type" : "string",
@@ -1082,9 +155,34 @@
         },
         "description" : "A data type for a range of dates."
       },
+      "PrologueType" : {
+        "title" : "Prologue",
+        "required" : [ "$id", "LastUpdateTimeStamp", "OwningAgencyIdentifier" ],
+        "type" : "object",
+        "properties" : {
+          "$id" : {
+            "type" : "string",
+            "description" : "Locally unique identifier of the data component"
+          },
+          "LastUpdateTimeStamp" : {
+            "type" : "string",
+            "description" : "Timestamp of the last time the data component was modified",
+            "format" : "date-time"
+          },
+          "OwningAgencyIdentifier" : {
+            "type" : "string",
+            "description" : "Owning Agency Identifier. This includes private and public providers. Agencies are globally unique."
+          },
+          "UpdatedByAgentIdentifier" : {
+            "type" : "string",
+            "description" : "A globally unique identifier of the agent or automaton that updated the data component last"
+          }
+        },
+        "description" : "A common prologue on each data component"
+      },
       "AgencyType" : {
         "title" : "Agency Type",
-        "required" : [ "AgencyRoleDescriptionRegistryText", "LastUpdateTimeStamp", "OrganizationIdentification" ],
+        "required" : [ "AgencyRoleDescriptionRegistryText", "OrganizationIdentification" ],
         "type" : "object",
         "properties" : {
           "AgencyRoleDescriptionRegistryText" : {
@@ -1102,21 +200,19 @@
             "type" : "boolean",
             "description" : "True if an agency owns the emergency incident; false otherwise."
           },
-          "LastUpdateTimeStamp" : {
-            "type" : "string",
-            "description" : "The last time the AgencyType was changed",
-            "format" : "date-time"
-          },
           "OrganizationIdentification" : {
             "type" : "string",
             "description" : "Agency Identifier. This includes private and public providers. Agencies are globally unique. See NENA-STA-010 Agency Identifier section for the format and requirements"
           }
         },
-        "description" : "A data type for an organization that owns or is otherwise related to an emergency incident."
+        "description" : "A data type for an organization that owns or is otherwise related to an emergency incident.",
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/PrologueType"
+        } ]
       },
       "AgentType" : {
         "title" : "Agent Type",
-        "required" : [ "AgentIdentification", "LastUpdateTimeStamp", "PersonRoleRegistryText" ],
+        "required" : [ "AgentIdentification", "PersonRoleRegistryText" ],
         "type" : "object",
         "properties" : {
           "AgentIdentification" : {
@@ -1132,14 +228,12 @@
           },
           "Agency" : {
             "$ref" : "#/components/schemas/AgencyType"
-          },
-          "LastUpdateTimeStamp" : {
-            "type" : "string",
-            "description" : "The last time the AgentType was changed",
-            "format" : "date-time"
           }
         },
-        "description" : "A data type for information about agents (e.g., call takers, dispatchers, supervisors, responding emergency resources, etc.) and automated systems acting as agents that are involved in an incident."
+        "description" : "A data type for information about agents (e.g., call takers, dispatchers, supervisors, responding emergency resources, etc.) and automated systems acting as agents that are involved in an incident.",
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/PrologueType"
+        } ]
       },
       "IncidentMergeDirectionCodeSimpleType" : {
         "title" : "Incident Merge Direction Code Simple Type",
@@ -1150,7 +244,7 @@
       },
       "MergeInformationType" : {
         "title" : "MergeInformationType",
-        "required" : [ "IncidentMergeDirectionCode", "IncidentTrackingIdentification", "LastUpdateTimeStamp" ],
+        "required" : [ "IncidentMergeDirectionCode", "IncidentTrackingIdentification" ],
         "type" : "object",
         "properties" : {
           "IncidentTrackingIdentification" : {
@@ -1162,14 +256,12 @@
           },
           "Agent" : {
             "$ref" : "#/components/schemas/AgentType"
-          },
-          "LastUpdateTimeStamp" : {
-            "type" : "string",
-            "description" : "The last time the object was changed",
-            "format" : "date-time"
           }
         },
-        "description" : "A data type for information about a merged or split incident."
+        "description" : "A data type for information about a merged or split incident.",
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/PrologueType"
+        } ]
       },
       "LinkDirectionCodeSimpleType" : {
         "title" : "Link Direction Code Simple Type",
@@ -1180,7 +272,7 @@
       },
       "LinkInformationType" : {
         "title" : "Link Information Type",
-        "required" : [ "IncidentTrackingIdentification", "LastUpdateTimeStamp", "LinkDirectionCode" ],
+        "required" : [ "IncidentTrackingIdentification", "LinkDirectionCode" ],
         "type" : "object",
         "properties" : {
           "IncidentTrackingIdentification" : {
@@ -1192,18 +284,16 @@
           },
           "Agent" : {
             "$ref" : "#/components/schemas/AgentType"
-          },
-          "LastUpdateTimeStamp" : {
-            "type" : "string",
-            "description" : "The last time the object was changed",
-            "format" : "date-time"
           }
         },
-        "description" : "A data type for information about a linked incident."
+        "description" : "A data type for information about a linked incident.",
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/PrologueType"
+        } ]
       },
       "NotesType" : {
         "title" : "Notes Type",
-        "required" : [ "LastUpdateTimeStamp", "NotesActionComments" ],
+        "required" : [ "NotesActionComments" ],
         "type" : "object",
         "properties" : {
           "NotesActionComments" : {
@@ -1212,18 +302,15 @@
           },
           "Agent" : {
             "$ref" : "#/components/schemas/AgentType"
-          },
-          "LastUpdateTimeStamp" : {
-            "type" : "string",
-            "description" : "The last time the object was changed",
-            "format" : "date-time"
           }
         },
-        "description" : "A data type for notes and comments associated with an incident."
+        "description" : "A data type for notes and comments associated with an incident.",
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/PrologueType"
+        } ]
       },
       "AdditionalDataType" : {
         "title" : "Additional Data Type",
-        "required" : [ "LastUpdateTimeStamp" ],
         "type" : "object",
         "properties" : {
           "AdditionalDataURL" : {
@@ -1240,14 +327,12 @@
             "items" : {
               "$ref" : "#/components/schemas/NotesType"
             }
-          },
-          "LastUpdateTimeStamp" : {
-            "type" : "string",
-            "description" : "The last time the object was changed",
-            "format" : "date-time"
           }
         },
-        "description" : "A data type for additional information associated with an incident call, location, or person."
+        "description" : "A data type for additional information associated with an incident call, location, or person.",
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/PrologueType"
+        } ]
       },
       "LocationInformationType" : {
         "title" : "Location Information Type",
@@ -1321,7 +406,7 @@
       },
       "PersonInformationType" : {
         "title" : "Person Information Type",
-        "required" : [ "LastUpdateTimeStamp", "PersonIncidentRoleRegistryText" ],
+        "required" : [ "PersonIncidentRoleRegistryText" ],
         "type" : "object",
         "properties" : {
           "PersonIncidentRoleRegistryText" : {
@@ -1336,18 +421,16 @@
             "items" : {
               "$ref" : "#/components/schemas/AdditionalDataType"
             }
-          },
-          "LastUpdateTimeStamp" : {
-            "type" : "string",
-            "description" : "The last time the object was changed",
-            "format" : "date-time"
           }
         },
-        "description" : "A data type for information about a person associated with an incident."
+        "description" : "A data type for information about a person associated with an incident.",
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/PrologueType"
+        } ]
       },
       "DispositionType" : {
         "title" : "Disposition Type",
-        "required" : [ "DispositionCommonRegistryCode", "LastUpdateTimeStamp" ],
+        "required" : [ "DispositionCommonRegistryCode" ],
         "type" : "object",
         "properties" : {
           "DispositionCommonRegistryCode" : {
@@ -1356,18 +439,16 @@
           "DispositionPrimaryIndicator" : {
             "type" : "boolean",
             "description" : "True if the common disposition is the primary disposition for an agency for an incident; false otherwise."
-          },
-          "LastUpdateTimeStamp" : {
-            "type" : "string",
-            "description" : "The last time the object was changed",
-            "format" : "date-time"
           }
         },
-        "description" : "A data type for incident disposition information entered or updated by a dispatch agent and/or a responding emergency resource."
+        "description" : "A data type for incident disposition information entered or updated by a dispatch agent and/or a responding emergency resource.",
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/PrologueType"
+        } ]
       },
       "IncidentInformationType" : {
         "title" : "Incident Information Type",
-        "required" : [ "IncidentTypeCommonRegistryText", "LastUpdateTimeStamp" ],
+        "required" : [ "IncidentTypeCommonRegistryText" ],
         "type" : "object",
         "properties" : {
           "IncidentTypeCommonRegistryText" : {
@@ -1426,18 +507,16 @@
             "items" : {
               "$ref" : "#/components/schemas/DispositionType"
             }
-          },
-          "LastUpdateTimeStamp" : {
-            "type" : "string",
-            "description" : "The last time the object was changed",
-            "format" : "date-time"
           }
         },
-        "description" : "A data type for general information about emergency incidents gathered by emergency agents, responding emergency resources, from reporting parties (callers), and devices reporting emergency incidents."
+        "description" : "A data type for general information about emergency incidents gathered by emergency agents, responding emergency resources, from reporting parties (callers), and devices reporting emergency incidents.",
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/PrologueType"
+        } ]
       },
       "UpdatedCBNType" : {
         "title" : "Updated CBN Type",
-        "required" : [ "LastUpdateTimeStamp", "UpdatedCBNIdentifierURI" ],
+        "required" : [ "UpdatedCBNIdentifierURI" ],
         "type" : "object",
         "properties" : {
           "UpdatedCBNIdentifierURI" : {
@@ -1447,18 +526,16 @@
           "UpdatedCBNCallerDescription" : {
             "type" : "string",
             "description" : "Additional descriptive text about an updated caller call back number such as the days and hours to use it and the type of number (e.g., work, home, friend, etc.)."
-          },
-          "LastUpdateTimeStamp" : {
-            "type" : "string",
-            "description" : "The last time the object was changed",
-            "format" : "date-time"
           }
         },
-        "description" : "A data type for additional telephone numbers and SIP equivalents that can be used to contact the individual that made a call associated with an incident."
+        "description" : "A data type for additional telephone numbers and SIP equivalents that can be used to contact the individual that made a call associated with an incident.",
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/PrologueType"
+        } ]
       },
       "CallInformationType" : {
         "title" : "CallInformationType",
-        "required" : [ "CallIdentifier", "CallStatusRegistryText", "CallTypeDescriptionRegistryText", "DateRangeType", "LastUpdateTimeStamp" ],
+        "required" : [ "ActivityDateRange", "CallIdentifier", "CallStatusRegistryText", "CallTypeDescriptionRegistryText" ],
         "type" : "object",
         "properties" : {
           "CallIdentifier" : {
@@ -1520,18 +597,16 @@
             "items" : {
               "$ref" : "#/components/schemas/PersonInformationType"
             }
-          },
-          "LastUpdateTimeStamp" : {
-            "type" : "string",
-            "description" : "The last time the object was changed",
-            "format" : "date-time"
           }
         },
-        "description" : "A data type for call information about an incident received and collected by an agent."
+        "description" : "A data type for call information about an incident received and collected by an agent.",
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/PrologueType"
+        } ]
       },
       "EmergencyResourceType" : {
         "title" : "Emergency Resource Type",
-        "required" : [ "Agent", "EmergencyResourceTypeCommonRegistryText", "LastUpdateTimeStamp", "PrimaryUnitStatusRegistryText", "SecondaryUnitStatusRegistryText" ],
+        "required" : [ "Agent", "EmergencyResourceTypeCommonRegistryText", "PrimaryUnitStatusRegistryText", "SecondaryUnitStatusRegistryText" ],
         "type" : "object",
         "properties" : {
           "EmergencyResourceTypeCommonRegistryText" : {
@@ -1596,18 +671,15 @@
             "items" : {
               "$ref" : "#/components/schemas/DispositionType"
             }
-          },
-          "LastUpdateTimeStamp" : {
-            "type" : "string",
-            "description" : "The last time the object was changed",
-            "format" : "date-time"
           }
         },
-        "description" : "A data type for a resource (vehicle, person [foot patrol], organizational unit such as a squad or strike team, and other emergency responder configurations) that responds to an emergency incident."
+        "description" : "A data type for a resource (vehicle, person [foot patrol], organizational unit such as a squad or strike team, and other emergency responder configurations) that responds to an emergency incident.",
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/PrologueType"
+        } ]
       },
       "DispatchInformationType" : {
         "title" : "Dispatch Information Type",
-        "required" : [ "LastUpdateTimeStamp" ],
         "type" : "object",
         "properties" : {
           "Agent" : {
@@ -1619,18 +691,15 @@
             "items" : {
               "$ref" : "#/components/schemas/EmergencyResourceType"
             }
-          },
-          "LastUpdateTimeStamp" : {
-            "type" : "string",
-            "description" : "The last time the object was changed",
-            "format" : "date-time"
           }
         },
-        "description" : "A data type for dispatch information related to an incident."
+        "description" : "A data type for dispatch information related to an incident.",
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/PrologueType"
+        } ]
       },
       "AlarmsSensorsType" : {
         "title" : "AlarmsSensorsType",
-        "required" : [ "LastUpdateTimeStamp" ],
         "type" : "object",
         "properties" : {
           "CSAAAlarmInformation" : {
@@ -1643,18 +712,16 @@
           },
           "Agent" : {
             "$ref" : "#/components/schemas/AgentType"
-          },
-          "LastUpdateTimeStamp" : {
-            "type" : "string",
-            "description" : "The last time the object was changed",
-            "format" : "date-time"
           }
         },
-        "description" : "A data type for alarms and sensors information associated with an incident."
+        "description" : "A data type for alarms and sensors information associated with an incident.",
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/PrologueType"
+        } ]
       },
       "EmergencyIncidentDataObjectType" : {
-        "title" : "Emergency Incident Data Document Type",
-        "required" : [ "Agent", "IssuingElementIdentification", "LastUpdateTimeStamp", "ReasonForIssueRegistryText" ],
+        "title" : "Emergency Incident Data Object Type",
+        "required" : [ "Agent", "IssuingElementIdentification", "ReasonForIssueRegistryText" ],
         "type" : "object",
         "properties" : {
           "IncidentTrackingIdentification" : {
@@ -1740,14 +807,12 @@
             "items" : {
               "$ref" : "#/components/schemas/AlarmsSensorsType"
             }
-          },
-          "LastUpdateTimeStamp" : {
-            "type" : "string",
-            "description" : "The last time the object was changed",
-            "format" : "date-time"
           }
         },
-        "description" : "A data type for an information exchange containing emergency incident related data."
+        "description" : "A data type for an information exchange containing emergency incident related data.",
+        "allOf" : [ {
+          "$ref" : "#/components/schemas/PrologueType"
+        } ]
       }
     }
   }
