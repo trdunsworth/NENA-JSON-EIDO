@@ -555,10 +555,11 @@ components:
       description: A data type for additional information associated with an incident
         call, location, or person.
     LocationInformationType:
+      allOf: 
+        - $ref: '#/components/schemas/PrologueType'
       title: Location Information Type
       required:
       - LocationTypeDescriptionRegistryText
-      - LastUpdateTimeStamp
       type: object
       properties:
         LocationTypeDescriptionRegistryText:
@@ -609,10 +610,6 @@ components:
           description: Notes and comments associated with an incident.
           items:
             $ref: '#/components/schemas/NotesType'
-        LastUpdateTimeStamp:
-          type: string
-          description: The last time the object was changed
-          format: date-time
       description: A data type for a location associated with an incident.
     PersonInformationType:
       allOf: 
