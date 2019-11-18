@@ -577,7 +577,7 @@ components:
               description: A nearest cross street to an incident's location in PIDF-LO
                 format.
               items:
-                type: object
+                type: string
             CrossStreetByReferenceURL:
               type: array
               description: A URL where a nearest cross street to an incident's location
@@ -589,7 +589,7 @@ components:
               description: An additional street, that with the location forms an intersection,
                 in PIDF-LO format.
               items:
-                type: object
+                type: string
             IntersectingStreetByReferenceURL:
               type: array
               description: A URL where an additional street, that with the location forms
