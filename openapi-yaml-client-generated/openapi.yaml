@@ -60,6 +60,7 @@ components:
       - hangup
       - IMR
       - transferred
+      - conferenced
     CallTypeDescriptionRegistry:
       title: Call Type Description Registry
       type: string
@@ -178,6 +179,7 @@ components:
       - ALRROBA
       - ETC.
       - XTRACATE
+      - NONEMERGENCY
     LocationTypeDescriptionRegistry:
       title: Location Information Type
       type: string
@@ -253,9 +255,7 @@ components:
       type: string
       description: A code that identifies a reason for generating an EIDO.
       enum:
-      - callAnswered
-      - callOffered
-      - callReceived
+      - callStatusChanged
       - emergencyResourceStatusChanged
       - incidentClosed
       - incidentReopened
@@ -610,6 +610,11 @@ components:
             $ref: '#/components/schemas/VehicleRelationshipTypeRegistry'
         Vehicle:
           $ref: '#/components/schemas/VehicleType'
+        AdditionalData:
+          type: array
+          description: Additional information associated with a vehicle.
+          items:
+            $ref: '#/components/schemas/AdditionalDataType'
     IncidentInformationType:
       title: Incident Information Type
       description: A data type for general information about emergency incidents gathered
@@ -638,7 +643,9 @@ components:
             IdentificationID:
               type: string
             Agent:
-              $ref: '#/components/schemas/AgentType'
+              type: array
+              items:
+                $ref: '#/components/schemas/AgentType'
             Location:
               type: array
               description: A location associated with an incident.
@@ -744,7 +751,9 @@ components:
                 back a caller that initiated a call.
               format: uri
             Agent:
-              $ref: '#/components/schemas/AgentType'
+              type: array
+              items:
+                $ref: '#/components/schemas/AgentType'
             UpdatedCBN:
               $ref: '#/components/schemas/UpdatedCBNType'
             Location:
@@ -823,6 +832,11 @@ components:
                 agent and/or a responding emergency resource.
               items:
                 $ref: '#/components/schemas/DispositionType'
+            AdditionalData:
+              type: array
+              description: Additional information associated with an emergency resource
+              items:
+                $ref: '#/components/schemas/AdditionalDataType'
     DispatchInformationType:
       title: Dispatch Information Type
       description: A data type for dispatch information related to an incident.
