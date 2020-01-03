@@ -825,7 +825,7 @@ components:
               type: array
               description: Information about a vehicle associated with an incident.
               items:
-                $ref: '#/components/schemas/VehicleRelationshipTypeRegistry'
+                $ref: '#/components/schemas/VehicleInformationType'
             Disposition:
               type: array
               description: Incident disposition information entered or updated by a dispatch
