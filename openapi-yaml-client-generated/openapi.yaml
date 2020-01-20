@@ -816,6 +816,12 @@ components:
                 $ref: '#/components/schemas/AgentType'
             UnitLocation:
               $ref: '#/components/schemas/LocationInformationType'
+            UnitDestination:
+              $ref: '#/components/schemas/LocationInformationType'
+            ETA:
+              type: string
+              description: Timestamp of when the unit 
+              format: date-time
             Person:
               type: array
               description: Information about a person associated with an incident.
