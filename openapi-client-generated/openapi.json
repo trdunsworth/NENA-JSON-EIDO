@@ -7,7 +7,7 @@
       "name" : "Richard Maw",
       "email" : "rmaw@msn.com"
     },
-    "version" : "2.0"
+    "version" : "3.0"
   },
   "servers" : [ {
     "url" : "http://localhost/EIDO"
@@ -58,7 +58,7 @@
         "title" : "Call Status Registry",
         "type" : "string",
         "description" : "A code for current call status at the time the EIDO was created.",
-        "enum" : [ "active", "agentDisconnect", "callAnsweredByIMR", "callerDisconnect", "callInQueue", "callOffered", "callReceived", "error", "hangup", "IMR", "transferred" ]
+        "enum" : [ "active", "agentDisconnect", "callAnsweredByIMR", "callerDisconnect", "callInQueue", "callOffered", "callReceived", "error", "hangup", "IMR", "transferred", "conferenced" ]
       },
       "CallTypeDescriptionRegistry" : {
         "title" : "Call Type Description Registry",
@@ -89,7 +89,7 @@
         "title" : "Incident Type Common Registry",
         "type" : "string",
         "description" : "A standard code for the type of an incident.",
-        "enum" : [ "911H", "911OPN", "ASSIST", "ABDOM", "ABDUCTF", "ABDUCTNF", "ABUSE", "ACCIND", "ADMIN", "AIR", "ALIEN", "ALLERGIC", "ALRBA", "ALRBOX", "ALRBS", "ALRCO", "ALRCO2", "ALRDEFIB", "ALRF", "ALRGAS", "ALRHEAT", "ALRKPAD", "ALRMED", "ALRNGAS", "ALRPANA", "ALRPANS", "ALRPROPN", "ALRPULL", "ALRROBA", "ETC.", "XTRACATE" ]
+        "enum" : [ "911H", "911OPN", "ASSIST", "ABDOM", "ABDUCTF", "ABDUCTNF", "ABUSE", "ACCIND", "ADMIN", "AIR", "ALIEN", "ALLERGIC", "ALRBA", "ALRBOX", "ALRBS", "ALRCO", "ALRCO2", "ALRDEFIB", "ALRF", "ALRGAS", "ALRHEAT", "ALRKPAD", "ALRMED", "ALRNGAS", "ALRPANA", "ALRPANS", "ALRPROPN", "ALRPULL", "ALRROBA", "ETC.", "XTRACATE", "NONEMERGENCY" ]
       },
       "LocationTypeDescriptionRegistry" : {
         "title" : "Location Information Type",
@@ -113,7 +113,7 @@
         "title" : "Reason For Issue Registry",
         "type" : "string",
         "description" : "A code that identifies a reason for generating an EIDO.",
-        "enum" : [ "callAnswered", "callOffered", "callReceived", "emergencyResourceStatusChanged", "incidentClosed", "incidentReopened", "incidentUpdate", "linkIncidents", "mergedIncidents", "queryResponse", "splitIncident", "transferredCall", "unitStatusUpdate", "unLinkIncidents", "unMergeIncidents" ]
+        "enum" : [ "callStatusChanged", "emergencyResourceStatusChanged", "incidentClosed", "incidentReopened", "incidentUpdate", "linkIncidents", "mergedIncidents", "queryResponse", "splitIncident", "transferredCall", "unitStatusUpdate", "unLinkIncidents", "unMergeIncidents" ]
       },
       "ResourceAttributeRegistry" : {
         "type" : "string",
@@ -131,6 +131,16 @@
         "type" : "string",
         "description" : "A code for a type of relationship (victims, accident, suspect, etc.) between a vehicle and an incident.",
         "enum" : [ "accidentVehicle", "involvedVehicle", "suspectVehicle", "victimVehicle", "witnessVehicle" ]
+      },
+      "ReferenceType" : {
+        "title" : "Reference",
+        "required" : [ "$ref" ],
+        "properties" : {
+          "$ref" : {
+            "type" : "string",
+            "description" : "The $id value of the referenced data component"
+          }
+        }
       },
       "PrologueType" : {
         "title" : "Prologue",
@@ -209,7 +219,7 @@
               "$ref" : "#/components/schemas/PersonRoleRegistry"
             },
             "Agency" : {
-              "$ref" : "#/components/schemas/AgencyType"
+              "$ref" : "#/components/schemas/ReferenceType"
             }
           }
         } ]
@@ -238,7 +248,7 @@
               "$ref" : "#/components/schemas/IncidentMergeDirectionCodeSimpleType"
             },
             "Agent" : {
-              "$ref" : "#/components/schemas/AgentType"
+              "$ref" : "#/components/schemas/ReferenceType"
             }
           }
         } ]
@@ -271,7 +281,7 @@
               "$ref" : "#/components/schemas/LinkDirectionCodeSimpleType"
             },
             "Agent" : {
-              "$ref" : "#/components/schemas/AgentType"
+              "$ref" : "#/components/schemas/ReferenceType"
             }
           }
         } ]
@@ -290,7 +300,7 @@
               "description" : "A note about an incident created by an agent; in HTML5 format."
             },
             "Agent" : {
-              "$ref" : "#/components/schemas/AgentType"
+              "$ref" : "#/components/schemas/ReferenceType"
             }
           }
         } ]
@@ -313,9 +323,9 @@
             },
             "Notes" : {
               "type" : "array",
-              "description" : "Notes and comments associated with an incident.",
+              "description" : "Notes and comments associated with an incident. Linked elements type are NotesType",
               "items" : {
-                "$ref" : "#/components/schemas/NotesType"
+                "$ref" : "#/components/schemas/ReferenceType"
               }
             }
           }
@@ -380,16 +390,16 @@
             },
             "AdditionalData" : {
               "type" : "array",
-              "description" : "Additional information associated with an incident call, location, or person.",
+              "description" : "Additional information associated with an incident call, location, or person. Linked elements type are AdditionalDataType",
               "items" : {
-                "$ref" : "#/components/schemas/AdditionalDataType"
+                "$ref" : "#/components/schemas/ReferenceType"
               }
             },
             "Notes" : {
               "type" : "array",
-              "description" : "Notes and comments associated with an incident.",
+              "description" : "Notes and comments associated with an incident. Linked elements type are NotesType",
               "items" : {
-                "$ref" : "#/components/schemas/NotesType"
+                "$ref" : "#/components/schemas/ReferenceType"
               }
             }
           }
@@ -415,9 +425,9 @@
             },
             "AdditionalData" : {
               "type" : "array",
-              "description" : "Additional information associated with an incident call, location, or person.",
+              "description" : "Additional information associated with an incident call, location, or person. Linked elements type are AdditionalDataType",
               "items" : {
-                "$ref" : "#/components/schemas/AdditionalDataType"
+                "$ref" : "#/components/schemas/ReferenceType"
               }
             }
           }
@@ -462,6 +472,13 @@
           },
           "Vehicle" : {
             "$ref" : "#/components/schemas/VehicleType"
+          },
+          "AdditionalData" : {
+            "type" : "array",
+            "description" : "Additional information associated with a vehicle. Linked elements type is AdditionalDataType",
+            "items" : {
+              "$ref" : "#/components/schemas/ReferenceType"
+            }
           }
         }
       },
@@ -497,27 +514,31 @@
               "type" : "string"
             },
             "Agent" : {
-              "$ref" : "#/components/schemas/AgentType"
+              "type" : "array",
+              "description" : "Linked elements type is AgentType",
+              "items" : {
+                "$ref" : "#/components/schemas/ReferenceType"
+              }
             },
             "Location" : {
               "type" : "array",
-              "description" : "A location associated with an incident.",
+              "description" : "A location associated with an incident. Linked elements type is LocationInformationType",
               "items" : {
-                "$ref" : "#/components/schemas/LocationInformationType"
+                "$ref" : "#/components/schemas/ReferenceType"
               }
             },
             "Person" : {
               "type" : "array",
-              "description" : "Information about a person associated with an incident.",
+              "description" : "Information about a person associated with an incident. Linked elements type is PersonInformationType",
               "items" : {
-                "$ref" : "#/components/schemas/PersonInformationType"
+                "$ref" : "#/components/schemas/ReferenceType"
               }
             },
             "Vehicle" : {
               "type" : "array",
-              "description" : "Information about a vehicle associated with an incident.",
+              "description" : "Information about a vehicle associated with an incident. Linked elements type is VehicleInformationType",
               "items" : {
-                "$ref" : "#/components/schemas/VehicleInformationType"
+                "$ref" : "#/components/schemas/ReferenceType"
               }
             },
             "DocumentIdentification" : {
@@ -585,9 +606,9 @@
             },
             "AdditionalData" : {
               "type" : "array",
-              "description" : "Additional information associated with an incident call, location, or person.",
+              "description" : "Additional information associated with an incident call, location, or person. Linked elements type is AdditionalDataType",
               "items" : {
-                "$ref" : "#/components/schemas/AdditionalDataType"
+                "$ref" : "#/components/schemas/ReferenceType"
               }
             },
             "ActivityDateRange" : {
@@ -620,23 +641,27 @@
               "format" : "uri"
             },
             "Agent" : {
-              "$ref" : "#/components/schemas/AgentType"
+              "type" : "array",
+              "description" : "Linked elements type is AgentType",
+              "items" : {
+                "$ref" : "#/components/schemas/ReferenceType"
+              }
             },
             "UpdatedCBN" : {
               "$ref" : "#/components/schemas/UpdatedCBNType"
             },
             "Location" : {
               "type" : "array",
-              "description" : "A location associated with an incident.",
+              "description" : "A location associated with an incident. Linked elements type is LocationInformationType",
               "items" : {
-                "$ref" : "#/components/schemas/LocationInformationType"
+                "$ref" : "#/components/schemas/ReferenceType"
               }
             },
             "Person" : {
               "type" : "array",
-              "description" : "Information about a person associated with an incident.",
+              "description" : "Information about a person associated with an incident. Linked elements type is PersonInformationType",
               "items" : {
-                "$ref" : "#/components/schemas/PersonInformationType"
+                "$ref" : "#/components/schemas/ReferenceType"
               }
             }
           }
@@ -680,7 +705,7 @@
               }
             },
             "Notes" : {
-              "$ref" : "#/components/schemas/NotesType"
+              "$ref" : "#/components/schemas/ReferenceType"
             },
             "UnitStatusInternal" : {
               "type" : "array",
@@ -691,26 +716,34 @@
             },
             "Agent" : {
               "type" : "array",
-              "description" : "Information about agents (e.g., call takers, dispatchers, supervisors, responding emergency resources, etc.) and automated systems acting as agents that are involved in an incident.",
+              "description" : "Information about agents (e.g., call takers, dispatchers, supervisors, responding emergency resources, etc.) and automated systems acting as agents that are involved in an incident. Linked elements type is AgentType",
               "items" : {
-                "$ref" : "#/components/schemas/AgentType"
+                "$ref" : "#/components/schemas/ReferenceType"
               }
             },
             "UnitLocation" : {
-              "$ref" : "#/components/schemas/LocationInformationType"
+              "$ref" : "#/components/schemas/ReferenceType"
+            },
+            "UnitDestination" : {
+              "$ref" : "#/components/schemas/ReferenceType"
+            },
+            "ETA" : {
+              "type" : "string",
+              "description" : "Timestamp of when the unit is expected to reach it's destination",
+              "format" : "date-time"
             },
             "Person" : {
               "type" : "array",
-              "description" : "Information about a person associated with an incident.",
+              "description" : "Information about a person associated with an incident. Linked elements type is PersonInformationType",
               "items" : {
-                "$ref" : "#/components/schemas/PersonInformationType"
+                "$ref" : "#/components/schemas/ReferenceType"
               }
             },
             "Vehicle" : {
               "type" : "array",
-              "description" : "Information about a vehicle associated with an incident.",
+              "description" : "Information about a vehicle associated with an incident. Linked elements type is VehicleInformationType",
               "items" : {
-                "$ref" : "#/components/schemas/VehicleRelationshipTypeRegistry"
+                "$ref" : "#/components/schemas/ReferenceType"
               }
             },
             "Disposition" : {
@@ -718,6 +751,13 @@
               "description" : "Incident disposition information entered or updated by a dispatch agent and/or a responding emergency resource.",
               "items" : {
                 "$ref" : "#/components/schemas/DispositionType"
+              }
+            },
+            "AdditionalData" : {
+              "type" : "array",
+              "description" : "Additional information associated with an emergency resource. Linked elements type is AdditionalDataType",
+              "items" : {
+                "$ref" : "#/components/schemas/ReferenceType"
               }
             }
           }
@@ -731,17 +771,17 @@
         }, {
           "type" : "object",
           "properties" : {
-            "OrganiztionIdentification" : {
+            "OrganizationIdentification" : {
               "type" : "string"
             },
             "Agent" : {
-              "$ref" : "#/components/schemas/AgentType"
+              "$ref" : "#/components/schemas/ReferenceType"
             },
             "EmergencyResource" : {
               "type" : "array",
-              "description" : "A resource (vehicle, person [foot patrol], organizational unit such as a squad or strike team, and other emergency responder configurations) that responds to an emergency incident.",
+              "description" : "A resource (vehicle, person [foot patrol], organizational unit such as a squad or strike team, and other emergency responder configurations) that responds to an emergency incident. Linked elements type is EmergencyResourceType",
               "items" : {
-                "$ref" : "#/components/schemas/EmergencyResourceType"
+                "$ref" : "#/components/schemas/ReferenceType"
               }
             }
           }
@@ -765,7 +805,7 @@
               "format" : "uri"
             },
             "Agent" : {
-              "$ref" : "#/components/schemas/AgentType"
+              "$ref" : "#/components/schemas/ReferenceType"
             }
           }
         } ]
@@ -799,13 +839,13 @@
               }
             },
             "Agent" : {
-              "$ref" : "#/components/schemas/AgentType"
+              "$ref" : "#/components/schemas/ReferenceType"
             },
             "Agency" : {
               "type" : "array",
-              "description" : "An organization that owns or is otherwise related to an emergency incident.",
+              "description" : "An organization that owns or is otherwise related to an emergency incident. Linked elements type is AgencyType",
               "items" : {
-                "$ref" : "#/components/schemas/AgencyType"
+                "$ref" : "#/components/schemas/ReferenceType"
               }
             },
             "MergeInformation" : {
@@ -845,16 +885,16 @@
             },
             "Notes" : {
               "type" : "array",
-              "description" : "Notes and comments associated with an incident.",
+              "description" : "Notes and comments associated with an incident. Linked elements type is NotesType",
               "items" : {
-                "$ref" : "#/components/schemas/NotesType"
+                "$ref" : "#/components/schemas/ReferenceType"
               }
             },
             "EmergencyResource" : {
               "type" : "array",
-              "description" : "A resource (vehicle, person [foot patrol], organizational unit such as a squad or strike team, and other emergency responder configurations) that responds to an emergency incident.",
+              "description" : "A resource (vehicle, person [foot patrol], organizational unit such as a squad or strike team, and other emergency responder configurations) that responds to an emergency incident. Linked elements type is EmergencyResourceType",
               "items" : {
-                "$ref" : "#/components/schemas/EmergencyResourceType"
+                "$ref" : "#/components/schemas/ReferenceType"
               }
             },
             "AlarmsSensors" : {
@@ -862,6 +902,62 @@
               "description" : "Alarms and sensors information associated with an incident.",
               "items" : {
                 "$ref" : "#/components/schemas/AlarmsSensorsType"
+              }
+            },
+            "AgencyList" : {
+              "type" : "array",
+              "description" : "All agencies referenced in this document are listed here",
+              "items" : {
+                "$ref" : "#/components/schemas/AgencyType"
+              }
+            },
+            "AgentList" : {
+              "type" : "array",
+              "description" : "All agents referenced in this document are listed here",
+              "items" : {
+                "$ref" : "#/components/schemas/AgentType"
+              }
+            },
+            "NotesList" : {
+              "type" : "array",
+              "description" : "All notes referenced in this document are listed here",
+              "items" : {
+                "$ref" : "#/components/schemas/NotesType"
+              }
+            },
+            "AdditionalDataList" : {
+              "type" : "array",
+              "description" : "All additional data referenced in this document are listed here",
+              "items" : {
+                "$ref" : "#/components/schemas/AdditionalDataType"
+              }
+            },
+            "LocationInformationList" : {
+              "type" : "array",
+              "description" : "All location informations referenced in this document are listed here",
+              "items" : {
+                "$ref" : "#/components/schemas/LocationInformationType"
+              }
+            },
+            "PersonInformationList" : {
+              "type" : "array",
+              "description" : "All person informations referenced in this document are listed here",
+              "items" : {
+                "$ref" : "#/components/schemas/PersonInformationType"
+              }
+            },
+            "VehicleInformationList" : {
+              "type" : "array",
+              "description" : "All vehicle informations referenced in this document are listed here",
+              "items" : {
+                "$ref" : "#/components/schemas/VehicleInformationType"
+              }
+            },
+            "EmergencyResourceList" : {
+              "type" : "array",
+              "description" : "All emergency resources information referenced in this document are listed here",
+              "items" : {
+                "$ref" : "#/components/schemas/EmergencyResourceType"
               }
             }
           }
