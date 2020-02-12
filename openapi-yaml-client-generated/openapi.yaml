@@ -837,7 +837,7 @@ components:
               description: Linked elements type is LocationInformationType
             ETA:
               type: string
-              description: Timestamp of when the unit 
+              description: Timestamp of when the unit is expected to reach it's destination
               format: date-time
             Person:
               type: array
