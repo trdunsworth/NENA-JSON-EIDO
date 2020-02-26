@@ -61,6 +61,14 @@ components:
       - IMR
       - transferred
       - conferenced
+    ReportNumberTypeRegistry:
+      title: Report Number Type Registry
+      type: string
+      description: To allow the receiving agency to determine if the Report Number is a new report or a reopened report number.
+      enum:
+        - New
+        - Ongoing
+        - Reopened
     CallTypeDescriptionRegistry:
       title: Call Type Description Registry
       type: string
@@ -652,7 +660,7 @@ components:
                 type: string
             IncidentStatusCommonRegistryText:
               $ref: '#/components/schemas/IncidentStatusCommonRegistry'
-            IdentificationID:
+            InternalIncidentID:
               type: string
             Agent:
               type: array
@@ -676,6 +684,8 @@ components:
                 $ref: '#/components/schemas/ReferenceType'
             DocumentIdentification:
               type: string
+            ReportNumberType:
+              $ref: '#/components/schemas/ReportNumberTypeRegistry'
             IncidentPriorityInternalText:
               type: string
               description: An internal value used by a local agency for the priority of
