@@ -384,12 +384,6 @@ components:
           properties:
             AgencyRoleDescriptionRegistryText:
               $ref: '#/components/schemas/AgencyRoleDescriptionRegistry'
-            AgencyContactURL:
-              type: string
-              description: A URL to contact information for an agency.
-            AgencyContactInfo:
-              type: object
-              description: A type for an external adapter for a vCard.
             IncidentOwningAgencyIndicator:
               type: boolean
               description: True if an agency owns the emergency incident; false otherwise.
