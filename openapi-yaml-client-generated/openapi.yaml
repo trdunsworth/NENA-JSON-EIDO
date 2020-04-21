@@ -580,7 +580,7 @@ components:
             PersonIncidentRoleRegistryText:
               type: array
               items:
-                $ref: '#/components/schemas/PersonRoleRegistry'
+                type: string
             ncPersonComponent:
               $ref: '#/components/schemas/PersonType'
             AdditionalDataReference:
@@ -733,6 +733,9 @@ components:
             CallIdentifier:
               type: string
               description: An identifier of a call associated with an incident.
+            QueueIdentifier:
+              type: string
+              description: An identifier of a queue where the call is currently on.           
             CallTypeDescriptionRegistryText:
               $ref: '#/components/schemas/CallTypeDescriptionRegistry'
             AdditionalDataReference:
