@@ -33,314 +33,6 @@ paths:
                 $ref: '#/components/schemas/EmergencyIncidentDataObjectType'
 components:
   schemas:
-    AgencyRoleDescriptionRegistry:
-      title: Agency Role Description Registry
-      type: string
-      description: A code for a role of an agency involved in an incident.
-      enum:
-      - assisting
-      - callReceiving
-      - dispatched
-      - dispatching
-      - informational
-      - transferredTo
-    CallStatusRegistry:
-      title: Call Status Registry
-      type: string
-      description: A code for current call status at the time the EIDO was created.
-      enum:
-      - active
-      - agentDisconnect
-      - callAnsweredByIMR
-      - callerDisconnect
-      - callInQueue
-      - callOffered
-      - callReceived
-      - error
-      - hangup
-      - IMR
-      - transferred
-      - conferenced
-    ReportNumberTypeRegistry:
-      title: Report Number Type Registry
-      type: string
-      description: To allow the receiving agency to determine if the Report Number is a new report or a reopened report number.
-      enum:
-        - New
-        - Ongoing
-        - Reopened
-    CallTypeDescriptionRegistry:
-      title: Call Type Description Registry
-      type: string
-      description: A code for the call type description.
-      enum:
-      - adminCall
-      - emergencyCall
-      - fieldInitiated
-    DispositionCommonRegistry:
-      title: Disposition Code
-      type: integer
-      description: A code for an agency's disposition for an incident.
-      format: int32
-      enum:
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
-      - 6
-      - 7
-      - 8
-      - 9
-      - 10
-      - 11
-      - 12
-      - 13
-      - 14
-      - 15
-      - 16
-      - 17
-      - 18
-      - 19
-      - 20
-      - 21
-      - 22
-      - 23
-      - 24
-      - 25
-      - 26
-      - 27
-      - 28
-      - 29
-      - 30
-      - 31
-      - 32
-      - 33
-      - 34
-      - 35
-      - 36
-      - 37
-      - 38
-      - 39
-      - 40
-      - 41
-      - 42
-      - 43
-      - 44
-      - 45
-    EmergencyResourceTypeCommonRegistry:
-      title: Emergency Resource Type Common Registry
-      type: string
-      description: A standard code for an emergency resource type (fire truck, police
-        vehicle, etc.).
-      enum:
-      - fireTruck
-      - policeVehicle
-      - ambulance
-    IncidentStatusCommonRegistry:
-      title: Incident Status Common Registry
-      type: string
-      description: A standard code for a status of an incident.
-      enum:
-      - active
-      - cancelled
-      - closed
-      - fireUnderControl
-      - newLocation
-      - reOpened
-      - resourcesAssigned
-      - resourcesOnscene
-      - structureCleared
-    IncidentTypeCommonRegistry:
-      title: Incident Type Common Registry
-      type: string
-      description: A standard code for the type of an incident.
-      enum:
-      - 911H
-      - 911OPN
-      - ASSIST
-      - ABDOM
-      - ABDUCTF
-      - ABDUCTNF
-      - ABUSE
-      - ACCIND
-      - ADMIN
-      - AIR
-      - ALIEN
-      - ALLERGIC
-      - ALRBA
-      - ALRBOX
-      - ALRBS
-      - ALRCO
-      - ALRCO2
-      - ALRDEFIB
-      - ALRF
-      - ALRGAS
-      - ALRHEAT
-      - ALRKPAD
-      - ALRMED
-      - ALRNGAS
-      - ALRPANA
-      - ALRPANS
-      - ALRPROPN
-      - ALRPULL
-      - ALRROBA
-      - ETC.
-      - XTRACATE
-      - NONEMERGENCY
-    LocationTypeDescriptionRegistry:
-      title: Location Information Type
-      type: string
-      description: A code for a location type (Caller's, Initial, Current, Staging,
-        Investigation, Tower Location, Other, etc.).
-      enum:
-      - caller
-      - currentIncident
-      - initial
-      - investigation
-      - other
-      - staging
-      - towerLocation
-      - unitLocation
-    PersonRoleRegistry:
-      title: Person Role Registry
-      type: string
-      description: A code for a role of a person involved in an incident.
-      enum:
-      - agent
-      - callTaker
-      - dispatcher
-      - responder
-      - IMR
-      - driver
-      - passenger
-      - gisAnalyst
-      - gisSpecialist
-      - gisSupervisor
-      - ipNetworkAdministrator
-      - databaseAdministrator
-      - applicationAdministration
-      - securityAdministration
-      - management
-      - supervision
-      - trainer
-      - trainee
-      - assistantManager
-      - shiftSupervisor
-      - maintenanceSupervisor
-      - maintenanceTechnician
-      - temporaryTechnician
-      - esinetNetworkOperator
-      - esinetNetworkOperationsSupervisor
-      - 9-1-1AuthorityDirector
-      - 9-1-1AuthorityAgent
-      - itSystemsAnalyst
-      - recordsProductionSpecialist
-      - recordsProduction
-      - dataAnalyst
-      - qualityAssuranceEvaluation
-      - involvedPerson
-      - patient
-      - patientAcquaintance
-      - patientRelative
-      - personOfInterest
-      - reportingParty
-      - suspect
-      - victim
-      - victimAcquaintance
-      - victimRelative
-      - witness
-    PrimaryUnitStatusRegistry:
-      title: Primary Unit Status
-      type: string
-      description: A code for a primary, standard status of an emergency resource.
-      enum:
-      - available
-      - conditionallyAvailable
-      - notAvailable
-    ReasonForIssueRegistry:
-      title: Reason For Issue Registry
-      type: string
-      description: A code that identifies a reason for generating an EIDO.
-      enum:
-      - callStatusChanged
-      - emergencyResourceStatusChanged
-      - incidentClosed
-      - incidentReopened
-      - incidentUpdate
-      - linkIncidents
-      - mergedIncidents
-      - queryResponse
-      - splitIncident
-      - transferredCall
-      - unitStatusUpdate
-      - unLinkIncidents
-      - unMergeIncidents
-    ResourceAttributeRegistry:
-      type: string
-      description: A standard code for an emergency resource attribute (skill and
-        equipment) possessed by an emergency resource.
-      enum:
-      - skill
-      - equipment
-    SecondaryUnitStatusRegistry:
-      title: Secondary Unit Status Registry
-      type: string
-      description: A code for a standard secondary status that supplements the primary
-        status of an emergency resource.
-      enum:
-      - acknowledgedTransmission
-      - alternateLocation
-      - arrived
-      - assigned
-      - assignmentCancelled
-      - backtoAssignedArea
-      - backup
-      - break
-      - checkedIn
-      - cleared
-      - COP/POP
-      - court
-      - coveringAlternateArea
-      - delayed
-      - departed
-      - dispatched
-      - enRoute
-      - equipmentIssues
-      - event
-      - hospital
-      - inService
-      - investigation
-      - location
-      - meal
-      - meeting
-      - offDuty
-      - onDuty
-      - onScene
-      - outOfService
-      - patientContact
-      - post
-      - responderInitiatedEvent
-      - rollCall
-      - roster
-      - shiftPending
-      - staging
-      - station
-      - trafficStop
-      - training
-      - transporting
-      - unmanned
-    VehicleRelationshipTypeRegistry:
-      title: Vehicle Relationship Type Registry
-      type: string
-      description: A code for a type of relationship (victims, accident, suspect,
-        etc.) between a vehicle and an incident.
-      enum:
-      - accidentVehicle
-      - involvedVehicle
-      - suspectVehicle
-      - victimVehicle
-      - witnessVehicle
     ReferenceType:
       title: Reference
       required:
@@ -382,7 +74,8 @@ components:
             - OrganizationIdentification
           properties:
             AgencyRoleDescriptionRegistryText:
-              $ref: '#/components/schemas/AgencyRoleDescriptionRegistry'
+              type: string
+              description: Shall only contains values present in the Agency Role registry
             IncidentOwningAgencyIndicator:
               type: boolean
               description: True if an agency owns the emergency incident; false otherwise.
@@ -410,8 +103,9 @@ components:
               type: string
               description: A globally unique identifier of a workstation position that
                 generated an EIDO or contributed information contained in an EIDO.
-            PersonRoleRegistryText:
-              $ref: '#/components/schemas/PersonRoleRegistry'
+            AgentRoleRegistryText:
+              type: string
+              description: Shall only contains values present in the Agent Role registry
             AgencyReference:
               $ref: '#/components/schemas/ReferenceType'
               description: Linked element type is AgencyType
@@ -517,7 +211,8 @@ components:
             - LocationTypeDescriptionRegistryText
           properties:
             LocationTypeDescriptionRegistryText:
-              $ref: '#/components/schemas/LocationTypeDescriptionRegistry'
+              type: string
+              description: Shall only contains values present in the Location type registry
             LocationByValue:
               type: string
               description: A type for an external adapter for a Presence Information Data
@@ -579,6 +274,7 @@ components:
           properties:
             PersonIncidentRoleRegistryText:
               type: array
+              description: Shall only contains values present in the Person Role registry
               items:
                 type: string
             ncPersonComponent:
@@ -600,7 +296,8 @@ components:
             - DispositionCommonRegistryCode
           properties:
             DispositionCommonRegistryCode:
-              $ref: '#/components/schemas/DispositionCommonRegistry'
+              type: string
+              description: Shall only contains values present in the Common Disposition Code registry
             DispositionPrimaryIndicator:
               type: boolean
               description: True if the common disposition is the primary disposition for
@@ -618,9 +315,9 @@ components:
       properties:
         VehicleRelationshipType:
           type: array
-          description: Information about a vehicle associated with an incident.
+          description: Information about a vehicle associated with an incident. Shall only contains values present in the Vehicle Relationship Type registry
           items:
-            $ref: '#/components/schemas/VehicleRelationshipTypeRegistry'
+            type: string
         ncVehicleComponent:
           $ref: '#/components/schemas/VehicleType'
         AdditionalDataReference:
@@ -644,7 +341,8 @@ components:
             IncidentGeneralCategoryText:
               type: string
             IncidentTypeCommonRegistryText:
-              $ref: '#/components/schemas/IncidentTypeCommonRegistry'
+              type: string
+              description: Shall only contains values present in the Incident Type registry
             IncidentStatusInternalText:
               type: array
               description: An internal code used by a local agency for a status of an
@@ -652,7 +350,8 @@ components:
               items:
                 type: string
             IncidentStatusCommonRegistryText:
-              $ref: '#/components/schemas/IncidentStatusCommonRegistry'
+              type: string
+              description: Shall only contains values present in the Incident Status registry
             InternalIncidentID:
               type: string
             AgentReference:
@@ -678,7 +377,7 @@ components:
             DocumentIdentification:
               type: string
             ReportNumberType:
-              $ref: '#/components/schemas/ReportNumberTypeRegistry'
+              type: string
             IncidentPriorityInternalText:
               type: string
               description: An internal value used by a local agency for the priority of
@@ -737,7 +436,8 @@ components:
               type: string
               description: An identifier of a queue where the call is currently on.           
             CallTypeDescriptionRegistryText:
-              $ref: '#/components/schemas/CallTypeDescriptionRegistry'
+              type: string
+              description: Shall only contains values present in the Call Origination registry
             AdditionalDataReference:
               type: array
               description: Additional information associated with an incident call, location,
@@ -751,7 +451,8 @@ components:
               description: A date on which the call was answered by an agent.
               format: date-time
             CallStatusRegistryText:
-              $ref: '#/components/schemas/CallStatusRegistry'
+              type: string
+              description: Shall only contains values present in the Call Status registry
             CallMediaURL:
               type: array
               description: A location where media associated with the call (images, streaming
@@ -802,24 +503,28 @@ components:
             - SecondaryUnitStatusRegistryText
           properties:
             EmergencyResourceTypeCommonRegistryText:
-              $ref: '#/components/schemas/EmergencyResourceTypeCommonRegistry'
+              type: string
+              description: Shall only contains values present in the Emergency Resource Type registry
             EmergencyResourceTypeInternalText:
               type: string
               description: A local code for an emergency resource type.
             ResourceAttributeRegistryText:
               type: array
+              description: Shall only contains values present in the Resource Attribute registry
               items:
-                $ref: '#/components/schemas/ResourceAttributeRegistry'
+                type: string
             EnforcementUnitName:
               type: string
             EnforcementUnitIdentification:
               type: string
             PrimaryUnitStatusRegistryText:
-              $ref: '#/components/schemas/PrimaryUnitStatusRegistry'
+              type: string
+              description: Shall only contains values present in the Primary Unit Status registry
             SecondaryUnitStatusRegistryText:
               type: array
+              description: Shall only contains values present in the Secondary Unit Status registry
               items:
-                $ref: '#/components/schemas/SecondaryUnitStatusRegistry'
+                type: string
             NotesReference:
               $ref: '#/components/schemas/ReferenceType'
               description: Linked elements type is NotesType
@@ -921,7 +626,8 @@ components:
               type: string
               description: A globally unique emergency incident identifier.
             ReasonForIssueRegistryText:
-              $ref: '#/components/schemas/ReasonForIssueRegistry'
+              type: string
+              description: Shall only contains values present in the Reason For Issue registry
             IssuingElementIdentification:
               type: string
               description: An identifier of a functional element that created the EIDO
