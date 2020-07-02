@@ -628,7 +628,7 @@ components:
               description: Version of the EIDO structure.
               enum:
                - '1.0'
-            IncidentTrackingIdentification:
+            IncidentTrackingIdentifier:
               type: string
               description: A globally unique emergency incident identifier.
             ReasonForIssueRegistryText:
