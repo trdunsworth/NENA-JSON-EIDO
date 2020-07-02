@@ -82,6 +82,9 @@ components:
             OrganizationIdentification:
               type: string  
               description: Agency Identifier. This includes private and public providers. Agencies are globally unique. See NENA-STA-010 Agency Identifier section for the format and requirements
+            NotesReference:
+              $ref: '#/components/schemas/ReferenceType'
+              description: Reference to a Notes Data Component. Contains optional alphanumeric text further describing the agency.            
     AgentType:
       title: Agent Type
       description: A data type for information about agents (e.g., call takers, dispatchers,
@@ -109,6 +112,9 @@ components:
             AgencyReference:
               $ref: '#/components/schemas/ReferenceType'
               description: Linked element type is AgencyType
+            NotesReference:
+              $ref: '#/components/schemas/ReferenceType'
+              description: Reference to a Notes Data Component. Contains optional alphanumeric text further describing the agent.
     IncidentMergeDirectionCodeSimpleType:
       title: Incident Merge Direction Code Simple Type
       type: string
@@ -285,6 +291,14 @@ components:
                 or person. Linked elements type are AdditionalDataType
               items:
                 $ref: '#/components/schemas/ReferenceType'
+            LocationReference:
+              type: array
+              description: A location associated with an Person. Linked elements type is LocationInformationType
+              items:
+                $ref: '#/components/schemas/ReferenceType'
+            NotesReference:
+              $ref: '#/components/schemas/ReferenceType'
+              description: Reference to a Notes Data Component. Contains optional alphanumeric text further describing the person.
     DispositionType:
       title: Disposition Type
       description: A data type for incident disposition information entered or updated
@@ -306,25 +320,43 @@ components:
               type: string
             DispositionDescriptionText:
               type: string
+            NotesReference:
+              $ref: '#/components/schemas/ReferenceType'
+              description: Reference to a Notes Data Component. Contains optional alphanumeric text further describing the incident.
     VehicleInformationType:
       title: Vehicle Information Type
-      required:
-      - Vehicle
-      - VehicleRelationshipType
-      type: object
-      properties:
-        VehicleRelationshipType:
-          type: array
-          description: Information about a vehicle associated with an incident. Shall only contains values present in the Vehicle Relationship Type registry
-          items:
-            type: string
-        ncVehicleComponent:
-          $ref: '#/components/schemas/VehicleType'
-        AdditionalDataReference:
-          type: array
-          description: Additional information associated with a vehicle. Linked elements type is AdditionalDataType
-          items:
-            $ref: '#/components/schemas/ReferenceType'
+      allOf: 
+        - $ref: '#/components/schemas/PrologueType'
+        - type: object
+          required:
+          - Vehicle
+          - VehicleRelationshipType
+          - VehicleRelationshipTimeStamp
+          properties:
+            VehicleRelationshipType:
+              type: array
+              description: Information about a vehicle associated with an incident. Shall only contains values present in the Vehicle Relationship Type registry
+              items:
+                type: string
+            VehicleRelationshipTimeStamp:
+              type: string
+              description: The date and time that the relationship of the vehicle to the incident was established
+              format: date-time
+            ncVehicleComponent:
+              $ref: '#/components/schemas/VehicleType'
+            AdditionalDataReference:
+              type: array
+              description: Additional information associated with a vehicle. Linked elements type is AdditionalDataType
+              items:
+                $ref: '#/components/schemas/ReferenceType'
+            LocationReference:
+              type: array
+              description: A location associated with an vehicle. Linked elements type is LocationInformationType
+              items:
+                $ref: '#/components/schemas/ReferenceType'
+            NotesReference:
+              $ref: '#/components/schemas/ReferenceType'
+              description: Reference to a Notes Data Component. Contains optional alphanumeric text further describing the vehicle.
     IncidentInformationType:
       title: Incident Information Type
       description: A data type for general information about emergency incidents gathered
@@ -333,8 +365,6 @@ components:
       allOf: 
         - $ref: '#/components/schemas/PrologueType'
         - type: object
-          required:
-            - IncidentTypeCommonRegistryText
           properties:
             IncidentGeneralCategoryCode:
               type: string
@@ -395,6 +425,9 @@ components:
                 agent and/or a responding emergency resource.
               items:
                 $ref: '#/components/schemas/DispositionType'
+            NotesReference:
+              $ref: '#/components/schemas/ReferenceType'
+              description: Reference to a Notes Data Component. Contains optional alphanumeric text further describing the incident.
     UpdatedCBNType:
       title: Updated CBN Type
       description: A data type for additional telephone numbers and SIP equivalents
@@ -432,6 +465,9 @@ components:
             CallIdentifier:
               type: string
               description: An identifier of a call associated with an incident.
+            RelatedCallIdentifier:
+              type: string
+              description: CallIdentifier of calls that are related to this call. Eg: Callbacks
             QueueIdentifier:
               type: string
               description: An identifier of a queue where the call is currently on.           
