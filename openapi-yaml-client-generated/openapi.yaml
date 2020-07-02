@@ -8,8 +8,8 @@ info:
     email: rmaw@msn.com
   version: "3.0"
 servers:
-- url: http://localhost/EIDO
-- url: https://localhost/EIDO
+- url: http://localhost/
+- url: https://localhost/
 paths:
   /EIDO/{IncidentId}:
     get:
@@ -618,10 +618,16 @@ components:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
+            - EIDOVersion
             - Agent
             - IssuingElementIdentification
             - ReasonForIssueRegistryText
           properties:
+            EIDOVersion:
+              type: string 
+              description: Version of the EIDO structure.
+              enum:
+               - '1.0'
             IncidentTrackingIdentification:
               type: string
               description: A globally unique emergency incident identifier.
