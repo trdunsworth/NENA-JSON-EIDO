@@ -1,20 +1,21 @@
 openapi: 3.0.2
 info:
   title: Emergency Incident Data Object (EIDO)
-  description: A standard format and content definition for exchanging emergency incident
+  description: >-
+    A standard format and content definition for exchanging emergency incident
     related data.
   contact:
     name: Richard Maw
     email: rmaw@msn.com
-  version: "3.0"
+  version: '3.0'
 servers:
-- url: http://localhost/
-- url: https://localhost/
+  - url: 'http://localhost/'
+  - url: 'https://localhost/'
 paths:
-  /EIDO/{IncidentId}:
+  '/EIDO/{IncidentId}':
     get:
       tags:
-      - Dereference
+        - Dereference
       summary: Dereference an EIDO reference
       operationId: GetEIDO
       parameters:
@@ -25,7 +26,7 @@ paths:
           schema:
             type: string
       responses:
-        200:
+        '200':
           description: OK
           content:
             application/json:
@@ -36,11 +37,11 @@ components:
     ReferenceType:
       title: Reference
       required:
-        - "$ref"
+        - $ref
       properties:
-        "$ref":
+        $ref:
           type: string
-          description: The $id value of the referenced data component 
+          description: The $id value of the referenced data component
     PrologueType:
       title: Prologue
       required:
@@ -55,91 +56,98 @@ components:
           type: string
           description: Timestamp of the last time the data component was modified
           format: date-time
-        OwningAgencyIdentifier: 
+        OwningAgencyIdentifier:
           type: string
-          description: Owning Agency Identifier. This includes private and public providers. Agencies are globally unique.  
+          description:     Owning Agency Identifier. This includes private and public
+            providers. Agencies are globally unique.
         UpdatedByAgentIdentifier:
           type: string
-          description: A globally unique identifier of the agent or automaton that updated the data component last
+          description:     A globally unique identifier of the agent or automaton that updated
+            the data component last
       description: A common prologue on each data component
     AgencyType:
       title: Agency Type
-      description: A data type for an organization that owns or is otherwise related
-        to an emergency incident.
-      allOf: 
+      description: A data type for an organization that owns or is otherwise related to an
+        emergency incident.
+      allOf:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
             - AgencyRoleDescriptionRegistryText
             - OrganizationIdentification
           properties:
-            AgencyRoleDescriptionRegistryText:
+            agencyRoleDescriptionRegistryText:
               type: string
               description: Shall only contains values present in the Agency Role registry
-            IncidentOwningAgencyIndicator:
+            incidentOwningAgencyIndicator:
               type: boolean
               description: True if an agency owns the emergency incident; false otherwise.
-            OrganizationIdentification:
-              type: string  
-              description: Agency Identifier. This includes private and public providers. Agencies are globally unique. See NENA-STA-010 Agency Identifier section for the format and requirements
-            NotesReference:
+            organizationIdentification:
+              type: string
+              description: Agency Identifier. This includes private and public providers.
+                Agencies are globally unique. See NENA-STA-010 Agency Identifier
+                section for the format and requirements
+            notesReference:
               $ref: '#/components/schemas/ReferenceType'
-              description: Reference to a Notes Data Component. Contains optional alphanumeric text further describing the agency.            
+              description: Reference to a Notes Data Component. Contains optional
+                alphanumeric text further describing the agency.
     AgentType:
       title: Agent Type
-      description: A data type for information about agents (e.g., call takers, dispatchers,
-        supervisors, responding emergency resources, etc.) and automated systems acting
-        as agents that are involved in an incident.
-      allOf: 
+      description: A data type for information about agents (e.g., call takers,
+        dispatchers, supervisors, responding emergency resources, etc.) and
+        automated systems acting as agents that are involved in an incident.
+      allOf:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
             - AgentIdentification
             - PersonRoleRegistryText
           properties:
-            AgentIdentification:
+            agentIdentification:
               type: string
-              description: A globally unique identifier of an agent or automaton responsible
-                for generating an EIDO and/or that contributed information contained in
-                an EIDO.
-            AgentWorkstationPositionIdentification:
+              description: A globally unique identifier of an agent or automaton
+                responsible for generating an EIDO and/or that contributed
+                information contained in an EIDO.
+            agentWorkstationPositionIdentification:
               type: string
               description: A globally unique identifier of a workstation position that
-                generated an EIDO or contributed information contained in an EIDO.
-            AgentRoleRegistryText:
+                generated an EIDO or contributed information contained in an
+                EIDO.
+            agentRoleRegistryText:
               type: string
               description: Shall only contains values present in the Agent Role registry
-            AgencyReference:
+            agencyReference:
               $ref: '#/components/schemas/ReferenceType'
               description: Linked element type is AgencyType
-            NotesReference:
+            notesReference:
               $ref: '#/components/schemas/ReferenceType'
-              description: Reference to a Notes Data Component. Contains optional alphanumeric text further describing the agent.
+              description: Reference to a Notes Data Component. Contains optional
+                alphanumeric text further describing the agent.
     IncidentMergeDirectionCodeSimpleType:
       title: Incident Merge Direction Code Simple Type
       type: string
       description: A data type for a code list for a direction of a merge or split.
       example: REPLACING
       enum:
-      - REPLACING
-      - REPLACED
-      - SPLIT
+        - REPLACING
+        - REPLACED
+        - SPLIT
     MergeInformationType:
       title: MergeInformationType
       description: A data type for information about a merged or split incident.
-      allOf: 
+      allOf:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
             - IncidentMergeDirectionCode
             - IncidentTrackingIdentification
           properties:
-            IncidentTrackingIdentification:
+            incidentTrackingIdentification:
               type: string
               description: A globally unique emergency incident identifier.
-            IncidentMergeDirectionCode:
+            incidentMergeDirectionCode:
               $ref: '#/components/schemas/IncidentMergeDirectionCodeSimpleType'
-            AgentReference:
+            agentReference:
               $ref: '#/components/schemas/ReferenceType'
               description: Linked element type is AgentType
     LinkDirectionCodeSimpleType:
@@ -148,317 +156,341 @@ components:
       description: A data type for a code list for a kind of link performed.
       example: PARENT
       enum:
-      - PARENT
-      - CHILD
-      - RELATED
-      - UNLINK
+        - PARENT
+        - CHILD
+        - RELATED
+        - UNLINK
     LinkInformationType:
       title: Link Information Type
       description: A data type for information about a linked incident.
-      allOf: 
+      allOf:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
             - IncidentTrackingIdentification
             - LinkDirectionCode
           properties:
-            IncidentTrackingIdentification:
+            incidentTrackingIdentification:
               type: string
               description: A globally unique emergency incident identifier.
-            TransactionReasonText:
+            transactionReasonText:
               type: string
               description: Free format narrative description of the reason for the link
-            InvolvedAgencyReference:
+            involvedAgencyReference:
               $ref: '#/components/schemas/ReferenceType'
-              description: Agencies involved with the linked incident. Must be populated if the agency sending the EIDO is not involved with the linked incident. 
-            LinkDirectionCode:
+              description: Agencies involved with the linked incident. Must be populated if
+                the agency sending the EIDO is not involved with the linked
+                incident.
+            linkDirectionCode:
               $ref: '#/components/schemas/LinkDirectionCodeSimpleType'
-            AgentReference:
+            agentReference:
               $ref: '#/components/schemas/ReferenceType'
               description: Linked element type is AgentType
     NotesType:
       title: Notes Type
       description: A data type for notes and comments associated with an incident.
-      allOf: 
+      allOf:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
             - NotesActionComments
           properties:
-            NotesActionComments:
+            notesActionComments:
               type: string
               description: A note about an incident created by an agent; in HTML5 format.
-            AgentReference:
+            agentReference:
               $ref: '#/components/schemas/ReferenceType'
               description: Linked element type is AgentType
     AdditionalDataType:
       title: Additional Data Type
-      description: A data type for additional information associated with an incident
-        call, location, or person.
-      allOf: 
+      description: A data type for additional information associated with an incident call,
+        location, or person.
+      allOf:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           properties:
-            AdditionalDataURL:
+            additionalDataURL:
               type: string
               description: A URL that references additional data associated with a call.
-            AdditionalDataDetail:
+            additionalDataDetail:
               type: string
               description: Additional data associated with a call.
-            NotesReference:
+            notesReference:
               type: array
-              description: Notes and comments associated with an incident. Linked elements type are NotesType
+              description: Notes and comments associated with an incident. Linked elements
+                type are NotesType
               items:
                 $ref: '#/components/schemas/ReferenceType'
     LocationInformationType:
       title: Location Information Type
       description: A data type for a location associated with an incident.
-      allOf: 
+      allOf:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
             - LocationTypeDescriptionRegistryText
           properties:
-            LocationTypeDescriptionRegistryText:
+            locationTypeDescriptionRegistryText:
               type: string
               description: Shall only contains values present in the Location type registry
-            LocationByValue:
+            locationByValue:
               type: string
               description: A type for an external adapter for a Presence Information Data
                 Format-Location Object (PIDF-LO).
-            LocationDescriptionText:
+            locationDescriptionText:
               type: string
               description: Optional text further describing the location type.
-            LocationByReferenceURL:
+            locationByReferenceURL:
               type: string
-              description: A URL where a location associated with an incident can be dereferenced.
+              description: A URL where a location associated with an incident can be
+                dereferenced.
               format: uri
-            CrossStreetByValue:
+            crossStreetByValue:
               type: array
               description: A nearest cross street to an incident's location in PIDF-LO
                 format.
               items:
                 type: string
-            CrossStreetByReferenceURL:
+            crossStreetByReferenceURL:
               type: array
-              description: A URL where a nearest cross street to an incident's location
-                can be dereferenced.
+              description: A URL where a nearest cross street to an incident's location can
+                be dereferenced.
               items:
                 type: string
-            IntersectingStreetByValue:
+            intersectingStreetByValue:
               type: array
-              description: An additional street, that with the location forms an intersection,
-                in PIDF-LO format.
+              description: An additional street, that with the location forms an
+                intersection, in PIDF-LO format.
               items:
                 type: string
-            IntersectingStreetByReferenceURL:
+            intersectingStreetByReferenceURL:
               type: array
               description: A URL where an additional street, that with the location forms
                 an intersection, can be dereferenced.
               items:
                 type: string
-            CellTowerSectorID:
+            cellTowerSectorID:
               type: string
-              description: The nearest cell tower and sector/face of the tower receiving
-                a call associated with an incident.
-            AdditionalDataReference:
+              description: The nearest cell tower and sector/face of the tower receiving a
+                call associated with an incident.
+            additionalDataReference:
               type: array
-              description: Additional information associated with an incident call, location,
-                or person. Linked elements type are AdditionalDataType
+              description: Additional information associated with an incident call,
+                location, or person. Linked elements type are AdditionalDataType
               items:
                 $ref: '#/components/schemas/ReferenceType'
-            NotesReference:
+            notesReference:
               type: array
-              description: Notes and comments associated with an incident. Linked elements type are NotesType
+              description: Notes and comments associated with an incident. Linked elements
+                type are NotesType
               items:
                 $ref: '#/components/schemas/ReferenceType'
     PersonInformationType:
       title: Person Information Type
       description: A data type for information about a person associated with an incident.
-      allOf: 
+      allOf:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
             - PersonIncidentRoleRegistryText
           properties:
-            PersonIncidentRoleRegistryText:
+            ncPersonComponent:
+              $ref: '#/components/schemas/PersonType'
+            personIncidentRoleRegistryText:
               type: array
               description: Shall only contains values present in the Person Role registry
               items:
                 type: string
-            ncPersonComponent:
-              $ref: '#/components/schemas/PersonType'
-            AdditionalDataReference:
+            additionalDataReference:
               type: array
-              description: Additional information associated with an incident call, location,
-                or person. Linked elements type are AdditionalDataType
+              description: Additional information associated with an incident call,
+                location, or person. Linked elements type are AdditionalDataType
               items:
                 $ref: '#/components/schemas/ReferenceType'
-            LocationReference:
+            locationReference:
               type: array
-              description: A location associated with an Person. Linked elements type is LocationInformationType
+              description: A location associated with an Person. Linked elements type is
+                LocationInformationType
               items:
                 $ref: '#/components/schemas/ReferenceType'
-            NotesReference:
+            notesReference:
               $ref: '#/components/schemas/ReferenceType'
-              description: Reference to a Notes Data Component. Contains optional alphanumeric text further describing the person.
+              description: Reference to a Notes Data Component. Contains optional
+                alphanumeric text further describing the person.
     DispositionType:
       title: Disposition Type
-      description: A data type for incident disposition information entered or updated
-        by a dispatch agent and/or a responding emergency resource.
-      allOf: 
+      description: A data type for incident disposition information entered or updated by a
+        dispatch agent and/or a responding emergency resource.
+      allOf:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
             - DispositionCommonRegistryCode
           properties:
-            DispositionCommonRegistryCode:
+            dispositionCommonRegistryCode:
               type: string
-              description: Shall only contains values present in the Common Disposition Code registry
-            DispositionPrimaryIndicator:
+              description: Shall only contains values present in the Common Disposition
+                Code registry
+            dispositionPrimaryIndicator:
               type: boolean
-              description: True if the common disposition is the primary disposition for
-                an agency for an incident; false otherwise.
-            DispositionCategoryText:
+              description: True if the common disposition is the primary disposition for an
+                agency for an incident; false otherwise.
+            dispositionCategoryText:
               type: string
-            DispositionDescriptionText:
+            dispositionDescriptionText:
               type: string
-            NotesReference:
+            notesReference:
               $ref: '#/components/schemas/ReferenceType'
-              description: Reference to a Notes Data Component. Contains optional alphanumeric text further describing the incident.
+              description: Reference to a Notes Data Component. Contains optional
+                alphanumeric text further describing the incident.
     VehicleInformationType:
       title: Vehicle Information Type
-      allOf: 
+      allOf:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
-          - Vehicle
-          - VehicleRelationshipType
-          - VehicleRelationshipTimeStamp
+            - Vehicle
+            - VehicleRelationshipType
+            - VehicleRelationshipTimeStamp
           properties:
-            VehicleRelationshipType:
-              type: array
-              description: Information about a vehicle associated with an incident. Shall only contains values present in the Vehicle Relationship Type registry
-              items:
-                type: string
-            VehicleRelationshipTimeStamp:
-              type: string
-              description: The date and time that the relationship of the vehicle to the incident was established
-              format: date-time
             ncVehicleComponent:
               $ref: '#/components/schemas/VehicleType'
-            AdditionalDataReference:
+            vehicleRelationshipType:
               type: array
-              description: Additional information associated with a vehicle. Linked elements type is AdditionalDataType
+              description: Information about a vehicle associated with an incident. Shall
+                only contains values present in the Vehicle Relationship Type
+                registry
+              items:
+                type: string
+            vehicleRelationshipTimeStamp:
+              type: string
+              description: The date and time that the relationship of the vehicle to the
+                incident was established
+              format: date-time
+            additionalDataReference:
+              type: array
+              description: Additional information associated with a vehicle. Linked
+                elements type is AdditionalDataType
               items:
                 $ref: '#/components/schemas/ReferenceType'
-            LocationReference:
+            locationReference:
               type: array
-              description: A location associated with an vehicle. Linked elements type is LocationInformationType
+              description: A location associated with an vehicle. Linked elements type is
+                LocationInformationType
               items:
                 $ref: '#/components/schemas/ReferenceType'
-            NotesReference:
+            notesReference:
               $ref: '#/components/schemas/ReferenceType'
-              description: Reference to a Notes Data Component. Contains optional alphanumeric text further describing the vehicle.
+              description: Reference to a Notes Data Component. Contains optional
+                alphanumeric text further describing the vehicle.
     IncidentInformationType:
       title: Incident Information Type
       description: A data type for general information about emergency incidents gathered
-        by emergency agents, responding emergency resources, from reporting parties
-        (callers), and devices reporting emergency incidents.
-      allOf: 
+        by emergency agents, responding emergency resources, from reporting
+        parties (callers), and devices reporting emergency incidents.
+      allOf:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           properties:
             incidentTypeInternalCode:
               type: string
-              description: An alphanumeric code indicating the category of the incident. This is the internal code used by the local agencies involved in the incident.
+              description: An alphanumeric code indicating the category of the incident.
+                This is the internal code used by the local agencies involved in
+                the incident.
             incidentTypeInternalText:
               type: string
-              description: Textual description indicating the category of the incident. This is the internal text used by the local agencies involved in the incident.
-            IncidentTypeCommonRegistryText:
+              description: Textual description indicating the category of the incident.
+                This is the internal text used by the local agencies involved in
+                the incident.
+            incidentTypeCommonRegistryText:
               type: string
               description: Shall only contains values present in the Incident Type registry
-            IncidentStatusInternalText:
+            incidentStatusInternalText:
               type: array
               description: An internal code used by a local agency for a status of an
                 incident.
               items:
                 type: string
-            IncidentStatusCommonRegistryText:
+            incidentStatusCommonRegistryText:
               type: string
-              description: Shall only contains values present in the Incident Status registry
-            InternalIncidentID:
+              description: Shall only contains values present in the Incident Status
+                registry
+            internalIncidentID:
               type: string
-            AgentReference:
+            agentReference:
               type: array
               description: Linked elements type is AgentType
               items:
                 $ref: '#/components/schemas/ReferenceType'
-            LocationReference:
+            locationReference:
               type: array
-              description: A location associated with an incident. Linked elements type is LocationInformationType
+              description: A location associated with an incident. Linked elements type is
+                LocationInformationType
               items:
                 $ref: '#/components/schemas/ReferenceType'
-            PersonReference:
+            personReference:
               type: array
-              description: Information about a person associated with an incident. Linked elements type is PersonInformationType
+              description: Information about a person associated with an incident. Linked
+                elements type is PersonInformationType
               items:
                 $ref: '#/components/schemas/ReferenceType'
-            VehicleReference:
+            vehicleReference:
               type: array
-              description: Information about a vehicle associated with an incident. Linked elements type is VehicleInformationType
+              description: Information about a vehicle associated with an incident. Linked
+                elements type is VehicleInformationType
               items:
                 $ref: '#/components/schemas/ReferenceType'
-            DocumentIdentification:
+            documentIdentification:
               type: string
-            ReportNumberType:
+            reportNumberType:
               type: string
-            IncidentPriorityInternalText:
+            incidentPriorityInternalText:
               type: string
-              description: An internal value used by a local agency for the priority of
-                an incident.
-            IncidentCommonPriorityNumber:
+              description: An internal value used by a local agency for the priority of an
+                incident.
+            incidentCommonPriorityNumber:
               type: integer
               description: A globally unique priority of an incident.
               format: int32
-            BeatOrDispatchGroupText:
+            beatOrDispatchGroupText:
               type: string
               description: A beat or dispatch group that contains an incident.
-            DispositionComponent:
+            dispositionComponent:
               type: array
-              description: Incident disposition information entered or updated by a dispatch
-                agent and/or a responding emergency resource.
+              description: Incident disposition information entered or updated by a
+                dispatch agent and/or a responding emergency resource.
               items:
                 $ref: '#/components/schemas/DispositionType'
-            NotesReference:
+            notesReference:
               $ref: '#/components/schemas/ReferenceType'
-              description: Reference to a Notes Data Component. Contains optional alphanumeric text further describing the incident.
+              description: Reference to a Notes Data Component. Contains optional
+                alphanumeric text further describing the incident.
     UpdatedCBNType:
       title: Updated CBN Type
-      description: A data type for additional telephone numbers and SIP equivalents
-        that can be used to contact the individual that made a call associated with
+      description: A data type for additional telephone numbers and SIP equivalents that
+        can be used to contact the individual that made a call associated with
         an incident.
-      allOf: 
+      allOf:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
             - UpdatedCBNIdentifierURI
           properties:
-            UpdatedCBNIdentifierURI:
+            updatedCBNIdentifierURI:
               type: string
-              description: A telephone number or SIP equivalent of a reporting party described
-                in the parent call.
+              description: A telephone number or SIP equivalent of a reporting party
+                described in the parent call.
               format: uri
-            UpdatedCBNCallerDescription:
+            updatedCBNCallerDescription:
               type: string
               description: Additional descriptive text about an updated caller call back
-                number such as the days and hours to use it and the type of number (e.g.,
-                work, home, friend, etc.).
+                number such as the days and hours to use it and the type of
+                number (e.g., work, home, friend, etc.).
     CallInformationType:
       title: CallInformationType
       description: A data type for call information about an incident received and
         collected by an agent.
-      allOf: 
+      allOf:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
@@ -467,75 +499,80 @@ components:
             - CallTypeDescriptionRegistryText
             - ActivityDateRange
           properties:
-            CallIdentifier:
+            callIdentifier:
               type: string
               description: An identifier of a call associated with an incident.
-            RelatedCallIdentifier:
+            relatedCallIdentifier:
               type: string
-              description: CallIdentifier of calls that are related to this call. Eg Callbacks
-            QueueIdentifier:
+              description: CallIdentifier of calls that are related to this call. Eg
+                Callbacks
+            queueIdentifier:
               type: string
-              description: An identifier of a queue where the call is currently on.           
-            CallTypeDescriptionRegistryText:
+              description: An identifier of a queue where the call is currently on.
+            callTypeDescriptionRegistryText:
               type: string
-              description: Shall only contains values present in the Call Origination registry
-            AdditionalDataReference:
+              description: Shall only contains values present in the Call Origination
+                registry
+            additionalDataReference:
               type: array
-              description: Additional information associated with an incident call, location,
-                or person. Linked elements type is AdditionalDataType
+              description: Additional information associated with an incident call,
+                location, or person. Linked elements type is AdditionalDataType
               items:
                 $ref: '#/components/schemas/ReferenceType'
-            ActivityDateRange:
+            activityDateRange:
               $ref: '#/components/schemas/DateRangeType'
-            AnswerDate:
+            answerDate:
               type: string
               description: A date on which the call was answered by an agent.
               format: date-time
-            CallStatusRegistryText:
+            callStatusRegistryText:
               type: string
               description: Shall only contains values present in the Call Status registry
-            CallMediaURL:
+            callMediaURL:
               type: array
-              description: A location where media associated with the call (images, streaming
-                video, streaming audio, etc.) is available.
+              description: A location where media associated with the call (images,
+                streaming video, streaming audio, etc.) is available.
               items:
                 type: string
                 format: uri
-            DeviceCallBackInformationURL:
+            deviceCallBackInformationURL:
               type: string
               description: A URL containing limited duration information for a telephone
-                number or SIP equivalent for calling back a device that initiated a call.
+                number or SIP equivalent for calling back a device that
+                initiated a call.
               format: uri
-            CallerCallBackInformationURL:
+            callerCallBackInformationURL:
               type: string
-              description: A URL for a telephone number or SIP equivalent for calling
-                back a caller that initiated a call.
+              description: A URL for a telephone number or SIP equivalent for calling back
+                a caller that initiated a call.
               format: uri
-            AgentReference:
+            agentReference:
               type: array
               description: Linked elements type is AgentType
               items:
                 $ref: '#/components/schemas/ReferenceType'
-            UpdatedCBN:
+            updatedCBN:
               type: array
               items:
                 $ref: '#/components/schemas/UpdatedCBNType'
-            LocationReference:
+            locationReference:
               type: array
-              description: A location associated with an incident. Linked elements type is LocationInformationType
+              description: A location associated with an incident. Linked elements type is
+                LocationInformationType
               items:
                 $ref: '#/components/schemas/ReferenceType'
-            PersonReference:
+            personReference:
               type: array
-              description: Information about a person associated with an incident. Linked elements type is PersonInformationType 
+              description: Information about a person associated with an incident. Linked
+                elements type is PersonInformationType
               items:
                 $ref: '#/components/schemas/ReferenceType'
     EmergencyResourceType:
       title: Emergency Resource Type
-      description: A data type for a resource (vehicle, person [foot patrol], organizational
-        unit such as a squad or strike team, and other emergency responder configurations)
-        that responds to an emergency incident.
-      allOf: 
+      description: A data type for a resource (vehicle, person [foot patrol],
+        organizational unit such as a squad or strike team, and other emergency
+        responder configurations) that responds to an emergency incident.
+      allOf:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
@@ -545,119 +582,128 @@ components:
             - PrimaryUnitStatusRegistryText
             - SecondaryUnitStatusRegistryText
           properties:
-            EmergencyResourceTypeCommonRegistryText:
-              type: string
-              description: Shall only contains values present in the Emergency Resource Type registry
-            EmergencyResourceTypeInternalText:
-              type: string
-              description: A local code for an emergency resource type.
-            ResourceAttributeRegistryText:
-              type: array
-              description: Shall only contains values present in the Resource Attribute registry
-              items:
-                type: string
-            EnforcementUnitName:
-              type: string
-            EnforcementUnitIdentification:
-              type: string
-            PrimaryUnitStatusRegistryText:
-              type: string
-              description: Shall only contains values present in the Primary Unit Status registry
-            SecondaryUnitStatusRegistryText:
-              type: array
-              description: Shall only contains values present in the Secondary Unit Status registry
-              items:
-                type: string
-            NotesReference:
-              $ref: '#/components/schemas/ReferenceType'
-              description: Linked elements type is NotesType
-            UnitStatusInternal:
-              type: array
-              description: A local code for a status of an emergency resource.
-              items:
-                type: string
-            AgentReference:
-              type: array
-              description: Information about agents (e.g., call takers, dispatchers, supervisors,
-                responding emergency resources, etc.) and automated systems acting as
-                agents that are involved in an incident. Linked elements type is AgentType
-              items:
-                $ref: '#/components/schemas/ReferenceType'
-            UnitLocationReference:
-              $ref: '#/components/schemas/ReferenceType'
-              description: Linked elements type is LocationInformationType
-            UnitDestinationReference:
-              $ref: '#/components/schemas/ReferenceType'
-              description: Linked elements type is LocationInformationType
             ETA:
               type: string
               description: Timestamp of when the unit is expected to reach it's destination
               format: date-time
-            PersonReference:
+            emergencyResourceTypeCommonRegistryText:
+              type: string
+              description: Shall only contains values present in the Emergency Resource
+                Type registry
+            emergencyResourceTypeInternalText:
+              type: string
+              description: A local code for an emergency resource type.
+            resourceAttributeRegistryText:
               type: array
-              description: Information about a person associated with an incident. Linked elements type is PersonInformationType
+              description: Shall only contains values present in the Resource Attribute
+                registry
+              items:
+                type: string
+            enforcementUnitName:
+              type: string
+            enforcementUnitIdentification:
+              type: string
+            primaryUnitStatusRegistryText:
+              type: string
+              description: Shall only contains values present in the Primary Unit Status
+                registry
+            secondaryUnitStatusRegistryText:
+              type: array
+              description: Shall only contains values present in the Secondary Unit Status
+                registry
+              items:
+                type: string
+            notesReference:
+              $ref: '#/components/schemas/ReferenceType'
+              description: Linked elements type is NotesType
+            unitStatusInternal:
+              type: array
+              description: A local code for a status of an emergency resource.
+              items:
+                type: string
+            agentReference:
+              type: array
+              description: Information about agents (e.g., call takers, dispatchers,
+                supervisors, responding emergency resources, etc.) and automated
+                systems acting as agents that are involved in an incident.
+                Linked elements type is AgentType
               items:
                 $ref: '#/components/schemas/ReferenceType'
-            VehicleReference:
+            unitLocationReference:
+              $ref: '#/components/schemas/ReferenceType'
+              description: Linked elements type is LocationInformationType
+            unitDestinationReference:
+              $ref: '#/components/schemas/ReferenceType'
+              description: Linked elements type is LocationInformationType
+            personReference:
               type: array
-              description: Information about a vehicle associated with an incident. Linked elements type is VehicleInformationType
+              description: Information about a person associated with an incident. Linked
+                elements type is PersonInformationType
               items:
                 $ref: '#/components/schemas/ReferenceType'
-            DispositionComponent:
+            vehicleReference:
               type: array
-              description: Incident disposition information entered or updated by a dispatch
-                agent and/or a responding emergency resource.
+              description: Information about a vehicle associated with an incident. Linked
+                elements type is VehicleInformationType
+              items:
+                $ref: '#/components/schemas/ReferenceType'
+            dispositionComponent:
+              type: array
+              description: Incident disposition information entered or updated by a
+                dispatch agent and/or a responding emergency resource.
               items:
                 $ref: '#/components/schemas/DispositionType'
-            AdditionalDataReference:
+            additionalDataReference:
               type: array
-              description: Additional information associated with an emergency resource. Linked elements type is AdditionalDataType
+              description: Additional information associated with an emergency resource.
+                Linked elements type is AdditionalDataType
               items:
                 $ref: '#/components/schemas/ReferenceType'
     DispatchInformationType:
       title: Dispatch Information Type
       description: A data type for dispatch information related to an incident.
-      allOf: 
+      allOf:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           properties:
-            OrganizationIdentification:
+            organizationIdentification:
               type: string
-            AgentReference:
+            agentReference:
               $ref: '#/components/schemas/ReferenceType'
               description: Linked elements type is AgentType
-            EmergencyResourceReference:
+            emergencyResourceReference:
               type: array
               description: A resource (vehicle, person [foot patrol], organizational unit
-                such as a squad or strike team, and other emergency responder configurations)
-                that responds to an emergency incident. Linked elements type is EmergencyResourceType
+                such as a squad or strike team, and other emergency responder
+                configurations) that responds to an emergency incident. Linked
+                elements type is EmergencyResourceType
               items:
                 $ref: '#/components/schemas/ReferenceType'
     AlarmsSensorsType:
       title: AlarmsSensorsType
-      description: A data type for alarms and sensors information associated with
-        an incident.
-      allOf: 
+      description: A data type for alarms and sensors information associated with an
+        incident.
+      allOf:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           properties:
             CSAAAlarmInformation:
               type: string
-              description: Central Station Alarm Association (CSAA) data associated with
-                an incident.
-            AlarmURL:
+              description: Central Station Alarm Association (CSAA) data associated with an
+                incident.
+            alarmURL:
               type: string
               description: A URL that references Central Station Alarm Association (CSAA)
                 data associated with an incident.
               format: uri
-            AgentReference:
+            agentReference:
               $ref: '#/components/schemas/ReferenceType'
               description: Linked elements type is AgentType
     EmergencyIncidentDataObjectType:
       title: Emergency Incident Data Object Type
       description: A data type for an information exchange containing emergency incident
         related data.
-      allOf: 
+      allOf:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
@@ -667,108 +713,112 @@ components:
             - ReasonForIssueRegistryText
           properties:
             EIDOVersion:
-              type: string 
+              type: string
               description: Version of the EIDO structure.
               enum:
-               - '1.0'
-            IncidentTrackingIdentifier:
+                - '1.0'
+            incidentTrackingIdentifier:
               type: string
               description: A globally unique emergency incident identifier.
-            ReasonForIssueRegistryText:
+            reasonForIssueRegistryText:
               type: string
-              description: Shall only contains values present in the Reason For Issue registry
-            IssuingElementIdentification:
+              description: Shall only contains values present in the Reason For Issue
+                registry
+            issuingElementIdentification:
               type: string
               description: An identifier of a functional element that created the EIDO
                 instance.
-            IncidentCollaborationURL:
+            incidentCollaborationURL:
               type: array
-              description: A URL reference to multi-media collaboration information associated
-                with an incident.
+              description: A URL reference to multi-media collaboration information
+                associated with an incident.
               items:
                 type: string
                 format: uri
-            AgentReference:
+            agentReference:
               $ref: '#/components/schemas/ReferenceType'
               description: Linked elements type is AgentType
-            AgencyReference:
+            agencyReference:
               type: array
-              description: An organization that owns or is otherwise related to an emergency
-                incident. Linked elements type is AgencyType
+              description: An organization that owns or is otherwise related to an
+                emergency incident. Linked elements type is AgencyType
               items:
                 $ref: '#/components/schemas/ReferenceType'
-            MergeComponent:
+            mergeComponent:
               type: array
               description: Information about a merged or split incident.
               items:
                 $ref: '#/components/schemas/MergeInformationType'
-            LinkComponent:
+            linkComponent:
               type: array
               description: Information about a linked incident.
               items:
                 $ref: '#/components/schemas/LinkInformationType'
-            IncidentComponent:
+            incidentComponent:
               $ref: '#/components/schemas/IncidentInformationType'
-              description: General information about the emergency incident gathered by emergency
-                agents, responding emergency resources, from reporting parties (callers),
-                and devices reporting emergency incidents.
-            CallComponent:
+              description: General information about the emergency incident gathered by
+                emergency agents, responding emergency resources, from reporting
+                parties (callers), and devices reporting emergency incidents.
+            callComponent:
               type: array
-              description: Call information about an incident received and collected by
-                an agent.
+              description: Call information about an incident received and collected by an
+                agent.
               items:
                 $ref: '#/components/schemas/CallInformationType'
-            DispatchComponent:
-              type: array                                     
+            dispatchComponent:
+              type: array
               description: Dispatch information related to an incident.
               items:
                 $ref: '#/components/schemas/DispatchInformationType'
-            AlarmsSensorsComponent:
+            alarmsSensorsComponent:
               type: array
               description: Alarms and sensors information associated with an incident.
               items:
                 $ref: '#/components/schemas/AlarmsSensorsType'
-#Lists declared here
-            AgencyComponent:
+            agencyComponent:
               type: array
               description: All agencies referenced in this document are listed here
               items:
                 $ref: '#/components/schemas/AgencyType'
-            AgentComponent:
+            agentComponent:
               type: array
               description: All agents referenced in this document are listed here
               items:
                 $ref: '#/components/schemas/AgentType'
-            NotesComponent:
+            notesComponent:
               type: array
               description: All notes referenced in this document are listed here
               items:
                 $ref: '#/components/schemas/NotesType'
-            AdditionalDataComponent:
+            additionalDataComponent:
               type: array
               description: All additional data referenced in this document are listed here
               items:
                 $ref: '#/components/schemas/AdditionalDataType'
-            LocationInformationComponent:
+            locationInformationComponent:
               type: array
-              description: All location informations referenced in this document are listed here
+              description: All location informations referenced in this document are listed
+                here
               items:
-                $ref: '#/components/schemas/LocationInformationType'   
-            PersonInformationComponent:
+                $ref: '#/components/schemas/LocationInformationType'
+            personInformationComponent:
               type: array
-              description: All person informations referenced in this document are listed here
+              description: All person informations referenced in this document are listed
+                here
               items:
-                $ref: '#/components/schemas/PersonInformationType'   
-            VehicleInformationComponent:
+                $ref: '#/components/schemas/PersonInformationType'
+            vehicleInformationComponent:
               type: array
-              description: All vehicle informations referenced in this document are listed here
+              description: All vehicle informations referenced in this document are listed
+                here
               items:
-                $ref: '#/components/schemas/VehicleInformationType'   
-            EmergencyResourceComponent:
+                $ref: '#/components/schemas/VehicleInformationType'
+            emergencyResourceComponent:
               type: array
-              description: All emergency resources information referenced in this document are listed here
+              description: All emergency resources information referenced in this document
+                are listed here
               items:
-                $ref: '#/components/schemas/EmergencyResourceType'   
+                $ref: '#/components/schemas/EmergencyResourceType'
     DateType:
       title: DateType
       type: object
