@@ -2532,11 +2532,6 @@ components:
           description: A country being discussed in a document.
           items:
             $ref: '#/components/schemas/CountryType'
-        DocumentCreationDate:
-          type: array
-          description: A date a document was created.
-          items:
-            $ref: '#/components/schemas/DateType'
         DocumentDescriptionText:
           type: array
           description: A description of the content of a document.
