@@ -168,6 +168,9 @@ components:
             TransactionReasonText:
               type: string
               description: Free format narrative description of the reason for the link
+            InvolvedAgencyReference:
+              $ref: '#/components/schemas/ReferenceType'
+              description: Agencies involved with the linked incident. Must be populated if the agency sending the EIDO is not involved with the linked incident. 
             LinkDirectionCode:
               $ref: '#/components/schemas/LinkDirectionCodeSimpleType'
             AgentReference:
@@ -366,10 +369,12 @@ components:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           properties:
-            IncidentGeneralCategoryCode:
+            incidentTypeInternalCode:
               type: string
-            IncidentGeneralCategoryText:
+              description: An alphanumeric code indicating the category of the incident. This is the internal code used by the local agencies involved in the incident.
+            incidentTypeInternalText:
               type: string
+              description: Textual description indicating the category of the incident. This is the internal text used by the local agencies involved in the incident.
             IncidentTypeCommonRegistryText:
               type: string
               description: Shall only contains values present in the Incident Type registry
@@ -467,7 +472,7 @@ components:
               description: An identifier of a call associated with an incident.
             RelatedCallIdentifier:
               type: string
-              description: CallIdentifier of calls that are related to this call. Eg: Callbacks
+              description: CallIdentifier of calls that are related to this call. Eg Callbacks
             QueueIdentifier:
               type: string
               description: An identifier of a queue where the call is currently on.           
@@ -512,7 +517,9 @@ components:
               items:
                 $ref: '#/components/schemas/ReferenceType'
             UpdatedCBN:
-              $ref: '#/components/schemas/UpdatedCBNType'
+              type: array
+              items:
+                $ref: '#/components/schemas/UpdatedCBNType'
             LocationReference:
               type: array
               description: A location associated with an incident. Linked elements type is LocationInformationType
@@ -701,12 +708,10 @@ components:
               items:
                 $ref: '#/components/schemas/LinkInformationType'
             IncidentComponent:
-              type: array
-              description: General information about emergency incidents gathered by emergency
+              $ref: '#/components/schemas/IncidentInformationType'
+              description: General information about the emergency incident gathered by emergency
                 agents, responding emergency resources, from reporting parties (callers),
                 and devices reporting emergency incidents.
-              items:
-                $ref: '#/components/schemas/IncidentInformationType'
             CallComponent:
               type: array
               description: Call information about an incident received and collected by
