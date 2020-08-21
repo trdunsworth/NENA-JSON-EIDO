@@ -1,0 +1,589 @@
+{
+	"$schema": "http://json-schema.org/schema#",
+	"additionalProperties": false,
+	"definitions": {
+		".structures:AssociationAugmentationPoint": {
+			"$ref": "#/definitions/xs:anyType",
+			"description": "An augmentation point for AssociationType"
+		},
+		".structures:ObjectAugmentationPoint": {
+			"$ref": "#/definitions/xs:anyType",
+			"description": "An augmentation point for ObjectType"
+		},
+		"census:USCountyCodeSimpleType": {
+			"description": "A data type for US county codes.",
+			"enum": [
+				"001",
+				"003",
+				"005",
+				"006",
+				"007",
+				"009",
+				"010",
+				"011",
+				"012",
+				"013",
+				"014",
+				"015",
+				"016",
+				"017",
+				"019",
+				"020",
+				"021",
+				"023",
+				"025",
+				"027",
+				"028",
+				"029",
+				"030",
+				"031",
+				"033",
+				"035",
+				"036",
+				"037",
+				"039",
+				"040",
+				"041",
+				"043",
+				"045",
+				"047",
+				"049",
+				"050",
+				"051",
+				"053",
+				"054",
+				"055",
+				"057",
+				"059",
+				"060",
+				"061",
+				"063",
+				"065",
+				"067",
+				"068",
+				"069",
+				"070",
+				"071",
+				"073",
+				"075",
+				"077",
+				"078",
+				"079",
+				"081",
+				"083",
+				"085",
+				"086",
+				"087",
+				"089",
+				"090",
+				"091",
+				"093",
+				"095",
+				"097",
+				"099",
+				"100",
+				"101",
+				"103",
+				"105",
+				"107",
+				"109",
+				"110",
+				"111",
+				"113",
+				"115",
+				"117",
+				"119",
+				"120",
+				"121",
+				"122",
+				"123",
+				"125",
+				"127",
+				"129",
+				"130",
+				"131",
+				"133",
+				"135",
+				"137",
+				"139",
+				"141",
+				"143",
+				"145",
+				"147",
+				"149",
+				"150",
+				"151",
+				"153",
+				"155",
+				"157",
+				"159",
+				"161",
+				"163",
+				"164",
+				"165",
+				"167",
+				"169",
+				"170",
+				"171",
+				"173",
+				"175",
+				"177",
+				"179",
+				"180",
+				"181",
+				"183",
+				"185",
+				"186",
+				"187",
+				"188",
+				"189",
+				"191",
+				"193",
+				"195",
+				"197",
+				"198",
+				"199",
+				"201",
+				"203",
+				"205",
+				"207",
+				"209",
+				"211",
+				"213",
+				"215",
+				"217",
+				"219",
+				"220",
+				"221",
+				"223",
+				"225",
+				"227",
+				"229",
+				"230",
+				"231",
+				"233",
+				"235",
+				"237",
+				"239",
+				"240",
+				"241",
+				"243",
+				"245",
+				"247",
+				"249",
+				"251",
+				"253",
+				"255",
+				"257",
+				"259",
+				"261",
+				"263",
+				"265",
+				"267",
+				"269",
+				"270",
+				"271",
+				"273",
+				"275",
+				"277",
+				"279",
+				"281",
+				"282",
+				"283",
+				"285",
+				"287",
+				"289",
+				"290",
+				"291",
+				"293",
+				"295",
+				"297",
+				"299",
+				"300",
+				"301",
+				"303",
+				"305",
+				"307",
+				"309",
+				"311",
+				"313",
+				"315",
+				"317",
+				"319",
+				"321",
+				"323",
+				"325",
+				"327",
+				"329",
+				"331",
+				"333",
+				"335",
+				"337",
+				"339",
+				"341",
+				"343",
+				"345",
+				"347",
+				"349",
+				"351",
+				"353",
+				"355",
+				"357",
+				"359",
+				"361",
+				"363",
+				"365",
+				"367",
+				"369",
+				"371",
+				"373",
+				"375",
+				"377",
+				"379",
+				"381",
+				"383",
+				"385",
+				"387",
+				"389",
+				"391",
+				"393",
+				"395",
+				"397",
+				"399",
+				"401",
+				"403",
+				"405",
+				"407",
+				"409",
+				"411",
+				"413",
+				"415",
+				"417",
+				"419",
+				"421",
+				"423",
+				"425",
+				"427",
+				"429",
+				"431",
+				"433",
+				"435",
+				"437",
+				"439",
+				"441",
+				"443",
+				"445",
+				"447",
+				"449",
+				"451",
+				"453",
+				"455",
+				"457",
+				"459",
+				"461",
+				"463",
+				"465",
+				"467",
+				"469",
+				"471",
+				"473",
+				"475",
+				"477",
+				"479",
+				"481",
+				"483",
+				"485",
+				"487",
+				"489",
+				"491",
+				"493",
+				"495",
+				"497",
+				"499",
+				"501",
+				"503",
+				"505",
+				"507",
+				"510",
+				"515",
+				"520",
+				"530",
+				"540",
+				"550",
+				"570",
+				"580",
+				"590",
+				"595",
+				"600",
+				"610",
+				"620",
+				"630",
+				"640",
+				"650",
+				"660",
+				"670",
+				"678",
+				"680",
+				"683",
+				"685",
+				"690",
+				"700",
+				"710",
+				"720",
+				"730",
+				"735",
+				"740",
+				"750",
+				"760",
+				"770",
+				"775",
+				"790",
+				"800",
+				"810",
+				"820",
+				"830",
+				"840"
+			],
+			"type": "string"
+		},
+		"census:USCountyCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for US county codes.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/census:USCountyCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"structures:AssociationType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				},
+				"structures:AssociationAugmentationPoint": {
+					"items": {
+						"$ref": "#/definitions/.structures:AssociationAugmentationPoint"
+					},
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
+		"structures:AugmentationType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"structures:MetadataType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"structures:ObjectType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				},
+				"structures:ObjectAugmentationPoint": {
+					"items": {
+						"$ref": "#/definitions/.structures:ObjectAugmentationPoint"
+					},
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
+		"xs:ID": {
+			"pattern": "^([A-Z_a-zÀ-ÖØ-öø-˿Ͱ-ͽͿ-῿‌-‍⁰-↏Ⰰ-⿯、-퟿豈-﷏ﷰ-�𐀀-󯿿][\\d\\--\\.A-Z_a-z·À-ÖØ-öø-ͽͿ-ٟ٪-ۯۺ-޿ߊ-॥॰-৥ৰ-੥ੰ-૥૰-୥୰-௥௰-౥౰-೥೰-൥൰-๏๚-໏໚-༟༪-ဿ၊-ႏႚ-៟៪-᠏᠚-᥅ᥐ-᧏᧚-᩿᪊-᪏᪚-᭏᭚-ᮯᮺ-᰿᱊-ᱏᱚ-῿‌-‍‿-⁀⁰-↏Ⰰ-⿯、-ꘟꘪ-꣏꣚-ꣿꤊ-ꧏ꧚-꩏꩚-꯯꯺-퟿豈-﷏ﷰ-／：-�𐀀-𐒟𐒪-𑁥𑁰-𝟍𝠀-󯿿]*)$",
+			"type": "string"
+		},
+		"xs:IDREF": {
+			"pattern": "^([A-Z_a-zÀ-ÖØ-öø-˿Ͱ-ͽͿ-῿‌-‍⁰-↏Ⰰ-⿯、-퟿豈-﷏ﷰ-�𐀀-󯿿][\\d\\--\\.A-Z_a-z·À-ÖØ-öø-ͽͿ-ٟ٪-ۯۺ-޿ߊ-॥॰-৥ৰ-੥ੰ-૥૰-୥୰-௥௰-౥౰-೥೰-൥൰-๏๚-໏໚-༟༪-ဿ၊-ႏႚ-៟៪-᠏᠚-᥅ᥐ-᧏᧚-᩿᪊-᪏᪚-᭏᭚-ᮯᮺ-᰿᱊-ᱏᱚ-῿‌-‍‿-⁀⁰-↏Ⰰ-⿯、-ꘟꘪ-꣏꣚-ꣿꤊ-ꧏ꧚-꩏꩚-꯯꯺-퟿豈-﷏ﷰ-／：-�𐀀-𐒟𐒪-𑁥𑁰-𝟍𝠀-󯿿]*)$",
+			"type": "string"
+		},
+		"xs:IDREFS": {
+			"items": {
+				"pattern": "^([A-Z_a-zÀ-ÖØ-öø-˿Ͱ-ͽͿ-῿‌-‍⁰-↏Ⰰ-⿯、-퟿豈-﷏ﷰ-�𐀀-󯿿][\\d\\--\\.A-Z_a-z·À-ÖØ-öø-ͽͿ-ٟ٪-ۯۺ-޿ߊ-॥॰-৥ৰ-੥ੰ-૥૰-୥୰-௥௰-౥౰-೥೰-൥൰-๏๚-໏໚-༟༪-ဿ၊-ႏႚ-៟៪-᠏᠚-᥅ᥐ-᧏᧚-᩿᪊-᪏᪚-᭏᭚-ᮯᮺ-᰿᱊-ᱏᱚ-῿‌-‍‿-⁀⁰-↏Ⰰ-⿯、-ꘟꘪ-꣏꣚-ꣿꤊ-ꧏ꧚-꩏꩚-꯯꯺-퟿豈-﷏ﷰ-／：-�𐀀-𐒟𐒪-𑁥𑁰-𝟍𝠀-󯿿]*)$",
+				"type": "string"
+			},
+			"type": "array"
+		},
+		"xs:anyType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\w+$": {
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"type": "object"
+		},
+		"xs:anyURI": {
+			"type": "string"
+		}
+	},
+	"description": "JSON Schema generated by XMLSpy v2020 rel. 2 sp1 (x64) (http://www.altova.com)",
+	"properties": {
+		"#": {
+			"type": "string"
+		},
+		"@xmlns:census": {
+			"default": "http://release.niem.gov/niem/codes/census_uscounty/4.0/"
+		},
+		"@xmlns:structures": {
+			"default": "http://release.niem.gov/niem/structures/4.0/"
+		},
+		"@xmlns:xs": {
+			"default": "http://www.w3.org/2001/XMLSchema"
+		},
+		"structures:AssociationAugmentationPoint": {
+			"$ref": "#/definitions/.structures:AssociationAugmentationPoint"
+		},
+		"structures:ObjectAugmentationPoint": {
+			"$ref": "#/definitions/.structures:ObjectAugmentationPoint"
+		}
+	},
+	"type": "object"
+}

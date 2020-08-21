@@ -1,0 +1,339 @@
+{
+	"$schema": "http://json-schema.org/schema#",
+	"additionalProperties": false,
+	"definitions": {
+		".structures:AssociationAugmentationPoint": {
+			"$ref": "#/definitions/xs:anyType",
+			"description": "An augmentation point for AssociationType"
+		},
+		".structures:ObjectAugmentationPoint": {
+			"$ref": "#/definitions/xs:anyType",
+			"description": "An augmentation point for ObjectType"
+		},
+		"structures:AssociationType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^@xsi:\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				},
+				"structures:AssociationAugmentationPoint": {
+					"items": {
+						"$ref": "#/definitions/.structures:AssociationAugmentationPoint"
+					},
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
+		"structures:AugmentationType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^@xsi:\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"structures:MetadataType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^@xsi:\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"structures:ObjectType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^@xsi:\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				},
+				"structures:ObjectAugmentationPoint": {
+					"items": {
+						"$ref": "#/definitions/.structures:ObjectAugmentationPoint"
+					},
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
+		"usps:USStateCodeSimpleType": {
+			"description": "A data type for states.",
+			"enum": [
+				"AA",
+				"AE",
+				"AK",
+				"AL",
+				"AP",
+				"AR",
+				"AS",
+				"AZ",
+				"CA",
+				"CO",
+				"CT",
+				"DC",
+				"DE",
+				"FL",
+				"FM",
+				"GA",
+				"GU",
+				"HI",
+				"IA",
+				"ID",
+				"IL",
+				"IN",
+				"KS",
+				"KY",
+				"LA",
+				"MA",
+				"MD",
+				"ME",
+				"MH",
+				"MI",
+				"MN",
+				"MO",
+				"MP",
+				"MS",
+				"MT",
+				"NC",
+				"ND",
+				"NE",
+				"NH",
+				"NJ",
+				"NM",
+				"NV",
+				"NY",
+				"OH",
+				"OK",
+				"OR",
+				"PA",
+				"PR",
+				"PW",
+				"RI",
+				"SC",
+				"SD",
+				"TN",
+				"TX",
+				"UT",
+				"VA",
+				"VI",
+				"VT",
+				"WA",
+				"WI",
+				"WV",
+				"WY"
+			],
+			"type": "string"
+		},
+		"usps:USStateCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for states.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^@xsi:\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/usps:USStateCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"xs:ID": {
+			"pattern": "^([A-Z_a-zÀ-ÖØ-öø-˿Ͱ-ͽͿ-῿‌-‍⁰-↏Ⰰ-⿯、-퟿豈-﷏ﷰ-�𐀀-󯿿][\\d\\--\\.A-Z_a-z·À-ÖØ-öø-ͽͿ-ٟ٪-ۯۺ-޿ߊ-॥॰-৥ৰ-੥ੰ-૥૰-୥୰-௥௰-౥౰-೥೰-൥൰-๏๚-໏໚-༟༪-ဿ၊-ႏႚ-៟៪-᠏᠚-᥅ᥐ-᧏᧚-᩿᪊-᪏᪚-᭏᭚-ᮯᮺ-᰿᱊-ᱏᱚ-῿‌-‍‿-⁀⁰-↏Ⰰ-⿯、-ꘟꘪ-꣏꣚-ꣿꤊ-ꧏ꧚-꩏꩚-꯯꯺-퟿豈-﷏ﷰ-／：-�𐀀-𐒟𐒪-𑁥𑁰-𝟍𝠀-󯿿]*)$",
+			"type": "string"
+		},
+		"xs:IDREF": {
+			"pattern": "^([A-Z_a-zÀ-ÖØ-öø-˿Ͱ-ͽͿ-῿‌-‍⁰-↏Ⰰ-⿯、-퟿豈-﷏ﷰ-�𐀀-󯿿][\\d\\--\\.A-Z_a-z·À-ÖØ-öø-ͽͿ-ٟ٪-ۯۺ-޿ߊ-॥॰-৥ৰ-੥ੰ-૥૰-୥୰-௥௰-౥౰-೥೰-൥൰-๏๚-໏໚-༟༪-ဿ၊-ႏႚ-៟៪-᠏᠚-᥅ᥐ-᧏᧚-᩿᪊-᪏᪚-᭏᭚-ᮯᮺ-᰿᱊-ᱏᱚ-῿‌-‍‿-⁀⁰-↏Ⰰ-⿯、-ꘟꘪ-꣏꣚-ꣿꤊ-ꧏ꧚-꩏꩚-꯯꯺-퟿豈-﷏ﷰ-／：-�𐀀-𐒟𐒪-𑁥𑁰-𝟍𝠀-󯿿]*)$",
+			"type": "string"
+		},
+		"xs:IDREFS": {
+			"items": {
+				"pattern": "^([A-Z_a-zÀ-ÖØ-öø-˿Ͱ-ͽͿ-῿‌-‍⁰-↏Ⰰ-⿯、-퟿豈-﷏ﷰ-�𐀀-󯿿][\\d\\--\\.A-Z_a-z·À-ÖØ-öø-ͽͿ-ٟ٪-ۯۺ-޿ߊ-॥॰-৥ৰ-੥ੰ-૥૰-୥୰-௥௰-౥౰-೥೰-൥൰-๏๚-໏໚-༟༪-ဿ၊-ႏႚ-៟៪-᠏᠚-᥅ᥐ-᧏᧚-᩿᪊-᪏᪚-᭏᭚-ᮯᮺ-᰿᱊-ᱏᱚ-῿‌-‍‿-⁀⁰-↏Ⰰ-⿯、-ꘟꘪ-꣏꣚-ꣿꤊ-ꧏ꧚-꩏꩚-꯯꯺-퟿豈-﷏ﷰ-／：-�𐀀-𐒟𐒪-𑁥𑁰-𝟍𝠀-󯿿]*)$",
+				"type": "string"
+			},
+			"type": "array"
+		},
+		"xs:anyType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^@xsi:\\w+$": {
+					"type": "string"
+				},
+				"^\\w+$": {
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"type": "object"
+		},
+		"xs:anyURI": {
+			"type": "string"
+		}
+	},
+	"description": "JSON Schema generated by XMLSpy v2020 rel. 2 sp1 (x64) (http://www.altova.com)",
+	"properties": {
+		"#": {
+			"type": "string"
+		},
+		"@xmlns:structures": {
+			"default": "http://release.niem.gov/niem/structures/4.0/"
+		},
+		"@xmlns:usps": {
+			"default": "http://release.niem.gov/niem/codes/usps_states/4.0/"
+		},
+		"@xmlns:xs": {
+			"default": "http://www.w3.org/2001/XMLSchema"
+		},
+		"structures:AssociationAugmentationPoint": {
+			"$ref": "#/definitions/.structures:AssociationAugmentationPoint"
+		},
+		"structures:ObjectAugmentationPoint": {
+			"$ref": "#/definitions/.structures:ObjectAugmentationPoint"
+		}
+	},
+	"type": "object"
+}

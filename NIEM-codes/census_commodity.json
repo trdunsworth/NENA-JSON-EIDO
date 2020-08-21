@@ -1,0 +1,519 @@
+{
+	"$schema": "http://json-schema.org/schema#",
+	"additionalProperties": false,
+	"definitions": {
+		".structures:AssociationAugmentationPoint": {
+			"$ref": "#/definitions/xs:anyType",
+			"description": "An augmentation point for AssociationType"
+		},
+		".structures:ObjectAugmentationPoint": {
+			"$ref": "#/definitions/xs:anyType",
+			"description": "An augmentation point for ObjectType"
+		},
+		"commodity:ConveyanceCategoryCodeSimpleType": {
+			"description": "A data type for a kind of conveyance.",
+			"enum": [
+				"36000",
+				"36100",
+				"36101",
+				"36109",
+				"36200",
+				"36210",
+				"36220",
+				"36300",
+				"36310",
+				"36320",
+				"36330",
+				"36340",
+				"36351",
+				"36359",
+				"36360",
+				"36391",
+				"36399",
+				"36400",
+				"36401",
+				"36402",
+				"36403",
+				"36404",
+				"36409",
+				"37000",
+				"37100",
+				"37101",
+				"37102",
+				"37103",
+				"37104",
+				"37200",
+				"37210",
+				"37220",
+				"37230",
+				"37240",
+				"37300",
+				"37310",
+				"37320"
+			],
+			"type": "string"
+		},
+		"commodity:ConveyanceCategoryCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for a kind of conveyance.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/commodity:ConveyanceCategoryCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"commodity:ElectronicEquipmentCategoryCodeSimpleType": {
+			"description": "A data type for a kind of electronic equipment.",
+			"enum": [
+				"35000",
+				"35100",
+				"35110",
+				"35120",
+				"35200",
+				"35210",
+				"35220",
+				"35300",
+				"35310",
+				"35390",
+				"35400",
+				"35500",
+				"35510",
+				"35520",
+				"35600",
+				"35610",
+				"35621",
+				"35629",
+				"35700",
+				"35800",
+				"35811",
+				"35812",
+				"35813",
+				"35814",
+				"35820",
+				"35900",
+				"35912",
+				"35920",
+				"35991",
+				"35992",
+				"35993",
+				"35994",
+				"35995",
+				"35999"
+			],
+			"type": "string"
+		},
+		"commodity:ElectronicEquipmentCategoryCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for a kind of electronic equipment.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/commodity:ElectronicEquipmentCategoryCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"commodity:ElectronicInstrumentCategoryCodeSimpleType": {
+			"description": "A data type for a kind of electronic instrument.",
+			"enum": [
+				"38000",
+				"38100",
+				"38101",
+				"38109",
+				"38200",
+				"38210",
+				"38220",
+				"38300",
+				"38310",
+				"38320",
+				"38400",
+				"38410",
+				"38420",
+				"38491",
+				"38492",
+				"38499",
+				"38500",
+				"38510",
+				"38520",
+				"38591",
+				"38592",
+				"38593",
+				"38599"
+			],
+			"type": "string"
+		},
+		"commodity:ElectronicInstrumentCategoryCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for a kind of electronic instrument.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/commodity:ElectronicInstrumentCategoryCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"commodity:MachineryCategoryCodeSimpleType": {
+			"description": "A data type for a kind of machinery.",
+			"enum": [
+				"34000",
+				"34100",
+				"34110",
+				"34120",
+				"34130",
+				"34200",
+				"34211",
+				"34212",
+				"34221",
+				"34222",
+				"34300",
+				"34310",
+				"34320",
+				"34330",
+				"34400",
+				"34410",
+				"34421",
+				"34422",
+				"34500",
+				"34511",
+				"34519",
+				"34520",
+				"34900",
+				"34910",
+				"34920",
+				"34930",
+				"34940",
+				"34950",
+				"34960",
+				"34971",
+				"34972",
+				"34991",
+				"34992",
+				"34993",
+				"34994",
+				"34995",
+				"34999"
+			],
+			"type": "string"
+		},
+		"commodity:MachineryCategoryCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for a kind of machinery.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/commodity:MachineryCategoryCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"structures:AssociationType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				},
+				"structures:AssociationAugmentationPoint": {
+					"items": {
+						"$ref": "#/definitions/.structures:AssociationAugmentationPoint"
+					},
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
+		"structures:AugmentationType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"structures:MetadataType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"structures:ObjectType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				},
+				"structures:ObjectAugmentationPoint": {
+					"items": {
+						"$ref": "#/definitions/.structures:ObjectAugmentationPoint"
+					},
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
+		"xs:ID": {
+			"pattern": "^([A-Z_a-zÀ-ÖØ-öø-˿Ͱ-ͽͿ-῿‌-‍⁰-↏Ⰰ-⿯、-퟿豈-﷏ﷰ-�𐀀-󯿿][\\d\\--\\.A-Z_a-z·À-ÖØ-öø-ͽͿ-ٟ٪-ۯۺ-޿ߊ-॥॰-৥ৰ-੥ੰ-૥૰-୥୰-௥௰-౥౰-೥೰-൥൰-๏๚-໏໚-༟༪-ဿ၊-ႏႚ-៟៪-᠏᠚-᥅ᥐ-᧏᧚-᩿᪊-᪏᪚-᭏᭚-ᮯᮺ-᰿᱊-ᱏᱚ-῿‌-‍‿-⁀⁰-↏Ⰰ-⿯、-ꘟꘪ-꣏꣚-ꣿꤊ-ꧏ꧚-꩏꩚-꯯꯺-퟿豈-﷏ﷰ-／：-�𐀀-𐒟𐒪-𑁥𑁰-𝟍𝠀-󯿿]*)$",
+			"type": "string"
+		},
+		"xs:IDREF": {
+			"pattern": "^([A-Z_a-zÀ-ÖØ-öø-˿Ͱ-ͽͿ-῿‌-‍⁰-↏Ⰰ-⿯、-퟿豈-﷏ﷰ-�𐀀-󯿿][\\d\\--\\.A-Z_a-z·À-ÖØ-öø-ͽͿ-ٟ٪-ۯۺ-޿ߊ-॥॰-৥ৰ-੥ੰ-૥૰-୥୰-௥௰-౥౰-೥೰-൥൰-๏๚-໏໚-༟༪-ဿ၊-ႏႚ-៟៪-᠏᠚-᥅ᥐ-᧏᧚-᩿᪊-᪏᪚-᭏᭚-ᮯᮺ-᰿᱊-ᱏᱚ-῿‌-‍‿-⁀⁰-↏Ⰰ-⿯、-ꘟꘪ-꣏꣚-ꣿꤊ-ꧏ꧚-꩏꩚-꯯꯺-퟿豈-﷏ﷰ-／：-�𐀀-𐒟𐒪-𑁥𑁰-𝟍𝠀-󯿿]*)$",
+			"type": "string"
+		},
+		"xs:IDREFS": {
+			"items": {
+				"pattern": "^([A-Z_a-zÀ-ÖØ-öø-˿Ͱ-ͽͿ-῿‌-‍⁰-↏Ⰰ-⿯、-퟿豈-﷏ﷰ-�𐀀-󯿿][\\d\\--\\.A-Z_a-z·À-ÖØ-öø-ͽͿ-ٟ٪-ۯۺ-޿ߊ-॥॰-৥ৰ-੥ੰ-૥૰-୥୰-௥௰-౥౰-೥೰-൥൰-๏๚-໏໚-༟༪-ဿ၊-ႏႚ-៟៪-᠏᠚-᥅ᥐ-᧏᧚-᩿᪊-᪏᪚-᭏᭚-ᮯᮺ-᰿᱊-ᱏᱚ-῿‌-‍‿-⁀⁰-↏Ⰰ-⿯、-ꘟꘪ-꣏꣚-ꣿꤊ-ꧏ꧚-꩏꩚-꯯꯺-퟿豈-﷏ﷰ-／：-�𐀀-𐒟𐒪-𑁥𑁰-𝟍𝠀-󯿿]*)$",
+				"type": "string"
+			},
+			"type": "array"
+		},
+		"xs:anyType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\w+$": {
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"type": "object"
+		},
+		"xs:anyURI": {
+			"type": "string"
+		}
+	},
+	"description": "JSON Schema generated by XMLSpy v2020 rel. 2 sp1 (x64) (http://www.altova.com)",
+	"properties": {
+		"#": {
+			"type": "string"
+		},
+		"@xmlns:commodity": {
+			"default": "http://release.niem.gov/niem/codes/census_commodity/4.0/"
+		},
+		"@xmlns:structures": {
+			"default": "http://release.niem.gov/niem/structures/4.0/"
+		},
+		"@xmlns:xs": {
+			"default": "http://www.w3.org/2001/XMLSchema"
+		},
+		"structures:AssociationAugmentationPoint": {
+			"$ref": "#/definitions/.structures:AssociationAugmentationPoint"
+		},
+		"structures:ObjectAugmentationPoint": {
+			"$ref": "#/definitions/.structures:ObjectAugmentationPoint"
+		}
+	},
+	"type": "object"
+}

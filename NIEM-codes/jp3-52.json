@@ -1,0 +1,536 @@
+{
+	"$schema": "http://json-schema.org/schema#",
+	"additionalProperties": false,
+	"definitions": {
+		".jp3-52:AirspaceCoordinatingMeasureTypeAndUsageAugmentationPoint": {
+			"$ref": "#/definitions/xs:anyType",
+			"description": "An augmentation point for type jp3-52:AirspaceCoordinatingMeasureTypeandUsageType"
+		},
+		".jp3-52:AirspaceCoordinatingMeasureTypeCode": {
+			"anyOf": [
+				{
+					"type": "null"
+				},
+				{
+					"$ref": "#/definitions/jp3-52:AirspaceCoordinatingMeasureTypeCodeType"
+				}
+			],
+			"description": "A designator used to identify the broad category of the Airspace Coordinating Measure (ACM)."
+		},
+		".jp3-52:AirspaceCoordinatingMeasureUsageCode": {
+			"anyOf": [
+				{
+					"type": "null"
+				},
+				{
+					"$ref": "#/definitions/jp3-52:AirspaceCoordinatingMeasureUsageCodeType"
+				}
+			],
+			"description": "A designator used to identify the control measure of the Airspace Coordinating Measure (ACM)."
+		},
+		".structures:AssociationAugmentationPoint": {
+			"$ref": "#/definitions/xs:anyType",
+			"description": "An augmentation point for AssociationType"
+		},
+		".structures:ObjectAugmentationPoint": {
+			"$ref": "#/definitions/xs:anyType",
+			"description": "An augmentation point for ObjectType"
+		},
+		"jp3-52:AirspaceCoordinatingMeasureTypeAndUsageType": {
+			"additionalProperties": false,
+			"description": "A data type for a measure(s) employed to facilitate the efficient use of airspace to accomplish missions and simultaneously provide safeguards for friendly forces. Also called ACMs.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^@xsi:\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				},
+				"jp3-52:AirspaceCoordinatingMeasureTypeAndUsageAugmentationPoint": {
+					"items": {
+						"$ref": "#/definitions/.jp3-52:AirspaceCoordinatingMeasureTypeAndUsageAugmentationPoint"
+					},
+					"type": "array"
+				},
+				"jp3-52:AirspaceCoordinatingMeasureTypeCode": {
+					"items": {
+						"$ref": "#/definitions/.jp3-52:AirspaceCoordinatingMeasureTypeCode"
+					},
+					"type": "array"
+				},
+				"jp3-52:AirspaceCoordinatingMeasureUsageCode": {
+					"items": {
+						"$ref": "#/definitions/.jp3-52:AirspaceCoordinatingMeasureUsageCode"
+					},
+					"type": "array"
+				},
+				"structures:ObjectAugmentationPoint": {
+					"items": {
+						"$ref": "#/definitions/.structures:ObjectAugmentationPoint"
+					},
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
+		"jp3-52:AirspaceCoordinatingMeasureTypeCodeSimpleType": {
+			"description": "A data type for a designator for a JP3-52 Airspace Coordinating Measure (ACM) Type Code.",
+			"enum": [
+				"ADAREA",
+				"ADOA",
+				"ATC",
+				"CORRTE",
+				"PROC",
+				"REFPT",
+				"ROZ",
+				"SUA"
+			],
+			"type": "string"
+		},
+		"jp3-52:AirspaceCoordinatingMeasureTypeCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for a designator for a JP3-52 Airspace Coordinating Measure (ACM) Type Code.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^@xsi:\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/jp3-52:AirspaceCoordinatingMeasureTypeCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"jp3-52:AirspaceCoordinatingMeasureUsageCodeSimpleType": {
+			"description": "A data type for a designator for a JP3-52 Airspace Coordinating Measure (ACM) Usage Code.",
+			"enum": [
+				"AAR",
+				"ABC",
+				"ACA",
+				"ACP",
+				"ACSS",
+				"ADAA",
+				"ADIZ",
+				"ADVRTE",
+				"ADZ",
+				"AEW",
+				"AIRCOR",
+				"AIRRTE",
+				"ALERTA",
+				"ALTRV",
+				"AOA",
+				"APPCOR",
+				"ARWY",
+				"ASCA",
+				"ATSRTE",
+				"BCL",
+				"BDZ",
+				"BNDRY",
+				"BULL",
+				"BZ",
+				"CA",
+				"CADA",
+				"CAP",
+				"CAS",
+				"CBA",
+				"CCZONE",
+				"CDR",
+				"CFL",
+				"CL",
+				"CLSA",
+				"CLSB",
+				"CLSC",
+				"CLSD",
+				"CLSE",
+				"CLSF",
+				"CLSG",
+				"CONTZN",
+				"COZ",
+				"CP",
+				"CTA",
+				"DA",
+				"DZ",
+				"EC",
+				"EG",
+				"FACA",
+				"FADIZ",
+				"FARP",
+				"FEBA",
+				"FFA",
+				"FIR",
+				"FIRUB",
+				"FLOT",
+				"FSCL",
+				"HG",
+				"HIDACZ",
+				"IFFOFF",
+				"IFFON",
+				"ISP",
+				"ISR",
+				"JEZ",
+				"JOA",
+				"KILLBX",
+				"LFEZ",
+				"LMEZ",
+				"LZ",
+				"MFEZ",
+				"MG",
+				"MISARC",
+				"MMEZ",
+				"MOA",
+				"MRR",
+				"NAVRTE",
+				"NFA",
+				"NOFLY",
+				"PROHIB",
+				"PZ",
+				"RA",
+				"RCA",
+				"RECCE",
+				"RFA",
+				"RFL",
+				"ROA",
+				"RTF",
+				"SAAFR",
+				"SAFE",
+				"SAFES",
+				"SARDOT",
+				"SC",
+				"SCZ",
+				"SEMA",
+				"SHORAD",
+				"SL",
+				"SOF",
+				"SSMS",
+				"TC",
+				"TCA",
+				"TL",
+				"TMRR",
+				"TR",
+				"TRNG",
+				"TRSA",
+				"TSA",
+				"UA",
+				"WARN",
+				"WFZ"
+			],
+			"type": "string"
+		},
+		"jp3-52:AirspaceCoordinatingMeasureUsageCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for a designator for a JP3-52 Airspace Coordinating Measure (ACM) Usage Code.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^@xsi:\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/jp3-52:AirspaceCoordinatingMeasureUsageCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"structures:AssociationType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^@xsi:\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				},
+				"structures:AssociationAugmentationPoint": {
+					"items": {
+						"$ref": "#/definitions/.structures:AssociationAugmentationPoint"
+					},
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
+		"structures:AugmentationType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^@xsi:\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"structures:MetadataType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^@xsi:\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"structures:ObjectType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^@xsi:\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				},
+				"structures:ObjectAugmentationPoint": {
+					"items": {
+						"$ref": "#/definitions/.structures:ObjectAugmentationPoint"
+					},
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
+		"xs:ID": {
+			"pattern": "^([A-Z_a-zÀ-ÖØ-öø-˿Ͱ-ͽͿ-῿‌-‍⁰-↏Ⰰ-⿯、-퟿豈-﷏ﷰ-�𐀀-󯿿][\\d\\--\\.A-Z_a-z·À-ÖØ-öø-ͽͿ-ٟ٪-ۯۺ-޿ߊ-॥॰-৥ৰ-੥ੰ-૥૰-୥୰-௥௰-౥౰-೥೰-൥൰-๏๚-໏໚-༟༪-ဿ၊-ႏႚ-៟៪-᠏᠚-᥅ᥐ-᧏᧚-᩿᪊-᪏᪚-᭏᭚-ᮯᮺ-᰿᱊-ᱏᱚ-῿‌-‍‿-⁀⁰-↏Ⰰ-⿯、-ꘟꘪ-꣏꣚-ꣿꤊ-ꧏ꧚-꩏꩚-꯯꯺-퟿豈-﷏ﷰ-／：-�𐀀-𐒟𐒪-𑁥𑁰-𝟍𝠀-󯿿]*)$",
+			"type": "string"
+		},
+		"xs:IDREF": {
+			"pattern": "^([A-Z_a-zÀ-ÖØ-öø-˿Ͱ-ͽͿ-῿‌-‍⁰-↏Ⰰ-⿯、-퟿豈-﷏ﷰ-�𐀀-󯿿][\\d\\--\\.A-Z_a-z·À-ÖØ-öø-ͽͿ-ٟ٪-ۯۺ-޿ߊ-॥॰-৥ৰ-੥ੰ-૥૰-୥୰-௥௰-౥౰-೥೰-൥൰-๏๚-໏໚-༟༪-ဿ၊-ႏႚ-៟៪-᠏᠚-᥅ᥐ-᧏᧚-᩿᪊-᪏᪚-᭏᭚-ᮯᮺ-᰿᱊-ᱏᱚ-῿‌-‍‿-⁀⁰-↏Ⰰ-⿯、-ꘟꘪ-꣏꣚-ꣿꤊ-ꧏ꧚-꩏꩚-꯯꯺-퟿豈-﷏ﷰ-／：-�𐀀-𐒟𐒪-𑁥𑁰-𝟍𝠀-󯿿]*)$",
+			"type": "string"
+		},
+		"xs:IDREFS": {
+			"items": {
+				"pattern": "^([A-Z_a-zÀ-ÖØ-öø-˿Ͱ-ͽͿ-῿‌-‍⁰-↏Ⰰ-⿯、-퟿豈-﷏ﷰ-�𐀀-󯿿][\\d\\--\\.A-Z_a-z·À-ÖØ-öø-ͽͿ-ٟ٪-ۯۺ-޿ߊ-॥॰-৥ৰ-੥ੰ-૥૰-୥୰-௥௰-౥౰-೥೰-൥൰-๏๚-໏໚-༟༪-ဿ၊-ႏႚ-៟៪-᠏᠚-᥅ᥐ-᧏᧚-᩿᪊-᪏᪚-᭏᭚-ᮯᮺ-᰿᱊-ᱏᱚ-῿‌-‍‿-⁀⁰-↏Ⰰ-⿯、-ꘟꘪ-꣏꣚-ꣿꤊ-ꧏ꧚-꩏꩚-꯯꯺-퟿豈-﷏ﷰ-／：-�𐀀-𐒟𐒪-𑁥𑁰-𝟍𝠀-󯿿]*)$",
+				"type": "string"
+			},
+			"type": "array"
+		},
+		"xs:anyType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^@xsi:\\w+$": {
+					"type": "string"
+				},
+				"^\\w+$": {
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"type": "object"
+		},
+		"xs:anyURI": {
+			"type": "string"
+		}
+	},
+	"description": "JSON Schema generated by XMLSpy v2020 rel. 2 sp1 (x64) (http://www.altova.com)",
+	"properties": {
+		"#": {
+			"type": "string"
+		},
+		"@xmlns:jp3-52": {
+			"default": "http://release.niem.gov/niem/codes/jp3-52/4.0/"
+		},
+		"@xmlns:structures": {
+			"default": "http://release.niem.gov/niem/structures/4.0/"
+		},
+		"@xmlns:xs": {
+			"default": "http://www.w3.org/2001/XMLSchema"
+		},
+		"jp3-52:AirspaceCoordinatingMeasureTypeAndUsageAugmentationPoint": {
+			"$ref": "#/definitions/.jp3-52:AirspaceCoordinatingMeasureTypeAndUsageAugmentationPoint"
+		},
+		"jp3-52:AirspaceCoordinatingMeasureTypeCode": {
+			"$ref": "#/definitions/.jp3-52:AirspaceCoordinatingMeasureTypeCode"
+		},
+		"jp3-52:AirspaceCoordinatingMeasureUsageCode": {
+			"$ref": "#/definitions/.jp3-52:AirspaceCoordinatingMeasureUsageCode"
+		},
+		"structures:AssociationAugmentationPoint": {
+			"$ref": "#/definitions/.structures:AssociationAugmentationPoint"
+		},
+		"structures:ObjectAugmentationPoint": {
+			"$ref": "#/definitions/.structures:ObjectAugmentationPoint"
+		}
+	},
+	"type": "object"
+}
