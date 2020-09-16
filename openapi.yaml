@@ -7,7 +7,7 @@ info:
   contact:
     name: Richard Maw
     email: rmaw@msn.com
-  version: '3.0'
+  version: '0.0.3'
 servers:
   - url: 'http://localhost/'
   - url: 'https://localhost/'
@@ -58,16 +58,19 @@ components:
           format: date-time
         OwningAgencyIdentifier:
           type: string
-          description:     Owning Agency Identifier. This includes private and public
+          description:
+            Owning Agency Identifier. This includes private and public
             providers. Agencies are globally unique.
         UpdatedByAgentIdentifier:
           type: string
-          description:     A globally unique identifier of the agent or automaton that updated
+          description:
+            A globally unique identifier of the agent or automaton that updated
             the data component last
       description: A common prologue on each data component
     AgencyType:
       title: Agency Type
-      description: A data type for an organization that owns or is otherwise related to an
+      description:
+        A data type for an organization that owns or is otherwise related to an
         emergency incident.
       allOf:
         - $ref: '#/components/schemas/PrologueType'
@@ -84,12 +87,14 @@ components:
               description: True if an agency owns the emergency incident; false otherwise.
             organizationIdentification:
               type: string
-              description: Agency Identifier. This includes private and public providers.
+              description:
+                Agency Identifier. This includes private and public providers.
                 Agencies are globally unique. See NENA-STA-010 Agency Identifier
                 section for the format and requirements
             notesReference:
               $ref: '#/components/schemas/ReferenceType'
-              description: Reference to a Notes Data Component. Contains optional
+              description:
+                Reference to a Notes Data Component. Contains optional
                 alphanumeric text further describing the agency.
     AgentType:
       title: Agent Type
@@ -110,7 +115,8 @@ components:
                 information contained in an EIDO.
             agentWorkstationPositionIdentification:
               type: string
-              description: A globally unique identifier of a workstation position that
+              description:
+                A globally unique identifier of a workstation position that
                 generated an EIDO or contributed information contained in an
                 EIDO.
             agentRoleRegistryText:
@@ -121,7 +127,8 @@ components:
               description: Linked element type is AgencyType
             notesReference:
               $ref: '#/components/schemas/ReferenceType'
-              description: Reference to a Notes Data Component. Contains optional
+              description:
+                Reference to a Notes Data Component. Contains optional
                 alphanumeric text further describing the agent.
     IncidentMergeDirectionCodeSimpleType:
       title: Incident Merge Direction Code Simple Type
@@ -178,7 +185,8 @@ components:
               description: Free format narrative description of the reason for the link
             involvedAgencyReference:
               $ref: '#/components/schemas/ReferenceType'
-              description: Agencies involved with the linked incident. Must be populated if
+              description:
+                Agencies involved with the linked incident. Must be populated if
                 the agency sending the EIDO is not involved with the linked
                 incident.
             linkDirectionCode:
@@ -203,7 +211,8 @@ components:
               description: Linked element type is AgentType
     AdditionalDataType:
       title: Additional Data Type
-      description: A data type for additional information associated with an incident call,
+      description:
+        A data type for additional information associated with an incident call,
         location, or person.
       allOf:
         - $ref: '#/components/schemas/PrologueType'
@@ -217,7 +226,8 @@ components:
               description: Additional data associated with a call.
             notesReference:
               type: array
-              description: Notes and comments associated with an incident. Linked elements
+              description:
+                Notes and comments associated with an incident. Linked elements
                 type are NotesType
               items:
                 $ref: '#/components/schemas/ReferenceType'
@@ -235,25 +245,29 @@ components:
               description: Shall only contains values present in the Location type registry
             locationByValue:
               type: string
-              description: A type for an external adapter for a Presence Information Data
+              description:
+                A type for an external adapter for a Presence Information Data
                 Format-Location Object (PIDF-LO).
             locationDescriptionText:
               type: string
               description: Optional text further describing the location type.
             locationByReferenceURL:
               type: string
-              description: A URL where a location associated with an incident can be
+              description:
+                A URL where a location associated with an incident can be
                 dereferenced.
               format: uri
             crossStreetByValue:
               type: array
-              description: A nearest cross street to an incident's location in PIDF-LO
+              description:
+                A nearest cross street to an incident's location in PIDF-LO
                 format.
               items:
                 type: string
             crossStreetByReferenceURL:
               type: array
-              description: A URL where a nearest cross street to an incident's location can
+              description:
+                A URL where a nearest cross street to an incident's location can
                 be dereferenced.
               items:
                 type: string
@@ -265,23 +279,27 @@ components:
                 type: string
             intersectingStreetByReferenceURL:
               type: array
-              description: A URL where an additional street, that with the location forms
+              description:
+                A URL where an additional street, that with the location forms
                 an intersection, can be dereferenced.
               items:
                 type: string
             cellTowerSectorID:
               type: string
-              description: The nearest cell tower and sector/face of the tower receiving a
+              description:
+                The nearest cell tower and sector/face of the tower receiving a
                 call associated with an incident.
             additionalDataReference:
               type: array
-              description: Additional information associated with an incident call,
+              description:
+                Additional information associated with an incident call,
                 location, or person. Linked elements type are AdditionalDataType
               items:
                 $ref: '#/components/schemas/ReferenceType'
             notesReference:
               type: array
-              description: Notes and comments associated with an incident. Linked elements
+              description:
+                Notes and comments associated with an incident. Linked elements
                 type are NotesType
               items:
                 $ref: '#/components/schemas/ReferenceType'
@@ -303,23 +321,27 @@ components:
                 type: string
             additionalDataReference:
               type: array
-              description: Additional information associated with an incident call,
+              description:
+                Additional information associated with an incident call,
                 location, or person. Linked elements type are AdditionalDataType
               items:
                 $ref: '#/components/schemas/ReferenceType'
             locationReference:
               type: array
-              description: A location associated with an Person. Linked elements type is
+              description:
+                A location associated with an Person. Linked elements type is
                 LocationInformationType
               items:
                 $ref: '#/components/schemas/ReferenceType'
             notesReference:
               $ref: '#/components/schemas/ReferenceType'
-              description: Reference to a Notes Data Component. Contains optional
+              description:
+                Reference to a Notes Data Component. Contains optional
                 alphanumeric text further describing the person.
     DispositionType:
       title: Disposition Type
-      description: A data type for incident disposition information entered or updated by a
+      description:
+        A data type for incident disposition information entered or updated by a
         dispatch agent and/or a responding emergency resource.
       allOf:
         - $ref: '#/components/schemas/PrologueType'
@@ -329,11 +351,13 @@ components:
           properties:
             dispositionCommonRegistryCode:
               type: string
-              description: Shall only contains values present in the Common Disposition
+              description:
+                Shall only contains values present in the Common Disposition
                 Code registry
             dispositionPrimaryIndicator:
               type: boolean
-              description: True if the common disposition is the primary disposition for an
+              description:
+                True if the common disposition is the primary disposition for an
                 agency for an incident; false otherwise.
             dispositionCategoryText:
               type: string
@@ -341,7 +365,8 @@ components:
               type: string
             notesReference:
               $ref: '#/components/schemas/ReferenceType'
-              description: Reference to a Notes Data Component. Contains optional
+              description:
+                Reference to a Notes Data Component. Contains optional
                 alphanumeric text further describing the incident.
     VehicleInformationType:
       title: Vehicle Information Type
@@ -357,35 +382,41 @@ components:
               $ref: '#/components/schemas/VehicleType'
             vehicleRelationshipType:
               type: array
-              description: Information about a vehicle associated with an incident. Shall
+              description:
+                Information about a vehicle associated with an incident. Shall
                 only contains values present in the Vehicle Relationship Type
                 registry
               items:
                 type: string
             vehicleRelationshipTimeStamp:
               type: string
-              description: The date and time that the relationship of the vehicle to the
+              description:
+                The date and time that the relationship of the vehicle to the
                 incident was established
               format: date-time
             additionalDataReference:
               type: array
-              description: Additional information associated with a vehicle. Linked
+              description:
+                Additional information associated with a vehicle. Linked
                 elements type is AdditionalDataType
               items:
                 $ref: '#/components/schemas/ReferenceType'
             locationReference:
               type: array
-              description: A location associated with an vehicle. Linked elements type is
+              description:
+                A location associated with an vehicle. Linked elements type is
                 LocationInformationType
               items:
                 $ref: '#/components/schemas/ReferenceType'
             notesReference:
               $ref: '#/components/schemas/ReferenceType'
-              description: Reference to a Notes Data Component. Contains optional
+              description:
+                Reference to a Notes Data Component. Contains optional
                 alphanumeric text further describing the vehicle.
     IncidentInformationType:
       title: Incident Information Type
-      description: A data type for general information about emergency incidents gathered
+      description:
+        A data type for general information about emergency incidents gathered
         by emergency agents, responding emergency resources, from reporting
         parties (callers), and devices reporting emergency incidents.
       allOf:
@@ -394,12 +425,14 @@ components:
           properties:
             incidentTypeInternalCode:
               type: string
-              description: An alphanumeric code indicating the category of the incident.
+              description:
+                An alphanumeric code indicating the category of the incident.
                 This is the internal code used by the local agencies involved in
                 the incident.
             incidentTypeInternalText:
               type: string
-              description: Textual description indicating the category of the incident.
+              description:
+                Textual description indicating the category of the incident.
                 This is the internal text used by the local agencies involved in
                 the incident.
             incidentTypeCommonRegistryText:
@@ -407,13 +440,15 @@ components:
               description: Shall only contains values present in the Incident Type registry
             incidentStatusInternalText:
               type: array
-              description: An internal code used by a local agency for a status of an
+              description:
+                An internal code used by a local agency for a status of an
                 incident.
               items:
                 type: string
             incidentStatusCommonRegistryText:
               type: string
-              description: Shall only contains values present in the Incident Status
+              description:
+                Shall only contains values present in the Incident Status
                 registry
             internalIncidentID:
               type: string
@@ -424,19 +459,22 @@ components:
                 $ref: '#/components/schemas/ReferenceType'
             locationReference:
               type: array
-              description: A location associated with an incident. Linked elements type is
+              description:
+                A location associated with an incident. Linked elements type is
                 LocationInformationType
               items:
                 $ref: '#/components/schemas/ReferenceType'
             personReference:
               type: array
-              description: Information about a person associated with an incident. Linked
+              description:
+                Information about a person associated with an incident. Linked
                 elements type is PersonInformationType
               items:
                 $ref: '#/components/schemas/ReferenceType'
             vehicleReference:
               type: array
-              description: Information about a vehicle associated with an incident. Linked
+              description:
+                Information about a vehicle associated with an incident. Linked
                 elements type is VehicleInformationType
               items:
                 $ref: '#/components/schemas/ReferenceType'
@@ -446,7 +484,8 @@ components:
               type: string
             incidentPriorityInternalText:
               type: string
-              description: An internal value used by a local agency for the priority of an
+              description:
+                An internal value used by a local agency for the priority of an
                 incident.
             incidentCommonPriorityNumber:
               type: integer
@@ -457,17 +496,20 @@ components:
               description: A beat or dispatch group that contains an incident.
             dispositionComponent:
               type: array
-              description: Incident disposition information entered or updated by a
+              description:
+                Incident disposition information entered or updated by a
                 dispatch agent and/or a responding emergency resource.
               items:
                 $ref: '#/components/schemas/DispositionType'
             notesReference:
               $ref: '#/components/schemas/ReferenceType'
-              description: Reference to a Notes Data Component. Contains optional
+              description:
+                Reference to a Notes Data Component. Contains optional
                 alphanumeric text further describing the incident.
     UpdatedCBNType:
       title: Updated CBN Type
-      description: A data type for additional telephone numbers and SIP equivalents that
+      description:
+        A data type for additional telephone numbers and SIP equivalents that
         can be used to contact the individual that made a call associated with
         an incident.
       allOf:
@@ -478,17 +520,20 @@ components:
           properties:
             updatedCBNIdentifierURI:
               type: string
-              description: A telephone number or SIP equivalent of a reporting party
+              description:
+                A telephone number or SIP equivalent of a reporting party
                 described in the parent call.
               format: uri
             updatedCBNCallerDescription:
               type: string
-              description: Additional descriptive text about an updated caller call back
+              description:
+                Additional descriptive text about an updated caller call back
                 number such as the days and hours to use it and the type of
                 number (e.g., work, home, friend, etc.).
     CallInformationType:
       title: CallInformationType
-      description: A data type for call information about an incident received and
+      description:
+        A data type for call information about an incident received and
         collected by an agent.
       allOf:
         - $ref: '#/components/schemas/PrologueType'
@@ -504,18 +549,21 @@ components:
               description: An identifier of a call associated with an incident.
             relatedCallIdentifier:
               type: string
-              description: CallIdentifier of calls that are related to this call. Eg
+              description:
+                CallIdentifier of calls that are related to this call. Eg
                 Callbacks
             queueIdentifier:
               type: string
               description: An identifier of a queue where the call is currently on.
             callTypeDescriptionRegistryText:
               type: string
-              description: Shall only contains values present in the Call Origination
+              description:
+                Shall only contains values present in the Call Origination
                 registry
             additionalDataReference:
               type: array
-              description: Additional information associated with an incident call,
+              description:
+                Additional information associated with an incident call,
                 location, or person. Linked elements type is AdditionalDataType
               items:
                 $ref: '#/components/schemas/ReferenceType'
@@ -530,20 +578,23 @@ components:
               description: Shall only contains values present in the Call Status registry
             callMediaURL:
               type: array
-              description: A location where media associated with the call (images,
+              description:
+                A location where media associated with the call (images,
                 streaming video, streaming audio, etc.) is available.
               items:
                 type: string
                 format: uri
             deviceCallBackInformationURL:
               type: string
-              description: A URL containing limited duration information for a telephone
+              description:
+                A URL containing limited duration information for a telephone
                 number or SIP equivalent for calling back a device that
                 initiated a call.
               format: uri
             callerCallBackInformationURL:
               type: string
-              description: A URL for a telephone number or SIP equivalent for calling back
+              description:
+                A URL for a telephone number or SIP equivalent for calling back
                 a caller that initiated a call.
               format: uri
             agentReference:
@@ -557,13 +608,15 @@ components:
                 $ref: '#/components/schemas/UpdatedCBNType'
             locationReference:
               type: array
-              description: A location associated with an incident. Linked elements type is
+              description:
+                A location associated with an incident. Linked elements type is
                 LocationInformationType
               items:
                 $ref: '#/components/schemas/ReferenceType'
             personReference:
               type: array
-              description: Information about a person associated with an incident. Linked
+              description:
+                Information about a person associated with an incident. Linked
                 elements type is PersonInformationType
               items:
                 $ref: '#/components/schemas/ReferenceType'
@@ -588,14 +641,16 @@ components:
               format: date-time
             emergencyResourceTypeCommonRegistryText:
               type: string
-              description: Shall only contains values present in the Emergency Resource
+              description:
+                Shall only contains values present in the Emergency Resource
                 Type registry
             emergencyResourceTypeInternalText:
               type: string
               description: A local code for an emergency resource type.
             resourceAttributeRegistryText:
               type: array
-              description: Shall only contains values present in the Resource Attribute
+              description:
+                Shall only contains values present in the Resource Attribute
                 registry
               items:
                 type: string
@@ -605,11 +660,13 @@ components:
               type: string
             primaryUnitStatusRegistryText:
               type: string
-              description: Shall only contains values present in the Primary Unit Status
+              description:
+                Shall only contains values present in the Primary Unit Status
                 registry
             secondaryUnitStatusRegistryText:
               type: array
-              description: Shall only contains values present in the Secondary Unit Status
+              description:
+                Shall only contains values present in the Secondary Unit Status
                 registry
               items:
                 type: string
@@ -623,7 +680,8 @@ components:
                 type: string
             agentReference:
               type: array
-              description: Information about agents (e.g., call takers, dispatchers,
+              description:
+                Information about agents (e.g., call takers, dispatchers,
                 supervisors, responding emergency resources, etc.) and automated
                 systems acting as agents that are involved in an incident.
                 Linked elements type is AgentType
@@ -637,25 +695,29 @@ components:
               description: Linked elements type is LocationInformationType
             personReference:
               type: array
-              description: Information about a person associated with an incident. Linked
+              description:
+                Information about a person associated with an incident. Linked
                 elements type is PersonInformationType
               items:
                 $ref: '#/components/schemas/ReferenceType'
             vehicleReference:
               type: array
-              description: Information about a vehicle associated with an incident. Linked
+              description:
+                Information about a vehicle associated with an incident. Linked
                 elements type is VehicleInformationType
               items:
                 $ref: '#/components/schemas/ReferenceType'
             dispositionComponent:
               type: array
-              description: Incident disposition information entered or updated by a
+              description:
+                Incident disposition information entered or updated by a
                 dispatch agent and/or a responding emergency resource.
               items:
                 $ref: '#/components/schemas/DispositionType'
             additionalDataReference:
               type: array
-              description: Additional information associated with an emergency resource.
+              description:
+                Additional information associated with an emergency resource.
                 Linked elements type is AdditionalDataType
               items:
                 $ref: '#/components/schemas/ReferenceType'
@@ -673,7 +735,8 @@ components:
               description: Linked elements type is AgentType
             emergencyResourceReference:
               type: array
-              description: A resource (vehicle, person [foot patrol], organizational unit
+              description:
+                A resource (vehicle, person [foot patrol], organizational unit
                 such as a squad or strike team, and other emergency responder
                 configurations) that responds to an emergency incident. Linked
                 elements type is EmergencyResourceType
@@ -681,7 +744,8 @@ components:
                 $ref: '#/components/schemas/ReferenceType'
     AlarmsSensorsType:
       title: AlarmsSensorsType
-      description: A data type for alarms and sensors information associated with an
+      description:
+        A data type for alarms and sensors information associated with an
         incident.
       allOf:
         - $ref: '#/components/schemas/PrologueType'
@@ -689,11 +753,13 @@ components:
           properties:
             CSAAAlarmInformation:
               type: string
-              description: Central Station Alarm Association (CSAA) data associated with an
+              description:
+                Central Station Alarm Association (CSAA) data associated with an
                 incident.
             alarmURL:
               type: string
-              description: A URL that references Central Station Alarm Association (CSAA)
+              description:
+                A URL that references Central Station Alarm Association (CSAA)
                 data associated with an incident.
               format: uri
             agentReference:
@@ -701,7 +767,8 @@ components:
               description: Linked elements type is AgentType
     EmergencyIncidentDataObjectType:
       title: Emergency Incident Data Object Type
-      description: A data type for an information exchange containing emergency incident
+      description:
+        A data type for an information exchange containing emergency incident
         related data.
       allOf:
         - $ref: '#/components/schemas/PrologueType'
@@ -722,15 +789,18 @@ components:
               description: A globally unique emergency incident identifier.
             reasonForIssueRegistryText:
               type: string
-              description: Shall only contains values present in the Reason For Issue
+              description:
+                Shall only contains values present in the Reason For Issue
                 registry
             issuingElementIdentification:
               type: string
-              description: An identifier of a functional element that created the EIDO
+              description:
+                An identifier of a functional element that created the EIDO
                 instance.
             incidentCollaborationURL:
               type: array
-              description: A URL reference to multi-media collaboration information
+              description:
+                A URL reference to multi-media collaboration information
                 associated with an incident.
               items:
                 type: string
@@ -740,7 +810,8 @@ components:
               description: Linked elements type is AgentType
             agencyReference:
               type: array
-              description: An organization that owns or is otherwise related to an
+              description:
+                An organization that owns or is otherwise related to an
                 emergency incident. Linked elements type is AgencyType
               items:
                 $ref: '#/components/schemas/ReferenceType'
@@ -756,12 +827,14 @@ components:
                 $ref: '#/components/schemas/LinkInformationType'
             incidentComponent:
               $ref: '#/components/schemas/IncidentInformationType'
-              description: General information about the emergency incident gathered by
+              description:
+                General information about the emergency incident gathered by
                 emergency agents, responding emergency resources, from reporting
                 parties (callers), and devices reporting emergency incidents.
             callComponent:
               type: array
-              description: Call information about an incident received and collected by an
+              description:
+                Call information about an incident received and collected by an
                 agent.
               items:
                 $ref: '#/components/schemas/CallInformationType'
@@ -797,25 +870,29 @@ components:
                 $ref: '#/components/schemas/AdditionalDataType'
             locationInformationComponent:
               type: array
-              description: All location informations referenced in this document are listed
+              description:
+                All location informations referenced in this document are listed
                 here
               items:
                 $ref: '#/components/schemas/LocationInformationType'
             personInformationComponent:
               type: array
-              description: All person informations referenced in this document are listed
+              description:
+                All person informations referenced in this document are listed
                 here
               items:
                 $ref: '#/components/schemas/PersonInformationType'
             vehicleInformationComponent:
               type: array
-              description: All vehicle informations referenced in this document are listed
+              description:
+                All vehicle informations referenced in this document are listed
                 here
               items:
                 $ref: '#/components/schemas/VehicleInformationType'
             emergencyResourceComponent:
               type: array
-              description: All emergency resources information referenced in this document
+              description:
+                All emergency resources information referenced in this document
                 are listed here
               items:
                 $ref: '#/components/schemas/EmergencyResourceType'
@@ -830,11 +907,13 @@ components:
             type: string
         DateAccuracyAbstract:
           type: string
-          description: A data concept for a subjective assessment that indicates belief
+          description:
+            A data concept for a subjective assessment that indicates belief
             that date content is exact or accurate.
         DateMarginOfErrorDuration:
           type: string
-          description: A subjective assessment of the uncertainty of an estimated
+          description:
+            A subjective assessment of the uncertainty of an estimated
             point by bounding an elements value with an estimated margin of error.
         DateAugmentationPoint:
           type: array
@@ -865,17 +944,19 @@ components:
     TextType:
       title: TextType
       required:
-      - lang
+        - lang
       type: object
       properties:
         partialIndicator:
           type: boolean
-          description: True if only partial information was available to the information
+          description:
+            True if only partial information was available to the information
             source at the time when the data was captured in the system; false otherwise.
           default: false
         truncationIndicator:
           type: boolean
-          description: True if the length of a string is greater than the length of
+          description:
+            True if the length of a string is greater than the length of
             the field within which the string was stored in the exporting system;
             false otherwise.
           default: false
@@ -903,13 +984,15 @@ components:
             $ref: '#/components/schemas/TextType'
         StatusIssuerIdentification:
           type: array
-          description: An identification of a person or organization which assigns
+          description:
+            An identification of a person or organization which assigns
             a status.
           items:
             type: string
         StatusIssuerText:
           type: array
-          description: A name, identifier, or other reference of a person or organization
+          description:
+            A name, identifier, or other reference of a person or organization
             which assigns a status.
           items:
             $ref: '#/components/schemas/TextType'
@@ -930,7 +1013,8 @@ components:
       properties:
         StateRepresentation:
           type: array
-          description: A data concept for a state, commonwealth, province, or other
+          description:
+            A data concept for a state, commonwealth, province, or other
             such geopolitical subdivision of a country.
           items:
             type: string
@@ -939,7 +1023,8 @@ components:
           description: An augmentation point for type StateType
           items:
             type: string
-      description: A data type for a state, commonwealth, province, or other such
+      description:
+        A data type for a state, commonwealth, province, or other such
         geopolitical subdivision of a country.
     JurisdictionType:
       title: JurisdictionType
@@ -947,7 +1032,8 @@ components:
       properties:
         JurisdictionAbstract:
           type: array
-          description: A data concept for an area, state, region, or other geographic
+          description:
+            A data concept for an area, state, region, or other geographic
             unit over which some kind of authority exists.
           items:
             type: string
@@ -958,19 +1044,22 @@ components:
             $ref: '#/components/schemas/ProperNameTextType'
         LocationCountry:
           type: array
-          description: A country, territory, dependency, or other such geopolitical
+          description:
+            A country, territory, dependency, or other such geopolitical
             subdivision of a location.
           items:
             $ref: '#/components/schemas/CountryType'
         LocationCountyAbstract:
           type: array
-          description: A data concept for a county, parish, vicinage, or other such
+          description:
+            A data concept for a county, parish, vicinage, or other such
             geopolitical subdivision of a state.
           items:
             type: string
         LocationState:
           type: array
-          description: A state, commonwealth, province, or other such geopolitical
+          description:
+            A state, commonwealth, province, or other such geopolitical
             subdivision of a country.
           items:
             $ref: '#/components/schemas/StateType'
@@ -984,7 +1073,8 @@ components:
           description: An augmentation point for JurisdictionType.
           items:
             type: string
-      description: A data type for a geopolitical area in which an organization, person,
+      description:
+        A data type for a geopolitical area in which an organization, person,
         or object has a specific range of authority.
     IdentificationType:
       title: Identification Type
@@ -1042,7 +1132,8 @@ components:
       properties:
         EntityRepresentation:
           type: array
-          description: A data concept for a person, organization, or thing capable
+          description:
+            A data concept for a person, organization, or thing capable
             of bearing legal rights and responsibilities.
           items:
             type: string
@@ -1051,12 +1142,13 @@ components:
           description: An augmentation point for EntityType.
           items:
             type: string
-      description: A data type for a person, organization, or thing capable of bearing
+      description:
+        A data type for a person, organization, or thing capable of bearing
         legal rights and responsibilities.
     SoftwareNameType:
       title: SoftwareNameType
       required:
-      - lang
+        - lang
       type: object
       properties:
         softwareVersionText:
@@ -1064,18 +1156,21 @@ components:
           description: A version of a computer application.
         partialIndicator:
           type: boolean
-          description: True if only partial information was available to the information
+          description:
+            True if only partial information was available to the information
             source at the time when the data was captured in the system; false otherwise.
           default: false
         truncationIndicator:
           type: boolean
-          description: True if the length of a string is greater than the length of
+          description:
+            True if the length of a string is greater than the length of
             the field within which the string was stored in the exporting system;
             false otherwise.
           default: false
         lang:
           type: string
-      description: A data type for a name of a computer application used to process
+      description:
+        A data type for a name of a computer application used to process
         data.
     MeasureType:
       title: MeasureType
@@ -1088,7 +1183,8 @@ components:
             type: string
         MeasureCommentText:
           type: array
-          description: A comment regarding the measurement value and/or its error
+          description:
+            A comment regarding the measurement value and/or its error
             estimate.
           items:
             $ref: '#/components/schemas/TextType'
@@ -1099,7 +1195,8 @@ components:
             $ref: '#/components/schemas/DateType'
         MeasureErrorAbstract:
           type: array
-          description: A data concept for an estimate of the error or quality of a
+          description:
+            A data concept for an estimate of the error or quality of a
             measurement value.
           items:
             type: string
@@ -1120,7 +1217,8 @@ components:
             $ref: '#/components/schemas/TextType'
         MeasureEstimatedIndicator:
           type: array
-          description: True if a measurement has been guessed, or estimated without
+          description:
+            True if a measurement has been guessed, or estimated without
             use of a measuring device or analytical method; false otherwise.
           items:
             type: string
@@ -1134,19 +1232,19 @@ components:
       title: TimeMeasureType
       description: A data type for a measure of an amount of time.
       allOf:
-      - $ref: '#/components/schemas/MeasureType'
-      - type: object
-        properties:
-          TimeUnitAbstract:
-            type: array
-            description: A data concept for a unit of measure for amount of time.
-            items:
-              type: string
-          TimeMeasureAugmentationPoint:
-            type: array
-            description: An augmentation point for type TimeMeasureType
-            items:
-              type: string
+        - $ref: '#/components/schemas/MeasureType'
+        - type: object
+          properties:
+            TimeUnitAbstract:
+              type: array
+              description: A data concept for a unit of measure for amount of time.
+              items:
+                type: string
+            TimeMeasureAugmentationPoint:
+              type: array
+              description: An augmentation point for type TimeMeasureType
+              items:
+                type: string
     AreaType:
       title: AreaType
       type: object
@@ -1158,7 +1256,8 @@ components:
             $ref: '#/components/schemas/TextType'
         AreaGeographicAbstract:
           type: array
-          description: A data concept for a local or map-specific geographically-based
+          description:
+            A data concept for a local or map-specific geographically-based
             code used to describe an area.
           items:
             type: string
@@ -1184,7 +1283,8 @@ components:
             type: string
         ContactEntity:
           type: array
-          description: An entity that may be contacted by using the given contact
+          description:
+            An entity that may be contacted by using the given contact
             information.
           items:
             $ref: '#/components/schemas/EntityType'
@@ -1200,13 +1300,15 @@ components:
             $ref: '#/components/schemas/TextType'
         ContactResponder:
           type: array
-          description: A third party person who answers a call and connects or directs
+          description:
+            A third party person who answers a call and connects or directs
             the caller to the intended person.
           items:
             type: string
         ContactInformationAvailabilityAbstract:
           type: array
-          description: A data concept for a period of time or a situation in which
+          description:
+            A data concept for a period of time or a situation in which
             an entity is available to be contacted with the given contact information.
           items:
             type: string
@@ -1242,7 +1344,8 @@ components:
             $ref: '#/components/schemas/TextType'
         LocaleDistrictName:
           type: array
-          description: A name given to an area defined for administrative or official
+          description:
+            A name given to an area defined for administrative or official
             purposes.
           items:
             $ref: '#/components/schemas/TextType'
@@ -1303,7 +1406,8 @@ components:
             $ref: '#/components/schemas/TextType'
         LocaleEmergencyServicesJurisdictionID:
           type: array
-          description: An identifier of an emergency services jurisdiction that encompasses
+          description:
+            An identifier of an emergency services jurisdiction that encompasses
             a location.
           items:
             type: string
@@ -1324,7 +1428,8 @@ components:
             $ref: '#/components/schemas/TextType'
         MapDate:
           type: array
-          description: A date a map was published, copyrighted or became effective
+          description:
+            A date a map was published, copyrighted or became effective
             for use.
           items:
             $ref: '#/components/schemas/DateType'
@@ -1378,23 +1483,24 @@ components:
       title: LengthMeasureType
       description: A data type for a measure of a distance or extent.
       allOf:
-      - $ref: '#/components/schemas/MeasureType'
-      - type: object
-        properties:
-          LengthUnitAbstract:
-            type: array
-            description: A data concept for a unit of measure for length.
-            items:
-              type: string
-          LengthMeasureAugmentationPoint:
-            type: array
-            description: An augmentation point for type LengthMeasureType
-            items:
-              type: string
+        - $ref: '#/components/schemas/MeasureType'
+        - type: object
+          properties:
+            LengthUnitAbstract:
+              type: array
+              description: A data concept for a unit of measure for length.
+              items:
+                type: string
+            LengthMeasureAugmentationPoint:
+              type: array
+              description: An augmentation point for type LengthMeasureType
+              items:
+                type: string
     RelativeLocationHeadingType:
       title: RelativeLocationHeadingType
       type: object
-      description: A data type for a compass heading of a direction from a reference
+      description:
+        A data type for a compass heading of a direction from a reference
         location.
     RelativeLocationType:
       title: RelativeLocationType
@@ -1402,19 +1508,22 @@ components:
       properties:
         RelativeLocationDescriptionText:
           type: array
-          description: A description of how to reach a location from a certain starting
+          description:
+            A description of how to reach a location from a certain starting
             point.
           items:
             $ref: '#/components/schemas/TextType'
         RelativeLocationDirectionAbstract:
           type: array
-          description: A data concept for a relative location or movement from a starting
+          description:
+            A data concept for a relative location or movement from a starting
             point.
           items:
             type: string
         RelativeLocationDistanceMeasure:
           type: array
-          description: A measurement of the distance of a location from a starting
+          description:
+            A measurement of the distance of a location from a starting
             point.
           items:
             $ref: '#/components/schemas/LengthMeasureType'
@@ -1425,7 +1534,8 @@ components:
             $ref: '#/components/schemas/RelativeLocationHeadingType'
         RelativeLocationReferencePoint:
           type: array
-          description: A starting point used as a basis to determine the location
+          description:
+            A starting point used as a basis to determine the location
             of another point.
           items:
             type: string
@@ -1434,7 +1544,8 @@ components:
           description: An augmentation point for RelativeLocationType.
           items:
             type: string
-      description: A data type for a location identified by its proximity to another
+      description:
+        A data type for a location identified by its proximity to another
         location.
     LocationType:
       title: LocationType
@@ -1442,7 +1553,8 @@ components:
       properties:
         LocationAddressAbstract:
           type: array
-          description: A data concept for a set of information, such as postal information,
+          description:
+            A data concept for a set of information, such as postal information,
             used to describe a location.
           items:
             type: string
@@ -1568,7 +1680,8 @@ components:
             $ref: '#/components/schemas/TextType'
         CapabilityIsLimitationIndicator:
           type: array
-          description: True if a capability implies an inability to do something;
+          description:
+            True if a capability implies an inability to do something;
             false otherwise.
           items:
             type: string
@@ -1577,7 +1690,8 @@ components:
           description: An augmentation point for CapabilityType.
           items:
             type: string
-      description: A data type for an ability to complete a task or execute a course
+      description:
+        A data type for an ability to complete a task or execute a course
         of action under specified condition and level of performance.
     QuantityType:
       title: QuantityType
@@ -1604,7 +1718,8 @@ components:
             type: string
         BinaryHashFunctionAbstract:
           type: array
-          description: A data concept for a hash function used to generate a hash
+          description:
+            A data concept for a hash function used to generate a hash
             value representing an object encoded in a binary format.
           items:
             type: string
@@ -1613,7 +1728,8 @@ components:
           description: An augmentation point for type BinaryHashType
           items:
             type: string
-      description: A data type for a hash value representing an object encoded in
+      description:
+        A data type for a hash value representing an object encoded in
         a binary format.
     NonNegativeDecimalType:
       title: NonNegativeDecimalType
@@ -1693,35 +1809,36 @@ components:
           description: An augmentation point for BinaryType.
           items:
             type: string
-      description: A data type for a digital representation of an object encoded in
+      description:
+        A data type for a digital representation of an object encoded in
         a binary format.
     ImageType:
       title: ImageType
       description: A data type for a picture or visual representation of something.
       allOf:
-      - $ref: '#/components/schemas/BinaryType'
-      - type: object
-        properties:
-          ImageHeightValue:
-            type: array
-            description: A height of an image in pixels.
-            items:
-              type: string
-          ImageLocation:
-            type: array
-            description: A physical location where an image is stored.
-            items:
-              $ref: '#/components/schemas/LocationType'
-          ImageWidthValue:
-            type: array
-            description: A width of an image in pixels.
-            items:
-              type: string
-          ImageAugmentationPoint:
-            type: array
-            description: An augmentation point for ImageType.
-            items:
-              type: string
+        - $ref: '#/components/schemas/BinaryType'
+        - type: object
+          properties:
+            ImageHeightValue:
+              type: array
+              description: A height of an image in pixels.
+              items:
+                type: string
+            ImageLocation:
+              type: array
+              description: A physical location where an image is stored.
+              items:
+                $ref: '#/components/schemas/LocationType'
+            ImageWidthValue:
+              type: array
+              description: A width of an image in pixels.
+              items:
+                type: string
+            ImageAugmentationPoint:
+              type: array
+              description: An augmentation point for ImageType.
+              items:
+                type: string
     InjuryType:
       title: InjuryType
       type: object
@@ -1733,7 +1850,8 @@ components:
             type: string
         InjuryLocationAbstract:
           type: array
-          description: A data concept for a place on the body of a person where an
+          description:
+            A data concept for a place on the body of a person where an
             injury occurred.
           items:
             type: string
@@ -1759,7 +1877,8 @@ components:
             type: string
         InjurySeverityAbstract:
           type: array
-          description: A data concept for a severity of an injury received by a person
+          description:
+            A data concept for a severity of an injury received by a person
             involved into a Traffic Accident.
           items:
             type: string
@@ -1830,7 +1949,8 @@ components:
             $ref: '#/components/schemas/DateType'
         MilitaryDischargeCategoryAbstract:
           type: array
-          description: A data concept for a kind of discharge a person received from
+          description:
+            A data concept for a kind of discharge a person received from
             military service.
           items:
             type: string
@@ -1841,7 +1961,8 @@ components:
             $ref: '#/components/schemas/TextType'
         MilitaryExperienceIndicator:
           type: array
-          description: True if a person has some form of military experience; false
+          description:
+            True if a person has some form of military experience; false
             otherwise.
           items:
             type: string
@@ -1857,7 +1978,8 @@ components:
             $ref: '#/components/schemas/TextType'
         MilitaryServiceActiveIndicator:
           type: array
-          description: True if a person is currently serving in the military; false
+          description:
+            True if a person is currently serving in the military; false
             otherwise.
           items:
             type: string
@@ -1888,13 +2010,15 @@ components:
       properties:
         personNameInitialIndicator:
           type: boolean
-          description: True if value represents the first letter or initials of a
+          description:
+            True if value represents the first letter or initials of a
             persons name; false otherwise.
         sequenceID:
           type: integer
           description: A numeric identifier that explicitly sequences or orders elements.
           format: int32
-      description: A data type for a name by which a person is known, referred, or
+      description:
+        A data type for a name by which a person is known, referred, or
         addressed.
     PersonNameType:
       title: PersonNameType
@@ -1927,7 +2051,8 @@ components:
             $ref: '#/components/schemas/TextType'
         PersonMaidenName:
           type: array
-          description: An original last name or surname of a person before changed
+          description:
+            An original last name or surname of a person before changed
             by marriage.
           items:
             $ref: '#/components/schemas/PersonNameTextType'
@@ -1943,13 +2068,15 @@ components:
             type: string
         PersonNameSalutationText:
           type: array
-          description: A formal sign or expression of greeting that is appropriate
+          description:
+            A formal sign or expression of greeting that is appropriate
             for this person.
           items:
             $ref: '#/components/schemas/TextType'
         PersonOfficialGivenName:
           type: array
-          description: A name, out of possibly multiple given names, that a person
+          description:
+            A name, out of possibly multiple given names, that a person
             selects to use as his or her official given name.
           items:
             $ref: '#/components/schemas/PersonNameTextType'
@@ -1960,7 +2087,8 @@ components:
             $ref: '#/components/schemas/TextType'
         PersonSurNamePrefixText:
           type: array
-          description: A prefix that precedes this person's family name such as Van,
+          description:
+            A prefix that precedes this person's family name such as Van,
             Von.
           items:
             $ref: '#/components/schemas/TextType'
@@ -1972,7 +2100,8 @@ components:
         personNameCommentText:
           type: string
           description: A comment about a kind of name for a person.
-      description: A data type for a combination of names and/or titles by which a
+      description:
+        A data type for a combination of names and/or titles by which a
         person is known.
     PhysicalFeatureType:
       title: PhysicalFeatureType
@@ -2008,7 +2137,8 @@ components:
           description: An augmentation point for PhysicalFeatureType.
           items:
             type: string
-      description: A data type for a prominent or easily identifiable aspect of something
+      description:
+        A data type for a prominent or easily identifiable aspect of something
         or someone.
     PersonLanguageType:
       title: PersonLanguageType
@@ -2021,7 +2151,8 @@ components:
             type: string
         PersonComprehendsSpokenLanguageIndicator:
           type: array
-          description: True if a person is able to grasp and understand the meaning
+          description:
+            True if a person is able to grasp and understand the meaning
             of a language being spoken; false otherwise.
           items:
             type: string
@@ -2050,26 +2181,27 @@ components:
       title: WeightMeasureType
       description: A data type for a measure of a weight.
       allOf:
-      - $ref: '#/components/schemas/MeasureType'
-      - type: object
-        properties:
-          WeightUnitAbstract:
-            type: array
-            description: A data concept for a unit of measure for weight.
-            items:
-              type: string
-          WeightMeasureAugmentationPoint:
-            type: array
-            description: An augmentation point for type WeightMeasureType
-            items:
-              type: string
+        - $ref: '#/components/schemas/MeasureType'
+        - type: object
+          properties:
+            WeightUnitAbstract:
+              type: array
+              description: A data concept for a unit of measure for weight.
+              items:
+                type: string
+            WeightMeasureAugmentationPoint:
+              type: array
+              description: An augmentation point for type WeightMeasureType
+              items:
+                type: string
     PersonType:
       title: NIEM Core Person Type
       type: object
       properties:
         PersonAccentText:
           type: array
-          description: A manner of pronunciation; a way of pronouncing words that
+          description:
+            A manner of pronunciation; a way of pronouncing words that
             may indicate the place of origin or social background of the speaker.
           items:
             $ref: '#/components/schemas/TextType'
@@ -2100,7 +2232,8 @@ components:
             type: string
         PersonBodyXRaysAvailableAbstract:
           type: array
-          description: A data concept for the availability of an X-ray for a specific
+          description:
+            A data concept for the availability of an X-ray for a specific
             body part for a person.
           items:
             type: string
@@ -2121,7 +2254,8 @@ components:
             type: string
         PersonCitizenshipAbstract:
           type: array
-          description: A data concept for a country that assigns rights, duties, and
+          description:
+            A data concept for a country that assigns rights, duties, and
             privileges to a person because of the birth or naturalization of the person
             in that country.
           items:
@@ -2138,7 +2272,8 @@ components:
             $ref: '#/components/schemas/DateType'
         PersonDependentQuantity:
           type: array
-          description: A number of people dependent upon a person as their primary
+          description:
+            A number of people dependent upon a person as their primary
             means of support.
           items:
             $ref: '#/components/schemas/QuantityType'
@@ -2159,13 +2294,15 @@ components:
             $ref: '#/components/schemas/ImageType'
         PersonDisguiseDescriptionText:
           type: array
-          description: A description of something a person wears to conceal or mislead
+          description:
+            A description of something a person wears to conceal or mislead
             others as to the true appearance or identity of that person.
           items:
             $ref: '#/components/schemas/TextType'
         PersonOrganDonorAbstract:
           type: array
-          description: A data concept for an organ a person is willing to donate upon
+          description:
+            A data concept for an organ a person is willing to donate upon
             death.
           items:
             type: string
@@ -2241,7 +2378,8 @@ components:
             $ref: '#/components/schemas/LengthMeasureType'
         PersonHumanResourceIdentification:
           type: array
-          description: A human resources or employment identification assigned to
+          description:
+            A human resources or employment identification assigned to
             a person.
           items:
             $ref: '#/components/schemas/IdentificationType'
@@ -2262,13 +2400,15 @@ components:
             type: string
         PersonLearningDisabilityText:
           type: array
-          description: A disorder of a person which can cause difficulties in learning
+          description:
+            A disorder of a person which can cause difficulties in learning
             something.
           items:
             $ref: '#/components/schemas/TextType'
         PersonLicenseIdentification:
           type: array
-          description: An identification that references a license certification or
+          description:
+            An identification that references a license certification or
             registration of a person for some purpose.
           items:
             $ref: '#/components/schemas/IdentificationType'
@@ -2289,7 +2429,8 @@ components:
             $ref: '#/components/schemas/TextType'
         PersonMedicalFileIndicator:
           type: array
-          description: True if a medical history file is known to exist for a person;
+          description:
+            True if a medical history file is known to exist for a person;
             false otherwise.
           items:
             type: string
@@ -2320,19 +2461,22 @@ components:
             $ref: '#/components/schemas/PersonNameType'
         PersonNationalIdentification:
           type: array
-          description: An identification that references a person within a country
+          description:
+            An identification that references a person within a country
             but is not based on fingerprint.
           items:
             $ref: '#/components/schemas/IdentificationType'
         PersonOrganDonatorIndicator:
           type: array
-          description: True if a person has given consent to be used as an organ donor
+          description:
+            True if a person has given consent to be used as an organ donor
             upon death; false otherwise.
           items:
             type: string
         PersonOtherIdentification:
           type: array
-          description: An identification with a kind that is not explicitly defined
+          description:
+            An identification with a kind that is not explicitly defined
             in the standard that refers to a person within a certain domain.
           items:
             $ref: '#/components/schemas/IdentificationType'
@@ -2353,37 +2497,43 @@ components:
             $ref: '#/components/schemas/PhysicalFeatureType'
         PersonPrimaryLanguage:
           type: array
-          description: A capacity of a person for a language with which that person
+          description:
+            A capacity of a person for a language with which that person
             has the strongest familiarity.
           items:
             $ref: '#/components/schemas/PersonLanguageType'
         PersonRaceAbstract:
           type: array
-          description: A data concept for a classification of a person based on factors
+          description:
+            A data concept for a classification of a person based on factors
             such as geographical locations and genetics.
           items:
             type: string
         PersonReligionAbstract:
           type: array
-          description: A data concept for a religion to which a person subscribes
+          description:
+            A data concept for a religion to which a person subscribes
             or believes; a categorization of spiritual beliefs.
           items:
             type: string
         PersonResidentAbstract:
           type: array
-          description: A data concept for a manner of residence a person has in a
+          description:
+            A data concept for a manner of residence a person has in a
             city, town, community, or other area..
           items:
             type: string
         PersonSecondaryLanguage:
           type: array
-          description: A capacity of a person for a language with which that person
+          description:
+            A capacity of a person for a language with which that person
             is not completely fluent.
           items:
             $ref: '#/components/schemas/PersonLanguageType'
         PersonSecurityClearanceAbstract:
           type: array
-          description: A data concept for a formal authorization granting a person
+          description:
+            A data concept for a formal authorization granting a person
             access to classified or restricted information.
           items:
             type: string
@@ -2409,7 +2559,8 @@ components:
             $ref: '#/components/schemas/TextType'
         PersonSSNIdentification:
           type: array
-          description: A unique identification reference to a living person; assigned
+          description:
+            A unique identification reference to a living person; assigned
             by the United States Social Security Administration.
           items:
             $ref: '#/components/schemas/IdentificationType'
@@ -2420,7 +2571,8 @@ components:
             $ref: '#/components/schemas/IdentificationType'
         PersonTaxIdentification:
           type: array
-          description: An identification used to refer to a specific person within
+          description:
+            An identification used to refer to a specific person within
             the tax system of a country.
           items:
             $ref: '#/components/schemas/IdentificationType'
@@ -2456,7 +2608,8 @@ components:
             $ref: '#/components/schemas/ImageType'
         PersonNationalityAbstract:
           type: array
-          description: A data concept for a country of a person's citizenship or a
+          description:
+            A data concept for a country of a person's citizenship or a
             country in which a person is deemed a national.
           items:
             type: string
@@ -2532,7 +2685,8 @@ components:
             type: string
         DocumentSensitivityAbstract:
           type: array
-          description: A data concept for a characterization of the sensitivity, security,
+          description:
+            A data concept for a characterization of the sensitivity, security,
             or privacy level of a document.
           items:
             type: string
@@ -2543,7 +2697,8 @@ components:
             $ref: '#/components/schemas/TextType'
         DocumentAlternativeTitleText:
           type: array
-          description: A title used as a substitute or alternative to the formal title
+          description:
+            A title used as a substitute or alternative to the formal title
             of a document.
           items:
             $ref: '#/components/schemas/TextType'
@@ -2589,13 +2744,15 @@ components:
             $ref: '#/components/schemas/TextType'
         DocumentDispositionAuthorityName:
           type: array
-          description: A name of an authority designated to handle or process information
+          description:
+            A name of an authority designated to handle or process information
             in a document.
           items:
             $ref: '#/components/schemas/TextType'
         DocumentDispositionInstructionText:
           type: array
-          description: An instruction on how to handle or process information in a
+          description:
+            An instruction on how to handle or process information in a
             document.
           items:
             $ref: '#/components/schemas/TextType'
@@ -2611,7 +2768,8 @@ components:
             $ref: '#/components/schemas/TextType'
         DocumentEffectiveDate:
           type: array
-          description: A date in which the content or action becomes enforceable,
+          description:
+            A date in which the content or action becomes enforceable,
             active, or effective.
           items:
             $ref: '#/components/schemas/DateType'
@@ -2622,19 +2780,22 @@ components:
             $ref: '#/components/schemas/PersonType'
         DocumentExpirationDate:
           type: array
-          description: A date after which the document is no longer valid. It may
+          description:
+            A date after which the document is no longer valid. It may
             indicate a document should be removed from a registry or index.
           items:
             $ref: '#/components/schemas/DateType'
         DocumentFileControlID:
           type: array
-          description: An identifier assigned to a document to locate it within a
+          description:
+            An identifier assigned to a document to locate it within a
             file control system.
           items:
             type: string
         DocumentFiledDate:
           type: array
-          description: A date a document was officially filed with an organization
+          description:
+            A date a document was officially filed with an organization
             or agency.
           items:
             $ref: '#/components/schemas/DateType'
@@ -2650,7 +2811,8 @@ components:
             $ref: '#/components/schemas/TextType'
         DocumentFormatText:
           type: array
-          description: A file format, content type (e.g., a MIME type), or physical
+          description:
+            A file format, content type (e.g., a MIME type), or physical
             format of a document.
           items:
             $ref: '#/components/schemas/TextType'
@@ -2666,7 +2828,8 @@ components:
             $ref: '#/components/schemas/IdentificationType'
         DocumentInformationCutOffDate:
           type: array
-          description: A date after which contributions to the content of a document
+          description:
+            A date after which contributions to the content of a document
             will no longer be accepted.
           items:
             $ref: '#/components/schemas/DateType'
@@ -2677,7 +2840,8 @@ components:
             type: string
         DocumentKeywordText:
           type: array
-          description: A significant word or phrase that describes the overall content
+          description:
+            A significant word or phrase that describes the overall content
             of a document or its main topic.
           items:
             $ref: '#/components/schemas/TextType'
@@ -2718,26 +2882,30 @@ components:
             $ref: '#/components/schemas/EntityType'
         DocumentPermanentRecordIndicator:
           type: array
-          description: True if a document is to be kept as a permanent record; false
+          description:
+            True if a document is to be kept as a permanent record; false
             otherwise.
           items:
             type: string
         DocumentPostDate:
           type: array
-          description: A date a document is entered or posted to an information system
+          description:
+            A date a document is entered or posted to an information system
             or network; used when the date of posting is different from the date on
             which a document was officially filed.
           items:
             $ref: '#/components/schemas/DateType'
         DocumentPrivacyActIndicator:
           type: array
-          description: True if a document is categorized as containing personal information
+          description:
+            True if a document is categorized as containing personal information
             subject to protection by the Privacy Act; false otherwise.
           items:
             type: string
         DocumentPublicationDate:
           type: array
-          description: A date of the first public dissemination of the content in
+          description:
+            A date of the first public dissemination of the content in
             any media.
           items:
             $ref: '#/components/schemas/DateType'
@@ -2753,13 +2921,15 @@ components:
             $ref: '#/components/schemas/EntityType'
         DocumentRelatedResourceText:
           type: array
-          description: A reference to another document or resource related to the
+          description:
+            A reference to another document or resource related to the
             document.
           items:
             $ref: '#/components/schemas/TextType'
         DocumentRightsText:
           type: array
-          description: A right held in and over the resource. Rights are the constraints
+          description:
+            A right held in and over the resource. Rights are the constraints
             applied to assure the protection of privacy or intellectual property,
             and any special restrictions, limitations or warning on using a shared
             resource.
@@ -2767,7 +2937,8 @@ components:
             $ref: '#/components/schemas/TextType'
         DocumentSequenceID:
           type: array
-          description: An identifier that determines the document order in a set of
+          description:
+            An identifier that determines the document order in a set of
             related documents.
           items:
             type: string
@@ -2788,19 +2959,22 @@ components:
             $ref: '#/components/schemas/StatusType'
         DocumentSubjectAbstract:
           type: array
-          description: A data concept for a subject code systems used and the appropriate
+          description:
+            A data concept for a subject code systems used and the appropriate
             subject code assigned to the document.
           items:
             type: string
         DocumentSummaryText:
           type: array
-          description: A short description of the subject, content, and key points
+          description:
+            A short description of the subject, content, and key points
             of a document.
           items:
             $ref: '#/components/schemas/TextType'
         DocumentSupplementalMarkingText:
           type: array
-          description: A marking made on a document that is not part of the original
+          description:
+            A marking made on a document that is not part of the original
             content and that was added after a document was finalized.
           items:
             $ref: '#/components/schemas/TextType'
@@ -2811,31 +2985,36 @@ components:
             $ref: '#/components/schemas/TextType'
         DocumentVitalIndicator:
           type: array
-          description: True if a document is categorized as a vital record by the
+          description:
+            True if a document is categorized as a vital record by the
             originating agency; false otherwise.
           items:
             type: string
         DocumentAuthor:
           type: array
-          description: An entity primarily responsible for creating the intellectual
+          description:
+            An entity primarily responsible for creating the intellectual
             content of the resource.
           items:
             $ref: '#/components/schemas/EntityType'
         DocumentContributor:
           type: array
-          description: An entity responsible for making contributions to the content
+          description:
+            An entity responsible for making contributions to the content
             of the resource.
           items:
             $ref: '#/components/schemas/EntityType'
         DocumentCoverageAbstract:
           type: array
-          description: A data concept for an extent or scope of the content of the
+          description:
+            A data concept for an extent or scope of the content of the
             resource.
           items:
             type: string
         DocumentFormatCategoryText:
           type: array
-          description: A kind of classification system used to define the specific
+          description:
+            A kind of classification system used to define the specific
             format of a binary object or file.
           items:
             $ref: '#/components/schemas/TextType'
@@ -2871,7 +3050,8 @@ components:
             $ref: '#/components/schemas/LocationType'
         DocumentEUDataPrivacyIndicator:
           type: array
-          description: True if the data is protected under the EU Data Protection
+          description:
+            True if the data is protected under the EU Data Protection
             Regulation 2016-679 and should be treated differently; false otherwise.
           items:
             type: string
@@ -2922,7 +3102,8 @@ components:
             $ref: '#/components/schemas/TextType'
         DispositionInstrument:
           type: array
-          description: An official document filed to formally document the disposition
+          description:
+            An official document filed to formally document the disposition
             of a specific charge.
           items:
             $ref: '#/components/schemas/DocumentType'
@@ -2931,7 +3112,8 @@ components:
           description: An augmentation point for DispositionType.
           items:
             type: string
-      description: A data type for a result or outcome that is the product of handling,
+      description:
+        A data type for a result or outcome that is the product of handling,
         processing, or finalizing something.
     OrganizationType:
       title: Organization Type
@@ -2944,19 +3126,22 @@ components:
             $ref: '#/components/schemas/TextType'
         OrganizationLEIIdentification:
           type: array
-          description: An identification for a Legal Entity Identifier (LEI), to uniquely
+          description:
+            An identification for a Legal Entity Identifier (LEI), to uniquely
             identify legally distinct entities that engage in financial transactions.
           items:
             $ref: '#/components/schemas/IdentificationType'
         OrganizationActivityText:
           type: array
-          description: An activity that an organization is known or thought to be
+          description:
+            An activity that an organization is known or thought to be
             involved with.
           items:
             $ref: '#/components/schemas/TextType'
         OrganizationBranchName:
           type: array
-          description: A name of the chapter or branch by which an organization is
+          description:
+            A name of the chapter or branch by which an organization is
             known within a larger group of organizations.
           items:
             $ref: '#/components/schemas/TextType'
@@ -2992,13 +3177,15 @@ components:
             $ref: '#/components/schemas/DateType'
         OrganizationEveningContactInformation:
           type: array
-          description: A means of contacting an organization during evening or early
+          description:
+            A means of contacting an organization during evening or early
             night hours.
           items:
             $ref: '#/components/schemas/ContactInformationType'
         OrganizationForeignAffiliate:
           type: array
-          description: A foreign organization that has some relationship or association
+          description:
+            A foreign organization that has some relationship or association
             with an organization.
           items:
             type: string
@@ -3049,7 +3236,8 @@ components:
             $ref: '#/components/schemas/IdentificationType'
         OrganizationParentAbstract:
           type: array
-          description: A data concept for an entity that owns, controls, or operates
+          description:
+            A data concept for an entity that owns, controls, or operates
             the organization.
           items:
             type: string
@@ -3101,43 +3289,45 @@ components:
       description: A data type for a body of people organized for a particular purpose.
     ItemDispositionType:
       title: ItemDispositionType
-      description: A data type for a result or outcome that happens to a property
+      description:
+        A data type for a result or outcome that happens to a property
         item after it has been handled or processed.
       allOf:
-      - $ref: '#/components/schemas/NiemDispositionType'
-      - type: object
-        properties:
-          ItemDispositionAbstract:
-            type: array
-            description: A data concept for an indication of what happened to a property
-              item.
-            items:
-              type: string
-          ItemDispositionLocation:
-            type: array
-            description: A location of a property item after it has been processed.
-            items:
-              $ref: '#/components/schemas/LocationType'
-          Item:
-            type: array
-            description: An article or thing.
-            items:
-              type: string
-          ItemHoldingOrganization:
-            type: array
-            description: An organization that is in possession of a property item.
-            items:
-              $ref: '#/components/schemas/OrganizationType'
-          ItemMovingOrganization:
-            type: array
-            description: An organization that moves or relocates a property item.
-            items:
-              $ref: '#/components/schemas/OrganizationType'
-          ItemDispositionAugmentationPoint:
-            type: array
-            description: An augmentation point for ItemDispositionType.
-            items:
-              type: string
+        - $ref: '#/components/schemas/NiemDispositionType'
+        - type: object
+          properties:
+            ItemDispositionAbstract:
+              type: array
+              description:
+                A data concept for an indication of what happened to a property
+                item.
+              items:
+                type: string
+            ItemDispositionLocation:
+              type: array
+              description: A location of a property item after it has been processed.
+              items:
+                $ref: '#/components/schemas/LocationType'
+            Item:
+              type: array
+              description: An article or thing.
+              items:
+                type: string
+            ItemHoldingOrganization:
+              type: array
+              description: An organization that is in possession of a property item.
+              items:
+                $ref: '#/components/schemas/OrganizationType'
+            ItemMovingOrganization:
+              type: array
+              description: An organization that moves or relocates a property item.
+              items:
+                $ref: '#/components/schemas/OrganizationType'
+            ItemDispositionAugmentationPoint:
+              type: array
+              description: An augmentation point for ItemDispositionType.
+              items:
+                type: string
     ItemValueType:
       title: ItemValueType
       type: object
@@ -3149,7 +3339,8 @@ components:
             $ref: '#/components/schemas/AmountType'
         ItemValueAssigningMethodAbstract:
           type: array
-          description: A data concept for a method used to assign the value of an
+          description:
+            A data concept for a method used to assign the value of an
             item.
           items:
             type: string
@@ -3215,7 +3406,8 @@ components:
             $ref: '#/components/schemas/TextType'
         ItemDisposition:
           type: array
-          description: A result or outcome that happens to an item after it has been
+          description:
+            A result or outcome that happens to an item after it has been
             handled or processed.
           items:
             $ref: '#/components/schemas/ItemDispositionType'
@@ -3236,13 +3428,15 @@ components:
             type: string
         ItemOwnerPurchasedValue:
           type: array
-          description: An amount of money a current owner paid to purchase a property
+          description:
+            An amount of money a current owner paid to purchase a property
             item.
           items:
             $ref: '#/components/schemas/ItemValueType'
         ItemPossessionDescriptionText:
           type: array
-          description: A description of how or why a party other than the owner came
+          description:
+            A description of how or why a party other than the owner came
             to possess a property item.
           items:
             $ref: '#/components/schemas/TextType'
@@ -3253,7 +3447,8 @@ components:
             $ref: '#/components/schemas/EntityType'
         ItemReceiptIdentification:
           type: array
-          description: An identification issued to an item when taken into possession
+          description:
+            An identification issued to an item when taken into possession
             for official purposes.
           items:
             $ref: '#/components/schemas/IdentificationType'
@@ -3264,7 +3459,8 @@ components:
             $ref: '#/components/schemas/IdentificationType'
         ItemSerialIdentification:
           type: array
-          description: An identification inscribed on or attached to a part, collection
+          description:
+            An identification inscribed on or attached to a part, collection
             of parts, or complete unit by the manufacturer.
           items:
             $ref: '#/components/schemas/IdentificationType'
@@ -3295,19 +3491,22 @@ components:
             type: string
         WeaponIndicator:
           type: array
-          description: True if an item is traditionally considered to be a weapon;
+          description:
+            True if an item is traditionally considered to be a weapon;
             false otherwise.
           items:
             type: string
         WeaponUsageIndicator:
           type: array
-          description: True if an item not traditionally considered to be a weapon
+          description:
+            True if an item not traditionally considered to be a weapon
             is used as such; false otherwise.
           items:
             type: string
         ConveyanceSalesTaxPercent:
           type: array
-          description: A tax rate as a percentage used for computing the sales tax
+          description:
+            A tax rate as a percentage used for computing the sales tax
             on the purchase of a conveyance.
           items:
             type: string
@@ -3323,7 +3522,8 @@ components:
             $ref: '#/components/schemas/BinaryType'
         ItemBrandName:
           type: array
-          description: A distinctive name that identifies a manufacturer of a property
+          description:
+            A distinctive name that identifies a manufacturer of a property
             item.
           items:
             $ref: '#/components/schemas/ProperNameTextType'
@@ -3427,44 +3627,46 @@ components:
       title: Conveyance Type
       description: A data type for a means of transport from place to place.
       allOf:
-      - $ref: '#/components/schemas/ItemType'
-      - type: object
-        properties:
-          ConveyanceCargoText:
-            type: array
-            description: A cargo or set of goods transported by a conveyance.
-            items:
-              $ref: '#/components/schemas/TextType'
-          ConveyanceEngineQuantity:
-            type: array
-            description: A number of engines on a conveyance.
-            items:
-              type: string
-          ConveyanceMotorizedIndicator:
-            type: array
-            description: True if a conveyance is powered by a motor; false otherwise.
-            items:
-              type: string
-          ConveyanceTowedIndicator:
-            type: array
-            description: True if a conveyance is towed; false otherwise.
-            items:
-              type: string
-          ConveyanceUseAbstract:
-            type: array
-            description: A data concept for a manner or way in which a conveyance
-              is used.
-            items:
-              type: string
-          ConveyanceAugmentationPoint:
-            type: array
-            description: An augmentation point for ConveyanceType.
-            items:
-              type: string
+        - $ref: '#/components/schemas/ItemType'
+        - type: object
+          properties:
+            ConveyanceCargoText:
+              type: array
+              description: A cargo or set of goods transported by a conveyance.
+              items:
+                $ref: '#/components/schemas/TextType'
+            ConveyanceEngineQuantity:
+              type: array
+              description: A number of engines on a conveyance.
+              items:
+                type: string
+            ConveyanceMotorizedIndicator:
+              type: array
+              description: True if a conveyance is powered by a motor; false otherwise.
+              items:
+                type: string
+            ConveyanceTowedIndicator:
+              type: array
+              description: True if a conveyance is towed; false otherwise.
+              items:
+                type: string
+            ConveyanceUseAbstract:
+              type: array
+              description:
+                A data concept for a manner or way in which a conveyance
+                is used.
+              items:
+                type: string
+            ConveyanceAugmentationPoint:
+              type: array
+              description: An augmentation point for ConveyanceType.
+              items:
+                type: string
     ProperNameTextType:
       title: Proper Name Text Type
       type: object
-      description: A data type for a word or phrase by which a person or thing is
+      description:
+        A data type for a word or phrase by which a person or thing is
         known, referred or addressed.
     CountryType:
       title: CountryType
@@ -3480,111 +3682,121 @@ components:
           description: An augmentation point for type CountryType
           items:
             type: string
-      description: A data type for a country, territory, dependency, or other such
+      description:
+        A data type for a country, territory, dependency, or other such
         geopolitical subdivision of a location.
     VehicleType:
       title: NIEM Core Vehicle Type
-      description: A data type for a conveyance designed to carry an operator, passengers
+      description:
+        A data type for a conveyance designed to carry an operator, passengers
         and/or cargo, over land
       allOf:
-      - $ref: '#/components/schemas/ConveyanceType'
-      - type: object
-        properties:
-          VehicleCMVIndicator:
-            type: array
-            description: True if a vehicle is a commercial motor vehicle; false otherwise.
-            items:
-              type: string
-          VehicleColorInteriorText:
-            type: array
-            description: A color of the interior of a vehicle.
-            items:
-              $ref: '#/components/schemas/TextType'
-          VehicleDoorQuantity:
-            type: array
-            description: A number of doors on a vehicle.
-            items:
-              type: string
-          VehicleIdentification:
-            type: array
-            description: A unique identification for a specific vehicle.
-            items:
-              $ref: '#/components/schemas/IdentificationType'
-          VehicleMakeAbstract:
-            type: array
-            description: A data concept for a manufacturer of a vehicle.
-            items:
-              type: string
-          VehicleModelAbstract:
-            type: array
-            description: A data concept for a specific design or class of vehicle
-              made by a manufacturer.
-            items:
-              type: string
-          VehicleMSRPAmount:
-            type: array
-            description: A manufacturer's suggested retail price of a vehicle; a price
-              at which a manufacturer recommends a vehicle be sold.
-            items:
-              $ref: '#/components/schemas/AmountType'
-          VehicleOdometerReadingMeasure:
-            type: array
-            description: A reading of a vehicle odometer to the nearest mile or kilometer.
-            items:
-              $ref: '#/components/schemas/LengthMeasureType'
-          VehiclePassengerSafeQuantity:
-            type: array
-            description: A total number of people a vehicle is designed to safely
-              transport.
-            items:
-              type: string
-          VehicleSeatingQuantity:
-            type: array
-            description: A total number of seats available in a vehicle.
-            items:
-              type: string
-          VehicleTransmissionCategoryAbstract:
-            type: array
-            description: A data concept for a kind of transmission unit in a vehicle.
-            items:
-              type: string
-          VehicleAxleQuantity:
-            type: array
-            description: A count of common axles of rotation of one or more wheels
-              of a vehicle, whether power driven or freely rotating.
-            items:
-              type: string
-          VehicleCurrentWeightMeasure:
-            type: array
-            description: An observed, estimated, or measured weight of the conveyance.
-            items:
-              $ref: '#/components/schemas/WeightMeasureType'
-          VehicleGrossLadenSumWeightMeasure:
-            type: array
-            description: A sum of values specified by the manufacturer(s) for a truck,
-              tractor or trailer for the units that make up a combination.
-            items:
-              $ref: '#/components/schemas/WeightMeasureType'
-          VehicleGrossLadenUnitWeightMeasure:
-            type: array
-            description: A value specified by the manufacturer for a single unit truck,
-              truck tractor, or trailer.
-            items:
-              $ref: '#/components/schemas/WeightMeasureType'
-          VehicleMaximumLoadWeightMeasure:
-            type: array
-            description: A maximum load weight intended for the vehicle to transport,
-              assigned at the point of manufacture.
-            items:
-              $ref: '#/components/schemas/WeightMeasureType'
-          VehicleUnladenWeightMeasure:
-            type: array
-            description: A weight of a vehicle fully equipped for service, not including
-              the weight of the payload.
-            items:
-              $ref: '#/components/schemas/WeightMeasureType'
-          VehicleAugmentationPoint:
-            type: array
-            description: An augmentation point for VehicleType.
-            items:
-              type: string
+        - $ref: '#/components/schemas/ConveyanceType'
+        - type: object
+          properties:
+            VehicleCMVIndicator:
+              type: array
+              description: True if a vehicle is a commercial motor vehicle; false otherwise.
+              items:
+                type: string
+            VehicleColorInteriorText:
+              type: array
+              description: A color of the interior of a vehicle.
+              items:
+                $ref: '#/components/schemas/TextType'
+            VehicleDoorQuantity:
+              type: array
+              description: A number of doors on a vehicle.
+              items:
+                type: string
+            VehicleIdentification:
+              type: array
+              description: A unique identification for a specific vehicle.
+              items:
+                $ref: '#/components/schemas/IdentificationType'
+            VehicleMakeAbstract:
+              type: array
+              description: A data concept for a manufacturer of a vehicle.
+              items:
+                type: string
+            VehicleModelAbstract:
+              type: array
+              description:
+                A data concept for a specific design or class of vehicle
+                made by a manufacturer.
+              items:
+                type: string
+            VehicleMSRPAmount:
+              type: array
+              description:
+                A manufacturer's suggested retail price of a vehicle; a price
+                at which a manufacturer recommends a vehicle be sold.
+              items:
+                $ref: '#/components/schemas/AmountType'
+            VehicleOdometerReadingMeasure:
+              type: array
+              description: A reading of a vehicle odometer to the nearest mile or kilometer.
+              items:
+                $ref: '#/components/schemas/LengthMeasureType'
+            VehiclePassengerSafeQuantity:
+              type: array
+              description:
+                A total number of people a vehicle is designed to safely
+                transport.
+              items:
+                type: string
+            VehicleSeatingQuantity:
+              type: array
+              description: A total number of seats available in a vehicle.
+              items:
+                type: string
+            VehicleTransmissionCategoryAbstract:
+              type: array
+              description: A data concept for a kind of transmission unit in a vehicle.
+              items:
+                type: string
+            VehicleAxleQuantity:
+              type: array
+              description:
+                A count of common axles of rotation of one or more wheels
+                of a vehicle, whether power driven or freely rotating.
+              items:
+                type: string
+            VehicleCurrentWeightMeasure:
+              type: array
+              description: An observed, estimated, or measured weight of the conveyance.
+              items:
+                $ref: '#/components/schemas/WeightMeasureType'
+            VehicleGrossLadenSumWeightMeasure:
+              type: array
+              description:
+                A sum of values specified by the manufacturer(s) for a truck,
+                tractor or trailer for the units that make up a combination.
+              items:
+                $ref: '#/components/schemas/WeightMeasureType'
+            VehicleGrossLadenUnitWeightMeasure:
+              type: array
+              description:
+                A value specified by the manufacturer for a single unit truck,
+                truck tractor, or trailer.
+              items:
+                $ref: '#/components/schemas/WeightMeasureType'
+            VehicleMaximumLoadWeightMeasure:
+              type: array
+              description:
+                A maximum load weight intended for the vehicle to transport,
+                assigned at the point of manufacture.
+              items:
+                $ref: '#/components/schemas/WeightMeasureType'
+            VehicleUnladenWeightMeasure:
+              type: array
+              description:
+                A weight of a vehicle fully equipped for service, not including
+                the weight of the payload.
+              items:
+                $ref: '#/components/schemas/WeightMeasureType'
+            VehicleAugmentationPoint:
+              type: array
+              description: An augmentation point for VehicleType.
+              items:
+                type: string
