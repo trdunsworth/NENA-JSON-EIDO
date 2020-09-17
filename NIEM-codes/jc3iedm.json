@@ -1,0 +1,715 @@
+{
+	"$schema": "http://json-schema.org/schema#",
+	"additionalProperties": false,
+	"definitions": {
+		".jc3iedm:EventCategoryCode": {
+			"anyOf": [
+				{
+					"type": "null"
+				},
+				{
+					"$ref": "#/definitions/jc3iedm:EventCategoryCodeType"
+				}
+			],
+			"description": "A designator for a category that some event falls under."
+		},
+		".jc3iedm:MilitaryOrganizationCategoryServiceCode": {
+			"anyOf": [
+				{
+					"type": "null"
+				},
+				{
+					"$ref": "#/definitions/jc3iedm:MilitaryOrganizationCategoryServiceCodeType"
+				}
+			],
+			"description": "A designator for kind of a military, paramilitary, irregular force, force or group, capable of functioning as an offensive or defensive combat or support organisation."
+		},
+		".structures:AssociationAugmentationPoint": {
+			"$ref": "#/definitions/xs:anyType",
+			"description": "An augmentation point for AssociationType"
+		},
+		".structures:ObjectAugmentationPoint": {
+			"$ref": "#/definitions/xs:anyType",
+			"description": "An augmentation point for ObjectType"
+		},
+		"jc3iedm:EventCategoryCodeSimpleType": {
+			"description": "A data type for a  designator for a name which denotes the category that some event falls under.",
+			"enum": [
+				"ABDICA",
+				"ACCAIR",
+				"ACCDNT",
+				"ACCMNE",
+				"ACCTRF",
+				"ACCWPN",
+				"ACCWRK",
+				"ACRLOS",
+				"ADVANC",
+				"AERENG",
+				"AERSHO",
+				"AIRCRS",
+				"AIRLAU",
+				"AIRLND",
+				"AIRVIO",
+				"ALRCAN",
+				"AMBUSH",
+				"AMPH",
+				"ARASLT",
+				"ARBNAS",
+				"ARMPRD",
+				"ARMTRD",
+				"ARRLGL",
+				"ARROBS",
+				"ARSON",
+				"ARTFIR",
+				"ASSMBL",
+				"ASSNTN",
+				"ASTCRM",
+				"ATMPOL",
+				"ATMRDR",
+				"ATRAPE",
+				"ATRBRY",
+				"ATSCDE",
+				"ATTACK",
+				"ATTDVR",
+				"ATTEL",
+				"ATTMN",
+				"ATTSPT",
+				"AVOIDN",
+				"BBYTRD",
+				"BCESC",
+				"BCFRCD",
+				"BCILGL",
+				"BCNTPL",
+				"BCPLND",
+				"BCSRVL",
+				"BLDUP",
+				"BLOCKN",
+				"BLYLND",
+				"BMBACC",
+				"BMBDLB",
+				"BOMBNG",
+				"BORINC",
+				"BORRAI",
+				"BREACH",
+				"BRNOBJ",
+				"BYPASS",
+				"CANLSE",
+				"CAPTUR",
+				"CARLNC",
+				"CARREC",
+				"CBRN",
+				"CDWDEX",
+				"CEREMN",
+				"CIVDIS",
+				"CIVDMI",
+				"CIVDML",
+				"CIVUNR",
+				"CIVWAR",
+				"CLRAIR",
+				"CLRLND",
+				"CLROBS",
+				"CLRRAD",
+				"CNDCNF",
+				"CNDMED",
+				"CNDRCR",
+				"CNDSCL",
+				"CNDSPT",
+				"CNFSTN",
+				"CNFWPS",
+				"CNPRFR",
+				"CNRDSV",
+				"CNRWPS",
+				"CNSLDT",
+				"COLMID",
+				"COLOBS",
+				"COMACT",
+				"COMDEA",
+				"COMDIS",
+				"COMINT",
+				"COMOUT",
+				"COMRES",
+				"CONSTN",
+				"CONTAN",
+				"COOPER",
+				"COUPDE",
+				"COVERN",
+				"CRIMIN",
+				"CRMHMN",
+				"CROSSN",
+				"CTRATK",
+				"CTRBYF",
+				"CTRFIR",
+				"DAZZLE",
+				"DCPTEL",
+				"DCPTIN",
+				"DEACST",
+				"DEASPL",
+				"DEFEAT",
+				"DEFEND",
+				"DEFLCT",
+				"DELAYN",
+				"DEMO",
+				"DENYNG",
+				"DEPLOY",
+				"DEPORT",
+				"DISEAS",
+				"DISENG",
+				"DIVRSN",
+				"DLBATK",
+				"DMNSTR",
+				"DRGCNS",
+				"DRGDST",
+				"DRGMNF",
+				"DRGOPR",
+				"DRGSTR",
+				"DRGTRN",
+				"DROUGH",
+				"DRVSHT",
+				"DSRPTN",
+				"DSTRBT",
+				"DSTRYN",
+				"DTHNAT",
+				"EARTHQ",
+				"EARWAR",
+				"ELCEMS",
+				"ELCVIO",
+				"ELCWAR",
+				"ENGAGE",
+				"ENMCON",
+				"ENVLPN",
+				"EPEDEM",
+				"EQPFAI",
+				"ESCPNG",
+				"ESCRTN",
+				"EVACTN",
+				"EXECTN",
+				"EXPLOS",
+				"EXPLTN",
+				"FAMINE",
+				"FIRE",
+				"FIX",
+				"FIXACO",
+				"FIXELM",
+				"FIXELO",
+				"FLOOD",
+				"FOLASS",
+				"FOLSPT",
+				"FRCLND",
+				"FRFGTN",
+				"FRNDFR",
+				"GENCHS",
+				"GENOCD",
+				"GOVCOL",
+				"GUARDN",
+				"GUNATA",
+				"HARASS",
+				"HASTY",
+				"HIDING",
+				"HIJACK",
+				"HJCKBT",
+				"HJCKLV",
+				"HJCKPL",
+				"HLDDEF",
+				"HLDOFF",
+				"HOLIDY",
+				"HRVIOL",
+				"HSTTKN",
+				"HUNTNG",
+				"IDENT",
+				"ILLUMN",
+				"INDESP",
+				"INDFIR",
+				"INDSHO",
+				"INFLTN",
+				"INTCPN",
+				"INTDCT",
+				"INTMDN",
+				"INVASI",
+				"ISOLTN",
+				"ISSMDA",
+				"ISSMDD",
+				"ISSPRS",
+				"JAMMNG",
+				"KIDNAP",
+				"LABSTR",
+				"LEAGR",
+				"LOCELC",
+				"LOCTNG",
+				"LOOTNG",
+				"LTRBME",
+				"LTRBMI",
+				"MAINTN",
+				"MARKNG",
+				"MARLAW",
+				"MASFOR",
+				"MEDEVC",
+				"MILMOB",
+				"MINLAY",
+				"MISSIG",
+				"MISSTG",
+				"MOVING",
+				"MRTFIR",
+				"MURDER",
+				"MUTASS",
+				"NATDIS",
+				"NATELC",
+				"NATEMG",
+				"NAVGUN",
+				"NAVPLF",
+				"NETSEI",
+				"NOS",
+				"NTRCHM",
+				"NTRCOM",
+				"NTREXP",
+				"OBSCUR",
+				"OBSRNG",
+				"OCCPNG",
+				"OFFCOF",
+				"ORGCRM",
+				"PCKTNG",
+				"PEAAGR",
+				"PEACON",
+				"PENTRT",
+				"PETSPL",
+				"POISON",
+				"POLDEM",
+				"POLEXE",
+				"POWEXC",
+				"POWRET",
+				"PROCUR",
+				"PROTEL",
+				"PRVACC",
+				"PRVAGR",
+				"PRVBDD",
+				"PRVCMP",
+				"PRVCNS",
+				"PRVDCN",
+				"PRVEDU",
+				"PRVHLT",
+				"PRVHSN",
+				"PRVINF",
+				"PRVLND",
+				"PRVRPR",
+				"PRVSCY",
+				"PRVSHL",
+				"PRVSTG",
+				"PRVTRS",
+				"PRXBMB",
+				"PSTLNC",
+				"PSYOP",
+				"PTRLNG",
+				"PUBMDA",
+				"PUBMDD",
+				"PUBPRS",
+				"PURSNG",
+				"RACIAL",
+				"RAPE",
+				"RECCE",
+				"RECCEF",
+				"RECNSN",
+				"RECPRN",
+				"RECVRN",
+				"REDPLN",
+				"REFMVM",
+				"REINFN",
+				"RELDEM",
+				"RELVIO",
+				"RELWAR",
+				"REORGN",
+				"REPAIR",
+				"RESPLN",
+				"RESTNG",
+				"RETAIN",
+				"RETIRE",
+				"REVOLU",
+				"RIOT",
+				"RKTFIR",
+				"RLFPLC",
+				"RNDZVS",
+				"ROBERY",
+				"SABOTG",
+				"SCRNNG",
+				"SECCMP",
+				"SECCOU",
+				"SECRNG",
+				"SECVIO",
+				"SEIZNG",
+				"SHOTNG",
+				"SINKIN",
+				"SNPATK",
+				"SPACAC",
+				"SPYING",
+				"SRVADV",
+				"SRVBRD",
+				"SRVBRK",
+				"SRVFLK",
+				"SRVINP",
+				"SRVMNB",
+				"SRVRGD",
+				"SRVRSF",
+				"STAWAR",
+				"STNGUP",
+				"STRFAR",
+				"STRIKE",
+				"SUICDE",
+				"SUPRSN",
+				"SUPRTN",
+				"SURREN",
+				"SURVEL",
+				"SUSHOS",
+				"TERR",
+				"THREAT",
+				"TORTUR",
+				"TRBAGT",
+				"TRBBLL",
+				"TRBHAR",
+				"TRBHLG",
+				"TRBINC",
+				"TRBINT",
+				"TREVIO",
+				"TRNSPN",
+				"TRVRSN",
+				"TURNNG",
+				"UXODSC",
+				"VANDAL",
+				"VERFYN",
+				"VOLCAN",
+				"WARALE",
+				"WARCON",
+				"WARCRM",
+				"WATPOL",
+				"WDRPRS",
+				"WITDRL",
+				"WITNSN",
+				"WPNFIR"
+			],
+			"type": "string"
+		},
+		"jc3iedm:EventCategoryCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for a  designator for a name which denotes the category that some event falls under.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^@xsi:\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/jc3iedm:EventCategoryCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"jc3iedm:MilitaryOrganizationCategoryServiceCodeSimpleType": {
+			"description": "A data type for a designator for a kind of a military, paramilitary, irregular force, force or group, capable of functioning as an offensive or defensive combat or support organisation.",
+			"enum": [
+				"Air Force",
+				"Army",
+				"Border guard",
+				"Civil service",
+				"Coast guard",
+				"Combined",
+				"Guerrilla",
+				"Joint",
+				"Local defence force",
+				"Local militia",
+				"Marines",
+				"Navy",
+				"Not known",
+				"Not otherwise specified",
+				"Paramilitary",
+				"Special force",
+				"Territorial force"
+			],
+			"type": "string"
+		},
+		"jc3iedm:MilitaryOrganizationCategoryServiceCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for a designator for a kind of a military, paramilitary, irregular force, force or group, capable of functioning as an offensive or defensive combat or support organisation.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^@xsi:\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/jc3iedm:MilitaryOrganizationCategoryServiceCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"structures:AssociationType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^@xsi:\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				},
+				"structures:AssociationAugmentationPoint": {
+					"items": {
+						"$ref": "#/definitions/.structures:AssociationAugmentationPoint"
+					},
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
+		"structures:AugmentationType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^@xsi:\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"structures:MetadataType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^@xsi:\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"structures:ObjectType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^@xsi:\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				},
+				"structures:ObjectAugmentationPoint": {
+					"items": {
+						"$ref": "#/definitions/.structures:ObjectAugmentationPoint"
+					},
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
+		"xs:ID": {
+			"pattern": "^([A-Z_a-zÀ-ÖØ-öø-˿Ͱ-ͽͿ-῿‌-‍⁰-↏Ⰰ-⿯、-퟿豈-﷏ﷰ-�𐀀-󯿿][\\d\\--\\.A-Z_a-z·À-ÖØ-öø-ͽͿ-ٟ٪-ۯۺ-޿ߊ-॥॰-৥ৰ-੥ੰ-૥૰-୥୰-௥௰-౥౰-೥೰-൥൰-๏๚-໏໚-༟༪-ဿ၊-ႏႚ-៟៪-᠏᠚-᥅ᥐ-᧏᧚-᩿᪊-᪏᪚-᭏᭚-ᮯᮺ-᰿᱊-ᱏᱚ-῿‌-‍‿-⁀⁰-↏Ⰰ-⿯、-ꘟꘪ-꣏꣚-ꣿꤊ-ꧏ꧚-꩏꩚-꯯꯺-퟿豈-﷏ﷰ-／：-�𐀀-𐒟𐒪-𑁥𑁰-𝟍𝠀-󯿿]*)$",
+			"type": "string"
+		},
+		"xs:IDREF": {
+			"pattern": "^([A-Z_a-zÀ-ÖØ-öø-˿Ͱ-ͽͿ-῿‌-‍⁰-↏Ⰰ-⿯、-퟿豈-﷏ﷰ-�𐀀-󯿿][\\d\\--\\.A-Z_a-z·À-ÖØ-öø-ͽͿ-ٟ٪-ۯۺ-޿ߊ-॥॰-৥ৰ-੥ੰ-૥૰-୥୰-௥௰-౥౰-೥೰-൥൰-๏๚-໏໚-༟༪-ဿ၊-ႏႚ-៟៪-᠏᠚-᥅ᥐ-᧏᧚-᩿᪊-᪏᪚-᭏᭚-ᮯᮺ-᰿᱊-ᱏᱚ-῿‌-‍‿-⁀⁰-↏Ⰰ-⿯、-ꘟꘪ-꣏꣚-ꣿꤊ-ꧏ꧚-꩏꩚-꯯꯺-퟿豈-﷏ﷰ-／：-�𐀀-𐒟𐒪-𑁥𑁰-𝟍𝠀-󯿿]*)$",
+			"type": "string"
+		},
+		"xs:IDREFS": {
+			"items": {
+				"pattern": "^([A-Z_a-zÀ-ÖØ-öø-˿Ͱ-ͽͿ-῿‌-‍⁰-↏Ⰰ-⿯、-퟿豈-﷏ﷰ-�𐀀-󯿿][\\d\\--\\.A-Z_a-z·À-ÖØ-öø-ͽͿ-ٟ٪-ۯۺ-޿ߊ-॥॰-৥ৰ-੥ੰ-૥૰-୥୰-௥௰-౥౰-೥೰-൥൰-๏๚-໏໚-༟༪-ဿ၊-ႏႚ-៟៪-᠏᠚-᥅ᥐ-᧏᧚-᩿᪊-᪏᪚-᭏᭚-ᮯᮺ-᰿᱊-ᱏᱚ-῿‌-‍‿-⁀⁰-↏Ⰰ-⿯、-ꘟꘪ-꣏꣚-ꣿꤊ-ꧏ꧚-꩏꩚-꯯꯺-퟿豈-﷏ﷰ-／：-�𐀀-𐒟𐒪-𑁥𑁰-𝟍𝠀-󯿿]*)$",
+				"type": "string"
+			},
+			"type": "array"
+		},
+		"xs:anyType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^@xsi:\\w+$": {
+					"type": "string"
+				},
+				"^\\w+$": {
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"type": "object"
+		},
+		"xs:anyURI": {
+			"type": "string"
+		}
+	},
+	"description": "JSON Schema generated by XMLSpy v2020 rel. 2 sp1 (x64) (http://www.altova.com)",
+	"properties": {
+		"#": {
+			"type": "string"
+		},
+		"@xmlns:jc3iedm": {
+			"default": "http://release.niem.gov/niem/codes/jc3iedm/4.0/"
+		},
+		"@xmlns:structures": {
+			"default": "http://release.niem.gov/niem/structures/4.0/"
+		},
+		"@xmlns:xs": {
+			"default": "http://www.w3.org/2001/XMLSchema"
+		},
+		"jc3iedm:EventCategoryCode": {
+			"$ref": "#/definitions/.jc3iedm:EventCategoryCode"
+		},
+		"jc3iedm:MilitaryOrganizationCategoryServiceCode": {
+			"$ref": "#/definitions/.jc3iedm:MilitaryOrganizationCategoryServiceCode"
+		},
+		"structures:AssociationAugmentationPoint": {
+			"$ref": "#/definitions/.structures:AssociationAugmentationPoint"
+		},
+		"structures:ObjectAugmentationPoint": {
+			"$ref": "#/definitions/.structures:ObjectAugmentationPoint"
+		}
+	},
+	"type": "object"
+}

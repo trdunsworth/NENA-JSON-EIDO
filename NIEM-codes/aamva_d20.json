@@ -1,0 +1,2971 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"additionalProperties": false,
+	"definitions": {
+		".structures:AssociationAugmentationPoint": {
+			"$ref": "#/definitions/xs:anyType",
+			"description": "An augmentation point for AssociationType"
+		},
+		".structures:ObjectAugmentationPoint": {
+			"$ref": "#/definitions/xs:anyType",
+			"description": "An augmentation point for ObjectType"
+		},
+		"aamva_d20:AccidentSeverityCodeSimpleType": {
+			"description": "A data type for severity levels of an accident.",
+			"enum": [
+				"1",
+				"2",
+				"3",
+				"4",
+				"5",
+				"9"
+			],
+			"type": "string"
+		},
+		"aamva_d20:AccidentSeverityCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for severity levels of an accident.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:AccidentSeverityCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:BrandCodeSimpleType": {
+			"description": "A data type for a brand applied to a vehicle title or odometer.",
+			"enum": [
+				"00",
+				"01",
+				"02",
+				"03",
+				"04",
+				"05",
+				"06",
+				"07",
+				"08",
+				"09",
+				"10",
+				"11",
+				"12",
+				"13",
+				"14",
+				"15",
+				"16",
+				"17",
+				"18",
+				"19",
+				"20",
+				"21",
+				"22",
+				"23",
+				"24",
+				"25",
+				"26",
+				"27",
+				"28",
+				"29",
+				"30",
+				"31",
+				"32",
+				"33",
+				"34",
+				"35",
+				"36",
+				"37",
+				"38",
+				"39",
+				"40",
+				"41",
+				"42",
+				"43",
+				"45",
+				"46",
+				"68",
+				"69",
+				"70",
+				"71",
+				"72",
+				"73",
+				"74",
+				"75",
+				"76",
+				"77",
+				"78"
+			],
+			"type": "string"
+		},
+		"aamva_d20:BrandCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for a brand applied to a vehicle title or odometer.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:BrandCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:BrandDamagePercentageCategoryCodeSimpleType": {
+			"description": "A data type for the percentage of damage in a brand on a vehicle.",
+			"enum": [
+				"R",
+				"T"
+			],
+			"type": "string"
+		},
+		"aamva_d20:BrandDamagePercentageCategoryCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the percentage of damage in a brand on a vehicle.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:BrandDamagePercentageCategoryCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:BrandVehicleDispositionCodeSimpleType": {
+			"description": "A data type for vehicle dispositions.",
+			"enum": [
+				"01",
+				"02",
+				"03",
+				"04",
+				"09"
+			],
+			"type": "string"
+		},
+		"aamva_d20:BrandVehicleDispositionCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for vehicle dispositions.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:BrandVehicleDispositionCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:BranderCategoryCodeSimpleType": {
+			"description": "A data type for kinds of branders.",
+			"enum": [
+				"I",
+				"J",
+				"S",
+				"V"
+			],
+			"type": "string"
+		},
+		"aamva_d20:BranderCategoryCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for kinds of branders.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:BranderCategoryCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:CMVCodeSimpleType": {
+			"description": "A data type for whether a person was operating a commercial motor vehicle in an incident.",
+			"enum": [
+				"1",
+				"2",
+				"9"
+			],
+			"type": "string"
+		},
+		"aamva_d20:CMVCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for whether a person was operating a commercial motor vehicle in an incident.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:CMVCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:CountryCodeSimpleType": {
+			"description": "A data type for country codes specified by DHS as part of the DHS Western Hemisphere Travel Initiative.",
+			"enum": [
+				"CAN",
+				"USA"
+			],
+			"type": "string"
+		},
+		"aamva_d20:CountryCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for country codes specified by DHS as part of the DHS Western Hemisphere Travel Initiative.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:CountryCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:CourtCategoryCodeSimpleType": {
+			"description": "A data type for kinds of courts.",
+			"enum": [
+				"ADM",
+				"CHA",
+				"CIR",
+				"CIT",
+				"CIV",
+				"COC",
+				"COR",
+				"CRI",
+				"DIS",
+				"DOT",
+				"FED",
+				"GEN",
+				"HUS",
+				"JPC",
+				"JUS",
+				"JUV",
+				"LEC",
+				"MAG",
+				"MAY",
+				"MUN",
+				"OTH",
+				"POL",
+				"SJC",
+				"SPL",
+				"SSP",
+				"SUM",
+				"SUP",
+				"TJC",
+				"TRA",
+				"TRI",
+				"TWN",
+				"UNK",
+				"USC",
+				"USM",
+				"USS"
+			],
+			"type": "string"
+		},
+		"aamva_d20:CourtCategoryCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for kinds of courts.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:CourtCategoryCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:DecalPeriodCodeSimpleType": {
+			"description": "A data type for the lifespan of a decal.",
+			"enum": [
+				"2",
+				"F",
+				"I",
+				"P",
+				"R"
+			],
+			"type": "string"
+		},
+		"aamva_d20:DecalPeriodCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the lifespan of a decal.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:DecalPeriodCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:DriverLicenseClassCodeSimpleType": {
+			"description": "A data type for kinds of vehicles that a licensed driver may be approved to operate.",
+			"enum": [
+				"A",
+				"B",
+				"C",
+				"M"
+			],
+			"type": "string"
+		},
+		"aamva_d20:DriverLicenseClassCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for kinds of vehicles that a licensed driver may be approved to operate.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:DriverLicenseClassCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:DriverLicenseMedicalCertificationRestrictionCodeSimpleType": {
+			"description": "A data type for a restriction imposed on a commercial driver by a medical examiner.",
+			"enum": [
+				"1",
+				"2",
+				"3",
+				"4",
+				"5",
+				"6"
+			],
+			"type": "string"
+		},
+		"aamva_d20:DriverLicenseMedicalCertificationRestrictionCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for a restriction imposed on a commercial driver by a medical examiner.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:DriverLicenseMedicalCertificationRestrictionCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:DriverLicenseMedicalCertificationStatusCodeSimpleType": {
+			"description": "A data type for an indication of the status of a driver's medical certification.",
+			"enum": [
+				"C",
+				"N"
+			],
+			"type": "string"
+		},
+		"aamva_d20:DriverLicenseMedicalCertificationStatusCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for an indication of the status of a driver's medical certification.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:DriverLicenseMedicalCertificationStatusCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:DriverLicenseMedicalSelfCertificationCodeSimpleType": {
+			"description": "A data type for a driver's self certification of the commercial driver's status regarding 49 CFR 390.3 and the type of driving.",
+			"enum": [
+				"EA",
+				"EI",
+				"NA",
+				"NI"
+			],
+			"type": "string"
+		},
+		"aamva_d20:DriverLicenseMedicalSelfCertificationCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for a driver's self certification of the commercial driver's status regarding 49 CFR 390.3 and the type of driving.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:DriverLicenseMedicalSelfCertificationCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:DriverLicensePermitEndorsementCodeSimpleType": {
+			"description": "A data type for endorsements on a driver license permit which authorizes the operation of specified kinds of vehicles carrying specified loads.",
+			"enum": [
+				"L",
+				"N",
+				"O",
+				"P",
+				"S",
+				"T"
+			],
+			"type": "string"
+		},
+		"aamva_d20:DriverLicensePermitEndorsementCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for endorsements on a driver license permit which authorizes the operation of specified kinds of vehicles carrying specified loads.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:DriverLicensePermitEndorsementCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:DriverLicenseWithdrawalActionCodeSimpleType": {
+			"description": "A data type for kinds of driver license withdrawal actions.",
+			"enum": [
+				"1",
+				"2",
+				"3",
+				"4",
+				"5",
+				"6",
+				"7"
+			],
+			"type": "string"
+		},
+		"aamva_d20:DriverLicenseWithdrawalActionCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for kinds of driver license withdrawal actions.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:DriverLicenseWithdrawalActionCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:DriverLicenseWithdrawalBasisCodeSimpleType": {
+			"description": "A data type for bases for withdrawal action for a driver.",
+			"enum": [
+				"0",
+				"1",
+				"2",
+				"3",
+				"4",
+				"5",
+				"6",
+				"7",
+				"8",
+				"9"
+			],
+			"type": "string"
+		},
+		"aamva_d20:DriverLicenseWithdrawalBasisCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for bases for withdrawal action for a driver.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:DriverLicenseWithdrawalBasisCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:DriverLicenseWithdrawalDueProcessStatusCodeSimpleType": {
+			"description": "A data type for due process statuses of a withdrawal action.",
+			"enum": [
+				"0",
+				"1",
+				"2",
+				"3",
+				"4",
+				"5"
+			],
+			"type": "string"
+		},
+		"aamva_d20:DriverLicenseWithdrawalDueProcessStatusCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for due process statuses of a withdrawal action.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:DriverLicenseWithdrawalDueProcessStatusCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:DriverLicenseWithdrawalEligibilityCodeSimpleType": {
+			"description": "A data type for when a driver may be eligible to apply for reinstatement of driving privileges that have been withdrawn.",
+			"enum": [
+				"Date",
+				"Indefinite",
+				"Permanent"
+			],
+			"type": "string"
+		},
+		"aamva_d20:DriverLicenseWithdrawalEligibilityCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for when a driver may be eligible to apply for reinstatement of driving privileges that have been withdrawn.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:DriverLicenseWithdrawalEligibilityCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:DriverLicenseWithdrawalExtentCodeSimpleType": {
+			"description": "A data type for extents of withdrawals.",
+			"enum": [
+				"1",
+				"2",
+				"3",
+				"4"
+			],
+			"type": "string"
+		},
+		"aamva_d20:DriverLicenseWithdrawalExtentCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for extents of withdrawals.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:DriverLicenseWithdrawalExtentCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:DrivingEndorsementCodeSimpleType": {
+			"description": "A data type for endorsements on a driver license which authorizes the operation of specified kinds of vehicles carrying specified loads.",
+			"enum": [
+				"H",
+				"L",
+				"N",
+				"O",
+				"P",
+				"S",
+				"T",
+				"X"
+			],
+			"type": "string"
+		},
+		"aamva_d20:DrivingEndorsementCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for endorsements on a driver license which authorizes the operation of specified kinds of vehicles carrying specified loads.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:DrivingEndorsementCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:DrivingInsuranceStatusCodeSimpleType": {
+			"description": "A data type for the ways in which a driver of a vehicle may or may not be insured.",
+			"enum": [
+				"N",
+				"O",
+				"P"
+			],
+			"type": "string"
+		},
+		"aamva_d20:DrivingInsuranceStatusCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the ways in which a driver of a vehicle may or may not be insured.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:DrivingInsuranceStatusCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:DrivingOffenseCodeSimpleType": {
+			"description": "A data type for ACD codes for a driving offense.",
+			"enum": [
+				"A04",
+				"A08",
+				"A10",
+				"A11",
+				"A12",
+				"A20",
+				"A21",
+				"A22",
+				"A23",
+				"A24",
+				"A25",
+				"A26",
+				"A31",
+				"A33",
+				"A35",
+				"A41",
+				"A50",
+				"A60",
+				"A61",
+				"A90",
+				"A94",
+				"A98",
+				"B01",
+				"B02",
+				"B03",
+				"B04",
+				"B05",
+				"B06",
+				"B07",
+				"B08",
+				"B14",
+				"B19",
+				"B20",
+				"B21",
+				"B22",
+				"B23",
+				"B24",
+				"B25",
+				"B26",
+				"B27",
+				"B41",
+				"B51",
+				"B56",
+				"B57",
+				"B61",
+				"B63",
+				"B64",
+				"B65",
+				"B74",
+				"B78",
+				"B91",
+				"D02",
+				"D06",
+				"D07",
+				"D10",
+				"D16",
+				"D27",
+				"D29",
+				"D35",
+				"D36",
+				"D37",
+				"D38",
+				"D39",
+				"D45",
+				"D51",
+				"D53",
+				"D56",
+				"D70",
+				"D72",
+				"D74",
+				"D75",
+				"D78",
+				"E01",
+				"E02",
+				"E03",
+				"E04",
+				"E05",
+				"E06",
+				"E23",
+				"E31",
+				"E33",
+				"E34",
+				"E36",
+				"E37",
+				"E50",
+				"E51",
+				"E53",
+				"E54",
+				"E55",
+				"E56",
+				"E57",
+				"E70",
+				"E71",
+				"F02",
+				"F03",
+				"F04",
+				"F05",
+				"F06",
+				"F34",
+				"F66",
+				"M02",
+				"M03",
+				"M04",
+				"M05",
+				"M08",
+				"M09",
+				"M10",
+				"M11",
+				"M12",
+				"M13",
+				"M14",
+				"M15",
+				"M16",
+				"M17",
+				"M18",
+				"M19",
+				"M20",
+				"M21",
+				"M22",
+				"M23",
+				"M24",
+				"M25",
+				"M30",
+				"M31",
+				"M32",
+				"M33",
+				"M34",
+				"M40",
+				"M41",
+				"M42",
+				"M43",
+				"M44",
+				"M45",
+				"M46",
+				"M47",
+				"M48",
+				"M49",
+				"M50",
+				"M51",
+				"M55",
+				"M56",
+				"M57",
+				"M58",
+				"M60",
+				"M61",
+				"M62",
+				"M70",
+				"M71",
+				"M72",
+				"M73",
+				"M74",
+				"M75",
+				"M76",
+				"M77",
+				"M80",
+				"M81",
+				"M82",
+				"M83",
+				"M84",
+				"M85",
+				"M86",
+				"N01",
+				"N02",
+				"N03",
+				"N04",
+				"N05",
+				"N06",
+				"N07",
+				"N08",
+				"N09",
+				"N20",
+				"N21",
+				"N22",
+				"N23",
+				"N24",
+				"N25",
+				"N26",
+				"N30",
+				"N31",
+				"N40",
+				"N41",
+				"N42",
+				"N43",
+				"N44",
+				"N50",
+				"N51",
+				"N52",
+				"N53",
+				"N54",
+				"N55",
+				"N56",
+				"N60",
+				"N61",
+				"N62",
+				"N63",
+				"N70",
+				"N71",
+				"N72",
+				"N80",
+				"N82",
+				"N83",
+				"N84",
+				"S01",
+				"S06",
+				"S14",
+				"S15",
+				"S16",
+				"S21",
+				"S26",
+				"S31",
+				"S36",
+				"S41",
+				"S51",
+				"S71",
+				"S81",
+				"S91",
+				"S92",
+				"S93",
+				"S94",
+				"S95",
+				"S96",
+				"S97",
+				"S98",
+				"U01",
+				"U02",
+				"U03",
+				"U04",
+				"U05",
+				"U06",
+				"U07",
+				"U08",
+				"U09",
+				"U10",
+				"U21",
+				"U27",
+				"U28",
+				"U31",
+				"W00",
+				"W01",
+				"W13",
+				"W14",
+				"W15",
+				"W20",
+				"W30",
+				"W31",
+				"W40",
+				"W41",
+				"W50",
+				"W51",
+				"W52",
+				"W60",
+				"W61",
+				"W70",
+				"W80",
+				"W81"
+			],
+			"type": "string"
+		},
+		"aamva_d20:DrivingOffenseCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for ACD codes for a driving offense.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:DrivingOffenseCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:DrivingPermitRestrictionCodeSimpleType": {
+			"description": "A data type for categories of driving restrictions for permits.",
+			"enum": [
+				"B",
+				"C",
+				"D",
+				"E",
+				"F",
+				"G",
+				"H",
+				"I",
+				"J",
+				"K",
+				"L",
+				"M",
+				"N",
+				"O",
+				"P",
+				"V",
+				"W",
+				"X"
+			],
+			"type": "string"
+		},
+		"aamva_d20:DrivingPermitRestrictionCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for categories of driving restrictions for permits.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:DrivingPermitRestrictionCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:DrivingRestrictionCodeSimpleType": {
+			"description": "A data type for categories of driving restrictions.",
+			"enum": [
+				"B",
+				"C",
+				"D",
+				"E",
+				"F",
+				"G",
+				"H",
+				"I",
+				"J",
+				"K",
+				"L",
+				"M",
+				"N",
+				"O",
+				"P",
+				"V",
+				"W",
+				"X",
+				"Z"
+			],
+			"type": "string"
+		},
+		"aamva_d20:DrivingRestrictionCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for categories of driving restrictions.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:DrivingRestrictionCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:DrivingStatusCodeSimpleType": {
+			"description": "A data type for statuses of a drivers privilege type.",
+			"enum": [
+				"ELG",
+				"LIC",
+				"NEN",
+				"NOT",
+				"RPD"
+			],
+			"type": "string"
+		},
+		"aamva_d20:DrivingStatusCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for statuses of a drivers privilege type.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:DrivingStatusCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:HazMatCodeSimpleType": {
+			"description": "A data type for whether a driver was operating a vehicle carrying hazardous materials.",
+			"enum": [
+				"1",
+				"2",
+				"9"
+			],
+			"type": "string"
+		},
+		"aamva_d20:HazMatCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for whether a driver was operating a vehicle carrying hazardous materials.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:HazMatCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:InsuranceCoverageCategoryCodeSimpleType": {
+			"description": "A data type for categories of coverage provided by an insurance policy.",
+			"enum": [
+				"01",
+				"02",
+				"03",
+				"04",
+				"05",
+				"06"
+			],
+			"type": "string"
+		},
+		"aamva_d20:InsuranceCoverageCategoryCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for categories of coverage provided by an insurance policy.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:InsuranceCoverageCategoryCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:JurisdictionAuthorityCodeSimpleType": {
+			"description": "A data type for an authority with jurisdiction over a particular area.",
+			"enum": [
+				"AB",
+				"AG",
+				"AK",
+				"AL",
+				"AR",
+				"AS",
+				"AZ",
+				"BA",
+				"BC",
+				"BJ",
+				"CA",
+				"CE",
+				"CH",
+				"CI",
+				"CL",
+				"CO",
+				"CT",
+				"CU",
+				"DC",
+				"DE",
+				"DF",
+				"DO",
+				"DS",
+				"DT",
+				"EM",
+				"FH",
+				"FL",
+				"FM",
+				"GA",
+				"GM",
+				"GR",
+				"GS",
+				"GU",
+				"HI",
+				"HL",
+				"IA",
+				"ID",
+				"IL",
+				"IN",
+				"IR",
+				"JL",
+				"KS",
+				"KY",
+				"LA",
+				"MA",
+				"MB",
+				"MC",
+				"MD",
+				"ME",
+				"MH",
+				"MI",
+				"MN",
+				"MO",
+				"MP",
+				"MR",
+				"MS",
+				"MT",
+				"MX",
+				"NA",
+				"NB",
+				"NC",
+				"ND",
+				"NE",
+				"NF",
+				"NH",
+				"NJ",
+				"NL",
+				"NM",
+				"NS",
+				"NT",
+				"NU",
+				"NV",
+				"NY",
+				"OA",
+				"OH",
+				"OK",
+				"ON",
+				"OR",
+				"PA",
+				"PB",
+				"PE",
+				"PR",
+				"PW",
+				"PZ",
+				"QC",
+				"QR",
+				"QU",
+				"RI",
+				"SC",
+				"SD",
+				"SI",
+				"SK",
+				"SL",
+				"SO",
+				"TA",
+				"TB",
+				"TL",
+				"TN",
+				"TS",
+				"TX",
+				"UT",
+				"VA",
+				"VC",
+				"VI",
+				"VT",
+				"WA",
+				"WI",
+				"WK",
+				"WV",
+				"WY",
+				"YT",
+				"YU",
+				"ZA"
+			],
+			"type": "string"
+		},
+		"aamva_d20:JurisdictionAuthorityCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for an authority with jurisdiction over a particular area.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:JurisdictionAuthorityCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:LienReleaseReasonCodeSimpleType": {
+			"description": "A data type for reasons a legal encumbrance may be removed from a property.",
+			"enum": [
+				"01",
+				"02",
+				"03",
+				"04",
+				"05"
+			],
+			"type": "string"
+		},
+		"aamva_d20:LienReleaseReasonCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for reasons a legal encumbrance may be removed from a property.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:LienReleaseReasonCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:MedicalPractitionerSpecialtyCodeSimpleType": {
+			"description": "A data type for a code indicating the specialty of the medical practitioner.",
+			"enum": [
+				"AN",
+				"CH",
+				"DO",
+				"MD",
+				"PA",
+				"XX"
+			],
+			"type": "string"
+		},
+		"aamva_d20:MedicalPractitionerSpecialtyCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for a code indicating the specialty of the medical practitioner.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:MedicalPractitionerSpecialtyCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:PassFailCodeSimpleType": {
+			"description": "A data type for whether something has passed or failed some sort of test.",
+			"enum": [
+				"F",
+				"P"
+			],
+			"type": "string"
+		},
+		"aamva_d20:PassFailCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for whether something has passed or failed some sort of test.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:PassFailCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:PersonOrganDonorCodeSimpleType": {
+			"description": "A data type for organs a person could be willing to donate upon death.",
+			"enum": [
+				"A",
+				"B",
+				"C",
+				"E",
+				"F",
+				"H",
+				"I",
+				"K",
+				"L",
+				"M",
+				"N",
+				"P",
+				"Q",
+				"R",
+				"S",
+				"T",
+				"U",
+				"V",
+				"W",
+				"Z"
+			],
+			"type": "string"
+		},
+		"aamva_d20:PersonOrganDonorCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for organs a person could be willing to donate upon death.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:PersonOrganDonorCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:RegistrationPlateColorCodeSimpleType": {
+			"description": "A data type for colors of a vehicle registration plate or license plate.",
+			"enum": [
+				"A",
+				"B",
+				"E",
+				"G",
+				"I",
+				"K",
+				"N",
+				"O",
+				"R",
+				"W"
+			],
+			"type": "string"
+		},
+		"aamva_d20:RegistrationPlateColorCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for colors of a vehicle registration plate or license plate.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:RegistrationPlateColorCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:RegistrationStatusCodeSimpleType": {
+			"description": "A data type for activities recorded for a registration.",
+			"enum": [
+				"00",
+				"01",
+				"02",
+				"03",
+				"04",
+				"05",
+				"06",
+				"07",
+				"99"
+			],
+			"type": "string"
+		},
+		"aamva_d20:RegistrationStatusCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for activities recorded for a registration.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:RegistrationStatusCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:RegistrationStatusDetailCodeSimpleType": {
+			"description": "A data type for additional information regarding a registration status.",
+			"enum": [
+				"A",
+				"B",
+				"C",
+				"D",
+				"E",
+				"F",
+				"G",
+				"H",
+				"I",
+				"J",
+				"K",
+				"L",
+				"M",
+				"N",
+				"O",
+				"P",
+				"Q",
+				"R",
+				"S",
+				"T",
+				"U"
+			],
+			"type": "string"
+		},
+		"aamva_d20:RegistrationStatusDetailCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for additional information regarding a registration status.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:RegistrationStatusDetailCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:SmogCertificateCodeSimpleType": {
+			"description": "A data type for whether or not a vehicle has a current smog certificate.",
+			"enum": [
+				"B",
+				"E",
+				"N",
+				"Y"
+			],
+			"type": "string"
+		},
+		"aamva_d20:SmogCertificateCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for whether or not a vehicle has a current smog certificate.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:SmogCertificateCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:TitleStatusCodeSimpleType": {
+			"description": "A data type for statuses for a title.",
+			"enum": [
+				"00",
+				"01",
+				"02",
+				"03",
+				"04",
+				"05",
+				"06",
+				"07",
+				"08",
+				"09",
+				"10",
+				"11",
+				"12",
+				"13",
+				"14",
+				"15",
+				"16",
+				"17",
+				"97"
+			],
+			"type": "string"
+		},
+		"aamva_d20:TitleStatusCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for statuses for a title.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:TitleStatusCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:VehicleFuelCategoryCodeSimpleType": {
+			"description": "A data type for kinds of fuel or motive power used to propel a vehicle.",
+			"enum": [
+				"A",
+				"C",
+				"D",
+				"E",
+				"G",
+				"H",
+				"K",
+				"L",
+				"N",
+				"O",
+				"S"
+			],
+			"type": "string"
+		},
+		"aamva_d20:VehicleFuelCategoryCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for kinds of fuel or motive power used to propel a vehicle.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:VehicleFuelCategoryCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:VehicleOdometerReadingUnitCodeSimpleType": {
+			"description": "A data type for the units of measurement associated with an odometer reading.",
+			"enum": [
+				"K",
+				"M"
+			],
+			"type": "string"
+		},
+		"aamva_d20:VehicleOdometerReadingUnitCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the units of measurement associated with an odometer reading.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:VehicleOdometerReadingUnitCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:VehicleTitleDocumentCategoryCodeSimpleType": {
+			"description": "A data type for kinds of an individual title document.",
+			"enum": [
+				"Duplicate",
+				"Original",
+				"Replacement",
+				"Salvage"
+			],
+			"type": "string"
+		},
+		"aamva_d20:VehicleTitleDocumentCategoryCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for kinds of an individual title document.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:VehicleTitleDocumentCategoryCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:VehicleTransmissionCategoryCodeSimpleType": {
+			"description": "A data type for kinds of transmission units in a vehicle.",
+			"enum": [
+				"A",
+				"M"
+			],
+			"type": "string"
+		},
+		"aamva_d20:VehicleTransmissionCategoryCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for kinds of transmission units in a vehicle.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:VehicleTransmissionCategoryCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"aamva_d20:VehicleUseCodeSimpleType": {
+			"description": "A data type for ways in which a vehicle is used.",
+			"enum": [
+				"00",
+				"01",
+				"02",
+				"03",
+				"04",
+				"05",
+				"06",
+				"07",
+				"08",
+				"09",
+				"10",
+				"11",
+				"12",
+				"13",
+				"97",
+				"99"
+			],
+			"type": "string"
+		},
+		"aamva_d20:VehicleUseCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for ways in which a vehicle is used.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"$": {
+					"$ref": "#/definitions/aamva_d20:VehicleUseCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"structures:AssociationType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				},
+				"structures:AssociationAugmentationPoint": {
+					"items": {
+						"$ref": "#/definitions/.structures:AssociationAugmentationPoint"
+					},
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
+		"structures:AugmentationType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"structures:MetadataType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"structures:ObjectType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				}
+			},
+			"properties": {
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				},
+				"structures:ObjectAugmentationPoint": {
+					"items": {
+						"$ref": "#/definitions/.structures:ObjectAugmentationPoint"
+					},
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
+		"xs:ID": {
+			"pattern": "^([A-Z_a-zÀ-ÖØ-öø-˿Ͱ-ͽͿ-῿‌-‍⁰-↏Ⰰ-⿯、-퟿豈-﷏ﷰ-�𐀀-󯿿][\\d\\--\\.A-Z_a-z·À-ÖØ-öø-ͽͿ-ٟ٪-ۯۺ-޿ߊ-॥॰-৥ৰ-੥ੰ-૥૰-୥୰-௥௰-౥౰-೥೰-൥൰-๏๚-໏໚-༟༪-ဿ၊-ႏႚ-៟៪-᠏᠚-᥅ᥐ-᧏᧚-᩿᪊-᪏᪚-᭏᭚-ᮯᮺ-᰿᱊-ᱏᱚ-῿‌-‍‿-⁀⁰-↏Ⰰ-⿯、-ꘟꘪ-꣏꣚-ꣿꤊ-ꧏ꧚-꩏꩚-꯯꯺-퟿豈-﷏ﷰ-／：-�𐀀-𐒟𐒪-𑁥𑁰-𝟍𝠀-󯿿]*)$",
+			"type": "string"
+		},
+		"xs:IDREF": {
+			"pattern": "^([A-Z_a-zÀ-ÖØ-öø-˿Ͱ-ͽͿ-῿‌-‍⁰-↏Ⰰ-⿯、-퟿豈-﷏ﷰ-�𐀀-󯿿][\\d\\--\\.A-Z_a-z·À-ÖØ-öø-ͽͿ-ٟ٪-ۯۺ-޿ߊ-॥॰-৥ৰ-੥ੰ-૥૰-୥୰-௥௰-౥౰-೥೰-൥൰-๏๚-໏໚-༟༪-ဿ၊-ႏႚ-៟៪-᠏᠚-᥅ᥐ-᧏᧚-᩿᪊-᪏᪚-᭏᭚-ᮯᮺ-᰿᱊-ᱏᱚ-῿‌-‍‿-⁀⁰-↏Ⰰ-⿯、-ꘟꘪ-꣏꣚-ꣿꤊ-ꧏ꧚-꩏꩚-꯯꯺-퟿豈-﷏ﷰ-／：-�𐀀-𐒟𐒪-𑁥𑁰-𝟍𝠀-󯿿]*)$",
+			"type": "string"
+		},
+		"xs:IDREFS": {
+			"items": {
+				"pattern": "^([A-Z_a-zÀ-ÖØ-öø-˿Ͱ-ͽͿ-῿‌-‍⁰-↏Ⰰ-⿯、-퟿豈-﷏ﷰ-�𐀀-󯿿][\\d\\--\\.A-Z_a-z·À-ÖØ-öø-ͽͿ-ٟ٪-ۯۺ-޿ߊ-॥॰-৥ৰ-੥ੰ-૥૰-୥୰-௥௰-౥౰-೥೰-൥൰-๏๚-໏໚-༟༪-ဿ၊-ႏႚ-៟៪-᠏᠚-᥅ᥐ-᧏᧚-᩿᪊-᪏᪚-᭏᭚-ᮯᮺ-᰿᱊-ᱏᱚ-῿‌-‍‿-⁀⁰-↏Ⰰ-⿯、-ꘟꘪ-꣏꣚-ꣿꤊ-ꧏ꧚-꩏꩚-꯯꯺-퟿豈-﷏ﷰ-／：-�𐀀-𐒟𐒪-𑁥𑁰-𝟍𝠀-󯿿]*)$",
+				"type": "string"
+			},
+			"type": "array"
+		},
+		"xs:anyType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\?\\w+$": {
+					"type": "string"
+				},
+				"^\\w+$": {
+				}
+			},
+			"properties": {
+				"$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"type": [
+				"object",
+				"string",
+				"number",
+				"boolean"
+			]
+		},
+		"xs:anyURI": {
+			"type": "string"
+		}
+	},
+	"description": "JSON Schema generated by XMLSpy v2020 rel. 2 sp1 (x64) (http://www.altova.com)",
+	"patternProperties": {
+		"^\\?\\w+$": {
+			"type": "string"
+		}
+	},
+	"properties": {
+		"@xmlns:aamva_d20": {
+			"default": "http://release.niem.gov/niem/codes/aamva_d20/4.0/"
+		},
+		"@xmlns:structures": {
+			"default": "http://release.niem.gov/niem/structures/4.0/"
+		},
+		"@xmlns:xs": {
+			"default": "http://www.w3.org/2001/XMLSchema"
+		},
+		"structures:AssociationAugmentationPoint": {
+			"$ref": "#/definitions/.structures:AssociationAugmentationPoint"
+		},
+		"structures:ObjectAugmentationPoint": {
+			"$ref": "#/definitions/.structures:ObjectAugmentationPoint"
+		}
+	},
+	"type": "object"
+}

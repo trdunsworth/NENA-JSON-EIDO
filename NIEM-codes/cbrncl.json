@@ -1,0 +1,5451 @@
+{
+	"$schema": "http://json-schema.org/schema#",
+	"additionalProperties": false,
+	"definitions": {
+		".structures:AssociationAugmentationPoint": {
+			"$ref": "#/definitions/xs:anyType",
+			"description": "An augmentation point for AssociationType"
+		},
+		".structures:ObjectAugmentationPoint": {
+			"$ref": "#/definitions/xs:anyType",
+			"description": "An augmentation point for ObjectType"
+		},
+		"cbrncl:AnalysisResultStatusCodeSimpleType": {
+			"description": "A data type for status states of the analysis of a measurement or measurement group.",
+			"enum": [
+				"Failure",
+				"Success"
+			],
+			"type": "string"
+		},
+		"cbrncl:AnalysisResultStatusCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the status states of the analysis of a measurement or measurement group.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:AnalysisResultStatusCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:CaseKindCodeSimpleType": {
+			"description": "A data type for the kinds of cases.",
+			"enum": [
+				"Analysis",
+				"Exercise",
+				"Operational",
+				"Other",
+				"Test",
+				"Unknown",
+				"Warning"
+			],
+			"type": "string"
+		},
+		"cbrncl:CaseKindCodeType": {
+			"additionalProperties": false,
+			"description": "A data type that defines the various kinds of cases that are being used.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:CaseKindCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:CasePriorityCodeSimpleType": {
+			"description": "A data type for the kinds of case priorities.",
+			"enum": [
+				"Critical",
+				"High",
+				"Low",
+				"Normal"
+			],
+			"type": "string"
+		},
+		"cbrncl:CasePriorityCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the kinds of case priorities.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:CasePriorityCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:CaseRelationshipKindCodeSimpleType": {
+			"description": "A data type for the kinds of relationships a Case may have with other entities.",
+			"enum": [
+				"Child",
+				"Other",
+				"Parent"
+			],
+			"type": "string"
+		},
+		"cbrncl:CaseRelationshipKindCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the kinds of relationships between two cases.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:CaseRelationshipKindCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:CaseRequestCodeSimpleType": {
+			"description": "A data type for a kind of case request code",
+			"enum": [
+				"Associated Cases",
+				"Case by Status",
+				"Case by Threat Level",
+				"Case Content",
+				"Case Description",
+				"Files by ID",
+				"Files by Subject"
+			],
+			"type": "string"
+		},
+		"cbrncl:CaseRequestCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for a  kind of case request code",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:CaseRequestCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:CaseResponseCodeSimpleType": {
+			"description": "A data type for a  kind of case response code",
+			"enum": [
+				"Case access denied",
+				"Case not found",
+				"Email file transfer",
+				"File access denied",
+				"File included",
+				"File not found",
+				"FTP file transfer",
+				"No case match",
+				"No file match",
+				"Some files denied access",
+				"Some files not found"
+			],
+			"type": "string"
+		},
+		"cbrncl:CaseResponseCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for a kind of case response code",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:CaseResponseCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:CaseStatusCodeSimpleType": {
+			"description": "A data type for the kinds of status states for a Case.",
+			"enum": [
+				"Active-Hot",
+				"Active-Routine",
+				"Active-Threat",
+				"Active-Watch",
+				"Closed-Error",
+				"Closed-Normal",
+				"Inactive",
+				"Merged",
+				"Pending",
+				"Suspended",
+				"Unknown"
+			],
+			"type": "string"
+		},
+		"cbrncl:CaseStatusCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the kinds of status states for a Case.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:CaseStatusCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:CaseThreatLevelCodeSimpleType": {
+			"description": "A data type for a case threat level code values",
+			"enum": [
+				"General Risk",
+				"Hazard",
+				"High Risk",
+				"Illicit",
+				"Low Risk",
+				"No Risk",
+				"Severe Risk",
+				"Significant Risk",
+				"Unknown"
+			],
+			"type": "string"
+		},
+		"cbrncl:CaseThreatLevelCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for a kind of case threat level",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:CaseThreatLevelCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:CompressionCodeSimpleType": {
+			"description": "A data type for codes that describe the algorithm (if any) by which data has been compressed.",
+			"enum": [
+				"CountedZeroes",
+				"None"
+			],
+			"type": "string"
+		},
+		"cbrncl:ConfidenceCodeSimpleType": {
+			"description": "A data type that defines confidence level code values.",
+			"enum": [
+				"High",
+				"Low",
+				"Medium",
+				"Unknown",
+				"Very High",
+				"Very Low"
+			],
+			"type": "string"
+		},
+		"cbrncl:ConfidenceCodeType": {
+			"additionalProperties": false,
+			"description": "A data type that defines confidence level code values.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:ConfidenceCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:ConveyanceBoundForCodeSimpleType": {
+			"description": "A data type that defines the conveyance bound code enumerations.",
+			"enum": [
+				"non-US",
+				"Unknown",
+				"USCustoms",
+				"USDirect",
+				"USExternal",
+				"USIndirect",
+				"USInterior",
+				"USTerritory"
+			],
+			"type": "string"
+		},
+		"cbrncl:ConveyanceBoundForCodeType": {
+			"additionalProperties": false,
+			"description": "A data type that defines the Conveyance bound code",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:ConveyanceBoundForCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:ConveyanceColorCodeSimpleType": {
+			"description": "A data type that defines the  conveyance color codes.",
+			"enum": [
+				"AMETHYST",
+				"BEIGE",
+				"BLACK",
+				"BLUE",
+				"BLUE, DARK",
+				"BLUE, LIGHT",
+				"BRONZE",
+				"BROWN",
+				"CAMOUFLAGE",
+				"CHROME, STAINLESS STEEL",
+				"COPPER",
+				"CREAM, IVORY",
+				"GOLD",
+				"GRAY",
+				"GREEN",
+				"GREEN, DARK",
+				"GREEN, LIGHT",
+				"LAVENDER",
+				"MAROON, BURGUNDY",
+				"MAUVE",
+				"MULTICOLORED",
+				"ORANGE",
+				"PINK",
+				"PURPLE",
+				"RED",
+				"SILVER",
+				"TAN",
+				"TAUPE",
+				"TEAL",
+				"TURQUOISE",
+				"WHITE",
+				"YELLOW"
+			],
+			"type": "string"
+		},
+		"cbrncl:ConveyanceColorCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for conveyance color codes.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:ConveyanceColorCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:ConveyanceKindCodeSimpleType": {
+			"description": "A data type for the kinds of conveyances.",
+			"enum": [
+				"A01",
+				"A02",
+				"A03",
+				"A04",
+				"A05",
+				"A06",
+				"A07",
+				"A08",
+				"A09",
+				"A10",
+				"A11",
+				"A12",
+				"A13",
+				"A14",
+				"A15",
+				"A16",
+				"A17",
+				"A18",
+				"B01",
+				"B02",
+				"B03",
+				"B04",
+				"B05",
+				"C01",
+				"other",
+				"pipeline",
+				"R01",
+				"R02",
+				"R03",
+				"R04",
+				"R05",
+				"R06",
+				"R07",
+				"S01",
+				"S02",
+				"S03",
+				"S04",
+				"S05",
+				"S06",
+				"S07",
+				"S08",
+				"S09",
+				"S10",
+				"unknown",
+				"V01",
+				"V02",
+				"V03",
+				"V04",
+				"V05",
+				"V06",
+				"V07",
+				"V08",
+				"V09",
+				"V10",
+				"V11",
+				"V12",
+				"V13",
+				"V14",
+				"V15",
+				"V16",
+				"V17",
+				"V18",
+				"V19",
+				"V20",
+				"V21",
+				"V22",
+				"V23",
+				"V24",
+				"V25"
+			],
+			"type": "string"
+		},
+		"cbrncl:ConveyanceKindCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the  kind of Conveyance",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:ConveyanceKindCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:ConveyanceOrgRelationshipKindCodeSimpleType": {
+			"description": "A data type for the kinds of relationships that may exist between a conveyance and an organization.",
+			"enum": [
+				"lessee",
+				"lessor",
+				"operator",
+				"other",
+				"owner",
+				"owner/operator"
+			],
+			"type": "string"
+		},
+		"cbrncl:ConveyanceOrgRelationshipKindCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the kinds of relationships that may exist between a conveyance and an organization.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:ConveyanceOrgRelationshipKindCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:ConveyanceRelationshipKindCodeSimpleType": {
+			"description": "A data type for the kinds of relationships that a conveyance can have.",
+			"enum": [
+				"connected to",
+				"contained in",
+				"other"
+			],
+			"type": "string"
+		},
+		"cbrncl:ConveyanceRelationshipKindCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the kinds of relationships that a conveyance can have.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:ConveyanceRelationshipKindCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:CredentialsAuthenticatedCodeSimpleType": {
+			"description": "A data type for the states of authentication of  credentials.",
+			"enum": [
+				"Authenticated",
+				"Not Authenticated"
+			],
+			"type": "string"
+		},
+		"cbrncl:CredentialsAuthenticatedCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the states of authentication of  credentials.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:CredentialsAuthenticatedCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:EncounterDeviceCategoryLevelCodeSimpleType": {
+			"description": "A data type that defines the kind of encounter device category level.",
+			"enum": [
+				"component",
+				"device",
+				"system"
+			],
+			"type": "string"
+		},
+		"cbrncl:EncounterDeviceCategoryLevelCodeType": {
+			"additionalProperties": false,
+			"description": "A data type that defines the kind of encounter device category level.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:EncounterDeviceCategoryLevelCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:EquationKindCodeSimpleType": {
+			"description": "A data type that defines the equation type code values",
+			"enum": [
+				"Exponential",
+				"FullRangeFraction",
+				"Other",
+				"Pade",
+				"PolyLogarithmic",
+				"Polynomial"
+			],
+			"type": "string"
+		},
+		"cbrncl:EquationKindCodeType": {
+			"additionalProperties": false,
+			"description": "A data type that defines the Equation type",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:EquationKindCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:FacilityCategoryCodeSimpleType": {
+			"description": "A data type that defines the FacilityCategoryCodes",
+			"enum": [
+				"Airport",
+				"Land",
+				"Other",
+				"Response",
+				"Seaport",
+				"Support",
+				"Watch"
+			],
+			"type": "string"
+		},
+		"cbrncl:FacilityCategoryCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the categories of facilities.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:FacilityCategoryCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:FacilityOperationalStatusCodeSimpleType": {
+			"description": "A data type that defines the Facility Operational Status Codes",
+			"enum": [
+				"Decommissioned",
+				"Degraded",
+				"In Standup",
+				"Mission Ready",
+				"Not Mission Ready",
+				"Planned",
+				"Unknown"
+			],
+			"type": "string"
+		},
+		"cbrncl:FacilityOperationalStatusCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the operational states of a facility or site.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:FacilityOperationalStatusCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:FacilityUsageCodeSimpleType": {
+			"description": "A data type to describe the uses of real property facilities.",
+			"enum": [
+				"",
+				"Academic Library",
+				"Administrative Building",
+				"Administrative Government Facility",
+				"Administrative Military Facility",
+				"Administrative Structure, Other Than Building",
+				"Administrative Structure, Underground",
+				"Aerospace Transportation Terminal",
+				"Age Restricted Multi-Family Residence",
+				"Agribusiness Facility",
+				"Agricultural Auction/Market Facility",
+				"Agricultural Facility",
+				"Agricultural Maintenance Facility",
+				"Agricultural Research and Development Facility",
+				"Agricultural Research Facility",
+				"Agricultural School",
+				"Agricultural Storage Facility",
+				"Agricultural-Undeveloped",
+				"Air Cargo Warehouse",
+				"Aircraft Research Development Test and Evaluation Facility",
+				"Airfield Apron",
+				"Airfield Operational Building",
+				"Airfield Pavement",
+				"Airfield Runway",
+				"Airfield Taxiway",
+				"Air Force facility",
+				"Airplane Maintenance and Fueling Facility",
+				"Air Raid/Fallout Shelter",
+				"Alley",
+				"All-Suites Lodging",
+				"Alternate Joint Communications Center",
+				"Ambulance Shelter",
+				"Ambulatory Surgery Center",
+				"Ammunition, Explosive, and Toxic Research Development Test and Evaluation Facility",
+				"Ammunition, Explosives, and Toxic Maintenance Facility",
+				"Ammunition, Explosives, and Toxics Production Facility",
+				"Amusement Arcade",
+				"Animal Feed Operations Facility",
+				"Animal Healthcare Facility",
+				"Animal Lodging Facility",
+				"Animal Recreation Facility",
+				"Animal Waste Handling Facility",
+				"Apartment Site",
+				"Apiary and Other Related Structures",
+				"Aquaculture Facility",
+				"Aqueduct",
+				"Arena",
+				"Army and marine corps facility",
+				"Arterial Roadway",
+				"Art Museum",
+				"Art School",
+				"Assembly Facility",
+				"Auction House",
+				"Auditorium and Theater Facility",
+				"Auto Auction Facility",
+				"Auto Maintenance and Fueling Station",
+				"Automated Data Processing Center",
+				"Automobile Craft Center",
+				"Automobile Parking Facility",
+				"Automobile Racing Track",
+				"Bank",
+				"Bed and Breakfast",
+				"Behavioral Disability Care Residence",
+				"Beltway",
+				"Beverage and Tobacco Manufacturing Research Development Test and Evaluation Facility",
+				"Beverage or Tobacco Manufacturing Facility",
+				"Big Box Retail",
+				"Billiards Facility",
+				"Biomedical Research Facility",
+				"Boathouse",
+				"Boat Maintenance and Fueling Dry Docks",
+				"Bowling Alley",
+				"Boxing Facility",
+				"Bridge",
+				"Broadcasting Facility",
+				"Building Improvements and Acquisitions",
+				"Bulk Liquid Fuel Storage Facility",
+				"Bulk Liquid Non-Fuel Storage Facility",
+				"Business Park",
+				"Business School",
+				"Bus Stop Shelter",
+				"Canal",
+				"Canal Lock",
+				"Cargo Handling and Storage Area",
+				"Casino",
+				"Casino Hotel",
+				"Cement/Rock/Gravel Plant",
+				"Cemetery",
+				"Ceramic Craft Production Facility",
+				"Ceremonial Hall",
+				"Charter School",
+				"Chemical Manufacturing Facility",
+				"Chemical Manufacturing Research Development Test and Evaluation Facility",
+				"Chemical Research Facility",
+				"Childrens Library",
+				"Childrens Museum",
+				"Chilled Water and Refrigerant Distribution Line",
+				"Chilled Water Facility",
+				"Cinema",
+				"Clearing, Grading, and Landscaping",
+				"Clinic",
+				"Clothing Sales Store",
+				"Club or Organization Building",
+				"Coal-Powered Electrical Generation Facility",
+				"Coastal/Island",
+				"Coast Guard Facility",
+				"Co-housing Multiple Family Residence",
+				"Cold Storage Facility",
+				"Collector Roadway",
+				"Columbarium",
+				"Commercial Malls",
+				"Commercial Pier",
+				"Commercial Site",
+				"Comprehensive Ambulatory Care Center",
+				"Computer and Electronic Product Manufacturing Research Development Test and Evaluation Facility",
+				"Computer or Electronics Manufacturing Facility",
+				"Computing Center",
+				"Computing Research Facility",
+				"Conference Facility",
+				"Conservation/Preservation Easement",
+				"Consumer Products Storage Facility",
+				"Contaminated Facility or Area",
+				"Contaminated Land",
+				"Convenience Store",
+				"Convenience/Strip Center",
+				"Convention and Exhibition Facility",
+				"Convention Center",
+				"Convention Hotel",
+				"County Highway",
+				"Courthouse",
+				"Covered Storage Facility",
+				"Craft Production Facility",
+				"Craft Textile Production Facility",
+				"Creative/Loft Office Building",
+				"Cremation Facility",
+				"Crop Farm",
+				"Cultural Facility",
+				"Cut and Fill",
+				"Dairy Facility",
+				"Dam",
+				"Daycare Facility",
+				"Daycare or Preschool Facility",
+				"Death Facility",
+				"Demolition",
+				"Dental Facility",
+				"Department Store",
+				"Depot and Arsenal Covered Storage",
+				"Depot Open Storage Facility",
+				"Detention Center",
+				"Dining Establishment",
+				"Discotheque",
+				"Distribution Warehouse",
+				"Dog Racing Track",
+				"Dormitory",
+				"Dredging",
+				"Driveway",
+				"Dry Storage Facility",
+				"Duplex",
+				"Duplex 3-4 Plex Site",
+				"Education Facility",
+				"Elderly Special Care Residence",
+				"Electrical Equipment, Appliance, and Component Manufacturing Research Development Test and Evaluatio",
+				"Electrical Equipment or Appliance Manufacturing Facility",
+				"Electrical Storage",
+				"Electrical Substation",
+				"Electrical Switching Station",
+				"Electrical Transformer",
+				"Electronic and Communication Maintenance Facility",
+				"Electronic and Communication Maintenance Shop",
+				"Electronic and Communication Maintenance Shop, Depot",
+				"Electronics and Communications Equipment Maintenance Facility",
+				"Electronics Research Facility",
+				"Elementary School",
+				"Embassy",
+				"Emergency Unaccompanied Personnel Housing",
+				"Energy Distribution Facility",
+				"Energy Distribution Node",
+				"Energy Infrastructure Facility",
+				"Energy Production Facility",
+				"Energy Storage Facility",
+				"Engineering Research and Development Facility",
+				"Engineering Research Facility",
+				"Entertainment Assembly Facility",
+				"Entertainment Production Facility",
+				"Entertainment Rehearsal Facility",
+				"Environmentally-Controlled Storage Facility",
+				"Equipment Storage Facility",
+				"EUPH Tent Pad",
+				"Exchange or Market",
+				"Exchange Support Facility",
+				"Exchange Warehouse",
+				"Explosives and Flame Range",
+				"Explosives Railway Holding Yard",
+				"Explosives Storage Facility",
+				"Exterior Lighting Pole",
+				"Extra-Atmospheric Aerospace Transportation Terminal",
+				"Fabricated Metal Product Manufacturing Facility",
+				"Fair or Circus Ground",
+				"Family Housing Trailer/Relocatable",
+				"Family Housing Trailer Site",
+				"Family Service Center",
+				"Fast Food Restaurant",
+				"Federal Government-Owned Land",
+				"Feedlot",
+				"Fire Protection Water Facility",
+				"Fire Station",
+				"Fish Facility",
+				"Fishing Preserve",
+				"Fish Passage",
+				"Fitness and Training Facility",
+				"Flex Space Office Building",
+				"Flood Zone",
+				"Flowage Easement",
+				"Food Bank",
+				"Food Manufacturing Research Development Test and Evaluation Facility",
+				"Food Processing and Manufacturing Facility",
+				"Food Storage Facility",
+				"Foreign Land",
+				"Forestry and Timber Fabrication Facility",
+				"Forestry Guard Station",
+				"Fraternity/Sorority House",
+				"Freezer Storage Facility",
+				"Full Service Lodging",
+				"Full Service Restaurant",
+				"Funeral Home",
+				"Furniture Manufacturing Facility",
+				"Garden Center",
+				"Gas Fuel Storage",
+				"Gas Plant and Storage Facility",
+				"Gas-Powered Electrical Generation Facility",
+				"General Purpose Library",
+				"Geothermal-Powered Electrical Generation Facility",
+				"Glass-Making Craft Production Facility",
+				"Golf Course",
+				"Golf Driving Range",
+				"Golf Facility",
+				"Golf Pitch and Putt Course",
+				"Government Facility",
+				"Government Subsidized Residence",
+				"Grain Elevator",
+				"Grain Silo",
+				"Green House",
+				"Grocery Store",
+				"Ground Improvement Structure",
+				"Ground Operational Facility Other Than Building",
+				"Ground Operations Building",
+				"Grounds Drainage",
+				"Guided Missile Maintenance Facility",
+				"Guided Missile Production Facility",
+				"Gymnastics Facility",
+				"Harbor Control Facility",
+				"Harbor Marine Improvements",
+				"Hazardous Materials Containment Research Facility",
+				"Hazardous Storage Facility",
+				"Hazardous Waste Landfill",
+				"Headquarters Office",
+				"Health Care Facility",
+				"Heat and Refrigeration Facility",
+				"Heat Distribution Line",
+				"Heat Gas Distribution Line",
+				"Heat Gas Production Plant",
+				"Heat Gas Storage",
+				"Heat Source",
+				"Heavy Manufacturing Facility",
+				"Heavy Railway",
+				"Heliport",
+				"Helium Production/Storage Building",
+				"Helium Storage Facility",
+				"Higher Education Facility",
+				"High Hazard Research Facility",
+				"High-Rise Office Building",
+				"High School",
+				"High Speed Railway",
+				"High-Tech Manufacturing Facility",
+				"Highway Rest Stop",
+				"History Museum",
+				"Homeland Security Facility",
+				"Homeless Shelter",
+				"Horse Racing Track",
+				"Hospital",
+				"Hospitality Facility",
+				"Hotel",
+				"Housing Facility",
+				"Human Arts College",
+				"Hunting Preserve",
+				"Hydroelectric Generation Facility",
+				"Impact, Maneuver, and Training Area",
+				"Improvement to Facility or Site",
+				"Incinerator",
+				"Indoor Baseball or Softball Diamond",
+				"Indoor Basketball Court",
+				"Indoor Football Field",
+				"Indoor High Diving Facility",
+				"Indoor Ice Skating Rink",
+				"Indoor Individual Athletic Recreation Facility",
+				"Indoor Multipurpose Recreation Facility",
+				"Indoor Racquetball Facility",
+				"Indoor Racquet Sports Facility",
+				"Indoor Recreation Facility",
+				"Indoor Soccer Field",
+				"Indoor Sports Training Facility",
+				"Indoor Squash Facility",
+				"Indoor Swimming Pool",
+				"Indoor Team Court Sports Facility",
+				"Indoor Team Sports Facility",
+				"Indoor Tennis Facility",
+				"Indoor Volleyball Court",
+				"Indoor Water Park",
+				"Indoor Water Recreation Facility",
+				"Industrial Pier",
+				"Industrial Site",
+				"Industrial Waste Treatment",
+				"Information Distribution Facility",
+				"Information Infrastructure Facility",
+				"Information Node",
+				"In-Leased Land",
+				"Installation and Organization Covered Storage",
+				"Installation Gas Distribution Line",
+				"Installation Gas Storage Facility",
+				"Installation Maintenance and Repair Production Facility",
+				"Installation Repair and Operation Maintenance Facility",
+				"Intermodal/Transportation Facility",
+				"International Airport",
+				"Interstate Highway",
+				"Irrigation Distribution Facility",
+				"Jail",
+				"Joint Services Facility",
+				"Junior High School",
+				"Kennel",
+				"Kindergarten",
+				"K through 12Learning Facility",
+				"Lake",
+				"Land",
+				"Land Easement",
+				"Land Fill",
+				"Land Purchase, Condemnation, Donation, or Transfer",
+				"Large Complex Multiple Family Residence",
+				"Leather and Allied Industry Manufacturing Facility",
+				"Leather and Allied Product Manufacturing Research Development Test and Evaluation Facility",
+				"Legislative Facility",
+				"Library",
+				"Licensed and Permitted Land",
+				"License or Permit",
+				"Life Sciences Research Facility",
+				"Light Manufacturing Facility",
+				"Light Railway",
+				"LIHTC Tax Credit Housing",
+				"Limited Service Restaurant",
+				"Liquid Fuel Storage",
+				"Liquid Oxygen Storage Facility",
+				"Livestock Farm",
+				"Loading Platform/Ramp",
+				"Local or Municipal Airfield",
+				"Local Transit Bus Station",
+				"Local Transit Station",
+				"Lodging Facility",
+				"Loft/Multi-Story Warehouse",
+				"Long Distance Bus Station",
+				"Low-Rise Office Building",
+				"Luxury Lodging",
+				"Machinery Manufacturing Facility",
+				"Machinery Manufacturing Research Development Test and Evaluation Facility",
+				"Magnetic Levitation Railway",
+				"Magnet School",
+				"Manufacturing Facility",
+				"Manufacturing Research and Development Facility",
+				"Marine Cargo Staging Area",
+				"Marine Improvement",
+				"Marine Transportation Terminal",
+				"Market",
+				"Martial Arts Facility",
+				"Maternity Facility",
+				"Medical Center",
+				"Medical Warehouse",
+				"Meeting Facility",
+				"Metal Craft Production Facility",
+				"Middle School",
+				"Mid-rise Office Building",
+				"Military Academy",
+				"Military Base",
+				"Military Dining Facility",
+				"Military Dining Support Facility",
+				"Military Exchange Eating Facility",
+				"Military Facility",
+				"Military Field Facility",
+				"Military Headquarters",
+				"Military Headquarters Office",
+				"Military Locker Room Facility",
+				"Military Maintenance Facility",
+				"Military Non-Exchange Eating Facility",
+				"Military Open Mess and Club Facility",
+				"Military Research Facility",
+				"Military Training Facility",
+				"Mineral Extraction Facility",
+				"Miniature Golf Course",
+				"Mining Facility",
+				"Miscellaneous Items and Equipment Maintenance Facility",
+				"Miscellaneous Liquid Storage Tank and Basin",
+				"Miscellaneous Operations Support Building",
+				"Miscellaneous Paved Area",
+				"Miscellaneous Personnel Shelter",
+				"Miscellaneous Pump Station",
+				"Miscellaneous Railroad Facility",
+				"Missile and Space Research Development Test and Evaluation Facility",
+				"Mixed-Commerce Facility",
+				"Mixed-Gender Dormitory",
+				"Mixed-Use Facility",
+				"Mixed Use Lodging",
+				"Mixed Use Retail/Commercial Building",
+				"Monorail",
+				"Monument and Memorial",
+				"Motel",
+				"Motor Vehicle Transportation Terminal",
+				"Movie Studio",
+				"Multi-Family Site",
+				"Multiple Bedroom Family Residence",
+				"Multiple Family Residences",
+				"Multi-tenant Office Building",
+				"Museum",
+				"Nanotechnology Research Facility",
+				"National Guard Facility",
+				"National or International Religious Center",
+				"Natural Gas Pipeline",
+				"Natural Gas Pumping Station",
+				"Nature Preserve",
+				"Naval facility",
+				"Navigation Revetment",
+				"Neighborhood Center",
+				"Nightclub",
+				"Non-Athletic Indoor Recreation Facility",
+				"Non-Building Airfield Operational Facility",
+				"Nonmetallic Mineral Product Manufacturing Facility",
+				"Nonmetallic Mineral Product Manufacturing Research Development Test and Evaluation Facility",
+				"Not Real Property",
+				"Nuclear-Powered Electrical Generation Facility",
+				"Office Building",
+				"Office Facility",
+				"Office-Industrial Building",
+				"Office-Multi-Family Residence Building",
+				"Office/Research and Development Building",
+				"Office-Retail Building",
+				"Office-Retail-Industrial Building",
+				"Office-Retail-Multi-Family Residence Building",
+				"Office Showroom",
+				"Office Site",
+				"Office/Warehouse Building",
+				"Offshore Mooring Facility",
+				"Oil and Gas Extraction Facility",
+				"Oil-Powered Electrical Generation Facility",
+				"One-Bedroom Family Residence",
+				"Open Storage Facility",
+				"Open Storage, Installation Facility",
+				"Operational Support Building",
+				"Operational Support Facility Other Than Building",
+				"Operations Supply Building",
+				"Operations Support Lab",
+				"Orchard",
+				"Ornamental Crop Farm",
+				"Other Aerospace Transportation Terminals",
+				"Other Agricultural Facility",
+				"Other Airfield Pavements",
+				"Other Bridges",
+				"Other Convention and Exhibition Facility",
+				"Other Craft Production Facility",
+				"Other Cultural Facility",
+				"Other Daycare and Preschool Facility",
+				"Other Death Facility",
+				"Other Dormitories",
+				"Other Dry Storage Facility",
+				"Other Energy Distribution Facility",
+				"Other Energy Nodes",
+				"Other Energy Production Facility",
+				"Other Energy Storage Facility",
+				"Other Entertainment Facility",
+				"Other Environmentally-Controlled Storage Facility",
+				"Other Exchanges and Markets",
+				"Other Government Facility",
+				"Other Hazardous Storage Facility",
+				"Other Health Facility",
+				"Other Higher Education Facility",
+				"Other Hotels",
+				"Other Indoor Recreation Facility",
+				"Other Information Distribution Facility",
+				"Other Information Nodes",
+				"Other K through 12Learning Facility",
+				"Other Land",
+				"Other Libraries",
+				"Other Manufacturing Facility",
+				"Other Marine Transportation Terminals",
+				"Other Military Facility",
+				"Other Mineral Extraction Facility",
+				"Other Mixed-Commerce Facility",
+				"Other Motor Vehicle Transportation Terminals",
+				"Other Multiple Family Residences",
+				"Other Museums",
+				"Other Offices",
+				"Other Outdoor Recreation Facility",
+				"Other Public Welfare Facility",
+				"Other Rail Transportation Terminals",
+				"Other Railways",
+				"Other Real Property Improvements",
+				"Other Religious Facility",
+				"Other Research Facility",
+				"Other Retail Commercial Facility",
+				"Other Rights",
+				"Other Roadways",
+				"Other Single Family Residences",
+				"Other Special Care Residences",
+				"Other Special Water Production Facility",
+				"Other Storage Facility",
+				"Other Vehicle Maintenance and Parking Facility",
+				"Other Waste Collection and Holding Facility",
+				"Other Waste Processing Facility",
+				"Other Water Distribution Facility",
+				"Other Water Holding and Collection Facility",
+				"Other Water Treatment",
+				"Outdoor Baseball or Softball Diamond",
+				"Outdoor Basketball Court",
+				"Outdoor Football Field",
+				"Outdoor Multipurpose Recreation Facility",
+				"Outdoor Racquetball Facility",
+				"Outdoor Racquet Sports Facility",
+				"Outdoor Recreation Facility",
+				"Outdoor Sign",
+				"Outdoor Skating Rink",
+				"Outdoor Soccer Field",
+				"Outdoor Sports Training Facility",
+				"Outdoor Squash Facility",
+				"Outdoor Swimming Pool",
+				"Outdoor Team Sports Facility",
+				"Outdoor Tennis Facility",
+				"Outdoor Theater",
+				"Outdoor Water Park",
+				"Outdoor Water Recreation Facility",
+				"Outdoor Winter Sports Facility",
+				"Outlet Center",
+				"Overhead Electrical Power Distribution Line",
+				"Painting Craft Production Facility",
+				"Paper Manufacturing Facility",
+				"Parts Storage Facility",
+				"Passenger Assembly Facility",
+				"Pavilion",
+				"Pedestrian Bridge",
+				"Pentagon",
+				"Performing Arts Facility",
+				"Petroleum and Coal Products Manufacturing Research Development Test and Evaluation Facility",
+				"Petroleum or Coal Products Manufacturing Facility",
+				"Pharmaceutical or Biotechnology Manufacturing Facility",
+				"Physical Disability Care Residence",
+				"Physical Sciences Research and Development Facility",
+				"Pipe Line",
+				"Planned Development (PUD)",
+				"Plastics and Rubber Products Manufacturing Research Development Test and Evaluation Facility",
+				"Plastics or Rubber Manufacturing Facility",
+				"Playground",
+				"Police Station",
+				"Pond",
+				"Post Office",
+				"Potable Water Distribution Facility",
+				"Potable Water Treatment Facility",
+				"Power Center",
+				"Power Line",
+				"Power Trench",
+				"Power Tunnel",
+				"Preschool Facility",
+				"Primary Metal Manufacturing Facility",
+				"Primary Metal Manufacturing Research Development Test and Evaluation Facility",
+				"Primary School",
+				"Printing Facility",
+				"Prison",
+				"Production Facility",
+				"Professional College",
+				"Proprietary Preschool Facility",
+				"Psychiatric Facility",
+				"Public Domain Withdraw",
+				"Public Grounds Fencing, Gate, or Guard Tower",
+				"Public Health and Safety Facility",
+				"Public Land",
+				"Public Restroom/Shower",
+				"Public Service Facility",
+				"Public Welfare Facility",
+				"Pulp, Paper, and Paperboard Manufacturing Research Development Test and Evaluation Facility",
+				"Race Track",
+				"Radioactive Material Storage Facility",
+				"Rail Bridge",
+				"Rail Maintenance and Fueling Facility",
+				"Rail Transportation Terminal",
+				"Railway",
+				"Rail Yard",
+				"Raw Material Storage Facility",
+				"Recreational Camp and Trailer Park",
+				"Recreational Marina",
+				"Recreational Pier",
+				"Recreation Facility",
+				"Recycling Center",
+				"Refrigeration and Air Conditioning Source",
+				"Refuse Collection and Recycling Facility",
+				"Regional Administrative Office",
+				"Regional Airport",
+				"Regional Center",
+				"Regulatory Agency Facility",
+				"Rehabilitation Facility",
+				"Religious Education Facility",
+				"Religious Facility",
+				"Religious Institution",
+				"Religious Monument or Icon",
+				"Religious Pilgrimage Site",
+				"Religious Retreat",
+				"Remote Delivery Facility",
+				"Research Development Test and Evaluation Range Facilities",
+				"Research Development Test and Evaluation Technical Service Facility",
+				"Research Facility",
+				"Reservoir",
+				"Residence Hotel",
+				"Residential (Single-Family) Site",
+				"Resort Hotel",
+				"Retail Facility",
+				"Retail-Office Building",
+				"Retail-Office-Residential Building",
+				"Retail Pad",
+				"Retail-Pad Building",
+				"Retail-Residential Building",
+				"Retail Site",
+				"Right-of-Way",
+				"River",
+				"Roadside Truck Stop",
+				"Roadway",
+				"Rural/Isolated Airfield",
+				"Rural Long Distance Rail Station",
+				"Salvage Yard",
+				"Sanitary Sewer Distribution Facility",
+				"Satellite Distribution Facility",
+				"Science and Technology Museum",
+				"Science College",
+				"Scientific Research and Development Facility",
+				"Seaway Facility",
+				"Secondary School",
+				"Self-Storage/Mini-Storage Facility",
+				"Septic Lagoon and Settlement Ponds",
+				"Septic Tank and Drain Field",
+				"Sewage Lift Stations",
+				"Sewage Treatment",
+				"Ship and Marine Research Development Test and Evaluation Facility",
+				"Ship Navigation Building",
+				"Ship Navigation Facility",
+				"Shopping Centers",
+				"Shore Erosion Prevention Facility",
+				"Sidewalk and Walkway",
+				"Sidewalk or Other Pavement",
+				"Simulation Facility",
+				"Single Family Residence",
+				"Single-Gender Dormitory",
+				"Ski Slope",
+				"Slaughterhouse and Processing Facility",
+				"Small Arms Range",
+				"Small Complex Multiple Family Residence",
+				"Small Craft Berthing",
+				"Small Craft Building",
+				"Snowmobile Course",
+				"Snow Shed",
+				"Social Club Facility",
+				"Solar-Powered Electrical Generation Facility",
+				"Solid Fuel Storage",
+				"Special Care Residence",
+				"Specialized Religious Center",
+				"Special Library",
+				"Special Purpose Museum",
+				"Specialty Store",
+				"Special Waste Holding Facility",
+				"Special Waste Reclamation Facility",
+				"Special Water Production Facility",
+				"Special Water Purification Facility",
+				"Stable",
+				"Stand-By/Emergency Power Facility",
+				"State or Provincial Highway",
+				"State-Owned Land",
+				"Steam Production Facility",
+				"Steam Tunnel",
+				"Stock Exchange",
+				"Storage Facility",
+				"Storm Water Sewer Distribution Facility",
+				"Strategic Petroleum Reserve Facility",
+				"Stream",
+				"Street",
+				"Street Retail Facility",
+				"Student Apartment",
+				"Student Dining Hall",
+				"Studio Family Residence",
+				"Subdivision-Industrial Site",
+				"Subdivision-Office Site",
+				"Subdivision-Residential Site",
+				"Tank and Automotive Research Development Test and Evaluation Facility",
+				"Target Range",
+				"Tavern, Bar, or Micro-Brewery",
+				"Team and Unit Range",
+				"Technology Research Facility",
+				"Telecommunication Lines",
+				"Textile Manufacturing Facility",
+				"Textile Mill and Textile Product Manufacturing Research Development Test and Evaluation Facility",
+				"Theme/Festival Center",
+				"Theme Park",
+				"Thrift Shop",
+				"Tier I Data Center",
+				"Tier II Data Center",
+				"Tier III Data Center",
+				"Tier IV Data Center",
+				"Tire Store",
+				"Toll Booth/Plaza",
+				"Toxins Storage Facility",
+				"Traffic Control Facility",
+				"Traffic Control Signal",
+				"Training Center",
+				"Training Dike/Wing Dam/Pile Dike",
+				"Training Facility Other Than Building",
+				"Training Support Facility",
+				"Transportation Equipment Manufacturing Research Development Test and Evaluation Facility",
+				"Transportation Facility",
+				"Transportation Manufacturing Facility",
+				"Truck Terminal/Transit Facility",
+				"Tunnel",
+				"Underground Administrative Structure",
+				"Underground/Cave Storage",
+				"Underground Electrical Power Distribution Line",
+				"Underwater Equipment Research Development Test and Evaluation Facility",
+				"University",
+				"Urban Hotel",
+				"Urban Long Distance Rail Station",
+				"Utility Tunnel",
+				"Vehicle Dealership",
+				"Vehicle Maintenance and Parking Facility",
+				"Vehicle Related Retail/Commercial",
+				"Vehicle Scales",
+				"Vehicle Staging Area, Surfaced",
+				"Vehicular Bridge",
+				"Vehicular Tunnel",
+				"Vocational College",
+				"Vocational Training Facility",
+				"Warm Storage Facility",
+				"Waste Collection and Holding Facility",
+				"Waste Infrastructure Facility",
+				"Waste Processing Facility",
+				"Waste Water Treatment Facility",
+				"Water Distillation Facility",
+				"Water Distribution Facility",
+				"Water Distribution Line, Fire Protection",
+				"Water Holding and Collection Facility",
+				"Water Impoundment, Fire Protection",
+				"Water Infrastructure Facility",
+				"Water Pump Facility, Fire Protection",
+				"Water-Related Site",
+				"Water Separation Facility",
+				"Water Source, Fire Protection",
+				"Water Tank, Fire Protection",
+				"Water Tank or Tower",
+				"Water Treatment Facility",
+				"Weapon Range",
+				"Weapons and Spares Maintenance Facility",
+				"Weapons and Spares Production Facility",
+				"Weapons Research Development Test and Evaluation Facility",
+				"Wetland/Marshland",
+				"Wetlands Water Treatment Facility",
+				"Wharf",
+				"Wilderness Site",
+				"Wildlife Management Area",
+				"Wind-Powered Electrical Generation Facility",
+				"Withdrawn Public land",
+				"Wood and Plastic Craft Production Facility",
+				"Wood Product Manufacturing Facility",
+				"Wood Product Manufacturing Research Development Test and Evaluation Facility",
+				"Working Animal Support Building",
+				"Zoo/Nature Facility"
+			],
+			"type": "string"
+		},
+		"cbrncl:FacilityUsageCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for a description of the functional usage of a facility.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:FacilityUsageCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:FaultSeverityCodeSimpleType": {
+			"description": "A data type that defines the code values for the various categories of fault severity.",
+			"enum": [
+				"Error",
+				"Fatal",
+				"Warning"
+			],
+			"type": "string"
+		},
+		"cbrncl:FaultSeverityCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the categories of fault severity.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:FaultSeverityCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:GNDAOrgCodeSimpleType": {
+			"description": "A data type for list of organizations that participate in the Global Nuclear Detection Architecture.",
+			"enum": [
+				"ANL",
+				"BNL",
+				"CBP",
+				"CSI",
+				"DOE/Triage",
+				"DTRA",
+				"Foreign",
+				"ICE",
+				"INL",
+				"JAC",
+				"JHU/APL",
+				"LANL",
+				"LBNL",
+				"LLNL",
+				"LSS",
+				"NA",
+				"NIST",
+				"None",
+				"NRC",
+				"ORNL",
+				"Other",
+				"PNNL",
+				"RESL",
+				"SBI",
+				"SFC",
+				"SFI",
+				"Site",
+				"SNL",
+				"SRNL",
+				"TSA",
+				"Unknown",
+				"USCG"
+			],
+			"type": "string"
+		},
+		"cbrncl:GNDAOrgCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for a list of organizations that participate in the Global Nuclear Detection Architecture.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:GNDAOrgCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:IDAcquisitionMethodCodeSimpleType": {
+			"description": "A data type that defines the codes for the methods by which the identifier of an object can be determined.",
+			"enum": [
+				"Barcode",
+				"CBPRequest",
+				"LPR",
+				"ManualEntry",
+				"Missing",
+				"OCRScan",
+				"Other",
+				"RFI",
+				"unknown"
+			],
+			"type": "string"
+		},
+		"cbrncl:IDAcquisitionMethodCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the methods by which the identifier of an object can be determined.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:IDAcquisitionMethodCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:ImageOrientationCodeSimpleType": {
+			"description": "A data type that defines the code values for the orientation of an image; i.e., portrait or landscape.",
+			"enum": [
+				"Landscape",
+				"Portrait",
+				"Unknown"
+			],
+			"type": "string"
+		},
+		"cbrncl:ImageOrientationCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the orientation of an image; i.e., portrait or landscape.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:ImageOrientationCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:ImagePerspectiveCodeSimpleType": {
+			"description": "A data type that defines the code Values for the viewing perspectives for image multimedia data.",
+			"enum": [
+				"Bottom",
+				"Front",
+				"Interior",
+				"Left Side",
+				"NA",
+				"Rear",
+				"Right Side",
+				"Top",
+				"Unknown"
+			],
+			"type": "string"
+		},
+		"cbrncl:ImagePerspectiveCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the viewing perspectives for image multimedia data.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:ImagePerspectiveCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:InspectionResolutionCodeSimpleType": {
+			"description": "A data type for the code values for Inspection Resolution Code",
+			"enum": [
+				"Alarm or Fault Test",
+				"Alarm or Fault Unknown Cause",
+				"BannedSubstances",
+				"Explosives",
+				"FalseBiologicalMaterialAlarm",
+				"FalseChemicalAlarm",
+				"FalseRadiationAlarm",
+				"HumanSmuggling",
+				"IllegalBiologicalMaterialFound",
+				"IllegalChemicalFound",
+				"IllegalRadioactiveMaterialFound",
+				"LegalBiologicalMaterial)Found",
+				"LegalChemicalFound",
+				"LegalRadioactiveMaterialFound",
+				"MedicalIsotopeOnPerson",
+				"Narcotics",
+				"NORM",
+				"NothingSuspiciousFound",
+				"OtherSuspiciousMaterialFound",
+				"OtherThreat",
+				"SNM",
+				"Weapons"
+			],
+			"type": "string"
+		},
+		"cbrncl:InspectionResolutionCodeType": {
+			"additionalProperties": false,
+			"description": "A data type that defines the Inspection Resolution Code",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:InspectionResolutionCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:InspectionThreatFindingCodeSimpleType": {
+			"description": "A data type that defines the code Values for the various Inspection threat findings",
+			"enum": [
+				"FalseNIIAlarm",
+				"FalseRadiationAlarm",
+				"IllegalRadioactiveMaterialFound",
+				"IllegalRadiologicalEquipmentFound",
+				"LegalRadioactiveMaterialFound",
+				"LegalRadiologicalEquipmentFound",
+				"NothingSuspiciousFound",
+				"OtherSuspiciousEquipmentFound",
+				"OtherSuspiciousMaterialFound",
+				"OtherThreat"
+			],
+			"type": "string"
+		},
+		"cbrncl:InspectionThreatFindingCodeType": {
+			"additionalProperties": false,
+			"description": "A data type that defines the inspection threat finding code",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:InspectionThreatFindingCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:LayerMaterialKindCodeSimpleType": {
+			"description": "A data type that defines the layer material kind code values",
+			"enum": [
+				"Agar",
+				"Air",
+				"Al",
+				"Candle",
+				"Cardboard",
+				"Cd",
+				"Concrete",
+				"Cu",
+				"DU",
+				"Fe",
+				"Glass",
+				"HE",
+				"Human",
+				"Lucite",
+				"Other",
+				"Pb",
+				"Poly",
+				"Polymeth Block",
+				"Sn",
+				"W",
+				"Water"
+			],
+			"type": "string"
+		},
+		"cbrncl:LayerMaterialKindCodeType": {
+			"additionalProperties": false,
+			"description": "A data type that defines the layer material kind code",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:LayerMaterialKindCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:MIMEContentCodeSimpleType": {
+			"description": "A data type for the kinds of MIME content and their file extension, as published by the Internet Assigned Numbers Authority (IANA.org).",
+			"enum": [
+				"323",
+				"acx",
+				"ai",
+				"aif",
+				"aifc",
+				"aiff",
+				"asf",
+				"asr",
+				"asx",
+				"au",
+				"avi",
+				"axs",
+				"bas",
+				"bcpio",
+				"bin",
+				"bmp",
+				"c",
+				"cat",
+				"cdf",
+				"cer",
+				"class",
+				"clp",
+				"cmx",
+				"cod",
+				"cpio",
+				"crd",
+				"crl",
+				"crt",
+				"csh",
+				"css",
+				"dcr",
+				"der",
+				"dir",
+				"dll",
+				"dms",
+				"doc",
+				"dot",
+				"dvi",
+				"dxr",
+				"eps",
+				"etx",
+				"evy",
+				"exe",
+				"fif",
+				"flr",
+				"gif",
+				"gtar",
+				"gz",
+				"h",
+				"hdf",
+				"hlp",
+				"hqx",
+				"hta",
+				"htc",
+				"htm",
+				"html",
+				"htt",
+				"ico",
+				"ief",
+				"iii",
+				"ins",
+				"isp",
+				"jfif",
+				"jpe",
+				"jpeg",
+				"jpg",
+				"js",
+				"latex",
+				"lha",
+				"lsf",
+				"lsx",
+				"lzh",
+				"m13",
+				"m14",
+				"m3u",
+				"man",
+				"mdb",
+				"me",
+				"mht",
+				"mhtml",
+				"mid",
+				"mny",
+				"mov",
+				"movie",
+				"mp2",
+				"mp3",
+				"mpa",
+				"mpe",
+				"mpeg",
+				"mpg",
+				"mpp",
+				"mpv2",
+				"ms",
+				"mvb",
+				"nws",
+				"oda",
+				"p10",
+				"p12",
+				"p7b",
+				"p7c",
+				"p7m",
+				"p7r",
+				"p7s",
+				"pbm",
+				"pdf",
+				"pfx",
+				"pgm",
+				"pko",
+				"pma",
+				"pmc",
+				"pml",
+				"pmr",
+				"pmw",
+				"pnm",
+				"pot,",
+				"ppm",
+				"pps",
+				"ppt",
+				"prf",
+				"ps",
+				"pub",
+				"qt",
+				"ra",
+				"ram",
+				"ras",
+				"rgb",
+				"rmi",
+				"roff",
+				"rtf",
+				"rtx",
+				"scd",
+				"sct",
+				"setpay",
+				"setreg",
+				"sh",
+				"shar",
+				"sit",
+				"snd",
+				"spc",
+				"spl",
+				"src",
+				"sst",
+				"stl",
+				"stm",
+				"sv4cpio",
+				"sv4crc",
+				"svg",
+				"swf",
+				"t",
+				"tar",
+				"tcl",
+				"tex",
+				"texi",
+				"texinfo",
+				"tgz",
+				"tif",
+				"tiff",
+				"tr",
+				"trm",
+				"tsv",
+				"txt",
+				"uls",
+				"ustar",
+				"vcf",
+				"vrml",
+				"wav",
+				"wcm",
+				"wdb",
+				"wks",
+				"wmf",
+				"wps",
+				"wri",
+				"wrl",
+				"wrz",
+				"xaf",
+				"xbm",
+				"xla",
+				"xlc",
+				"xlm",
+				"xls",
+				"xlt",
+				"xlw",
+				"xof",
+				"xpm",
+				"xwd",
+				"z",
+				"zip"
+			],
+			"type": "string"
+		},
+		"cbrncl:MIMEContentCodeType": {
+			"additionalProperties": false,
+			"description": "A data type that defines the various MIME Content Code",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:MIMEContentCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:MIMEEncodingCodeSimpleType": {
+			"description": "A data type that defines the kinds of MIME transfer encodings, as published by the Internet Assigned Numbers Authority (IANA.org).",
+			"enum": [
+				"7bit",
+				"8bit",
+				"base64",
+				"binary",
+				"quoted-printable"
+			],
+			"type": "string"
+		},
+		"cbrncl:MIMEEncodingCodeType": {
+			"additionalProperties": false,
+			"description": "A data type that defines the various MIME Encoding Code",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:MIMEEncodingCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:MapGuideBrandCodeSimpleType": {
+			"description": "A data type that defines the codes for the brands of map guides.",
+			"enum": [
+				"Other",
+				"Thomas"
+			],
+			"type": "string"
+		},
+		"cbrncl:MapGuideBrandCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the brands of map guides.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:MapGuideBrandCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:MeasureUnitCategoryCodeSimpleType": {
+			"description": "A data type that defines the measureUnitCategoryCodes",
+			"enum": [
+				"Area",
+				"Quantity",
+				"Volume",
+				"Weight"
+			],
+			"type": "string"
+		},
+		"cbrncl:MeasureUnitCategoryCodeType": {
+			"additionalProperties": false,
+			"description": "A data type that defines the various MeasureUnitCategoryCodes",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:MeasureUnitCategoryCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:MeasureUnitCodeSimpleType": {
+			"description": "A data type that defines the various MeasureUnitCodes",
+			"enum": [
+				"Area",
+				"Quantity",
+				"Volume",
+				"Weight"
+			],
+			"type": "string"
+		},
+		"cbrncl:MeasureUnitCodeType": {
+			"additionalProperties": false,
+			"description": "A data type that defines the various MeasureUnitCodes",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:MeasureUnitCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:MeasuredItemIDKindCodeSimpleType": {
+			"description": "A data type that defines the code values for Kind of identifier used for identifying a measured item.",
+			"enum": [
+				"ARN",
+				"LPN",
+				"Other",
+				"PackageID",
+				"SCN",
+				"SRN",
+				"VIN",
+				"VRN"
+			],
+			"type": "string"
+		},
+		"cbrncl:MeasuredItemIDKindCodeType": {
+			"additionalProperties": false,
+			"description": "A data type that defines the kind of identifier used for identifying a measured item.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:MeasuredItemIDKindCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:MeasuredItemKindCodeSimpleType": {
+			"description": "A data type for the kinds of items being inspected for Radiation/Nuclear threats.",
+			"enum": [
+				"Aircraft",
+				"Animal",
+				"Barge",
+				"Boat",
+				"Car",
+				"Cargo",
+				"Container",
+				"Luggage",
+				"Mail",
+				"Other",
+				"Package",
+				"Person",
+				"Pipeline",
+				"Railcar",
+				"Ship",
+				"Trailer",
+				"Truck",
+				"Vehicle"
+			],
+			"type": "string"
+		},
+		"cbrncl:MeasuredItemKindCodeType": {
+			"additionalProperties": false,
+			"description": "A data type that defines the measured item kind code",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:MeasuredItemKindCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:MeasurementClassCodeSimpleType": {
+			"description": "A data type that defines the code values for the classes of spectrum measurements that a radiation instrument can acquire for different kinds of radioactive sources or radiation fields.",
+			"enum": [
+				"Background",
+				"Calibration",
+				"Foreground",
+				"IntrinsicActivity",
+				"NotSpecified"
+			],
+			"type": "string"
+		},
+		"cbrncl:MeasurementClassCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the classes of spectrum measurements that a radiation instrument can acquire for different kinds of radioactive sources or radiation fields.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:MeasurementClassCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:MessageKindCodeSimpleType": {
+			"description": "A data type for the code values that  defines the various message kinds",
+			"enum": [
+				"AlarmSummaryMessage",
+				"ConveyanceTrackingMessage",
+				"DeviceConfigAndHealthStatusMessage",
+				"GeneralDeviceMessage",
+				"RadiationDeviceMessage",
+				"RadNucCaseMessage",
+				"RequestMessage",
+				"SiteOperationsInfoMessage",
+				"SystemAuditMessage",
+				"TradeDataMessage"
+			],
+			"type": "string"
+		},
+		"cbrncl:MessageKindCodeType": {
+			"additionalProperties": false,
+			"description": "A data type that defines the various message kinds",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:MessageKindCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:MessagePriorityCodeSimpleType": {
+			"description": "A data type the defines the various code values that defines the priority associated with a message",
+			"enum": [
+				"High",
+				"Normal",
+				"Very High"
+			],
+			"type": "string"
+		},
+		"cbrncl:MessagePriorityCodeType": {
+			"additionalProperties": false,
+			"description": "A data type that defines the priority associated with a message",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:MessagePriorityCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:MessageStatusCodeSimpleType": {
+			"description": "A data type that defines the various code values for  data types that defines the status of a message",
+			"enum": [
+				"ActivityCodeFailure",
+				"DataError",
+				"DeviceError",
+				"DuplicateMessage",
+				"ErrorAcknowledgement",
+				"InvalidSchema",
+				"MessageError",
+				"Other",
+				"Success",
+				"SystemError",
+				"UnknownError"
+			],
+			"type": "string"
+		},
+		"cbrncl:MessageStatusCodeType": {
+			"additionalProperties": false,
+			"description": "A data type that defines the status of a message.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:MessageStatusCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:MultimediaDeviceCategoryCodeSimpleType": {
+			"description": "A data type that defines the code values for  the kind of devices that can record multimedia data.",
+			"enum": [
+				"Audio",
+				"Camera",
+				"Camera-D",
+				"LPR",
+				"NII",
+				"OCR",
+				"Other",
+				"Reader",
+				"RFID",
+				"Scanner",
+				"Video",
+				"Video-D",
+				"VIS"
+			],
+			"type": "string"
+		},
+		"cbrncl:MultimediaDeviceCategoryCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the kind of devices that can record multimedia data.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:MultimediaDeviceCategoryCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:PackagingFormCodeSimpleType": {
+			"description": "A data type that defines the various PackagingFormCodes",
+			"enum": [
+				"AmmoPack",
+				"Bag",
+				"Bale",
+				"Barrel",
+				"Beam",
+				"Bottle",
+				"Box",
+				"BoxWithInnerContainer",
+				"BulkBag",
+				"Bundle",
+				"Can",
+				"Carboy",
+				"Carton",
+				"Case",
+				"Cask",
+				"Coil",
+				"Cones",
+				"Container",
+				"Crate",
+				"Cylinder",
+				"Drum",
+				"Flask",
+				"GarmentsOnHangers",
+				"HouseholdGoods",
+				"Keg",
+				"Kit",
+				"Lifts",
+				"OnOwnWheel",
+				"Other",
+				"Package",
+				"Pail",
+				"Pallet",
+				"Pieces",
+				"Rack",
+				"Reel",
+				"Roll",
+				"Sheet",
+				"Skid",
+				"Slip",
+				"Spool",
+				"Tank",
+				"TriWallBox",
+				"Tube",
+				"Units",
+				"Unknown",
+				"Vehicles"
+			],
+			"type": "string"
+		},
+		"cbrncl:PackagingFormCodeType": {
+			"additionalProperties": false,
+			"description": "A data type that defines the various PackagingFormCodes",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:PackagingFormCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:PhotonSourceCodeSimpleType": {
+			"description": "A data type that defines the various code values for the Photon source code",
+			"enum": [
+				"Co-60",
+				"Cs-137",
+				"x-ray"
+			],
+			"type": "string"
+		},
+		"cbrncl:PhotonSourceCodeType": {
+			"additionalProperties": false,
+			"description": "A data type that defines the various photon source code",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:PhotonSourceCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:RadAlarmCategoryCodeSimpleType": {
+			"description": "A data type that defines the various code values for the categories of alarms.",
+			"enum": [
+				"Alpha",
+				"Beta",
+				"Gamma",
+				"Isotope",
+				"Neutron",
+				"Other"
+			],
+			"type": "string"
+		},
+		"cbrncl:RadAlarmCategoryCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the categories of alarms.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:RadAlarmCategoryCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:RadDetectorCategoryCodeSimpleType": {
+			"description": "A data type that defines the various code values for the categories of radiation detectors based on the type of particles and/or photon emission that can be detect from a radiological or nuclear substance.",
+			"enum": [
+				"Alpha",
+				"Beta",
+				"Gamma",
+				"Neutron",
+				"Other",
+				"X-ray"
+			],
+			"type": "string"
+		},
+		"cbrncl:RadDetectorCategoryCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the categories of radiation detectors based on the type of particles and/or photon emission that can be detect from a radiological or nuclear substance.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:RadDetectorCategoryCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:RadDetectorKindCodeSimpleType": {
+			"description": "A data type that defines the various code values for the kinds of radiation detectors that may compose a radiation instrument.",
+			"enum": [
+				"BF3",
+				"BGO",
+				"CdTe",
+				"CdWO4",
+				"CeBr4",
+				"CLYC",
+				"CsI",
+				"CZT",
+				"GMT",
+				"GMTW",
+				"He3",
+				"He4",
+				"HgI2",
+				"HPGe",
+				"HPXe",
+				"LaBr3",
+				"LaCl3",
+				"LiCAF",
+				"LiFiber",
+				"LiGlass",
+				"LiI",
+				"LiZnS",
+				"NaI",
+				"Other",
+				"PS",
+				"PVT",
+				"SrI2"
+			],
+			"type": "string"
+		},
+		"cbrncl:RadDetectorKindCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the kinds of radiation detectors that may compose a radiation instrument.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:RadDetectorKindCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:RadInstrumentClassCodeSimpleType": {
+			"description": "A data type that defines the various code values for the classes of radiation detection instruments based on type and use.",
+			"enum": [
+				"Backpack",
+				"Dosimeter",
+				"Electronic Personal Emergency Radiation Detector",
+				"Gamma Handheld",
+				"Mobile System",
+				"Network Area Monitor",
+				"Neutron Handheld",
+				"Other",
+				"Personal Radiation Detector",
+				"Portal Monitor",
+				"Radionuclide Identifier",
+				"Spectroscopic Personal Radiation Detector",
+				"Spectroscopic Portal Monitor",
+				"Transportable System"
+			],
+			"type": "string"
+		},
+		"cbrncl:RadInstrumentClassCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the classes of radiation detection instruments based on type and use.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:RadInstrumentClassCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:RadInstrumentModeCodeSimpleType": {
+			"description": "A data type that defines the various code values  for the operating modes of a radiation detection instrument.",
+			"enum": [
+				"Calibrate",
+				"Long Dwell",
+				"Other",
+				"Search",
+				"Test"
+			],
+			"type": "string"
+		},
+		"cbrncl:RadInstrumentModeCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the operating modes of a radiation detection instrument.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:RadInstrumentModeCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:RadionuclideCodeSimpleType": {
+			"description": "A data type for the kinds of radionuclides. Reference CFR 172.101, Appendix A, Table 2.",
+			"enum": [
+				"Actinium-224",
+				"Actinium-225",
+				"Actinium-226",
+				"Actinium-227",
+				"Actinium-228",
+				"Aluminum-26",
+				"Americium-237",
+				"Americium-238",
+				"Americium-239",
+				"Americium-240",
+				"Americium-241",
+				"Americium-242",
+				"Americium-242m",
+				"Americium-243",
+				"Americium-244",
+				"Americium-244m",
+				"Americium-245",
+				"Americium-246",
+				"Americium-246m",
+				"Antimony-115",
+				"Antimony-116",
+				"Antimony-116m",
+				"Antimony-117",
+				"Antimony-118m",
+				"Antimony-119",
+				"Antimony-120 (16 min)",
+				"Antimony-120 (5.76 day)",
+				"Antimony-122",
+				"Antimony-124",
+				"Antimony-124m",
+				"Antimony-125",
+				"Antimony-126",
+				"Antimony-126m",
+				"Antimony-127",
+				"Antimony-128 (10.4 min)",
+				"Antimony-128 (9.01 hr)",
+				"Antimony-129",
+				"Antimony-130",
+				"Antimony-131",
+				"Argon-39",
+				"Argon-41",
+				"Arsenic-69",
+				"Arsenic-70",
+				"Arsenic-71",
+				"Arsenic-72",
+				"Arsenic-73",
+				"Arsenic-74",
+				"Arsenic-76",
+				"Arsenic-77",
+				"Arsenic-78",
+				"Astatine-207",
+				"Astatine-211",
+				"Barium-126",
+				"Barium-128",
+				"Barium-131",
+				"Barium-131m",
+				"Barium-133",
+				"Barium-133m",
+				"Barium-135m",
+				"Barium-139",
+				"Barium-140",
+				"Barium-141",
+				"Barium-142",
+				"Berkelium-245",
+				"Berkelium-246",
+				"Berkelium-247",
+				"Berkelium-249",
+				"Berkelium-250",
+				"Beryllium-10",
+				"Beryllium-7",
+				"Bismuth-200",
+				"Bismuth-201",
+				"Bismuth-202",
+				"Bismuth-203",
+				"Bismuth-205",
+				"Bismuth-206",
+				"Bismuth-207",
+				"Bismuth-210",
+				"Bismuth-210m",
+				"Bismuth-212",
+				"Bismuth-213",
+				"Bismuth-214",
+				"Bromine-74",
+				"Bromine-74m",
+				"Bromine-75",
+				"Bromine-76",
+				"Bromine-77",
+				"Bromine-80",
+				"Bromine-80m",
+				"Bromine-82",
+				"Bromine-83",
+				"Bromine-84",
+				"Cadmium-104",
+				"Cadmium-107",
+				"Cadmium-109",
+				"Cadmium-113",
+				"Cadmium-113m",
+				"Cadmium-115",
+				"Cadmium-115m",
+				"Cadmium-117",
+				"Cadmium-117m",
+				"Calcium-41",
+				"Calcium-45",
+				"Calcium-47",
+				"Californium-244",
+				"Californium-246",
+				"Californium-248",
+				"Californium-249",
+				"Californium-250",
+				"Californium-251",
+				"Californium-252",
+				"Californium-253",
+				"Californium-254",
+				"Carbon-11",
+				"Carbon-14",
+				"Cerium-134",
+				"Cerium-135",
+				"Cerium-137",
+				"Cerium-137m",
+				"Cerium-139",
+				"Cerium-141",
+				"Cerium-143",
+				"Cerium-144",
+				"Cesium-125",
+				"Cesium-127",
+				"Cesium-129",
+				"Cesium-130",
+				"Cesium-131",
+				"Cesium-132",
+				"Cesium-134",
+				"Cesium-134m",
+				"Cesium-135",
+				"Cesium-135m",
+				"Cesium-136",
+				"Cesium-137",
+				"Cesium-138",
+				"Chlorine-36",
+				"Chlorine-38",
+				"Chlorine-39",
+				"Chromium-48",
+				"Chromium-49",
+				"Chromium-51",
+				"Cobalt-55",
+				"Cobalt-56",
+				"Cobalt-57",
+				"Cobalt-58",
+				"Cobalt-58m",
+				"Cobalt-60",
+				"Cobalt-60m",
+				"Cobalt-61",
+				"Cobalt-62m",
+				"Copper-60",
+				"Copper-61",
+				"Copper-64",
+				"Copper-67",
+				"Curium-238",
+				"Curium-240",
+				"Curium-241",
+				"Curium-242",
+				"Curium-243",
+				"Curium-244",
+				"Curium-245",
+				"Curium-246",
+				"Curium-247",
+				"Curium-248",
+				"Curium-249",
+				"Dysprosium-155",
+				"Dysprosium-157",
+				"Dysprosium-159",
+				"Dysprosium-165",
+				"Dysprosium-166",
+				"Einsteinium-250",
+				"Einsteinium-251",
+				"Einsteinium-253",
+				"Einsteinium-254",
+				"Einsteinium-254m",
+				"Erbium-161",
+				"Erbium-165",
+				"Erbium-169",
+				"Erbium-171",
+				"Erbium-172",
+				"Europium-145",
+				"Europium-146",
+				"Europium-147",
+				"Europium-148",
+				"Europium-149",
+				"Europium-150 (12.6 hr)",
+				"Europium-150 (34.2 yr)",
+				"Europium-152",
+				"Europium-152m",
+				"Europium-154",
+				"Europium-155",
+				"Europium-156",
+				"Europium-157",
+				"Europium-158",
+				"Fermium-252",
+				"Fermium-253",
+				"Fermium-254",
+				"Fermium-255",
+				"Fermium-257",
+				"Fluorine-18",
+				"Francium-222",
+				"Francium-223",
+				"Gadolinium-145",
+				"Gadolinium-146",
+				"Gadolinium-147",
+				"Gadolinium-148",
+				"Gadolinium-149",
+				"Gadolinium-151",
+				"Gadolinium-152",
+				"Gadolinium-153",
+				"Gadolinium-159",
+				"Gallium-65",
+				"Gallium-66",
+				"Gallium-67",
+				"Gallium-68",
+				"Gallium-70",
+				"Gallium-72",
+				"Gallium-73",
+				"Germanium-66",
+				"Germanium-67",
+				"Germanium-68",
+				"Germanium-69",
+				"Germanium-71",
+				"Germanium-75",
+				"Germanium-77",
+				"Germanium-78",
+				"Gold-193",
+				"Gold-194",
+				"Gold-195",
+				"Gold-198",
+				"Gold-198m",
+				"Gold-199",
+				"Gold-200",
+				"Gold-200m",
+				"Gold-201",
+				"Hafnium-170",
+				"Hafnium-172",
+				"Hafnium-173",
+				"Hafnium-175",
+				"Hafnium-177m",
+				"Hafnium-178m",
+				"Hafnium-179m",
+				"Hafnium-180m",
+				"Hafnium-181",
+				"Hafnium-182",
+				"Hafnium-182m",
+				"Hafnium-183",
+				"Hafnium-184",
+				"Holmium-155",
+				"Holmium-157",
+				"Holmium-159",
+				"Holmium-161",
+				"Holmium-162",
+				"Holmium-162m",
+				"Holmium-164",
+				"Holmium-164m",
+				"Holmium-166",
+				"Holmium-166m",
+				"Holmium-167",
+				"Hydrogen-3",
+				"Indium-109",
+				"Indium-110 (4.9 hr)",
+				"Indium-110 (69.1 min)",
+				"Indium-111",
+				"Indium-112",
+				"Indium-113m",
+				"Indium-114m",
+				"Indium-115",
+				"Indium-115m",
+				"Indium-116m",
+				"Indium-117",
+				"Indium-117m",
+				"Indium-119m",
+				"Iodine-120",
+				"Iodine-120m",
+				"Iodine-121",
+				"Iodine-123",
+				"Iodine-124",
+				"Iodine-125",
+				"Iodine-126",
+				"Iodine-128",
+				"Iodine-129",
+				"Iodine-130",
+				"Iodine-131",
+				"Iodine-132",
+				"Iodine-132m",
+				"Iodine-133",
+				"Iodine-134",
+				"Iodine-135",
+				"Iridium-182",
+				"Iridium-184",
+				"Iridium-185",
+				"Iridium-186",
+				"Iridium-187",
+				"Iridium-188",
+				"Iridium-189",
+				"Iridium-190",
+				"Iridium-190m",
+				"Iridium-192",
+				"Iridium-192m",
+				"Iridium-194",
+				"Iridium-194m",
+				"Iridium-195",
+				"Iridium-195m",
+				"Iron-52",
+				"Iron-55",
+				"Iron-59",
+				"Iron-60",
+				"Krypton-74",
+				"Krypton-76",
+				"Krypton-77",
+				"Krypton-79",
+				"Krypton-81",
+				"Krypton-83m",
+				"Krypton-85",
+				"Krypton-85m",
+				"Krypton-87",
+				"Krypton-88",
+				"Lanthanum-131",
+				"Lanthanum-132",
+				"Lanthanum-135",
+				"Lanthanum-137",
+				"Lanthanum-138",
+				"Lanthanum-140",
+				"Lanthanum-141",
+				"Lanthanum-142",
+				"Lanthanum-143",
+				"Lead-195m",
+				"Lead-198",
+				"Lead-199",
+				"Lead-200",
+				"Lead-201",
+				"Lead-202",
+				"Lead-202m",
+				"Lead-203",
+				"Lead-205",
+				"Lead-209",
+				"Lead-210",
+				"Lead-211",
+				"Lead-212",
+				"Lead-214",
+				"Lutetium-169",
+				"Lutetium-170",
+				"Lutetium-171",
+				"Lutetium-172",
+				"Lutetium-173",
+				"Lutetium-174",
+				"Lutetium-174m",
+				"Lutetium-176",
+				"Lutetium-176m",
+				"Lutetium-177",
+				"Lutetium-177m",
+				"Lutetium-178",
+				"Lutetium-178m",
+				"Lutetium-179",
+				"Magnesium-28",
+				"Manganese-51",
+				"Manganese-52",
+				"Manganese-52m",
+				"Manganese-53",
+				"Manganese-54",
+				"Manganese-56",
+				"Mendelevium-257",
+				"Mendelevium-258",
+				"Mercury-193",
+				"Mercury-193m",
+				"Mercury-194",
+				"Mercury-195",
+				"Mercury-195m",
+				"Mercury-197",
+				"Mercury-197m",
+				"Mercury-199m",
+				"Mercury-203",
+				"Molybdenum-101",
+				"Molybdenum-90",
+				"Molybdenum-93",
+				"Molybdenum-93m",
+				"Molybdenum-99",
+				"Neodymium-136",
+				"Neodymium-138",
+				"Neodymium-139",
+				"Neodymium-139m",
+				"Neodymium-141",
+				"Neodymium-147",
+				"Neodymium-149",
+				"Neodymium-151",
+				"Neptunium-232",
+				"Neptunium-233",
+				"Neptunium-234",
+				"Neptunium-235",
+				"Neptunium-236 (1.2 E 5 yr)",
+				"Neptunium-236 (22.5 hr)",
+				"Neptunium-237",
+				"Neptunium-238",
+				"Neptunium-239",
+				"Neptunium-240",
+				"Nickel-56",
+				"Nickel-57",
+				"Nickel-59",
+				"Nickel-63",
+				"Nickel-65",
+				"Nickel-66",
+				"Niobium-88",
+				"Niobium-89 (122 min)",
+				"Niobium-89 (66 min)",
+				"Niobium-90",
+				"Niobium-93m",
+				"Niobium-94",
+				"Niobium-95",
+				"Niobium-95m",
+				"Niobium-96",
+				"Niobium-97",
+				"Niobium-98",
+				"Osmium-180",
+				"Osmium-181",
+				"Osmium-182",
+				"Osmium-185",
+				"Osmium-189m",
+				"Osmium-191",
+				"Osmium-191m",
+				"Osmium-193",
+				"Osmium-194",
+				"Palladium-100",
+				"Palladium-101",
+				"Palladium-103",
+				"Palladium-107",
+				"Palladium-109",
+				"Phosphorus-32",
+				"Phosphorus-33",
+				"Platinum-186",
+				"Platinum-188",
+				"Platinum-189",
+				"Platinum-191",
+				"Platinum-193",
+				"Platinum-193m",
+				"Platinum-195m",
+				"Platinum-197",
+				"Platinum-197m",
+				"Platinum-199",
+				"Platinum-200",
+				"Plutonium-234",
+				"Plutonium-235",
+				"Plutonium-236",
+				"Plutonium-237",
+				"Plutonium-238",
+				"Plutonium-239",
+				"Plutonium-240",
+				"Plutonium-241",
+				"Plutonium-242",
+				"Plutonium-243",
+				"Plutonium-244",
+				"Plutonium-245",
+				"Polonium-203",
+				"Polonium-205",
+				"Polonium-207",
+				"Polonium-210",
+				"Potassium-40",
+				"Potassium-42",
+				"Potassium-43",
+				"Potassium-44",
+				"Potassium-45",
+				"Praseodymium-136",
+				"Praseodymium-137",
+				"Praseodymium-138m",
+				"Praseodymium-139",
+				"Praseodymium-142",
+				"Praseodymium-142m",
+				"Praseodymium-143",
+				"Praseodymium-144",
+				"Praseodymium-145",
+				"Praseodymium-147",
+				"Promethium-141",
+				"Promethium-143",
+				"Promethium-144",
+				"Promethium-145",
+				"Promethium-146",
+				"Promethium-147",
+				"Promethium-148",
+				"Promethium-148m",
+				"Promethium-149",
+				"Promethium-150",
+				"Promethium-151",
+				"Protactinium-227",
+				"Protactinium-228",
+				"Protactinium-230",
+				"Protactinium-231",
+				"Protactinium-232",
+				"Protactinium-233",
+				"Protactinium-234",
+				"Radium-223",
+				"Radium-224",
+				"Radium-225",
+				"Radium-226",
+				"Radium-227",
+				"Radium-228",
+				"Radon-220",
+				"Radon-222",
+				"Rhenium-177",
+				"Rhenium-178",
+				"Rhenium-181",
+				"Rhenium-182 (12.7 hr)",
+				"Rhenium-182 (64.0 hr)",
+				"Rhenium-184",
+				"Rhenium-184m",
+				"Rhenium-186",
+				"Rhenium-186m",
+				"Rhenium-187",
+				"Rhenium-188",
+				"Rhenium-188m",
+				"Rhenium-189",
+				"Rhodium-100",
+				"Rhodium-101",
+				"Rhodium-101m",
+				"Rhodium-102",
+				"Rhodium-102m",
+				"Rhodium-103m",
+				"Rhodium-105",
+				"Rhodium-106m",
+				"Rhodium-107",
+				"Rhodium-99",
+				"Rhodium-99m",
+				"Rubidium-79",
+				"Rubidium-81",
+				"Rubidium-81m",
+				"Rubidium-82m",
+				"Rubidium-83",
+				"Rubidium-84",
+				"Rubidium-86",
+				"Rubidium-87",
+				"Rubidium-88",
+				"Rubidium-89",
+				"Ruthenium-103",
+				"Ruthenium-105",
+				"Ruthenium-106",
+				"Ruthenium-94",
+				"Ruthenium-97",
+				"Samarium-141",
+				"Samarium-141m",
+				"Samarium-142",
+				"Samarium-145",
+				"Samarium-146",
+				"Samarium-147",
+				"Samarium-151",
+				"Samarium-153",
+				"Samarium-155",
+				"Samarium-156",
+				"Scandium-43",
+				"Scandium-44",
+				"Scandium-44m",
+				"Scandium-46",
+				"Scandium-47",
+				"Scandium-48",
+				"Scandium-49",
+				"Selenium-70",
+				"Selenium-73",
+				"Selenium-73m",
+				"Selenium-75",
+				"Selenium-79",
+				"Selenium-81",
+				"Selenium-81m",
+				"Selenium-83",
+				"Silicon-31",
+				"Silicon-32",
+				"Silver-102",
+				"Silver-103",
+				"Silver-104",
+				"Silver-104m",
+				"Silver-105",
+				"Silver-106",
+				"Silver-106m",
+				"Silver-108m",
+				"Silver-110m",
+				"Silver-111",
+				"Silver-112",
+				"Silver-115",
+				"Sodium-22",
+				"Sodium-24",
+				"Strontium-80",
+				"Strontium-81",
+				"Strontium-83",
+				"Strontium-85",
+				"Strontium-85m",
+				"Strontium-87m",
+				"Strontium-89",
+				"Strontium-90",
+				"Strontium-91",
+				"Strontium-92",
+				"Sulfur-35",
+				"Tantalum-172",
+				"Tantalum-173",
+				"Tantalum-174",
+				"Tantalum-175",
+				"Tantalum-176",
+				"Tantalum-177",
+				"Tantalum-178",
+				"Tantalum-179",
+				"Tantalum-180",
+				"Tantalum-180m",
+				"Tantalum-182",
+				"Tantalum-182m",
+				"Tantalum-183",
+				"Tantalum-184",
+				"Tantalum-185",
+				"Tantalum-186",
+				"Technetium-101",
+				"Technetium-104",
+				"Technetium-93",
+				"Technetium-93m",
+				"Technetium-94",
+				"Technetium-94m",
+				"Technetium-96",
+				"Technetium-96m",
+				"Technetium-97",
+				"Technetium-97m",
+				"Technetium-98",
+				"Technetium-99",
+				"Technetium-99m",
+				"Tellurium-116",
+				"Tellurium-121",
+				"Tellurium-121m",
+				"Tellurium-123",
+				"Tellurium-123m",
+				"Tellurium-125m",
+				"Tellurium-127",
+				"Tellurium-127m",
+				"Tellurium-129",
+				"Tellurium-129m",
+				"Tellurium-131",
+				"Tellurium-131m",
+				"Tellurium-132",
+				"Tellurium-133",
+				"Tellurium-133m",
+				"Tellurium-134",
+				"Terbium-147",
+				"Terbium-149",
+				"Terbium-150",
+				"Terbium-151",
+				"Terbium-153",
+				"Terbium-154",
+				"Terbium-155",
+				"Terbium-156",
+				"Terbium-156m (24.4 hr)",
+				"Terbium-156m (5.0 hr)",
+				"Terbium-157",
+				"Terbium-158",
+				"Terbium-160",
+				"Terbium-161",
+				"Thallium-194",
+				"Thallium-194m",
+				"Thallium-195",
+				"Thallium-197",
+				"Thallium-198",
+				"Thallium-198m",
+				"Thallium-199",
+				"Thallium-200",
+				"Thallium-201",
+				"Thallium-202",
+				"Thallium-204",
+				"Thorium-226",
+				"Thorium-227",
+				"Thorium-228",
+				"Thorium-229",
+				"Thorium-230",
+				"Thorium-231",
+				"Thorium-232",
+				"Thorium-234",
+				"Thorium (Irradiated)",
+				"Thorium (Natural)",
+				"Thulium-162",
+				"Thulium-166",
+				"Thulium-167",
+				"Thulium-170",
+				"Thulium-171",
+				"Thulium-172",
+				"Thulium-173",
+				"Thulium-175",
+				"Tin-110",
+				"Tin-111",
+				"Tin-113",
+				"Tin-117m",
+				"Tin-119m",
+				"Tin-121",
+				"Tin-121m",
+				"Tin-123",
+				"Tin-123m",
+				"Tin-125",
+				"Tin-126",
+				"Tin-127",
+				"Tin-128",
+				"Titanium-44",
+				"Titanium-45",
+				"Tungsten-176",
+				"Tungsten-177",
+				"Tungsten-178",
+				"Tungsten-179",
+				"Tungsten-181",
+				"Tungsten-185",
+				"Tungsten-187",
+				"Tungsten-188",
+				"Uranium-230",
+				"Uranium-231",
+				"Uranium-232",
+				"Uranium-233",
+				"Uranium-234",
+				"Uranium-235",
+				"Uranium-236",
+				"Uranium-237",
+				"Uranium-238",
+				"Uranium-239",
+				"Uranium-240",
+				"Uranium (Depleted)",
+				"Uranium Enriched 20% or greater",
+				"Uranium Enriched less than 20%",
+				"Uranium (Irradiated)",
+				"Uranium (Natural)",
+				"Vanadium-47",
+				"Vanadium-48",
+				"Vanadium-49",
+				"Xenon-120",
+				"Xenon-121",
+				"Xenon-122",
+				"Xenon-123",
+				"Xenon-125",
+				"Xenon-127",
+				"Xenon-129m",
+				"Xenon-131m",
+				"Xenon-133",
+				"Xenon-133m",
+				"Xenon-135",
+				"Xenon-135m",
+				"Xenon-138",
+				"Ytterbium-162",
+				"Ytterbium-166",
+				"Ytterbium-167",
+				"Ytterbium-169",
+				"Ytterbium-175",
+				"Ytterbium-177",
+				"Ytterbium-178",
+				"Yttrium-86",
+				"Yttrium-86m",
+				"Yttrium-87",
+				"Yttrium-88",
+				"Yttrium-90",
+				"Yttrium-90m",
+				"Yttrium-91",
+				"Yttrium-91m",
+				"Yttrium-92",
+				"Yttrium-93",
+				"Yttrium-94",
+				"Yttrium-95",
+				"Zinc-62",
+				"Zinc-63",
+				"Zinc-65",
+				"Zinc-69",
+				"Zinc-69m",
+				"Zinc-71m",
+				"Zinc-72",
+				"Zirconium-86",
+				"Zirconium-88",
+				"Zirconium-89",
+				"Zirconium-93",
+				"Zirconium-95",
+				"Zirconium-97"
+			],
+			"type": "string"
+		},
+		"cbrncl:RadionuclideCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the kinds of radionuclides. Reference CFR 172.101, Appendix A, Table 2.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:RadionuclideCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:ReachbackRecommendationCodeSimpleType": {
+			"description": "A data type that defines the variuos code values for the various Reachback Recommnedation.",
+			"enum": [
+				"Clear",
+				"Hold",
+				"Secondary Exam ASP",
+				"Secondary Exam FULL",
+				"Secondary Exam PHYS",
+				"Secondary Exam RIID"
+			],
+			"type": "string"
+		},
+		"cbrncl:ReachbackRecommendationCodeType": {
+			"additionalProperties": false,
+			"description": "A data type that defines the various Reachback Recommnedation Code",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:ReachbackRecommendationCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:ReachbackRequestCodeSimpleType": {
+			"description": "A data type that defines the various code values for Reachback Request",
+			"enum": [
+				"ASP",
+				"GammaAlarm",
+				"ImageAnalysis",
+				"NeutronAlarm",
+				"RIID",
+				"Secondary",
+				"SuspiciousCargo"
+			],
+			"type": "string"
+		},
+		"cbrncl:ReachbackRequestCodeType": {
+			"additionalProperties": false,
+			"description": "A data type that defines the various reachback Request Code",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:ReachbackRequestCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:RequestScopeCodeSimpleType": {
+			"description": "A data type that defines the various code values for Request Scope.",
+			"enum": [
+				"FullRequest",
+				"NotApplicable",
+				"PartialRequest",
+				"ScanAssessmentDataRequest",
+				"ScanMeasurementDataRequest",
+				"SingleRequest",
+				"TradeDataRequest"
+			],
+			"type": "string"
+		},
+		"cbrncl:RequestScopeCodeType": {
+			"additionalProperties": false,
+			"description": "A data type that defines the various Request Scope Code values",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:RequestScopeCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:ScanQualityCodeSimpleType": {
+			"description": "A data type for the quality of the data collected by an encounter device in performing a scan of an item of interest, as perceived by the operator.",
+			"enum": [
+				"BadScan",
+				"DegradedScan",
+				"GoodScan"
+			],
+			"type": "string"
+		},
+		"cbrncl:ScanQualityCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the quality of the data collected by an encounter device in performing a scan of an item of interest, as perceived by the operator.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:ScanQualityCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:SealIntactStatusCodeSimpleType": {
+			"description": "A data type that defines the various SealIntactStatusCodes",
+			"enum": [
+				"Absent",
+				"Broken",
+				"Intact"
+			],
+			"type": "string"
+		},
+		"cbrncl:SealIntactStatusCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the states of a seal that has been applied to a cargo container.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:SealIntactStatusCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:SealVerificationStatusCodeSimpleType": {
+			"description": "A data type that defines the various sealVerificationStatusCodes",
+			"enum": [
+				"unknown",
+				"unverified",
+				"verified"
+			],
+			"type": "string"
+		},
+		"cbrncl:SealVerificationStatusCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the verification states of a seal.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:SealVerificationStatusCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:SecondaryInspectionKindCodeSimpleType": {
+			"description": "A data type that defines the various code values for Secondary Inspection Kind.",
+			"enum": [
+				"Open box",
+				"Other",
+				"RIID"
+			],
+			"type": "string"
+		},
+		"cbrncl:SecondaryInspectionKindCodeType": {
+			"additionalProperties": false,
+			"description": "A data type that defines the various Secondary Inspection Kind Code",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:SecondaryInspectionKindCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:SecondaryInspectionReferralReasonCodeSimpleType": {
+			"description": "A data type that defines the variuos code values for Secondary Inspection Referral Reason",
+			"enum": [
+				"ATSRecommendation",
+				"ForeignGovernmentIntelligence",
+				"InspectorSuspicion",
+				"Missing",
+				"RadiationAlarm",
+				"SuspiciousCarrier",
+				"SuspiciousOtherParticipant",
+				"SuspiciousShipper",
+				"USIntelligence"
+			],
+			"type": "string"
+		},
+		"cbrncl:SecondaryInspectionReferralReasonCodeType": {
+			"additionalProperties": false,
+			"description": "A data type that defines the secondary Inspection Referral Reason Code",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:SecondaryInspectionReferralReasonCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:ShapeCodeSimpleType": {
+			"description": "A data type the defines the various shape codes",
+			"enum": [
+				"box",
+				"horizontal cylinder",
+				"irregular",
+				"other",
+				"pyramid",
+				"sphere",
+				"vertical cylinder"
+			],
+			"type": "string"
+		},
+		"cbrncl:ShapeCodeType": {
+			"additionalProperties": false,
+			"description": "A data type that defines the various shape codes",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:ShapeCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:SourceGeometryCodeSimpleType": {
+			"description": "A data type that defines the various code values  for the configurations that describe the geometry of a radiation source.",
+			"enum": [
+				"Extended",
+				"Point",
+				"Undetermined"
+			],
+			"type": "string"
+		},
+		"cbrncl:SourceGeometryCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the configurations that describe the geometry of a radiation source.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:SourceGeometryCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:SystemOperatingModeCodeSimpleType": {
+			"description": "A data type for the operating modes of a system.",
+			"enum": [
+				"Exercise",
+				"Ops",
+				"Other",
+				"Test",
+				"Unknown"
+			],
+			"type": "string"
+		},
+		"cbrncl:SystemOperatingModeCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the operating modes of a system.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:SystemOperatingModeCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:TemperatureUnitCodeSimpleType": {
+			"description": "A data type that defines the various temperature unit codes",
+			"enum": [
+				"C",
+				"F",
+				"K"
+			],
+			"type": "string"
+		},
+		"cbrncl:TemperatureUnitCodeType": {
+			"additionalProperties": false,
+			"description": "A data type that defines the various temperature unit codes",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:TemperatureUnitCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:ThreatLevelDeterminationCodeSimpleType": {
+			"description": "A data type that defines the various code values for threat Level Determination",
+			"enum": [
+				"High",
+				"Low",
+				"Medium",
+				"NoThreat",
+				"Unknown"
+			],
+			"type": "string"
+		},
+		"cbrncl:ThreatLevelDeterminationCodeType": {
+			"additionalProperties": false,
+			"description": "A data type that defines the various code values for threat Level Determination",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:ThreatLevelDeterminationCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:TraversalOperatingModeCodeSimpleType": {
+			"description": "A data type for the operating modes of a traversal.",
+			"enum": [
+				"Exercise",
+				"Operational",
+				"Simulated",
+				"Test",
+				"Training"
+			],
+			"type": "string"
+		},
+		"cbrncl:TraversalOperatingModeCodeType": {
+			"additionalProperties": false,
+			"description": "A data type that defines the various traversal Opearing ModeCode",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:TraversalOperatingModeCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:ValueDataClassCodeSimpleType": {
+			"description": "A data type that defines the various code values for the atomic data classes available for defining the underlying data class for data elements that may be represented by string values. The data classes are a subset of the W3c data types and the derived atomic data types.",
+			"enum": [
+				"anyURI",
+				"base64Binary",
+				"boolean",
+				"byte",
+				"date",
+				"dateTime",
+				"decimal",
+				"double",
+				"DoubleList",
+				"duration",
+				"float",
+				"hexBinary",
+				"ID",
+				"IDREF",
+				"IDREFS",
+				"int",
+				"integer",
+				"long",
+				"Name",
+				"NCName",
+				"negativeInteger",
+				"NonBlankString",
+				"NonNegativeDouble",
+				"NonNegativeDoubleList",
+				"nonNegativeInteger",
+				"nonPositiveInteger",
+				"normalizedString",
+				"Percent",
+				"PositiveDouble",
+				"PositiveDoubleList",
+				"positiveInteger",
+				"PositiveIntegerList",
+				"short",
+				"string",
+				"StringList",
+				"time",
+				"token",
+				"unsignedByte",
+				"unsignedInt",
+				"unsignedLong",
+				"unsignedShort",
+				"ZeroToOneDouble"
+			],
+			"type": "string"
+		},
+		"cbrncl:ValueDataClassCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for the atomic data classes available for defining the underlying data class for data elements that may be represented by string values. The data classes are a subset of the W3c data types and the derived atomic data types.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:ValueDataClassCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:VersionKindCodeSimpleType": {
+			"description": "A data type that defines the various code values for Kind of version",
+			"enum": [
+				"FW",
+				"HW",
+				"other",
+				"SW",
+				"unk"
+			],
+			"type": "string"
+		},
+		"cbrncl:VersionKindCodeType": {
+			"additionalProperties": false,
+			"description": "A data type that defines the kind of version Code",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:VersionKindCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"cbrncl:VolumeMeasureUnitCodeSimpleType": {
+			"description": "A data type that defines the various volumeMeasureUnitCodes",
+			"enum": [
+				"acre foot",
+				"acre-inch",
+				"barrel (Imperial)",
+				"barrel (petroleum)",
+				"barrel (U.S. dry)",
+				"barrel (U.S. fluid)",
+				"beer gallon",
+				"board-foot",
+				"breakfast cup",
+				"bucket (Imperial)",
+				"bushel (Imperial)",
+				"bushel (U.S. dry heaped)",
+				"bushel (U.S. dry level)",
+				"butt, pipe",
+				"coomb",
+				"cord (firewood)",
+				"cord-foot",
+				"cubic fathom",
+				"cubic foot",
+				"cubic inch",
+				"cubic metre (SI unit)",
+				"cubic mile",
+				"cubic yard",
+				"cup (Canadian)",
+				"cup (metric)",
+				"cup (U.S.)",
+				"dash (Imperial)",
+				"dash (U.S.)",
+				"dessertspoon (Imperial)",
+				"displacement ton",
+				"drop (Imperial)",
+				"drop (Imperial) (alt)",
+				"drop (medical)",
+				"drop (metric)",
+				"drop (U.S.)",
+				"drop (U.S.) (alt)",
+				"fifth",
+				"firkin",
+				"fluid drachm (Imperial)",
+				"fluid dram (U.S.); U.S. fluidram",
+				"fluid ounce (Imperial)",
+				"fluid ounce (U.S.)",
+				"fluid scruple (Imperial)",
+				"freight ton",
+				"gallon (Imperial)",
+				"gallon (U.S. dry)",
+				"gallon (U.S. fluid; Wine)",
+				"gill (Imperial); Noggin",
+				"gill (U.S.)",
+				"hogshead (Imperial)",
+				"hogshead (U.S.)",
+				"jigger",
+				"kilderkin",
+				"lambda",
+				"last",
+				"litre",
+				"load",
+				"minim (Imperial)",
+				"minim (U.S.)",
+				"peck (Imperial)",
+				"peck (U.S. dry)",
+				"perch",
+				"pinch (Imperial)",
+				"pinch (U.S.)",
+				"pint (Imperial)",
+				"pint (U.S. dry)",
+				"pint (U.S. fluid)",
+				"pony",
+				"pottle; quartern",
+				"quarter; pail",
+				"quart (Imperial)",
+				"quart (U.S. dry)",
+				"quart (U.S. fluid)",
+				"register ton",
+				"sack (Imperial); bag",
+				"sack (U.S.)",
+				"seam",
+				"shot",
+				"strike (Imperial)",
+				"strike (U.S.)",
+				"tablespoon (Canadian)",
+				"tablespoon (Imperial)",
+				"tablespoon (metric)",
+				"tablespoon (U.S.)",
+				"teaspoon (Canadian)",
+				"teaspoon (Imperial)",
+				"teaspoon (metric)",
+				"teaspoon (U.S.)",
+				"timber foot",
+				"tun",
+				"water ton",
+				"wey (U.S.)"
+			],
+			"type": "string"
+		},
+		"cbrncl:VolumeMeasureUnitCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for volume units of measure.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/cbrncl:VolumeMeasureUnitCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"structures:AssociationType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				},
+				"structures:AssociationAugmentationPoint": {
+					"items": {
+						"$ref": "#/definitions/.structures:AssociationAugmentationPoint"
+					},
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
+		"structures:AugmentationType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"structures:MetadataType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"structures:ObjectType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				},
+				"structures:ObjectAugmentationPoint": {
+					"items": {
+						"$ref": "#/definitions/.structures:ObjectAugmentationPoint"
+					},
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
+		"xs:ID": {
+			"pattern": "^([A-Z_a-zÀ-ÖØ-öø-˿Ͱ-ͽͿ-῿‌-‍⁰-↏Ⰰ-⿯、-퟿豈-﷏ﷰ-�𐀀-󯿿][\\d\\--\\.A-Z_a-z·À-ÖØ-öø-ͽͿ-ٟ٪-ۯۺ-޿ߊ-॥॰-৥ৰ-੥ੰ-૥૰-୥୰-௥௰-౥౰-೥೰-൥൰-๏๚-໏໚-༟༪-ဿ၊-ႏႚ-៟៪-᠏᠚-᥅ᥐ-᧏᧚-᩿᪊-᪏᪚-᭏᭚-ᮯᮺ-᰿᱊-ᱏᱚ-῿‌-‍‿-⁀⁰-↏Ⰰ-⿯、-ꘟꘪ-꣏꣚-ꣿꤊ-ꧏ꧚-꩏꩚-꯯꯺-퟿豈-﷏ﷰ-／：-�𐀀-𐒟𐒪-𑁥𑁰-𝟍𝠀-󯿿]*)$",
+			"type": "string"
+		},
+		"xs:IDREF": {
+			"pattern": "^([A-Z_a-zÀ-ÖØ-öø-˿Ͱ-ͽͿ-῿‌-‍⁰-↏Ⰰ-⿯、-퟿豈-﷏ﷰ-�𐀀-󯿿][\\d\\--\\.A-Z_a-z·À-ÖØ-öø-ͽͿ-ٟ٪-ۯۺ-޿ߊ-॥॰-৥ৰ-੥ੰ-૥૰-୥୰-௥௰-౥౰-೥೰-൥൰-๏๚-໏໚-༟༪-ဿ၊-ႏႚ-៟៪-᠏᠚-᥅ᥐ-᧏᧚-᩿᪊-᪏᪚-᭏᭚-ᮯᮺ-᰿᱊-ᱏᱚ-῿‌-‍‿-⁀⁰-↏Ⰰ-⿯、-ꘟꘪ-꣏꣚-ꣿꤊ-ꧏ꧚-꩏꩚-꯯꯺-퟿豈-﷏ﷰ-／：-�𐀀-𐒟𐒪-𑁥𑁰-𝟍𝠀-󯿿]*)$",
+			"type": "string"
+		},
+		"xs:IDREFS": {
+			"items": {
+				"pattern": "^([A-Z_a-zÀ-ÖØ-öø-˿Ͱ-ͽͿ-῿‌-‍⁰-↏Ⰰ-⿯、-퟿豈-﷏ﷰ-�𐀀-󯿿][\\d\\--\\.A-Z_a-z·À-ÖØ-öø-ͽͿ-ٟ٪-ۯۺ-޿ߊ-॥॰-৥ৰ-੥ੰ-૥૰-୥୰-௥௰-౥౰-೥೰-൥൰-๏๚-໏໚-༟༪-ဿ၊-ႏႚ-៟៪-᠏᠚-᥅ᥐ-᧏᧚-᩿᪊-᪏᪚-᭏᭚-ᮯᮺ-᰿᱊-ᱏᱚ-῿‌-‍‿-⁀⁰-↏Ⰰ-⿯、-ꘟꘪ-꣏꣚-ꣿꤊ-ꧏ꧚-꩏꩚-꯯꯺-퟿豈-﷏ﷰ-／：-�𐀀-𐒟𐒪-𑁥𑁰-𝟍𝠀-󯿿]*)$",
+				"type": "string"
+			},
+			"type": "array"
+		},
+		"xs:anyType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\w+$": {
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"type": "object"
+		},
+		"xs:anyURI": {
+			"type": "string"
+		}
+	},
+	"description": "JSON Schema generated by XMLSpy v2020 rel. 2 sp1 (x64) (http://www.altova.com)",
+	"properties": {
+		"#": {
+			"type": "string"
+		},
+		"@xmlns:cbrncl": {
+			"default": "http://release.niem.gov/niem/codes/cbrncl/4.0/"
+		},
+		"@xmlns:structures": {
+			"default": "http://release.niem.gov/niem/structures/4.0/"
+		},
+		"@xmlns:xs": {
+			"default": "http://www.w3.org/2001/XMLSchema"
+		},
+		"structures:AssociationAugmentationPoint": {
+			"$ref": "#/definitions/.structures:AssociationAugmentationPoint"
+		},
+		"structures:ObjectAugmentationPoint": {
+			"$ref": "#/definitions/.structures:ObjectAugmentationPoint"
+		}
+	},
+	"type": "object"
+}

@@ -1,0 +1,1621 @@
+{
+	"$schema": "http://json-schema.org/schema#",
+	"additionalProperties": false,
+	"definitions": {
+		".structures:AssociationAugmentationPoint": {
+			"$ref": "#/definitions/xs:anyType",
+			"description": "An augmentation point for AssociationType"
+		},
+		".structures:ObjectAugmentationPoint": {
+			"$ref": "#/definitions/xs:anyType",
+			"description": "An augmentation point for ObjectType"
+		},
+		"ag_codes:CLUIDSimpleType": {
+			"description": "A data type for system-generated internal identifier of a common land unit (CLU). This identifier is for internal access use only.\n  A CLU is the smallest unit of land that has a permanent, contiguous boundary, common land cover and land management, a common owner, and a common producer association.\n  A CLU is closely related to FSA's definition of 'fields', according to Handbook 2-CP. A CLU is also closely related to land units such as parcels, farmsteads, and lots that are used by NRCS, RMA and RD.\n  The authoritative source of CLU Identifier is Farm Records. CLU Identifier can remain constant even if the precise geospatial shape of the CLU is slightly altered.",
+			"maxLength": 36,
+			"minLength": 36,
+			"type": "string"
+		},
+		"ag_codes:CLUIDType": {
+			"additionalProperties": false,
+			"description": "A data type for system-generated internal identifier of a common land unit (CLU). This identifier is for internal access use only.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:CLUIDSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:CoordinateReferenceSystemCodeSimpleType": {
+			"description": "A data type containing the geospatial projection standard used for calculating acreage.",
+			"enum": [
+				"26901",
+				"26902",
+				"26903",
+				"26904",
+				"26905",
+				"26906",
+				"26907",
+				"26908",
+				"26909",
+				"26910",
+				"26911",
+				"26912",
+				"26913",
+				"26914",
+				"26915",
+				"26916",
+				"26917",
+				"26918",
+				"26919",
+				"26920",
+				"26921",
+				"26922",
+				"26923",
+				"32655",
+				"32702",
+				"32755",
+				"3857"
+			],
+			"type": "string"
+		},
+		"ag_codes:CoordinateReferenceSystemCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for coordinate reference system codes.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:CoordinateReferenceSystemCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:CoreProductCategorySimpleType": {
+			"description": "A data type containing subclassification of agricultural products in addition to the main classification provided by the Core Product Code. Each product classified by a Core Product Code is also assigned a Core Product Type Code providing greater clarification of the crop/commodity, tree, livestock ,etc. Codes are maintained by the Pilot CVT (Crop Validation Table).",
+			"maxLength": 4,
+			"minLength": 4,
+			"type": "string"
+		},
+		"ag_codes:CoreProductCategoryType": {
+			"additionalProperties": false,
+			"description": "A data type for core product subclassification code.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:CoreProductCategorySimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:CoreProductSimpleType": {
+			"description": "A data type containing classification codes of core agricultural products defined by the Pilot CVT (Crop Validation Table). Products are classified into individual crop and commodity types, tree types, and types of livestock.",
+			"maxLength": 4,
+			"minLength": 4,
+			"type": "string"
+		},
+		"ag_codes:CoreProductType": {
+			"additionalProperties": false,
+			"description": "A data type containing classification codes.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:CoreProductSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:CropYearSimpleType": {
+			"description": "A data type to indicate a period of time (in year) within which the crop is normally grown and designated by the calendar year in which the crop is normally harvested.\n  For crops:\n  - Harvested over 2 calendar years, the crop year is the calendar year in which the majority of the crop would have been harvested.\n  - Grown over more than 2 calendar years, each year in the growing period will be considered as a separate crop year designated by the calendar year in which the crop sustained a loss.\n  RMA's regulations define Crop Year as the period within which the insured crop is normally grown, regardless of whether or not it is actually grown, and designated by the calendar year in which the insured crop is normally harvested, unless otherwise specified in the Crop Provisions.",
+			"type": "integer"
+		},
+		"ag_codes:CropYearType": {
+			"additionalProperties": false,
+			"description": "A data type to indicate a period of time (in year) within which the crop is normally grown and designated by the calendar year in which the crop is normally harvested.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:CropYearSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:CroppingPracticeCodeSimpleType": {
+			"description": "A data type for code identifying the cropping practice applicable for a reported crop/commodity on a field/subfield.",
+			"enum": [
+				"108",
+				"120",
+				"19",
+				"210",
+				"211",
+				"220",
+				"30",
+				"4",
+				"46",
+				"5",
+				"6",
+				"997"
+			],
+			"type": "string"
+		},
+		"ag_codes:CroppingPracticeCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for code to represent cropping practice applicable for a reported crop/commodity.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:CroppingPracticeCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:FarmNumberIDSimpleType": {
+			"description": "A data type for identification number assigned to all land under control of a particular operator within a particular county.\n  Each County assigns Farm Numbers independently. As a result, farms in different counties might be assigned the same Farm Number; i.e, a Farm Number might be unique only within a particular county. Thus, to uniquely identify a farm, the State FSA Code and County FSA Code must be specified in combination with the Farm Number.",
+			"maximum": 9999999,
+			"minimum": 1,
+			"type": "integer"
+		},
+		"ag_codes:FarmNumberIDType": {
+			"additionalProperties": false,
+			"description": "A data type for identification number assigned to all land under control of a particular operator within a particular county.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:FarmNumberIDSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:FieldNumberIDSimpleType": {
+			"description": "A data type for identification number assigned to a field of land that is part of a farm tract.\n  Field numbers are assigned by an FSA county office, and are unique within that office''s farms. A Field Number is used in conjunction with Tract Number, State FSA Code and County FSA Code for uniqueness.\n  Field number and Tract Number are not necessarily unique based upon State ANSI Code and County ANSI Code in instances where the ANSI codes are not the same as the FSA codes.",
+			"maximum": 9999999,
+			"minimum": 1,
+			"type": "integer"
+		},
+		"ag_codes:FieldNumberIDType": {
+			"additionalProperties": false,
+			"description": "A data type for identification number assigned to a field of land that is part of a farm tract.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:FieldNumberIDSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:FileCustomerIDSimpleType": {
+			"description": "A data type for internal identifier uniquely identifying a customer within a specific file. Each unique customer within a given file will have a unique File Customer Identifier. File Customer Identifier values are not unique across files.",
+			"maximum": 99,
+			"minimum": 1,
+			"type": "integer"
+		},
+		"ag_codes:FileCustomerIDType": {
+			"additionalProperties": false,
+			"description": "A data type for internal identifier uniquely identifying a customer within a specific file.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:FileCustomerIDSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:FinalReportedAcreageSimpleType": {
+			"description": "A data type for final number of acres that were reported.",
+			"type": "number"
+		},
+		"ag_codes:FinalReportedAcreageType": {
+			"additionalProperties": false,
+			"description": "A data type for final number of acres that were reported.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:FinalReportedAcreageSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:GeospatialDataSubmissionMethodCodeSimpleType": {
+			"description": "A data type containing codes identifying the method used to submit geospatial data used to create a geospatial shape/polygon.",
+			"enum": [
+				"C",
+				"D",
+				"G"
+			],
+			"type": "string"
+		},
+		"ag_codes:GeospatialDataSubmissionMethodCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for code to identify the method used to submit geospatial data used to create a geospatial shape/polygon.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:GeospatialDataSubmissionMethodCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:GeospatialShapeModifiedOtherReasonTextSimpleType": {
+			"description": "A data type for free form text providing the reason that a geospatial shape was modified from its original form when a reason other than the possible list of provided reasons is needed.",
+			"maxLength": 80,
+			"minLength": 80,
+			"type": "string"
+		},
+		"ag_codes:GeospatialShapeModifiedOtherReasonTextType": {
+			"additionalProperties": false,
+			"description": "A data type for free form text providing the reason that a geospatial shape was modified from its original form when a reason other than the possible list of provided reasons is needed.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:GeospatialShapeModifiedOtherReasonTextSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:GeospatialShapeModifiedReasonCodeSimpleType": {
+			"description": "A data type containing codes identifying the reason that a geospatial shape/polygon was modified from its original shape.",
+			"enum": [
+				"C",
+				"G",
+				"MD",
+				"O",
+				"S"
+			],
+			"type": "string"
+		},
+		"ag_codes:GeospatialShapeModifiedReasonCodeType": {
+			"additionalProperties": false,
+			"description": "A data type containing codes identifying the reason that a geospatial shape/polygon was modified from its original shape.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:GeospatialShapeModifiedReasonCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:GeospatialShapeSourceCodeSimpleType": {
+			"description": "A data type containing codes identifying the source data used to create a geospatial shape/polygon.",
+			"enum": [
+				"B",
+				"C",
+				"D",
+				"F",
+				"R"
+			],
+			"type": "string"
+		},
+		"ag_codes:GeospatialShapeSourceCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for code to identify the source data used to create a geospatial shape/polygon.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:GeospatialShapeSourceCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:IrrigationPracticeCodeSimpleType": {
+			"description": "A data type containing the irrigation practice code used for a unit of land with a crop.\n  Irrigated Practice is the method of producing a crop by which water, from an adequate water source, is artificially applied in sufficient amounts by appropriate and adequate irrigation equipment and facilities and at the proper times necessary to produce one of the following:\n  1. the yield expected for the area.\n  2. the yield used to establish the production guarantee or amount of insurance/coverage on the irrigated acreage planted to the commodity.\n  3. the producer established approved yield, as applicable.\n  Acreage adjacent to water, such as but not limited to a pond, lake, river, stream, creek or brook, shall not be considered irrigated based solely on the proximity to the water.",
+			"enum": [
+				"I",
+				"N"
+			],
+			"type": "string"
+		},
+		"ag_codes:IrrigationPracticeCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for code to identify irrigation practice used.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:IrrigationPracticeCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:MICSCodeSimpleType": {
+			"description": "A data type containing codes identifying the Mobile Implement Control System (MICS) used in the collection of geospatial data.",
+			"enum": [
+				"AG",
+				"AL",
+				"CNH",
+				"FS",
+				"JD",
+				"O",
+				"PP",
+				"RA",
+				"TR",
+				"UN"
+			],
+			"type": "string"
+		},
+		"ag_codes:MICSCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for misc. codes to identify the Mobile Implement Control System (MICS) used in the collection of geospatial data.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:MICSCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:MICSNameSimpleType": {
+			"description": "A data type containing a code name identifying the Mobile Implement Control System (MICS) used in the collection of geospatial data.",
+			"maxLength": 20,
+			"minLength": 20,
+			"type": "string"
+		},
+		"ag_codes:MICSNameType": {
+			"additionalProperties": false,
+			"description": "A data type containing a code name identifying the Mobile Implement Control System (MICS) used in the collection of geospatial data.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:MICSNameSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:OrganicPracticeCategoryCodeSimpleType": {
+			"description": "A data type containing certification codes used for farm acreage in regards to a system/plan of production and handling practice to produce an organic commodity.\n  Organic practice that is Certified means a system/plan of production and handling practices to respond to site-specific conditions by integrating cultural, biological, and mechanical practices that foster cycling of resources, promote ecological balance, and conserve biodiversity, is certified by an accredited certifying agent, and used to produce an organic commodity or product according to the Organic Foods Production Act of 1990.\n  Organic practic that is Transitional means a system/plan of production and handling practices to produce an organic commodity or product in accordance with the Organic Foods Production Act of 1990, but has not yet qualified to be designated as certified organic.",
+			"enum": [
+				"N",
+				"OC",
+				"OT"
+			],
+			"type": "string"
+		},
+		"ag_codes:OrganicPracticeCategoryCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for code to represent the type of certification for farm acreage production practice to produce organic commodity.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:OrganicPracticeCategoryCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:OriginalReportedAcreageSimpleType": {
+			"description": "A data type for original, unmodified, number of acres that were reported.",
+			"type": "number"
+		},
+		"ag_codes:OriginalReportedAcreageType": {
+			"additionalProperties": false,
+			"description": "A data type for original, unmodified, number of acres that were reported.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:OriginalReportedAcreageSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:OriginatorIdentificationIDSimpleType": {
+			"description": "A data type for identifying the entity responsible for originating/publishing data.\n  For Acreage Reporting it identifies the FSA Service Center, Approved Insurance Provider (AIP), or Third Party Site which collected and published the acreage data and any accompanying geospatial data.\n  The identification consists of a prefix indicating the type of Originator, followed by an  identification that uniquely identifies the Originator for that type.",
+			"maxLength": 6,
+			"minLength": 6,
+			"type": "string"
+		},
+		"ag_codes:OriginatorIdentificationIDType": {
+			"additionalProperties": false,
+			"description": "A data type for identifying the entity responsible for originating/publishing data.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:OriginatorIdentificationIDSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:PlantedDateModifiedOtherReasonTextSimpleType": {
+			"description": "A data type for free form text providing the reason that a planted date was modified from its original value when a reason other than the possible list of provided reasons is needed.",
+			"maxLength": 80,
+			"minLength": 80,
+			"type": "string"
+		},
+		"ag_codes:PlantedDateModifiedOtherReasonTextType": {
+			"additionalProperties": false,
+			"description": "A data type for free form text providing the reason that a planted date was modified from its original value.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:PlantedDateModifiedOtherReasonTextSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:PlantedDateModifiedReasonCodeSimpleType": {
+			"description": "A data type containing the reason codes that a planted date was modified from its original value.",
+			"enum": [
+				"C",
+				"MP",
+				"O"
+			],
+			"type": "string"
+		},
+		"ag_codes:PlantedDateModifiedReasonCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for reason code that a planted date was modified.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:PlantedDateModifiedReasonCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:ProducerSharePercentSimpleType": {
+			"description": "A data type for producer's share of a crop and the benefits coming from that crop, expressed as a percentage.",
+			"type": "number"
+		},
+		"ag_codes:ProducerSharePercentType": {
+			"additionalProperties": false,
+			"description": "A data type for producer's share of a crop and the benefits coming from that crop, expressed as a percentage.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:ProducerSharePercentSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:ProductIntendedUseSimpleType": {
+			"description": "A data type identifying the intended use code for an agricultural product such as a crop/commodity, tree, livestock, etc. Codes for intended uses are specific to a particular combination of Core Product Code and Core Product Type Code and are maintained by the Pilot CVT (Crop Validation Table).",
+			"maxLength": 4,
+			"minLength": 4,
+			"type": "string"
+		},
+		"ag_codes:ProductIntendedUseType": {
+			"additionalProperties": false,
+			"description": "A data type for agricultural product code.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:ProductIntendedUseSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:ProductPlantingCodeSimpleType": {
+			"description": "A data type for code to identify the planting of a product/crop as either conventional (plannted as normal or no planting required) or unconventional/irregular in a predefined way.",
+			"enum": [
+				"F",
+				"P",
+				"V"
+			],
+			"type": "string"
+		},
+		"ag_codes:ProductPlantingCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for code to identify the planting of a product/crop.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:ProductPlantingCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:ReportedAcreageModifiedOtherReasonTextSimpleType": {
+			"description": "A data type for reason code identifying the reason that the reported acreage was modified from its original value.",
+			"maxLength": 80,
+			"minLength": 80,
+			"type": "string"
+		},
+		"ag_codes:ReportedAcreageModifiedOtherReasonTextType": {
+			"additionalProperties": false,
+			"description": "A data type for reason code identifying the reason that the reported acreage was modified from its original value.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:ReportedAcreageModifiedOtherReasonTextSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:ReportedAcreageModifiedReasonCodeSimpleType": {
+			"description": "A data type identifying the reason codes that the reported acreage was modified from its original value.",
+			"enum": [
+				"C",
+				"G",
+				"MD",
+				"O"
+			],
+			"type": "string"
+		},
+		"ag_codes:ReportedAcreageModifiedReasonCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for reason code for modified reported acreage.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:ReportedAcreageModifiedReasonCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:SubfieldNumberSimpleType": {
+			"description": "A data type for alpha number that is used to uniquely identify a subfield within a field, within a tract within a farm within a state and county.\n  Subfields are areas of a field that share a set of common planting characteristic in terms of crop, crop type, intended use, etc. \n  By convention the first defined subfield is given a value of 'A', with subsequent subfields following in alphabetic order.",
+			"maxLength": 2,
+			"minLength": 2,
+			"type": "string"
+		},
+		"ag_codes:SubfieldNumberType": {
+			"additionalProperties": false,
+			"description": "A data type for alpha number that is used to uniquely identify a subfield within a field, within a tract within a farm within a state and county.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:SubfieldNumberSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:TaxIdentificationCategoryCodeSimpleType": {
+			"description": "A data type for identifying the tax identification type assigned to a specific individual, business or other entity and is used to authenticate the individual/entity for matters of taxation and other governement business.",
+			"enum": [
+				1,
+				2
+			],
+			"type": "integer"
+		},
+		"ag_codes:TaxIdentificationCategoryCodeType": {
+			"additionalProperties": false,
+			"description": "A data type for identifying the tax identification type assigned to a specific individual, business or other entity.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:TaxIdentificationCategoryCodeSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:TaxIdentificationIDSimpleType": {
+			"description": "A data type for tax identification assigned to a specific individual, business or other entity and is used to authenticate the individual/entity for matters of taxation and other federal governement business.",
+			"maxLength": 9,
+			"minLength": 9,
+			"pattern": "^([0-9]{9,9})$",
+			"type": "string"
+		},
+		"ag_codes:TaxIdentificationIDType": {
+			"additionalProperties": false,
+			"description": "A data type for tax identification assigned to a specific individual, business or other entity.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:TaxIdentificationIDSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"ag_codes:TractNumberIDSimpleType": {
+			"description": "A data type for identification number assigned to a unit of contiguous land that is under one ownership and that is operated as a farm or part of a farm. An owner is a person or business having deed to the land.\n  Tract numbers are assigned by an FSA county office, and are unique within that office''s farms. A Tract Number is used in conjunction with a State FSA Code and County FSA Code for uniqueness.\n  Tract numbers are not necessarily unique based upon State ANSI Code and County ANSI in instance where the ANSI codes are not the same as the FSA codes.",
+			"maximum": 9999999,
+			"minimum": 1,
+			"type": "integer"
+		},
+		"ag_codes:TractNumberIDType": {
+			"additionalProperties": false,
+			"description": "A data type for identification number assigned to a unit of contiguous land that is under one ownership and that is operated as a farm or part of a farm.",
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"$ref": "#/definitions/ag_codes:TractNumberIDSimpleType"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"structures:AssociationType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				},
+				"structures:AssociationAugmentationPoint": {
+					"items": {
+						"$ref": "#/definitions/.structures:AssociationAugmentationPoint"
+					},
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
+		"structures:AugmentationType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"structures:MetadataType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				}
+			},
+			"type": "object"
+		},
+		"structures:ObjectType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"@structures:id": {
+					"$ref": "#/definitions/xs:ID"
+				},
+				"@structures:metadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:ref": {
+					"$ref": "#/definitions/xs:IDREF"
+				},
+				"@structures:relationshipMetadata": {
+					"$ref": "#/definitions/xs:IDREFS"
+				},
+				"@structures:uri": {
+					"$ref": "#/definitions/xs:anyURI"
+				},
+				"structures:ObjectAugmentationPoint": {
+					"items": {
+						"$ref": "#/definitions/.structures:ObjectAugmentationPoint"
+					},
+					"type": "array"
+				}
+			},
+			"type": "object"
+		},
+		"xs:ID": {
+			"pattern": "^([A-Z_a-zÀ-ÖØ-öø-˿Ͱ-ͽͿ-῿‌-‍⁰-↏Ⰰ-⿯、-퟿豈-﷏ﷰ-�𐀀-󯿿][\\d\\--\\.A-Z_a-z·À-ÖØ-öø-ͽͿ-ٟ٪-ۯۺ-޿ߊ-॥॰-৥ৰ-੥ੰ-૥૰-୥୰-௥௰-౥౰-೥೰-൥൰-๏๚-໏໚-༟༪-ဿ၊-ႏႚ-៟៪-᠏᠚-᥅ᥐ-᧏᧚-᩿᪊-᪏᪚-᭏᭚-ᮯᮺ-᰿᱊-ᱏᱚ-῿‌-‍‿-⁀⁰-↏Ⰰ-⿯、-ꘟꘪ-꣏꣚-ꣿꤊ-ꧏ꧚-꩏꩚-꯯꯺-퟿豈-﷏ﷰ-／：-�𐀀-𐒟𐒪-𑁥𑁰-𝟍𝠀-󯿿]*)$",
+			"type": "string"
+		},
+		"xs:IDREF": {
+			"pattern": "^([A-Z_a-zÀ-ÖØ-öø-˿Ͱ-ͽͿ-῿‌-‍⁰-↏Ⰰ-⿯、-퟿豈-﷏ﷰ-�𐀀-󯿿][\\d\\--\\.A-Z_a-z·À-ÖØ-öø-ͽͿ-ٟ٪-ۯۺ-޿ߊ-॥॰-৥ৰ-੥ੰ-૥૰-୥୰-௥௰-౥౰-೥೰-൥൰-๏๚-໏໚-༟༪-ဿ၊-ႏႚ-៟៪-᠏᠚-᥅ᥐ-᧏᧚-᩿᪊-᪏᪚-᭏᭚-ᮯᮺ-᰿᱊-ᱏᱚ-῿‌-‍‿-⁀⁰-↏Ⰰ-⿯、-ꘟꘪ-꣏꣚-ꣿꤊ-ꧏ꧚-꩏꩚-꯯꯺-퟿豈-﷏ﷰ-／：-�𐀀-𐒟𐒪-𑁥𑁰-𝟍𝠀-󯿿]*)$",
+			"type": "string"
+		},
+		"xs:IDREFS": {
+			"items": {
+				"pattern": "^([A-Z_a-zÀ-ÖØ-öø-˿Ͱ-ͽͿ-῿‌-‍⁰-↏Ⰰ-⿯、-퟿豈-﷏ﷰ-�𐀀-󯿿][\\d\\--\\.A-Z_a-z·À-ÖØ-öø-ͽͿ-ٟ٪-ۯۺ-޿ߊ-॥॰-৥ৰ-੥ੰ-૥૰-୥୰-௥௰-౥౰-೥೰-൥൰-๏๚-໏໚-༟༪-ဿ၊-ႏႚ-៟៪-᠏᠚-᥅ᥐ-᧏᧚-᩿᪊-᪏᪚-᭏᭚-ᮯᮺ-᰿᱊-ᱏᱚ-῿‌-‍‿-⁀⁰-↏Ⰰ-⿯、-ꘟꘪ-꣏꣚-ꣿꤊ-ꧏ꧚-꩏꩚-꯯꯺-퟿豈-﷏ﷰ-／：-�𐀀-𐒟𐒪-𑁥𑁰-𝟍𝠀-󯿿]*)$",
+				"type": "string"
+			},
+			"type": "array"
+		},
+		"xs:anyType": {
+			"additionalProperties": false,
+			"patternProperties": {
+				"^@\\w+$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				},
+				"^\\w+$": {
+				}
+			},
+			"properties": {
+				"#": {
+					"type": "string"
+				},
+				"$": {
+					"type": [
+						"string",
+						"number",
+						"boolean"
+					]
+				}
+			},
+			"type": "object"
+		},
+		"xs:anyURI": {
+			"type": "string"
+		}
+	},
+	"description": "JSON Schema generated by XMLSpy v2020 rel. 2 sp1 (x64) (http://www.altova.com)",
+	"properties": {
+		"#": {
+			"type": "string"
+		},
+		"@xmlns:ag_codes": {
+			"default": "http://release.niem.gov/niem/codes/ag_codes/4.0/"
+		},
+		"@xmlns:structures": {
+			"default": "http://release.niem.gov/niem/structures/4.0/"
+		},
+		"@xmlns:xs": {
+			"default": "http://www.w3.org/2001/XMLSchema"
+		},
+		"structures:AssociationAugmentationPoint": {
+			"$ref": "#/definitions/.structures:AssociationAugmentationPoint"
+		},
+		"structures:ObjectAugmentationPoint": {
+			"$ref": "#/definitions/.structures:ObjectAugmentationPoint"
+		}
+	},
+	"type": "object"
+}
