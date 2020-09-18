@@ -1,0 +1,12 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "proSocialAffiliationScoreValue": "j:ParoleAssessmentProSocialAffiliationScoreValue",
+  "unitSupervisor": "j:ParoleAssessmentUnitSupervisor",
+  "totalObjectiveScore": "j:ParoleAssessmentTotalObjectiveScoreText",
+  "need": "j:ParoleAssessmentNeed",
+  "employmentObjectiveScoreValue": "j:ParoleAssessmentEmploymentObjectiveScoreValue",
+  "criminogenicNeedsScoreValue": "j:ParoleAssessmentCriminogenicNeedsScoreValue",
+  "criminalHistorySummary": "j:ParoleAssessmentCriminalHistorySummary",
+  "residenceObjectiveScoreValue": "j:ParoleAssessmentResidenceObjectiveScoreValue",
+  "comment": "j:ParoleAssessmentComment"
+}

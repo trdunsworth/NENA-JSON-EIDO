@@ -1,0 +1,12 @@
+{
+  "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+  "heightValue": "nc:ImageHeightValue",
+  "location": "nc:ImageLocation",
+  "widthValue": "nc:ImageWidthValue",
+  "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+  "biomAugmentation": "biom:ImageAugmentation",
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "jAugmentation": "j:ImageAugmentation",
+  "mo": "http://release.niem.gov/niem/domains/militaryOperations/4.1/#",
+  "moAugmentation": "mo:ImageAugmentation"
+}

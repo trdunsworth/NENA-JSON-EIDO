@@ -1,0 +1,8 @@
+{
+  "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+  "CBEFFFormatOwnerID": "biom:CBEFFFormatOwnerID",
+  "CBEFFFormatCategoryID": "biom:CBEFFFormatCategoryID",
+  "CBEFFVersionID": "biom:CBEFFVersionID",
+  "CBEFFCategoryCode": "biom:CBEFFCategoryCode",
+  "resolutionMethodInformation": "biom:ResolutionMethodInformation"
+}

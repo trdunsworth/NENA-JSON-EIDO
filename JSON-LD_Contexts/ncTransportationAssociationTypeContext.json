@@ -1,0 +1,8 @@
+{
+  "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+  "conveyance": "nc:Conveyance",
+  "conveyedItem": "nc:ConveyedItem",
+  "conveyanceOperator": "nc:ConveyanceOperator",
+  "conveyedPerson": "nc:ConveyedPerson",
+  "conveyancePassengerQuantity": "nc:ConveyancePassengerQuantity"
+}

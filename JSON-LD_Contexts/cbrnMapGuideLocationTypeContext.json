@@ -1,0 +1,7 @@
+{
+  "cbrn": "http://release.niem.gov/niem/domains/cbrn/4.1/#",
+  "mapGuideBrandCode": "cbrn:MapGuideBrandCode",
+  "mapGuideName": "cbrn:MapGuideName",
+  "mapGuidePageNumberID": "cbrn:MapGuidePageNumberID",
+  "mapGuideGridNumberID": "cbrn:MapGuideGridNumberID"
+}

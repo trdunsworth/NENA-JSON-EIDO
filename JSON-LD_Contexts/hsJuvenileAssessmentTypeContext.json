@@ -1,0 +1,10 @@
+{
+  "hs": "http://release.niem.gov/niem/domains/humanServices/4.1/#",
+  "administeringFacility": "hs:AdministeringFacility",
+  "assessmentOther": "hs:AssessmentOtherText",
+  "assessmentOutcome": "hs:AssessmentOutcome",
+  "assessmentRecommendation": "hs:AssessmentRecommendation",
+  "caseworker": "hs:Caseworker",
+  "juvenile": "hs:Juvenile",
+  "receivedByTrackingID": "hs:ReceivedByTrackingID"
+}

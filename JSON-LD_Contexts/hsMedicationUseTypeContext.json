@@ -1,0 +1,13 @@
+{
+  "hs": "http://release.niem.gov/niem/domains/humanServices/4.1/#",
+  "medication": "hs:Medication",
+  "prescriber": "hs:Prescriber",
+  "dispenser": "hs:Dispenser",
+  "medicationDispensingDate": "hs:MedicationDispensingDate",
+  "medicationDoseMeasure": "hs:MedicationDoseMeasure",
+  "frequencyCode": "hs:MedicationUseFrequencyCode",
+  "frequency": "hs:MedicationUseFrequencyText",
+  "medicationLastTakenDate": "hs:MedicationLastTakenDate",
+  "medicationTreatmentReason": "hs:MedicationTreatmentReasonText",
+  "prescriptionUseInstructions": "hs:PrescriptionUseInstructionsText"
+}

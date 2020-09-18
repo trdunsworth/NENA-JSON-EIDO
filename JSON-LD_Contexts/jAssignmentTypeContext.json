@@ -1,0 +1,8 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "locationDetail": "j:AssignmentLocationDetail",
+  "remark": "j:Remark",
+  "reason": "j:AssignmentReasonText",
+  "securityClassificationDescription": "j:AssignmentSecurityClassificationDescriptionText",
+  "isSelfHarm": "j:SelfHarmIndicator"
+}

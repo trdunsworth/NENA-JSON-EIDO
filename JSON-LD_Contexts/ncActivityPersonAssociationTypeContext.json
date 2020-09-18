@@ -1,0 +1,8 @@
+{
+  "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+  "activity": "nc:Activity",
+  "person": "nc:Person",
+  "activityInvolvement": "nc:ActivityInvolvementText",
+  "hs": "http://release.niem.gov/niem/domains/humanServices/4.1/#",
+  "augmentation": "hs:ActivityPersonAssociationAugmentation"
+}

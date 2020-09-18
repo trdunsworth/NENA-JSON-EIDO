@@ -1,0 +1,13 @@
+{
+  "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+  "person": "nc:DisciplinaryActionPerson",
+  "assigner": "nc:DisciplinaryActionAssigner",
+  "communityService": "nc:DisciplinaryActionCommunityService",
+  "enforcer": "nc:DisciplinaryActionEnforcer",
+  "counseling": "nc:DisciplinaryActionCounseling",
+  "fee": "nc:DisciplinaryActionFee",
+  "program": "nc:DisciplinaryActionProgram",
+  "restitution": "nc:DisciplinaryActionRestitution",
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "augmentation": "j:DisciplinaryActionAugmentation"
+}

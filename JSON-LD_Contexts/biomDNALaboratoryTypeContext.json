@@ -1,0 +1,8 @@
+{
+  "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+  "unitCategoryCode": "biom:DNALaboratoryUnitCategoryCode",
+  "categoryCode": "biom:DNALaboratoryCategoryCode",
+  "accreditation": "biom:DNALaboratoryAccreditation",
+  "processingCountry": "biom:DNALaboratoryProcessingCountry",
+  "internationalOrganizationName": "biom:DNALaboratoryInternationalOrganizationName"
+}

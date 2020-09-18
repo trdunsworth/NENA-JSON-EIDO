@@ -1,0 +1,8 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "behavior": "j:SupervisionRestrictionBehaviorText",
+  "location": "j:SupervisionRestrictionLocation",
+  "person": "j:SupervisionRestrictionPerson",
+  "supervisionRestriction": "j:SupervisionRestriction",
+  "code": "j:SupervisionRestrictionCode"
+}

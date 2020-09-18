@@ -1,0 +1,9 @@
+{
+  "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+  "position": "biom:FingerprintImagePosition",
+  "impressionCaptureCategoryCode": "biom:FingerprintImageImpressionCaptureCategoryCode",
+  "frictionRidgeImageImpressionCaptureCategoryCode": "biom:FrictionRidgeImageImpressionCaptureCategoryCode",
+  "frictionRidgeImpressionCaptureCode": "biom:FrictionRidgeImpressionCaptureCode",
+  "fingerprintImpressionCategoryDescription": "biom:FingerprintImpressionCategoryDescriptionText",
+  "subjectExistentialDetails": "biom:SubjectExistentialDetails"
+}

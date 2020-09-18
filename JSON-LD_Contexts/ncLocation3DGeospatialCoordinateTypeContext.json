@@ -1,0 +1,6 @@
+{
+  "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+  "locationAltitude": "nc:LocationAltitude",
+  "locationDepth": "nc:LocationDepth",
+  "locationElevation": "nc:LocationElevation"
+}

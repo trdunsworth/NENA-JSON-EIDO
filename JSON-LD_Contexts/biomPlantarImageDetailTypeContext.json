@@ -1,0 +1,17 @@
+{
+  "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+  "fingerprintImageImpressionCaptureCategoryCode": "biom:FingerprintImageImpressionCaptureCategoryCode",
+  "frictionRidgeImageImpressionCaptureCategoryCode": "biom:FrictionRidgeImageImpressionCaptureCategoryCode",
+  "frictionRidgeImpressionCaptureCode": "biom:FrictionRidgeImpressionCaptureCode",
+  "frictionRidgeCaptureTechnologyCode": "biom:FrictionRidgeCaptureTechnologyCode",
+  "plantarPositionCode": "biom:PlantarPositionCode",
+  "plantarImageMissingArea": "biom:PlantarImageMissingArea",
+  "plantarImageQuality": "biom:PlantarImageQuality",
+  "plantarImageSegmentToePositionPolygon": "biom:PlantarImageSegmentToePositionPolygon",
+  "rulerScalePresenceInformation": "biom:RulerScalePresenceInformation",
+  "standardFingerprintFormNumber": "biom:StandardFingerprintFormNumberText",
+  "resolutionMethodInformation": "biom:ResolutionMethodInformation",
+  "frictionRidgeImageSegmentPositionSquare": "biom:FrictionRidgeImageSegmentPositionSquare",
+  "plantarImageAcquisitionProfileCode": "biom:PlantarImageAcquisitionProfileCode",
+  "subjectExistentialDetails": "biom:SubjectExistentialDetails"
+}

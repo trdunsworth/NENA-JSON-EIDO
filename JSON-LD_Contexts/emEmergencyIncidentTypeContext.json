@@ -1,0 +1,19 @@
+{
+  "em": "http://release.niem.gov/niem/domains/emergencyManagement/4.1/#",
+  "incidentSummary": "em:IncidentSummaryText",
+  "incidentPublishDate": "em:IncidentPublishDate",
+  "incidentUpdateDate": "em:IncidentUpdateDate",
+  "parentIncident": "em:ParentIncident",
+  "childIncident": "em:ChildIncident",
+  "relatedIncident": "em:RelatedIncident",
+  "incidentActionCode": "em:IncidentActionCode",
+  "owner": "em:Owner",
+  "author": "em:Author",
+  "contributor": "em:Contributor",
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "serviceCall": "j:ServiceCall",
+  "serviceCallAssignedUnit": "em:ServiceCallAssignedUnit",
+  "subject": "j:Subject",
+  "victim": "j:Victim",
+  "witness": "j:Witness"
+}

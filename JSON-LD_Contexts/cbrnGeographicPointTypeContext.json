@@ -1,0 +1,12 @@
+{
+  "cbrn": "http://release.niem.gov/niem/domains/cbrn/4.1/#",
+  "latitudeValue": "cbrn:LatitudeValue",
+  "longitudeValue": "cbrn:LongitudeValue",
+  "elevationValue": "cbrn:ElevationValue",
+  "elevationOffsetValue": "cbrn:ElevationOffsetValue",
+  "geoPointAccuracyValue": "cbrn:GeoPointAccuracyValue",
+  "elevationAccuracyValue": "cbrn:ElevationAccuracyValue",
+  "elevationOffsetAccuracyValue": "cbrn:ElevationOffsetAccuracyValue",
+  "datum": "cbrn:datumText",
+  "units": "cbrn:unitsText"
+}

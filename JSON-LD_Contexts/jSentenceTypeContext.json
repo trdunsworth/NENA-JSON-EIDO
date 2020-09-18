@@ -1,0 +1,22 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "isAggravated": "j:SentenceAggravatedIndicator",
+  "imposed": "j:SentenceImposedText",
+  "charge": "j:SentenceCharge",
+  "condition": "j:SentenceCondition",
+  "confinementCreditDayQuantity": "j:SentenceConfinementCreditDayQuantity",
+  "isConfinementCredit": "j:SentenceConfinementCreditIndicator",
+  "isDeferred": "j:SentenceDeferredIndicator",
+  "deferredTerm": "j:SentenceDeferredTerm",
+  "description": "j:SentenceDescriptionText",
+  "expirationDate": "j:SentenceExpirationDate",
+  "grouping": "j:SentenceGroupingText",
+  "issuerEntity": "j:SentenceIssuerEntity",
+  "isRegisterSexOffender": "j:SentenceRegisterSexOffenderIndicator",
+  "subject": "j:SentenceSubject",
+  "isSuspended": "j:SentenceSuspendedIndicator",
+  "suspendedTerm": "j:SentenceSuspendedTerm",
+  "term": "j:SentenceTerm",
+  "courtCostAmount": "j:CourtCostAmount",
+  "supervisionFineAmount": "j:SupervisionFineAmount"
+}

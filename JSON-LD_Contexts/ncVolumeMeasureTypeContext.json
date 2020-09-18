@@ -1,0 +1,7 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "engineDisplacementUnitCode": "j:EngineDisplacementUnitCode",
+  "engineDisplacementUnitNCICCode": "j:EngineDisplacementUnitNCICCode",
+  "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+  "volumeUnitCode": "nc:VolumeUnitCode"
+}

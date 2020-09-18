@@ -1,0 +1,4 @@
+{
+  "ncic": "http://release.niem.gov/niem/codes/fbi_ncic/4.0/#",
+  "simpleType": "ncic:HAIRCodeSimpleType"
+}

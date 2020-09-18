@@ -1,0 +1,31 @@
+components:
+  schemas:
+    canCanadianProvinceCodeType:
+      type: object
+      properties:
+        simpleType:
+          $ref: can.yaml#/components/schemas/canCanadianProvinceCodeSimpleType
+        '@context':
+          type: string
+          description: canCanadianProvinceCodeTypeJSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/canCanadianProvinceCodeTypeContext.json
+      title: 'can:CanadianProvinceCodeType'
+      description: A data type for provinces in Canada.
+    canCanadianProvinceCodeSimpleType:
+      type: string
+      description: A data type for provinces in Canada.
+      enum:
+        - AB
+        - BC
+        - MB
+        - NB
+        - NL
+        - NS
+        - NT
+        - NU
+        - 'ON'
+        - PE
+        - QC
+        - SK
+        - YT

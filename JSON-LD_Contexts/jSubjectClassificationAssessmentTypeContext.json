@@ -1,0 +1,8 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "purpose": "j:SubjectClassificationAssessmentPurposeText",
+  "criminalHistoryScore": "j:SubjectClassificationAssessmentCriminalHistoryScoreText",
+  "category": "j:SubjectClassificationAssessmentCategoryText",
+  "recommendedReleaseConditions": "j:SubjectClassificationAssessmentRecommendedReleaseConditionsText",
+  "riskLevelCode": "j:SubjectClassificationAssessmentRiskLevelCode"
+}

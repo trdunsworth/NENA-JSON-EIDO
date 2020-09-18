@@ -1,0 +1,5 @@
+{
+  "hs": "http://release.niem.gov/niem/domains/humanServices/4.1/#",
+  "isAssessmentCourseOfActionWillBeTaken": "hs:AssessmentCourseOfActionWillBeTakenIndicator",
+  "categoryCode": "hs:AssessmentRecommendedCourseOfActionCategoryCode"
+}

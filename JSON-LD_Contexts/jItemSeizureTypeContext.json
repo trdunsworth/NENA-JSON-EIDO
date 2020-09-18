@@ -1,0 +1,13 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "disposition": "j:ItemSeizureDisposition",
+  "itemSeizedLocation": "j:ItemSeizedLocation",
+  "method": "j:ItemSeizureMethodText",
+  "owningPerson": "j:ItemSeizureOwningPerson",
+  "possessingPerson": "j:ItemSeizurePossessingPerson",
+  "item": "j:ItemSeizureItem",
+  "releaseCondition": "j:ItemSeizureReleaseConditionText",
+  "warrant": "j:ItemSeizureWarrant",
+  "itemSeizerEntity": "j:ItemSeizerEntity",
+  "itemSeizingEnforcementOfficial": "j:ItemSeizingEnforcementOfficial"
+}

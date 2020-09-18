@@ -1,0 +1,11 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "action": "j:CourtEventAction",
+  "appearance": "j:CourtEventAppearance",
+  "case": "j:CourtEventCase",
+  "court": "j:CourtEventCourt",
+  "judge": "j:CourtEventJudge",
+  "motion": "j:CourtEventMotion",
+  "schedule": "j:CourtEventSchedule",
+  "sequenceID": "j:CourtEventSequenceID"
+}

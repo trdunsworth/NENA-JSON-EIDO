@@ -1,0 +1,14 @@
+{
+  "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+  "title": "nc:CaseTitleText",
+  "category": "nc:CaseCategoryText",
+  "generalCategory": "nc:CaseGeneralCategoryText",
+  "yearDate": "nc:CaseYearDate",
+  "trackingID": "nc:CaseTrackingID",
+  "subCategory": "nc:CaseSubCategoryText",
+  "docketID": "nc:CaseDocketID",
+  "resolution": "nc:CaseResolutionText",
+  "filing": "nc:CaseFiling",
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "augmentation": "j:CaseAugmentation"
+}

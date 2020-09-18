@@ -1,0 +1,5 @@
+{
+  "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+  "fingerPositionCode": "biom:FingerPositionCode",
+  "fingerMissingCode": "biom:FingerMissingCode"
+}

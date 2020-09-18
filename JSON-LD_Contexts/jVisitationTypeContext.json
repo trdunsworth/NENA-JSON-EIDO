@@ -1,0 +1,21 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "requestedDate": "j:VisitationRequestedDate",
+  "roomActionTaken": "j:VisitationRoomActionTakenText",
+  "nonContactVisitsLengthNumeric": "j:VisitationNonContactVisitsLengthNumeric",
+  "nonContactVisitsEndDate": "j:VisitationNonContactVisitsEndDate",
+  "restrictions": "j:VisitationRestrictionsText",
+  "nonContactVisitsStartDate": "j:VisitationNonContactVisitsStartDate",
+  "contraband": "j:VisitationContraband",
+  "subjectMatter": "j:VisitationSubjectMatterText",
+  "verifiedDateTime": "j:VisitationVerifiedDateTime",
+  "isParoleOfficerNotified": "j:VisitationParoleOfficerNotifiedIndicator",
+  "denialReason": "j:VisitationDenialReasonText",
+  "purpose": "j:VisitationPurposeText",
+  "supervisingOfficialEnforcement": "j:VisitationSupervisingOfficialEnforcement",
+  "supervisingOfficialJudicial": "j:VisitationSupervisingOfficialJudicial",
+  "restrictedAccessReason": "j:VisitationRestrictedAccessReasonText",
+  "restrictedAccessPerson": "j:VisitationRestrictedAccessPerson",
+  "visitor": "j:VisitationVisitor",
+  "visitorRelationship": "j:VisitationVisitorRelationshipText"
+}

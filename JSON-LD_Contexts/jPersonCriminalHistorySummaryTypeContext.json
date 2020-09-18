@@ -1,0 +1,13 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "isSexualOffenseArrest": "j:SexualOffenseArrestIndicator",
+  "offenseSummary": "j:OffenseSummary",
+  "DEAViolatorClass": "j:DEAViolatorClassText",
+  "isRegisteredSexualOffender": "j:RegisteredSexualOffenderIndicator",
+  "isRegisteredSexualOffenderAbsconder": "j:RegisteredSexualOffenderAbsconderIndicator",
+  "criminalHistorySummaryClassificationCategory": "j:CriminalHistorySummaryClassificationCategoryText",
+  "isSexualOffenseConviction": "j:SexualOffenseConvictionIndicator",
+  "isViolenceHistory": "j:ViolenceHistoryIndicator",
+  "subjectClassificationAssessmentCriminalHistoryScore": "j:SubjectClassificationAssessmentCriminalHistoryScoreText",
+  "GDEPDescription": "j:GDEPDescriptionText"
+}

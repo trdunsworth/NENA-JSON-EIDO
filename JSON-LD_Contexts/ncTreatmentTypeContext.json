@@ -1,0 +1,10 @@
+{
+  "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+  "text": "nc:TreatmentText",
+  "provider": "nc:TreatmentProvider",
+  "person": "nc:Person",
+  "hs": "http://release.niem.gov/niem/domains/humanServices/4.1/#",
+  "hsAugmentation": "hs:TreatmentAugmentation",
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "jAugmentation": "j:TreatmentAugmentation"
+}

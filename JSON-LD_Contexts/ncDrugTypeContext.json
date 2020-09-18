@@ -1,0 +1,10 @@
+{
+  "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+  "daysSupplyQuantity": "nc:DrugDaysSupplyQuantity",
+  "strength": "nc:DrugStrengthText",
+  "DEAClassScheduleCode": "nc:DEAClassScheduleCode",
+  "DEAClassSchedule": "nc:DEAClassScheduleText",
+  "coverageExceptionReason": "nc:DrugCoverageExceptionReasonText",
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "augmentation": "j:DrugAugmentation"
+}

@@ -1,0 +1,22 @@
+{
+  "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+  "fingerprintImageImpressionCaptureCategoryCode": "biom:FingerprintImageImpressionCaptureCategoryCode",
+  "frictionRidgeImageImpressionCaptureCategoryCode": "biom:FrictionRidgeImageImpressionCaptureCategoryCode",
+  "frictionRidgeImpressionCaptureCode": "biom:FrictionRidgeImpressionCaptureCode",
+  "frictionRidgeCaptureTechnologyCode": "biom:FrictionRidgeCaptureTechnologyCode",
+  "exemplarFingerPositionCode": "biom:ExemplarFingerPositionCode",
+  "fingerprintImageMajorCasePrint": "biom:FingerprintImageMajorCasePrint",
+  "fingerprintImageFingerMissing": "biom:FingerprintImageFingerMissing",
+  "fingerprintImageSegmentPositionSquare": "biom:FingerprintImageSegmentPositionSquare",
+  "fingerprintImageNISTQuality": "biom:FingerprintImageNISTQuality",
+  "fingerprintImageQuality": "biom:FingerprintImageQuality",
+  "fingerprintImageSegmentationQuality": "biom:FingerprintImageSegmentationQuality",
+  "fingerprintSimultaneousCaptureID": "biom:FingerprintSimultaneousCaptureID",
+  "isFingerprintImageStitched": "biom:FingerprintImageStitchedIndicator",
+  "subjectExistentialDetails": "biom:SubjectExistentialDetails",
+  "resolutionMethodInformation": "biom:ResolutionMethodInformation",
+  "fingerprintImageSegmentPositionPolygon": "biom:FingerprintImageSegmentPositionPolygon",
+  "rulerScalePresenceInformation": "biom:RulerScalePresenceInformation",
+  "standardFingerprintFormNumber": "biom:StandardFingerprintFormNumberText",
+  "fingerprintImageAcquisitionProfileCode": "biom:FingerprintImageAcquisitionProfileCode"
+}

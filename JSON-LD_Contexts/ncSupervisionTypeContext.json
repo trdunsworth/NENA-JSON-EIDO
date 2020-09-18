@@ -1,0 +1,13 @@
+{
+  "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+  "isCurrent": "nc:SupervisionCurrentIndicator",
+  "custodyStatus": "nc:SupervisionCustodyStatus",
+  "facility": "nc:SupervisionFacility",
+  "isMandatory": "nc:SupervisionMandatoryIndicator",
+  "release": "nc:SupervisionRelease",
+  "person": "nc:SupervisionPerson",
+  "personStatus": "nc:SupervisionPersonStatus",
+  "supervisor": "nc:SupervisionSupervisor",
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "augmentation": "j:SupervisionAugmentation"
+}

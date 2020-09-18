@@ -1,0 +1,19 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "description": "j:ForceDescriptionText",
+  "otherForceCategory": "j:ForceOtherForceCategoryText",
+  "effectiveShotsQuantity": "j:ForceEffectiveShotsQuantity",
+  "warningShotsQuantity": "j:ForceWarningShotsQuantity",
+  "shotsFiredQuantity": "j:ForceShotsFiredQuantity",
+  "roundsQuantity": "j:ForceRoundsQuantity",
+  "physicalDescription": "j:ForcePhysicalDescriptionText",
+  "numberOfTimesUsedQuantity": "j:ForceNumberOfTimesUsedQuantity",
+  "subject": "j:ForceSubject",
+  "takenAsEvidence": "j:ForceTakenAsEvidence",
+  "toolItem": "j:ForceToolItem",
+  "categoryCode": "j:ForceCategoryCode",
+  "category": "j:ForceCategoryText",
+  "userEntity": "j:ForceUserEntity",
+  "victim": "j:ForceVictim",
+  "weaponItem": "j:ForceWeaponItem"
+}

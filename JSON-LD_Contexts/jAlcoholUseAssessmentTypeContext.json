@@ -1,0 +1,10 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "alcoholUseConsumptionQuantity": "j:AlcoholUseAssessmentAlcoholUseConsumptionQuantity",
+  "alcoholAbuseMaximumDurationAbstainedNumeric": "j:AlcoholUseAssessmentAlcoholAbuseMaximumDurationAbstainedNumeric",
+  "alcoholAbuseLengthOfTreatmentNumeric": "j:AlcoholUseAssessmentAlcoholAbuseLengthOfTreatmentNumeric",
+  "summary": "j:AlcoholUseAssessmentSummaryText",
+  "alcoholConsumptionFrequency": "j:AlcoholUseAssessmentAlcoholConsumptionFrequencyText",
+  "alcoholAbuseFirstAgeUsedNumeric": "j:AlcoholUseAssessmentAlcoholAbuseFirstAgeUsedNumeric",
+  "comment": "j:AlcoholUseAssessmentComment"
+}

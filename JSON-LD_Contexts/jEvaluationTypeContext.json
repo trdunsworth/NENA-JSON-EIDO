@@ -1,0 +1,10 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "description": "j:EvaluationDescriptionText",
+  "diagnosisDescription": "j:EvaluationDiagnosisDescriptionText",
+  "disorderDescription": "j:EvaluationDisorderDescriptionText",
+  "isCurrent": "j:CurrentEvaluationIndicator",
+  "provider": "j:EvaluationProvider",
+  "relatedDisorderDescription": "j:EvaluationRelatedDisorderDescriptionText",
+  "isMedicalDisorder": "j:MedicalDisorderIndicator"
+}

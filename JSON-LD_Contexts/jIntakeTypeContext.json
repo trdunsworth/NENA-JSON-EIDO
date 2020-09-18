@@ -1,0 +1,5 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "screening": "j:IntakeScreening",
+  "screeningStaffMember": "j:IntakeScreeningStaffMember"
+}

@@ -1,0 +1,8 @@
+{
+  "hs": "http://release.niem.gov/niem/domains/humanServices/4.1/#",
+  "dentalHistoryDescription": "hs:DentalHistoryDescriptionText",
+  "medicalHistoryDescription": "hs:MedicalHistoryDescriptionText",
+  "isHearingDisability": "hs:HearingDisabilityIndicator",
+  "isVisualDisability": "hs:VisualDisabilityIndicator",
+  "isOtherPhysicalDisability": "hs:OtherPhysicalDisabilityIndicator"
+}

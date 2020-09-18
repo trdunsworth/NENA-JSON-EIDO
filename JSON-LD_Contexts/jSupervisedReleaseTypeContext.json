@@ -1,0 +1,12 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "projectedEndDate": "j:SupervisedReleaseProjectedEndDate",
+  "isElectronicMonitoring": "j:SupervisedReleaseElectronicMonitoringIndicator",
+  "revocationReason": "j:SupervisedReleaseRevocationReasonText",
+  "supervisingOfficialNarrative": "j:SupervisedReleaseSupervisingOfficialNarrative",
+  "category": "j:SupervisedReleaseCategoryText",
+  "revocationDate": "j:SupervisedReleaseRevocationDate",
+  "isMultipleJurisdiction": "j:SupervisedReleaseMultipleJurisdictionIndicator",
+  "categoryCode": "j:SupervisedReleaseCategoryCode",
+  "paroleUnit": "j:SupervisedReleaseParoleUnitText"
+}

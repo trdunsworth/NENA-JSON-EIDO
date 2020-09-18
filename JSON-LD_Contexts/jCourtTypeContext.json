@@ -1,0 +1,11 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "name": "j:CourtName",
+  "clerk": "j:CourtClerk",
+  "reporter": "j:CourtReporter",
+  "filingClerk": "j:CourtFilingClerk",
+  "division": "j:CourtDivisionText",
+  "supervisingAgency": "j:CourtSupervisingAgency",
+  "administrativeUnit": "j:CourtAdministrativeUnitText",
+  "categoryCode": "j:CourtCategoryCode"
+}

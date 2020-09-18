@@ -1,0 +1,11 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "amount": "j:BailBondAmount",
+  "conditionDescription": "j:BailBondConditionDescriptionText",
+  "issuerEntity": "j:BailBondIssuerEntity",
+  "paymentDescription": "j:BailBondPaymentDescriptionText",
+  "revokeDate": "j:BailBondRevokeDate",
+  "suretyEntity": "j:BailBondSuretyEntity",
+  "terminationDate": "j:BailBondTerminationDate",
+  "terminationCategory": "j:BailBondTerminationCategoryText"
+}

@@ -1,0 +1,7 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "resultCode": "j:DrugTestResultCode",
+  "categoryCode": "j:DrugTestCategoryCode",
+  "drugTestedCategory": "j:DrugTestDrugTestedCategoryText",
+  "drugSampleSizeQuantity": "j:DrugTestDrugSampleSizeQuantity"
+}

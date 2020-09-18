@@ -1,0 +1,15 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "circumstances": "j:SupervisionViolationCircumstancesText",
+  "isDAAcceptedCase": "j:SupervisionViolationDAAcceptedCaseIndicator",
+  "referredToDADate": "j:SupervisionViolationReferredToDADate",
+  "investigativeReport": "j:SupervisionViolationInvestigativeReportText",
+  "issuedDate": "j:SupervisionViolationIssuedDate",
+  "otherDetails": "j:SupervisionViolationOtherDetailsText",
+  "reportedDateTime": "j:SupervisionViolationReportedDateTime",
+  "reportingStaffMember": "j:SupervisionViolationReportingStaffMember",
+  "staffMember": "j:SupervisionViolationStaffMember",
+  "specificAct": "j:SupervisionViolationSpecificActText",
+  "isSupplemental": "j:SupervisionViolationSupplementalIndicator",
+  "quantity": "j:SupervisionViolationQuantity"
+}

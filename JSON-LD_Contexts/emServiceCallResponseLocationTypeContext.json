@@ -1,0 +1,10 @@
+{
+  "em": "http://release.niem.gov/niem/domains/emergencyManagement/4.1/#",
+  "cellID": "em:CellIDText",
+  "cellSectorID": "em:CellSectorIDText",
+  "coordinateDateTime": "em:CoordinateDateTime",
+  "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+  "speedMeasure": "nc:SpeedMeasure",
+  "uncertaintyDistance": "em:UncertaintyDistanceText",
+  "firebox": "em:FireboxText"
+}

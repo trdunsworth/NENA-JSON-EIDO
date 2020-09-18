@@ -1,0 +1,6 @@
+{
+  "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+  "captureHorizontalPixelDensityValue": "biom:CaptureHorizontalPixelDensityValue",
+  "captureVerticalPixelDensityValue": "biom:CaptureVerticalPixelDensityValue",
+  "captureDeviceMonitoringModeCode": "biom:CaptureDeviceMonitoringModeCode"
+}

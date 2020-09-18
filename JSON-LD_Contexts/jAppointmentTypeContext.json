@@ -1,0 +1,13 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "results": "j:AppointmentResultsText",
+  "group": "j:AppointmentGroupText",
+  "recessEndDateTime": "j:AppointmentRecessEndDateTime",
+  "schedule": "j:AppointmentSchedule",
+  "recessStartDateTime": "j:AppointmentRecessStartDateTime",
+  "priority": "j:AppointmentPriorityText",
+  "postponementReason": "j:AppointmentPostponementReasonText",
+  "mandatedTimeline": "j:AppointmentMandatedTimelineText",
+  "repeatDateRange": "j:AppointmentRepeatDateRange",
+  "status": "j:AppointmentStatus"
+}

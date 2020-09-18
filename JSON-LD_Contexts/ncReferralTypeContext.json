@@ -1,0 +1,12 @@
+{
+  "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+  "activity": "nc:ReferralActivity",
+  "issuer": "nc:ReferralIssuer",
+  "isMandatory": "nc:ReferralMandatoryIndicator",
+  "supervisor": "nc:ReferralSupervisor",
+  "item": "nc:ReferralItem",
+  "entity": "nc:ReferralEntity",
+  "person": "nc:ReferralPerson",
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "augmentation": "j:ReferralAugmentation"
+}

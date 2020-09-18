@@ -1,0 +1,10 @@
+{
+  "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+  "tagStartDateTime": "biom:TagStartDateTime",
+  "tagEndDateTime": "biom:TagEndDateTime",
+  "originalRecordingDate": "biom:OriginalRecordingDate",
+  "segmentRecordingStartDateTime": "biom:SegmentRecordingStartDateTime",
+  "segmentRecordingEndDateTime": "biom:SegmentRecordingEndDateTime",
+  "timeSourceDescription": "biom:TimeSourceDescriptionText",
+  "timeComment": "biom:TimeCommentText"
+}

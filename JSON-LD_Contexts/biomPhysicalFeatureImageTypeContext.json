@@ -1,0 +1,17 @@
+{
+  "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+  "physicalFeatureSize": "biom:PhysicalFeatureSize",
+  "type10CrossReferenceID": "biom:Type10CrossReferenceID",
+  "imageTransformationCode": "biom:ImageTransformationCode",
+  "subjectExistentialDetails": "biom:SubjectExistentialDetails",
+  "resolutionMethodInformation": "biom:ResolutionMethodInformation",
+  "cheiloscopicImageInformation": "biom:CheiloscopicImageInformation",
+  "patternedInjuryDetail": "biom:PatternedInjuryDetail",
+  "rulerScalePresenceInformation": "biom:RulerScalePresenceInformation",
+  "dentalVisualImageDataInformation": "biom:DentalVisualImageDataInformation",
+  "physicalFeatureNCICCode": "biom:PhysicalFeatureNCICCode",
+  "physicalFeatureDescriptionDetail": "biom:PhysicalFeatureDescriptionDetail",
+  "faceImageContour": "biom:FaceImageContour",
+  "faceImage2DFeaturePoint": "biom:FaceImage2DFeaturePoint",
+  "faceImage3DFeaturePoint": "biom:FaceImage3DFeaturePoint"
+}

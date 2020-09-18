@@ -1,0 +1,11 @@
+{
+  "hs": "http://release.niem.gov/niem/domains/humanServices/4.1/#",
+  "responsibilityForCost": "hs:ResponsibilityForServiceCostText",
+  "responsibleEntityDescription": "hs:ResponsibleEntityDescriptionText",
+  "costValue": "hs:ServiceCostValue",
+  "categoryCode": "hs:ServiceCategoryCode",
+  "category": "hs:ServiceCategoryText",
+  "referredOutReason": "hs:ReferredOutServiceReasonText",
+  "unprovidedReasonCategoryCode": "hs:UnprovidedServiceReasonCategoryCode",
+  "unprovidedReasonCategory": "hs:UnprovidedServiceReasonCategoryText"
+}

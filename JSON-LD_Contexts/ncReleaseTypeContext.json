@@ -1,0 +1,12 @@
+{
+  "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+  "person": "nc:ReleasePerson",
+  "fromLocation": "nc:ReleaseFromLocation",
+  "issuer": "nc:ReleaseIssuer",
+  "item": "nc:ReleaseItem",
+  "recipient": "nc:ReleaseRecipient",
+  "toLocation": "nc:ReleaseToLocation",
+  "supervisor": "nc:ReleaseSupervisor",
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "augmentation": "j:ReleaseAugmentation"
+}

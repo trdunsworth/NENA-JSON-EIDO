@@ -1,0 +1,10 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "address": "j:VehicleInspectionAddress",
+  "inspectorIdentification": "j:VehicleInspectionInspectorIdentification",
+  "jurisdictionAuthorityCode": "j:VehicleInspectionJurisdictionAuthorityCode",
+  "jurisdictionAuthority": "j:VehicleInspectionJurisdictionAuthorityText",
+  "smogCertificateCode": "j:VehicleInspectionSmogCertificateCode",
+  "stationIdentification": "j:VehicleInspectionStationIdentification",
+  "testCategory": "j:VehicleInspectionTestCategoryText"
+}

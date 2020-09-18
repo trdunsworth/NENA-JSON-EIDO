@@ -1,0 +1,8 @@
+{
+  "m": "http://release.niem.gov/niem/domains/maritime/4.1/#",
+  "endorsement": "m:CertificateEndorsementText",
+  "issueDate": "m:CertificateIssueDate",
+  "issuingAgency": "m:CertificateIssuingAgency",
+  "jurisdiction": "m:CertificateJurisdiction",
+  "restriction": "m:CertificateRestrictionText"
+}

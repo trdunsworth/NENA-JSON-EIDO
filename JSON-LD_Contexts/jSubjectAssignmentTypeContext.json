@@ -1,0 +1,14 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "singleCellRequestsTemporaryStatus": "j:SubjectAssignmentSingleCellRequestsTemporaryStatusText",
+  "serviceDeliveryProgram": "j:ServiceDeliveryProgram",
+  "categoryCode": "j:SubjectAssignmentCategoryCode",
+  "category": "j:SubjectAssignmentCategoryText",
+  "programViolation": "j:ProgramViolation",
+  "singleCellApprovalReason": "j:SubjectAssignmentSingleCellApprovalReasonText",
+  "document": "j:SubjectAssignmentDocument",
+  "approvalDate": "j:SubjectAssignmentApprovalDate",
+  "approver": "j:SubjectAssignmentApprover",
+  "segregationReason": "j:SubjectAssignmentSegregationReasonText",
+  "singleCellApprovalStatus": "j:SubjectAssignmentSingleCellApprovalStatusText"
+}

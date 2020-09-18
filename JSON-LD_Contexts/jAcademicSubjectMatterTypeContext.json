@@ -1,0 +1,6 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "name": "j:AcademicSubjectMatterName",
+  "creditsNumeric": "j:AcademicSubjectMatterCreditsNumeric",
+  "text": "j:AcademicSubjectMatterText"
+}

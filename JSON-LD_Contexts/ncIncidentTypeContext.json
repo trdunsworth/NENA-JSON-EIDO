@@ -1,0 +1,11 @@
+{
+  "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+  "location": "nc:IncidentLocation",
+  "event": "nc:IncidentEvent",
+  "jurisdictionalOrganization": "nc:IncidentJurisdictionalOrganization",
+  "observation": "nc:IncidentObservationText",
+  "reportedNarrative": "nc:IncidentReportedNarrative",
+  "dayPeriod": "nc:IncidentDayPeriodText",
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "augmentation": "j:IncidentAugmentation"
+}

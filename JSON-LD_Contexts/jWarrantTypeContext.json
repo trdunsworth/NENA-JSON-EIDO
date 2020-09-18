@@ -1,0 +1,15 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "appearanceBail": "j:WarrantAppearanceBail",
+  "investigatorNarrative": "j:InvestigatorNarrative",
+  "category": "j:WarrantCategoryText",
+  "appearanceBailForfeit": "j:WarrantAppearanceBailForfeitText",
+  "extraditionLimitationCode": "j:WarrantExtraditionLimitationCode",
+  "extraditionLimitation": "j:WarrantExtraditionLimitationText",
+  "extraditionStateName": "j:WarrantExtraditionStateName",
+  "furtherProcessing": "j:WarrantFurtherProcessingText",
+  "level": "j:WarrantLevelText",
+  "probableCause": "j:WarrantProbableCauseText",
+  "scr": "http://release.niem.gov/niem/domains/screening/4.1/#",
+  "augmentation": "scr:WarrantAugmentation"
+}

@@ -1,0 +1,17 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "makeCode": "j:VesselMakeCode",
+  "categoryCode": "j:VesselCategoryCode",
+  "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+  "hullIdentification": "nc:VesselHullIdentification",
+  "hullMaterialCode": "j:VesselHullMaterialCode",
+  "hullMaterial": "nc:VesselHullMaterialText",
+  "hullShapeCode": "j:VesselHullShapeCode",
+  "hullShape": "nc:VesselHullShapeText",
+  "propulsionCode": "j:VesselPropulsionCode",
+  "propulsion": "nc:VesselPropulsionText",
+  "trailer": "nc:VesselTrailer",
+  "jAugmentation": "j:VesselAugmentation",
+  "m": "http://release.niem.gov/niem/domains/maritime/4.1/#",
+  "mAugmentation": "m:VesselAugmentation"
+}

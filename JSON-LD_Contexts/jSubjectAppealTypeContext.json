@@ -1,0 +1,9 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "logIdentification": "j:SubjectAppealLogIdentification",
+  "decisionReview": "j:SubjectAppealDecisionReview",
+  "interviewDate": "j:SubjectAppealInterviewDate",
+  "review": "j:SubjectAppealReviewText",
+  "assignment": "j:SubjectAppealAssignmentText",
+  "requestedAction": "j:SubjectAppealRequestedActionText"
+}

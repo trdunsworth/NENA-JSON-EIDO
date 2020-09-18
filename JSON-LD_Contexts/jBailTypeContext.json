@@ -1,0 +1,14 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "conditionDescription": "j:BailConditionDescriptionText",
+  "hearingDate": "j:BailHearingDate",
+  "postedAmount": "j:BailPostedAmount",
+  "postedBond": "j:BailPostedBond",
+  "postedDate": "j:BailPostedDate",
+  "requirement": "j:BailRequirementText",
+  "revokedDate": "j:BailRevokedDate",
+  "setAmountText": "j:BailSetAmountText",
+  "setAmount": "j:BailSetAmount",
+  "setCourt": "j:BailSetCourt",
+  "subject": "j:BailSubject"
+}

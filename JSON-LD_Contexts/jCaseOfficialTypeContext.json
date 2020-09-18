@@ -1,0 +1,11 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "caseIdentification": "j:CaseOfficialCaseIdentification",
+  "caseStatus": "j:CaseOfficialCaseStatusText",
+  "endDate": "j:CaseOfficialEndDate",
+  "roleDescription": "j:CaseOfficialRoleDescriptionText",
+  "role": "j:CaseOfficialRoleText",
+  "startDate": "j:CaseOfficialStartDate",
+  "isTermination": "j:CaseOfficialTerminationIndicator",
+  "terminationReason": "j:CaseOfficialTerminationReasonText"
+}

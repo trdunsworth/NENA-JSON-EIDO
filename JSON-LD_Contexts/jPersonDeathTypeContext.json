@@ -1,0 +1,13 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "isPersonDecliningFirstStaffAssistantAssignment": "j:PersonDecliningFirstStaffAssistantAssignmentIndicator",
+  "pronouncedDate": "j:PersonDeathPronouncedDate",
+  "location": "j:PersonDeathLocationText",
+  "litigationProbability": "j:PersonDeathLitigationProbabilityText",
+  "isInvestigatorRequested": "j:PersonDeathInvestigatorRequestedIndicator",
+  "incident": "j:PersonDeathIncident",
+  "personCauseOfDeath": "j:PersonCauseOfDeath",
+  "isPersonDeclinedFirstInvestigativeEmployee": "j:PersonDeclinedFirstInvestigativeEmployeeIndicator",
+  "isResuscitationAttempted": "j:PersonDeathResuscitationAttemptedIndicator",
+  "pronouncedDeadBy": "j:PersonDeathPronouncedDeadByText"
+}

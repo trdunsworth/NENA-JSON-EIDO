@@ -1,0 +1,6 @@
+{
+  "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+  "separationDateRange": "nc:SeparationDateRange",
+  "separationCategoryCode": "nc:SeparationCategoryCode",
+  "separationCategory": "nc:SeparationCategoryText"
+}

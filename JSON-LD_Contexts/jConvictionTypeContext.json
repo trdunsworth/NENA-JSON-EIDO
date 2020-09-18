@@ -1,0 +1,15 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "isConvictedByJury": "j:ConvictionConvictedByJuryIndicator",
+  "stayedCountQuantity": "j:ConvictionStayedCountQuantity",
+  "charge": "j:ConvictionCharge",
+  "chargeCountQuantity": "j:ConvictionChargeCountQuantity",
+  "court": "j:ConvictionCourt",
+  "locatorReferenceIdentification": "j:ConvictionLocatorReferenceIdentification",
+  "offense": "j:ConvictionOffense",
+  "plea": "j:ConvictionPlea",
+  "sanction": "j:ConvictionSanction",
+  "sentence": "j:ConvictionSentence",
+  "subject": "j:ConvictionSubject",
+  "verdict": "j:ConvictionVerdict"
+}

@@ -1,0 +1,18 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "isEnhanced": "j:DriverLicenseEnhancedIndicator",
+  "commercialClassCode": "j:DriverLicenseCommercialClassCode",
+  "commercialClass": "j:DriverLicenseCommercialClassText",
+  "commercialStatusCode": "j:DriverLicenseCommercialStatusCode",
+  "commercialStatus": "j:DriverLicenseCommercialStatusText",
+  "nonCommercialClass": "j:DriverLicenseNonCommercialClassText",
+  "nonCommercialStatusCode": "j:DriverLicenseNonCommercialStatusCode",
+  "nonCommercialStatus": "j:DriverLicenseNonCommercialStatusText",
+  "permit": "j:DriverLicensePermit",
+  "permitQuantity": "j:DriverLicensePermitQuantity",
+  "withdrawal": "j:DriverLicenseWithdrawal",
+  "isWithdrawalPending": "j:DriverLicenseWithdrawalPendingIndicator",
+  "cardIdentification": "j:DriverLicenseCardIdentification",
+  "restriction": "j:DriverLicenseRestriction",
+  "endorsement": "j:DriverLicenseEndorsement"
+}

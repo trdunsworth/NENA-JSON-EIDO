@@ -1,0 +1,13 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "action": "j:CustodyTransferActionText",
+  "location": "j:CustodyTransferLocation",
+  "item": "j:CustodyTransferItem",
+  "receivingEnforcementAgency": "j:CustodyTransferReceivingEnforcementAgency",
+  "receivingEnforcementFacility": "j:CustodyTransferReceivingEnforcementFacility",
+  "receivingEnforcementOfficial": "j:CustodyTransferReceivingEnforcementOfficial",
+  "releasingEnforcementAgency": "j:CustodyTransferReleasingEnforcementAgency",
+  "releasingEnforcementFacility": "j:CustodyTransferReleasingEnforcementFacility",
+  "releasingEnforcementOfficial": "j:CustodyTransferReleasingEnforcementOfficial",
+  "subject": "j:CustodyTransferSubject"
+}

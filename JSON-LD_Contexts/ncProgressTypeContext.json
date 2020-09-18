@@ -1,0 +1,7 @@
+{
+  "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+  "isCompliance": "nc:ProgressComplianceIndicator",
+  "compliance": "nc:ProgressComplianceText",
+  "paymentAmount": "nc:ProgressPaymentAmount",
+  "timeQuantity": "nc:ProgressTimeQuantityText"
+}

@@ -1,0 +1,7 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "childBirthOrderNumeric": "j:BirthChildBirthOrderNumeric",
+  "registration": "j:BirthRegistration",
+  "attendant": "j:BirthAttendant",
+  "isPersonHospital": "j:PersonHospitalBirthIndicator"
+}

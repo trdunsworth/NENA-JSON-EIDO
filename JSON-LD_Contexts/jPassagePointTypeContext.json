@@ -1,0 +1,15 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "securityStatusCode": "j:PassagePointSecurityStatusCode",
+  "securityStatus": "j:PassagePointSecurityStatusText",
+  "description": "j:PassagePointDescriptionText",
+  "securityCategoryCode": "j:PassagePointSecurityCategoryCode",
+  "securityCategory": "j:PassagePointSecurityCategoryText",
+  "methodCode": "j:PassagePointMethodCode",
+  "methodNDExCode": "j:PassagePointMethodNDExCode",
+  "methodOfAccessCode": "j:PassagePointMethodOfAccessCode",
+  "methodOfAccess": "j:PassagePointMethodOfAccessText",
+  "text": "j:PassagePointText",
+  "category": "j:PassagePointCategoryText",
+  "passagePoint": "j:PassagePoint"
+}

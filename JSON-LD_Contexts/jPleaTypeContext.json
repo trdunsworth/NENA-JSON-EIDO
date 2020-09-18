@@ -1,0 +1,9 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "description": "j:PleaDescriptionText",
+  "isGuilty": "j:PleaGuiltyIndicator",
+  "isNegotiated": "j:PleaNegotiatedIndicator",
+  "isNoContest": "j:PleaNoContestIndicator",
+  "recommendation": "j:PleaRecommendationText",
+  "categoryCode": "j:PleaCategoryCode"
+}

@@ -1,0 +1,9 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "classification": "j:DriverLicensePermitClassificationText",
+  "crashStatusCode": "j:CrashDriverLicensePermitStatusCode",
+  "statusCode": "j:DriverLicensePermitStatusCode",
+  "status": "j:DriverLicensePermitStatusText",
+  "restriction": "j:DriverLicensePermitRestriction",
+  "endorsement": "j:DriverLicensePermitEndorsement"
+}

@@ -1,0 +1,7 @@
+{
+  "hs": "http://release.niem.gov/niem/domains/humanServices/4.1/#",
+  "categoryCode": "hs:ReportingOrganizationCategoryCode",
+  "category": "hs:ReportingOrganizationCategoryText",
+  "classCode": "hs:ReportingOrganizationClassCode",
+  "class": "hs:ReportingOrganizationClassText"
+}

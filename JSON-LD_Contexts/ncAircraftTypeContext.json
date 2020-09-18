@@ -1,0 +1,15 @@
+{
+  "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+  "tailIdentification": "nc:AircraftTailIdentification",
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "makeCode": "j:AircraftMakeCode",
+  "modelCode": "j:AircraftModelCode",
+  "styleCode": "j:AircraftStyleCode",
+  "fuselageColorCode": "j:AircraftFuselageColorCode",
+  "fuselageColor": "nc:AircraftFuselageColorText",
+  "wingColorCode": "j:AircraftWingColorCode",
+  "wingColor": "nc:AircraftWingColorText",
+  "baseAirport": "nc:AircraftBaseAirport",
+  "mo": "http://release.niem.gov/niem/domains/militaryOperations/4.1/#",
+  "augmentation": "mo:AircraftAugmentation"
+}

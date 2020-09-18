@@ -1,0 +1,12 @@
+{
+  "hs": "http://release.niem.gov/niem/domains/humanServices/4.1/#",
+  "drugUseAgeMeasure": "hs:DrugUseAgeMeasure",
+  "drugUseFrequencyCode": "hs:DrugUseFrequencyCode",
+  "drugUseFrequencyDescription": "hs:DrugUseFrequencyDescriptionText",
+  "isDrugUse": "hs:DrugUseIndicator",
+  "preferredDrugName": "hs:PreferredDrugName",
+  "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+  "substance": "nc:Substance",
+  "substanceAbuseCurrentDescription": "hs:SubstanceAbuseCurrentDescriptionText",
+  "substanceAbusePastDescription": "hs:SubstanceAbusePastDescriptionText"
+}

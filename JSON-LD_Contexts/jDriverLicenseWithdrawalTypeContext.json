@@ -1,0 +1,22 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "driverLicense": "j:DriverLicense",
+  "actionCode": "j:DriverLicenseWithdrawalActionCode",
+  "action": "j:DriverLicenseWithdrawalActionText",
+  "basisCode": "j:DriverLicenseWithdrawalBasisCode",
+  "basis": "j:DriverLicenseWithdrawalBasisText",
+  "code": "j:DriverLicenseWithdrawalCode",
+  "text": "j:DriverLicenseWithdrawalText",
+  "dueProcessStatusCode": "j:DriverLicenseWithdrawalDueProcessStatusCode",
+  "dueProcessStatus": "j:DriverLicenseWithdrawalDueProcessStatusText",
+  "effectiveDate": "j:DriverLicenseWithdrawalEffectiveDate",
+  "eligibilityCode": "j:DriverLicenseWithdrawalEligibilityCode",
+  "eligibilityDate": "j:DriverLicenseWithdrawalEligibilityDate",
+  "extentCode": "j:DriverLicenseWithdrawalExtentCode",
+  "extent": "j:DriverLicenseWithdrawalExtentText",
+  "issuingAuthorityCode": "j:DriverLicenseWithdrawalIssuingAuthorityCode",
+  "issuingAuthority": "j:DriverLicenseWithdrawalIssuingAuthorityText",
+  "locatorReferenceIdentification": "j:DriverLicenseWithdrawalLocatorReferenceIdentification",
+  "reasonReferenceCode": "j:DriverLicenseWithdrawalReasonReferenceCodeText",
+  "reinstatementDate": "j:DriverLicenseWithdrawalReinstatementDate"
+}

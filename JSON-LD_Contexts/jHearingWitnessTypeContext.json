@@ -1,0 +1,12 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "isGranted": "j:HearingWitnessGrantedIndicator",
+  "question": "j:HearingWitnessQuestionText",
+  "answer": "j:HearingWitnessAnswerText",
+  "isRequestedInvestigative": "j:HearingWitnessRequestedInvestigativeIndicator",
+  "isWaived": "j:HearingWitnessWaivedIndicator",
+  "offender": "j:HearingWitnessOffenderText",
+  "category": "j:HearingWitnessCategoryText",
+  "notGrantedReason": "j:HearingWitnessNotGrantedReasonText",
+  "isContacted": "j:HearingWitnessContactedIndicator"
+}

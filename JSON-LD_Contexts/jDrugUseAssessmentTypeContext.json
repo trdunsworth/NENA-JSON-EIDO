@@ -1,0 +1,16 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "secondaryDrugOfChoice": "j:DrugUseAssessmentSecondaryDrugOfChoiceText",
+  "inPrisonDrugTreatmentProgramsAttendedQuantity": "j:DrugUseAssessmentInPrisonDrugTreatmentProgramsAttendedQuantity",
+  "firstUsedAgeQuantity": "j:DrugUseAssessmentFirstUsedAgeQuantity",
+  "drugTest": "j:DrugUseAssessmentDrugTest",
+  "isDrugDependency": "j:DrugUseAssessmentDrugDependencyIndicator",
+  "drugTreatmentProgramsAttendedQuantity": "j:DrugUseAssessmentDrugTreatmentProgramsAttendedQuantity",
+  "primaryDrugOfChoice": "j:DrugUseAssessmentPrimaryDrugOfChoiceText",
+  "isUsedNeedle": "j:DrugUseAssessmentUsedNeedleIndicator",
+  "yearsOfProblemUseQuantity": "j:DrugUseAssessmentYearsOfProblemUseQuantity",
+  "drugUseDrug": "j:DrugUseDrug",
+  "drugFreeDuration": "j:DrugUseAssessmentDrugFreeDuration",
+  "lastDrugTestDate": "j:DrugUseAssessmentLastDrugTestDate",
+  "relapseTrigger": "j:DrugUseAssessmentRelapseTriggerText"
+}
