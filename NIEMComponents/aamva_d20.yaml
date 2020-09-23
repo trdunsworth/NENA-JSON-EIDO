@@ -2,18 +2,20 @@ components:
   schemas:
     aamva_d20JurisdictionAuthorityCodeType:
       type: object
+      title: 'aamva_d20:JurisdictionAuthorityCodeType'
+      description: A data type for an authority with jurisdiction over a particular area.
+      required:
+        - '@context'
       properties:
-        simpleType:
-          $ref: >-
-            aamva_d20.yaml#/components/schemas/aamva_d20JurisdictionAuthorityCodeSimpleType
         '@context':
           type: string
-          description: aamva_d20JurisdictionAuthorityCodeTypeJSON-LD context
+          description: aamva_d20JurisdictionAuthorityCodeType JSON-LD context
           enum:
             - >-
               ../JSON-LD_Contexts/aamva_d20JurisdictionAuthorityCodeTypeContext.json
-      title: 'aamva_d20:JurisdictionAuthorityCodeType'
-      description: A data type for an authority with jurisdiction over a particular area.
+        simpleType:
+          $ref: >-
+            aamva_d20.yaml#/components/schemas/aamva_d20JurisdictionAuthorityCodeSimpleType
     aamva_d20JurisdictionAuthorityCodeSimpleType:
       type: string
       description: A data type for an authority with jurisdiction over a particular area.
@@ -133,17 +135,19 @@ components:
         - ZA
     aamva_d20TitleStatusCodeType:
       type: object
+      title: 'aamva_d20:TitleStatusCodeType'
+      description: A data type for statuses for a title.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: aamva_d20TitleStatusCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/aamva_d20TitleStatusCodeTypeContext.json
         simpleType:
           $ref: >-
             aamva_d20.yaml#/components/schemas/aamva_d20TitleStatusCodeSimpleType
-        '@context':
-          type: string
-          description: aamva_d20TitleStatusCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/aamva_d20TitleStatusCodeTypeContext.json
-      title: 'aamva_d20:TitleStatusCodeType'
-      description: A data type for statuses for a title.
     aamva_d20TitleStatusCodeSimpleType:
       type: string
       description: A data type for statuses for a title.
@@ -169,19 +173,21 @@ components:
         - '97'
     aamva_d20LienReleaseReasonCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            aamva_d20.yaml#/components/schemas/aamva_d20LienReleaseReasonCodeSimpleType
-        '@context':
-          type: string
-          description: aamva_d20LienReleaseReasonCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/aamva_d20LienReleaseReasonCodeTypeContext.json
       title: 'aamva_d20:LienReleaseReasonCodeType'
       description: >-
         A data type for reasons a legal encumbrance may be removed from a
         property.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: aamva_d20LienReleaseReasonCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/aamva_d20LienReleaseReasonCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            aamva_d20.yaml#/components/schemas/aamva_d20LienReleaseReasonCodeSimpleType
     aamva_d20LienReleaseReasonCodeSimpleType:
       type: string
       description: >-
@@ -195,18 +201,20 @@ components:
         - '05'
     aamva_d20VehicleTitleDocumentCategoryCodeType:
       type: object
+      title: 'aamva_d20:VehicleTitleDocumentCategoryCodeType'
+      description: A data type for kinds of an individual title document.
+      required:
+        - '@context'
       properties:
-        simpleType:
-          $ref: >-
-            aamva_d20.yaml#/components/schemas/aamva_d20VehicleTitleDocumentCategoryCodeSimpleType
         '@context':
           type: string
-          description: aamva_d20VehicleTitleDocumentCategoryCodeTypeJSON-LD context
+          description: aamva_d20VehicleTitleDocumentCategoryCodeType JSON-LD context
           enum:
             - >-
               ../JSON-LD_Contexts/aamva_d20VehicleTitleDocumentCategoryCodeTypeContext.json
-      title: 'aamva_d20:VehicleTitleDocumentCategoryCodeType'
-      description: A data type for kinds of an individual title document.
+        simpleType:
+          $ref: >-
+            aamva_d20.yaml#/components/schemas/aamva_d20VehicleTitleDocumentCategoryCodeSimpleType
     aamva_d20VehicleTitleDocumentCategoryCodeSimpleType:
       type: string
       description: A data type for kinds of an individual title document.
@@ -217,20 +225,22 @@ components:
         - Salvage
     aamva_d20VehicleOdometerReadingUnitCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            aamva_d20.yaml#/components/schemas/aamva_d20VehicleOdometerReadingUnitCodeSimpleType
-        '@context':
-          type: string
-          description: aamva_d20VehicleOdometerReadingUnitCodeTypeJSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/aamva_d20VehicleOdometerReadingUnitCodeTypeContext.json
       title: 'aamva_d20:VehicleOdometerReadingUnitCodeType'
       description: >-
         A data type for the units of measurement associated with an odometer
         reading.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: aamva_d20VehicleOdometerReadingUnitCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/aamva_d20VehicleOdometerReadingUnitCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            aamva_d20.yaml#/components/schemas/aamva_d20VehicleOdometerReadingUnitCodeSimpleType
     aamva_d20VehicleOdometerReadingUnitCodeSimpleType:
       type: string
       description: >-
@@ -241,16 +251,18 @@ components:
         - M
     aamva_d20VehicleUseCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: aamva_d20.yaml#/components/schemas/aamva_d20VehicleUseCodeSimpleType
-        '@context':
-          type: string
-          description: aamva_d20VehicleUseCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/aamva_d20VehicleUseCodeTypeContext.json
       title: 'aamva_d20:VehicleUseCodeType'
       description: A data type for ways in which a vehicle is used.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: aamva_d20VehicleUseCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/aamva_d20VehicleUseCodeTypeContext.json
+        simpleType:
+          $ref: aamva_d20.yaml#/components/schemas/aamva_d20VehicleUseCodeSimpleType
     aamva_d20VehicleUseCodeSimpleType:
       type: string
       description: A data type for ways in which a vehicle is used.
@@ -273,17 +285,19 @@ components:
         - '99'
     aamva_d20DrivingOffenseCodeType:
       type: object
+      title: 'aamva_d20:DrivingOffenseCodeType'
+      description: A data type for ACD codes for a driving offense.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: aamva_d20DrivingOffenseCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/aamva_d20DrivingOffenseCodeTypeContext.json
         simpleType:
           $ref: >-
             aamva_d20.yaml#/components/schemas/aamva_d20DrivingOffenseCodeSimpleType
-        '@context':
-          type: string
-          description: aamva_d20DrivingOffenseCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/aamva_d20DrivingOffenseCodeTypeContext.json
-      title: 'aamva_d20:DrivingOffenseCodeType'
-      description: A data type for ACD codes for a driving offense.
     aamva_d20DrivingOffenseCodeSimpleType:
       type: string
       description: A data type for ACD codes for a driving offense.
@@ -545,17 +559,19 @@ components:
         - W81
     aamva_d20CourtCategoryCodeType:
       type: object
+      title: 'aamva_d20:CourtCategoryCodeType'
+      description: A data type for kinds of courts.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: aamva_d20CourtCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/aamva_d20CourtCategoryCodeTypeContext.json
         simpleType:
           $ref: >-
             aamva_d20.yaml#/components/schemas/aamva_d20CourtCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: aamva_d20CourtCategoryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/aamva_d20CourtCategoryCodeTypeContext.json
-      title: 'aamva_d20:CourtCategoryCodeType'
-      description: A data type for kinds of courts.
     aamva_d20CourtCategoryCodeSimpleType:
       type: string
       description: A data type for kinds of courts.
@@ -597,17 +613,19 @@ components:
         - USS
     aamva_d20AccidentSeverityCodeType:
       type: object
+      title: 'aamva_d20:AccidentSeverityCodeType'
+      description: A data type for severity levels of an accident.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: aamva_d20AccidentSeverityCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/aamva_d20AccidentSeverityCodeTypeContext.json
         simpleType:
           $ref: >-
             aamva_d20.yaml#/components/schemas/aamva_d20AccidentSeverityCodeSimpleType
-        '@context':
-          type: string
-          description: aamva_d20AccidentSeverityCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/aamva_d20AccidentSeverityCodeTypeContext.json
-      title: 'aamva_d20:AccidentSeverityCodeType'
-      description: A data type for severity levels of an accident.
     aamva_d20AccidentSeverityCodeSimpleType:
       type: string
       description: A data type for severity levels of an accident.
@@ -620,17 +638,19 @@ components:
         - '9'
     aamva_d20PersonOrganDonorCodeType:
       type: object
+      title: 'aamva_d20:PersonOrganDonorCodeType'
+      description: A data type for organs a person could be willing to donate upon death.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: aamva_d20PersonOrganDonorCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/aamva_d20PersonOrganDonorCodeTypeContext.json
         simpleType:
           $ref: >-
             aamva_d20.yaml#/components/schemas/aamva_d20PersonOrganDonorCodeSimpleType
-        '@context':
-          type: string
-          description: aamva_d20PersonOrganDonorCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/aamva_d20PersonOrganDonorCodeTypeContext.json
-      title: 'aamva_d20:PersonOrganDonorCodeType'
-      description: A data type for organs a person could be willing to donate upon death.
     aamva_d20PersonOrganDonorCodeSimpleType:
       type: string
       description: A data type for organs a person could be willing to donate upon death.
@@ -657,18 +677,20 @@ components:
         - Z
     aamva_d20CountryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: aamva_d20.yaml#/components/schemas/aamva_d20CountryCodeSimpleType
-        '@context':
-          type: string
-          description: aamva_d20CountryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/aamva_d20CountryCodeTypeContext.json
       title: 'aamva_d20:CountryCodeType'
       description: >-
         A data type for country codes specified by DHS as part of the DHS
         Western Hemisphere Travel Initiative.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: aamva_d20CountryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/aamva_d20CountryCodeTypeContext.json
+        simpleType:
+          $ref: aamva_d20.yaml#/components/schemas/aamva_d20CountryCodeSimpleType
     aamva_d20CountryCodeSimpleType:
       type: string
       description: >-
@@ -679,18 +701,20 @@ components:
         - USA
     aamva_d20InsuranceCoverageCategoryCodeType:
       type: object
+      title: 'aamva_d20:InsuranceCoverageCategoryCodeType'
+      description: A data type for categories of coverage provided by an insurance policy.
+      required:
+        - '@context'
       properties:
-        simpleType:
-          $ref: >-
-            aamva_d20.yaml#/components/schemas/aamva_d20InsuranceCoverageCategoryCodeSimpleType
         '@context':
           type: string
-          description: aamva_d20InsuranceCoverageCategoryCodeTypeJSON-LD context
+          description: aamva_d20InsuranceCoverageCategoryCodeType JSON-LD context
           enum:
             - >-
               ../JSON-LD_Contexts/aamva_d20InsuranceCoverageCategoryCodeTypeContext.json
-      title: 'aamva_d20:InsuranceCoverageCategoryCodeType'
-      description: A data type for categories of coverage provided by an insurance policy.
+        simpleType:
+          $ref: >-
+            aamva_d20.yaml#/components/schemas/aamva_d20InsuranceCoverageCategoryCodeSimpleType
     aamva_d20InsuranceCoverageCategoryCodeSimpleType:
       type: string
       description: A data type for categories of coverage provided by an insurance policy.
@@ -703,18 +727,20 @@ components:
         - '06'
     aamva_d20VehicleTransmissionCategoryCodeType:
       type: object
+      title: 'aamva_d20:VehicleTransmissionCategoryCodeType'
+      description: A data type for kinds of transmission units in a vehicle.
+      required:
+        - '@context'
       properties:
-        simpleType:
-          $ref: >-
-            aamva_d20.yaml#/components/schemas/aamva_d20VehicleTransmissionCategoryCodeSimpleType
         '@context':
           type: string
-          description: aamva_d20VehicleTransmissionCategoryCodeTypeJSON-LD context
+          description: aamva_d20VehicleTransmissionCategoryCodeType JSON-LD context
           enum:
             - >-
               ../JSON-LD_Contexts/aamva_d20VehicleTransmissionCategoryCodeTypeContext.json
-      title: 'aamva_d20:VehicleTransmissionCategoryCodeType'
-      description: A data type for kinds of transmission units in a vehicle.
+        simpleType:
+          $ref: >-
+            aamva_d20.yaml#/components/schemas/aamva_d20VehicleTransmissionCategoryCodeSimpleType
     aamva_d20VehicleTransmissionCategoryCodeSimpleType:
       type: string
       description: A data type for kinds of transmission units in a vehicle.
@@ -723,17 +749,19 @@ components:
         - M
     aamva_d20SmogCertificateCodeType:
       type: object
+      title: 'aamva_d20:SmogCertificateCodeType'
+      description: A data type for whether or not a vehicle has a current smog certificate.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: aamva_d20SmogCertificateCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/aamva_d20SmogCertificateCodeTypeContext.json
         simpleType:
           $ref: >-
             aamva_d20.yaml#/components/schemas/aamva_d20SmogCertificateCodeSimpleType
-        '@context':
-          type: string
-          description: aamva_d20SmogCertificateCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/aamva_d20SmogCertificateCodeTypeContext.json
-      title: 'aamva_d20:SmogCertificateCodeType'
-      description: A data type for whether or not a vehicle has a current smog certificate.
     aamva_d20SmogCertificateCodeSimpleType:
       type: string
       description: A data type for whether or not a vehicle has a current smog certificate.
@@ -744,18 +772,20 @@ components:
         - 'Y'
     aamva_d20BrandDamagePercentageCategoryCodeType:
       type: object
+      title: 'aamva_d20:BrandDamagePercentageCategoryCodeType'
+      description: A data type for the percentage of damage in a brand on a vehicle.
+      required:
+        - '@context'
       properties:
-        simpleType:
-          $ref: >-
-            aamva_d20.yaml#/components/schemas/aamva_d20BrandDamagePercentageCategoryCodeSimpleType
         '@context':
           type: string
-          description: aamva_d20BrandDamagePercentageCategoryCodeTypeJSON-LD context
+          description: aamva_d20BrandDamagePercentageCategoryCodeType JSON-LD context
           enum:
             - >-
               ../JSON-LD_Contexts/aamva_d20BrandDamagePercentageCategoryCodeTypeContext.json
-      title: 'aamva_d20:BrandDamagePercentageCategoryCodeType'
-      description: A data type for the percentage of damage in a brand on a vehicle.
+        simpleType:
+          $ref: >-
+            aamva_d20.yaml#/components/schemas/aamva_d20BrandDamagePercentageCategoryCodeSimpleType
     aamva_d20BrandDamagePercentageCategoryCodeSimpleType:
       type: string
       description: A data type for the percentage of damage in a brand on a vehicle.
@@ -764,17 +794,19 @@ components:
         - T
     aamva_d20BranderCategoryCodeType:
       type: object
+      title: 'aamva_d20:BranderCategoryCodeType'
+      description: A data type for kinds of branders.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: aamva_d20BranderCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/aamva_d20BranderCategoryCodeTypeContext.json
         simpleType:
           $ref: >-
             aamva_d20.yaml#/components/schemas/aamva_d20BranderCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: aamva_d20BranderCategoryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/aamva_d20BranderCategoryCodeTypeContext.json
-      title: 'aamva_d20:BranderCategoryCodeType'
-      description: A data type for kinds of branders.
     aamva_d20BranderCategoryCodeSimpleType:
       type: string
       description: A data type for kinds of branders.
@@ -785,16 +817,18 @@ components:
         - V
     aamva_d20BrandCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: aamva_d20.yaml#/components/schemas/aamva_d20BrandCodeSimpleType
-        '@context':
-          type: string
-          description: aamva_d20BrandCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/aamva_d20BrandCodeTypeContext.json
       title: 'aamva_d20:BrandCodeType'
       description: A data type for a brand applied to a vehicle title or odometer.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: aamva_d20BrandCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/aamva_d20BrandCodeTypeContext.json
+        simpleType:
+          $ref: aamva_d20.yaml#/components/schemas/aamva_d20BrandCodeSimpleType
     aamva_d20BrandCodeSimpleType:
       type: string
       description: A data type for a brand applied to a vehicle title or odometer.
@@ -858,18 +892,20 @@ components:
         - '78'
     aamva_d20BrandVehicleDispositionCodeType:
       type: object
+      title: 'aamva_d20:BrandVehicleDispositionCodeType'
+      description: A data type for vehicle dispositions.
+      required:
+        - '@context'
       properties:
-        simpleType:
-          $ref: >-
-            aamva_d20.yaml#/components/schemas/aamva_d20BrandVehicleDispositionCodeSimpleType
         '@context':
           type: string
-          description: aamva_d20BrandVehicleDispositionCodeTypeJSON-LD context
+          description: aamva_d20BrandVehicleDispositionCodeType JSON-LD context
           enum:
             - >-
               ../JSON-LD_Contexts/aamva_d20BrandVehicleDispositionCodeTypeContext.json
-      title: 'aamva_d20:BrandVehicleDispositionCodeType'
-      description: A data type for vehicle dispositions.
+        simpleType:
+          $ref: >-
+            aamva_d20.yaml#/components/schemas/aamva_d20BrandVehicleDispositionCodeSimpleType
     aamva_d20BrandVehicleDispositionCodeSimpleType:
       type: string
       description: A data type for vehicle dispositions.
@@ -881,22 +917,24 @@ components:
         - 09
     aamva_d20DriverLicenseMedicalCertificationRestrictionCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            aamva_d20.yaml#/components/schemas/aamva_d20DriverLicenseMedicalCertificationRestrictionCodeSimpleType
-        '@context':
-          type: string
-          description: >-
-            aamva_d20DriverLicenseMedicalCertificationRestrictionCodeTypeJSON-LD
-            context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/aamva_d20DriverLicenseMedicalCertificationRestrictionCodeTypeContext.json
       title: 'aamva_d20:DriverLicenseMedicalCertificationRestrictionCodeType'
       description: >-
         A data type for a restriction imposed on a commercial driver by a
         medical examiner.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: >-
+            aamva_d20DriverLicenseMedicalCertificationRestrictionCodeType
+            JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/aamva_d20DriverLicenseMedicalCertificationRestrictionCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            aamva_d20.yaml#/components/schemas/aamva_d20DriverLicenseMedicalCertificationRestrictionCodeSimpleType
     aamva_d20DriverLicenseMedicalCertificationRestrictionCodeSimpleType:
       type: string
       description: >-
@@ -911,22 +949,24 @@ components:
         - '6'
     aamva_d20DriverLicenseMedicalCertificationStatusCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            aamva_d20.yaml#/components/schemas/aamva_d20DriverLicenseMedicalCertificationStatusCodeSimpleType
-        '@context':
-          type: string
-          description: >-
-            aamva_d20DriverLicenseMedicalCertificationStatusCodeTypeJSON-LD
-            context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/aamva_d20DriverLicenseMedicalCertificationStatusCodeTypeContext.json
       title: 'aamva_d20:DriverLicenseMedicalCertificationStatusCodeType'
       description: >-
         A data type for an indication of the status of a driver's medical
         certification.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: >-
+            aamva_d20DriverLicenseMedicalCertificationStatusCodeType JSON-LD
+            context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/aamva_d20DriverLicenseMedicalCertificationStatusCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            aamva_d20.yaml#/components/schemas/aamva_d20DriverLicenseMedicalCertificationStatusCodeSimpleType
     aamva_d20DriverLicenseMedicalCertificationStatusCodeSimpleType:
       type: string
       description: >-
@@ -937,22 +977,24 @@ components:
         - 'N'
     aamva_d20DriverLicenseMedicalSelfCertificationCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            aamva_d20.yaml#/components/schemas/aamva_d20DriverLicenseMedicalSelfCertificationCodeSimpleType
-        '@context':
-          type: string
-          description: >-
-            aamva_d20DriverLicenseMedicalSelfCertificationCodeTypeJSON-LD
-            context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/aamva_d20DriverLicenseMedicalSelfCertificationCodeTypeContext.json
       title: 'aamva_d20:DriverLicenseMedicalSelfCertificationCodeType'
       description: >-
         A data type for a driver's self certification of the commercial driver's
         status regarding 49 CFR 390.3 and the type of driving.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: >-
+            aamva_d20DriverLicenseMedicalSelfCertificationCodeType JSON-LD
+            context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/aamva_d20DriverLicenseMedicalSelfCertificationCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            aamva_d20.yaml#/components/schemas/aamva_d20DriverLicenseMedicalSelfCertificationCodeSimpleType
     aamva_d20DriverLicenseMedicalSelfCertificationCodeSimpleType:
       type: string
       description: >-
@@ -965,20 +1007,22 @@ components:
         - NI
     aamva_d20DriverLicenseClassCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            aamva_d20.yaml#/components/schemas/aamva_d20DriverLicenseClassCodeSimpleType
-        '@context':
-          type: string
-          description: aamva_d20DriverLicenseClassCodeTypeJSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/aamva_d20DriverLicenseClassCodeTypeContext.json
       title: 'aamva_d20:DriverLicenseClassCodeType'
       description: >-
         A data type for kinds of vehicles that a licensed driver may be approved
         to operate.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: aamva_d20DriverLicenseClassCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/aamva_d20DriverLicenseClassCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            aamva_d20.yaml#/components/schemas/aamva_d20DriverLicenseClassCodeSimpleType
     aamva_d20DriverLicenseClassCodeSimpleType:
       type: string
       description: >-
@@ -991,17 +1035,19 @@ components:
         - M
     aamva_d20DrivingStatusCodeType:
       type: object
+      title: 'aamva_d20:DrivingStatusCodeType'
+      description: A data type for statuses of a drivers privilege type.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: aamva_d20DrivingStatusCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/aamva_d20DrivingStatusCodeTypeContext.json
         simpleType:
           $ref: >-
             aamva_d20.yaml#/components/schemas/aamva_d20DrivingStatusCodeSimpleType
-        '@context':
-          type: string
-          description: aamva_d20DrivingStatusCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/aamva_d20DrivingStatusCodeTypeContext.json
-      title: 'aamva_d20:DrivingStatusCodeType'
-      description: A data type for statuses of a drivers privilege type.
     aamva_d20DrivingStatusCodeSimpleType:
       type: string
       description: A data type for statuses of a drivers privilege type.
@@ -1013,18 +1059,20 @@ components:
         - RPD
     aamva_d20DrivingPermitRestrictionCodeType:
       type: object
+      title: 'aamva_d20:DrivingPermitRestrictionCodeType'
+      description: A data type for categories of driving restrictions for permits.
+      required:
+        - '@context'
       properties:
-        simpleType:
-          $ref: >-
-            aamva_d20.yaml#/components/schemas/aamva_d20DrivingPermitRestrictionCodeSimpleType
         '@context':
           type: string
-          description: aamva_d20DrivingPermitRestrictionCodeTypeJSON-LD context
+          description: aamva_d20DrivingPermitRestrictionCodeType JSON-LD context
           enum:
             - >-
               ../JSON-LD_Contexts/aamva_d20DrivingPermitRestrictionCodeTypeContext.json
-      title: 'aamva_d20:DrivingPermitRestrictionCodeType'
-      description: A data type for categories of driving restrictions for permits.
+        simpleType:
+          $ref: >-
+            aamva_d20.yaml#/components/schemas/aamva_d20DrivingPermitRestrictionCodeSimpleType
     aamva_d20DrivingPermitRestrictionCodeSimpleType:
       type: string
       description: A data type for categories of driving restrictions for permits.
@@ -1049,20 +1097,22 @@ components:
         - X
     aamva_d20DriverLicensePermitEndorsementCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            aamva_d20.yaml#/components/schemas/aamva_d20DriverLicensePermitEndorsementCodeSimpleType
-        '@context':
-          type: string
-          description: aamva_d20DriverLicensePermitEndorsementCodeTypeJSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/aamva_d20DriverLicensePermitEndorsementCodeTypeContext.json
       title: 'aamva_d20:DriverLicensePermitEndorsementCodeType'
       description: >-
         A data type for endorsements on a driver license permit which authorizes
         the operation of specified kinds of vehicles carrying specified loads.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: aamva_d20DriverLicensePermitEndorsementCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/aamva_d20DriverLicensePermitEndorsementCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            aamva_d20.yaml#/components/schemas/aamva_d20DriverLicensePermitEndorsementCodeSimpleType
     aamva_d20DriverLicensePermitEndorsementCodeSimpleType:
       type: string
       description: >-
@@ -1077,18 +1127,20 @@ components:
         - T
     aamva_d20DriverLicenseWithdrawalActionCodeType:
       type: object
+      title: 'aamva_d20:DriverLicenseWithdrawalActionCodeType'
+      description: A data type for kinds of driver license withdrawal actions.
+      required:
+        - '@context'
       properties:
-        simpleType:
-          $ref: >-
-            aamva_d20.yaml#/components/schemas/aamva_d20DriverLicenseWithdrawalActionCodeSimpleType
         '@context':
           type: string
-          description: aamva_d20DriverLicenseWithdrawalActionCodeTypeJSON-LD context
+          description: aamva_d20DriverLicenseWithdrawalActionCodeType JSON-LD context
           enum:
             - >-
               ../JSON-LD_Contexts/aamva_d20DriverLicenseWithdrawalActionCodeTypeContext.json
-      title: 'aamva_d20:DriverLicenseWithdrawalActionCodeType'
-      description: A data type for kinds of driver license withdrawal actions.
+        simpleType:
+          $ref: >-
+            aamva_d20.yaml#/components/schemas/aamva_d20DriverLicenseWithdrawalActionCodeSimpleType
     aamva_d20DriverLicenseWithdrawalActionCodeSimpleType:
       type: string
       description: A data type for kinds of driver license withdrawal actions.
@@ -1102,18 +1154,20 @@ components:
         - '7'
     aamva_d20DriverLicenseWithdrawalBasisCodeType:
       type: object
+      title: 'aamva_d20:DriverLicenseWithdrawalBasisCodeType'
+      description: A data type for bases for withdrawal action for a driver.
+      required:
+        - '@context'
       properties:
-        simpleType:
-          $ref: >-
-            aamva_d20.yaml#/components/schemas/aamva_d20DriverLicenseWithdrawalBasisCodeSimpleType
         '@context':
           type: string
-          description: aamva_d20DriverLicenseWithdrawalBasisCodeTypeJSON-LD context
+          description: aamva_d20DriverLicenseWithdrawalBasisCodeType JSON-LD context
           enum:
             - >-
               ../JSON-LD_Contexts/aamva_d20DriverLicenseWithdrawalBasisCodeTypeContext.json
-      title: 'aamva_d20:DriverLicenseWithdrawalBasisCodeType'
-      description: A data type for bases for withdrawal action for a driver.
+        simpleType:
+          $ref: >-
+            aamva_d20.yaml#/components/schemas/aamva_d20DriverLicenseWithdrawalBasisCodeSimpleType
     aamva_d20DriverLicenseWithdrawalBasisCodeSimpleType:
       type: string
       description: A data type for bases for withdrawal action for a driver.
@@ -1130,20 +1184,22 @@ components:
         - '9'
     aamva_d20DriverLicenseWithdrawalDueProcessStatusCodeType:
       type: object
+      title: 'aamva_d20:DriverLicenseWithdrawalDueProcessStatusCodeType'
+      description: A data type for due process statuses of a withdrawal action.
+      required:
+        - '@context'
       properties:
-        simpleType:
-          $ref: >-
-            aamva_d20.yaml#/components/schemas/aamva_d20DriverLicenseWithdrawalDueProcessStatusCodeSimpleType
         '@context':
           type: string
           description: >-
-            aamva_d20DriverLicenseWithdrawalDueProcessStatusCodeTypeJSON-LD
+            aamva_d20DriverLicenseWithdrawalDueProcessStatusCodeType JSON-LD
             context
           enum:
             - >-
               ../JSON-LD_Contexts/aamva_d20DriverLicenseWithdrawalDueProcessStatusCodeTypeContext.json
-      title: 'aamva_d20:DriverLicenseWithdrawalDueProcessStatusCodeType'
-      description: A data type for due process statuses of a withdrawal action.
+        simpleType:
+          $ref: >-
+            aamva_d20.yaml#/components/schemas/aamva_d20DriverLicenseWithdrawalDueProcessStatusCodeSimpleType
     aamva_d20DriverLicenseWithdrawalDueProcessStatusCodeSimpleType:
       type: string
       description: A data type for due process statuses of a withdrawal action.
@@ -1156,20 +1212,22 @@ components:
         - '5'
     aamva_d20DriverLicenseWithdrawalEligibilityCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            aamva_d20.yaml#/components/schemas/aamva_d20DriverLicenseWithdrawalEligibilityCodeSimpleType
-        '@context':
-          type: string
-          description: aamva_d20DriverLicenseWithdrawalEligibilityCodeTypeJSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/aamva_d20DriverLicenseWithdrawalEligibilityCodeTypeContext.json
       title: 'aamva_d20:DriverLicenseWithdrawalEligibilityCodeType'
       description: >-
         A data type for when a driver may be eligible to apply for reinstatement
         of driving privileges that have been withdrawn.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: aamva_d20DriverLicenseWithdrawalEligibilityCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/aamva_d20DriverLicenseWithdrawalEligibilityCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            aamva_d20.yaml#/components/schemas/aamva_d20DriverLicenseWithdrawalEligibilityCodeSimpleType
     aamva_d20DriverLicenseWithdrawalEligibilityCodeSimpleType:
       type: string
       description: >-
@@ -1181,18 +1239,20 @@ components:
         - Permanent
     aamva_d20DriverLicenseWithdrawalExtentCodeType:
       type: object
+      title: 'aamva_d20:DriverLicenseWithdrawalExtentCodeType'
+      description: A data type for extents of withdrawals.
+      required:
+        - '@context'
       properties:
-        simpleType:
-          $ref: >-
-            aamva_d20.yaml#/components/schemas/aamva_d20DriverLicenseWithdrawalExtentCodeSimpleType
         '@context':
           type: string
-          description: aamva_d20DriverLicenseWithdrawalExtentCodeTypeJSON-LD context
+          description: aamva_d20DriverLicenseWithdrawalExtentCodeType JSON-LD context
           enum:
             - >-
               ../JSON-LD_Contexts/aamva_d20DriverLicenseWithdrawalExtentCodeTypeContext.json
-      title: 'aamva_d20:DriverLicenseWithdrawalExtentCodeType'
-      description: A data type for extents of withdrawals.
+        simpleType:
+          $ref: >-
+            aamva_d20.yaml#/components/schemas/aamva_d20DriverLicenseWithdrawalExtentCodeSimpleType
     aamva_d20DriverLicenseWithdrawalExtentCodeSimpleType:
       type: string
       description: A data type for extents of withdrawals.
@@ -1203,18 +1263,20 @@ components:
         - '4'
     aamva_d20DrivingRestrictionCodeType:
       type: object
+      title: 'aamva_d20:DrivingRestrictionCodeType'
+      description: A data type for categories of driving restrictions.
+      required:
+        - '@context'
       properties:
-        simpleType:
-          $ref: >-
-            aamva_d20.yaml#/components/schemas/aamva_d20DrivingRestrictionCodeSimpleType
         '@context':
           type: string
-          description: aamva_d20DrivingRestrictionCodeTypeJSON-LD context
+          description: aamva_d20DrivingRestrictionCodeType JSON-LD context
           enum:
             - >-
               ../JSON-LD_Contexts/aamva_d20DrivingRestrictionCodeTypeContext.json
-      title: 'aamva_d20:DrivingRestrictionCodeType'
-      description: A data type for categories of driving restrictions.
+        simpleType:
+          $ref: >-
+            aamva_d20.yaml#/components/schemas/aamva_d20DrivingRestrictionCodeSimpleType
     aamva_d20DrivingRestrictionCodeSimpleType:
       type: string
       description: A data type for categories of driving restrictions.
@@ -1240,20 +1302,22 @@ components:
         - Z
     aamva_d20DrivingEndorsementCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            aamva_d20.yaml#/components/schemas/aamva_d20DrivingEndorsementCodeSimpleType
-        '@context':
-          type: string
-          description: aamva_d20DrivingEndorsementCodeTypeJSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/aamva_d20DrivingEndorsementCodeTypeContext.json
       title: 'aamva_d20:DrivingEndorsementCodeType'
       description: >-
         A data type for endorsements on a driver license which authorizes the
         operation of specified kinds of vehicles carrying specified loads.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: aamva_d20DrivingEndorsementCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/aamva_d20DrivingEndorsementCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            aamva_d20.yaml#/components/schemas/aamva_d20DrivingEndorsementCodeSimpleType
     aamva_d20DrivingEndorsementCodeSimpleType:
       type: string
       description: >-
@@ -1270,18 +1334,20 @@ components:
         - X
     aamva_d20CMVCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: aamva_d20.yaml#/components/schemas/aamva_d20CMVCodeSimpleType
-        '@context':
-          type: string
-          description: aamva_d20CMVCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/aamva_d20CMVCodeTypeContext.json
       title: 'aamva_d20:CMVCodeType'
       description: >-
         A data type for whether a person was operating a commercial motor
         vehicle in an incident.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: aamva_d20CMVCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/aamva_d20CMVCodeTypeContext.json
+        simpleType:
+          $ref: aamva_d20.yaml#/components/schemas/aamva_d20CMVCodeSimpleType
     aamva_d20CMVCodeSimpleType:
       type: string
       description: >-
@@ -1293,18 +1359,20 @@ components:
         - '9'
     aamva_d20HazMatCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: aamva_d20.yaml#/components/schemas/aamva_d20HazMatCodeSimpleType
-        '@context':
-          type: string
-          description: aamva_d20HazMatCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/aamva_d20HazMatCodeTypeContext.json
       title: 'aamva_d20:HazMatCodeType'
       description: >-
         A data type for whether a driver was operating a vehicle carrying
         hazardous materials.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: aamva_d20HazMatCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/aamva_d20HazMatCodeTypeContext.json
+        simpleType:
+          $ref: aamva_d20.yaml#/components/schemas/aamva_d20HazMatCodeSimpleType
     aamva_d20HazMatCodeSimpleType:
       type: string
       description: >-

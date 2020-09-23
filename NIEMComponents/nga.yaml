@@ -2,19 +2,21 @@ components:
   schemas:
     ngaDirectionDatumCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: nga.yaml#/components/schemas/ngaDirectionDatumCodeSimpleType
-        '@context':
-          type: string
-          description: ngaDirectionDatumCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ngaDirectionDatumCodeTypeContext.json
       title: 'nga:DirectionDatumCodeType'
       description: >-
         A data type for a reference direction as determined by the means by
         which it is established (e.g., by the direction of a geographic or
         magnetic pole of the Earth).
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ngaDirectionDatumCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ngaDirectionDatumCodeTypeContext.json
+        simpleType:
+          $ref: nga.yaml#/components/schemas/ngaDirectionDatumCodeSimpleType
     ngaDirectionDatumCodeSimpleType:
       type: string
       description: >-
@@ -28,16 +30,18 @@ components:
         - Relative
     ngaVerticalDatumCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: nga.yaml#/components/schemas/ngaVerticalDatumCodeSimpleType
-        '@context':
-          type: string
-          description: ngaVerticalDatumCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ngaVerticalDatumCodeTypeContext.json
       title: 'nga:VerticalDatumCodeType'
       description: A data type for vertical datum codes.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ngaVerticalDatumCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ngaVerticalDatumCodeTypeContext.json
+        simpleType:
+          $ref: nga.yaml#/components/schemas/ngaVerticalDatumCodeSimpleType
     ngaVerticalDatumCodeSimpleType:
       type: string
       description: A data type for vertical datum codes.

@@ -2,18 +2,20 @@ components:
   schemas:
     hl7ReligionCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: hl7.yaml#/components/schemas/hl7ReligionCodeSimpleType
-        '@context':
-          type: string
-          description: hl7ReligionCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/hl7ReligionCodeTypeContext.json
       title: 'hl7:ReligionCodeType'
       description: >-
         A data type for a religion to which a person can subscribe or believe; a
         categorization of spiritual beliefs.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: hl7ReligionCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/hl7ReligionCodeTypeContext.json
+        simpleType:
+          $ref: hl7.yaml#/components/schemas/hl7ReligionCodeSimpleType
     hl7ReligionCodeSimpleType:
       type: string
       description: >-

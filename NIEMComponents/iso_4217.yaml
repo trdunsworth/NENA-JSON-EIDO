@@ -2,16 +2,18 @@ components:
   schemas:
     iso_4217CurrencyCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: iso_4217.yaml#/components/schemas/iso_4217CurrencyCodeSimpleType
-        '@context':
-          type: string
-          description: iso_4217CurrencyCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/iso_4217CurrencyCodeTypeContext.json
       title: 'iso_4217:CurrencyCodeType'
       description: A data type for a currency that qualifies a monetary amount.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: iso_4217CurrencyCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/iso_4217CurrencyCodeTypeContext.json
+        simpleType:
+          $ref: iso_4217.yaml#/components/schemas/iso_4217CurrencyCodeSimpleType
     iso_4217CurrencyCodeSimpleType:
       type: string
       description: A data type for a currency that qualifies a monetary amount.

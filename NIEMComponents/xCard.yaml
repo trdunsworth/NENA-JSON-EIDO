@@ -2,16 +2,18 @@ components:
   schemas:
     xCardTelephoneCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: xCard.yaml#/components/schemas/xCardTelephoneCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: xCardTelephoneCategoryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/xCardTelephoneCategoryCodeTypeContext.json
       title: 'xCard:TelephoneCategoryCodeType'
       description: A data type for a type of telephone.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: xCardTelephoneCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/xCardTelephoneCategoryCodeTypeContext.json
+        simpleType:
+          $ref: xCard.yaml#/components/schemas/xCardTelephoneCategoryCodeSimpleType
     xCardTelephoneCategoryCodeSimpleType:
       type: string
       description: A data type for a type of telephone.

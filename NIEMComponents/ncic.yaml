@@ -2,16 +2,18 @@ components:
   schemas:
     ncicCountryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicCountryCodeSimpleType
-        '@context':
-          type: string
-          description: ncicCountryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicCountryCodeTypeContext.json
       title: 'ncic:CountryCodeType'
       description: 'A data type for 2.2: Country Codes'
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicCountryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicCountryCodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicCountryCodeSimpleType
     ncicCountryCodeSimpleType:
       type: string
       description: 'A data type for 2.2: Country Codes'
@@ -285,16 +287,18 @@ components:
         - ZR
     ncicMNUCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicMNUCodeSimpleType
-        '@context':
-          type: string
-          description: ncicMNUCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicMNUCodeTypeContext.json
       title: 'ncic:MNUCodeType'
       description: A data type for 8 - Miscellaneous Identifying Number (MNU) Field Codes
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicMNUCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicMNUCodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicMNUCodeSimpleType
     ncicMNUCodeSimpleType:
       type: string
       description: A data type for 8 - Miscellaneous Identifying Number (MNU) Field Codes
@@ -319,16 +323,18 @@ components:
         - VA
     ncicIMTCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicIMTCodeSimpleType
-        '@context':
-          type: string
-          description: ncicIMTCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicIMTCodeTypeContext.json
       title: 'ncic:IMTCodeType'
       description: A data type for 5 - Image Type (IMT) Field Codes
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicIMTCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicIMTCodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicIMTCodeSimpleType
     ncicIMTCodeSimpleType:
       type: string
       description: A data type for 5 - Image Type (IMT) Field Codes
@@ -340,16 +346,18 @@ components:
         - V
     ncicVSTCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicVSTCodeSimpleType
-        '@context':
-          type: string
-          description: ncicVSTCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicVSTCodeTypeContext.json
       title: 'ncic:VSTCodeType'
       description: A data type for 4 - Vehicle Style (VST) Field Codes
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicVSTCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicVSTCodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicVSTCodeSimpleType
     ncicVSTCodeSimpleType:
       type: string
       description: A data type for 4 - Vehicle Style (VST) Field Codes
@@ -500,16 +508,18 @@ components:
         - WS
     ncicVCOCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicVCOCodeSimpleType
-        '@context':
-          type: string
-          description: ncicVCOCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicVCOCodeTypeContext.json
       title: 'ncic:VCOCodeType'
       description: A data type for 5 - Vehicle Color (VCO) Field Codes
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicVCOCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicVCOCodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicVCOCodeSimpleType
     ncicVCOCodeSimpleType:
       type: string
       description: A data type for 5 - Vehicle Color (VCO) Field Codes
@@ -548,16 +558,18 @@ components:
         - YEL
     ncicBC0CodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicBC0CodeSimpleType
-        '@context':
-          type: string
-          description: ncicBC0CodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicBC0CodeTypeContext.json
       title: 'ncic:BC0CodeType'
       description: A data type for 7 - Boat Color (BCO) Field Codes
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicBC0CodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicBC0CodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicBC0CodeSimpleType
     ncicBC0CodeSimpleType:
       type: string
       description: A data type for 7 - Boat Color (BCO) Field Codes
@@ -596,16 +608,18 @@ components:
         - YEL
     ncicTYPAECodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicTYPAECodeSimpleType
-        '@context':
-          type: string
-          description: ncicTYPAECodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicTYPAECodeTypeContext.json
       title: 'ncic:TYPAECodeType'
       description: 'A data type for 1.4: Article Type (TYP) Field Codes'
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicTYPAECodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicTYPAECodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicTYPAECodeSimpleType
     ncicTYPAECodeSimpleType:
       type: string
       description: 'A data type for 1.4: Article Type (TYP) Field Codes'
@@ -2164,18 +2178,20 @@ components:
         - ZYGRTMC
     ncicGTYPCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicGTYPCodeSimpleType
-        '@context':
-          type: string
-          description: ncicGTYPCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicGTYPCodeTypeContext.json
       title: 'ncic:GTYPCodeType'
       description: >-
         A data type for 4.1: Gun Type Characteristic 1 Weapon Type (Required)
         Field Codes
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicGTYPCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicGTYPCodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicGTYPCodeSimpleType
     ncicGTYPCodeSimpleType:
       type: string
       description: >-
@@ -2203,18 +2219,20 @@ components:
         - Z
     ncicOFFCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicOFFCodeSimpleType
-        '@context':
-          type: string
-          description: ncicOFFCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicOFFCodeTypeContext.json
       title: 'ncic:OFFCodeType'
       description: >-
         A data type for 3 - Uniform Offense Classification (OFF, OOC, and CRR)
         Field Codes
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicOFFCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicOFFCodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicOFFCodeSimpleType
     ncicOFFCodeSimpleType:
       type: string
       description: >-
@@ -2685,18 +2703,20 @@ components:
         - '8102'
     ncicEYECodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicEYECodeSimpleType
-        '@context':
-          type: string
-          description: ncicEYECodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicEYECodeTypeContext.json
       title: 'ncic:EYECodeType'
       description: >-
         A data type for 4 - Eye Color (EYE) and Person with Information Eye
         Color (PEY) Field Codes
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicEYECodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicEYECodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicEYECodeSimpleType
     ncicEYECodeSimpleType:
       type: string
       description: >-
@@ -2715,18 +2735,20 @@ components:
         - XXX
     ncicSMTCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicSMTCodeSimpleType
-        '@context':
-          type: string
-          description: ncicSMTCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicSMTCodeTypeContext.json
       title: 'ncic:SMTCodeType'
       description: >-
         A data type for 7 - Scars, Marks, Tattoos, and Other Characteristics
         (SMT) and Person with Information SMT (PSM) Field Codes
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicSMTCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicSMTCodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicSMTCodeSimpleType
     ncicSMTCodeSimpleType:
       type: string
       description: >-
@@ -3662,18 +3684,20 @@ components:
         - WIRE SUTUR
     ncicECRCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicECRCodeSimpleType
-        '@context':
-          type: string
-          description: ncicECRCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicECRCodeTypeContext.json
       title: 'ncic:ECRCodeType'
       description: >-
         A data type for 18 - Gang File Group Member Capability Criteria (GMC)
         For Entry (ECR) Field Codes
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicECRCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicECRCodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicECRCodeSimpleType
     ncicECRCodeSimpleType:
       type: string
       description: >-
@@ -3691,16 +3715,18 @@ components:
         - I
     ncicCMCCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicCMCCodeSimpleType
-        '@context':
-          type: string
-          description: ncicCMCCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicCMCCodeTypeContext.json
       title: 'ncic:CMCCodeType'
       description: A data type for 11 - Caution and Medical Conditions (CMC) Field Codes
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicCMCCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicCMCCodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicCMCCodeSimpleType
     ncicCMCCodeSimpleType:
       type: string
       description: A data type for 11 - Caution and Medical Conditions (CMC) Field Codes
@@ -3725,16 +3751,18 @@ components:
         - '90'
     ncicEXLCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicEXLCodeSimpleType
-        '@context':
-          type: string
-          description: ncicEXLCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicEXLCodeTypeContext.json
       title: 'ncic:EXLCodeType'
       description: A data type for 20 - Warrants Extradition Limitation (EXL) Field Codes
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicEXLCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicEXLCodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicEXLCodeSimpleType
     ncicEXLCodeSimpleType:
       type: string
       description: A data type for 20 - Warrants Extradition Limitation (EXL) Field Codes
@@ -3753,18 +3781,20 @@ components:
         - F
     ncicSEXCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicSEXCodeSimpleType
-        '@context':
-          type: string
-          description: ncicSEXCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicSEXCodeTypeContext.json
       title: 'ncic:SEXCodeType'
       description: >-
         A data type for 2 - Sex, Sex of Victim (SOV), and Protected Person Sex
         (PSX) Field Codes
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicSEXCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicSEXCodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicSEXCodeSimpleType
     ncicSEXCodeSimpleType:
       type: string
       description: >-
@@ -3776,16 +3806,18 @@ components:
         - U
     ncicBLTCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicBLTCodeSimpleType
-        '@context':
-          type: string
-          description: ncicBLTCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicBLTCodeTypeContext.json
       title: 'ncic:BLTCodeType'
       description: A data type for 12 - Blood Type (BLT) Field Codes
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicBLTCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicBLTCodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicBLTCodeSimpleType
     ncicBLTCodeSimpleType:
       type: string
       description: A data type for 12 - Blood Type (BLT) Field Codes
@@ -3805,16 +3837,18 @@ components:
         - UNKWN
     ncicBXRCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicBXRCodeSimpleType
-        '@context':
-          type: string
-          description: ncicBXRCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicBXRCodeTypeContext.json
       title: 'ncic:BXRCodeType'
       description: A data type for 14 - Body X-Rays Available (BXR) Field Codes
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicBXRCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicBXRCodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicBXRCodeSimpleType
     ncicBXRCodeSimpleType:
       type: string
       description: A data type for 14 - Body X-Rays Available (BXR) Field Codes
@@ -3824,18 +3858,20 @@ components:
         - P
     ncicHAIRCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicHAIRCodeSimpleType
-        '@context':
-          type: string
-          description: ncicHAIRCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicHAIRCodeTypeContext.json
       title: 'ncic:HAIRCodeType'
       description: >-
         A data type for 5 - Hair Color (HAI) and Person with Information Hair
         Color (PHA) Field Codes
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicHAIRCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicHAIRCodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicHAIRCodeSimpleType
     ncicHAIRCodeSimpleType:
       type: string
       description: >-
@@ -3857,18 +3893,20 @@ components:
         - XXX
     ncicRACECodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicRACECodeSimpleType
-        '@context':
-          type: string
-          description: ncicRACECodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicRACECodeTypeContext.json
       title: 'ncic:RACECodeType'
       description: >-
         A data type for 3 - Race (RAC), Protected Person Race (PPR), and Person
         with Information Race (PIR) Field Codes
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicRACECodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicRACECodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicRACECodeSimpleType
     ncicRACECodeSimpleType:
       type: string
       description: >-
@@ -3882,18 +3920,20 @@ components:
         - W
     ncicSKINCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicSKINCodeSimpleType
-        '@context':
-          type: string
-          description: ncicSKINCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicSKINCodeTypeContext.json
       title: 'ncic:SKINCodeType'
       description: >-
         A data type for 6 - Skin Tone (SKN) and Person with Information Skin
         Tone (PSK) Field Codes
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicSKINCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicSKINCodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicSKINCodeSimpleType
     ncicSKINCodeSimpleType:
       type: string
       description: >-
@@ -3915,18 +3955,20 @@ components:
         - YEL
     ncicVMACodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicVMACodeSimpleType
-        '@context':
-          type: string
-          description: ncicVMACodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicVMACodeTypeContext.json
       title: 'ncic:VMACodeType'
       description: >-
         A data type for 2.1: Vehicle Make (VMA) and Brand Name (BRA) Field Codes
         by Manufacturer
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicVMACodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicVMACodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicVMACodeSimpleType
     ncicVMACodeSimpleType:
       type: string
       description: >-
@@ -12442,18 +12484,20 @@ components:
         - ZZTL
     ncicVMOCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicVMOCodeSimpleType
-        '@context':
-          type: string
-          description: ncicVMOCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicVMOCodeTypeContext.json
       title: 'ncic:VMOCodeType'
       description: >-
         A data type for 2.2: Vehicle Make/Brand (VMA) and Model (VMO) for
         Automobiles, Light-Duty Vans, Light-Duty Trucks, and Parts
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicVMOCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicVMOCodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicVMOCodeSimpleType
     ncicVMOCodeSimpleType:
       type: string
       description: >-
@@ -13890,16 +13934,18 @@ components:
         - ZX4
     ncicBMACodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicBMACodeSimpleType
-        '@context':
-          type: string
-          description: ncicBMACodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicBMACodeTypeContext.json
       title: 'ncic:BMACodeType'
       description: 'A data type for 4.2: Boat Make (BMA) Field Codes'
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicBMACodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicBMACodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicBMACodeSimpleType
     ncicBMACodeSimpleType:
       type: string
       description: 'A data type for 4.2: Boat Make (BMA) Field Codes'
@@ -15530,16 +15576,18 @@ components:
         - ZZW
     ncicBTYCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicBTYCodeSimpleType
-        '@context':
-          type: string
-          description: ncicBTYCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicBTYCodeTypeContext.json
       title: 'ncic:BTYCodeType'
       description: A data type for 5 - Boat Type (BTY) Field Codes
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicBTYCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicBTYCodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicBTYCodeSimpleType
     ncicBTYCodeSimpleType:
       type: string
       description: A data type for 5 - Boat Type (BTY) Field Codes
@@ -15559,16 +15607,18 @@ components:
         - YYY
     ncicHULCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicHULCodeSimpleType
-        '@context':
-          type: string
-          description: ncicHULCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicHULCodeTypeContext.json
       title: 'ncic:HULCodeType'
       description: A data type for 1 - Outer Boat Hull Material (HUL) Field Codes
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicHULCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicHULCodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicHULCodeSimpleType
     ncicHULCodeSimpleType:
       type: string
       description: A data type for 1 - Outer Boat Hull Material (HUL) Field Codes
@@ -15579,16 +15629,18 @@ components:
         - WD
     ncicHSPCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicHSPCodeSimpleType
-        '@context':
-          type: string
-          description: ncicHSPCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicHSPCodeTypeContext.json
       title: 'ncic:HSPCodeType'
       description: A data type for 8 - Boat Hull Shape (HSP) Field Codes
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicHSPCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicHSPCodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicHSPCodeSimpleType
     ncicHSPCodeSimpleType:
       type: string
       description: A data type for 8 - Boat Hull Shape (HSP) Field Codes
@@ -15604,16 +15656,18 @@ components:
         - TU
     ncicPR0CodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicPR0CodeSimpleType
-        '@context':
-          type: string
-          description: ncicPR0CodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicPR0CodeTypeContext.json
       title: 'ncic:PR0CodeType'
       description: A data type for 2 - Propulsion (PRO) Field Codes
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicPR0CodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicPR0CodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicPR0CodeSimpleType
     ncicPR0CodeSimpleType:
       type: string
       description: A data type for 2 - Propulsion (PRO) Field Codes
@@ -15626,18 +15680,20 @@ components:
         - SI
     ncicTrailersCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicTrailersCodeSimpleType
-        '@context':
-          type: string
-          description: ncicTrailersCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicTrailersCodeTypeContext.json
       title: 'ncic:TrailersCodeType'
       description: >-
         A data type for 2.8: Vehicle Make/Brand Name (VMA) Field Codes for
         Trailer Make Index Field Codes
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicTrailersCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicTrailersCodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicTrailersCodeSimpleType
     ncicTrailersCodeSimpleType:
       type: string
       description: >-
@@ -21427,18 +21483,20 @@ components:
         - ZZTL
     ncicVehicleEPDCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicVehicleEPDCodeSimpleType
-        '@context':
-          type: string
-          description: ncicVehicleEPDCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicVehicleEPDCodeTypeContext.json
       title: 'ncic:VehicleEPDCodeType'
       description: >-
         A data type for 7 - Vehicle Engine Power or Displacement (EPD) Field
         Codes
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicVehicleEPDCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicVehicleEPDCodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicVehicleEPDCodeSimpleType
     ncicVehicleEPDCodeSimpleType:
       type: string
       description: >-
@@ -21452,16 +21510,18 @@ components:
         - P
     ncicDCHCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ncic.yaml#/components/schemas/ncicDCHCodeSimpleType
-        '@context':
-          type: string
-          description: ncicDCHCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncicDCHCodeTypeContext.json
       title: 'ncic:DCHCodeType'
       description: 'A data type for 1.14: Dental Characteristics (DCH) Field Usage'
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncicDCHCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncicDCHCodeTypeContext.json
+        simpleType:
+          $ref: ncic.yaml#/components/schemas/ncicDCHCodeSimpleType
     ncicDCHCodeSimpleType:
       type: string
       description: 'A data type for 1.14: Dental Characteristics (DCH) Field Usage'

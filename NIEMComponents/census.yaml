@@ -2,16 +2,18 @@ components:
   schemas:
     censusUSCountyCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: census.yaml#/components/schemas/censusUSCountyCodeSimpleType
-        '@context':
-          type: string
-          description: censusUSCountyCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/censusUSCountyCodeTypeContext.json
       title: 'census:USCountyCodeType'
       description: A data type for US county codes.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: censusUSCountyCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/censusUSCountyCodeTypeContext.json
+        simpleType:
+          $ref: census.yaml#/components/schemas/censusUSCountyCodeSimpleType
     censusUSCountyCodeSimpleType:
       type: string
       description: A data type for US county codes.

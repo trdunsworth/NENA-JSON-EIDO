@@ -2,16 +2,18 @@ components:
   schemas:
     uneceLengthCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: unece.yaml#/components/schemas/uneceLengthCodeSimpleType
-        '@context':
-          type: string
-          description: uneceLengthCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/uneceLengthCodeTypeContext.json
       title: 'unece:LengthCodeType'
       description: A data type for units of measurements for a length value.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: uneceLengthCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/uneceLengthCodeTypeContext.json
+        simpleType:
+          $ref: unece.yaml#/components/schemas/uneceLengthCodeSimpleType
     uneceLengthCodeSimpleType:
       type: string
       description: A data type for units of measurements for a length value.
@@ -42,16 +44,18 @@ components:
         - YRD
     uneceMassCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: unece.yaml#/components/schemas/uneceMassCodeSimpleType
-        '@context':
-          type: string
-          description: uneceMassCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/uneceMassCodeTypeContext.json
       title: 'unece:MassCodeType'
       description: A data type for units of measurement for a weight value.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: uneceMassCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/uneceMassCodeTypeContext.json
+        simpleType:
+          $ref: unece.yaml#/components/schemas/uneceMassCodeSimpleType
     uneceMassCodeSimpleType:
       type: string
       description: A data type for units of measurement for a weight value.
@@ -79,16 +83,18 @@ components:
         - TNE
     uneceVelocityCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: unece.yaml#/components/schemas/uneceVelocityCodeSimpleType
-        '@context':
-          type: string
-          description: uneceVelocityCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/uneceVelocityCodeTypeContext.json
       title: 'unece:VelocityCodeType'
       description: A data type for units of measurement for a speed or velocity.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: uneceVelocityCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/uneceVelocityCodeTypeContext.json
+        simpleType:
+          $ref: unece.yaml#/components/schemas/uneceVelocityCodeSimpleType
     uneceVelocityCodeSimpleType:
       type: string
       description: A data type for units of measurement for a speed or velocity.
@@ -105,16 +111,18 @@ components:
         - MTS
     uneceTimeCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: unece.yaml#/components/schemas/uneceTimeCodeSimpleType
-        '@context':
-          type: string
-          description: uneceTimeCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/uneceTimeCodeTypeContext.json
       title: 'unece:TimeCodeType'
       description: A data type for units of time.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: uneceTimeCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/uneceTimeCodeTypeContext.json
+        simpleType:
+          $ref: unece.yaml#/components/schemas/uneceTimeCodeSimpleType
     uneceTimeCodeSimpleType:
       type: string
       description: A data type for units of time.
@@ -133,16 +141,18 @@ components:
         - WEE
     uneceVolumeUnitCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: unece.yaml#/components/schemas/uneceVolumeUnitCodeSimpleType
-        '@context':
-          type: string
-          description: uneceVolumeUnitCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/uneceVolumeUnitCodeTypeContext.json
       title: 'unece:VolumeUnitCodeType'
       description: A data type for volume unit of measurement codes.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: uneceVolumeUnitCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/uneceVolumeUnitCodeTypeContext.json
+        simpleType:
+          $ref: unece.yaml#/components/schemas/uneceVolumeUnitCodeSimpleType
     uneceVolumeUnitCodeSimpleType:
       type: string
       description: A data type for volume unit of measurement codes.

@@ -2,18 +2,30 @@ components:
   schemas:
     nc-4.0.1PolygonRegionAugmentationType:
       type: object
+      title: 'nc-4.0.1:PolygonRegionAugmentationType'
+      description: A data type for additional information about a polygon.
+      required:
+        - '@context'
       properties:
         '@context':
           type: string
-          description: nc-4.0.1PolygonRegionAugmentationTypeJSON-LD context
+          description: nc-4.0.1PolygonRegionAugmentationType JSON-LD context
           enum:
             - >-
               ../JSON-LD_Contexts/nc-4.0.1PolygonRegionAugmentationTypeContext.json
-      title: 'nc-4.0.1:PolygonRegionAugmentationType'
-      description: A data type for additional information about a polygon.
     nc-4.0.1LocationHeightMeasureAugmentationType:
       type: object
+      title: 'nc-4.0.1:LocationHeightMeasureAugmentationType'
+      description: A data type for additional information about a location height.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: nc-4.0.1LocationHeightMeasureAugmentationType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/nc-4.0.1LocationHeightMeasureAugmentationTypeContext.json
         lengthUnitCode:
           type: array
           description: >-
@@ -29,11 +41,3 @@ components:
           items:
             $ref: >-
               aamva_d20.yaml#/components/schemas/aamva_d20VehicleOdometerReadingUnitCodeType
-        '@context':
-          type: string
-          description: nc-4.0.1LocationHeightMeasureAugmentationTypeJSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/nc-4.0.1LocationHeightMeasureAugmentationTypeContext.json
-      title: 'nc-4.0.1:LocationHeightMeasureAugmentationType'
-      description: A data type for additional information about a location height.

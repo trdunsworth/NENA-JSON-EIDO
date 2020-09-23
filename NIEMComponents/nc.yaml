@@ -2,7 +2,16 @@ components:
   schemas:
     ncPersonType:
       type: object
+      title: 'nc:PersonType'
+      description: A data type for a human being.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncPersonType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncPersonTypeContext.json
         accent:
           type: array
           description: >-
@@ -806,18 +815,20 @@ components:
             m:PersonAugmentation
           items:
             $ref: m.yaml#/components/schemas/mPersonAugmentationType
-        '@context':
-          type: string
-          description: ncPersonTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncPersonTypeContext.json
-      title: 'nc:PersonType'
-      description: A data type for a human being.
     ncTextType:
       allOf:
         - $ref: niem-xs.yaml#/components/schemas/niem-xsstring
         - type: object
+          title: 'nc:TextType'
+          description: A data type for a character string.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncTextType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncTextTypeContext.json
             lang:
               type: string
             isTruncation:
@@ -833,18 +844,20 @@ components:
                 True if only partial information was available to the
                 information source at the time when the data was captured in the
                 system; false otherwise. NIEM reference is nc:partialIndicator
-            '@context':
-              type: string
-              description: ncTextTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncTextTypeContext.json
-      title: 'nc:TextType'
-      description: A data type for a character string.
     ncTimeMeasureType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncMeasureType
         - type: object
+          title: 'nc:TimeMeasureType'
+          description: A data type for a measure of an amount of time.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncTimeMeasureType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncTimeMeasureTypeContext.json
             personPrenatalAgeUnitCode:
               type: array
               description: >-
@@ -859,16 +872,18 @@ components:
                 nc:TimeUnitCode
               items:
                 $ref: unece.yaml#/components/schemas/uneceTimeCodeType
-            '@context':
-              type: string
-              description: ncTimeMeasureTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncTimeMeasureTypeContext.json
-      title: 'nc:TimeMeasureType'
-      description: A data type for a measure of an amount of time.
     ncMeasureType:
       type: object
+      title: 'nc:MeasureType'
+      description: A data type for a measurement.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncMeasureType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncMeasureTypeContext.json
         decimalValue:
           type: array
           description: >-
@@ -1022,16 +1037,18 @@ components:
             reference is nc:MeasureEstimatedIndicator
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
-        '@context':
-          type: string
-          description: ncMeasureTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncMeasureTypeContext.json
-      title: 'nc:MeasureType'
-      description: A data type for a measurement.
     ncDecimalRangeType:
       type: object
+      title: 'nc:DecimalRangeType'
+      description: A data type for a range of decimal values.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncDecimalRangeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncDecimalRangeTypeContext.json
         rangeMinimumDecimalValue:
           type: array
           description: >-
@@ -1046,16 +1063,18 @@ components:
             nc:RangeMaximumDecimalValue
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsdecimal
-        '@context':
-          type: string
-          description: ncDecimalRangeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncDecimalRangeTypeContext.json
-      title: 'nc:DecimalRangeType'
-      description: A data type for a range of decimal values.
     ncDoubleRangeType:
       type: object
+      title: 'nc:DoubleRangeType'
+      description: A data type for a range of double values.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncDoubleRangeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncDoubleRangeTypeContext.json
         rangeMinimumDoubleValue:
           type: array
           description: >-
@@ -1070,16 +1089,18 @@ components:
             nc:RangeMaximumDoubleValue
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsdouble
-        '@context':
-          type: string
-          description: ncDoubleRangeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncDoubleRangeTypeContext.json
-      title: 'nc:DoubleRangeType'
-      description: A data type for a range of double values.
     ncIntegerRangeType:
       type: object
+      title: 'nc:IntegerRangeType'
+      description: A data type for a range of integer values.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncIntegerRangeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncIntegerRangeTypeContext.json
         rangeMaximumIntegerValue:
           type: array
           description: >-
@@ -1094,16 +1115,18 @@ components:
             nc:RangeMinimumIntegerValue
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsinteger
-        '@context':
-          type: string
-          description: ncIntegerRangeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncIntegerRangeTypeContext.json
-      title: 'nc:IntegerRangeType'
-      description: A data type for a range of integer values.
     ncUnsignedIntegerRangeType:
       type: object
+      title: 'nc:UnsignedIntegerRangeType'
+      description: A data type for a range of unsigned integer values.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncUnsignedIntegerRangeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncUnsignedIntegerRangeTypeContext.json
         rangeMinimumUnsignedIntegerValue:
           type: array
           description: >-
@@ -1118,112 +1141,130 @@ components:
             nc:RangeMaximumUnsignedIntegerValue
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsunsignedInt
-        '@context':
-          type: string
-          description: ncUnsignedIntegerRangeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncUnsignedIntegerRangeTypeContext.json
-      title: 'nc:UnsignedIntegerRangeType'
-      description: A data type for a range of unsigned integer values.
     ncDecimalListType:
       type: object
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncDecimalListSimpleType
-        '@context':
-          type: string
-          description: ncDecimalListTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncDecimalListTypeContext.json
       title: 'nc:DecimalListType'
       description: A data type for a white space-delimited list of decimal.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncDecimalListType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncDecimalListTypeContext.json
+        simpleType:
+          $ref: nc.yaml#/components/schemas/ncDecimalListSimpleType
     ncDecimalListSimpleType:
       type: object
-      properties:
-        decimal:
-          type: string
-        '@context':
-          type: string
-          description: ncDecimalListSimpleTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncDecimalListSimpleTypeContext.json
       title: 'nc:DecimalListSimpleType'
       description: A data type for a white space-delimited list of decimal.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncDecimalListSimpleType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncDecimalListSimpleTypeContext.json
+        decimal:
+          type: string
     ncDoubleListType:
       type: object
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncDoubleListSimpleType
-        '@context':
-          type: string
-          description: ncDoubleListTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncDoubleListTypeContext.json
       title: 'nc:DoubleListType'
       description: A data type for a white space-delimited list of double.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncDoubleListType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncDoubleListTypeContext.json
+        simpleType:
+          $ref: nc.yaml#/components/schemas/ncDoubleListSimpleType
     ncDoubleListSimpleType:
       type: object
-      properties:
-        double:
-          type: string
-        '@context':
-          type: string
-          description: ncDoubleListSimpleTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncDoubleListSimpleTypeContext.json
       title: 'nc:DoubleListSimpleType'
       description: A data type for a white space-delimited list of double.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncDoubleListSimpleType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncDoubleListSimpleTypeContext.json
+        double:
+          type: string
     ncIntegerListType:
       type: object
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncIntegerListSimpleType
-        '@context':
-          type: string
-          description: ncIntegerListTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncIntegerListTypeContext.json
       title: 'nc:IntegerListType'
       description: A data type for a list of integers.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncIntegerListType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncIntegerListTypeContext.json
+        simpleType:
+          $ref: nc.yaml#/components/schemas/ncIntegerListSimpleType
     ncIntegerListSimpleType:
       type: object
-      properties:
-        integer:
-          type: string
-        '@context':
-          type: string
-          description: ncIntegerListSimpleTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncIntegerListSimpleTypeContext.json
       title: 'nc:IntegerListSimpleType'
       description: A data type for a list of integers.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncIntegerListSimpleType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncIntegerListSimpleTypeContext.json
+        integer:
+          type: string
     ncStringListType:
       type: object
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncStringListSimpleType
-        '@context':
-          type: string
-          description: ncStringListTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncStringListTypeContext.json
       title: 'nc:StringListType'
       description: A data type for a white space-delimited list of string.
-    ncStringListSimpleType:
-      type: object
+      required:
+        - '@context'
       properties:
-        string:
-          type: string
         '@context':
           type: string
-          description: ncStringListSimpleTypeJSON-LD context
+          description: ncStringListType JSON-LD context
           enum:
-            - ../JSON-LD_Contexts/ncStringListSimpleTypeContext.json
+            - ../JSON-LD_Contexts/ncStringListTypeContext.json
+        simpleType:
+          $ref: nc.yaml#/components/schemas/ncStringListSimpleType
+    ncStringListSimpleType:
+      type: object
       title: 'nc:StringListSimpleType'
       description: A data type for a white space-delimited list of string.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncStringListSimpleType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncStringListSimpleTypeContext.json
+        string:
+          type: string
     ncDateType:
       type: object
+      title: 'nc:DateType'
+      description: A data type for a calendar date.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncDateType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncDateTypeContext.json
         date:
           type: array
           description: 'A full date. NIEM reference is nc:Date'
@@ -1288,16 +1329,18 @@ components:
             bounding an elements value with an estimated margin of error. NIEM
             reference is nc:DateMarginOfErrorDuration
           $ref: niem-xs.yaml#/components/schemas/niem-xsduration
-        '@context':
-          type: string
-          description: ncDateTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncDateTypeContext.json
-      title: 'nc:DateType'
-      description: A data type for a calendar date.
     ncDateRangeType:
       type: object
+      title: 'nc:DateRangeType'
+      description: A data type for a range of dates.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncDateRangeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncDateRangeTypeContext.json
         startDate:
           type: array
           description: 'A date on which something begins. NIEM reference is nc:StartDate'
@@ -1308,35 +1351,41 @@ components:
           description: 'An end date. NIEM reference is nc:EndDate'
           items:
             $ref: nc.yaml#/components/schemas/ncDateType
-        '@context':
-          type: string
-          description: ncDateRangeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncDateRangeTypeContext.json
-      title: 'nc:DateRangeType'
-      description: A data type for a range of dates.
     ncFiscalYearDateType:
       allOf:
         - $ref: niem-xs.yaml#/components/schemas/niem-xsgYear
         - type: object
+          title: 'nc:FiscalYearDateType'
+          description: >-
+            A data type for a year of a twelve month period that does not
+            necessarily correspond to the calendar year.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncFiscalYearDateType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncFiscalYearDateTypeContext.json
             fiscalYearStartDate:
               type: string
               description: >-
                 A date on which a fiscal year begins. NIEM reference is
                 nc:fiscalYearStartDate
-            '@context':
-              type: string
-              description: ncFiscalYearDateTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncFiscalYearDateTypeContext.json
-      title: 'nc:FiscalYearDateType'
-      description: >-
-        A data type for a year of a twelve month period that does not
-        necessarily correspond to the calendar year.
     ncQuarterIDType:
       type: object
+      title: 'nc:QuarterIDType'
+      description: >-
+        A data type for an identifier of a three-month period in a calendar or
+        fiscal year.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncQuarterIDType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncQuarterIDTypeContext.json
         simpleType:
           $ref: nc.yaml#/components/schemas/ncQuarterIDSimpleType
         yearFirstMonthDate:
@@ -1344,15 +1393,6 @@ components:
           description: >-
             A month that begins a calendar year (January) or fiscal year. NIEM
             reference is nc:yearFirstMonthDate
-        '@context':
-          type: string
-          description: ncQuarterIDTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncQuarterIDTypeContext.json
-      title: 'nc:QuarterIDType'
-      description: >-
-        A data type for an identifier of a three-month period in a calendar or
-        fiscal year.
     ncQuarterIDSimpleType:
       type: string
       description: >-
@@ -1363,16 +1403,18 @@ components:
         - '4'
     ncZuluDateTimeType:
       type: object
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncZuluDateTimeSimpleType
-        '@context':
-          type: string
-          description: ncZuluDateTimeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncZuluDateTimeTypeContext.json
       title: 'nc:ZuluDateTimeType'
       description: A data type for a datetime constrained to always be ZULU.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncZuluDateTimeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncZuluDateTimeTypeContext.json
+        simpleType:
+          $ref: nc.yaml#/components/schemas/ncZuluDateTimeSimpleType
     ncZuluDateTimeSimpleType:
       type: string
       description: A data type for a datetime constrained to always be ZULU.
@@ -1380,7 +1422,18 @@ components:
         - .*Z
     ncEntityType:
       type: object
+      title: 'nc:EntityType'
+      description: >-
+        A data type for a person, organization, or thing capable of bearing
+        legal rights and responsibilities.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncEntityType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncEntityTypeContext.json
         item:
           type: array
           description: >-
@@ -1416,18 +1469,18 @@ components:
             hs:ReportingOrganization
           items:
             $ref: hs.yaml#/components/schemas/hsReportingOrganizationType
-        '@context':
-          type: string
-          description: ncEntityTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncEntityTypeContext.json
-      title: 'nc:EntityType'
-      description: >-
-        A data type for a person, organization, or thing capable of bearing
-        legal rights and responsibilities.
     ncItemType:
       type: object
+      title: 'nc:ItemType'
+      description: A data type for an article or thing.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncItemType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncItemTypeContext.json
         name:
           type: array
           description: 'A name of an item. NIEM reference is nc:ItemName'
@@ -2003,16 +2056,18 @@ components:
             j:ItemAugmentation
           items:
             $ref: j.yaml#/components/schemas/jItemAugmentationType
-        '@context':
-          type: string
-          description: ncItemTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncItemTypeContext.json
-      title: 'nc:ItemType'
-      description: A data type for an article or thing.
     ncIdentificationType:
       type: object
+      title: 'nc:IdentificationType'
+      description: A data type for a representation of an identity.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncIdentificationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncIdentificationTypeContext.json
         jurisdiction:
           type: array
           description: >-
@@ -2125,16 +2180,20 @@ components:
             scr:IdentificationAugmentation
           items:
             $ref: scr.yaml#/components/schemas/scrIdentificationAugmentationType
-        '@context':
-          type: string
-          description: ncIdentificationTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncIdentificationTypeContext.json
-      title: 'nc:IdentificationType'
-      description: A data type for a representation of an identity.
     ncJurisdictionType:
       type: object
+      title: 'nc:JurisdictionType'
+      description: >-
+        A data type for a geopolitical area in which an organization, person, or
+        object has a specific range of authority.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncJurisdictionType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncJurisdictionTypeContext.json
         authorityURI:
           type: array
           description: >-
@@ -2206,32 +2265,36 @@ components:
             j:JurisdictionAugmentation
           items:
             $ref: j.yaml#/components/schemas/jJurisdictionAugmentationType
-        '@context':
-          type: string
-          description: ncJurisdictionTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncJurisdictionTypeContext.json
-      title: 'nc:JurisdictionType'
-      description: >-
-        A data type for a geopolitical area in which an organization, person, or
-        object has a specific range of authority.
     ncProperNameTextType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncTextType
         - type: object
+          title: 'nc:ProperNameTextType'
+          description: >-
+            A data type for a word or phrase by which a person or thing is
+            known, referred, or addressed.
+          required:
+            - '@context'
           properties:
             '@context':
               type: string
-              description: ncProperNameTextTypeJSON-LD context
+              description: ncProperNameTextType JSON-LD context
               enum:
                 - ../JSON-LD_Contexts/ncProperNameTextTypeContext.json
-      title: 'nc:ProperNameTextType'
-      description: >-
-        A data type for a word or phrase by which a person or thing is known,
-        referred, or addressed.
     ncCountryType:
       type: object
+      title: 'nc:CountryType'
+      description: >-
+        A data type for a country, territory, dependency, or other such
+        geopolitical subdivision of a location.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncCountryType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncCountryTypeContext.json
         code:
           type: array
           description: >-
@@ -2286,18 +2349,18 @@ components:
             nc:LocationCountryName
           items:
             $ref: nc.yaml#/components/schemas/ncProperNameTextType
-        '@context':
-          type: string
-          description: ncCountryTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncCountryTypeContext.json
-      title: 'nc:CountryType'
-      description: >-
-        A data type for a country, territory, dependency, or other such
-        geopolitical subdivision of a location.
     ncCodeType:
       type: object
+      title: 'nc:CodeType'
+      description: A data type for a code with codes sourced from an external code list.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncCodeTypeContext.json
         token:
           type: string
         codeListURI:
@@ -2316,16 +2379,20 @@ components:
             True if a code list binding constrains the validity of a code list
             value; false otherwise. NIEM reference is
             cli:codeListConstrainingIndicator
-        '@context':
-          type: string
-          description: ncCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncCodeTypeContext.json
-      title: 'nc:CodeType'
-      description: A data type for a code with codes sourced from an external code list.
     ncStateType:
       type: object
+      title: 'nc:StateType'
+      description: >-
+        A data type for a state, commonwealth, province, or other such
+        geopolitical subdivision of a country.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncStateType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncStateTypeContext.json
         locationCanadianProvinceCode:
           type: array
           description: 'A province. NIEM reference is nc:LocationCanadianProvinceCode'
@@ -2394,18 +2461,18 @@ components:
           items:
             $ref: >-
               iso_3166.yaml#/components/schemas/iso_3166CountrySubdivisionCodeType
-        '@context':
-          type: string
-          description: ncStateTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncStateTypeContext.json
-      title: 'nc:StateType'
-      description: >-
-        A data type for a state, commonwealth, province, or other such
-        geopolitical subdivision of a country.
     ncStatusType:
       type: object
+      title: 'nc:StatusType'
+      description: A data type for a state of something or someone.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncStatusType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncStatusTypeContext.json
         approvalCode:
           type: array
           description: >-
@@ -2487,16 +2554,18 @@ components:
             im:StatusAugmentation
           items:
             $ref: im.yaml#/components/schemas/imStatusAugmentationType
-        '@context':
-          type: string
-          description: ncStatusTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncStatusTypeContext.json
-      title: 'nc:StatusType'
-      description: A data type for a state of something or someone.
     ncAmountType:
       type: object
+      title: 'nc:AmountType'
+      description: A data type for an amount of money.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncAmountType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncAmountTypeContext.json
         currencyCode:
           type: array
           description: 'A unit of money or exchange. NIEM reference is nc:CurrencyCode'
@@ -2512,16 +2581,18 @@ components:
           description: 'An amount of money. NIEM reference is nc:Amount'
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsdecimal
-        '@context':
-          type: string
-          description: ncAmountTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncAmountTypeContext.json
-      title: 'nc:AmountType'
-      description: A data type for an amount of money.
     ncItemValueType:
       type: object
+      title: 'nc:ItemValueType'
+      description: A data type for an evaluation of the monetary worth of an item.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncItemValueType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncItemValueTypeContext.json
         amount:
           type: array
           description: 'A monetary value of an item. NIEM reference is nc:ItemValueAmount'
@@ -2562,27 +2633,22 @@ components:
             nc:ItemValueAssigner
           items:
             $ref: nc.yaml#/components/schemas/ncEntityType
-        '@context':
-          type: string
-          description: ncItemValueTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncItemValueTypeContext.json
-      title: 'nc:ItemValueType'
-      description: A data type for an evaluation of the monetary worth of an item.
     ncFinancialAccountNumberCategoryCodeType:
       type: object
+      title: 'nc:FinancialAccountNumberCategoryCodeType'
+      description: A data type for a kind of financial account number.
+      required:
+        - '@context'
       properties:
-        simpleType:
-          $ref: >-
-            nc.yaml#/components/schemas/ncFinancialAccountNumberCategoryCodeSimpleType
         '@context':
           type: string
-          description: ncFinancialAccountNumberCategoryCodeTypeJSON-LD context
+          description: ncFinancialAccountNumberCategoryCodeType JSON-LD context
           enum:
             - >-
               ../JSON-LD_Contexts/ncFinancialAccountNumberCategoryCodeTypeContext.json
-      title: 'nc:FinancialAccountNumberCategoryCodeType'
-      description: A data type for a kind of financial account number.
+        simpleType:
+          $ref: >-
+            nc.yaml#/components/schemas/ncFinancialAccountNumberCategoryCodeSimpleType
     ncFinancialAccountNumberCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of financial account number.
@@ -2596,7 +2662,18 @@ components:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncDispositionType
         - type: object
+          title: 'nc:ItemDispositionType'
+          description: >-
+            A data type for a result or outcome that happens to a property item
+            after it has been handled or processed.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncItemDispositionType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncItemDispositionTypeContext.json
             code:
               type: array
               description: >-
@@ -2630,18 +2707,20 @@ components:
                 reference is nc:ItemMovingOrganization
               items:
                 $ref: nc.yaml#/components/schemas/ncOrganizationType
-            '@context':
-              type: string
-              description: ncItemDispositionTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncItemDispositionTypeContext.json
-      title: 'nc:ItemDispositionType'
-      description: >-
-        A data type for a result or outcome that happens to a property item
-        after it has been handled or processed.
     ncDispositionType:
       type: object
+      title: 'nc:DispositionType'
+      description: >-
+        A data type for a result or outcome that is the product of handling,
+        processing, or finalizing something.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncDispositionType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncDispositionTypeContext.json
         categoryCode:
           type: array
           description: >-
@@ -2708,18 +2787,18 @@ components:
             hs:DispositionAugmentation
           items:
             $ref: hs.yaml#/components/schemas/hsDispositionAugmentationType
-        '@context':
-          type: string
-          description: ncDispositionTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncDispositionTypeContext.json
-      title: 'nc:DispositionType'
-      description: >-
-        A data type for a result or outcome that is the product of handling,
-        processing, or finalizing something.
     ncDocumentType:
       type: object
+      title: 'nc:DocumentType'
+      description: A data type for a paper or electronic document.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncDocumentType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncDocumentTypeContext.json
         sensitivity:
           type: array
           description: >-
@@ -3228,33 +3307,41 @@ components:
             j:DocumentAugmentation
           items:
             $ref: j.yaml#/components/schemas/jDocumentAugmentationType
-        '@context':
-          type: string
-          description: ncDocumentTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncDocumentTypeContext.json
-      title: 'nc:DocumentType'
-      description: A data type for a paper or electronic document.
     ncSoftwareNameType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncTextType
         - type: object
+          title: 'nc:SoftwareNameType'
+          description: >-
+            A data type for a name of a computer application used to process
+            data.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncSoftwareNameType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncSoftwareNameTypeContext.json
             softwareVersion:
               type: string
               description: >-
                 A version of a computer application. NIEM reference is
                 nc:softwareVersionText
-            '@context':
-              type: string
-              description: ncSoftwareNameTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncSoftwareNameTypeContext.json
-      title: 'nc:SoftwareNameType'
-      description: A data type for a name of a computer application used to process data.
     ncBinaryType:
       type: object
+      title: 'nc:BinaryType'
+      description: >-
+        A data type for a digital representation of an object encoded in a
+        binary format.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncBinaryType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncBinaryTypeContext.json
         binaryID:
           type: array
           description: >-
@@ -3372,18 +3459,20 @@ components:
             j:BinaryAugmentation
           items:
             $ref: j.yaml#/components/schemas/jBinaryAugmentationType
-        '@context':
-          type: string
-          description: ncBinaryTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncBinaryTypeContext.json
-      title: 'nc:BinaryType'
-      description: >-
-        A data type for a digital representation of an object encoded in a
-        binary format.
     ncBinaryHashType:
       type: object
+      title: 'nc:BinaryHashType'
+      description: >-
+        A data type for a hash value representing an object encoded in a binary
+        format.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncBinaryHashType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncBinaryHashTypeContext.json
         code:
           type: array
           description: 'A binary hash value. NIEM reference is nc:BinaryHashCode'
@@ -3405,29 +3494,22 @@ components:
             nc:BinaryHashFunctionText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        '@context':
-          type: string
-          description: ncBinaryHashTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncBinaryHashTypeContext.json
-      title: 'nc:BinaryHashType'
-      description: >-
-        A data type for a hash value representing an object encoded in a binary
-        format.
     ncBinaryHashFunctionCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncBinaryHashFunctionCodeSimpleType
-        '@context':
-          type: string
-          description: ncBinaryHashFunctionCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncBinaryHashFunctionCodeTypeContext.json
       title: 'nc:BinaryHashFunctionCodeType'
       description: >-
         A data type for a hash function used to generate a hash value
         representing an object encoded in a binary format.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncBinaryHashFunctionCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncBinaryHashFunctionCodeTypeContext.json
+        simpleType:
+          $ref: nc.yaml#/components/schemas/ncBinaryHashFunctionCodeSimpleType
     ncBinaryHashFunctionCodeSimpleType:
       type: string
       description: >-
@@ -3444,16 +3526,18 @@ components:
         - SHA-512
     ncNonNegativeDecimalType:
       type: object
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncNonNegativeDecimalSimpleType
-        '@context':
-          type: string
-          description: ncNonNegativeDecimalTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncNonNegativeDecimalTypeContext.json
       title: 'nc:NonNegativeDecimalType'
       description: A data type for a decimal value with a minimum value of 0.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncNonNegativeDecimalType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncNonNegativeDecimalTypeContext.json
+        simpleType:
+          $ref: nc.yaml#/components/schemas/ncNonNegativeDecimalSimpleType
     ncNonNegativeDecimalSimpleType:
       type: string
       description: A data type for a decimal value with a minimum value of 0.
@@ -3461,7 +3545,16 @@ components:
         - '0'
     ncLocationType:
       type: object
+      title: 'nc:LocationType'
+      description: A data type for geospatial location.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncLocationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncLocationTypeContext.json
         address:
           type: array
           description: >-
@@ -3822,16 +3915,18 @@ components:
             cbrn:SiteLocationAugmentation
           items:
             $ref: cbrn.yaml#/components/schemas/cbrnSiteLocationAugmentationType
-        '@context':
-          type: string
-          description: ncLocationTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncLocationTypeContext.json
-      title: 'nc:LocationType'
-      description: A data type for geospatial location.
     ncAddressType:
       type: object
+      title: 'nc:AddressType'
+      description: A data type for a geophysical location described by postal information.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncAddressType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncAddressTypeContext.json
         full:
           type: array
           description: 'A complete address. NIEM reference is nc:AddressFullText'
@@ -3981,16 +4076,18 @@ components:
             scr:AddressAugmentation
           items:
             $ref: scr.yaml#/components/schemas/scrAddressAugmentationType
-        '@context':
-          type: string
-          description: ncAddressTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncAddressTypeContext.json
-      title: 'nc:AddressType'
-      description: A data type for a geophysical location described by postal information.
     ncStreetType:
       type: object
+      title: 'nc:StreetType'
+      description: 'A data type for a road, thoroughfare, or highway.'
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncStreetType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncStreetTypeContext.json
         full:
           type: array
           description: >-
@@ -4037,25 +4134,20 @@ components:
             nc:StreetExtensionText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        '@context':
-          type: string
-          description: ncStreetTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncStreetTypeContext.json
-      title: 'nc:StreetType'
-      description: 'A data type for a road, thoroughfare, or highway.'
     ncAddressCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncAddressCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ncAddressCategoryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncAddressCategoryCodeTypeContext.json
       title: 'nc:AddressCategoryCodeType'
       description: A data type for a kind of address.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncAddressCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncAddressCategoryCodeTypeContext.json
+        simpleType:
+          $ref: nc.yaml#/components/schemas/ncAddressCategoryCodeSimpleType
     ncAddressCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of address.
@@ -4067,7 +4159,18 @@ components:
         - unspecified
     ncCrossStreetType:
       type: object
+      title: 'nc:CrossStreetType'
+      description: >-
+        A data type for a location identified by two or more streets which
+        intersect.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncCrossStreetType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncCrossStreetTypeContext.json
         description:
           type: array
           description: >-
@@ -4087,18 +4190,20 @@ components:
           description: 'A road, thoroughfare or highway. NIEM reference is nc:LocationStreet'
           items:
             $ref: nc.yaml#/components/schemas/ncStreetType
-        '@context':
-          type: string
-          description: ncCrossStreetTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncCrossStreetTypeContext.json
-      title: 'nc:CrossStreetType'
-      description: >-
-        A data type for a location identified by two or more streets which
-        intersect.
     ncRelativeLocationType:
       type: object
+      title: 'nc:RelativeLocationType'
+      description: >-
+        A data type for a location identified by its proximity to another
+        location.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncRelativeLocationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncRelativeLocationTypeContext.json
         description:
           type: array
           description: >-
@@ -4148,27 +4253,20 @@ components:
             im:RelativeLocationAugmentation
           items:
             $ref: im.yaml#/components/schemas/imRelativeLocationAugmentationType
-        '@context':
-          type: string
-          description: ncRelativeLocationTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncRelativeLocationTypeContext.json
-      title: 'nc:RelativeLocationType'
-      description: >-
-        A data type for a location identified by its proximity to another
-        location.
     ncDirectionCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncDirectionCodeSimpleType
-        '@context':
-          type: string
-          description: ncDirectionCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncDirectionCodeTypeContext.json
       title: 'nc:DirectionCodeType'
       description: A data type for compass directions.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncDirectionCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncDirectionCodeTypeContext.json
+        simpleType:
+          $ref: nc.yaml#/components/schemas/ncDirectionCodeSimpleType
     ncDirectionCodeSimpleType:
       type: string
       description: A data type for compass directions.
@@ -4193,7 +4291,16 @@ components:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncMeasureType
         - type: object
+          title: 'nc:LengthMeasureType'
+          description: A data type for a measure of a distance or extent.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncLengthMeasureType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncLengthMeasureTypeContext.json
             lengthUnitCode:
               type: array
               description: >-
@@ -4209,27 +4316,22 @@ components:
               items:
                 $ref: >-
                   aamva_d20.yaml#/components/schemas/aamva_d20VehicleOdometerReadingUnitCodeType
-            '@context':
-              type: string
-              description: ncLengthMeasureTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncLengthMeasureTypeContext.json
-      title: 'nc:LengthMeasureType'
-      description: A data type for a measure of a distance or extent.
     ncRelativeLocationHeadingType:
       type: object
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncRelativeLocationHeadingSimpleType
-        '@context':
-          type: string
-          description: ncRelativeLocationHeadingTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncRelativeLocationHeadingTypeContext.json
       title: 'nc:RelativeLocationHeadingType'
       description: >-
         A data type for a compass heading of a direction from a reference
         location.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncRelativeLocationHeadingType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncRelativeLocationHeadingTypeContext.json
+        simpleType:
+          $ref: nc.yaml#/components/schemas/ncRelativeLocationHeadingSimpleType
     ncRelativeLocationHeadingSimpleType:
       type: string
       description: >-
@@ -4240,7 +4342,18 @@ components:
         - '360'
     ncAddressGridType:
       type: object
+      title: 'nc:AddressGridType'
+      description: >-
+        A data type for a location identified by a unit of a grid system
+        overlaid on an area.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncAddressGridType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncAddressGridTypeContext.json
         addressGridID:
           type: array
           description: >-
@@ -4255,18 +4368,18 @@ components:
             reference is nc:AddressGridText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        '@context':
-          type: string
-          description: ncAddressGridTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncAddressGridTypeContext.json
-      title: 'nc:AddressGridType'
-      description: >-
-        A data type for a location identified by a unit of a grid system
-        overlaid on an area.
     ncHighwayType:
       type: object
+      title: 'nc:HighwayType'
+      description: A data type for a major public road.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncHighwayType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncHighwayTypeContext.json
         full:
           type: array
           description: >-
@@ -4291,16 +4404,18 @@ components:
             nc:HighwayPositionText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        '@context':
-          type: string
-          description: ncHighwayTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncHighwayTypeContext.json
-      title: 'nc:HighwayType'
-      description: A data type for a major public road.
     ncAreaType:
       type: object
+      title: 'nc:AreaType'
+      description: A data type for a location identified by geographic boundaries.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncAreaType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncAreaTypeContext.json
         description:
           type: array
           description: 'A description of an area. NIEM reference is nc:AreaDescriptionText'
@@ -4357,16 +4472,20 @@ components:
             WGS84 coordinates. NIEM reference is mo:WGS84LocationExternalPolygon
           items:
             $ref: mo.yaml#/components/schemas/moWGS84ExternalPolygonType
-        '@context':
-          type: string
-          description: ncAreaTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncAreaTypeContext.json
-      title: 'nc:AreaType'
-      description: A data type for a location identified by geographic boundaries.
     ncCircularRegionType:
       type: object
+      title: 'nc:CircularRegionType'
+      description: >-
+        A data type for a circular area identified by a center coordinate and a
+        radius.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncCircularRegionType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncCircularRegionTypeContext.json
         centerCoordinate:
           type: array
           description: >-
@@ -4382,18 +4501,19 @@ components:
             nc:CircularRegionRadiusLengthMeasure
           items:
             $ref: nc.yaml#/components/schemas/ncLengthMeasureType
-        '@context':
-          type: string
-          description: ncCircularRegionTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncCircularRegionTypeContext.json
-      title: 'nc:CircularRegionType'
-      description: >-
-        A data type for a circular area identified by a center coordinate and a
-        radius.
     ncLocation2DGeospatialCoordinateType:
       type: object
+      title: 'nc:Location2DGeospatialCoordinateType'
+      description: A data type for a location identified by latitude and longitude.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncLocation2DGeospatialCoordinateType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ncLocation2DGeospatialCoordinateTypeContext.json
         geodeticDatumCoordinateSystemCode:
           description: >-
             A geospatial coordinate system for datum values NIEM reference is
@@ -4414,17 +4534,20 @@ components:
             and the Prime Meridian. NIEM reference is
             nc:GeographicCoordinateLongitude
           $ref: nc.yaml#/components/schemas/ncLongitudeCoordinateType
-        '@context':
-          type: string
-          description: ncLocation2DGeospatialCoordinateTypeJSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/ncLocation2DGeospatialCoordinateTypeContext.json
-      title: 'nc:Location2DGeospatialCoordinateType'
-      description: A data type for a location identified by latitude and longitude.
     ncLatitudeCoordinateType:
       type: object
+      title: 'nc:LatitudeCoordinateType'
+      description: >-
+        A data type for a measurement of the angular distance between a point on
+        the Earth and the Equator.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncLatitudeCoordinateType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncLatitudeCoordinateTypeContext.json
         latitudeDegreeValue:
           type: array
           description: >-
@@ -4449,27 +4572,20 @@ components:
             NIEM reference is nc:LatitudeSecondValue
           items:
             $ref: nc.yaml#/components/schemas/ncAngularSecondType
-        '@context':
-          type: string
-          description: ncLatitudeCoordinateTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncLatitudeCoordinateTypeContext.json
-      title: 'nc:LatitudeCoordinateType'
-      description: >-
-        A data type for a measurement of the angular distance between a point on
-        the Earth and the Equator.
     ncLatitudeDegreeType:
       type: object
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncLatitudeDegreeSimpleType
-        '@context':
-          type: string
-          description: ncLatitudeDegreeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncLatitudeDegreeTypeContext.json
       title: 'nc:LatitudeDegreeType'
       description: A data type for a degree of latitude.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncLatitudeDegreeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncLatitudeDegreeTypeContext.json
+        simpleType:
+          $ref: nc.yaml#/components/schemas/ncLatitudeDegreeSimpleType
     ncLatitudeDegreeSimpleType:
       type: string
       description: A data type for a degree of latitude.
@@ -4478,18 +4594,20 @@ components:
         - '-90'
     ncAngularMinuteType:
       type: object
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncAngularMinuteSimpleType
-        '@context':
-          type: string
-          description: ncAngularMinuteTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncAngularMinuteTypeContext.json
       title: 'nc:AngularMinuteType'
       description: >-
         A data type for a minute of a degree, with a restricted range of 0
         (inclusive) to 60 (exclusive).
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncAngularMinuteType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncAngularMinuteTypeContext.json
+        simpleType:
+          $ref: nc.yaml#/components/schemas/ncAngularMinuteSimpleType
     ncAngularMinuteSimpleType:
       type: string
       description: >-
@@ -4500,18 +4618,20 @@ components:
         - '60'
     ncAngularSecondType:
       type: object
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncAngularSecondSimpleType
-        '@context':
-          type: string
-          description: ncAngularSecondTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncAngularSecondTypeContext.json
       title: 'nc:AngularSecondType'
       description: >-
         A data type for a second of a minute, with a restricted range of 0
         (inclusive) to 60 (exclusive).
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncAngularSecondType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncAngularSecondTypeContext.json
+        simpleType:
+          $ref: nc.yaml#/components/schemas/ncAngularSecondSimpleType
     ncAngularSecondSimpleType:
       type: string
       description: >-
@@ -4522,7 +4642,18 @@ components:
         - '60'
     ncLongitudeCoordinateType:
       type: object
+      title: 'nc:LongitudeCoordinateType'
+      description: >-
+        A data type for a measurement of the angular distance between a point on
+        the Earth and the Prime Meridian.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncLongitudeCoordinateType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncLongitudeCoordinateTypeContext.json
         longitudeDegreeValue:
           type: array
           description: >-
@@ -4547,27 +4678,20 @@ components:
             NIEM reference is nc:LongitudeSecondValue
           items:
             $ref: nc.yaml#/components/schemas/ncAngularSecondType
-        '@context':
-          type: string
-          description: ncLongitudeCoordinateTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncLongitudeCoordinateTypeContext.json
-      title: 'nc:LongitudeCoordinateType'
-      description: >-
-        A data type for a measurement of the angular distance between a point on
-        the Earth and the Prime Meridian.
     ncLongitudeDegreeType:
       type: object
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncLongitudeDegreeSimpleType
-        '@context':
-          type: string
-          description: ncLongitudeDegreeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncLongitudeDegreeTypeContext.json
       title: 'nc:LongitudeDegreeType'
       description: A data type for a degree of longitude.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncLongitudeDegreeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncLongitudeDegreeTypeContext.json
+        simpleType:
+          $ref: nc.yaml#/components/schemas/ncLongitudeDegreeSimpleType
     ncLongitudeDegreeSimpleType:
       type: string
       description: A data type for a degree of longitude.
@@ -4576,7 +4700,16 @@ components:
         - '-180'
     ncPolygonRegionType:
       type: object
+      title: 'nc:PolygonRegionType'
+      description: A data type for a polygon area identified by a set of coordinates.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncPolygonRegionType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncPolygonRegionTypeContext.json
         polygonCoordinate:
           type: array
           description: >-
@@ -4599,16 +4732,18 @@ components:
           items:
             $ref: >-
               nc-4.0.1.yaml#/components/schemas/nc-4.0.1PolygonRegionAugmentationType
-        '@context':
-          type: string
-          description: ncPolygonRegionTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncPolygonRegionTypeContext.json
-      title: 'nc:PolygonRegionType'
-      description: A data type for a polygon area identified by a set of coordinates.
     ncAngularMeasureType:
       type: object
+      title: 'nc:AngularMeasureType'
+      description: A data type for the measurement of an angle.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncAngularMeasureType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncAngularMeasureTypeContext.json
         angularDegreeValue:
           type: array
           description: >-
@@ -4639,18 +4774,20 @@ components:
             mo:AngularMeasureAugmentation
           items:
             $ref: mo.yaml#/components/schemas/moAngularMeasureAugmentationType
-        '@context':
-          type: string
-          description: ncAngularMeasureTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncAngularMeasureTypeContext.json
-      title: 'nc:AngularMeasureType'
-      description: A data type for the measurement of an angle.
     ncAngleMeasureType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncMeasureType
         - type: object
+          title: 'nc:AngleMeasureType'
+          description: A data type for a measure of an angular value.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncAngleMeasureType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncAngleMeasureTypeContext.json
             angleUnitCode:
               type: array
               description: >-
@@ -4658,16 +4795,18 @@ components:
                 mo:AngleUnitCode
               items:
                 $ref: mo.yaml#/components/schemas/moAngleUnitCodeType
-            '@context':
-              type: string
-              description: ncAngleMeasureTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncAngleMeasureTypeContext.json
-      title: 'nc:AngleMeasureType'
-      description: A data type for a measure of an angular value.
     ncContactInformationType:
       type: object
+      title: 'nc:ContactInformationType'
+      description: A data type for how to contact a person or an organization.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncContactInformationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncContactInformationTypeContext.json
         contactEmailID:
           type: array
           description: >-
@@ -4772,16 +4911,20 @@ components:
             mo:ContactInformationAugmentation
           items:
             $ref: mo.yaml#/components/schemas/moContactInformationAugmentationType
-        '@context':
-          type: string
-          description: ncContactInformationTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncContactInformationTypeContext.json
-      title: 'nc:ContactInformationType'
-      description: A data type for how to contact a person or an organization.
     ncInstantMessengerType:
       type: object
+      title: 'nc:InstantMessengerType'
+      description: >-
+        A data type for a user account for an instant messaging program by which
+        a person or organization may be contacted.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncInstantMessengerType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncInstantMessengerTypeContext.json
         serviceName:
           type: array
           description: >-
@@ -4797,18 +4940,20 @@ components:
             nc:InstantMessengerScreenID
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsstring
-        '@context':
-          type: string
-          description: ncInstantMessengerTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncInstantMessengerTypeContext.json
-      title: 'nc:InstantMessengerType'
-      description: >-
-        A data type for a user account for an instant messaging program by which
-        a person or organization may be contacted.
     ncContactRadioType:
       type: object
+      title: 'nc:ContactRadioType'
+      description: >-
+        A data type for a method of contacting a person or organization by
+        messages over a radio.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncContactRadioType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncContactRadioTypeContext.json
         category:
           type: array
           description: >-
@@ -4830,18 +4975,18 @@ components:
             nc:ContactRadioCallSignID
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsstring
-        '@context':
-          type: string
-          description: ncContactRadioTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncContactRadioTypeContext.json
-      title: 'nc:ContactRadioType'
-      description: >-
-        A data type for a method of contacting a person or organization by
-        messages over a radio.
     ncTelephoneNumberType:
       type: object
+      title: 'nc:TelephoneNumberType'
+      description: A data type for a telephone number for a telecommunication device.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncTelephoneNumberType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncTelephoneNumberTypeContext.json
         directDial:
           type: array
           description: >-
@@ -4912,16 +5057,21 @@ components:
             scr:TelephoneNumberAugmentation
           items:
             $ref: scr.yaml#/components/schemas/scrTelephoneNumberAugmentationType
-        '@context':
-          type: string
-          description: ncTelephoneNumberTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncTelephoneNumberTypeContext.json
-      title: 'nc:TelephoneNumberType'
-      description: A data type for a telephone number for a telecommunication device.
     ncDirectDialTelephoneNumberType:
       type: object
+      title: 'nc:DirectDialTelephoneNumberType'
+      description: >-
+        A data type for a telephone number consisting of a shortened sequence of
+        numbers that can be used within a local telephone system, such as a
+        particular network or a corporate phone system.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncDirectDialTelephoneNumberType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncDirectDialTelephoneNumberTypeContext.json
         directDialTelephoneNetwork:
           type: array
           description: >-
@@ -4938,19 +5088,18 @@ components:
             nc:DirectDialTelephoneNumberID
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsstring
-        '@context':
-          type: string
-          description: ncDirectDialTelephoneNumberTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncDirectDialTelephoneNumberTypeContext.json
-      title: 'nc:DirectDialTelephoneNumberType'
-      description: >-
-        A data type for a telephone number consisting of a shortened sequence of
-        numbers that can be used within a local telephone system, such as a
-        particular network or a corporate phone system.
     ncFullTelephoneNumberType:
       type: object
+      title: 'nc:FullTelephoneNumberType'
+      description: A data type for a full telephone number.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncFullTelephoneNumberType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncFullTelephoneNumberTypeContext.json
         telephoneNumberFullID:
           type: array
           description: >-
@@ -4966,16 +5115,18 @@ components:
             nc:TelephoneSuffixID
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsstring
-        '@context':
-          type: string
-          description: ncFullTelephoneNumberTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncFullTelephoneNumberTypeContext.json
-      title: 'nc:FullTelephoneNumberType'
-      description: A data type for a full telephone number.
     ncInternationalTelephoneNumberType:
       type: object
+      title: 'nc:InternationalTelephoneNumberType'
+      description: A data type for an international telephone number.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncInternationalTelephoneNumberType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncInternationalTelephoneNumberTypeContext.json
         telephoneCountryCodeID:
           type: array
           description: >-
@@ -4996,16 +5147,18 @@ components:
             nc:TelephoneSuffixID
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsstring
-        '@context':
-          type: string
-          description: ncInternationalTelephoneNumberTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncInternationalTelephoneNumberTypeContext.json
-      title: 'nc:InternationalTelephoneNumberType'
-      description: A data type for an international telephone number.
     ncNANPTelephoneNumberType:
       type: object
+      title: 'nc:NANPTelephoneNumberType'
+      description: A data type for a North American Numbering Plan telephone number.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncNANPTelephoneNumberType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncNANPTelephoneNumberTypeContext.json
         telephoneAreaCodeID:
           type: array
           description: >-
@@ -5036,29 +5189,24 @@ components:
             nc:TelephoneSuffixID
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsstring
-        '@context':
-          type: string
-          description: ncNANPTelephoneNumberTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncNANPTelephoneNumberTypeContext.json
-      title: 'nc:NANPTelephoneNumberType'
-      description: A data type for a North American Numbering Plan telephone number.
     ncContactInformationAvailabilityCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            nc.yaml#/components/schemas/ncContactInformationAvailabilityCodeSimpleType
-        '@context':
-          type: string
-          description: ncContactInformationAvailabilityCodeTypeJSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/ncContactInformationAvailabilityCodeTypeContext.json
       title: 'nc:ContactInformationAvailabilityCodeType'
       description: >-
         A data type for a period of time or a situation in which an entity is
         available to be contacted with the given contact information.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncContactInformationAvailabilityCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ncContactInformationAvailabilityCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            nc.yaml#/components/schemas/ncContactInformationAvailabilityCodeSimpleType
     ncContactInformationAvailabilityCodeSimpleType:
       type: string
       description: >-
@@ -5073,7 +5221,18 @@ components:
         - secondary
     ncCommentType:
       type: object
+      title: 'nc:CommentType'
+      description: >-
+        A data type for a comment, note, or remark providing additional
+        information.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncCommentType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncCommentTypeContext.json
         author:
           type: array
           description: >-
@@ -5114,20 +5273,23 @@ components:
             is mo:CommentKeywordText
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsstring
-        '@context':
-          type: string
-          description: ncCommentTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncCommentTypeContext.json
-      title: 'nc:CommentType'
-      description: >-
-        A data type for a comment, note, or remark providing additional
-        information.
     ncLocation3DGeospatialCoordinateType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncLocation2DGeospatialCoordinateType
         - type: object
+          title: 'nc:Location3DGeospatialCoordinateType'
+          description: >-
+            A data type for a location identified by latitude, longitude, and
+            height.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncLocation3DGeospatialCoordinateType JSON-LD context
+              enum:
+                - >-
+                  ../JSON-LD_Contexts/ncLocation3DGeospatialCoordinateTypeContext.json
             locationAltitude:
               type: array
               description: >-
@@ -5149,21 +5311,22 @@ components:
                 reference point. NIEM reference is nc:LocationElevation
               items:
                 $ref: nc.yaml#/components/schemas/ncLocationHeightMeasureType
-            '@context':
-              type: string
-              description: ncLocation3DGeospatialCoordinateTypeJSON-LD context
-              enum:
-                - >-
-                  ../JSON-LD_Contexts/ncLocation3DGeospatialCoordinateTypeContext.json
-      title: 'nc:Location3DGeospatialCoordinateType'
-      description: >-
-        A data type for a location identified by latitude, longitude, and
-        height.
     ncLocationHeightMeasureType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncMeasureType
         - type: object
+          title: 'nc:LocationHeightMeasureType'
+          description: >-
+            A data type for a measurement of the height of a location relative
+            to a reference point.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncLocationHeightMeasureType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncLocationHeightMeasureTypeContext.json
             locationHeightVerticalDatumCode:
               type: array
               description: >-
@@ -5188,30 +5351,23 @@ components:
               items:
                 $ref: >-
                   nc-4.0.1.yaml#/components/schemas/nc-4.0.1LocationHeightMeasureAugmentationType
-            '@context':
-              type: string
-              description: ncLocationHeightMeasureTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncLocationHeightMeasureTypeContext.json
-      title: 'nc:LocationHeightMeasureType'
-      description: >-
-        A data type for a measurement of the height of a location relative to a
-        reference point.
     ncUTMCoordinateType:
       type: object
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncUTMCoordinateSimpleType
-        '@context':
-          type: string
-          description: ncUTMCoordinateTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncUTMCoordinateTypeContext.json
       title: 'nc:UTMCoordinateType'
       description: >-
         A data type for a coordinate from the Universal Transverse Mercator
         (UTM) Coordinate System, which represents a location with a hemisphere,
         zone, an easting value, and a northing value.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncUTMCoordinateType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncUTMCoordinateTypeContext.json
+        simpleType:
+          $ref: nc.yaml#/components/schemas/ncUTMCoordinateSimpleType
     ncUTMCoordinateSimpleType:
       type: string
       description: >-
@@ -5222,7 +5378,16 @@ components:
         - '(0[1-9]|[1-5][0-9]|60)([NS])([0-9]{6}[0-9]{7})'
     ncLocaleType:
       type: object
+      title: 'nc:LocaleType'
+      description: A data type for a geopolitical area.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncLocaleType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncLocaleTypeContext.json
         censusBlockID:
           type: array
           description: >-
@@ -5328,16 +5493,18 @@ components:
             nc:LocaleEmergencyServicesJurisdictionID
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsstring
-        '@context':
-          type: string
-          description: ncLocaleTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncLocaleTypeContext.json
-      title: 'nc:LocaleType'
-      description: A data type for a geopolitical area.
     ncMapLocationType:
       type: object
+      title: 'nc:MapLocationType'
+      description: A data type for a location identified by map or grid coordinates.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncMapLocationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncMapLocationTypeContext.json
         mapCoordinateFull:
           type: array
           description: >-
@@ -5404,18 +5571,20 @@ components:
             nc:MapVerticalCoordinateText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        '@context':
-          type: string
-          description: ncMapLocationTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncMapLocationTypeContext.json
-      title: 'nc:MapLocationType'
-      description: A data type for a location identified by map or grid coordinates.
     ncNumericType:
       allOf:
         - $ref: niem-xs.yaml#/components/schemas/niem-xsdecimal
         - type: object
+          title: 'nc:NumericType'
+          description: A data type for a number value.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncNumericType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncNumericTypeContext.json
             confidencePercent:
               type: number
               description: >-
@@ -5426,16 +5595,20 @@ components:
               description: >-
                 An allowable range for error on a point estimate. NIEM reference
                 is nc:toleranceNumeric
-            '@context':
-              type: string
-              description: ncNumericTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncNumericTypeContext.json
-      title: 'nc:NumericType'
-      description: A data type for a number value.
     ncFacilityType:
       type: object
+      title: 'nc:FacilityType'
+      description: >-
+        A data type for a building, place, or structure that provides a
+        particular service.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncFacilityType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncFacilityTypeContext.json
         identification:
           type: array
           description: >-
@@ -5598,20 +5771,22 @@ components:
             mo:FacilityAugmentation
           items:
             $ref: mo.yaml#/components/schemas/moFacilityAugmentationType
-        '@context':
-          type: string
-          description: ncFacilityTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncFacilityTypeContext.json
-      title: 'nc:FacilityType'
-      description: >-
-        A data type for a building, place, or structure that provides a
-        particular service.
     ncSystemIdentificationType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncIdentificationType
         - type: object
+          title: 'nc:SystemIdentificationType'
+          description: >-
+            A data type for a number or code assigned to a system to uniquely
+            identify the system.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncSystemIdentificationType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncSystemIdentificationTypeContext.json
             systemName:
               type: array
               description: >-
@@ -5619,18 +5794,20 @@ components:
                 reference is nc:SystemName
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
-            '@context':
-              type: string
-              description: ncSystemIdentificationTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncSystemIdentificationTypeContext.json
-      title: 'nc:SystemIdentificationType'
-      description: >-
-        A data type for a number or code assigned to a system to uniquely
-        identify the system.
     ncScheduleType:
       type: object
+      title: 'nc:ScheduleType'
+      description: >-
+        A data type for a schedule providing the beginning and ending hours of
+        operation by weekday, for a designated time period.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncScheduleType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncScheduleTypeContext.json
         status:
           type: array
           description: >-
@@ -5675,18 +5852,18 @@ components:
             cbrn:OperatingSchedule
           items:
             $ref: cbrn.yaml#/components/schemas/cbrnOperatingScheduleType
-        '@context':
-          type: string
-          description: ncScheduleTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncScheduleTypeContext.json
-      title: 'nc:ScheduleType'
-      description: >-
-        A data type for a schedule providing the beginning and ending hours of
-        operation by weekday, for a designated time period.
     ncScheduleDayType:
       type: object
+      title: 'nc:ScheduleDayType'
+      description: A data type for a plan or agenda for the activities of a day.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncScheduleDayType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncScheduleDayTypeContext.json
         status:
           type: array
           description: >-
@@ -5757,25 +5934,20 @@ components:
             reference is cbrn:ScheduleByWeekDay
           items:
             $ref: cbrn.yaml#/components/schemas/cbrnScheduleByWeekDayType
-        '@context':
-          type: string
-          description: ncScheduleDayTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncScheduleDayTypeContext.json
-      title: 'nc:ScheduleDayType'
-      description: A data type for a plan or agenda for the activities of a day.
     ncDayOfWeekCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncDayOfWeekCodeSimpleType
-        '@context':
-          type: string
-          description: ncDayOfWeekCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncDayOfWeekCodeTypeContext.json
       title: 'nc:DayOfWeekCodeType'
       description: A data type for days of the week.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncDayOfWeekCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncDayOfWeekCodeTypeContext.json
+        simpleType:
+          $ref: nc.yaml#/components/schemas/ncDayOfWeekCodeSimpleType
     ncDayOfWeekCodeSimpleType:
       type: string
       description: A data type for days of the week.
@@ -5789,7 +5961,16 @@ components:
         - WED
     ncTimeRangeType:
       type: object
+      title: 'nc:TimeRangeType'
+      description: A data type for a start and end time.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncTimeRangeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncTimeRangeTypeContext.json
         beginTime:
           type: array
           description: 'A start or begin time. NIEM reference is nc:BeginTime'
@@ -5800,18 +5981,20 @@ components:
           description: 'An end time. NIEM reference is nc:EndTime'
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xstime
-        '@context':
-          type: string
-          description: ncTimeRangeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncTimeRangeTypeContext.json
-      title: 'nc:TimeRangeType'
-      description: A data type for a start and end time.
     ncImageType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncBinaryType
         - type: object
+          title: 'nc:ImageType'
+          description: A data type for a picture or visual representation of something.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncImageType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncImageTypeContext.json
             heightValue:
               type: array
               description: >-
@@ -5855,25 +6038,20 @@ components:
                 mo:ImageAugmentation
               items:
                 $ref: mo.yaml#/components/schemas/moImageAugmentationType
-            '@context':
-              type: string
-              description: ncImageTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncImageTypeContext.json
-      title: 'nc:ImageType'
-      description: A data type for a picture or visual representation of something.
     ncImagePoseCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncImagePoseCodeSimpleType
-        '@context':
-          type: string
-          description: ncImagePoseCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncImagePoseCodeTypeContext.json
       title: 'nc:ImagePoseCodeType'
       description: A data type for angles of an entitys pose in a photograph.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncImagePoseCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncImagePoseCodeTypeContext.json
+        simpleType:
+          $ref: nc.yaml#/components/schemas/ncImagePoseCodeSimpleType
     ncImagePoseCodeSimpleType:
       type: string
       description: A data type for angles of an entitys pose in a photograph.
@@ -5885,22 +6063,33 @@ components:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncNumericType
         - type: object
+          title: 'nc:QuantityType'
+          description: A data type for a count or tally.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncQuantityType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncQuantityTypeContext.json
             quantityUnit:
               type: string
               description: >-
                 A unit of counting or tallying for a quantity. NIEM reference is
                 nc:quantityUnitText
-            '@context':
-              type: string
-              description: ncQuantityTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncQuantityTypeContext.json
-      title: 'nc:QuantityType'
-      description: A data type for a count or tally.
     ncDocumentStatusDetailsType:
       type: object
+      title: 'nc:DocumentStatusDetailsType'
+      description: A data type for the classification of status of a document.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncDocumentStatusDetailsType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncDocumentStatusDetailsTypeContext.json
         documentStatusCategoryCode:
           type: array
           description: >-
@@ -5915,16 +6104,20 @@ components:
             nc:DocumentStatusDescriptionText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        '@context':
-          type: string
-          description: ncDocumentStatusDetailsTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncDocumentStatusDetailsTypeContext.json
-      title: 'nc:DocumentStatusDetailsType'
-      description: A data type for the classification of status of a document.
     ncPersonNameType:
       type: object
+      title: 'nc:PersonNameType'
+      description: >-
+        A data type for a combination of names and/or titles by which a person
+        is known.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncPersonNameType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncPersonNameTypeContext.json
         prefix:
           type: array
           description: >-
@@ -6047,20 +6240,22 @@ components:
             scr:PersonNameTextAugmentation
           items:
             $ref: scr.yaml#/components/schemas/scrPersonNameTextAugmentationType
-        '@context':
-          type: string
-          description: ncPersonNameTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncPersonNameTypeContext.json
-      title: 'nc:PersonNameType'
-      description: >-
-        A data type for a combination of names and/or titles by which a person
-        is known.
     ncPersonNameTextType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncProperNameTextType
         - type: object
+          title: 'nc:PersonNameTextType'
+          description: >-
+            A data type for a name by which a person is known, referred, or
+            addressed.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncPersonNameTextType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncPersonNameTextTypeContext.json
             isPersonNameInitial:
               type: boolean
               description: >-
@@ -6072,27 +6267,20 @@ components:
               description: >-
                 A numeric identifier that explicitly sequences or orders
                 elements. NIEM reference is nc:sequenceID
-            '@context':
-              type: string
-              description: ncPersonNameTextTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncPersonNameTextTypeContext.json
-      title: 'nc:PersonNameTextType'
-      description: >-
-        A data type for a name by which a person is known, referred, or
-        addressed.
     ncPersonNameCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncPersonNameCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ncPersonNameCategoryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncPersonNameCategoryCodeTypeContext.json
       title: 'nc:PersonNameCategoryCodeType'
       description: A data type for a kind of person name.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncPersonNameCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncPersonNameCategoryCodeTypeContext.json
+        simpleType:
+          $ref: nc.yaml#/components/schemas/ncPersonNameCategoryCodeSimpleType
     ncPersonNameCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of person name.
@@ -6103,7 +6291,16 @@ components:
         - Legal
     ncOrganizationType:
       type: object
+      title: 'nc:OrganizationType'
+      description: A data type for a body of people organized for a particular purpose.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncOrganizationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncOrganizationTypeContext.json
         abbreviation:
           type: array
           description: >-
@@ -6355,18 +6552,20 @@ components:
             scr:OrganizationAugmentation
           items:
             $ref: scr.yaml#/components/schemas/scrOrganizationAugmentationType
-        '@context':
-          type: string
-          description: ncOrganizationTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncOrganizationTypeContext.json
-      title: 'nc:OrganizationType'
-      description: A data type for a body of people organized for a particular purpose.
     ncWeightMeasureType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncMeasureType
         - type: object
+          title: 'nc:WeightMeasureType'
+          description: A data type for a measure of a weight.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncWeightMeasureType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncWeightMeasureTypeContext.json
             weightUnitCode:
               type: array
               description: >-
@@ -6374,16 +6573,20 @@ components:
                 nc:WeightUnitCode
               items:
                 $ref: unece.yaml#/components/schemas/uneceMassCodeType
-            '@context':
-              type: string
-              description: ncWeightMeasureTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncWeightMeasureTypeContext.json
-      title: 'nc:WeightMeasureType'
-      description: A data type for a measure of a weight.
     ncActivityType:
       type: object
+      title: 'nc:ActivityType'
+      description: >-
+        A data type for a single or set of related actions, events, or process
+        steps.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncActivityType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncActivityTypeContext.json
         identification:
           type: array
           description: >-
@@ -6444,20 +6647,20 @@ components:
             j:ActivityAugmentation
           items:
             $ref: j.yaml#/components/schemas/jActivityAugmentationType
-        '@context':
-          type: string
-          description: ncActivityTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncActivityTypeContext.json
-      title: 'nc:ActivityType'
-      description: >-
-        A data type for a single or set of related actions, events, or process
-        steps.
     ncConditionType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncActivityType
         - type: object
+          title: 'nc:ConditionType'
+          description: A data type for a requirement or stipulation.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncConditionType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncConditionTypeContext.json
             groupID:
               type: array
               description: >-
@@ -6507,18 +6710,22 @@ components:
                 nc:ConditionViolationDate
               items:
                 $ref: nc.yaml#/components/schemas/ncDateType
-            '@context':
-              type: string
-              description: ncConditionTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncConditionTypeContext.json
-      title: 'nc:ConditionType'
-      description: A data type for a requirement or stipulation.
     ncDisciplinaryActionType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncActivityType
         - type: object
+          title: 'nc:DisciplinaryActionType'
+          description: >-
+            A data type for an activity assigned to a person for the purpose of
+            self-improvement, punishment, or restitution.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncDisciplinaryActionType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncDisciplinaryActionTypeContext.json
             person:
               type: array
               description: >-
@@ -6587,18 +6794,18 @@ components:
                 reference is j:DisciplinaryActionAugmentation
               items:
                 $ref: j.yaml#/components/schemas/jDisciplinaryActionAugmentationType
-            '@context':
-              type: string
-              description: ncDisciplinaryActionTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncDisciplinaryActionTypeContext.json
-      title: 'nc:DisciplinaryActionType'
-      description: >-
-        A data type for an activity assigned to a person for the purpose of
-        self-improvement, punishment, or restitution.
     ncObligationType:
       type: object
+      title: 'nc:ObligationType'
+      description: A data type for something that is owed to an entity.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncObligationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncObligationTypeContext.json
         totalAmount:
           type: array
           description: >-
@@ -6739,16 +6946,18 @@ components:
             j:ObligationAugmentation
           items:
             $ref: j.yaml#/components/schemas/jObligationAugmentationType
-        '@context':
-          type: string
-          description: ncObligationTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncObligationTypeContext.json
-      title: 'nc:ObligationType'
-      description: A data type for something that is owed to an entity.
     ncObligationExemptionType:
       type: object
+      title: 'nc:ObligationExemptionType'
+      description: A data type for a waival or dismissal of an obligation.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncObligationExemptionType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncObligationExemptionTypeContext.json
         financialAmount:
           type: array
           description: >-
@@ -6763,16 +6972,18 @@ components:
             nc:ObligationExemptionDescriptionText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        '@context':
-          type: string
-          description: ncObligationExemptionTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncObligationExemptionTypeContext.json
-      title: 'nc:ObligationExemptionType'
-      description: A data type for a waival or dismissal of an obligation.
     ncObligationRecurrenceType:
       type: object
+      title: 'nc:ObligationRecurrenceType'
+      description: A data type for a periodic basis on which an obligation must be met.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncObligationRecurrenceType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncObligationRecurrenceTypeContext.json
         obligationPeriod:
           type: array
           description: >-
@@ -6787,18 +6998,22 @@ components:
             nc:ObligationDateRange
           items:
             $ref: nc.yaml#/components/schemas/ncDateRangeType
-        '@context':
-          type: string
-          description: ncObligationRecurrenceTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncObligationRecurrenceTypeContext.json
-      title: 'nc:ObligationRecurrenceType'
-      description: A data type for a periodic basis on which an obligation must be met.
     ncProgramType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncActivityType
         - type: object
+          title: 'nc:ProgramType'
+          description: >-
+            A data type for a set of projects, activities, or services intended
+            to meet a need.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncProgramType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncProgramTypeContext.json
             person:
               type: array
               description: >-
@@ -6913,20 +7128,22 @@ components:
                 j:ProgramAugmentation
               items:
                 $ref: j.yaml#/components/schemas/jProgramAugmentationType
-            '@context':
-              type: string
-              description: ncProgramTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncProgramTypeContext.json
-      title: 'nc:ProgramType'
-      description: >-
-        A data type for a set of projects, activities, or services intended to
-        meet a need.
     ncReferralType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncActivityType
         - type: object
+          title: 'nc:ReferralType'
+          description: >-
+            A data type for a recommendation of a person to an activity,
+            program, or product.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncReferralType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncReferralTypeContext.json
             activity:
               type: array
               description: >-
@@ -6983,20 +7200,22 @@ components:
                 j:ReferralAugmentation
               items:
                 $ref: j.yaml#/components/schemas/jReferralAugmentationType
-            '@context':
-              type: string
-              description: ncReferralTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncReferralTypeContext.json
-      title: 'nc:ReferralType'
-      description: >-
-        A data type for a recommendation of a person to an activity, program, or
-        product.
     ncReleaseType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncActivityType
         - type: object
+          title: 'nc:ReleaseType'
+          description: >-
+            A data type for a freeing or discharging of someone or something
+            from an activity, supervision, or obligation.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncReleaseType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncReleaseTypeContext.json
             person:
               type: array
               description: >-
@@ -7053,20 +7272,23 @@ components:
                 j:ReleaseAugmentation
               items:
                 $ref: j.yaml#/components/schemas/jReleaseAugmentationType
-            '@context':
-              type: string
-              description: ncReleaseTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncReleaseTypeContext.json
-      title: 'nc:ReleaseType'
-      description: >-
-        A data type for a freeing or discharging of someone or something from an
-        activity, supervision, or obligation.
     ncTransportationAssociationType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncAssociationType
         - type: object
+          title: 'nc:TransportationAssociationType'
+          description: >-
+            A data type for an association between a conveyance and the people
+            and/or goods it transported.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncTransportationAssociationType JSON-LD context
+              enum:
+                - >-
+                  ../JSON-LD_Contexts/ncTransportationAssociationTypeContext.json
             conveyance:
               type: array
               description: 'A means of transport. NIEM reference is nc:Conveyance'
@@ -7098,19 +7320,20 @@ components:
                 reference is nc:ConveyancePassengerQuantity
               items:
                 $ref: nc.yaml#/components/schemas/ncQuantityType
-            '@context':
-              type: string
-              description: ncTransportationAssociationTypeJSON-LD context
-              enum:
-                - >-
-                  ../JSON-LD_Contexts/ncTransportationAssociationTypeContext.json
-      title: 'nc:TransportationAssociationType'
-      description: >-
-        A data type for an association between a conveyance and the people
-        and/or goods it transported.
     ncAssociationType:
       type: object
+      title: 'nc:AssociationType'
+      description: >-
+        A data type for an association, connection, relationship, or involvement
+        somehow linking people, things, and/or activities together.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncAssociationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncAssociationTypeContext.json
         description:
           type: array
           description: >-
@@ -7125,20 +7348,20 @@ components:
             nc:AssociationDateRange
           items:
             $ref: nc.yaml#/components/schemas/ncDateRangeType
-        '@context':
-          type: string
-          description: ncAssociationTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncAssociationTypeContext.json
-      title: 'nc:AssociationType'
-      description: >-
-        A data type for an association, connection, relationship, or involvement
-        somehow linking people, things, and/or activities together.
     ncConveyanceType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncItemType
         - type: object
+          title: 'nc:ConveyanceType'
+          description: A data type for a means of transport from place to place.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncConveyanceType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncConveyanceTypeContext.json
             cargo:
               type: array
               description: >-
@@ -7197,18 +7420,21 @@ components:
                 j:ConveyanceAugmentation
               items:
                 $ref: j.yaml#/components/schemas/jConveyanceAugmentationType
-            '@context':
-              type: string
-              description: ncConveyanceTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncConveyanceTypeContext.json
-      title: 'nc:ConveyanceType'
-      description: A data type for a means of transport from place to place.
     ncPersonEmploymentAssociationType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncAssociationType
         - type: object
+          title: 'nc:PersonEmploymentAssociationType'
+          description: A data type for an association between a person and an employment.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncPersonEmploymentAssociationType JSON-LD context
+              enum:
+                - >-
+                  ../JSON-LD_Contexts/ncPersonEmploymentAssociationTypeContext.json
             employee:
               type: array
               description: >-
@@ -7338,19 +7564,22 @@ components:
               items:
                 $ref: >-
                   scr.yaml#/components/schemas/scrPersonEmploymentAssociationAugmentationType
-            '@context':
-              type: string
-              description: ncPersonEmploymentAssociationTypeJSON-LD context
-              enum:
-                - >-
-                  ../JSON-LD_Contexts/ncPersonEmploymentAssociationTypeContext.json
-      title: 'nc:PersonEmploymentAssociationType'
-      description: A data type for an association between a person and an employment.
     ncSupervisionType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncActivityType
         - type: object
+          title: 'nc:SupervisionType'
+          description: >-
+            A data type for an act of officially overseeing, supervising, or
+            keeping track in some capacity of a person.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncSupervisionType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncSupervisionTypeContext.json
             isCurrent:
               type: array
               description: >-
@@ -7415,27 +7644,20 @@ components:
                 j:SupervisionAugmentation
               items:
                 $ref: j.yaml#/components/schemas/jSupervisionAugmentationType
-            '@context':
-              type: string
-              description: ncSupervisionTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncSupervisionTypeContext.json
-      title: 'nc:SupervisionType'
-      description: >-
-        A data type for an act of officially overseeing, supervising, or keeping
-        track in some capacity of a person.
     ncStatuteCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncStatuteCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ncStatuteCategoryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncStatuteCategoryCodeTypeContext.json
       title: 'nc:StatuteCategoryCodeType'
       description: A data type for kinds of statutes.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncStatuteCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncStatuteCategoryCodeTypeContext.json
+        simpleType:
+          $ref: nc.yaml#/components/schemas/ncStatuteCategoryCodeSimpleType
     ncStatuteCategoryCodeSimpleType:
       type: string
       description: A data type for kinds of statutes.
@@ -7450,7 +7672,18 @@ components:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncActivityType
         - type: object
+          title: 'nc:IncidentType'
+          description: >-
+            A data type for an occurrence or an event that may require a
+            response.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncIncidentType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncIncidentTypeContext.json
             location:
               type: array
               description: >-
@@ -7500,18 +7733,22 @@ components:
                 j:IncidentAugmentation
               items:
                 $ref: j.yaml#/components/schemas/jIncidentAugmentationType
-            '@context':
-              type: string
-              description: ncIncidentTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncIncidentTypeContext.json
-      title: 'nc:IncidentType'
-      description: A data type for an occurrence or an event that may require a response.
     ncProgressType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncActivityType
         - type: object
+          title: 'nc:ProgressType'
+          description: >-
+            A data type for a set of changes or advancements which bring someone
+            closer to completing something.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncProgressType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncProgressTypeContext.json
             isCompliance:
               type: array
               description: >-
@@ -7541,27 +7778,20 @@ components:
                 NIEM reference is nc:ProgressTimeQuantityText
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
-            '@context':
-              type: string
-              description: ncProgressTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncProgressTypeContext.json
-      title: 'nc:ProgressType'
-      description: >-
-        A data type for a set of changes or advancements which bring someone
-        closer to completing something.
     ncPleaCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncPleaCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ncPleaCategoryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncPleaCategoryCodeTypeContext.json
       title: 'nc:PleaCategoryCodeType'
       description: A data type for kinds of pleas.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncPleaCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncPleaCategoryCodeTypeContext.json
+        simpleType:
+          $ref: nc.yaml#/components/schemas/ncPleaCategoryCodeSimpleType
     ncPleaCategoryCodeSimpleType:
       type: string
       description: A data type for kinds of pleas.
@@ -7576,7 +7806,16 @@ components:
         - X
     ncInjuryType:
       type: object
+      title: 'nc:InjuryType'
+      description: A data type for a form of harm or damage sustained by a person.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncInjuryType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncInjuryTypeContext.json
         locationCode:
           type: array
           description: >-
@@ -7672,16 +7911,20 @@ components:
             j:InjuryAugmentation
           items:
             $ref: j.yaml#/components/schemas/jInjuryAugmentationType
-        '@context':
-          type: string
-          description: ncInjuryTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncInjuryTypeContext.json
-      title: 'nc:InjuryType'
-      description: A data type for a form of harm or damage sustained by a person.
     ncWeaponType:
       type: object
+      title: 'nc:WeaponType'
+      description: >-
+        A data type for a property item used as an instrument of attack or
+        defense.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncWeaponType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncWeaponTypeContext.json
         roleOfItem:
           type: array
           description: >-
@@ -7708,20 +7951,22 @@ components:
             nc:WeaponUsageText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        '@context':
-          type: string
-          description: ncWeaponTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncWeaponTypeContext.json
-      title: 'nc:WeaponType'
-      description: >-
-        A data type for a property item used as an instrument of attack or
-        defense.
     ncDrugType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncSubstanceType
         - type: object
+          title: 'nc:DrugType'
+          description: >-
+            A data type for a legal or illegal substance that can be used as a
+            medicine or a narcotic.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncDrugType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncDrugTypeContext.json
             daysSupplyQuantity:
               type: array
               description: >-
@@ -7768,20 +8013,20 @@ components:
                 j:DrugAugmentation
               items:
                 $ref: j.yaml#/components/schemas/jDrugAugmentationType
-            '@context':
-              type: string
-              description: ncDrugTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncDrugTypeContext.json
-      title: 'nc:DrugType'
-      description: >-
-        A data type for a legal or illegal substance that can be used as a
-        medicine or a narcotic.
     ncSubstanceType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncItemType
         - type: object
+          title: 'nc:SubstanceType'
+          description: A data type for the matter or substance of which something consists.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncSubstanceType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncSubstanceTypeContext.json
             drugCategoryCode:
               type: array
               description: 'A kind of drug. NIEM reference is j:DrugCategoryCode'
@@ -7858,18 +8103,20 @@ components:
                 nc:SubstanceFoundDescriptionText
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
-            '@context':
-              type: string
-              description: ncSubstanceTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncSubstanceTypeContext.json
-      title: 'nc:SubstanceType'
-      description: A data type for the matter or substance of which something consists.
     ncSubstanceMeasureType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncMeasureType
         - type: object
+          title: 'nc:SubstanceMeasureType'
+          description: A data type for a measure of the amount of something.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncSubstanceMeasureType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncSubstanceMeasureTypeContext.json
             substanceUnitCode:
               type: array
               description: >-
@@ -7877,18 +8124,20 @@ components:
                 is j:SubstanceUnitCode
               items:
                 $ref: ucr.yaml#/components/schemas/ucrDrugMeasurementCodeType
-            '@context':
-              type: string
-              description: ncSubstanceMeasureTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncSubstanceMeasureTypeContext.json
-      title: 'nc:SubstanceMeasureType'
-      description: A data type for a measure of the amount of something.
     ncSpeedMeasureType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncMeasureType
         - type: object
+          title: 'nc:SpeedMeasureType'
+          description: A data type for a measure of a speed or rate of motion.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncSpeedMeasureType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncSpeedMeasureTypeContext.json
             speedUnitCode:
               type: array
               description: >-
@@ -7903,25 +8152,20 @@ components:
                 is mo:SpeedMeasureAugmentation
               items:
                 $ref: mo.yaml#/components/schemas/moSpeedMeasureAugmentationType
-            '@context':
-              type: string
-              description: ncSpeedMeasureTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncSpeedMeasureTypeContext.json
-      title: 'nc:SpeedMeasureType'
-      description: A data type for a measure of a speed or rate of motion.
     ncOffenseLevelCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncOffenseLevelCodeSimpleType
-        '@context':
-          type: string
-          description: ncOffenseLevelCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncOffenseLevelCodeTypeContext.json
       title: 'nc:OffenseLevelCodeType'
       description: A data type for levels of an incident.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncOffenseLevelCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncOffenseLevelCodeTypeContext.json
+        simpleType:
+          $ref: nc.yaml#/components/schemas/ncOffenseLevelCodeSimpleType
     ncOffenseLevelCodeSimpleType:
       type: string
       description: A data type for levels of an incident.
@@ -7934,7 +8178,18 @@ components:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncActivityType
         - type: object
+          title: 'nc:AssessmentType'
+          description: >-
+            A data type for an evaluation, appraisal, or assessment of something
+            or someone.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncAssessmentType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncAssessmentTypeContext.json
             assessor:
               type: array
               description: >-
@@ -7984,27 +8239,20 @@ components:
                 j:AssessmentAugmentation
               items:
                 $ref: j.yaml#/components/schemas/jAssessmentAugmentationType
-            '@context':
-              type: string
-              description: ncAssessmentTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncAssessmentTypeContext.json
-      title: 'nc:AssessmentType'
-      description: >-
-        A data type for an evaluation, appraisal, or assessment of something or
-        someone.
     ncSupervisionRestrictionCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncSupervisionRestrictionCodeSimpleType
-        '@context':
-          type: string
-          description: ncSupervisionRestrictionCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncSupervisionRestrictionCodeTypeContext.json
       title: 'nc:SupervisionRestrictionCodeType'
       description: A data type for restrictions placed upon a person under supervision.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncSupervisionRestrictionCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncSupervisionRestrictionCodeTypeContext.json
+        simpleType:
+          $ref: nc.yaml#/components/schemas/ncSupervisionRestrictionCodeSimpleType
     ncSupervisionRestrictionCodeSimpleType:
       type: string
       description: A data type for restrictions placed upon a person under supervision.
@@ -8077,16 +8325,18 @@ components:
         - WEAPONS
     ncSupervisionLevelCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncSupervisionLevelCodeSimpleType
-        '@context':
-          type: string
-          description: ncSupervisionLevelCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncSupervisionLevelCodeTypeContext.json
       title: 'nc:SupervisionLevelCodeType'
       description: A data type for levels of supervision required for a person.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncSupervisionLevelCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncSupervisionLevelCodeTypeContext.json
+        simpleType:
+          $ref: nc.yaml#/components/schemas/ncSupervisionLevelCodeSimpleType
     ncSupervisionLevelCodeSimpleType:
       type: string
       description: A data type for levels of supervision required for a person.
@@ -8102,7 +8352,19 @@ components:
         - RESID/IN-STATE CUSTD
     ncTaskType:
       type: object
+      title: 'nc:TaskType'
+      description: >-
+        A data type for a clearly defined action or activity specifically
+        assigned to an individual or organization that must be done as it is
+        imposed by an appropriate authority.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncTaskType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncTaskTypeContext.json
         name:
           type: array
           description: 'A name of a task. NIEM reference is nc:TaskName'
@@ -8165,21 +8427,21 @@ components:
             mo:TaskAugmentation
           items:
             $ref: mo.yaml#/components/schemas/moTaskAugmentationType
-        '@context':
-          type: string
-          description: ncTaskTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncTaskTypeContext.json
-      title: 'nc:TaskType'
-      description: >-
-        A data type for a clearly defined action or activity specifically
-        assigned to an individual or organization that must be done as it is
-        imposed by an appropriate authority.
     ncActivityPersonAssociationType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncAssociationType
         - type: object
+          title: 'nc:ActivityPersonAssociationType'
+          description: A data type for an association between an activity and a person.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncActivityPersonAssociationType JSON-LD context
+              enum:
+                - >-
+                  ../JSON-LD_Contexts/ncActivityPersonAssociationTypeContext.json
             activity:
               type: array
               description: >-
@@ -8208,17 +8470,20 @@ components:
               items:
                 $ref: >-
                   hs.yaml#/components/schemas/hsActivityInvolvedPersonAssociationAugmentationType
-            '@context':
-              type: string
-              description: ncActivityPersonAssociationTypeJSON-LD context
-              enum:
-                - >-
-                  ../JSON-LD_Contexts/ncActivityPersonAssociationTypeContext.json
-      title: 'nc:ActivityPersonAssociationType'
-      description: A data type for an association between an activity and a person.
     ncMetadataType:
       type: object
+      title: 'nc:MetadataType'
+      description: >-
+        A data type for information that further qualifies primary data; data
+        about data.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncMetadataType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncMetadataTypeContext.json
         caveat:
           type: array
           description: >-
@@ -8404,18 +8669,20 @@ components:
           description: 'A comment, note, or remark. NIEM reference is nc:Comment'
           items:
             $ref: nc.yaml#/components/schemas/ncCommentType
-        '@context':
-          type: string
-          description: ncMetadataTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncMetadataTypeContext.json
-      title: 'nc:MetadataType'
-      description: >-
-        A data type for information that further qualifies primary data; data
-        about data.
     ncPermitType:
       type: object
+      title: 'nc:PermitType'
+      description: >-
+        A data type for a permit or official document giving a person or entity
+        authorization to do something.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncPermitType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncPermitTypeContext.json
         identification:
           type: array
           description: 'A permit identification. NIEM reference is nc:PermitIdentification'
@@ -8445,20 +8712,22 @@ components:
             nc:PermitRenewalDate
           items:
             $ref: nc.yaml#/components/schemas/ncDateType
-        '@context':
-          type: string
-          description: ncPermitTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncPermitTypeContext.json
-      title: 'nc:PermitType'
-      description: >-
-        A data type for a permit or official document giving a person or entity
-        authorization to do something.
     ncTreatmentType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncActivityType
         - type: object
+          title: 'nc:TreatmentType'
+          description: >-
+            A data type for a treatment of a person for a mental or physical
+            condition.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncTreatmentType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncTreatmentTypeContext.json
             text:
               type: array
               description: >-
@@ -8492,18 +8761,20 @@ components:
                 j:TreatmentAugmentation
               items:
                 $ref: j.yaml#/components/schemas/jTreatmentAugmentationType
-            '@context':
-              type: string
-              description: ncTreatmentTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncTreatmentTypeContext.json
-      title: 'nc:TreatmentType'
-      description: >-
-        A data type for a treatment of a person for a mental or physical
-        condition.
     ncFinancialAccountType:
       type: object
+      title: 'nc:FinancialAccountType'
+      description: >-
+        A data type for a financial account maintained by a financial
+        institution.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncFinancialAccountType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncFinancialAccountTypeContext.json
         listedName:
           type: array
           description: >-
@@ -8547,20 +8818,20 @@ components:
             nc:FinancialAccountHolder
           items:
             $ref: nc.yaml#/components/schemas/ncFinancialAccountHolderType
-        '@context':
-          type: string
-          description: ncFinancialAccountTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncFinancialAccountTypeContext.json
-      title: 'nc:FinancialAccountType'
-      description: >-
-        A data type for a financial account maintained by a financial
-        institution.
     ncFinancialAccountHolderType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncEntityType
         - type: object
+          title: 'nc:FinancialAccountHolderType'
+          description: A data type for an entity that holds a financial account.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncFinancialAccountHolderType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncFinancialAccountHolderTypeContext.json
             code:
               type: array
               description: >-
@@ -8568,25 +8839,20 @@ components:
                 nc:FinancialAccountHolderCode
               items:
                 $ref: nc.yaml#/components/schemas/ncFinancialAccountHolderCodeType
-            '@context':
-              type: string
-              description: ncFinancialAccountHolderTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncFinancialAccountHolderTypeContext.json
-      title: 'nc:FinancialAccountHolderType'
-      description: A data type for an entity that holds a financial account.
     ncFinancialAccountHolderCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncFinancialAccountHolderCodeSimpleType
-        '@context':
-          type: string
-          description: ncFinancialAccountHolderCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncFinancialAccountHolderCodeTypeContext.json
       title: 'nc:FinancialAccountHolderCodeType'
       description: A data type for a kind of financial account holder.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncFinancialAccountHolderCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncFinancialAccountHolderCodeTypeContext.json
+        simpleType:
+          $ref: nc.yaml#/components/schemas/ncFinancialAccountHolderCodeSimpleType
     ncFinancialAccountHolderCodeSimpleType:
       type: string
       description: A data type for a kind of financial account holder.
@@ -8596,7 +8862,18 @@ components:
         - FATCA103
     ncGenericEntityType:
       type: object
+      title: 'nc:GenericEntityType'
+      description: >-
+        A data type for a basic set of information about a person or an
+        organization.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncGenericEntityType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncGenericEntityTypeContext.json
         entityName:
           type: array
           description: 'A name of an entity. NIEM reference is nc:EntityName'
@@ -8616,18 +8893,20 @@ components:
             nc:EntityDescriptionText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        '@context':
-          type: string
-          description: ncGenericEntityTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncGenericEntityTypeContext.json
-      title: 'nc:GenericEntityType'
-      description: >-
-        A data type for a basic set of information about a person or an
-        organization.
     ncCapabilityType:
       type: object
+      title: 'nc:CapabilityType'
+      description: >-
+        A data type for an ability to complete a task or execute a course of
+        action under specified condition and level of performance.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncCapabilityType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncCapabilityTypeContext.json
         startDate:
           type: array
           description: >-
@@ -8689,18 +8968,18 @@ components:
             intel:CapabilityAugmentation
           items:
             $ref: intel.yaml#/components/schemas/intelCapabilityAugmentationType
-        '@context':
-          type: string
-          description: ncCapabilityTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncCapabilityTypeContext.json
-      title: 'nc:CapabilityType'
-      description: >-
-        A data type for an ability to complete a task or execute a course of
-        action under specified condition and level of performance.
     ncMedicalConditionType:
       type: object
+      title: 'nc:MedicalConditionType'
+      description: 'A data type for a state of health, on-going or present.'
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncMedicalConditionType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncMedicalConditionTypeContext.json
         doctor:
           type: array
           description: >-
@@ -8757,16 +9036,18 @@ components:
             scr:MedicalConditionAugmentation
           items:
             $ref: scr.yaml#/components/schemas/scrMedicalConditionAugmentationType
-        '@context':
-          type: string
-          description: ncMedicalConditionTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncMedicalConditionTypeContext.json
-      title: 'nc:MedicalConditionType'
-      description: 'A data type for a state of health, on-going or present.'
     ncMilitarySummaryType:
       type: object
+      title: 'nc:MilitarySummaryType'
+      description: A data type for a service of a person in a military.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncMilitarySummaryType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncMilitarySummaryTypeContext.json
         militaryBranchName:
           type: array
           description: >-
@@ -8865,29 +9146,24 @@ components:
             j:MilitarySummaryAugmentation
           items:
             $ref: j.yaml#/components/schemas/jMilitarySummaryAugmentationType
-        '@context':
-          type: string
-          description: ncMilitarySummaryTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncMilitarySummaryTypeContext.json
-      title: 'nc:MilitarySummaryType'
-      description: A data type for a service of a person in a military.
     ncMilitaryDischargeCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            nc.yaml#/components/schemas/ncMilitaryDischargeCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ncMilitaryDischargeCategoryCodeTypeJSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/ncMilitaryDischargeCategoryCodeTypeContext.json
       title: 'nc:MilitaryDischargeCategoryCodeType'
       description: >-
         A data type for kinds of discharges a person may receive from military
         service.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncMilitaryDischargeCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ncMilitaryDischargeCategoryCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            nc.yaml#/components/schemas/ncMilitaryDischargeCategoryCodeSimpleType
     ncMilitaryDischargeCategoryCodeSimpleType:
       type: string
       description: >-
@@ -8905,7 +9181,18 @@ components:
         - U
     ncPhysicalFeatureType:
       type: object
+      title: 'nc:PhysicalFeatureType'
+      description: >-
+        A data type for a prominent or easily identifiable aspect of something
+        or someone.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncPhysicalFeatureType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncPhysicalFeatureTypeContext.json
         generalCategory:
           type: array
           description: >-
@@ -8955,18 +9242,18 @@ components:
             is nc:PhysicalFeatureLocationText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        '@context':
-          type: string
-          description: ncPhysicalFeatureTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncPhysicalFeatureTypeContext.json
-      title: 'nc:PhysicalFeatureType'
-      description: >-
-        A data type for a prominent or easily identifiable aspect of something
-        or someone.
     ncPersonLanguageType:
       type: object
+      title: 'nc:PersonLanguageType'
+      description: A data type for a language capability of a person.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncPersonLanguageType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncPersonLanguageTypeContext.json
         languageCode:
           type: array
           description: >-
@@ -9010,27 +9297,22 @@ components:
             reference is nc:PersonWritesLanguageIndicator
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
-        '@context':
-          type: string
-          description: ncPersonLanguageTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncPersonLanguageTypeContext.json
-      title: 'nc:PersonLanguageType'
-      description: A data type for a language capability of a person.
     ncPersonUnionStatusCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncPersonUnionStatusCodeSimpleType
-        '@context':
-          type: string
-          description: ncPersonUnionStatusCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncPersonUnionStatusCodeTypeContext.json
       title: 'nc:PersonUnionStatusCodeType'
       description: >-
         A data type describing the legal status of a person's union with another
         person.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncPersonUnionStatusCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncPersonUnionStatusCodeTypeContext.json
+        simpleType:
+          $ref: nc.yaml#/components/schemas/ncPersonUnionStatusCodeSimpleType
     ncPersonUnionStatusCodeSimpleType:
       type: string
       description: >-
@@ -9048,7 +9330,18 @@ components:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncActivityType
         - type: object
+          title: 'nc:CaseType'
+          description: >-
+            A data type for an aggregation of information about a set of related
+            activities and events.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncCaseType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncCaseTypeContext.json
             title:
               type: array
               description: 'An official name of a case. NIEM reference is nc:CaseTitleText'
@@ -9111,18 +9404,21 @@ components:
                 j:CaseAugmentation
               items:
                 $ref: j.yaml#/components/schemas/jCaseAugmentationType
-            '@context':
-              type: string
-              description: ncCaseTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncCaseTypeContext.json
-      title: 'nc:CaseType'
-      description: >-
-        A data type for an aggregation of information about a set of related
-        activities and events.
     ncInsuranceType:
       type: object
+      title: 'nc:InsuranceType'
+      description: >-
+        A data type for coverage by a contract whereby one party agrees to
+        indemnify or guarantee another against loss by a specified contingent
+        event or peril.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ncInsuranceType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncInsuranceTypeContext.json
         policyIdentification:
           type: array
           description: >-
@@ -9209,21 +9505,22 @@ components:
             em:InsuranceAugmentation
           items:
             $ref: em.yaml#/components/schemas/emInsuranceAugmentationType
-        '@context':
-          type: string
-          description: ncInsuranceTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncInsuranceTypeContext.json
-      title: 'nc:InsuranceType'
-      description: >-
-        A data type for coverage by a contract whereby one party agrees to
-        indemnify or guarantee another against loss by a specified contingent
-        event or peril.
     ncPersonUnionAssociationType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncPersonAssociationType
         - type: object
+          title: 'nc:PersonUnionAssociationType'
+          description: >-
+            A data type for an association between two persons who are in a
+            state of union with each other.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncPersonUnionAssociationType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncPersonUnionAssociationTypeContext.json
             personUnionSeparation:
               type: array
               description: >-
@@ -9287,37 +9584,39 @@ components:
                 nc:PersonUnionStatusText
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
-            '@context':
-              type: string
-              description: ncPersonUnionAssociationTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncPersonUnionAssociationTypeContext.json
-      title: 'nc:PersonUnionAssociationType'
-      description: >-
-        A data type for an association between two persons who are in a state of
-        union with each other.
     ncPersonAssociationType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncAssociationType
         - type: object
+          title: 'nc:PersonAssociationType'
+          description: A data type for an association between people.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncPersonAssociationType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncPersonAssociationTypeContext.json
             person:
               type: array
               description: 'A human being. NIEM reference is nc:Person'
               items:
                 $ref: nc.yaml#/components/schemas/ncPersonType
-            '@context':
-              type: string
-              description: ncPersonAssociationTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncPersonAssociationTypeContext.json
-      title: 'nc:PersonAssociationType'
-      description: A data type for an association between people.
     ncPersonUnionSeparationType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncActivityType
         - type: object
+          title: 'nc:PersonUnionSeparationType'
+          description: A data type for a separation of the parties in a Person Union.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncPersonUnionSeparationType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncPersonUnionSeparationTypeContext.json
             separationDateRange:
               type: array
               description: >-
@@ -9340,27 +9639,22 @@ components:
                 reference is nc:SeparationCategoryText
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
-            '@context':
-              type: string
-              description: ncPersonUnionSeparationTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncPersonUnionSeparationTypeContext.json
-      title: 'nc:PersonUnionSeparationType'
-      description: A data type for a separation of the parties in a Person Union.
     ncSeparationCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncSeparationCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ncSeparationCategoryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncSeparationCategoryCodeTypeContext.json
       title: 'nc:SeparationCategoryCodeType'
       description: >-
         A data type for a code that identifies the type of separation between
         the parties in a Person Union.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncSeparationCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncSeparationCategoryCodeTypeContext.json
+        simpleType:
+          $ref: nc.yaml#/components/schemas/ncSeparationCategoryCodeSimpleType
     ncSeparationCategoryCodeSimpleType:
       type: string
       description: >-
@@ -9374,7 +9668,16 @@ components:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncActivityType
         - type: object
+          title: 'nc:PersonDisunionType'
+          description: A data type for a legal termination of a Person Union.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncPersonDisunionType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncPersonDisunionTypeContext.json
             isDecree:
               type: array
               description: >-
@@ -9398,25 +9701,20 @@ components:
                 nc:PersonDisunionReasonText
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
-            '@context':
-              type: string
-              description: ncPersonDisunionTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncPersonDisunionTypeContext.json
-      title: 'nc:PersonDisunionType'
-      description: A data type for a legal termination of a Person Union.
     ncPersonUnionCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncPersonUnionCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ncPersonUnionCategoryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ncPersonUnionCategoryCodeTypeContext.json
       title: 'nc:PersonUnionCategoryCodeType'
       description: A data type describing the legally recognized union between two persons.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ncPersonUnionCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ncPersonUnionCategoryCodeTypeContext.json
+        simpleType:
+          $ref: nc.yaml#/components/schemas/ncPersonUnionCategoryCodeSimpleType
     ncPersonUnionCategoryCodeSimpleType:
       type: string
       description: A data type describing the legally recognized union between two persons.
@@ -9430,7 +9728,18 @@ components:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncConveyanceType
         - type: object
+          title: 'nc:AircraftType'
+          description: >-
+            A data type for a mode of transportation capable of flying in the
+            air.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncAircraftType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncAircraftTypeContext.json
             tailIdentification:
               type: array
               description: >-
@@ -9499,18 +9808,20 @@ components:
                 mo:AircraftAugmentation
               items:
                 $ref: mo.yaml#/components/schemas/moAircraftAugmentationType
-            '@context':
-              type: string
-              description: ncAircraftTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncAircraftTypeContext.json
-      title: 'nc:AircraftType'
-      description: A data type for a mode of transportation capable of flying in the air.
     ncAirportType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncFacilityType
         - type: object
+          title: 'nc:AirportType'
+          description: A data type for an airport facility.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncAirportType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncAirportTypeContext.json
             code:
               type: array
               description: >-
@@ -9518,18 +9829,22 @@ components:
                 NIEM reference is nc:AirportCodeText
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
-            '@context':
-              type: string
-              description: ncAirportTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncAirportTypeContext.json
-      title: 'nc:AirportType'
-      description: A data type for an airport facility.
     ncVesselType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncConveyanceType
         - type: object
+          title: 'nc:VesselType'
+          description: >-
+            A data type for a mode of transportation capable of transport by
+            water.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncVesselType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncVesselTypeContext.json
             makeCode:
               type: array
               description: 'A manufacturer of a vessel. NIEM reference is j:VesselMakeCode'
@@ -9612,18 +9927,22 @@ components:
                 m:VesselAugmentation
               items:
                 $ref: m.yaml#/components/schemas/mVesselAugmentationType
-            '@context':
-              type: string
-              description: ncVesselTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncVesselTypeContext.json
-      title: 'nc:VesselType'
-      description: A data type for a mode of transportation capable of transport by water.
     ncVehicleType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncConveyanceType
         - type: object
+          title: 'nc:VehicleType'
+          description: >-
+            A data type for a conveyance designed to carry an operator,
+            passengers and/or cargo, over land.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncVehicleType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncVehicleTypeContext.json
             isCMV:
               type: array
               description: >-
@@ -9777,20 +10096,20 @@ components:
                 scr:VehicleAugmentation
               items:
                 $ref: scr.yaml#/components/schemas/scrVehicleAugmentationType
-            '@context':
-              type: string
-              description: ncVehicleTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncVehicleTypeContext.json
-      title: 'nc:VehicleType'
-      description: >-
-        A data type for a conveyance designed to carry an operator, passengers
-        and/or cargo, over land.
     ncVolumeMeasureType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncMeasureType
         - type: object
+          title: 'nc:VolumeMeasureType'
+          description: A data type for a measure of an amount of space.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: ncVolumeMeasureType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/ncVolumeMeasureTypeContext.json
             engineDisplacementUnitCode:
               type: array
               description: >-
@@ -9812,22 +10131,17 @@ components:
                 nc:VolumeUnitCode
               items:
                 $ref: unece.yaml#/components/schemas/uneceVolumeUnitCodeType
-            '@context':
-              type: string
-              description: ncVolumeMeasureTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/ncVolumeMeasureTypeContext.json
-      title: 'nc:VolumeMeasureType'
-      description: A data type for a measure of an amount of space.
     ncConsumptionRateMeasureType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncMeasureType
         - type: object
+          title: 'nc:ConsumptionRateMeasureType'
+          description: A data type for a measure of a rate of consumption.
+          required:
+            - '@context'
           properties:
             '@context':
               type: string
-              description: ncConsumptionRateMeasureTypeJSON-LD context
+              description: ncConsumptionRateMeasureType JSON-LD context
               enum:
                 - ../JSON-LD_Contexts/ncConsumptionRateMeasureTypeContext.json
-      title: 'nc:ConsumptionRateMeasureType'
-      description: A data type for a measure of a rate of consumption.

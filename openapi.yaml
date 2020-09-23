@@ -313,7 +313,7 @@ components:
             - PersonIncidentRoleRegistryText
           properties:
             ncPersonComponent:
-              $ref: 'NIEM/nc.yaml#/components/schemas/ncPersonType'
+              $ref: 'NIEMComponents//nc.yaml#/components/schemas/ncPersonType'
             personIncidentRoleRegistryText:
               type: array
               description: Shall only contains values present in the Person Role registry
@@ -379,7 +379,7 @@ components:
             - VehicleRelationshipTimeStamp
           properties:
             ncVehicleComponent:
-              $ref: 'NIEM/nc.yaml#/components/schemas/ncVehicleType'
+              $ref: 'NIEMComponents//nc.yaml#/components/schemas/ncVehicleType'
             vehicleRelationshipType:
               type: array
               description:
@@ -568,7 +568,7 @@ components:
               items:
                 $ref: '#/components/schemas/ReferenceType'
             activityDateRange:
-              $ref: 'NIEM/nc.yaml#/components/schemas/ncDateRangeType'
+              $ref: 'NIEMComponents//nc.yaml#/components/schemas/ncDateRangeType'
             answerDate:
               type: string
               description: A date on which the call was answered by an agent.

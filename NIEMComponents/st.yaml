@@ -2,7 +2,18 @@ components:
   schemas:
     stLocationRoadwayType:
       type: object
+      title: 'st:LocationRoadwayType'
+      description: >-
+        A data type for the part of the roadway where a traffic accident
+        occurred.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: stLocationRoadwayType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/stLocationRoadwayTypeContext.json
         roadwayStructureIdentification:
           type: array
           description: >-
@@ -187,27 +198,20 @@ components:
             NIEM reference is st:RoadwayNationalHighwayPartCode
           items:
             $ref: mmucc.yaml#/components/schemas/mmuccStandardSelectionCodeType
-        '@context':
-          type: string
-          description: stLocationRoadwayTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/stLocationRoadwayTypeContext.json
-      title: 'st:LocationRoadwayType'
-      description: >-
-        A data type for the part of the roadway where a traffic accident
-        occurred.
     stFunctionalClassCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: st.yaml#/components/schemas/stFunctionalClassCodeSimpleType
-        '@context':
-          type: string
-          description: stFunctionalClassCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/stFunctionalClassCodeTypeContext.json
       title: 'st:FunctionalClassCodeType'
       description: A data type indicating functional class of the segment
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: stFunctionalClassCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/stFunctionalClassCodeTypeContext.json
+        simpleType:
+          $ref: st.yaml#/components/schemas/stFunctionalClassCodeSimpleType
     stFunctionalClassCodeSimpleType:
       type: string
       description: A data type indicating functional class of the segment
@@ -221,18 +225,20 @@ components:
         - '7'
     stIntersectionJunctionTrafficControlCodeType:
       type: object
+      title: 'st:IntersectionJunctionTrafficControlCodeType'
+      description: A data type indicating traffic control present at intersection/junction
+      required:
+        - '@context'
       properties:
-        simpleType:
-          $ref: >-
-            st.yaml#/components/schemas/stIntersectionJunctionTrafficControlCodeSimpleType
         '@context':
           type: string
-          description: stIntersectionJunctionTrafficControlCodeTypeJSON-LD context
+          description: stIntersectionJunctionTrafficControlCodeType JSON-LD context
           enum:
             - >-
               ../JSON-LD_Contexts/stIntersectionJunctionTrafficControlCodeTypeContext.json
-      title: 'st:IntersectionJunctionTrafficControlCodeType'
-      description: A data type indicating traffic control present at intersection/junction
+        simpleType:
+          $ref: >-
+            st.yaml#/components/schemas/stIntersectionJunctionTrafficControlCodeSimpleType
     stIntersectionJunctionTrafficControlCodeSimpleType:
       type: string
       description: A data type indicating traffic control present at intersection/junction
@@ -250,16 +256,18 @@ components:
         - '9'
     stRoadwayLightingCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: st.yaml#/components/schemas/stRoadwayLightingCodeSimpleType
-        '@context':
-          type: string
-          description: stRoadwayLightingCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/stRoadwayLightingCodeTypeContext.json
       title: 'st:RoadwayLightingCodeType'
       description: A data type for a kind of roadway illumination.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: stRoadwayLightingCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/stRoadwayLightingCodeTypeContext.json
+        simpleType:
+          $ref: st.yaml#/components/schemas/stRoadwayLightingCodeSimpleType
     stRoadwayLightingCodeSimpleType:
       type: string
       description: A data type for a kind of roadway illumination.

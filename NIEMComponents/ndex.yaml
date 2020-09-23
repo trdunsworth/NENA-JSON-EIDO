@@ -2,18 +2,20 @@ components:
   schemas:
     ndexApprovalStatusCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexApprovalStatusCodeSimpleType
-        '@context':
-          type: string
-          description: ndexApprovalStatusCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexApprovalStatusCodeTypeContext.json
       title: 'ndex:ApprovalStatusCodeType'
       description: >-
         A data type for a code that identifies the status of the request for
         addition to the approved visitor list.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexApprovalStatusCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexApprovalStatusCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexApprovalStatusCodeSimpleType
     ndexApprovalStatusCodeSimpleType:
       type: string
       description: >-
@@ -26,18 +28,20 @@ components:
         - REVOKED
     ndexIncidentStatusCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexIncidentStatusCodeSimpleType
-        '@context':
-          type: string
-          description: ndexIncidentStatusCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexIncidentStatusCodeTypeContext.json
       title: 'ndex:IncidentStatusCodeType'
       description: >-
         A data type for a code that identifies the current disposition of the
         incident.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexIncidentStatusCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexIncidentStatusCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexIncidentStatusCodeSimpleType
     ndexIncidentStatusCodeSimpleType:
       type: string
       description: >-
@@ -57,20 +61,22 @@ components:
         - UNFOUNDED
     ndexSupervisedReleaseStatusCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexSupervisedReleaseStatusCodeSimpleType
-        '@context':
-          type: string
-          description: ndexSupervisedReleaseStatusCodeTypeJSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/ndexSupervisedReleaseStatusCodeTypeContext.json
       title: 'ndex:SupervisedReleaseStatusCodeType'
       description: >-
         A data type for a code that indicates the release status of the subject
         involved in supervised release.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexSupervisedReleaseStatusCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexSupervisedReleaseStatusCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexSupervisedReleaseStatusCodeSimpleType
     ndexSupervisedReleaseStatusCodeSimpleType:
       type: string
       description: >-
@@ -88,18 +94,20 @@ components:
         - COMPLETED EARLY
     ndexBinaryCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexBinaryCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ndexBinaryCategoryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexBinaryCategoryCodeTypeContext.json
       title: 'ndex:BinaryCategoryCodeType'
       description: >-
         A data type for a code that represents the type of digital
         representation.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexBinaryCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexBinaryCategoryCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexBinaryCategoryCodeSimpleType
     ndexBinaryCategoryCodeSimpleType:
       type: string
       description: >-
@@ -139,18 +147,20 @@ components:
         - VIDEO
     ndexLocationCategoryNDExCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexLocationCategoryNDExCodeSimpleType
-        '@context':
-          type: string
-          description: ndexLocationCategoryNDExCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexLocationCategoryNDExCodeTypeContext.json
       title: 'ndex:LocationCategoryNDExCodeType'
       description: >-
         A data type for a code that characterizes a location or area. Includes
         all NIBRS codes, plus additional codes.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexLocationCategoryNDExCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexLocationCategoryNDExCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexLocationCategoryNDExCodeSimpleType
     ndexLocationCategoryNDExCodeSimpleType:
       type: string
       description: >-
@@ -478,18 +488,20 @@ components:
         - YARD_SHIP
     ndexLocationGeneralCategoryCodeType:
       type: object
+      title: 'ndex:LocationGeneralCategoryCodeType'
+      description: A data type for a code that identifies the general type of location.
+      required:
+        - '@context'
       properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexLocationGeneralCategoryCodeSimpleType
         '@context':
           type: string
-          description: ndexLocationGeneralCategoryCodeTypeJSON-LD context
+          description: ndexLocationGeneralCategoryCodeType JSON-LD context
           enum:
             - >-
               ../JSON-LD_Contexts/ndexLocationGeneralCategoryCodeTypeContext.json
-      title: 'ndex:LocationGeneralCategoryCodeType'
-      description: A data type for a code that identifies the general type of location.
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexLocationGeneralCategoryCodeSimpleType
     ndexLocationGeneralCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies the general type of location.
@@ -502,20 +514,22 @@ components:
         - Unknown
     ndexLocationSublocationCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexLocationSublocationCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ndexLocationSublocationCategoryCodeTypeJSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/ndexLocationSublocationCategoryCodeTypeContext.json
       title: 'ndex:LocationSublocationCategoryCodeType'
       description: >-
         A data type for a code that identifies a location inside of another
         location.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexLocationSublocationCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexLocationSublocationCategoryCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexLocationSublocationCategoryCodeSimpleType
     ndexLocationSublocationCategoryCodeSimpleType:
       type: string
       description: >-
@@ -610,18 +624,20 @@ components:
         - Vehicle_Truck
     ndexTelephoneNumberCategoryCodeType:
       type: object
+      title: 'ndex:TelephoneNumberCategoryCodeType'
+      description: A data type for a code that identifies a type of telephone number.
+      required:
+        - '@context'
       properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexTelephoneNumberCategoryCodeSimpleType
         '@context':
           type: string
-          description: ndexTelephoneNumberCategoryCodeTypeJSON-LD context
+          description: ndexTelephoneNumberCategoryCodeType JSON-LD context
           enum:
             - >-
               ../JSON-LD_Contexts/ndexTelephoneNumberCategoryCodeTypeContext.json
-      title: 'ndex:TelephoneNumberCategoryCodeType'
-      description: A data type for a code that identifies a type of telephone number.
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexTelephoneNumberCategoryCodeSimpleType
     ndexTelephoneNumberCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of telephone number.
@@ -634,16 +650,18 @@ components:
         - VoIP
     ndexIndianNationCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexIndianNationCodeSimpleType
-        '@context':
-          type: string
-          description: ndexIndianNationCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexIndianNationCodeTypeContext.json
       title: 'ndex:IndianNationCodeType'
       description: A data type for a code that identifies an American Indian nation.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexIndianNationCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexIndianNationCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexIndianNationCodeSimpleType
     ndexIndianNationCodeSimpleType:
       type: string
       description: A data type for a code that identifies an American Indian nation.
@@ -694,16 +712,18 @@ components:
         - WYANDOTTE TRIBE
     ndexOrganizationCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexOrganizationCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ndexOrganizationCategoryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexOrganizationCategoryCodeTypeContext.json
       title: 'ndex:OrganizationCategoryCodeType'
       description: A data type for a code that identifies the type of organization.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexOrganizationCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexOrganizationCategoryCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexOrganizationCategoryCodeSimpleType
     ndexOrganizationCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies the type of organization.
@@ -733,16 +753,18 @@ components:
         - THREAT GROUP
     ndexArtObjectCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexArtObjectCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ndexArtObjectCategoryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexArtObjectCategoryCodeTypeContext.json
       title: 'ndex:ArtObjectCategoryCodeType'
       description: A data type for a code that identifies the type of art object.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexArtObjectCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexArtObjectCategoryCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexArtObjectCategoryCodeSimpleType
     ndexArtObjectCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies the type of art object.
@@ -754,20 +776,22 @@ components:
         - SCULPTURE
     ndexAudioVisualRecordingCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexAudioVisualRecordingCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ndexAudioVisualRecordingCategoryCodeTypeJSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/ndexAudioVisualRecordingCategoryCodeTypeContext.json
       title: 'ndex:AudioVisualRecordingCategoryCodeType'
       description: >-
         A data type for a code that identifies the type of audio visual
         recording.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexAudioVisualRecordingCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexAudioVisualRecordingCategoryCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexAudioVisualRecordingCategoryCodeSimpleType
     ndexAudioVisualRecordingCategoryCodeSimpleType:
       type: string
       description: >-
@@ -789,16 +813,18 @@ components:
         - VIDEO_TAPE_VHS
     ndexBicycleCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexBicycleCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ndexBicycleCategoryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexBicycleCategoryCodeTypeContext.json
       title: 'ndex:BicycleCategoryCodeType'
       description: A data type for a code that identifies the type of bicycle.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexBicycleCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexBicycleCategoryCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexBicycleCategoryCodeSimpleType
     ndexBicycleCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies the type of bicycle.
@@ -811,16 +837,18 @@ components:
         - UNICYCLE
     ndexClothingCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexClothingCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ndexClothingCategoryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexClothingCategoryCodeTypeContext.json
       title: 'ndex:ClothingCategoryCodeType'
       description: A data type for a code that identifies a type of clothing.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexClothingCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexClothingCategoryCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexClothingCategoryCodeSimpleType
     ndexClothingCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of clothing.
@@ -870,20 +898,22 @@ components:
         - WALLET
     ndexDataProcessingEquipmentCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexDataProcessingEquipmentCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ndexDataProcessingEquipmentCategoryCodeTypeJSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/ndexDataProcessingEquipmentCategoryCodeTypeContext.json
       title: 'ndex:DataProcessingEquipmentCategoryCodeType'
       description: >-
         A data type for a code that identifies the type of computer hardware and
         software.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexDataProcessingEquipmentCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexDataProcessingEquipmentCategoryCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexDataProcessingEquipmentCategoryCodeSimpleType
     ndexDataProcessingEquipmentCategoryCodeSimpleType:
       type: string
       description: >-
@@ -1054,18 +1084,20 @@ components:
         - WORD PROCESSOR
     ndexConstructionMaterialCategoryCodeType:
       type: object
+      title: 'ndex:ConstructionMaterialCategoryCodeType'
+      description: A data type for a code that identifies a type of construction material.
+      required:
+        - '@context'
       properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexConstructionMaterialCategoryCodeSimpleType
         '@context':
           type: string
-          description: ndexConstructionMaterialCategoryCodeTypeJSON-LD context
+          description: ndexConstructionMaterialCategoryCodeType JSON-LD context
           enum:
             - >-
               ../JSON-LD_Contexts/ndexConstructionMaterialCategoryCodeTypeContext.json
-      title: 'ndex:ConstructionMaterialCategoryCodeType'
-      description: A data type for a code that identifies a type of construction material.
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexConstructionMaterialCategoryCodeSimpleType
     ndexConstructionMaterialCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of construction material.
@@ -1117,18 +1149,20 @@ components:
         - WOOD_PLYWOOD
     ndexConsumableGoodsCategoryCodeType:
       type: object
+      title: 'ndex:ConsumableGoodsCategoryCodeType'
+      description: A data type for a code that identifies a type of consumable goods.
+      required:
+        - '@context'
       properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexConsumableGoodsCategoryCodeSimpleType
         '@context':
           type: string
-          description: ndexConsumableGoodsCategoryCodeTypeJSON-LD context
+          description: ndexConsumableGoodsCategoryCodeType JSON-LD context
           enum:
             - >-
               ../JSON-LD_Contexts/ndexConsumableGoodsCategoryCodeTypeContext.json
-      title: 'ndex:ConsumableGoodsCategoryCodeType'
-      description: A data type for a code that identifies a type of consumable goods.
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexConsumableGoodsCategoryCodeSimpleType
     ndexConsumableGoodsCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of consumable goods.
@@ -1162,18 +1196,20 @@ components:
         - TOOTH PASTE
     ndexCreditBankIDCardCategoryCodeType:
       type: object
+      title: 'ndex:CreditBankIDCardCategoryCodeType'
+      description: A data type for a code that identifies a type of Credit/Bank/ID Card.
+      required:
+        - '@context'
       properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexCreditBankIDCardCategoryCodeSimpleType
         '@context':
           type: string
-          description: ndexCreditBankIDCardCategoryCodeTypeJSON-LD context
+          description: ndexCreditBankIDCardCategoryCodeType JSON-LD context
           enum:
             - >-
               ../JSON-LD_Contexts/ndexCreditBankIDCardCategoryCodeTypeContext.json
-      title: 'ndex:CreditBankIDCardCategoryCodeType'
-      description: A data type for a code that identifies a type of Credit/Bank/ID Card.
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexCreditBankIDCardCategoryCodeSimpleType
     ndexCreditBankIDCardCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of Credit/Bank/ID Card.
@@ -1209,18 +1245,20 @@ components:
         - UNION CARD
     ndexDrillingEquipmentCategoryCodeType:
       type: object
+      title: 'ndex:DrillingEquipmentCategoryCodeType'
+      description: A data type for a code that identifies the type of drilling tool.
+      required:
+        - '@context'
       properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexDrillingEquipmentCategoryCodeSimpleType
         '@context':
           type: string
-          description: ndexDrillingEquipmentCategoryCodeTypeJSON-LD context
+          description: ndexDrillingEquipmentCategoryCodeType JSON-LD context
           enum:
             - >-
               ../JSON-LD_Contexts/ndexDrillingEquipmentCategoryCodeTypeContext.json
-      title: 'ndex:DrillingEquipmentCategoryCodeType'
-      description: A data type for a code that identifies the type of drilling tool.
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexDrillingEquipmentCategoryCodeSimpleType
     ndexDrillingEquipmentCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies the type of drilling tool.
@@ -1278,20 +1316,22 @@ components:
         - WRENCH_ SPINNING
     ndexEntertainmentDeviceCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexEntertainmentDeviceCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ndexEntertainmentDeviceCategoryCodeTypeJSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/ndexEntertainmentDeviceCategoryCodeTypeContext.json
       title: 'ndex:EntertainmentDeviceCategoryCodeType'
       description: >-
         A data type for a code that identifies the type of radio, TV, camera,
         sound or entertainment device.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexEntertainmentDeviceCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexEntertainmentDeviceCategoryCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexEntertainmentDeviceCategoryCodeSimpleType
     ndexEntertainmentDeviceCategoryCodeSimpleType:
       type: string
       description: >-
@@ -1411,20 +1451,22 @@ components:
         - WEB TV
     ndexGamblingEquipmentCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexGamblingEquipmentCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ndexGamblingEquipmentCategoryCodeTypeJSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/ndexGamblingEquipmentCategoryCodeTypeContext.json
       title: 'ndex:GamblingEquipmentCategoryCodeType'
       description: >-
         A data type for a code that identifies a type of games and/or gambling
         apparatus.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexGamblingEquipmentCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexGamblingEquipmentCategoryCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexGamblingEquipmentCategoryCodeSimpleType
     ndexGamblingEquipmentCategoryCodeSimpleType:
       type: string
       description: >-
@@ -1451,16 +1493,18 @@ components:
         - TIP BOARD
     ndexGrainCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexGrainCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ndexGrainCategoryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexGrainCategoryCodeTypeContext.json
       title: 'ndex:GrainCategoryCodeType'
       description: A data type for a code that identifies a type of grain.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexGrainCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexGrainCategoryCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexGrainCategoryCodeSimpleType
     ndexGrainCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of grain.
@@ -1485,18 +1529,20 @@ components:
         - WHEAT
     ndexHouseholdFurnishingsCategoryCodeType:
       type: object
+      title: 'ndex:HouseholdFurnishingsCategoryCodeType'
+      description: A data type for a code that identifies a type of household furnishings.
+      required:
+        - '@context'
       properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexHouseholdFurnishingsCategoryCodeSimpleType
         '@context':
           type: string
-          description: ndexHouseholdFurnishingsCategoryCodeTypeJSON-LD context
+          description: ndexHouseholdFurnishingsCategoryCodeType JSON-LD context
           enum:
             - >-
               ../JSON-LD_Contexts/ndexHouseholdFurnishingsCategoryCodeTypeContext.json
-      title: 'ndex:HouseholdFurnishingsCategoryCodeType'
-      description: A data type for a code that identifies a type of household furnishings.
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexHouseholdFurnishingsCategoryCodeSimpleType
     ndexHouseholdFurnishingsCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of household furnishings.
@@ -1543,16 +1589,18 @@ components:
         - WASTEBASKET
     ndexHousewaresCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexHousewaresCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ndexHousewaresCategoryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexHousewaresCategoryCodeTypeContext.json
       title: 'ndex:HousewaresCategoryCodeType'
       description: A data type for a code that identifies a type of household goods.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexHousewaresCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexHousewaresCategoryCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexHousewaresCategoryCodeSimpleType
     ndexHousewaresCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of household goods.
@@ -1632,16 +1680,18 @@ components:
         - YOGURT MACHINE
     ndexItemCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexItemCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ndexItemCategoryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexItemCategoryCodeTypeContext.json
       title: 'ndex:ItemCategoryCodeType'
       description: A data type for a code that identifies a type of property.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexItemCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexItemCategoryCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexItemCategoryCodeSimpleType
     ndexItemCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of property.
@@ -1670,18 +1720,20 @@ components:
         - TOOL
     ndexKeepsakeCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexKeepsakeCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ndexKeepsakeCategoryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexKeepsakeCategoryCodeTypeContext.json
       title: 'ndex:KeepsakeCategoryCodeType'
       description: >-
         A data type for a code that identifies items collected as a hobby or
         given in friendship.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexKeepsakeCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexKeepsakeCategoryCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexKeepsakeCategoryCodeSimpleType
     ndexKeepsakeCategoryCodeSimpleType:
       type: string
       description: >-
@@ -1720,16 +1772,18 @@ components:
         - VASE
     ndexKnifeCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexKnifeCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ndexKnifeCategoryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexKnifeCategoryCodeTypeContext.json
       title: 'ndex:KnifeCategoryCodeType'
       description: A data type for a code that identifies a kind of knife.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexKnifeCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexKnifeCategoryCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexKnifeCategoryCodeSimpleType
     ndexKnifeCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a kind of knife.
@@ -1770,16 +1824,18 @@ components:
         - UTILITY
     ndexLivestockCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexLivestockCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ndexLivestockCategoryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexLivestockCategoryCodeTypeContext.json
       title: 'ndex:LivestockCategoryCodeType'
       description: A data type for a code that identifies a type of livestock/pet.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexLivestockCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexLivestockCategoryCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexLivestockCategoryCodeSimpleType
     ndexLivestockCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of livestock/pet.
@@ -1817,18 +1873,20 @@ components:
         - WORM
     ndexMusicalInstrumentCategoryCodeType:
       type: object
+      title: 'ndex:MusicalInstrumentCategoryCodeType'
+      description: A data type for a code that identifies a type of musical instrument.
+      required:
+        - '@context'
       properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexMusicalInstrumentCategoryCodeSimpleType
         '@context':
           type: string
-          description: ndexMusicalInstrumentCategoryCodeTypeJSON-LD context
+          description: ndexMusicalInstrumentCategoryCodeType JSON-LD context
           enum:
             - >-
               ../JSON-LD_Contexts/ndexMusicalInstrumentCategoryCodeTypeContext.json
-      title: 'ndex:MusicalInstrumentCategoryCodeType'
-      description: A data type for a code that identifies a type of musical instrument.
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexMusicalInstrumentCategoryCodeSimpleType
     ndexMusicalInstrumentCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of musical instrument.
@@ -1878,18 +1936,20 @@ components:
         - XYLOPHONE
     ndexOfficeEquipmentCategoryCodeType:
       type: object
+      title: 'ndex:OfficeEquipmentCategoryCodeType'
+      description: A data type for a code that identifies a type of office equipment.
+      required:
+        - '@context'
       properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexOfficeEquipmentCategoryCodeSimpleType
         '@context':
           type: string
-          description: ndexOfficeEquipmentCategoryCodeTypeJSON-LD context
+          description: ndexOfficeEquipmentCategoryCodeType JSON-LD context
           enum:
             - >-
               ../JSON-LD_Contexts/ndexOfficeEquipmentCategoryCodeTypeContext.json
-      title: 'ndex:OfficeEquipmentCategoryCodeType'
-      description: A data type for a code that identifies a type of office equipment.
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexOfficeEquipmentCategoryCodeSimpleType
     ndexOfficeEquipmentCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of office equipment.
@@ -1966,18 +2026,20 @@ components:
         - WATER COOLER
     ndexOpticalEquipmentCategoryCodeType:
       type: object
+      title: 'ndex:OpticalEquipmentCategoryCodeType'
+      description: A data type for a code that identifies a type of optical equipment.
+      required:
+        - '@context'
       properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexOpticalEquipmentCategoryCodeSimpleType
         '@context':
           type: string
-          description: ndexOpticalEquipmentCategoryCodeTypeJSON-LD context
+          description: ndexOpticalEquipmentCategoryCodeType JSON-LD context
           enum:
             - >-
               ../JSON-LD_Contexts/ndexOpticalEquipmentCategoryCodeTypeContext.json
-      title: 'ndex:OpticalEquipmentCategoryCodeType'
-      description: A data type for a code that identifies a type of optical equipment.
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexOpticalEquipmentCategoryCodeSimpleType
     ndexOpticalEquipmentCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of optical equipment.
@@ -1997,19 +2059,21 @@ components:
         - VIEWER
     ndexPhotoEquipmentCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexPhotoEquipmentCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ndexPhotoEquipmentCategoryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexPhotoEquipmentCategoryCodeTypeContext.json
       title: 'ndex:PhotoEquipmentCategoryCodeType'
       description: >-
         A data type for a code that identifies the type of camera or imaging
         device.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexPhotoEquipmentCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexPhotoEquipmentCategoryCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexPhotoEquipmentCategoryCodeSimpleType
     ndexPhotoEquipmentCategoryCodeSimpleType:
       type: string
       description: >-
@@ -2043,17 +2107,19 @@ components:
         - VIEWFINDER
     ndexServiceUtilityCategoryCodeType:
       type: object
+      title: 'ndex:ServiceUtilityCategoryCodeType'
+      description: A data type for a code that identifies a type of public utility service.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ndexServiceUtilityCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexServiceUtilityCategoryCodeTypeContext.json
         simpleType:
           $ref: >-
             ndex.yaml#/components/schemas/ndexServiceUtilityCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ndexServiceUtilityCategoryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexServiceUtilityCategoryCodeTypeContext.json
-      title: 'ndex:ServiceUtilityCategoryCodeType'
-      description: A data type for a code that identifies a type of public utility service.
     ndexServiceUtilityCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of public utility service.
@@ -2077,20 +2143,22 @@ components:
         - Water
     ndexSportsEquipmentCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexSportsEquipmentCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ndexSportsEquipmentCategoryCodeTypeJSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/ndexSportsEquipmentCategoryCodeTypeContext.json
       title: 'ndex:SportsEquipmentCategoryCodeType'
       description: >-
         A data type for a code that identifies a type of sports/recreational
         equipment.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexSportsEquipmentCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexSportsEquipmentCategoryCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexSportsEquipmentCategoryCodeSimpleType
     ndexSportsEquipmentCategoryCodeSimpleType:
       type: string
       description: >-
@@ -2143,16 +2211,18 @@ components:
         - TREE STAND
     ndexToolDeviceCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexToolDeviceCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ndexToolDeviceCategoryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexToolDeviceCategoryCodeTypeContext.json
       title: 'ndex:ToolDeviceCategoryCodeType'
       description: A data type for a code that identifies a type of tool.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexToolDeviceCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexToolDeviceCategoryCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexToolDeviceCategoryCodeSimpleType
     ndexToolDeviceCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of tool.
@@ -2451,18 +2521,20 @@ components:
         - ZAPPER_BUG
     ndexItemGenderUseCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexItemGenderUseCodeSimpleType
-        '@context':
-          type: string
-          description: ndexItemGenderUseCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexItemGenderUseCodeTypeContext.json
       title: 'ndex:ItemGenderUseCodeType'
       description: >-
         A data type for a code that identifies the gender for which the property
         is intended, such as a girl's bicycle or a man's jacket.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexItemGenderUseCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexItemGenderUseCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexItemGenderUseCodeSimpleType
     ndexItemGenderUseCodeSimpleType:
       type: string
       description: >-
@@ -2478,18 +2550,20 @@ components:
         - UNISEX
     ndexOffenseCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexOffenseCodeSimpleType
-        '@context':
-          type: string
-          description: ndexOffenseCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexOffenseCodeTypeContext.json
       title: 'ndex:OffenseCodeType'
       description: >-
         A data type for a code that identifies the offense.  Includes all NIBRS
         and NCIC codes, plus additional codes.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexOffenseCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexOffenseCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexOffenseCodeSimpleType
     ndexOffenseCodeSimpleType:
       type: string
       description: >-
@@ -3051,16 +3125,18 @@ components:
         - WITNESS_DISSUADING
     ndexOffenseCategoryNDExCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexOffenseCategoryNDExCodeSimpleType
-        '@context':
-          type: string
-          description: ndexOffenseCategoryNDExCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexOffenseCategoryNDExCodeTypeContext.json
       title: 'ndex:OffenseCategoryNDExCodeType'
       description: A data type for a code that indicates the category of offense.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexOffenseCategoryNDExCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexOffenseCategoryNDExCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexOffenseCategoryNDExCodeSimpleType
     ndexOffenseCategoryNDExCodeSimpleType:
       type: string
       description: A data type for a code that indicates the category of offense.
@@ -3070,20 +3146,22 @@ components:
         - OTHER
     ndexOffenseMOCrimeAndMotiveCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexOffenseMOCrimeAndMotiveCodeSimpleType
-        '@context':
-          type: string
-          description: ndexOffenseMOCrimeAndMotiveCodeTypeJSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/ndexOffenseMOCrimeAndMotiveCodeTypeContext.json
       title: 'ndex:OffenseMOCrimeAndMotiveCodeType'
       description: >-
         A data type for a code that identifies probable crime types and/or
         motives based on investigator experience.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexOffenseMOCrimeAndMotiveCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexOffenseMOCrimeAndMotiveCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexOffenseMOCrimeAndMotiveCodeSimpleType
     ndexOffenseMOCrimeAndMotiveCodeSimpleType:
       type: string
       description: >-
@@ -3114,18 +3192,20 @@ components:
         - Witness Elimination
     ndexBiasMotivationCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexBiasMotivationCodeSimpleType
-        '@context':
-          type: string
-          description: ndexBiasMotivationCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexBiasMotivationCodeTypeContext.json
       title: 'ndex:BiasMotivationCodeType'
       description: >-
         A data type for a code that identifies the type of bias that motivated
         the offense, if any. Includes all NIBRS codes, plus additional codes.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexBiasMotivationCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexBiasMotivationCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexBiasMotivationCodeSimpleType
     ndexBiasMotivationCodeSimpleType:
       type: string
       description: >-
@@ -3173,18 +3253,20 @@ components:
         - UNKNOWN
     ndexBiasMotivationCauseCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexBiasMotivationCauseCodeSimpleType
-        '@context':
-          type: string
-          description: ndexBiasMotivationCauseCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexBiasMotivationCauseCodeTypeContext.json
       title: 'ndex:BiasMotivationCauseCodeType'
       description: >-
         A data type for a code that indicates offender was motivated to commit
         the offense, in whole/part, because of bias.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexBiasMotivationCauseCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexBiasMotivationCauseCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexBiasMotivationCauseCodeSimpleType
     ndexBiasMotivationCauseCodeSimpleType:
       type: string
       description: >-
@@ -3222,21 +3304,23 @@ components:
         - WRITTEN WORDS_STATEMENTS
     ndexCriminalActivityCategoryNDExCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexCriminalActivityCategoryNDExCodeSimpleType
-        '@context':
-          type: string
-          description: ndexCriminalActivityCategoryNDExCodeTypeJSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/ndexCriminalActivityCategoryNDExCodeTypeContext.json
       title: 'ndex:CriminalActivityCategoryNDExCodeType'
       description: >-
         A data type for a code that identifies additional information on
         criminal activity of offenders in the offense. N-Dex code list includes
         all NIBRS codes, plus additional codes.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexCriminalActivityCategoryNDExCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexCriminalActivityCategoryNDExCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexCriminalActivityCategoryNDExCodeSimpleType
     ndexCriminalActivityCategoryNDExCodeSimpleType:
       type: string
       description: >-
@@ -3273,18 +3357,20 @@ components:
         - Using_Consuming
     ndexSecuritySystemStatusCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexSecuritySystemStatusCodeSimpleType
-        '@context':
-          type: string
-          description: ndexSecuritySystemStatusCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexSecuritySystemStatusCodeTypeContext.json
       title: 'ndex:SecuritySystemStatusCodeType'
       description: >-
         A data type for a code that identifies the functioning of the security
         system at the entry point for an incident.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexSecuritySystemStatusCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexSecuritySystemStatusCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexSecuritySystemStatusCodeSimpleType
     ndexSecuritySystemStatusCodeSimpleType:
       type: string
       description: >-
@@ -3297,20 +3383,22 @@ components:
         - 'On'
     ndexPremiseSecurityCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexPremiseSecurityCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ndexPremiseSecurityCategoryCodeTypeJSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/ndexPremiseSecurityCategoryCodeTypeContext.json
       title: 'ndex:PremiseSecurityCategoryCodeType'
       description: >-
         A data type for a code that identifies the type of security present at
         the point of entry to a premises for an incident.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexPremiseSecurityCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexPremiseSecurityCategoryCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexPremiseSecurityCategoryCodeSimpleType
     ndexPremiseSecurityCategoryCodeSimpleType:
       type: string
       description: >-
@@ -3344,16 +3432,18 @@ components:
         - Window bars
     ndexMethodOfAccessCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexMethodOfAccessCodeSimpleType
-        '@context':
-          type: string
-          description: ndexMethodOfAccessCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexMethodOfAccessCodeTypeContext.json
       title: 'ndex:MethodOfAccessCodeType'
       description: A data type for a method of access.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexMethodOfAccessCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexMethodOfAccessCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexMethodOfAccessCodeSimpleType
     ndexMethodOfAccessCodeSimpleType:
       type: string
       description: A data type for a method of access.
@@ -3413,20 +3503,22 @@ components:
         - Unsecured
     ndexGangInvolvementCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexGangInvolvementCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ndexGangInvolvementCategoryCodeTypeJSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/ndexGangInvolvementCategoryCodeTypeContext.json
       title: 'ndex:GangInvolvementCategoryCodeType'
       description: >-
         A data type for a code that identifies gang involvement of offenders in
         an offense.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexGangInvolvementCategoryCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexGangInvolvementCategoryCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexGangInvolvementCategoryCodeSimpleType
     ndexGangInvolvementCategoryCodeSimpleType:
       type: string
       description: >-
@@ -3438,21 +3530,23 @@ components:
         - 'N'
     ndexLEOKAActivityCategoryNDExCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexLEOKAActivityCategoryNDExCodeSimpleType
-        '@context':
-          type: string
-          description: ndexLEOKAActivityCategoryNDExCodeTypeJSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/ndexLEOKAActivityCategoryNDExCodeTypeContext.json
       title: 'ndex:LEOKAActivityCategoryNDExCodeType'
       description: >-
         A data type for a code that identifies the type of law enforcement
         activity which the officer was involved in at the time of incident. 
         Includes all NIBRS codes, plus additional codes.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexLEOKAActivityCategoryNDExCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexLEOKAActivityCategoryNDExCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexLEOKAActivityCategoryNDExCodeSimpleType
     ndexLEOKAActivityCategoryNDExCodeSimpleType:
       type: string
       description: >-
@@ -3476,18 +3570,20 @@ components:
         - Traffic Stop
     ndexVictimMOWasCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexVictimMOWasCodeSimpleType
-        '@context':
-          type: string
-          description: ndexVictimMOWasCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexVictimMOWasCodeTypeContext.json
       title: 'ndex:VictimMOWasCodeType'
       description: >-
         A data type for a code that identifies the actions of the victim at time
         of incident.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexVictimMOWasCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexVictimMOWasCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexVictimMOWasCodeSimpleType
     ndexVictimMOWasCodeSimpleType:
       type: string
       description: >-
@@ -3567,18 +3663,20 @@ components:
         - Victim Sleeping
     ndexVictimMODisposalCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexVictimMODisposalCodeSimpleType
-        '@context':
-          type: string
-          description: ndexVictimMODisposalCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexVictimMODisposalCodeTypeContext.json
       title: 'ndex:VictimMODisposalCodeType'
       description: >-
         A data type for a code that identifies the manner of victim body
         disposal based on investigator perception.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexVictimMODisposalCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexVictimMODisposalCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexVictimMODisposalCodeSimpleType
     ndexVictimMODisposalCodeSimpleType:
       type: string
       description: >-
@@ -3591,18 +3689,20 @@ components:
         - Unknown
     ndexVictimMOApproachedCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexVictimMOApproachedCodeSimpleType
-        '@context':
-          type: string
-          description: ndexVictimMOApproachedCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexVictimMOApproachedCodeTypeContext.json
       title: 'ndex:VictimMOApproachedCodeType'
       description: >-
         A data type for a code that identifies how subject initially approached
         victim based on investigator experience.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexVictimMOApproachedCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexVictimMOApproachedCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexVictimMOApproachedCodeSimpleType
     ndexVictimMOApproachedCodeSimpleType:
       type: string
       description: >-
@@ -3675,18 +3775,20 @@ components:
         - Unknown Approach
     ndexVictimMOFoundClothedCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexVictimMOFoundClothedCodeSimpleType
-        '@context':
-          type: string
-          description: ndexVictimMOFoundClothedCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexVictimMOFoundClothedCodeTypeContext.json
       title: 'ndex:VictimMOFoundClothedCodeType'
       description: >-
         A data type for a code that characterizes clothed condition of the
         victim.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexVictimMOFoundClothedCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexVictimMOFoundClothedCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexVictimMOFoundClothedCodeSimpleType
     ndexVictimMOFoundClothedCodeSimpleType:
       type: string
       description: >-
@@ -3706,20 +3808,22 @@ components:
         - Unknown
     ndexVictimMOGeneralLifestyleCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexVictimMOGeneralLifestyleCodeSimpleType
-        '@context':
-          type: string
-          description: ndexVictimMOGeneralLifestyleCodeTypeJSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/ndexVictimMOGeneralLifestyleCodeTypeContext.json
       title: 'ndex:VictimMOGeneralLifestyleCodeType'
       description: >-
         A data type for a code that identifies lifestyle characteristics for the
         victim person based on investigator experience.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexVictimMOGeneralLifestyleCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexVictimMOGeneralLifestyleCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexVictimMOGeneralLifestyleCodeSimpleType
     ndexVictimMOGeneralLifestyleCodeSimpleType:
       type: string
       description: >-
@@ -3752,18 +3856,20 @@ components:
         - Worked Alone
     ndexVictimMORecoveryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexVictimMORecoveryCodeSimpleType
-        '@context':
-          type: string
-          description: ndexVictimMORecoveryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexVictimMORecoveryCodeTypeContext.json
       title: 'ndex:VictimMORecoveryCodeType'
       description: >-
         A data type for a code that characterizes the recovery of the victim
         based on investigator perception.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexVictimMORecoveryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexVictimMORecoveryCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexVictimMORecoveryCodeSimpleType
     ndexVictimMORecoveryCodeSimpleType:
       type: string
       description: >-
@@ -3793,20 +3899,22 @@ components:
         - Wrapped
     ndexVictimMOSubjectContactConclusionCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexVictimMOSubjectContactConclusionCodeSimpleType
-        '@context':
-          type: string
-          description: ndexVictimMOSubjectContactConclusionCodeTypeJSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/ndexVictimMOSubjectContactConclusionCodeTypeContext.json
       title: 'ndex:VictimMOSubjectContactConclusionCodeType'
       description: >-
         A data type for a code that identifies how victim subject contact ended
         based on investigator perception.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexVictimMOSubjectContactConclusionCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexVictimMOSubjectContactConclusionCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexVictimMOSubjectContactConclusionCodeSimpleType
     ndexVictimMOSubjectContactConclusionCodeSimpleType:
       type: string
       description: >-
@@ -3821,18 +3929,20 @@ components:
         - Unknown
     ndexVictimMOBindingsCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexVictimMOBindingsCodeSimpleType
-        '@context':
-          type: string
-          description: ndexVictimMOBindingsCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexVictimMOBindingsCodeTypeContext.json
       title: 'ndex:VictimMOBindingsCodeType'
       description: >-
         A data type for a code that identifies the type of article used by the
         subject at the crime scene to bind a victim.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexVictimMOBindingsCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexVictimMOBindingsCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexVictimMOBindingsCodeSimpleType
     ndexVictimMOBindingsCodeSimpleType:
       type: string
       description: >-
@@ -3851,18 +3961,20 @@ components:
         - Wire
     ndexInjuryLocationCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexInjuryLocationCodeSimpleType
-        '@context':
-          type: string
-          description: ndexInjuryLocationCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexInjuryLocationCodeTypeContext.json
       title: 'ndex:InjuryLocationCodeType'
       description: >-
         A data type for a code that identifies the body location of a victim's
         injury.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexInjuryLocationCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexInjuryLocationCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexInjuryLocationCodeSimpleType
     ndexInjuryLocationCodeSimpleType:
       type: string
       description: >-
@@ -3911,19 +4023,21 @@ components:
         - Unknown
     ndexInjuryCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexInjuryCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ndexInjuryCategoryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexInjuryCategoryCodeTypeContext.json
       title: 'ndex:InjuryCategoryCodeType'
       description: >-
         A data type for a code that identifies the type of bodily injury
         suffered by a person who was the victim of the incident.  Includes all
         NIBRS Codes, plus additional codes.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexInjuryCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexInjuryCategoryCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexInjuryCategoryCodeSimpleType
     ndexInjuryCategoryCodeSimpleType:
       type: string
       description: >-
@@ -3943,21 +4057,23 @@ components:
         - Undetermined
     ndexAggravatedAssaultCircumstanceNDExCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexAggravatedAssaultCircumstanceNDExCodeSimpleType
-        '@context':
-          type: string
-          description: ndexAggravatedAssaultCircumstanceNDExCodeTypeJSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/ndexAggravatedAssaultCircumstanceNDExCodeTypeContext.json
       title: 'ndex:AggravatedAssaultCircumstanceNDExCodeType'
       description: >-
         A data type for a code that describes the circumstances of either an
         aggravated assault or homicide. Includes all NIBRS codes, plus
         additional codes.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexAggravatedAssaultCircumstanceNDExCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexAggravatedAssaultCircumstanceNDExCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexAggravatedAssaultCircumstanceNDExCodeSimpleType
     ndexAggravatedAssaultCircumstanceNDExCodeSimpleType:
       type: string
       description: >-
@@ -4029,16 +4145,18 @@ components:
         - Victim killed by robber
     ndexChargeCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexChargeCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ndexChargeCategoryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexChargeCategoryCodeTypeContext.json
       title: 'ndex:ChargeCategoryCodeType'
       description: A data type for a code that identifies a type of charge.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexChargeCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexChargeCategoryCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexChargeCategoryCodeSimpleType
     ndexChargeCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of charge.
@@ -4048,16 +4166,18 @@ components:
         - INFORMATION
     ndexBookingCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexBookingCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ndexBookingCategoryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexBookingCategoryCodeTypeContext.json
       title: 'ndex:BookingCategoryCodeType'
       description: A data type for a code that identifies the type of booking conducted.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexBookingCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexBookingCategoryCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexBookingCategoryCodeSimpleType
     ndexBookingCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies the type of booking conducted.
@@ -4067,18 +4187,20 @@ components:
         - INQUIRY
     ndexArrestCategoryJABSCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexArrestCategoryJABSCodeSimpleType
-        '@context':
-          type: string
-          description: ndexArrestCategoryJABSCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexArrestCategoryJABSCodeTypeContext.json
       title: 'ndex:ArrestCategoryJABSCodeType'
       description: >-
         A data type for a Joint Automated Booking System (JABS) code that
         identifies the type of apprehension.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexArrestCategoryJABSCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexArrestCategoryJABSCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexArrestCategoryJABSCodeSimpleType
     ndexArrestCategoryJABSCodeSimpleType:
       type: string
       description: >-
@@ -4090,16 +4212,18 @@ components:
         - WARRANT
     ndexMetalCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexMetalCodeSimpleType
-        '@context':
-          type: string
-          description: ndexMetalCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexMetalCodeTypeContext.json
       title: 'ndex:MetalCodeType'
       description: A data type for a code that identifies a metal.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexMetalCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexMetalCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexMetalCodeSimpleType
     ndexMetalCodeSimpleType:
       type: string
       description: A data type for a code that identifies a metal.
@@ -4200,19 +4324,21 @@ components:
         - ZIRCONIUM
     ndexPreciousMetalCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexPreciousMetalCodeSimpleType
-        '@context':
-          type: string
-          description: ndexPreciousMetalCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexPreciousMetalCodeTypeContext.json
       title: 'ndex:PreciousMetalCodeType'
       description: >-
         A data type for a code that identifies a rare metallic chemical element
         of high economic value, typically regarded as an investment and
         industrial commodity.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexPreciousMetalCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexPreciousMetalCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexPreciousMetalCodeSimpleType
     ndexPreciousMetalCodeSimpleType:
       type: string
       description: >-
@@ -4239,16 +4365,18 @@ components:
         - TIN
     ndexCADCallCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexCADCallCodeSimpleType
-        '@context':
-          type: string
-          description: ndexCADCallCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexCADCallCodeTypeContext.json
       title: 'ndex:CADCallCodeType'
       description: A data type for a code that identifies the type of service call.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexCADCallCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexCADCallCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexCADCallCodeSimpleType
     ndexCADCallCodeSimpleType:
       type: string
       description: A data type for a code that identifies the type of service call.
@@ -4332,18 +4460,20 @@ components:
         - Weapon Violation
     ndexCADCallSourceCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexCADCallSourceCodeSimpleType
-        '@context':
-          type: string
-          description: ndexCADCallSourceCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexCADCallSourceCodeTypeContext.json
       title: 'ndex:CADCallSourceCodeType'
       description: >-
         A data type for a code that identifies the source type of a service
         call.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexCADCallSourceCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexCADCallSourceCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexCADCallSourceCodeSimpleType
     ndexCADCallSourceCodeSimpleType:
       type: string
       description: >-
@@ -4362,18 +4492,20 @@ components:
         - Walk_In
     ndexSupervisedReleaseCategoryCodeType:
       type: object
+      title: 'ndex:SupervisedReleaseCategoryCodeType'
+      description: A data type for a code that identifies a kind of supervised release.
+      required:
+        - '@context'
       properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexSupervisedReleaseCategoryCodeSimpleType
         '@context':
           type: string
-          description: ndexSupervisedReleaseCategoryCodeTypeJSON-LD context
+          description: ndexSupervisedReleaseCategoryCodeType JSON-LD context
           enum:
             - >-
               ../JSON-LD_Contexts/ndexSupervisedReleaseCategoryCodeTypeContext.json
-      title: 'ndex:SupervisedReleaseCategoryCodeType'
-      description: A data type for a code that identifies a kind of supervised release.
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexSupervisedReleaseCategoryCodeSimpleType
     ndexSupervisedReleaseCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a kind of supervised release.
@@ -4398,16 +4530,18 @@ components:
         - WORK RELEASE
     ndexAssignmentCategoryCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexAssignmentCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ndexAssignmentCategoryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexAssignmentCategoryCodeTypeContext.json
       title: 'ndex:AssignmentCategoryCodeType'
       description: A data type for a code that identifies a subject's assignment category.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexAssignmentCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexAssignmentCategoryCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexAssignmentCategoryCodeSimpleType
     ndexAssignmentCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a subject's assignment category.
@@ -4440,17 +4574,19 @@ components:
         - RELEASED TREATMENT
     ndexOffenseSummaryCategoryCodeType:
       type: object
+      title: 'ndex:OffenseSummaryCategoryCodeType'
+      description: A data type for a code that identifies an offense type being summarized.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: ndexOffenseSummaryCategoryCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexOffenseSummaryCategoryCodeTypeContext.json
         simpleType:
           $ref: >-
             ndex.yaml#/components/schemas/ndexOffenseSummaryCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: ndexOffenseSummaryCategoryCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexOffenseSummaryCategoryCodeTypeContext.json
-      title: 'ndex:OffenseSummaryCategoryCodeType'
-      description: A data type for a code that identifies an offense type being summarized.
     ndexOffenseSummaryCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies an offense type being summarized.
@@ -4470,19 +4606,21 @@ components:
         - WEAPONS
     ndexRiskLevelCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexRiskLevelCodeSimpleType
-        '@context':
-          type: string
-          description: ndexRiskLevelCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexRiskLevelCodeTypeContext.json
       title: 'ndex:RiskLevelCodeType'
       description: >-
         A data type for a code that identifies a risk level corresponding to the
         assessment score estimating the likelihood that the offender will
         recidivate during his or her term of supervision.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexRiskLevelCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexRiskLevelCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexRiskLevelCodeSimpleType
     ndexRiskLevelCodeSimpleType:
       type: string
       description: >-
@@ -4498,19 +4636,21 @@ components:
         - MEDIUM-HIGH
     ndexSubjectMOActionCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexSubjectMOActionCodeSimpleType
-        '@context':
-          type: string
-          description: ndexSubjectMOActionCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexSubjectMOActionCodeTypeContext.json
       title: 'ndex:SubjectMOActionCodeType'
       description: >-
         A data type for a code that identifies the actions of the subject at the
         crime scene to perpetrate crime and/or avoid apprehension based on
         investigator experience.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexSubjectMOActionCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexSubjectMOActionCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexSubjectMOActionCodeSimpleType
     ndexSubjectMOActionCodeSimpleType:
       type: string
       description: >-
@@ -4675,20 +4815,22 @@ components:
         - Used Weapon_Fired No Injury
     ndexSubjectMOGeneralLifestyleCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexSubjectMOGeneralLifestyleCodeSimpleType
-        '@context':
-          type: string
-          description: ndexSubjectMOGeneralLifestyleCodeTypeJSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/ndexSubjectMOGeneralLifestyleCodeTypeContext.json
       title: 'ndex:SubjectMOGeneralLifestyleCodeType'
       description: >-
         A data type for a code that identifies lifestyle characteristics for the
         subject person based on investigator experience.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexSubjectMOGeneralLifestyleCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexSubjectMOGeneralLifestyleCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexSubjectMOGeneralLifestyleCodeSimpleType
     ndexSubjectMOGeneralLifestyleCodeSimpleType:
       type: string
       description: >-
@@ -4716,16 +4858,18 @@ components:
         - UNKNOWN
     ndexSubjectMOObservationCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexSubjectMOObservationCodeSimpleType
-        '@context':
-          type: string
-          description: ndexSubjectMOObservationCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexSubjectMOObservationCodeTypeContext.json
       title: 'ndex:SubjectMOObservationCodeType'
       description: A data type for a code that identifies observations of the subject.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexSubjectMOObservationCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexSubjectMOObservationCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexSubjectMOObservationCodeSimpleType
     ndexSubjectMOObservationCodeSimpleType:
       type: string
       description: A data type for a code that identifies observations of the subject.
@@ -4762,20 +4906,22 @@ components:
         - Unknown
     ndexSubjectMOSexualPracticesCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexSubjectMOSexualPracticesCodeSimpleType
-        '@context':
-          type: string
-          description: ndexSubjectMOSexualPracticesCodeTypeJSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/ndexSubjectMOSexualPracticesCodeTypeContext.json
       title: 'ndex:SubjectMOSexualPracticesCodeType'
       description: >-
         A data type for a code that identifies the sexual practices and
         preferences of a subject based on investigator perception.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexSubjectMOSexualPracticesCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexSubjectMOSexualPracticesCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexSubjectMOSexualPracticesCodeSimpleType
     ndexSubjectMOSexualPracticesCodeSimpleType:
       type: string
       description: >-
@@ -4801,18 +4947,20 @@ components:
         - Voyeurism
     ndexPrenatalAgeUnitCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexPrenatalAgeUnitCodeSimpleType
-        '@context':
-          type: string
-          description: ndexPrenatalAgeUnitCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexPrenatalAgeUnitCodeTypeContext.json
       title: 'ndex:PrenatalAgeUnitCodeType'
       description: >-
         A data type for a code that identifies the unit of measure of an age of
         an unborn child.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexPrenatalAgeUnitCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexPrenatalAgeUnitCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexPrenatalAgeUnitCodeSimpleType
     ndexPrenatalAgeUnitCodeSimpleType:
       type: string
       description: >-
@@ -4823,18 +4971,20 @@ components:
         - PW
     ndexPersonBuildCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexPersonBuildCodeSimpleType
-        '@context':
-          type: string
-          description: ndexPersonBuildCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexPersonBuildCodeTypeContext.json
       title: 'ndex:PersonBuildCodeType'
       description: >-
         A data type for a code that identifies the person's physique or body
         shape.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexPersonBuildCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexPersonBuildCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexPersonBuildCodeSimpleType
     ndexPersonBuildCodeSimpleType:
       type: string
       description: >-
@@ -4857,18 +5007,20 @@ components:
         - VERY THIN
     ndexPersonEyewearCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexPersonEyewearCodeSimpleType
-        '@context':
-          type: string
-          description: ndexPersonEyewearCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexPersonEyewearCodeTypeContext.json
       title: 'ndex:PersonEyewearCodeType'
       description: >-
         A data type for a code that identifies the type of glasses or other
         eyewear worn by a person.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexPersonEyewearCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexPersonEyewearCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexPersonEyewearCodeSimpleType
     ndexPersonEyewearCodeSimpleType:
       type: string
       description: >-
@@ -4883,18 +5035,20 @@ components:
         - UNKNOWN
     ndexPersonFacialHairCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexPersonFacialHairCodeSimpleType
-        '@context':
-          type: string
-          description: ndexPersonFacialHairCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexPersonFacialHairCodeTypeContext.json
       title: 'ndex:PersonFacialHairCodeType'
       description: >-
         A data type for a code that identifies the type of facial hair of a
         person.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexPersonFacialHairCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexPersonFacialHairCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexPersonFacialHairCodeSimpleType
     ndexPersonFacialHairCodeSimpleType:
       type: string
       description: >-
@@ -4921,16 +5075,18 @@ components:
         - UNSHAVEN
     ndexPersonHairLengthCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexPersonHairLengthCodeSimpleType
-        '@context':
-          type: string
-          description: ndexPersonHairLengthCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexPersonHairLengthCodeTypeContext.json
       title: 'ndex:PersonHairLengthCodeType'
       description: A data type for a code that identifies the length of the person's hair.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexPersonHairLengthCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexPersonHairLengthCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexPersonHairLengthCodeSimpleType
     ndexPersonHairLengthCodeSimpleType:
       type: string
       description: A data type for a code that identifies the length of the person's hair.
@@ -4943,16 +5099,18 @@ components:
         - WORE HAIR PIECE
     ndexPersonHairStyleCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexPersonHairStyleCodeSimpleType
-        '@context':
-          type: string
-          description: ndexPersonHairStyleCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexPersonHairStyleCodeTypeContext.json
       title: 'ndex:PersonHairStyleCodeType'
       description: A data type for a code that identifies the style of a person's hair.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexPersonHairStyleCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexPersonHairStyleCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexPersonHairStyleCodeSimpleType
     ndexPersonHairStyleCodeSimpleType:
       type: string
       description: A data type for a code that identifies the style of a person's hair.
@@ -4985,16 +5143,18 @@ components:
         - WIG_HAIR PIECE
     ndexRACCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexRACCodeSimpleType
-        '@context':
-          type: string
-          description: ndexRACCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexRACCodeTypeContext.json
       title: 'ndex:RACCodeType'
       description: A data type for a code that identifies the race of the person.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexRACCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexRACCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexRACCodeSimpleType
     ndexRACCodeSimpleType:
       type: string
       description: A data type for a code that identifies the race of the person.
@@ -5007,16 +5167,18 @@ components:
         - W
     ndexSEXCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexSEXCodeSimpleType
-        '@context':
-          type: string
-          description: ndexSEXCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexSEXCodeTypeContext.json
       title: 'ndex:SEXCodeType'
       description: A data type for a code that identifies the gender or sex of the person.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexSEXCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexSEXCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexSEXCodeSimpleType
     ndexSEXCodeSimpleType:
       type: string
       description: A data type for a code that identifies the gender or sex of the person.
@@ -5030,16 +5192,18 @@ components:
         - Z
     ndexMaritalStatusCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexMaritalStatusCodeSimpleType
-        '@context':
-          type: string
-          description: ndexMaritalStatusCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexMaritalStatusCodeTypeContext.json
       title: 'ndex:MaritalStatusCodeType'
       description: A data type for a code that identifies marital status.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexMaritalStatusCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexMaritalStatusCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexMaritalStatusCodeSimpleType
     ndexMaritalStatusCodeSimpleType:
       type: string
       description: A data type for a code that identifies marital status.
@@ -5055,20 +5219,22 @@ components:
         - WIDOWED
     ndexPersonDentalCharacteristicCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexPersonDentalCharacteristicCodeSimpleType
-        '@context':
-          type: string
-          description: ndexPersonDentalCharacteristicCodeTypeJSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/ndexPersonDentalCharacteristicCodeTypeContext.json
       title: 'ndex:PersonDentalCharacteristicCodeType'
       description: >-
         A data type for a code that identifies dental characteristics for the
         person.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexPersonDentalCharacteristicCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexPersonDentalCharacteristicCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexPersonDentalCharacteristicCodeSimpleType
     ndexPersonDentalCharacteristicCodeSimpleType:
       type: string
       description: >-
@@ -5101,18 +5267,20 @@ components:
         - VISIBLE SILVER
     ndexPersonHandedCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexPersonHandedCodeSimpleType
-        '@context':
-          type: string
-          description: ndexPersonHandedCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexPersonHandedCodeTypeContext.json
       title: 'ndex:PersonHandedCodeType'
       description: >-
         A data type for a code that identifies the hand the person is more adept
         with using.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexPersonHandedCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexPersonHandedCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexPersonHandedCodeSimpleType
     ndexPersonHandedCodeSimpleType:
       type: string
       description: >-
@@ -5125,19 +5293,21 @@ components:
         - UNKNOWN
     ndexPersonSpeechCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: ndex.yaml#/components/schemas/ndexPersonSpeechCodeSimpleType
-        '@context':
-          type: string
-          description: ndexPersonSpeechCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/ndexPersonSpeechCodeTypeContext.json
       title: 'ndex:PersonSpeechCodeType'
       description: >-
         A data type for a code that identifies impediments that affect a
         person's speech or other speech characteristics that may help
         distinguish a person.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexPersonSpeechCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/ndexPersonSpeechCodeTypeContext.json
+        simpleType:
+          $ref: ndex.yaml#/components/schemas/ndexPersonSpeechCodeSimpleType
     ndexPersonSpeechCodeSimpleType:
       type: string
       description: >-
@@ -5171,20 +5341,22 @@ components:
         - VULGAR_PROFANE
     ndexPersonSexualOrientationCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            ndex.yaml#/components/schemas/ndexPersonSexualOrientationCodeSimpleType
-        '@context':
-          type: string
-          description: ndexPersonSexualOrientationCodeTypeJSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/ndexPersonSexualOrientationCodeTypeContext.json
       title: 'ndex:PersonSexualOrientationCodeType'
       description: >-
         A data type for a code that identifies the sexual orientation of a
         person.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: ndexPersonSexualOrientationCodeType JSON-LD context
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ndexPersonSexualOrientationCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            ndex.yaml#/components/schemas/ndexPersonSexualOrientationCodeSimpleType
     ndexPersonSexualOrientationCodeSimpleType:
       type: string
       description: >-

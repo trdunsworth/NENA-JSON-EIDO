@@ -2,7 +2,16 @@ components:
   schemas:
     mLocationAugmentationType:
       type: object
+      title: 'm:LocationAugmentationType'
+      description: A data type for additional information about a location.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: mLocationAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/mLocationAugmentationTypeContext.json
         COTPZoneRegionCode:
           type: array
           description: >-
@@ -59,25 +68,20 @@ components:
             Locations). NIEM reference is m:LocationUNLOCODEText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        '@context':
-          type: string
-          description: mLocationAugmentationTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/mLocationAugmentationTypeContext.json
-      title: 'm:LocationAugmentationType'
-      description: A data type for additional information about a location.
     mCOTPRegionCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: m.yaml#/components/schemas/mCOTPRegionCodeSimpleType
-        '@context':
-          type: string
-          description: mCOTPRegionCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/mCOTPRegionCodeTypeContext.json
       title: 'm:COTPRegionCodeType'
       description: A data type for a Captain of the Port (COTP) Zone.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: mCOTPRegionCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/mCOTPRegionCodeTypeContext.json
+        simpleType:
+          $ref: m.yaml#/components/schemas/mCOTPRegionCodeSimpleType
     mCOTPRegionCodeSimpleType:
       type: string
       description: A data type for a Captain of the Port (COTP) Zone.
@@ -131,7 +135,18 @@ components:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncFacilityType
         - type: object
+          title: 'm:PortType'
+          description: >-
+            A data type for a facility capable of receiving vessels and
+            transferring cargo.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: mPortType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/mPortTypeContext.json
             anchorageCapability:
               type: array
               description: >-
@@ -283,18 +298,20 @@ components:
               description: 'A name of a city or town. NIEM reference is nc:LocationCityName'
               items:
                 $ref: nc.yaml#/components/schemas/ncProperNameTextType
-            '@context':
-              type: string
-              description: mPortTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/mPortTypeContext.json
-      title: 'm:PortType'
-      description: >-
-        A data type for a facility capable of receiving vessels and transferring
-        cargo.
     mCaptainOfThePortZoneType:
       type: object
+      title: 'm:CaptainOfThePortZoneType'
+      description: >-
+        A data type for a geographical area or zone where a Coast Guard Captain
+        of the Port (COTP) enforces port safety and security.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: mCaptainOfThePortZoneType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/mCaptainOfThePortZoneTypeContext.json
         COTPZoneRegionCode:
           type: array
           description: >-
@@ -323,18 +340,18 @@ components:
             zone. NIEM reference is m:COTPZoneGoverningEntity
           items:
             $ref: nc.yaml#/components/schemas/ncEntityType
-        '@context':
-          type: string
-          description: mCaptainOfThePortZoneTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/mCaptainOfThePortZoneTypeContext.json
-      title: 'm:CaptainOfThePortZoneType'
-      description: >-
-        A data type for a geographical area or zone where a Coast Guard Captain
-        of the Port (COTP) enforces port safety and security.
     mVesselAugmentationType:
       type: object
+      title: 'm:VesselAugmentationType'
+      description: 'A data type that supplements nc:VesselType.'
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: mVesselAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/mVesselAugmentationTypeContext.json
         vesselActivityHistorySummary:
           type: array
           description: >-
@@ -938,18 +955,22 @@ components:
             m:VesselVoyage
           items:
             $ref: m.yaml#/components/schemas/mVoyageType
-        '@context':
-          type: string
-          description: mVesselAugmentationTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/mVesselAugmentationTypeContext.json
-      title: 'm:VesselAugmentationType'
-      description: 'A data type that supplements nc:VesselType.'
     mCertificateType:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncDocumentType
         - type: object
+          title: 'm:CertificateType'
+          description: >-
+            A data type for an official or government-issued certificate or
+            license.
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: mCertificateType JSON-LD context
+              enum:
+                - ../JSON-LD_Contexts/mCertificateTypeContext.json
             endorsement:
               type: array
               description: >-
@@ -987,18 +1008,21 @@ components:
                 m:CertificateRestrictionText
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
-            '@context':
-              type: string
-              description: mCertificateTypeJSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/mCertificateTypeContext.json
-      title: 'm:CertificateType'
-      description: A data type for an official or government-issued certificate or license.
     mInternationalShipSecurityCertificateType:
       allOf:
         - $ref: m.yaml#/components/schemas/mCertificateType
         - type: object
+          title: 'm:InternationalShipSecurityCertificateType'
+          description: A data type for an International Ship Security Certificate (ISSC).
+          required:
+            - '@context'
           properties:
+            '@context':
+              type: string
+              description: mInternationalShipSecurityCertificateType JSON-LD context
+              enum:
+                - >-
+                  ../JSON-LD_Contexts/mInternationalShipSecurityCertificateTypeContext.json
             reasonInterimISSCIssued:
               type: array
               description: >-
@@ -1038,17 +1062,18 @@ components:
                 m:VesselSecurityPlanImplementedIndicator
               items:
                 $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
-            '@context':
-              type: string
-              description: mInternationalShipSecurityCertificateTypeJSON-LD context
-              enum:
-                - >-
-                  ../JSON-LD_Contexts/mInternationalShipSecurityCertificateTypeContext.json
-      title: 'm:InternationalShipSecurityCertificateType'
-      description: A data type for an International Ship Security Certificate (ISSC).
     mVesselMovementDetailsType:
       type: object
+      title: 'm:VesselMovementDetailsType'
+      description: A data type for a set of details of the geospatial movement of a vessel.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: mVesselMovementDetailsType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/mVesselMovementDetailsTypeContext.json
         vesselActualActivity:
           type: array
           description: >-
@@ -1075,27 +1100,22 @@ components:
           description: 'An origin of a vessel. NIEM reference is m:VesselOriginLocation'
           items:
             $ref: nc.yaml#/components/schemas/ncLocationType
-        '@context':
-          type: string
-          description: mVesselMovementDetailsTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/mVesselMovementDetailsTypeContext.json
-      title: 'm:VesselMovementDetailsType'
-      description: A data type for a set of details of the geospatial movement of a vessel.
     mVesselOperationalConditionOfEquipmentCodeType:
       type: object
+      title: 'm:VesselOperationalConditionOfEquipmentCodeType'
+      description: A data type for an Operational Condition of Equipment (OCE) of a vessel.
+      required:
+        - '@context'
       properties:
-        simpleType:
-          $ref: >-
-            m.yaml#/components/schemas/mVesselOperationalConditionOfEquipmentCodeSimpleType
         '@context':
           type: string
-          description: mVesselOperationalConditionOfEquipmentCodeTypeJSON-LD context
+          description: mVesselOperationalConditionOfEquipmentCodeType JSON-LD context
           enum:
             - >-
               ../JSON-LD_Contexts/mVesselOperationalConditionOfEquipmentCodeTypeContext.json
-      title: 'm:VesselOperationalConditionOfEquipmentCodeType'
-      description: A data type for an Operational Condition of Equipment (OCE) of a vessel.
+        simpleType:
+          $ref: >-
+            m.yaml#/components/schemas/mVesselOperationalConditionOfEquipmentCodeSimpleType
     mVesselOperationalConditionOfEquipmentCodeSimpleType:
       type: string
       description: A data type for an Operational Condition of Equipment (OCE) of a vessel.
@@ -1105,7 +1125,16 @@ components:
         - Operational
     mLocationOnVesselType:
       type: object
+      title: 'm:LocationOnVesselType'
+      description: A data type for a location on a vessel.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: mLocationOnVesselType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/mLocationOnVesselTypeContext.json
         deck:
           type: array
           description: >-
@@ -1158,16 +1187,18 @@ components:
             reference is m:LocationOnVesselElevationMeasure
           items:
             $ref: nc.yaml#/components/schemas/ncLengthMeasureType
-        '@context':
-          type: string
-          description: mLocationOnVesselTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/mLocationOnVesselTypeContext.json
-      title: 'm:LocationOnVesselType'
-      description: A data type for a location on a vessel.
     mVoyageType:
       type: object
+      title: 'm:VoyageType'
+      description: A data type for a journey from one place to another.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: mVoyageType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/mVoyageTypeContext.json
         beginDateTime:
           type: array
           description: >-
@@ -1218,16 +1249,18 @@ components:
             reference is m:VoyageVesselUseText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        '@context':
-          type: string
-          description: mVoyageTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/mVoyageTypeContext.json
-      title: 'm:VoyageType'
-      description: A data type for a journey from one place to another.
     mPersonAugmentationType:
       type: object
+      title: 'm:PersonAugmentationType'
+      description: 'A data type that supplements nc:PersonType.'
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: mPersonAugmentationType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/mPersonAugmentationTypeContext.json
         personBiometricURI:
           type: array
           description: >-
@@ -1256,16 +1289,18 @@ components:
             m:SeamanLicense
           items:
             $ref: m.yaml#/components/schemas/mSeamanLicenseType
-        '@context':
-          type: string
-          description: mPersonAugmentationTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/mPersonAugmentationTypeContext.json
-      title: 'm:PersonAugmentationType'
-      description: 'A data type that supplements nc:PersonType.'
     mMerchantMarinerDocumentType:
       type: object
+      title: 'm:MerchantMarinerDocumentType'
+      description: A data type for a Merchant Mariner Document (MMD).
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: mMerchantMarinerDocumentType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/mMerchantMarinerDocumentTypeContext.json
         identification:
           type: array
           description: >-
@@ -1437,16 +1472,18 @@ components:
             nc:PersonWeightMeasure
           items:
             $ref: nc.yaml#/components/schemas/ncWeightMeasureType
-        '@context':
-          type: string
-          description: mMerchantMarinerDocumentTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/mMerchantMarinerDocumentTypeContext.json
-      title: 'm:MerchantMarinerDocumentType'
-      description: A data type for a Merchant Mariner Document (MMD).
     mSeamanLicenseType:
       type: object
+      title: 'm:SeamanLicenseType'
+      description: A data type for an able-bodied seaman license.
+      required:
+        - '@context'
       properties:
+        '@context':
+          type: string
+          description: mSeamanLicenseType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/mSeamanLicenseTypeContext.json
         personAddress:
           type: array
           description: 'An address for a person. NIEM reference is m:PersonAddress'
@@ -1618,10 +1655,3 @@ components:
             m:SeamanLicenseRatingText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
-        '@context':
-          type: string
-          description: mSeamanLicenseTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/mSeamanLicenseTypeContext.json
-      title: 'm:SeamanLicenseType'
-      description: A data type for an able-bodied seaman license.

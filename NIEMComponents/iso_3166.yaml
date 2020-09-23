@@ -2,19 +2,21 @@ components:
   schemas:
     iso_3166CountryAlpha2CodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            iso_3166.yaml#/components/schemas/iso_3166CountryAlpha2CodeSimpleType
-        '@context':
-          type: string
-          description: iso_3166CountryAlpha2CodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/iso_3166CountryAlpha2CodeTypeContext.json
       title: 'iso_3166:CountryAlpha2CodeType'
       description: >-
         A data type for country, territory, or dependency codes.  Sourced from
         ISO 3166 Part 1, v7-8.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: iso_3166CountryAlpha2CodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/iso_3166CountryAlpha2CodeTypeContext.json
+        simpleType:
+          $ref: >-
+            iso_3166.yaml#/components/schemas/iso_3166CountryAlpha2CodeSimpleType
     iso_3166CountryAlpha2CodeSimpleType:
       type: string
       description: >-
@@ -272,19 +274,21 @@ components:
         - ZW
     iso_3166CountryAlpha3CodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            iso_3166.yaml#/components/schemas/iso_3166CountryAlpha3CodeSimpleType
-        '@context':
-          type: string
-          description: iso_3166CountryAlpha3CodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/iso_3166CountryAlpha3CodeTypeContext.json
       title: 'iso_3166:CountryAlpha3CodeType'
       description: >-
         A data type for country, territory, or dependency codes.  Sourced from
         ISO 3166 Part 1, v7-8.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: iso_3166CountryAlpha3CodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/iso_3166CountryAlpha3CodeTypeContext.json
+        simpleType:
+          $ref: >-
+            iso_3166.yaml#/components/schemas/iso_3166CountryAlpha3CodeSimpleType
     iso_3166CountryAlpha3CodeSimpleType:
       type: string
       description: >-
@@ -542,19 +546,21 @@ components:
         - ZWE
     iso_3166CountryNumericCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            iso_3166.yaml#/components/schemas/iso_3166CountryNumericCodeSimpleType
-        '@context':
-          type: string
-          description: iso_3166CountryNumericCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/iso_3166CountryNumericCodeTypeContext.json
       title: 'iso_3166:CountryNumericCodeType'
       description: >-
         A data type for country, territory, or dependency codes.  Sourced from
         ISO 3166 Part 1, v7-8.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: iso_3166CountryNumericCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/iso_3166CountryNumericCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            iso_3166.yaml#/components/schemas/iso_3166CountryNumericCodeSimpleType
     iso_3166CountryNumericCodeSimpleType:
       type: string
       description: >-
@@ -812,20 +818,22 @@ components:
         - '894'
     iso_3166CountrySubdivisionCodeType:
       type: object
-      properties:
-        simpleType:
-          $ref: >-
-            iso_3166.yaml#/components/schemas/iso_3166CountrySubdivisionCodeSimpleType
-        '@context':
-          type: string
-          description: iso_3166CountrySubdivisionCodeTypeJSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/iso_3166CountrySubdivisionCodeTypeContext.json
       title: 'iso_3166:CountrySubdivisionCodeType'
       description: >-
         A data type for a state, commonwealth, province, or other such
         geopolitical subdivision of a country. Sourced from ISO 3166 Part 2,
         v3-6.
+      required:
+        - '@context'
+      properties:
+        '@context':
+          type: string
+          description: iso_3166CountrySubdivisionCodeType JSON-LD context
+          enum:
+            - ../JSON-LD_Contexts/iso_3166CountrySubdivisionCodeTypeContext.json
+        simpleType:
+          $ref: >-
+            iso_3166.yaml#/components/schemas/iso_3166CountrySubdivisionCodeSimpleType
     iso_3166CountrySubdivisionCodeSimpleType:
       type: string
       description: >-
