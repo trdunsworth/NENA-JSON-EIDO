@@ -4,15 +4,7 @@ components:
       type: object
       title: 'intel:IdentificationAugmentationType'
       description: A data type for additional information about an identification.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: intelIdentificationAugmentationType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/intelIdentificationAugmentationTypeContext.json
         isAuthentic:
           type: array
           description: >-
@@ -57,19 +49,18 @@ components:
             identification. NIEM reference is intel:PersonInIdentification
           items:
             $ref: nc.yaml#/components/schemas/ncIdentificationType
+        '@context':
+          type: string
+          description: intelIdentificationAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/intelIdentificationAugmentationTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/intelIdentificationAugmentationTypeContext.json
     intelContactInformationAugmentationType:
       type: object
       title: 'intel:ContactInformationAugmentationType'
       description: A data type for additional information about a contact information.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: intelContactInformationAugmentationType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/intelContactInformationAugmentationTypeContext.json
         contactSatelliteTelephoneNumber:
           type: array
           description: >-
@@ -77,18 +68,19 @@ components:
             intel:ContactSatelliteTelephoneNumber
           items:
             $ref: nc.yaml#/components/schemas/ncTelephoneNumberType
+        '@context':
+          type: string
+          description: intelContactInformationAugmentationType JSON-LD context
+          default: >-
+            ../JSON-LD_Contexts/intelContactInformationAugmentationTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/intelContactInformationAugmentationTypeContext.json
     intelLocationAugmentationType:
       type: object
       title: 'intel:LocationAugmentationType'
       description: A data type for additional information about a location.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: intelLocationAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/intelLocationAugmentationTypeContext.json
         globalRegionCode:
           type: array
           description: >-
@@ -103,18 +95,17 @@ components:
             intel:PersonLocationUsageCodeText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: intelLocationAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/intelLocationAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/intelLocationAugmentationTypeContext.json
     intelBiometricAugmentationType:
       type: object
       title: 'intel:BiometricAugmentationType'
       description: A data type for additional information about a biometric.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: intelBiometricAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/intelBiometricAugmentationTypeContext.json
         CBEFF:
           type: array
           description: >-
@@ -122,18 +113,17 @@ components:
             reference is intel:CBEFFText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: intelBiometricAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/intelBiometricAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/intelBiometricAugmentationTypeContext.json
     intelCapabilityAugmentationType:
       type: object
       title: 'intel:CapabilityAugmentationType'
       description: A data type for additional information about a capability.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: intelCapabilityAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/intelCapabilityAugmentationTypeContext.json
         capabilityProficiency:
           type: array
           description: >-
@@ -141,18 +131,17 @@ components:
             and familiarity. NIEM reference is intel:CapabilityProficiencyText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: intelCapabilityAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/intelCapabilityAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/intelCapabilityAugmentationTypeContext.json
     intelPersonAugmentationType:
       type: object
       title: 'intel:PersonAugmentationType'
       description: A data type for additional information about a person.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: intelPersonAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/intelPersonAugmentationTypeContext.json
         agencySubjectInterest:
           type: array
           description: >-
@@ -235,6 +224,12 @@ components:
             reference is nc:Vessel
           items:
             $ref: nc.yaml#/components/schemas/ncVesselType
+        '@context':
+          type: string
+          description: intelPersonAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/intelPersonAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/intelPersonAugmentationTypeContext.json
     intelAgencySubjectInterestType:
       type: object
       title: 'intel:AgencySubjectInterestType'
@@ -242,14 +237,7 @@ components:
         A data type for a detailed description of why an agency placed the
         person in its repository or why the data on the person is being
         exchanged.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: intelAgencySubjectInterestType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/intelAgencySubjectInterestTypeContext.json
         subjectCautionInformationCode:
           type: array
           description: >-
@@ -294,20 +282,19 @@ components:
             intel:SubjectReasonOnListText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: intelAgencySubjectInterestType JSON-LD context
+          default: ../JSON-LD_Contexts/intelAgencySubjectInterestTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/intelAgencySubjectInterestTypeContext.json
     intelAgencyInterestCategoryType:
       type: object
       title: 'intel:AgencyInterestCategoryType'
       description: >-
         A data type for a groupings of persons by the reason they are of
         interest to intelligence.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: intelAgencyInterestCategoryType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/intelAgencyInterestCategoryTypeContext.json
         subjectCategoryCode:
           type: array
           description: >-
@@ -340,6 +327,12 @@ components:
           items:
             $ref: >-
               intel.yaml#/components/schemas/intelAgencyInterestOtherCategoryType
+        '@context':
+          type: string
+          description: intelAgencyInterestCategoryType JSON-LD context
+          default: ../JSON-LD_Contexts/intelAgencyInterestCategoryTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/intelAgencyInterestCategoryTypeContext.json
     intelAgencyInterestOtherCategoryType:
       type: object
       title: 'intel:AgencyInterestOtherCategoryType'
@@ -347,15 +340,7 @@ components:
         A data type for a details that describe an additional
         person-categorization system that groups of people by the reason they
         are of interest to intelligence.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: intelAgencyInterestOtherCategoryType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/intelAgencyInterestOtherCategoryTypeContext.json
         agencyInterestCategory:
           type: array
           description: >-
@@ -379,18 +364,18 @@ components:
             intel:AgencyInterestCategoryDescriptionText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: intelAgencyInterestOtherCategoryType JSON-LD context
+          default: ../JSON-LD_Contexts/intelAgencyInterestOtherCategoryTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/intelAgencyInterestOtherCategoryTypeContext.json
     intelAgencySubjectHandlingType:
       type: object
       title: 'intel:AgencySubjectHandlingType'
       description: A data type for actions to take on contact with the person.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: intelAgencySubjectHandlingType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/intelAgencySubjectHandlingTypeContext.json
         FBICode:
           type: array
           description: >-
@@ -405,20 +390,19 @@ components:
             person. NIEM reference is intel:SubjectHandling
           items:
             $ref: intel.yaml#/components/schemas/intelSubjectHandlingType
+        '@context':
+          type: string
+          description: intelAgencySubjectHandlingType JSON-LD context
+          default: ../JSON-LD_Contexts/intelAgencySubjectHandlingTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/intelAgencySubjectHandlingTypeContext.json
     intelSubjectHandlingType:
       type: object
       title: 'intel:SubjectHandlingType'
       description: >-
         A data type for an action for the designated agency to take on contact
         with the person.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: intelSubjectHandlingType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/intelSubjectHandlingTypeContext.json
         agencyName:
           type: array
           description: >-
@@ -441,20 +425,19 @@ components:
             intel:SubjectHandlingDescriptionText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: intelSubjectHandlingType JSON-LD context
+          default: ../JSON-LD_Contexts/intelSubjectHandlingTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/intelSubjectHandlingTypeContext.json
     intelPersonCitizenshipDetailsType:
       type: object
       title: 'intel:PersonCitizenshipDetailsType'
       description: >-
         A data type for information about a persons allegiance to a sovereign
         state by right of birthplace or naturalization.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: intelPersonCitizenshipDetailsType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/intelPersonCitizenshipDetailsTypeContext.json
         personCitizenshipISO3166Alpha2Code:
           type: array
           description: >-
@@ -479,6 +462,12 @@ components:
             allegiance. NIEM reference is intel:PersonCitizenshipStatusCodeText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: intelPersonCitizenshipDetailsType JSON-LD context
+          default: ../JSON-LD_Contexts/intelPersonCitizenshipDetailsTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/intelPersonCitizenshipDetailsTypeContext.json
     intelPersonEducationDetailsType:
       type: object
       title: 'intel:PersonEducationDetailsType'
@@ -486,14 +475,7 @@ components:
         A data type for a relationship between a person and an organization in
         which the organization is providing a service as an educational
         institution.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: intelPersonEducationDetailsType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/intelPersonEducationDetailsTypeContext.json
         personEducationLevel:
           type: array
           description: >-
@@ -509,3 +491,9 @@ components:
             study.  NIEM reference is intel:PersonEducationDegreeCodeText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: intelPersonEducationDetailsType JSON-LD context
+          default: ../JSON-LD_Contexts/intelPersonEducationDetailsTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/intelPersonEducationDetailsTypeContext.json

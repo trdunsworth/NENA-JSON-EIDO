@@ -4,17 +4,16 @@ components:
       type: object
       title: 'fips_5-2:USStateNumericCodeType'
       description: A data type for numeric state codes.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: fips_5-2USStateNumericCodeType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/fips_5-2USStateNumericCodeTypeContext.json
         simpleType:
           $ref: >-
             fips_5-2.yaml#/components/schemas/fips_5-2USStateNumericCodeSimpleType
+        '@context':
+          type: string
+          description: fips_5-2USStateNumericCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/fips_5-2USStateNumericCodeTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/fips_5-2USStateNumericCodeTypeContext.json
     fips_5-2USStateNumericCodeSimpleType:
       type: string
       description: A data type for numeric state codes.

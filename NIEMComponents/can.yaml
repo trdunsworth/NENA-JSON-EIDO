@@ -4,16 +4,15 @@ components:
       type: object
       title: 'can:CanadianProvinceCodeType'
       description: A data type for provinces in Canada.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: can.yaml#/components/schemas/canCanadianProvinceCodeSimpleType
         '@context':
           type: string
           description: canCanadianProvinceCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/canCanadianProvinceCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/canCanadianProvinceCodeTypeContext.json
-        simpleType:
-          $ref: can.yaml#/components/schemas/canCanadianProvinceCodeSimpleType
     canCanadianProvinceCodeSimpleType:
       type: string
       description: A data type for provinces in Canada.

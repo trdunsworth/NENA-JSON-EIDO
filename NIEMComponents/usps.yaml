@@ -4,16 +4,15 @@ components:
       type: object
       title: 'usps:USStateCodeType'
       description: A data type for states.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: usps.yaml#/components/schemas/uspsUSStateCodeSimpleType
         '@context':
           type: string
           description: uspsUSStateCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/uspsUSStateCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/uspsUSStateCodeTypeContext.json
-        simpleType:
-          $ref: usps.yaml#/components/schemas/uspsUSStateCodeSimpleType
     uspsUSStateCodeSimpleType:
       type: string
       description: A data type for states.

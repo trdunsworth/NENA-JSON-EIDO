@@ -7,16 +7,15 @@ components:
         A data type for a reference direction as determined by the means by
         which it is established (e.g., by the direction of a geographic or
         magnetic pole of the Earth).
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: nga.yaml#/components/schemas/ngaDirectionDatumCodeSimpleType
         '@context':
           type: string
           description: ngaDirectionDatumCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/ngaDirectionDatumCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/ngaDirectionDatumCodeTypeContext.json
-        simpleType:
-          $ref: nga.yaml#/components/schemas/ngaDirectionDatumCodeSimpleType
     ngaDirectionDatumCodeSimpleType:
       type: string
       description: >-
@@ -32,16 +31,15 @@ components:
       type: object
       title: 'nga:VerticalDatumCodeType'
       description: A data type for vertical datum codes.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: nga.yaml#/components/schemas/ngaVerticalDatumCodeSimpleType
         '@context':
           type: string
           description: ngaVerticalDatumCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/ngaVerticalDatumCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/ngaVerticalDatumCodeTypeContext.json
-        simpleType:
-          $ref: nga.yaml#/components/schemas/ngaVerticalDatumCodeSimpleType
     ngaVerticalDatumCodeSimpleType:
       type: string
       description: A data type for vertical datum codes.

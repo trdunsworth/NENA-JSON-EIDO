@@ -4,14 +4,7 @@ components:
       type: object
       title: 'em:LocationAugmentationType'
       description: A data type for additional information about a location
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: emLocationAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/emLocationAugmentationTypeContext.json
         locationAcronym:
           type: array
           description: >-
@@ -33,18 +26,17 @@ components:
             nc:LocationDirectionsText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: emLocationAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/emLocationAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/emLocationAugmentationTypeContext.json
     emServiceCallAugmentationType:
       type: object
       title: 'em:ServiceCallAugmentationType'
       description: A data type for additional information about a call for service
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: emServiceCallAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/emServiceCallAugmentationTypeContext.json
         serviceCallResponseLocation:
           type: array
           description: >-
@@ -124,21 +116,19 @@ components:
           description: 'A date for when the call stopped NIEM reference is em:CallCloseDate'
           items:
             $ref: nc.yaml#/components/schemas/ncDateType
+        '@context':
+          type: string
+          description: emServiceCallAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/emServiceCallAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/emServiceCallAugmentationTypeContext.json
     emServiceCallResponseLocationType:
+      title: 'em:ServiceCallResponseLocationType'
+      description: 'A data type for a structure that extends nc:LocationType'
       allOf:
         - $ref: nc.yaml#/components/schemas/ncLocationType
         - type: object
-          title: 'em:ServiceCallResponseLocationType'
-          description: 'A data type for a structure that extends nc:LocationType'
-          required:
-            - '@context'
           properties:
-            '@context':
-              type: string
-              description: emServiceCallResponseLocationType JSON-LD context
-              enum:
-                - >-
-                  ../JSON-LD_Contexts/emServiceCallResponseLocationTypeContext.json
             cellID:
               type: array
               description: >-
@@ -185,18 +175,19 @@ components:
                 em:FireboxText
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
+            '@context':
+              type: string
+              description: emServiceCallResponseLocationType JSON-LD context
+              default: >-
+                ../JSON-LD_Contexts/emServiceCallResponseLocationTypeContext.json
+              enum:
+                - >-
+                  ../JSON-LD_Contexts/emServiceCallResponseLocationTypeContext.json
     emDataLinkType:
       type: object
       title: 'em:DataLinkType'
       description: A data type for a structure that contains a data link
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: emDataLinkType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/emDataLinkTypeContext.json
         dateTime:
           type: array
           description: >-
@@ -252,18 +243,17 @@ components:
             reference is nc:URLID
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsanyURI
+        '@context':
+          type: string
+          description: emDataLinkType JSON-LD context
+          default: ../JSON-LD_Contexts/emDataLinkTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/emDataLinkTypeContext.json
     emStagingType:
       type: object
       title: 'em:StagingType'
       description: A data type for a structure that contains staging information
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: emStagingType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/emStagingTypeContext.json
         contactRadioChannel:
           type: array
           description: >-
@@ -292,20 +282,19 @@ components:
             reference is em:StagingLocationText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: emStagingType JSON-LD context
+          default: ../JSON-LD_Contexts/emStagingTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/emStagingTypeContext.json
     emNotificationType:
+      title: 'em:NotificationType'
+      description: A data type for the  function of the message
       allOf:
         - $ref: nc.yaml#/components/schemas/ncActivityType
         - type: object
-          title: 'em:NotificationType'
-          description: A data type for the  function of the message
-          required:
-            - '@context'
           properties:
-            '@context':
-              type: string
-              description: emNotificationType JSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/emNotificationTypeContext.json
             notificationID:
               type: array
               description: >-
@@ -468,18 +457,17 @@ components:
                 j:NotificationAugmentation
               items:
                 $ref: j.yaml#/components/schemas/jNotificationAugmentationType
+            '@context':
+              type: string
+              description: emNotificationType JSON-LD context
+              default: ../JSON-LD_Contexts/emNotificationTypeContext.json
+              enum:
+                - ../JSON-LD_Contexts/emNotificationTypeContext.json
     emNotifierType:
       type: object
       title: 'em:NotifierType'
       description: A data type for notifier information
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: emNotifierType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/emNotifierTypeContext.json
         contactInformation:
           type: array
           description: >-
@@ -515,18 +503,17 @@ components:
             content NIEM reference is em:NotifierRoleIdentification
           items:
             $ref: nc.yaml#/components/schemas/ncIdentificationType
+        '@context':
+          type: string
+          description: emNotifierType JSON-LD context
+          default: ../JSON-LD_Contexts/emNotifierTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/emNotifierTypeContext.json
     emAlarmNotificationType:
       type: object
       title: 'em:AlarmNotificationType'
       description: A data type for an alarm
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: emAlarmNotificationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/emAlarmNotificationTypeContext.json
         isAlarmAudible:
           type: array
           description: >-
@@ -629,20 +616,25 @@ components:
           description: 'A location for an alarm NIEM reference is em:AlarmLocation'
           items:
             $ref: nc.yaml#/components/schemas/ncLocationType
+        '@context':
+          type: string
+          description: emAlarmNotificationType JSON-LD context
+          default: ../JSON-LD_Contexts/emAlarmNotificationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/emAlarmNotificationTypeContext.json
     emAlarmAudibleDescriptionCodeType:
       type: object
       title: 'em:AlarmAudibleDescriptionCodeType'
       description: A data type code indicating whether the alarm is audible or silent
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: em.yaml#/components/schemas/emAlarmAudibleDescriptionCodeSimpleType
         '@context':
           type: string
           description: emAlarmAudibleDescriptionCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/emAlarmAudibleDescriptionCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/emAlarmAudibleDescriptionCodeTypeContext.json
-        simpleType:
-          $ref: em.yaml#/components/schemas/emAlarmAudibleDescriptionCodeSimpleType
     emAlarmAudibleDescriptionCodeSimpleType:
       type: string
       description: A data type code indicating whether the alarm is audible or silent
@@ -655,14 +647,7 @@ components:
       description: >-
         A data type for the container for information related to the
         confirmation of an alarm
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: emAlarmConfirmationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/emAlarmConfirmationTypeContext.json
         methodDescription:
           type: array
           description: >-
@@ -700,18 +685,17 @@ components:
             em:AlarmConfirmationCallToPremisesResultsDescriptionText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: emAlarmConfirmationType JSON-LD context
+          default: ../JSON-LD_Contexts/emAlarmConfirmationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/emAlarmConfirmationTypeContext.json
     emAlarmPermitType:
       type: object
       title: 'em:AlarmPermitType'
       description: A data type for a permit for the alarm event site
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: emAlarmPermitType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/emAlarmPermitTypeContext.json
         permitCategory:
           type: array
           description: 'A kind of permit. NIEM reference is nc:PermitCategoryText'
@@ -722,20 +706,19 @@ components:
           description: 'A permit identification. NIEM reference is nc:PermitIdentification'
           items:
             $ref: nc.yaml#/components/schemas/ncIdentificationType
+        '@context':
+          type: string
+          description: emAlarmPermitType JSON-LD context
+          default: ../JSON-LD_Contexts/emAlarmPermitTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/emAlarmPermitTypeContext.json
     emAlarmEventType:
+      title: 'em:AlarmEventType'
+      description: A data type for an alarm event
       allOf:
         - $ref: nc.yaml#/components/schemas/ncActivityType
         - type: object
-          title: 'em:AlarmEventType'
-          description: A data type for an alarm event
-          required:
-            - '@context'
           properties:
-            '@context':
-              type: string
-              description: emAlarmEventType JSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/emAlarmEventTypeContext.json
             categoryCode:
               type: array
               description: >-
@@ -843,18 +826,17 @@ components:
                 is em:AlarmEventDispatchAgency
               items:
                 $ref: nc.yaml#/components/schemas/ncOrganizationType
+            '@context':
+              type: string
+              description: emAlarmEventType JSON-LD context
+              default: ../JSON-LD_Contexts/emAlarmEventTypeContext.json
+              enum:
+                - ../JSON-LD_Contexts/emAlarmEventTypeContext.json
     emAlertNotificationType:
       type: object
       title: 'em:AlertNotificationType'
       description: A data type for an alert message
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: emAlertNotificationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/emAlertNotificationTypeContext.json
         alertEffectiveDateTime:
           type: array
           description: >-
@@ -956,20 +938,25 @@ components:
             j:AlertNotificationAugmentation
           items:
             $ref: j.yaml#/components/schemas/jAlertNotificationAugmentationType
+        '@context':
+          type: string
+          description: emAlertNotificationType JSON-LD context
+          default: ../JSON-LD_Contexts/emAlertNotificationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/emAlertNotificationTypeContext.json
     emAlertCategoryCodeType:
       type: object
       title: 'em:AlertCategoryCodeType'
       description: A data type for a code set denoting the type of alert message
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: em.yaml#/components/schemas/emAlertCategoryCodeSimpleType
         '@context':
           type: string
           description: emAlertCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/emAlertCategoryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/emAlertCategoryCodeTypeContext.json
-        simpleType:
-          $ref: em.yaml#/components/schemas/emAlertCategoryCodeSimpleType
     emAlertCategoryCodeSimpleType:
       type: string
       description: A data type for a code set denoting the type of alert message
@@ -990,14 +977,7 @@ components:
       type: object
       title: 'em:AlertEventDetailsType'
       description: A data type for an alert event details
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: emAlertEventDetailsType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/emAlertEventDetailsTypeContext.json
         audienceDescription:
           type: array
           description: >-
@@ -1084,20 +1064,25 @@ components:
           items:
             $ref: >-
               em.yaml#/components/schemas/emAlertEventDetailsResponseRecommendationCodeType
+        '@context':
+          type: string
+          description: emAlertEventDetailsType JSON-LD context
+          default: ../JSON-LD_Contexts/emAlertEventDetailsTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/emAlertEventDetailsTypeContext.json
     emAlertEventDetailsUrgencyCodeType:
       type: object
       title: 'em:AlertEventDetailsUrgencyCodeType'
       description: A data type for the urgency code designated to an alert event
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: em.yaml#/components/schemas/emAlertEventDetailsUrgencyCodeSimpleType
         '@context':
           type: string
           description: emAlertEventDetailsUrgencyCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/emAlertEventDetailsUrgencyCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/emAlertEventDetailsUrgencyCodeTypeContext.json
-        simpleType:
-          $ref: em.yaml#/components/schemas/emAlertEventDetailsUrgencyCodeSimpleType
     emAlertEventDetailsUrgencyCodeSimpleType:
       type: string
       description: A data type for the urgency code designated to an alert event
@@ -1111,18 +1096,17 @@ components:
       type: object
       title: 'em:AlertEventDetailsSeverityCodeType'
       description: A data type for the severity code designated to an alert event
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: emAlertEventDetailsSeverityCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/emAlertEventDetailsSeverityCodeTypeContext.json
         simpleType:
           $ref: >-
             em.yaml#/components/schemas/emAlertEventDetailsSeverityCodeSimpleType
+        '@context':
+          type: string
+          description: emAlertEventDetailsSeverityCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/emAlertEventDetailsSeverityCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/emAlertEventDetailsSeverityCodeTypeContext.json
     emAlertEventDetailsSeverityCodeSimpleType:
       type: string
       description: A data type for the severity code designated to an alert event
@@ -1136,18 +1120,17 @@ components:
       type: object
       title: 'em:AlertEventDetailsCategoryCodeType'
       description: A data type for the category code designated to an alert event
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: emAlertEventDetailsCategoryCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/emAlertEventDetailsCategoryCodeTypeContext.json
         simpleType:
           $ref: >-
             em.yaml#/components/schemas/emAlertEventDetailsCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: emAlertEventDetailsCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/emAlertEventDetailsCategoryCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/emAlertEventDetailsCategoryCodeTypeContext.json
     emAlertEventDetailsCategoryCodeSimpleType:
       type: string
       description: A data type for the category code designated to an alert event
@@ -1168,18 +1151,17 @@ components:
       type: object
       title: 'em:AlertEventDetailsCertaintyCodeType'
       description: A data type for the certainty code designated to an alert event
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: emAlertEventDetailsCertaintyCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/emAlertEventDetailsCertaintyCodeTypeContext.json
         simpleType:
           $ref: >-
             em.yaml#/components/schemas/emAlertEventDetailsCertaintyCodeSimpleType
+        '@context':
+          type: string
+          description: emAlertEventDetailsCertaintyCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/emAlertEventDetailsCertaintyCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/emAlertEventDetailsCertaintyCodeTypeContext.json
     emAlertEventDetailsCertaintyCodeSimpleType:
       type: string
       description: A data type for the certainty code designated to an alert event
@@ -1195,18 +1177,18 @@ components:
       description: >-
         A data type for the response recommendation code designated to an alert
         event
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: emAlertEventDetailsResponseRecommendationCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/emAlertEventDetailsResponseRecommendationCodeTypeContext.json
         simpleType:
           $ref: >-
             em.yaml#/components/schemas/emAlertEventDetailsResponseRecommendationCodeSimpleType
+        '@context':
+          type: string
+          description: emAlertEventDetailsResponseRecommendationCodeType JSON-LD context
+          default: >-
+            ../JSON-LD_Contexts/emAlertEventDetailsResponseRecommendationCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/emAlertEventDetailsResponseRecommendationCodeTypeContext.json
     emAlertEventDetailsResponseRecommendationCodeSimpleType:
       type: string
       description: >-
@@ -1221,19 +1203,12 @@ components:
         - Prepare
         - Shelter
     emAlertAffectedLocationType:
+      title: 'em:AlertAffectedLocationType'
+      description: A data type for a location affected by an alert
       allOf:
         - $ref: nc.yaml#/components/schemas/ncLocationType
         - type: object
-          title: 'em:AlertAffectedLocationType'
-          description: A data type for a location affected by an alert
-          required:
-            - '@context'
           properties:
-            '@context':
-              type: string
-              description: emAlertAffectedLocationType JSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/emAlertAffectedLocationTypeContext.json
             polygonCoordinate:
               type: array
               description: >-
@@ -1250,19 +1225,17 @@ components:
                 (conditional) NIEM reference is em:Ceiling
               items:
                 $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+            '@context':
+              type: string
+              description: emAlertAffectedLocationType JSON-LD context
+              default: ../JSON-LD_Contexts/emAlertAffectedLocationTypeContext.json
+              enum:
+                - ../JSON-LD_Contexts/emAlertAffectedLocationTypeContext.json
     emAlertSupplementaryDigitalResourceType:
       type: object
       title: 'em:AlertSupplementaryDigitalResourceType'
       description: A data type for a digital representation of an object
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: emAlertSupplementaryDigitalResourceType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/emAlertSupplementaryDigitalResourceTypeContext.json
         binaryChecksumDigestID:
           type: array
           description: >-
@@ -1271,18 +1244,19 @@ components:
             (SHA-1) per [FIPS 180-2] NIEM reference is em:BinaryChecksumDigestID
           items:
             $ref: nc.yaml#/components/schemas/ncIdentificationType
+        '@context':
+          type: string
+          description: emAlertSupplementaryDigitalResourceType JSON-LD context
+          default: >-
+            ../JSON-LD_Contexts/emAlertSupplementaryDigitalResourceTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/emAlertSupplementaryDigitalResourceTypeContext.json
     emGeneralNotificationType:
       type: object
       title: 'em:GeneralNotificationType'
       description: A data type to represent a generalized notification to broadcast
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: emGeneralNotificationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/emGeneralNotificationTypeContext.json
         notificationMessage:
           type: array
           description: >-
@@ -1290,18 +1264,17 @@ components:
             em:NotificationMessageText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: emGeneralNotificationType JSON-LD context
+          default: ../JSON-LD_Contexts/emGeneralNotificationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/emGeneralNotificationTypeContext.json
     emIncidentNotificationType:
       type: object
       title: 'em:IncidentNotificationType'
       description: A data type to represent a incident notification to broadcast
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: emIncidentNotificationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/emIncidentNotificationTypeContext.json
         emergencyIncident:
           type: array
           description: >-
@@ -1316,20 +1289,19 @@ components:
             em:NotificationMessageText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: emIncidentNotificationType JSON-LD context
+          default: ../JSON-LD_Contexts/emIncidentNotificationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/emIncidentNotificationTypeContext.json
     emEmergencyIncidentType:
+      title: 'em:EmergencyIncidentType'
+      description: A data type for the description for an emergency Incident
       allOf:
         - $ref: nc.yaml#/components/schemas/ncIncidentType
         - type: object
-          title: 'em:EmergencyIncidentType'
-          description: A data type for the description for an emergency Incident
-          required:
-            - '@context'
           properties:
-            '@context':
-              type: string
-              description: emEmergencyIncidentType JSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/emEmergencyIncidentTypeContext.json
             incidentSummary:
               type: array
               description: >-
@@ -1436,20 +1408,25 @@ components:
                 j:Witness
               items:
                 $ref: j.yaml#/components/schemas/jWitnessType
+            '@context':
+              type: string
+              description: emEmergencyIncidentType JSON-LD context
+              default: ../JSON-LD_Contexts/emEmergencyIncidentTypeContext.json
+              enum:
+                - ../JSON-LD_Contexts/emEmergencyIncidentTypeContext.json
     emIncidentActionCodeType:
       type: object
       title: 'em:IncidentActionCodeType'
       description: A data type for the valid actions related to the incident information
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: em.yaml#/components/schemas/emIncidentActionCodeSimpleType
         '@context':
           type: string
           description: emIncidentActionCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/emIncidentActionCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/emIncidentActionCodeTypeContext.json
-        simpleType:
-          $ref: em.yaml#/components/schemas/emIncidentActionCodeSimpleType
     emIncidentActionCodeSimpleType:
       type: string
       description: >-
@@ -1465,14 +1442,7 @@ components:
       type: object
       title: 'em:IncidentAuthorType'
       description: A data type for information about the author of the incident
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: emIncidentAuthorType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/emIncidentAuthorTypeContext.json
         authorURI:
           type: array
           description: 'An element for incident author''s URI NIEM reference is em:AuthorURI'
@@ -1485,20 +1455,19 @@ components:
             reference is em:AuthorName
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: emIncidentAuthorType JSON-LD context
+          default: ../JSON-LD_Contexts/emIncidentAuthorTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/emIncidentAuthorTypeContext.json
     emServiceCallAssignedUnitType:
+      title: 'em:ServiceCallAssignedUnitType'
+      description: A data type for a service call assigned unit detail.
       allOf:
         - $ref: nc.yaml#/components/schemas/ncOrganizationType
         - type: object
-          title: 'em:ServiceCallAssignedUnitType'
-          description: A data type for a service call assigned unit detail.
-          required:
-            - '@context'
           properties:
-            '@context':
-              type: string
-              description: emServiceCallAssignedUnitType JSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/emServiceCallAssignedUnitTypeContext.json
             unitAssignedDate:
               type: array
               description: >-
@@ -1514,21 +1483,19 @@ components:
                 em:UnitUnassignedDate
               items:
                 $ref: nc.yaml#/components/schemas/ncDateType
+            '@context':
+              type: string
+              description: emServiceCallAssignedUnitType JSON-LD context
+              default: ../JSON-LD_Contexts/emServiceCallAssignedUnitTypeContext.json
+              enum:
+                - ../JSON-LD_Contexts/emServiceCallAssignedUnitTypeContext.json
     emOperationalStatusNotificationType:
       type: object
       title: 'em:OperationalStatusNotificationType'
       description: >-
         A data type to represent an operational status change for the submitting
         jurisdiction
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: emOperationalStatusNotificationType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/emOperationalStatusNotificationTypeContext.json
         operationalStatusNotification:
           type: array
           description: >-
@@ -1543,20 +1510,20 @@ components:
             em:NotificationMessageText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: emOperationalStatusNotificationType JSON-LD context
+          default: ../JSON-LD_Contexts/emOperationalStatusNotificationTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/emOperationalStatusNotificationTypeContext.json
     emUnitLogoffNotificationType:
       type: object
       title: 'em:UnitLogoffNotificationType'
       description: >-
         A data type for a structure to represent that the specified units are
         being logged off
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: emUnitLogoffNotificationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/emUnitLogoffNotificationTypeContext.json
         serviceCallAssignedUnit:
           type: array
           description: >-
@@ -1571,20 +1538,19 @@ components:
             em:NotificationMessageText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: emUnitLogoffNotificationType JSON-LD context
+          default: ../JSON-LD_Contexts/emUnitLogoffNotificationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/emUnitLogoffNotificationTypeContext.json
     emUnitLogonNotificationType:
       type: object
       title: 'em:UnitLogonNotificationType'
       description: >-
         A data type for a structure to represent that the specified units are
         being logged on
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: emUnitLogonNotificationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/emUnitLogonNotificationTypeContext.json
         serviceCallAssignedUnit:
           type: array
           description: >-
@@ -1599,22 +1565,28 @@ components:
             em:NotificationMessageText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: emUnitLogonNotificationType JSON-LD context
+          default: ../JSON-LD_Contexts/emUnitLogonNotificationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/emUnitLogonNotificationTypeContext.json
     emNotificationFunctionCategoryCodeType:
       type: object
       title: 'em:NotificationFunctionCategoryCodeType'
       description: A data type for a notification function type codes
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: emNotificationFunctionCategoryCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/emNotificationFunctionCategoryCodeTypeContext.json
         simpleType:
           $ref: >-
             em.yaml#/components/schemas/emNotificationFunctionCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: emNotificationFunctionCategoryCodeType JSON-LD context
+          default: >-
+            ../JSON-LD_Contexts/emNotificationFunctionCategoryCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/emNotificationFunctionCategoryCodeTypeContext.json
     emNotificationFunctionCategoryCodeSimpleType:
       type: string
       description: A data type for a notification function type codes
@@ -1633,15 +1605,7 @@ components:
       description: >-
         A data type for the intended level of distribution of the notification
         message
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: emNotificationDistributionScopeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/emNotificationDistributionScopeTypeContext.json
         categoryCode:
           type: array
           description: >-
@@ -1659,24 +1623,31 @@ components:
             em:NotificationDistributionScopeAudienceDescriptionText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: emNotificationDistributionScopeType JSON-LD context
+          default: ../JSON-LD_Contexts/emNotificationDistributionScopeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/emNotificationDistributionScopeTypeContext.json
     emNotificationDistributionScopeCategoryCodeType:
       type: object
       title: 'em:NotificationDistributionScopeCategoryCodeType'
       description: >-
         A data type for the category code denoting the intended level of
         distribution of the notification message
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: emNotificationDistributionScopeCategoryCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/emNotificationDistributionScopeCategoryCodeTypeContext.json
         simpleType:
           $ref: >-
             em.yaml#/components/schemas/emNotificationDistributionScopeCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: emNotificationDistributionScopeCategoryCodeType JSON-LD context
+          default: >-
+            ../JSON-LD_Contexts/emNotificationDistributionScopeCategoryCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/emNotificationDistributionScopeCategoryCodeTypeContext.json
     emNotificationDistributionScopeCategoryCodeSimpleType:
       type: string
       description: >-
@@ -1690,16 +1661,15 @@ components:
       type: object
       title: 'em:NotificationCategoryCodeType'
       description: A data type for a notification type codes
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: em.yaml#/components/schemas/emNotificationCategoryCodeSimpleType
         '@context':
           type: string
           description: emNotificationCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/emNotificationCategoryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/emNotificationCategoryCodeTypeContext.json
-        simpleType:
-          $ref: em.yaml#/components/schemas/emNotificationCategoryCodeSimpleType
     emNotificationCategoryCodeSimpleType:
       type: string
       description: A data type for a notification status codes
@@ -1709,20 +1679,12 @@ components:
         - System
         - Test
     emNotificationTargetLocationType:
+      title: 'em:NotificationTargetLocationType'
+      description: A data type for a notification target location
       allOf:
         - $ref: nc.yaml#/components/schemas/ncLocationType
         - type: object
-          title: 'em:NotificationTargetLocationType'
-          description: A data type for a notification target location
-          required:
-            - '@context'
           properties:
-            '@context':
-              type: string
-              description: emNotificationTargetLocationType JSON-LD context
-              enum:
-                - >-
-                  ../JSON-LD_Contexts/emNotificationTargetLocationTypeContext.json
             polygonCoordinate:
               type: array
               description: >-
@@ -1732,24 +1694,30 @@ components:
               items:
                 $ref: >-
                   nc.yaml#/components/schemas/ncLocation2DGeospatialCoordinateType
+            '@context':
+              type: string
+              description: emNotificationTargetLocationType JSON-LD context
+              default: ../JSON-LD_Contexts/emNotificationTargetLocationTypeContext.json
+              enum:
+                - >-
+                  ../JSON-LD_Contexts/emNotificationTargetLocationTypeContext.json
     emNotificationMessageStatusCodeType:
       type: object
       title: 'em:NotificationMessageStatusCodeType'
       description: >-
         A data type for an element for possible message status types indicating
         outcome of notification transmission
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: emNotificationMessageStatusCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/emNotificationMessageStatusCodeTypeContext.json
         simpleType:
           $ref: >-
             em.yaml#/components/schemas/emNotificationMessageStatusCodeSimpleType
+        '@context':
+          type: string
+          description: emNotificationMessageStatusCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/emNotificationMessageStatusCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/emNotificationMessageStatusCodeTypeContext.json
     emNotificationMessageStatusCodeSimpleType:
       type: string
       description: >-
@@ -1765,14 +1733,7 @@ components:
       type: object
       title: 'em:InsuranceAugmentationType'
       description: A data type for additional information about an insurance
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: emInsuranceAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/emInsuranceAugmentationTypeContext.json
         insuranceName:
           type: array
           description: 'A textual name of the insurance NIEM reference is em:InsuranceName'
@@ -1799,3 +1760,9 @@ components:
             reference is nc:Address
           items:
             $ref: nc.yaml#/components/schemas/ncAddressType
+        '@context':
+          type: string
+          description: emInsuranceAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/emInsuranceAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/emInsuranceAugmentationTypeContext.json

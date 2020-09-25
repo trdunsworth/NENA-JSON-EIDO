@@ -4,16 +4,15 @@ components:
       type: object
       title: 'dol:OccupationCodeType'
       description: A data type for occupation codes.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: dol.yaml#/components/schemas/dolOccupationCodeSimpleType
         '@context':
           type: string
           description: dolOccupationCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/dolOccupationCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/dolOccupationCodeTypeContext.json
-        simpleType:
-          $ref: dol.yaml#/components/schemas/dolOccupationCodeSimpleType
     dolOccupationCodeSimpleType:
       type: string
       description: A data type for occupation codes.

@@ -4,16 +4,15 @@ components:
       type: object
       title: 'dea:DrugCategoryCodeType'
       description: A data type for a kind of substance by which a person is intoxicated.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: dea.yaml#/components/schemas/deaDrugCategoryCodeSimpleType
         '@context':
           type: string
           description: deaDrugCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/deaDrugCategoryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/deaDrugCategoryCodeTypeContext.json
-        simpleType:
-          $ref: dea.yaml#/components/schemas/deaDrugCategoryCodeSimpleType
     deaDrugCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of substance by which a person is intoxicated.
@@ -73,16 +72,15 @@ components:
       type: object
       title: 'dea:DrugCodeType'
       description: A data type for drug codes.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: dea.yaml#/components/schemas/deaDrugCodeSimpleType
         '@context':
           type: string
           description: deaDrugCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/deaDrugCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/deaDrugCodeTypeContext.json
-        simpleType:
-          $ref: dea.yaml#/components/schemas/deaDrugCodeSimpleType
     deaDrugCodeSimpleType:
       type: string
       description: A data type for drug codes.
@@ -445,16 +443,15 @@ components:
       description: >-
         A data type for a class to which the Drug Enforcement Agency (DEA) has
         assigned the product under the Controlled Substances Act of 1970.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: dea.yaml#/components/schemas/deaDEAClassScheduleCodeCodeSimpleType
         '@context':
           type: string
           description: deaDEAClassScheduleCodeCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/deaDEAClassScheduleCodeCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/deaDEAClassScheduleCodeCodeTypeContext.json
-        simpleType:
-          $ref: dea.yaml#/components/schemas/deaDEAClassScheduleCodeCodeSimpleType
     deaDEAClassScheduleCodeCodeSimpleType:
       type: string
       description: >-

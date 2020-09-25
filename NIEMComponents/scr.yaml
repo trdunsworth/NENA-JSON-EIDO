@@ -4,18 +4,18 @@ components:
       type: object
       title: 'scr:ConveyanceIdentificationCategoryCodeType'
       description: A data type for a kind of conveyance identification.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: scrConveyanceIdentificationCategoryCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/scrConveyanceIdentificationCategoryCodeTypeContext.json
         simpleType:
           $ref: >-
             scr.yaml#/components/schemas/scrConveyanceIdentificationCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: scrConveyanceIdentificationCategoryCodeType JSON-LD context
+          default: >-
+            ../JSON-LD_Contexts/scrConveyanceIdentificationCategoryCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/scrConveyanceIdentificationCategoryCodeTypeContext.json
     scrConveyanceIdentificationCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of conveyance identification.
@@ -27,18 +27,17 @@ components:
       type: object
       title: 'scr:PersonDesignatorCategoryCodeType'
       description: A data type for a kind of person designator.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: scrPersonDesignatorCategoryCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/scrPersonDesignatorCategoryCodeTypeContext.json
         simpleType:
           $ref: >-
             scr.yaml#/components/schemas/scrPersonDesignatorCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: scrPersonDesignatorCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/scrPersonDesignatorCategoryCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/scrPersonDesignatorCategoryCodeTypeContext.json
     scrPersonDesignatorCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of person designator.
@@ -112,14 +111,7 @@ components:
       description: >-
         A data type that supplements Identification and is used by Screening for
         augmenting the Identification Type
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: scrIdentificationAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/scrIdentificationAugmentationTypeContext.json
         identificationStatusAdvisory:
           type: array
           description: >-
@@ -128,20 +120,25 @@ components:
             scr:IdentificationStatusAdvisoryText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: scrIdentificationAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/scrIdentificationAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/scrIdentificationAugmentationTypeContext.json
     scrDocumentCategoryCodeType:
       type: object
       title: 'scr:DocumentCategoryCodeType'
       description: A data type for a kind of document.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: scr.yaml#/components/schemas/scrDocumentCategoryCodeSimpleType
         '@context':
           type: string
           description: scrDocumentCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/scrDocumentCategoryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/scrDocumentCategoryCodeTypeContext.json
-        simpleType:
-          $ref: scr.yaml#/components/schemas/scrDocumentCategoryCodeSimpleType
     scrDocumentCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of document.
@@ -216,14 +213,7 @@ components:
       type: object
       title: 'scr:AddressAugmentationType'
       description: A data type for additional information about an address.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: scrAddressAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/scrAddressAugmentationTypeContext.json
         addressIdentification:
           type: array
           description: >-
@@ -359,18 +349,17 @@ components:
             scr:CountrySubdivisionCategoryCode
           items:
             $ref: scr.yaml#/components/schemas/scrCountrySubdivisionCategoryCodeType
+        '@context':
+          type: string
+          description: scrAddressAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/scrAddressAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/scrAddressAugmentationTypeContext.json
     scrAddressClassificationType:
       type: object
       title: 'scr:AddressClassificationType'
       description: A data type for classification of an ADDRESS
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: scrAddressClassificationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/scrAddressClassificationTypeContext.json
         categoryDescription:
           type: array
           description: >-
@@ -385,20 +374,25 @@ components:
             scr:AddressClassificationCategoryCode
           items:
             $ref: scr.yaml#/components/schemas/scrAddressCategoryCodeType
+        '@context':
+          type: string
+          description: scrAddressClassificationType JSON-LD context
+          default: ../JSON-LD_Contexts/scrAddressClassificationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/scrAddressClassificationTypeContext.json
     scrAddressCategoryCodeType:
       type: object
       title: 'scr:AddressCategoryCodeType'
       description: A data type describing the kinds of Address types
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: scr.yaml#/components/schemas/scrAddressCategoryCodeSimpleType
         '@context':
           type: string
           description: scrAddressCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/scrAddressCategoryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/scrAddressCategoryCodeTypeContext.json
-        simpleType:
-          $ref: scr.yaml#/components/schemas/scrAddressCategoryCodeSimpleType
     scrAddressCategoryCodeSimpleType:
       type: string
       description: A data type describing the kinds of Address types
@@ -412,14 +406,7 @@ components:
       type: object
       title: 'scr:LocationElementType'
       description: A data type for a part or sub-division of a location.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: scrLocationElementType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/scrLocationElementTypeContext.json
         identification:
           type: array
           description: >-
@@ -434,21 +421,19 @@ components:
             scr:LocationElementClassification
           items:
             $ref: scr.yaml#/components/schemas/scrLocationElementClassificationType
+        '@context':
+          type: string
+          description: scrLocationElementType JSON-LD context
+          default: ../JSON-LD_Contexts/scrLocationElementTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/scrLocationElementTypeContext.json
     scrLocationElementClassificationType:
       type: object
       title: 'scr:LocationElementClassificationType'
       description: >-
         A data type for classification of part or sub-division (ELEMENT) of a
         location.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: scrLocationElementClassificationType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/scrLocationElementClassificationTypeContext.json
         locationElementCategoryDescription:
           type: array
           description: >-
@@ -463,21 +448,27 @@ components:
             scr:LocationElementCategoryCode
           items:
             $ref: scr.yaml#/components/schemas/scrLocationElementCategoryCodeType
+        '@context':
+          type: string
+          description: scrLocationElementClassificationType JSON-LD context
+          default: ../JSON-LD_Contexts/scrLocationElementClassificationTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/scrLocationElementClassificationTypeContext.json
     scrLocationElementCategoryCodeType:
       type: object
       title: 'scr:LocationElementCategoryCodeType'
       description: A data type for a kind of location element.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: scrLocationElementCategoryCodeType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/scrLocationElementCategoryCodeTypeContext.json
         simpleType:
           $ref: >-
             scr.yaml#/components/schemas/scrLocationElementCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: scrLocationElementCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/scrLocationElementCategoryCodeTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/scrLocationElementCategoryCodeTypeContext.json
     scrLocationElementCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of location element.
@@ -495,18 +486,18 @@ components:
       type: object
       title: 'scr:CountrySubdivisionCategoryCodeType'
       description: A data type for a COUNTRY SUBDIVISION TYPE.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: scrCountrySubdivisionCategoryCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/scrCountrySubdivisionCategoryCodeTypeContext.json
         simpleType:
           $ref: >-
             scr.yaml#/components/schemas/scrCountrySubdivisionCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: scrCountrySubdivisionCategoryCodeType JSON-LD context
+          default: >-
+            ../JSON-LD_Contexts/scrCountrySubdivisionCategoryCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/scrCountrySubdivisionCategoryCodeTypeContext.json
     scrCountrySubdivisionCategoryCodeSimpleType:
       type: string
       description: A data type for a COUNTRY SUBDIVISION TYPE.
@@ -520,16 +511,15 @@ components:
       type: object
       title: 'scr:LocationCategoryCodeType'
       description: A data type for a code indicating the location type.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: scr.yaml#/components/schemas/scrLocationCategoryCodeSimpleType
         '@context':
           type: string
           description: scrLocationCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/scrLocationCategoryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/scrLocationCategoryCodeTypeContext.json
-        simpleType:
-          $ref: scr.yaml#/components/schemas/scrLocationCategoryCodeSimpleType
     scrLocationCategoryCodeSimpleType:
       type: string
       description: A data type for a code indicating the location type.
@@ -559,14 +549,7 @@ components:
       type: object
       title: 'scr:TelephoneNumberAugmentationType'
       description: A data type for additional information about a telephone number.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: scrTelephoneNumberAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/scrTelephoneNumberAugmentationTypeContext.json
         telephoneIdentification:
           type: array
           description: >-
@@ -595,20 +578,19 @@ components:
             scr:TelephoneNumberEffectiveDate
           items:
             $ref: nc.yaml#/components/schemas/ncDateType
+        '@context':
+          type: string
+          description: scrTelephoneNumberAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/scrTelephoneNumberAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/scrTelephoneNumberAugmentationTypeContext.json
     scrLocationAugmentationType:
       type: object
       title: 'scr:LocationAugmentationType'
       description: >-
         A data type that supplements Location and specifies additional
         information about a Screening location.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: scrLocationAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/scrLocationAugmentationTypeContext.json
         borderCode:
           type: array
           description: >-
@@ -631,20 +613,25 @@ components:
             scr:PortOfEntryCodeText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: scrLocationAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/scrLocationAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/scrLocationAugmentationTypeContext.json
     scrDocumentStatusCategoryCodeType:
       type: object
       title: 'scr:DocumentStatusCategoryCodeType'
       description: A data type for a kind of status of a document.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: scr.yaml#/components/schemas/scrDocumentStatusCategoryCodeSimpleType
         '@context':
           type: string
           description: scrDocumentStatusCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/scrDocumentStatusCategoryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/scrDocumentStatusCategoryCodeTypeContext.json
-        simpleType:
-          $ref: scr.yaml#/components/schemas/scrDocumentStatusCategoryCodeSimpleType
     scrDocumentStatusCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of status of a document.
@@ -659,14 +646,7 @@ components:
       description: >-
         A data type that supplements PersonName and specifies the additional
         name information used for Screening.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: scrPersonNameAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/scrPersonNameAugmentationTypeContext.json
         soundexIndexValue:
           type: array
           description: >-
@@ -694,24 +674,30 @@ components:
           items:
             $ref: >-
               scr.yaml#/components/schemas/scrPersonNameDesignationCategoryCodeType
+        '@context':
+          type: string
+          description: scrPersonNameAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/scrPersonNameAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/scrPersonNameAugmentationTypeContext.json
     scrPersonNameDesignationCategoryCodeType:
       type: object
       title: 'scr:PersonNameDesignationCategoryCodeType'
       description: >-
         A data type describing the kinds of words or phrase that represents a
         professional title of an individual.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: scrPersonNameDesignationCategoryCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/scrPersonNameDesignationCategoryCodeTypeContext.json
         simpleType:
           $ref: >-
             scr.yaml#/components/schemas/scrPersonNameDesignationCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: scrPersonNameDesignationCategoryCodeType JSON-LD context
+          default: >-
+            ../JSON-LD_Contexts/scrPersonNameDesignationCategoryCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/scrPersonNameDesignationCategoryCodeTypeContext.json
     scrPersonNameDesignationCategoryCodeSimpleType:
       type: string
       description: >-
@@ -726,14 +712,7 @@ components:
       type: object
       title: 'scr:PersonNameTextAugmentationType'
       description: A data type for additional information about a name of a person.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: scrPersonNameTextAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/scrPersonNameTextAugmentationTypeContext.json
         nameTranslationRepresentationID:
           type: string
           description: >-
@@ -759,18 +738,17 @@ components:
           description: >-
             A description of the values used for Name translation. NIEM
             reference is scr:nameTranslationCategoryDescriptionText
+        '@context':
+          type: string
+          description: scrPersonNameTextAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/scrPersonNameTextAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/scrPersonNameTextAugmentationTypeContext.json
     scrOrganizationAugmentationType:
       type: object
       title: 'scr:OrganizationAugmentationType'
       description: A data type for additional information about an organization.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: scrOrganizationAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/scrOrganizationAugmentationTypeContext.json
         isCriminalAffiliation:
           type: array
           description: >-
@@ -842,24 +820,30 @@ components:
             scr:OrganizationClassificationCategoryCode
           items:
             $ref: scr.yaml#/components/schemas/scrOrganizationCategoryCodeType
+        '@context':
+          type: string
+          description: scrOrganizationAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/scrOrganizationAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/scrOrganizationAugmentationTypeContext.json
     scrOrganizationStatusCategoryCodeType:
       type: object
       title: 'scr:OrganizationStatusCategoryCodeType'
       description: >-
         A data type describing the kinds of status values associated with an
         organization
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: scrOrganizationStatusCategoryCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/scrOrganizationStatusCategoryCodeTypeContext.json
         simpleType:
           $ref: >-
             scr.yaml#/components/schemas/scrOrganizationStatusCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: scrOrganizationStatusCategoryCodeType JSON-LD context
+          default: >-
+            ../JSON-LD_Contexts/scrOrganizationStatusCategoryCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/scrOrganizationStatusCategoryCodeTypeContext.json
     scrOrganizationStatusCategoryCodeSimpleType:
       type: string
       description: >-
@@ -876,16 +860,15 @@ components:
       description: >-
         A data type describing the kinds of organizations involved in screening
         activities
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: scr.yaml#/components/schemas/scrOrganizationCategoryCodeSimpleType
         '@context':
           type: string
           description: scrOrganizationCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/scrOrganizationCategoryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/scrOrganizationCategoryCodeTypeContext.json
-        simpleType:
-          $ref: scr.yaml#/components/schemas/scrOrganizationCategoryCodeSimpleType
     scrOrganizationCategoryCodeSimpleType:
       type: string
       description: >-
@@ -908,15 +891,7 @@ components:
       description: >-
         A data type for additional information about a person employment
         association.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: scrPersonEmploymentAssociationAugmentationType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/scrPersonEmploymentAssociationAugmentationTypeContext.json
         person:
           type: array
           description: 'A human being. NIEM reference is nc:Person'
@@ -971,18 +946,19 @@ components:
             scr:EmployeeCallNumberID
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsstring
+        '@context':
+          type: string
+          description: scrPersonEmploymentAssociationAugmentationType JSON-LD context
+          default: >-
+            ../JSON-LD_Contexts/scrPersonEmploymentAssociationAugmentationTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/scrPersonEmploymentAssociationAugmentationTypeContext.json
     scrChargeAugmentationType:
       type: object
       title: 'scr:ChargeAugmentationType'
       description: A data type for additional information about a charge.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: scrChargeAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/scrChargeAugmentationTypeContext.json
         apprehensionChargeIdentification:
           type: array
           description: >-
@@ -1012,20 +988,25 @@ components:
             TYPE. NIEM reference is scr:ChargeSectionText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: scrChargeAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/scrChargeAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/scrChargeAugmentationTypeContext.json
     scrChargeCategoryCodeType:
       type: object
       title: 'scr:ChargeCategoryCodeType'
       description: A data type describing the kinds of apprehension charges
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: scr.yaml#/components/schemas/scrChargeCategoryCodeSimpleType
         '@context':
           type: string
           description: scrChargeCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/scrChargeCategoryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/scrChargeCategoryCodeTypeContext.json
-        simpleType:
-          $ref: scr.yaml#/components/schemas/scrChargeCategoryCodeSimpleType
     scrChargeCategoryCodeSimpleType:
       type: string
       description: A data type describing the kinds of apprehension charges
@@ -3424,14 +3405,7 @@ components:
       type: object
       title: 'scr:ArrestAugmentationType'
       description: A data type for additional information about an arrest.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: scrArrestAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/scrArrestAugmentationTypeContext.json
         isHearingRequest:
           type: array
           description: >-
@@ -3536,18 +3510,17 @@ components:
             im:DistanceFromLandmarkMeasure
           items:
             $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+        '@context':
+          type: string
+          description: scrArrestAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/scrArrestAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/scrArrestAugmentationTypeContext.json
     scrArrestMethodType:
       type: object
       title: 'scr:ArrestMethodType'
       description: A data type for a information on the manner of ARREST
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: scrArrestMethodType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/scrArrestMethodTypeContext.json
         description:
           type: array
           description: >-
@@ -3560,20 +3533,25 @@ components:
           description: 'An ARREST METHOD TYPE NIEM reference is scr:ArrestMethodCode'
           items:
             $ref: scr.yaml#/components/schemas/scrArrestMethodCategoryCodeType
+        '@context':
+          type: string
+          description: scrArrestMethodType JSON-LD context
+          default: ../JSON-LD_Contexts/scrArrestMethodTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/scrArrestMethodTypeContext.json
     scrArrestMethodCategoryCodeType:
       type: object
       title: 'scr:ArrestMethodCategoryCodeType'
       description: A data type describing the kinds of Apprehension methods
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: scr.yaml#/components/schemas/scrArrestMethodCategoryCodeSimpleType
         '@context':
           type: string
           description: scrArrestMethodCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/scrArrestMethodCategoryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/scrArrestMethodCategoryCodeTypeContext.json
-        simpleType:
-          $ref: scr.yaml#/components/schemas/scrArrestMethodCategoryCodeSimpleType
     scrArrestMethodCategoryCodeSimpleType:
       type: string
       description: A data type describing the kinds of Apprehension methods
@@ -3602,14 +3580,7 @@ components:
       type: object
       title: 'scr:AlertAugmentationType'
       description: A data type for additional information about an alert.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: scrAlertAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/scrAlertAugmentationTypeContext.json
         alertReceivedDate:
           type: array
           description: >-
@@ -3624,20 +3595,25 @@ components:
             scr:AlertCategoryClassificationCode
           items:
             $ref: scr.yaml#/components/schemas/scrAlertCategoryCodeType
+        '@context':
+          type: string
+          description: scrAlertAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/scrAlertAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/scrAlertAugmentationTypeContext.json
     scrAlertCategoryCodeType:
       type: object
       title: 'scr:AlertCategoryCodeType'
       description: A data type for denoting the type of alert message.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: scr.yaml#/components/schemas/scrAlertCategoryCodeSimpleType
         '@context':
           type: string
           description: scrAlertCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/scrAlertCategoryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/scrAlertCategoryCodeTypeContext.json
-        simpleType:
-          $ref: scr.yaml#/components/schemas/scrAlertCategoryCodeSimpleType
     scrAlertCategoryCodeSimpleType:
       type: string
       description: A data type for denoting the type of alert message.
@@ -3663,14 +3639,7 @@ components:
       type: object
       title: 'scr:WarrantAugmentationType'
       description: A data type for additional information about a warrant.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: scrWarrantAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/scrWarrantAugmentationTypeContext.json
         charge:
           type: array
           description: >-
@@ -3722,18 +3691,17 @@ components:
             scr:WarrantClassification
           items:
             $ref: scr.yaml#/components/schemas/scrWarrantClassificationType
+        '@context':
+          type: string
+          description: scrWarrantAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/scrWarrantAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/scrWarrantAugmentationTypeContext.json
     scrWarrantClassificationType:
       type: object
       title: 'scr:WarrantClassificationType'
       description: A data type for a classification of a warrant.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: scrWarrantClassificationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/scrWarrantClassificationTypeContext.json
         warrantCategoryDescription:
           type: array
           description: >-
@@ -3746,20 +3714,25 @@ components:
           description: 'A kind of warrant. NIEM reference is scr:WarrantCategoryCode'
           items:
             $ref: scr.yaml#/components/schemas/scrWarrantCategoryCodeType
+        '@context':
+          type: string
+          description: scrWarrantClassificationType JSON-LD context
+          default: ../JSON-LD_Contexts/scrWarrantClassificationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/scrWarrantClassificationTypeContext.json
     scrWarrantCategoryCodeType:
       type: object
       title: 'scr:WarrantCategoryCodeType'
       description: A data type for a kind of warrant.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: scr.yaml#/components/schemas/scrWarrantCategoryCodeSimpleType
         '@context':
           type: string
           description: scrWarrantCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/scrWarrantCategoryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/scrWarrantCategoryCodeTypeContext.json
-        simpleType:
-          $ref: scr.yaml#/components/schemas/scrWarrantCategoryCodeSimpleType
     scrWarrantCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of warrant.
@@ -3771,16 +3744,15 @@ components:
       type: object
       title: 'scr:EthnicityCategoryCodeType'
       description: A data type for a kind of ethnicity.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: scr.yaml#/components/schemas/scrEthnicityCategoryCodeSimpleType
         '@context':
           type: string
           description: scrEthnicityCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/scrEthnicityCategoryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/scrEthnicityCategoryCodeTypeContext.json
-        simpleType:
-          $ref: scr.yaml#/components/schemas/scrEthnicityCategoryCodeSimpleType
     scrEthnicityCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of ethnicity.
@@ -3821,15 +3793,7 @@ components:
       description: >-
         A data type for additional information about a medical condition of a
         person.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: scrMedicalConditionAugmentationType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/scrMedicalConditionAugmentationTypeContext.json
         isNCICData:
           type: array
           description: >-
@@ -3854,22 +3818,28 @@ components:
             scr:PersonMedicalConditionStatus
           items:
             $ref: scr.yaml#/components/schemas/scrPersonMedicalConditionStatusType
+        '@context':
+          type: string
+          description: scrMedicalConditionAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/scrMedicalConditionAugmentationTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/scrMedicalConditionAugmentationTypeContext.json
     scrPersonMedicalConditionCodeType:
       type: object
       title: 'scr:PersonMedicalConditionCodeType'
       description: >-
         A data type describing the kinds of medical conditions for a person
         involved in a screening activity
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: scr.yaml#/components/schemas/scrPersonMedicalConditionCodeSimpleType
         '@context':
           type: string
           description: scrPersonMedicalConditionCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/scrPersonMedicalConditionCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/scrPersonMedicalConditionCodeTypeContext.json
-        simpleType:
-          $ref: scr.yaml#/components/schemas/scrPersonMedicalConditionCodeSimpleType
     scrPersonMedicalConditionCodeSimpleType:
       type: string
       description: >-
@@ -3889,22 +3859,14 @@ components:
         - '85'
         - '90'
     scrPersonMedicalConditionStatusType:
+      title: 'scr:PersonMedicalConditionStatusType'
+      description: >-
+        A data type for a PERSONs health problem and physical limitation that an
+        officer should be cautious of.
       allOf:
         - $ref: nc.yaml#/components/schemas/ncStatusType
         - type: object
-          title: 'scr:PersonMedicalConditionStatusType'
-          description: >-
-            A data type for a PERSONs health problem and physical limitation
-            that an officer should be cautious of.
-          required:
-            - '@context'
           properties:
-            '@context':
-              type: string
-              description: scrPersonMedicalConditionStatusType JSON-LD context
-              enum:
-                - >-
-                  ../JSON-LD_Contexts/scrPersonMedicalConditionStatusTypeContext.json
             code:
               type: array
               description: >-
@@ -3913,24 +3875,32 @@ components:
               items:
                 $ref: >-
                   scr.yaml#/components/schemas/scrPersonMedicalConditionStatusCategoryCodeType
+            '@context':
+              type: string
+              description: scrPersonMedicalConditionStatusType JSON-LD context
+              default: >-
+                ../JSON-LD_Contexts/scrPersonMedicalConditionStatusTypeContext.json
+              enum:
+                - >-
+                  ../JSON-LD_Contexts/scrPersonMedicalConditionStatusTypeContext.json
     scrPersonMedicalConditionStatusCategoryCodeType:
       type: object
       title: 'scr:PersonMedicalConditionStatusCategoryCodeType'
       description: >-
         A data type describing the kinds of status changes for medical
         conditions of a person involved in a screening activity
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: scrPersonMedicalConditionStatusCategoryCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/scrPersonMedicalConditionStatusCategoryCodeTypeContext.json
         simpleType:
           $ref: >-
             scr.yaml#/components/schemas/scrPersonMedicalConditionStatusCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: scrPersonMedicalConditionStatusCategoryCodeType JSON-LD context
+          default: >-
+            ../JSON-LD_Contexts/scrPersonMedicalConditionStatusCategoryCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/scrPersonMedicalConditionStatusCategoryCodeTypeContext.json
     scrPersonMedicalConditionStatusCategoryCodeSimpleType:
       type: string
       description: >-
@@ -3945,14 +3915,7 @@ components:
       type: object
       title: 'scr:VehicleAugmentationType'
       description: A data type for additional information about a conveyance.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: scrVehicleAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/scrVehicleAugmentationTypeContext.json
         conveyanceIdentificationCategoryCode:
           type: array
           description: >-
@@ -3988,20 +3951,25 @@ components:
           items:
             $ref: >-
               scr.yaml#/components/schemas/scrConveyanceIDIssuingJurisdictionCategoryCodeType
+        '@context':
+          type: string
+          description: scrVehicleAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/scrVehicleAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/scrVehicleAugmentationTypeContext.json
     scrConveyanceCategoryCodeType:
       type: object
       title: 'scr:ConveyanceCategoryCodeType'
       description: A data type for a kind of conveyance.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: scr.yaml#/components/schemas/scrConveyanceCategoryCodeSimpleType
         '@context':
           type: string
           description: scrConveyanceCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/scrConveyanceCategoryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/scrConveyanceCategoryCodeTypeContext.json
-        simpleType:
-          $ref: scr.yaml#/components/schemas/scrConveyanceCategoryCodeSimpleType
     scrConveyanceCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of conveyance.
@@ -4018,18 +3986,18 @@ components:
       description: >-
         A data type describing the kinds of jurisdictions issuing Conveyance
         registrations
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: scrConveyanceIDIssuingJurisdictionCategoryCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/scrConveyanceIDIssuingJurisdictionCategoryCodeTypeContext.json
         simpleType:
           $ref: >-
             scr.yaml#/components/schemas/scrConveyanceIDIssuingJurisdictionCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: scrConveyanceIDIssuingJurisdictionCategoryCodeType JSON-LD context
+          default: >-
+            ../JSON-LD_Contexts/scrConveyanceIDIssuingJurisdictionCategoryCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/scrConveyanceIDIssuingJurisdictionCategoryCodeTypeContext.json
     scrConveyanceIDIssuingJurisdictionCategoryCodeSimpleType:
       type: string
       description: >-

@@ -4,18 +4,18 @@ components:
       type: object
       title: 'im:ImmigrationClassOfAdmissionCategoryCodeType'
       description: A data type for Immigrant Class of Admission (COA) Codes
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: imImmigrationClassOfAdmissionCategoryCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/imImmigrationClassOfAdmissionCategoryCodeTypeContext.json
         simpleType:
           $ref: >-
             im.yaml#/components/schemas/imImmigrationClassOfAdmissionCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: imImmigrationClassOfAdmissionCategoryCodeType JSON-LD context
+          default: >-
+            ../JSON-LD_Contexts/imImmigrationClassOfAdmissionCategoryCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/imImmigrationClassOfAdmissionCategoryCodeTypeContext.json
     imImmigrationClassOfAdmissionCategoryCodeSimpleType:
       type: string
       description: A data type for Immigrant Class of Admission (COA) Codes
@@ -1017,31 +1017,23 @@ components:
       type: object
       title: 'im:StatusAugmentationType'
       description: A data type for additional information about a status.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: imStatusAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/imStatusAugmentationTypeContext.json
         statusReason:
           type: array
           description: 'A reason for the status. NIEM reference is im:StatusReasonText'
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: imStatusAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/imStatusAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/imStatusAugmentationTypeContext.json
     imRelativeLocationAugmentationType:
       type: object
       title: 'im:RelativeLocationAugmentationType'
       description: A data type for additional information about a relative location.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: imRelativeLocationAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/imRelativeLocationAugmentationTypeContext.json
         relativeLocationDistanceMeasure:
           type: array
           description: >-
@@ -1049,18 +1041,17 @@ components:
             point. NIEM reference is im:RelativeLocationDistanceMeasure
           items:
             $ref: nc.yaml#/components/schemas/ncLengthMeasureType
+        '@context':
+          type: string
+          description: imRelativeLocationAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/imRelativeLocationAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/imRelativeLocationAugmentationTypeContext.json
     imLocationAugmentationType:
       type: object
       title: 'im:LocationAugmentationType'
       description: A data type for additional information about a location.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: imLocationAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/imLocationAugmentationTypeContext.json
         locationNearestLargeCityName:
           type: array
           description: >-
@@ -1082,18 +1073,17 @@ components:
             reference is im:LocationAssociationEndDate
           items:
             $ref: nc.yaml#/components/schemas/ncDateType
+        '@context':
+          type: string
+          description: imLocationAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/imLocationAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/imLocationAugmentationTypeContext.json
     imPersonNameAugmentationType:
       type: object
       title: 'im:PersonNameAugmentationType'
       description: A data type for additional information about a person name.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: imPersonNameAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/imPersonNameAugmentationTypeContext.json
         personNickName:
           type: array
           description: >-
@@ -1108,18 +1098,17 @@ components:
             reference is im:PersonNameDateRange
           items:
             $ref: nc.yaml#/components/schemas/ncDateRangeType
+        '@context':
+          type: string
+          description: imPersonNameAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/imPersonNameAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/imPersonNameAugmentationTypeContext.json
     imProgramAugmentationType:
       type: object
       title: 'im:ProgramAugmentationType'
       description: A data type for additional information about a program.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: imProgramAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/imProgramAugmentationTypeContext.json
         programCompletionComment:
           type: array
           description: >-
@@ -1156,19 +1145,17 @@ components:
             reference is im:ProgramTerminationText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: imProgramAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/imProgramAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/imProgramAugmentationTypeContext.json
     imPersonEmploymentAssociationAugmentationType:
       type: object
       title: 'im:PersonEmploymentAssociationAugmentationType'
       description: A data type for additional information about an employment.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: imPersonEmploymentAssociationAugmentationType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/imPersonEmploymentAssociationAugmentationTypeContext.json
         employmentAuthorizationEndDate:
           type: array
           description: >-
@@ -1216,18 +1203,19 @@ components:
             im:EmploymentAuthorizationIndicator
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        '@context':
+          type: string
+          description: imPersonEmploymentAssociationAugmentationType JSON-LD context
+          default: >-
+            ../JSON-LD_Contexts/imPersonEmploymentAssociationAugmentationTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/imPersonEmploymentAssociationAugmentationTypeContext.json
     imJudicialOfficialAugmentationType:
       type: object
       title: 'im:JudicialOfficialAugmentationType'
       description: A data type for additional information about a judicial official.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: imJudicialOfficialAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/imJudicialOfficialAugmentationTypeContext.json
         judicialOfficialDescription:
           type: array
           description: >-
@@ -1235,18 +1223,17 @@ components:
             reference is im:JudicialOfficialDescriptionText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: imJudicialOfficialAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/imJudicialOfficialAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/imJudicialOfficialAugmentationTypeContext.json
     imPersonAugmentationType:
       type: object
       title: 'im:PersonAugmentationType'
       description: A data type for additional information about a person.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: imPersonAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/imPersonAugmentationTypeContext.json
         personUnionAssociation:
           type: array
           description: >-
@@ -1254,3 +1241,9 @@ components:
             each other. NIEM reference is nc:PersonUnionAssociation
           items:
             $ref: nc.yaml#/components/schemas/ncPersonUnionAssociationType
+        '@context':
+          type: string
+          description: imPersonAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/imPersonAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/imPersonAugmentationTypeContext.json

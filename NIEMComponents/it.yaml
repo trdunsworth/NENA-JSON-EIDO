@@ -4,14 +4,7 @@ components:
       type: object
       title: 'it:AddressAugmentationType'
       description: A data type for additional information about an address.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: itAddressAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/itAddressAugmentationTypeContext.json
         locationCountrySubEntityName:
           type: array
           description: >-
@@ -26,18 +19,17 @@ components:
             it:LocationCountrySubEntityIdentification
           items:
             $ref: nc.yaml#/components/schemas/ncIdentificationType
+        '@context':
+          type: string
+          description: itAddressAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/itAddressAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/itAddressAugmentationTypeContext.json
     itDocumentAugmentationType:
       type: object
       title: 'it:DocumentAugmentationType'
       description: A data type for additional information about a document.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: itDocumentAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/itDocumentAugmentationTypeContext.json
         documentIssueDate:
           type: array
           description: >-
@@ -60,18 +52,17 @@ components:
             NIEM reference is it:DocumentFreeText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: itDocumentAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/itDocumentAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/itDocumentAugmentationTypeContext.json
     itObligationAugmentationType:
       type: object
       title: 'it:ObligationAugmentationType'
       description: A data type for additional information about a payment.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: itObligationAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/itObligationAugmentationTypeContext.json
         paymentMethodCategory:
           type: array
           description: >-
@@ -94,18 +85,17 @@ components:
           items:
             $ref: >-
               itcodes.yaml#/components/schemas/itcodesDutyTaxPaymentMethodCodeType
+        '@context':
+          type: string
+          description: itObligationAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/itObligationAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/itObligationAugmentationTypeContext.json
     itObligationGuaranteeType:
       type: object
       title: 'it:ObligationGuaranteeType'
       description: A data type for a set of details of how the obligation will be fulfilled
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: itObligationGuaranteeType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/itObligationGuaranteeTypeContext.json
         guaranteeReferenceID:
           type: array
           description: >-
@@ -121,18 +111,17 @@ components:
             NIEM reference is it:SecurityDetailsCodeText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: itObligationGuaranteeType JSON-LD context
+          default: ../JSON-LD_Contexts/itObligationGuaranteeTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/itObligationGuaranteeTypeContext.json
     itPersonAugmentationType:
       type: object
       title: 'it:PersonAugmentationType'
       description: A data type for additional information about a person.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: itPersonAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/itPersonAugmentationTypeContext.json
         personFunction:
           type: array
           description: >-
@@ -141,3 +130,9 @@ components:
             it:PersonFunctionText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: itPersonAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/itPersonAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/itPersonAugmentationTypeContext.json

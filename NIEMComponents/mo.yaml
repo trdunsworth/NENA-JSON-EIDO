@@ -4,14 +4,7 @@ components:
       type: object
       title: 'mo:PolygonRegionAugmentationType'
       description: A data type for additional information about a polygon.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: moPolygonRegionAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/moPolygonRegionAugmentationTypeContext.json
         polygonCoordinateLocation:
           type: array
           description: >-
@@ -19,6 +12,12 @@ components:
             reference is mo:PolygonCoordinateLocation
           items:
             $ref: nc.yaml#/components/schemas/ncLocationType
+        '@context':
+          type: string
+          description: moPolygonRegionAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/moPolygonRegionAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/moPolygonRegionAugmentationTypeContext.json
     moEllipseType:
       type: object
       title: 'mo:EllipseType'
@@ -26,14 +25,7 @@ components:
         A data type for an ellipse, expressed as an XY plane (projected onto
         earth's surface) ellipse. The major axis is oriented along reported
         azimuth, with zero being due North.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: moEllipseType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/moEllipseTypeContext.json
         majorAxisLengthMeasure:
           type: array
           description: >-
@@ -55,20 +47,19 @@ components:
             mo:EllipseMajorAxisAzimuthMeasure
           items:
             $ref: mo.yaml#/components/schemas/moHorizontalAngularMeasureType
+        '@context':
+          type: string
+          description: moEllipseType JSON-LD context
+          default: ../JSON-LD_Contexts/moEllipseTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/moEllipseTypeContext.json
     moHorizontalAngularMeasureType:
+      title: 'mo:HorizontalAngularMeasureType'
+      description: A data type for a measure of an angle in the horizontal plane.
       allOf:
         - $ref: nc.yaml#/components/schemas/ncAngularMeasureType
         - type: object
-          title: 'mo:HorizontalAngularMeasureType'
-          description: A data type for a measure of an angle in the horizontal plane.
-          required:
-            - '@context'
           properties:
-            '@context':
-              type: string
-              description: moHorizontalAngularMeasureType JSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/moHorizontalAngularMeasureTypeContext.json
             directionDatumCode:
               type: array
               description: >-
@@ -78,18 +69,17 @@ components:
                 mo:DirectionDatumCode
               items:
                 $ref: nga.yaml#/components/schemas/ngaDirectionDatumCodeType
+            '@context':
+              type: string
+              description: moHorizontalAngularMeasureType JSON-LD context
+              default: ../JSON-LD_Contexts/moHorizontalAngularMeasureTypeContext.json
+              enum:
+                - ../JSON-LD_Contexts/moHorizontalAngularMeasureTypeContext.json
     moAngularMeasureAugmentationType:
       type: object
       title: 'mo:AngularMeasureAugmentationType'
       description: A data type for additional information about an angular measure.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: moAngularMeasureAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/moAngularMeasureAugmentationTypeContext.json
         angleMeasure:
           type: array
           description: 'A measure of an angular value. NIEM reference is nc:AngleMeasure'
@@ -110,20 +100,25 @@ components:
             mo:AngularMeasureCompassCode
           items:
             $ref: nc.yaml#/components/schemas/ncDirectionCodeType
+        '@context':
+          type: string
+          description: moAngularMeasureAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/moAngularMeasureAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/moAngularMeasureAugmentationTypeContext.json
     moAngleUnitCodeType:
       type: object
       title: 'mo:AngleUnitCodeType'
       description: A data type for a unit code for an azimuth value.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moAngleUnitCodeSimpleType
         '@context':
           type: string
           description: moAngleUnitCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/moAngleUnitCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/moAngleUnitCodeTypeContext.json
-        simpleType:
-          $ref: mo.yaml#/components/schemas/moAngleUnitCodeSimpleType
     moAngleUnitCodeSimpleType:
       type: string
       description: A data type for a unit code for an azimuth value.
@@ -136,16 +131,15 @@ components:
       description: >-
         A data type for a measure of an angle in NATO Mils (there are 6400 NATO
         Mils in a circle).
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moNATOMilSimpleType
         '@context':
           type: string
           description: moNATOMilType JSON-LD context
+          default: ../JSON-LD_Contexts/moNATOMilTypeContext.json
           enum:
             - ../JSON-LD_Contexts/moNATOMilTypeContext.json
-        simpleType:
-          $ref: mo.yaml#/components/schemas/moNATOMilSimpleType
     moNATOMilSimpleType:
       type: string
       description: >-
@@ -160,74 +154,63 @@ components:
       description: >-
         A data type for an ellipse specified by a point, major axis, minor axis
         and rotation, using WGS84 coordinates, meters, and decimal degrees.
-      required:
-        - '@context'
       properties:
+        ellipse:
+          type: string
         '@context':
           type: string
           description: moWGS84EllipseType JSON-LD context
+          default: ../JSON-LD_Contexts/moWGS84EllipseTypeContext.json
           enum:
             - ../JSON-LD_Contexts/moWGS84EllipseTypeContext.json
-        ellipse:
-          type: string
     moWGS84ExternalPolygonType:
       type: object
       title: 'mo:WGS84ExternalPolygonType'
       description: >-
         A data type for a polygon having no interior regions, using WGS84
         coordinates.
-      required:
-        - '@context'
       properties:
+        polygon:
+          type: string
         '@context':
           type: string
           description: moWGS84ExternalPolygonType JSON-LD context
+          default: ../JSON-LD_Contexts/moWGS84ExternalPolygonTypeContext.json
           enum:
             - ../JSON-LD_Contexts/moWGS84ExternalPolygonTypeContext.json
-        polygon:
-          type: string
     moTelephoneNumberCategoryCodeType:
       type: object
       title: 'mo:TelephoneNumberCategoryCodeType'
       description: A data type for a kind of telephone number.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moTelephoneNumberCategoryCodeSimpleType
         '@context':
           type: string
           description: moTelephoneNumberCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/moTelephoneNumberCategoryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/moTelephoneNumberCategoryCodeTypeContext.json
-        simpleType:
-          $ref: mo.yaml#/components/schemas/moTelephoneNumberCategoryCodeSimpleType
     moTelephoneNumberCategoryCodeSimpleType:
       type: object
       title: 'mo:TelephoneNumberCategoryCodeSimpleType'
       description: A data type for a kind of telephone number.
-      required:
-        - '@context'
       properties:
+        token:
+          type: string
         '@context':
           type: string
           description: moTelephoneNumberCategoryCodeSimpleType JSON-LD context
+          default: >-
+            ../JSON-LD_Contexts/moTelephoneNumberCategoryCodeSimpleTypeContext.json
           enum:
             - >-
               ../JSON-LD_Contexts/moTelephoneNumberCategoryCodeSimpleTypeContext.json
-        token:
-          type: string
     moContactInformationAugmentationType:
       type: object
       title: 'mo:ContactInformationAugmentationType'
       description: 'A data type for additional information about a nc:Contact.'
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: moContactInformationAugmentationType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/moContactInformationAugmentationTypeContext.json
         contactInformationComment:
           type: array
           description: >-
@@ -250,6 +233,13 @@ components:
             mo:ContactInformationSecureEmailID
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsstring
+        '@context':
+          type: string
+          description: moContactInformationAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/moContactInformationAugmentationTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/moContactInformationAugmentationTypeContext.json
     moMGRSCoordinateStringType:
       type: object
       title: 'mo:MGRSCoordinateStringType'
@@ -258,16 +248,15 @@ components:
         Reference System (MGRS) which represents a location with a Universal
         Transverse Mercator (UTM) or Univeral Polar Steriographic (UPS)
         coordinate and a unique military grid square.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moMGRSCoordinateStringSimpleType
         '@context':
           type: string
           description: moMGRSCoordinateStringType JSON-LD context
+          default: ../JSON-LD_Contexts/moMGRSCoordinateStringTypeContext.json
           enum:
             - ../JSON-LD_Contexts/moMGRSCoordinateStringTypeContext.json
-        simpleType:
-          $ref: mo.yaml#/components/schemas/moMGRSCoordinateStringSimpleType
     moMGRSCoordinateStringSimpleType:
       type: string
       description: >-
@@ -282,16 +271,15 @@ components:
       type: object
       title: 'mo:MGRSUPS1MeterCoordinateType'
       description: A data type for a 1-meter precision level MGRS UPS coordinate.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moMGRSUPS1MeterCoordinateSimpleType
         '@context':
           type: string
           description: moMGRSUPS1MeterCoordinateType JSON-LD context
+          default: ../JSON-LD_Contexts/moMGRSUPS1MeterCoordinateTypeContext.json
           enum:
             - ../JSON-LD_Contexts/moMGRSUPS1MeterCoordinateTypeContext.json
-        simpleType:
-          $ref: mo.yaml#/components/schemas/moMGRSUPS1MeterCoordinateSimpleType
     moMGRSUPS1MeterCoordinateSimpleType:
       type: string
       description: A data type for a 1-meter precision level MGRS UPS coordinate.
@@ -302,16 +290,15 @@ components:
       type: object
       title: 'mo:MGRSUTM100000MeterCoordinateType'
       description: 'A data type for a 100,000-meter precision level MGRS UTM coordinate.'
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moMGRSUTM100000MeterCoordinateSimpleType
         '@context':
           type: string
           description: moMGRSUTM100000MeterCoordinateType JSON-LD context
+          default: ../JSON-LD_Contexts/moMGRSUTM100000MeterCoordinateTypeContext.json
           enum:
             - ../JSON-LD_Contexts/moMGRSUTM100000MeterCoordinateTypeContext.json
-        simpleType:
-          $ref: mo.yaml#/components/schemas/moMGRSUTM100000MeterCoordinateSimpleType
     moMGRSUTM100000MeterCoordinateSimpleType:
       type: string
       description: 'A data type for a 100,000-meter precision level MGRS UTM coordinate.'
@@ -322,16 +309,15 @@ components:
       type: object
       title: 'mo:MGRSUTM10000MeterCoordinateType'
       description: 'A data type for a 10,000-meter precision level MGRS UTM coordinate.'
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moMGRSUTM10000MeterCoordinateSimpleType
         '@context':
           type: string
           description: moMGRSUTM10000MeterCoordinateType JSON-LD context
+          default: ../JSON-LD_Contexts/moMGRSUTM10000MeterCoordinateTypeContext.json
           enum:
             - ../JSON-LD_Contexts/moMGRSUTM10000MeterCoordinateTypeContext.json
-        simpleType:
-          $ref: mo.yaml#/components/schemas/moMGRSUTM10000MeterCoordinateSimpleType
     moMGRSUTM10000MeterCoordinateSimpleType:
       type: string
       description: 'A data type for a 10,000-meter precision level MGRS UTM coordinate.'
@@ -343,16 +329,15 @@ components:
       type: object
       title: 'mo:MGRSUTM1000MeterCoordinateType'
       description: 'A data type for a 1,000-meter precision level MGRS UTM coordinate.'
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moMGRSUTM1000MeterCoordinateSimpleType
         '@context':
           type: string
           description: moMGRSUTM1000MeterCoordinateType JSON-LD context
+          default: ../JSON-LD_Contexts/moMGRSUTM1000MeterCoordinateTypeContext.json
           enum:
             - ../JSON-LD_Contexts/moMGRSUTM1000MeterCoordinateTypeContext.json
-        simpleType:
-          $ref: mo.yaml#/components/schemas/moMGRSUTM1000MeterCoordinateSimpleType
     moMGRSUTM1000MeterCoordinateSimpleType:
       type: string
       description: 'A data type for a 1,000-meter precision level MGRS UTM coordinate.'
@@ -364,16 +349,15 @@ components:
       type: object
       title: 'mo:MGRSUTM100MeterCoordinateType'
       description: A data type for a 100-meter precision level MGRS UTM coordinate.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moMGRSUTM100MeterCoordinateSimpleType
         '@context':
           type: string
           description: moMGRSUTM100MeterCoordinateType JSON-LD context
+          default: ../JSON-LD_Contexts/moMGRSUTM100MeterCoordinateTypeContext.json
           enum:
             - ../JSON-LD_Contexts/moMGRSUTM100MeterCoordinateTypeContext.json
-        simpleType:
-          $ref: mo.yaml#/components/schemas/moMGRSUTM100MeterCoordinateSimpleType
     moMGRSUTM100MeterCoordinateSimpleType:
       type: string
       description: A data type for a 100-meter precision level MGRS UTM coordinate.
@@ -385,16 +369,15 @@ components:
       type: object
       title: 'mo:MGRSUTM10MeterCoordinateType'
       description: A data type for a 10-meter precision level MGRS UTM coordinate.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moMGRSUTM10MeterCoordinateSimpleType
         '@context':
           type: string
           description: moMGRSUTM10MeterCoordinateType JSON-LD context
+          default: ../JSON-LD_Contexts/moMGRSUTM10MeterCoordinateTypeContext.json
           enum:
             - ../JSON-LD_Contexts/moMGRSUTM10MeterCoordinateTypeContext.json
-        simpleType:
-          $ref: mo.yaml#/components/schemas/moMGRSUTM10MeterCoordinateSimpleType
     moMGRSUTM10MeterCoordinateSimpleType:
       type: string
       description: A data type for a 10-meter precision level MGRS UTM coordinate.
@@ -406,16 +389,15 @@ components:
       type: object
       title: 'mo:MGRSUTM1MeterCoordinateType'
       description: A data type for a 1-meter precision level MGRS UTM coordinate.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moMGRSUTM1MeterCoordinateSimpleType
         '@context':
           type: string
           description: moMGRSUTM1MeterCoordinateType JSON-LD context
+          default: ../JSON-LD_Contexts/moMGRSUTM1MeterCoordinateTypeContext.json
           enum:
             - ../JSON-LD_Contexts/moMGRSUTM1MeterCoordinateTypeContext.json
-        simpleType:
-          $ref: mo.yaml#/components/schemas/moMGRSUTM1MeterCoordinateSimpleType
     moMGRSUTM1MeterCoordinateSimpleType:
       type: string
       description: A data type for a 1-meter precision level MGRS UTM coordinate.
@@ -427,14 +409,7 @@ components:
       type: object
       title: 'mo:WGS84LocationCylinderType'
       description: A data type for a cylinder described with WGS84 coordinates and meters.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: moWGS84LocationCylinderType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/moWGS84LocationCylinderTypeContext.json
         WGS84LocationPoint:
           type: array
           description: >-
@@ -464,38 +439,42 @@ components:
             reference is mo:LocationCreationCode
           items:
             $ref: mo.yaml#/components/schemas/moLocationCreationCodeType
+        '@context':
+          type: string
+          description: moWGS84LocationCylinderType JSON-LD context
+          default: ../JSON-LD_Contexts/moWGS84LocationCylinderTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/moWGS84LocationCylinderTypeContext.json
     moWGS84LocationPointType:
       type: object
       title: 'mo:WGS84LocationPointType'
       description: >-
         A data type for a 3D geometric point, defined by a single coordinate
         tuple with values from the WGS84 coordinate reference system.
-      required:
-        - '@context'
       properties:
+        point:
+          type: string
         '@context':
           type: string
           description: moWGS84LocationPointType JSON-LD context
+          default: ../JSON-LD_Contexts/moWGS84LocationPointTypeContext.json
           enum:
             - ../JSON-LD_Contexts/moWGS84LocationPointTypeContext.json
-        point:
-          type: string
     moLocationCreationCodeType:
       type: object
       title: 'mo:LocationCreationCodeType'
       description: >-
         A data type for a code indicating the method used to generate a
         location.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moLocationCreationCodeSimpleType
         '@context':
           type: string
           description: moLocationCreationCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/moLocationCreationCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/moLocationCreationCodeTypeContext.json
-        simpleType:
-          $ref: mo.yaml#/components/schemas/moLocationCreationCodeSimpleType
     moLocationCreationCodeSimpleType:
       type: string
       description: >-
@@ -518,12 +497,11 @@ components:
       type: object
       title: 'mo:GeospatialLocationAugmentationType'
       description: 'A data type for additional information about a nc:Location.'
-      required:
-        - '@context'
       properties:
         '@context':
           type: string
           description: moGeospatialLocationAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/moGeospatialLocationAugmentationTypeContext.json
           enum:
             - >-
               ../JSON-LD_Contexts/moGeospatialLocationAugmentationTypeContext.json
@@ -531,14 +509,7 @@ components:
       type: object
       title: 'mo:ImageAugmentationType'
       description: A data type for additional information about an image.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: moImageAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/moImageAugmentationTypeContext.json
         imageName:
           type: array
           description: 'A name for the image. NIEM reference is mo:ImageName'
@@ -584,18 +555,17 @@ components:
             NIEM reference is mo:ImageBinaryText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: moImageAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/moImageAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/moImageAugmentationTypeContext.json
     moFacilityAugmentationType:
       type: object
       title: 'mo:FacilityAugmentationType'
       description: 'A data type for additional information about a nc:Facility.'
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: moFacilityAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/moFacilityAugmentationTypeContext.json
         facilityAllegianceCountry:
           type: array
           description: >-
@@ -603,18 +573,17 @@ components:
             NIEM reference is mo:FacilityAllegianceCountry
           items:
             $ref: nc.yaml#/components/schemas/ncCountryType
+        '@context':
+          type: string
+          description: moFacilityAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/moFacilityAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/moFacilityAugmentationTypeContext.json
     moLocationAugmentationType:
       type: object
       title: 'mo:LocationAugmentationType'
       description: A data type for additional information about a location.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: moLocationAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/moLocationAugmentationTypeContext.json
         locationUncertaintyArea:
           type: array
           description: >-
@@ -622,36 +591,34 @@ components:
             mo:LocationUncertaintyArea
           items:
             $ref: nc.yaml#/components/schemas/ncAreaType
+        '@context':
+          type: string
+          description: moLocationAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/moLocationAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/moLocationAugmentationTypeContext.json
     moSpeedMeasureAugmentationType:
       type: object
       title: 'mo:SpeedMeasureAugmentationType'
       description: 'A data type for additional information about an nc:SpeedMeasure.'
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: moSpeedMeasureAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/moSpeedMeasureAugmentationTypeContext.json
         sigmaErrorValue:
           type: number
           description: >-
             A magnitude of a one-sigma deviation of a normal (Gaussian)
             distribution followed by the true value of the quantity. NIEM
             reference is nc:sigmaErrorValue
+        '@context':
+          type: string
+          description: moSpeedMeasureAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/moSpeedMeasureAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/moSpeedMeasureAugmentationTypeContext.json
     moTaskAugmentationType:
       type: object
       title: 'mo:TaskAugmentationType'
       description: A data type for additional information about a task.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: moTaskAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/moTaskAugmentationTypeContext.json
         taskNumber:
           type: array
           description: >-
@@ -695,20 +662,25 @@ components:
           description: 'A date for the end of a task. NIEM reference is nc:TaskEndDate'
           items:
             $ref: nc.yaml#/components/schemas/ncDateType
+        '@context':
+          type: string
+          description: moTaskAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/moTaskAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/moTaskAugmentationTypeContext.json
     moUUIDType:
       type: object
       title: 'mo:UUIDType'
       description: A data type for a 128 bit Universally Unique ID (UUID)
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moUUIDSimpleType
         '@context':
           type: string
           description: moUUIDType JSON-LD context
+          default: ../JSON-LD_Contexts/moUUIDTypeContext.json
           enum:
             - ../JSON-LD_Contexts/moUUIDTypeContext.json
-        simpleType:
-          $ref: mo.yaml#/components/schemas/moUUIDSimpleType
     moUUIDSimpleType:
       type: string
       description: A data type for a 128 bit Universally Unique ID (UUID)
@@ -720,14 +692,7 @@ components:
       description: >-
         A data type for a military element whose structure is prescribed by
         competent authority.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: moUnitType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/moUnitTypeContext.json
         organizationUniqueID:
           type: array
           description: >-
@@ -840,6 +805,12 @@ components:
             nc:SpeedMeasure
           items:
             $ref: nc.yaml#/components/schemas/ncSpeedMeasureType
+        '@context':
+          type: string
+          description: moUnitType JSON-LD context
+          default: ../JSON-LD_Contexts/moUnitTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/moUnitTypeContext.json
     moForceManagementIDType:
       type: object
       title: 'mo:ForceManagementIDType'
@@ -847,16 +818,15 @@ components:
         A data type for a  set of identifiers and indexes used to identify data
         within the GFM XSD. FMIDs convey no information about the entity they
         identify, are a fixed size, and are exchanged as a single attribute.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moForceManagementIDSimpleType
         '@context':
           type: string
           description: moForceManagementIDType JSON-LD context
+          default: ../JSON-LD_Contexts/moForceManagementIDTypeContext.json
           enum:
             - ../JSON-LD_Contexts/moForceManagementIDTypeContext.json
-        simpleType:
-          $ref: mo.yaml#/components/schemas/moForceManagementIDSimpleType
     moForceManagementIDSimpleType:
       type: string
       description: >-
@@ -870,16 +840,15 @@ components:
       type: object
       title: 'mo:SixAlphaNumericIDType'
       description: A data type for a six-character alphanumeric number.
-      required:
-        - '@context'
       properties:
+        unitLineNumberIDSimpleType:
+          $ref: mo.yaml#/components/schemas/moUnitLineNumberIDSimpleType
         '@context':
           type: string
           description: moSixAlphaNumericIDType JSON-LD context
+          default: ../JSON-LD_Contexts/moSixAlphaNumericIDTypeContext.json
           enum:
             - ../JSON-LD_Contexts/moSixAlphaNumericIDTypeContext.json
-        unitLineNumberIDSimpleType:
-          $ref: mo.yaml#/components/schemas/moUnitLineNumberIDSimpleType
     moUnitLineNumberIDSimpleType:
       type: string
       description: >-
@@ -893,16 +862,15 @@ components:
       type: object
       title: 'mo:UnitNameType'
       description: A data type for a character string assigned to represent a unit name.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moUnitNameSimpleType
         '@context':
           type: string
           description: moUnitNameType JSON-LD context
+          default: ../JSON-LD_Contexts/moUnitNameTypeContext.json
           enum:
             - ../JSON-LD_Contexts/moUnitNameTypeContext.json
-        simpleType:
-          $ref: mo.yaml#/components/schemas/moUnitNameSimpleType
     moUnitNameSimpleType:
       type: string
       description: A data type for a character string assigned to represent a unit name.
@@ -913,16 +881,15 @@ components:
       type: object
       title: 'mo:AbbreviatedNameType'
       description: A data type for a shortened name.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moAbbreviatedNameSimpleType
         '@context':
           type: string
           description: moAbbreviatedNameType JSON-LD context
+          default: ../JSON-LD_Contexts/moAbbreviatedNameTypeContext.json
           enum:
             - ../JSON-LD_Contexts/moAbbreviatedNameTypeContext.json
-        simpleType:
-          $ref: mo.yaml#/components/schemas/moAbbreviatedNameSimpleType
     moAbbreviatedNameSimpleType:
       type: string
       description: A data type for a shortened name.
@@ -935,16 +902,15 @@ components:
       description: >-
         A data type for a short name used to create derived names and for
         display with military symbols.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moUnitShortNameSimpleType
         '@context':
           type: string
           description: moUnitShortNameType JSON-LD context
+          default: ../JSON-LD_Contexts/moUnitShortNameTypeContext.json
           enum:
             - ../JSON-LD_Contexts/moUnitShortNameTypeContext.json
-        simpleType:
-          $ref: mo.yaml#/components/schemas/moUnitShortNameSimpleType
     moUnitShortNameSimpleType:
       type: string
       description: >-
@@ -959,16 +925,15 @@ components:
         A data type for a Joint Chiefs of Staff developed and assigned code,
         consisting of five characters that uniquely identify a "type unit." Also
         called UTC.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moUnitTypeCodeTextSimpleType
         '@context':
           type: string
           description: moUnitTypeCodeTextType JSON-LD context
+          default: ../JSON-LD_Contexts/moUnitTypeCodeTextTypeContext.json
           enum:
             - ../JSON-LD_Contexts/moUnitTypeCodeTextTypeContext.json
-        simpleType:
-          $ref: mo.yaml#/components/schemas/moUnitTypeCodeTextSimpleType
     moUnitTypeCodeTextSimpleType:
       type: string
       description: >-
@@ -985,14 +950,7 @@ components:
         intended direction of movement in the horizontal plane.  The value of
         the angle is positive in a clockwise direction as viewed from "above"
         the horizontal plane.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: moCourseAngleDegreesMeasureType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/moCourseAngleDegreesMeasureTypeContext.json
         angleDegreesMeasure:
           type: array
           description: >-
@@ -1016,20 +974,25 @@ components:
             mo:AngularMeasureDecimalValue
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsdecimal
+        '@context':
+          type: string
+          description: moCourseAngleDegreesMeasureType JSON-LD context
+          default: ../JSON-LD_Contexts/moCourseAngleDegreesMeasureTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/moCourseAngleDegreesMeasureTypeContext.json
     moUnitOperationalStatusCodeType:
       type: object
       title: 'mo:UnitOperationalStatusCodeType'
       description: A data type that describes the operational status of a military entity.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moUnitOperationalStatusCodeSimpleType
         '@context':
           type: string
           description: moUnitOperationalStatusCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/moUnitOperationalStatusCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/moUnitOperationalStatusCodeTypeContext.json
-        simpleType:
-          $ref: mo.yaml#/components/schemas/moUnitOperationalStatusCodeSimpleType
     moUnitOperationalStatusCodeSimpleType:
       type: string
       description: A data type that describes the operational status of a military entity.
@@ -1044,16 +1007,15 @@ components:
       type: object
       title: 'mo:UnitStatusQualifierCodeType'
       description: A data type that qualifies the status of a unit.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moUnitStatusQualifierCodeSimpleType
         '@context':
           type: string
           description: moUnitStatusQualifierCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/moUnitStatusQualifierCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/moUnitStatusQualifierCodeTypeContext.json
-        simpleType:
-          $ref: mo.yaml#/components/schemas/moUnitStatusQualifierCodeSimpleType
     moUnitStatusQualifierCodeSimpleType:
       type: string
       description: A data type that qualifies the status of a unit.
@@ -1072,16 +1034,15 @@ components:
       description: >-
         A data type that gives the reinforcement for a unit that has additional
         or detached strength.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: mo.yaml#/components/schemas/moUnitReinforcementCodeSimpleType
         '@context':
           type: string
           description: moUnitReinforcementCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/moUnitReinforcementCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/moUnitReinforcementCodeTypeContext.json
-        simpleType:
-          $ref: mo.yaml#/components/schemas/moUnitReinforcementCodeSimpleType
     moUnitReinforcementCodeSimpleType:
       type: string
       description: >-
@@ -1098,14 +1059,7 @@ components:
       type: object
       title: 'mo:AircraftAugmentationType'
       description: 'A data type for additional information about an nc:Aircraft.'
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: moAircraftAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/moAircraftAugmentationTypeContext.json
         callSignIdentification:
           type: array
           description: >-
@@ -1116,3 +1070,9 @@ components:
             mo:CallSignIdentification
           items:
             $ref: nc.yaml#/components/schemas/ncIdentificationType
+        '@context':
+          type: string
+          description: moAircraftAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/moAircraftAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/moAircraftAugmentationTypeContext.json

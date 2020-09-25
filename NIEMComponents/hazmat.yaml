@@ -6,16 +6,15 @@ components:
       description: >-
         A data type for a United Nations/North American (UN/NA) Hazardous
         Materials Code pertaining to a hazardous material.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: hazmat.yaml#/components/schemas/hazmatHazmatUNCodeSimpleType
         '@context':
           type: string
           description: hazmatHazmatUNCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/hazmatHazmatUNCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/hazmatHazmatUNCodeTypeContext.json
-        simpleType:
-          $ref: hazmat.yaml#/components/schemas/hazmatHazmatUNCodeSimpleType
     hazmatHazmatUNCodeSimpleType:
       type: string
       description: >-

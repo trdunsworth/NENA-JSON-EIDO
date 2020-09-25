@@ -4,16 +4,15 @@ components:
       type: object
       title: 'apco:IncidentCategoryCodeType'
       description: A data type for incident codes.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: apco.yaml#/components/schemas/apcoIncidentCategoryCodeSimpleType
         '@context':
           type: string
           description: apcoIncidentCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/apcoIncidentCategoryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/apcoIncidentCategoryCodeTypeContext.json
-        simpleType:
-          $ref: apco.yaml#/components/schemas/apcoIncidentCategoryCodeSimpleType
     apcoIncidentCategoryCodeSimpleType:
       type: string
       description: A data type for incident codes.
@@ -219,16 +218,15 @@ components:
       type: object
       title: 'apco:AlarmEventCategoryCodeType'
       description: A data type for kinds of alarm events.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: apco.yaml#/components/schemas/apcoAlarmEventCategoryCodeSimpleType
         '@context':
           type: string
           description: apcoAlarmEventCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/apcoAlarmEventCategoryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/apcoAlarmEventCategoryCodeTypeContext.json
-        simpleType:
-          $ref: apco.yaml#/components/schemas/apcoAlarmEventCategoryCodeSimpleType
     apcoAlarmEventCategoryCodeSimpleType:
       type: string
       description: A data type for kinds of alarm events.
@@ -242,18 +240,18 @@ components:
       type: object
       title: 'apco:AlarmEventLocationCategoryCodeType'
       description: A data type for the kinds of location at which an alarm event occurs.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: apcoAlarmEventLocationCategoryCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/apcoAlarmEventLocationCategoryCodeTypeContext.json
         simpleType:
           $ref: >-
             apco.yaml#/components/schemas/apcoAlarmEventLocationCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: apcoAlarmEventLocationCategoryCodeType JSON-LD context
+          default: >-
+            ../JSON-LD_Contexts/apcoAlarmEventLocationCategoryCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/apcoAlarmEventLocationCategoryCodeTypeContext.json
     apcoAlarmEventLocationCategoryCodeSimpleType:
       type: string
       description: A data type for the kinds of location at which an alarm event occurs.
@@ -264,18 +262,17 @@ components:
       type: object
       title: 'apco:AlarmEventResponseActionCodeType'
       description: A data type for actions requested of an alarm event responder.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: apcoAlarmEventResponseActionCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/apcoAlarmEventResponseActionCodeTypeContext.json
         simpleType:
           $ref: >-
             apco.yaml#/components/schemas/apcoAlarmEventResponseActionCodeSimpleType
+        '@context':
+          type: string
+          description: apcoAlarmEventResponseActionCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/apcoAlarmEventResponseActionCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/apcoAlarmEventResponseActionCodeTypeContext.json
     apcoAlarmEventResponseActionCodeSimpleType:
       type: string
       description: A data type for actions requested of an alarm event responder.

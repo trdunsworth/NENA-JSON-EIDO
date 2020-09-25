@@ -6,18 +6,17 @@ components:
       description: >-
         A data type for a code set that denotes the methods of payment for Duty
         Tax
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: itcodesDutyTaxPaymentMethodCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/itcodesDutyTaxPaymentMethodCodeTypeContext.json
         simpleType:
           $ref: >-
             itcodes.yaml#/components/schemas/itcodesDutyTaxPaymentMethodCodeSimpleType
+        '@context':
+          type: string
+          description: itcodesDutyTaxPaymentMethodCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/itcodesDutyTaxPaymentMethodCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/itcodesDutyTaxPaymentMethodCodeTypeContext.json
     itcodesDutyTaxPaymentMethodCodeSimpleType:
       type: string
       description: >-

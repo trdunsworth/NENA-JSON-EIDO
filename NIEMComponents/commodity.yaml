@@ -4,18 +4,17 @@ components:
       type: object
       title: 'commodity:ConveyanceCategoryCodeType'
       description: A data type for a kind of conveyance.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: commodityConveyanceCategoryCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/commodityConveyanceCategoryCodeTypeContext.json
         simpleType:
           $ref: >-
             commodity.yaml#/components/schemas/commodityConveyanceCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: commodityConveyanceCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/commodityConveyanceCategoryCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/commodityConveyanceCategoryCodeTypeContext.json
     commodityConveyanceCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of conveyance.
@@ -61,18 +60,18 @@ components:
       type: object
       title: 'commodity:ElectronicEquipmentCategoryCodeType'
       description: A data type for a kind of electronic equipment.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: commodityElectronicEquipmentCategoryCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/commodityElectronicEquipmentCategoryCodeTypeContext.json
         simpleType:
           $ref: >-
             commodity.yaml#/components/schemas/commodityElectronicEquipmentCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: commodityElectronicEquipmentCategoryCodeType JSON-LD context
+          default: >-
+            ../JSON-LD_Contexts/commodityElectronicEquipmentCategoryCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/commodityElectronicEquipmentCategoryCodeTypeContext.json
     commodityElectronicEquipmentCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of electronic equipment.
@@ -115,18 +114,18 @@ components:
       type: object
       title: 'commodity:ElectronicInstrumentCategoryCodeType'
       description: A data type for a kind of electronic instrument.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: commodityElectronicInstrumentCategoryCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/commodityElectronicInstrumentCategoryCodeTypeContext.json
         simpleType:
           $ref: >-
             commodity.yaml#/components/schemas/commodityElectronicInstrumentCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: commodityElectronicInstrumentCategoryCodeType JSON-LD context
+          default: >-
+            ../JSON-LD_Contexts/commodityElectronicInstrumentCategoryCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/commodityElectronicInstrumentCategoryCodeTypeContext.json
     commodityElectronicInstrumentCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of electronic instrument.
@@ -158,17 +157,16 @@ components:
       type: object
       title: 'commodity:MachineryCategoryCodeType'
       description: A data type for a kind of machinery.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: commodityMachineryCategoryCodeType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/commodityMachineryCategoryCodeTypeContext.json
         simpleType:
           $ref: >-
             commodity.yaml#/components/schemas/commodityMachineryCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: commodityMachineryCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/commodityMachineryCategoryCodeTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/commodityMachineryCategoryCodeTypeContext.json
     commodityMachineryCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of machinery.

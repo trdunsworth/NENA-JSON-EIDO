@@ -4,16 +4,15 @@ components:
       type: object
       title: 'occs:FacilityUsageCodeType'
       description: A data type for the categories of facilities.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: occs.yaml#/components/schemas/occsFacilityUsageCodeSimpleType
         '@context':
           type: string
           description: occsFacilityUsageCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/occsFacilityUsageCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/occsFacilityUsageCodeTypeContext.json
-        simpleType:
-          $ref: occs.yaml#/components/schemas/occsFacilityUsageCodeSimpleType
     occsFacilityUsageCodeSimpleType:
       type: string
       description: A data type for the categories of facilities.
@@ -768,16 +767,15 @@ components:
       type: object
       title: 'occs:FacilityUsageLevel1CodeType'
       description: A data type for Level 1 facility usage codes.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: occs.yaml#/components/schemas/occsFacilityUsageLevel1CodeSimpleType
         '@context':
           type: string
           description: occsFacilityUsageLevel1CodeType JSON-LD context
+          default: ../JSON-LD_Contexts/occsFacilityUsageLevel1CodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/occsFacilityUsageLevel1CodeTypeContext.json
-        simpleType:
-          $ref: occs.yaml#/components/schemas/occsFacilityUsageLevel1CodeSimpleType
     occsFacilityUsageLevel1CodeSimpleType:
       type: string
       description: A data type for Level 1 facility usage codes.
@@ -806,16 +804,15 @@ components:
       type: object
       title: 'occs:FacilityUsageLevel2CodeType'
       description: A data type for Level 2 facility usage codes.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: occs.yaml#/components/schemas/occsFacilityUsageLevel2CodeSimpleType
         '@context':
           type: string
           description: occsFacilityUsageLevel2CodeType JSON-LD context
+          default: ../JSON-LD_Contexts/occsFacilityUsageLevel2CodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/occsFacilityUsageLevel2CodeTypeContext.json
-        simpleType:
-          $ref: occs.yaml#/components/schemas/occsFacilityUsageLevel2CodeSimpleType
     occsFacilityUsageLevel2CodeSimpleType:
       type: string
       description: A data type for Level 2 facility usage codes.

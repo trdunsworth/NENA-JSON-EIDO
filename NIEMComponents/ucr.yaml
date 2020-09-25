@@ -4,16 +4,15 @@ components:
       type: object
       title: 'ucr:LocationCategoryCodeType'
       description: A data type for kinds or functional descriptions of a location.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: ucr.yaml#/components/schemas/ucrLocationCategoryCodeSimpleType
         '@context':
           type: string
           description: ucrLocationCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/ucrLocationCategoryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/ucrLocationCategoryCodeTypeContext.json
-        simpleType:
-          $ref: ucr.yaml#/components/schemas/ucrLocationCategoryCodeSimpleType
     ucrLocationCategoryCodeSimpleType:
       type: string
       description: A data type for kinds or functional descriptions of a location.
@@ -70,16 +69,15 @@ components:
       description: >-
         A data type for weapons with which a subject may be armed with upon
         apprehension.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: ucr.yaml#/components/schemas/ucrArresteeWeaponCodeSimpleType
         '@context':
           type: string
           description: ucrArresteeWeaponCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/ucrArresteeWeaponCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/ucrArresteeWeaponCodeTypeContext.json
-        simpleType:
-          $ref: ucr.yaml#/components/schemas/ucrArresteeWeaponCodeSimpleType
     ucrArresteeWeaponCodeSimpleType:
       type: string
       description: >-
@@ -103,16 +101,15 @@ components:
       type: object
       title: 'ucr:PropertyCategoryCodeType'
       description: A data type for categories or classifications of a property item.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: ucr.yaml#/components/schemas/ucrPropertyCategoryCodeSimpleType
         '@context':
           type: string
           description: ucrPropertyCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/ucrPropertyCategoryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/ucrPropertyCategoryCodeTypeContext.json
-        simpleType:
-          $ref: ucr.yaml#/components/schemas/ucrPropertyCategoryCodeSimpleType
     ucrPropertyCategoryCodeSimpleType:
       type: string
       description: A data type for categories or classifications of a property item.
@@ -189,16 +186,15 @@ components:
       type: object
       title: 'ucr:OffenseCodeType'
       description: A data type for Uniform Crime Reporting (UCR) offense codes.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: ucr.yaml#/components/schemas/ucrOffenseCodeSimpleType
         '@context':
           type: string
           description: ucrOffenseCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/ucrOffenseCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/ucrOffenseCodeTypeContext.json
-        simpleType:
-          $ref: ucr.yaml#/components/schemas/ucrOffenseCodeSimpleType
     ucrOffenseCodeSimpleType:
       type: string
       description: A data type for Uniform Crime Reporting (UCR) offense codes.
@@ -270,18 +266,17 @@ components:
       type: object
       title: 'ucr:CriminalActivityCategoryCodeType'
       description: A data type for kinds of incidents.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: ucrCriminalActivityCategoryCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/ucrCriminalActivityCategoryCodeTypeContext.json
         simpleType:
           $ref: >-
             ucr.yaml#/components/schemas/ucrCriminalActivityCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ucrCriminalActivityCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/ucrCriminalActivityCategoryCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ucrCriminalActivityCategoryCodeTypeContext.json
     ucrCriminalActivityCategoryCodeSimpleType:
       type: string
       description: A data type for kinds of incidents.
@@ -307,16 +302,15 @@ components:
       description: >-
         A data type for factors that may have been involved in or contributed to
         a subject committing an offense.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: ucr.yaml#/components/schemas/ucrIncidentFactorCodeSimpleType
         '@context':
           type: string
           description: ucrIncidentFactorCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/ucrIncidentFactorCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/ucrIncidentFactorCodeTypeContext.json
-        simpleType:
-          $ref: ucr.yaml#/components/schemas/ucrIncidentFactorCodeSimpleType
     ucrIncidentFactorCodeSimpleType:
       type: string
       description: >-
@@ -331,18 +325,18 @@ components:
       type: object
       title: 'ucr:JustifiableHomicideFactorsCodeType'
       description: A data type for circumstances of a justifiable homicide.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: ucrJustifiableHomicideFactorsCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/ucrJustifiableHomicideFactorsCodeTypeContext.json
         simpleType:
           $ref: >-
             ucr.yaml#/components/schemas/ucrJustifiableHomicideFactorsCodeSimpleType
+        '@context':
+          type: string
+          description: ucrJustifiableHomicideFactorsCodeType JSON-LD context
+          default: >-
+            ../JSON-LD_Contexts/ucrJustifiableHomicideFactorsCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ucrJustifiableHomicideFactorsCodeTypeContext.json
     ucrJustifiableHomicideFactorsCodeSimpleType:
       type: string
       description: A data type for circumstances of a justifiable homicide.
@@ -360,18 +354,18 @@ components:
       description: >-
         A data type for circumstances of either an aggravated assault or
         homicide.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: ucrAggravatedAssaultHomicideFactorsCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/ucrAggravatedAssaultHomicideFactorsCodeTypeContext.json
         simpleType:
           $ref: >-
             ucr.yaml#/components/schemas/ucrAggravatedAssaultHomicideFactorsCodeSimpleType
+        '@context':
+          type: string
+          description: ucrAggravatedAssaultHomicideFactorsCodeType JSON-LD context
+          default: >-
+            ../JSON-LD_Contexts/ucrAggravatedAssaultHomicideFactorsCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ucrAggravatedAssaultHomicideFactorsCodeTypeContext.json
     ucrAggravatedAssaultHomicideFactorsCodeSimpleType:
       type: string
       description: >-
@@ -399,16 +393,15 @@ components:
       type: object
       title: 'ucr:MethodOfEntryCodeType'
       description: A data type for methods of entry into a structure or premises.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: ucr.yaml#/components/schemas/ucrMethodOfEntryCodeSimpleType
         '@context':
           type: string
           description: ucrMethodOfEntryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/ucrMethodOfEntryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/ucrMethodOfEntryCodeTypeContext.json
-        simpleType:
-          $ref: ucr.yaml#/components/schemas/ucrMethodOfEntryCodeSimpleType
     ucrMethodOfEntryCodeSimpleType:
       type: string
       description: A data type for methods of entry into a structure or premises.
@@ -421,16 +414,15 @@ components:
       description: >-
         A data type for a kind of activity or circumstance in which a law
         enforcement officer was engaged at the time of assault.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: ucr.yaml#/components/schemas/ucrLEOKAActivityCategoryCodeSimpleType
         '@context':
           type: string
           description: ucrLEOKAActivityCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/ucrLEOKAActivityCategoryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/ucrLEOKAActivityCategoryCodeTypeContext.json
-        simpleType:
-          $ref: ucr.yaml#/components/schemas/ucrLEOKAActivityCategoryCodeSimpleType
     ucrLEOKAActivityCategoryCodeSimpleType:
       type: string
       description: >-
@@ -454,18 +446,18 @@ components:
       description: >-
         A data type for an assignment a law enforcement officer was on when
         assaulted.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: ucrLEOKAOfficerAssignmentCategoryCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/ucrLEOKAOfficerAssignmentCategoryCodeTypeContext.json
         simpleType:
           $ref: >-
             ucr.yaml#/components/schemas/ucrLEOKAOfficerAssignmentCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: ucrLEOKAOfficerAssignmentCategoryCodeType JSON-LD context
+          default: >-
+            ../JSON-LD_Contexts/ucrLEOKAOfficerAssignmentCategoryCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ucrLEOKAOfficerAssignmentCategoryCodeTypeContext.json
     ucrLEOKAOfficerAssignmentCategoryCodeSimpleType:
       type: string
       description: >-
@@ -483,16 +475,15 @@ components:
       type: object
       title: 'ucr:InjuryCategoryCodeType'
       description: A data type for a general category of harm or injury.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: ucr.yaml#/components/schemas/ucrInjuryCategoryCodeSimpleType
         '@context':
           type: string
           description: ucrInjuryCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/ucrInjuryCategoryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/ucrInjuryCategoryCodeTypeContext.json
-        simpleType:
-          $ref: ucr.yaml#/components/schemas/ucrInjuryCategoryCodeSimpleType
     ucrInjuryCategoryCodeSimpleType:
       type: string
       description: A data type for a general category of harm or injury.
@@ -509,16 +500,15 @@ components:
       type: object
       title: 'ucr:VictimCategoryCodeType'
       description: A data type for kinds of victims in an incident.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: ucr.yaml#/components/schemas/ucrVictimCategoryCodeSimpleType
         '@context':
           type: string
           description: ucrVictimCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/ucrVictimCategoryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/ucrVictimCategoryCodeTypeContext.json
-        simpleType:
-          $ref: ucr.yaml#/components/schemas/ucrVictimCategoryCodeSimpleType
     ucrVictimCategoryCodeSimpleType:
       type: string
       description: A data type for kinds of victims in an incident.
@@ -536,16 +526,15 @@ components:
       type: object
       title: 'ucr:ArrestCategoryCodeType'
       description: A data type for kinds of arrests that can occur.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: ucr.yaml#/components/schemas/ucrArrestCategoryCodeSimpleType
         '@context':
           type: string
           description: ucrArrestCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/ucrArrestCategoryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/ucrArrestCategoryCodeTypeContext.json
-        simpleType:
-          $ref: ucr.yaml#/components/schemas/ucrArrestCategoryCodeSimpleType
     ucrArrestCategoryCodeSimpleType:
       type: string
       description: A data type for kinds of arrests that can occur.
@@ -560,18 +549,17 @@ components:
         A data type for the ways in which an arrested subject is counted or
         scored in a system so that a subject is counted only once despite
         potentially multiple arrests at a time.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: ucrMultipleArresteeSegmentsCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/ucrMultipleArresteeSegmentsCodeTypeContext.json
         simpleType:
           $ref: >-
             ucr.yaml#/components/schemas/ucrMultipleArresteeSegmentsCodeSimpleType
+        '@context':
+          type: string
+          description: ucrMultipleArresteeSegmentsCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/ucrMultipleArresteeSegmentsCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ucrMultipleArresteeSegmentsCodeTypeContext.json
     ucrMultipleArresteeSegmentsCodeSimpleType:
       type: string
       description: >-
@@ -586,16 +574,15 @@ components:
       type: object
       title: 'ucr:DrugCategoryCodeType'
       description: A data type for kinds of drugs.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: ucr.yaml#/components/schemas/ucrDrugCategoryCodeSimpleType
         '@context':
           type: string
           description: ucrDrugCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/ucrDrugCategoryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/ucrDrugCategoryCodeTypeContext.json
-        simpleType:
-          $ref: ucr.yaml#/components/schemas/ucrDrugCategoryCodeSimpleType
     ucrDrugCategoryCodeSimpleType:
       type: string
       description: A data type for kinds of drugs.
@@ -624,16 +611,15 @@ components:
       description: >-
         A data type for the kinds of measurements used to specify a quantity of
         drugs or narcotics.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: ucr.yaml#/components/schemas/ucrDrugMeasurementCodeSimpleType
         '@context':
           type: string
           description: ucrDrugMeasurementCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/ucrDrugMeasurementCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/ucrDrugMeasurementCodeTypeContext.json
-        simpleType:
-          $ref: ucr.yaml#/components/schemas/ucrDrugMeasurementCodeSimpleType
     ucrDrugMeasurementCodeSimpleType:
       type: string
       description: >-
@@ -655,18 +641,18 @@ components:
       type: object
       title: 'ucr:IncidentExceptionalClearanceCodeType'
       description: A data type for ways in which an incident may be cleared exceptionally.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: ucrIncidentExceptionalClearanceCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/ucrIncidentExceptionalClearanceCodeTypeContext.json
         simpleType:
           $ref: >-
             ucr.yaml#/components/schemas/ucrIncidentExceptionalClearanceCodeSimpleType
+        '@context':
+          type: string
+          description: ucrIncidentExceptionalClearanceCodeType JSON-LD context
+          default: >-
+            ../JSON-LD_Contexts/ucrIncidentExceptionalClearanceCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/ucrIncidentExceptionalClearanceCodeTypeContext.json
     ucrIncidentExceptionalClearanceCodeSimpleType:
       type: string
       description: A data type for ways in which an incident may be cleared exceptionally.
@@ -681,16 +667,15 @@ components:
       type: object
       title: 'ucr:IncidentBiasMotivationCodeType'
       description: A data type for bias motivations for an incident.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: ucr.yaml#/components/schemas/ucrIncidentBiasMotivationCodeSimpleType
         '@context':
           type: string
           description: ucrIncidentBiasMotivationCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/ucrIncidentBiasMotivationCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/ucrIncidentBiasMotivationCodeTypeContext.json
-        simpleType:
-          $ref: ucr.yaml#/components/schemas/ucrIncidentBiasMotivationCodeSimpleType
     ucrIncidentBiasMotivationCodeSimpleType:
       type: string
       description: A data type for bias motivations for an incident.
@@ -727,16 +712,15 @@ components:
       type: object
       title: 'ucr:EthnicityCodeType'
       description: A data type for kinds of cultural lineages of a person.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: ucr.yaml#/components/schemas/ucrEthnicityCodeSimpleType
         '@context':
           type: string
           description: ucrEthnicityCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/ucrEthnicityCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/ucrEthnicityCodeTypeContext.json
-        simpleType:
-          $ref: ucr.yaml#/components/schemas/ucrEthnicityCodeSimpleType
     ucrEthnicityCodeSimpleType:
       type: string
       description: A data type for kinds of cultural lineages of a person.
@@ -750,16 +734,15 @@ components:
       description: >-
         A data type for kinds of weapons or forces used by a subject in
         committing an offense.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: ucr.yaml#/components/schemas/ucrForceCategoryCodeSimpleType
         '@context':
           type: string
           description: ucrForceCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/ucrForceCategoryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/ucrForceCategoryCodeTypeContext.json
-        simpleType:
-          $ref: ucr.yaml#/components/schemas/ucrForceCategoryCodeSimpleType
     ucrForceCategoryCodeSimpleType:
       type: string
       description: >-
@@ -794,16 +777,15 @@ components:
       description: >-
         A data type for whether or not a person was a resident of a town, city,
         or community in relation to some activity.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: ucr.yaml#/components/schemas/ucrResidentCodeSimpleType
         '@context':
           type: string
           description: ucrResidentCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/ucrResidentCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/ucrResidentCodeTypeContext.json
-        simpleType:
-          $ref: ucr.yaml#/components/schemas/ucrResidentCodeSimpleType
     ucrResidentCodeSimpleType:
       type: string
       description: >-

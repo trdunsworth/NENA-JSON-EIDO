@@ -4,16 +4,15 @@ components:
       type: object
       title: 'cbrncl:MIMEContentCodeType'
       description: A data type that defines the various MIME Content Code
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: cbrncl.yaml#/components/schemas/cbrnclMIMEContentCodeSimpleType
         '@context':
           type: string
           description: cbrnclMIMEContentCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/cbrnclMIMEContentCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/cbrnclMIMEContentCodeTypeContext.json
-        simpleType:
-          $ref: cbrncl.yaml#/components/schemas/cbrnclMIMEContentCodeSimpleType
     cbrnclMIMEContentCodeSimpleType:
       type: string
       description: >-
@@ -211,16 +210,15 @@ components:
       type: object
       title: 'cbrncl:MapGuideBrandCodeType'
       description: A data type for the brands of map guides.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: cbrncl.yaml#/components/schemas/cbrnclMapGuideBrandCodeSimpleType
         '@context':
           type: string
           description: cbrnclMapGuideBrandCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/cbrnclMapGuideBrandCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/cbrnclMapGuideBrandCodeTypeContext.json
-        simpleType:
-          $ref: cbrncl.yaml#/components/schemas/cbrnclMapGuideBrandCodeSimpleType
     cbrnclMapGuideBrandCodeSimpleType:
       type: string
       description: A data type that defines the codes for the brands of map guides.
@@ -231,16 +229,15 @@ components:
       type: object
       title: 'cbrncl:ConveyanceKindCodeType'
       description: A data type for the  kind of Conveyance
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: cbrncl.yaml#/components/schemas/cbrnclConveyanceKindCodeSimpleType
         '@context':
           type: string
           description: cbrnclConveyanceKindCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/cbrnclConveyanceKindCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/cbrnclConveyanceKindCodeTypeContext.json
-        simpleType:
-          $ref: cbrncl.yaml#/components/schemas/cbrnclConveyanceKindCodeSimpleType
     cbrnclConveyanceKindCodeSimpleType:
       type: string
       description: A data type for the kinds of conveyances.

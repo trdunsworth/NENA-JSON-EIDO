@@ -4,14 +4,7 @@ components:
       type: object
       title: 'hs:DispositionAugmentationType'
       description: A data type for additional information about a disposition.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: hsDispositionAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/hsDispositionAugmentationTypeContext.json
         isJuvenileInformalAdjustment:
           type: array
           description: >-
@@ -29,22 +22,28 @@ components:
             hs:InformalDispositionCategoryCode
           items:
             $ref: hs.yaml#/components/schemas/hsInformalDispositionCategoryCodeType
+        '@context':
+          type: string
+          description: hsDispositionAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/hsDispositionAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/hsDispositionAugmentationTypeContext.json
     hsInformalDispositionCategoryCodeType:
       type: object
       title: 'hs:InformalDispositionCategoryCodeType'
       description: A data type for a kind of informal disposition.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: hsInformalDispositionCategoryCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/hsInformalDispositionCategoryCodeTypeContext.json
         simpleType:
           $ref: >-
             hs.yaml#/components/schemas/hsInformalDispositionCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: hsInformalDispositionCategoryCodeType JSON-LD context
+          default: >-
+            ../JSON-LD_Contexts/hsInformalDispositionCategoryCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/hsInformalDispositionCategoryCodeTypeContext.json
     hsInformalDispositionCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of informal disposition.
@@ -55,14 +54,7 @@ components:
       type: object
       title: 'hs:OrganizationAugmentationType'
       description: A data type for additional information about an organization.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: hsOrganizationAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/hsOrganizationAugmentationTypeContext.json
         organizationCaseID:
           type: array
           description: >-
@@ -70,18 +62,17 @@ components:
             is hs:OrganizationCaseID
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsstring
+        '@context':
+          type: string
+          description: hsOrganizationAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/hsOrganizationAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/hsOrganizationAugmentationTypeContext.json
     hsProgramAugmentationType:
       type: object
       title: 'hs:ProgramAugmentationType'
       description: A data type for additional information about a program.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: hsProgramAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/hsProgramAugmentationTypeContext.json
         programEligibleStartDate:
           type: array
           description: >-
@@ -105,18 +96,17 @@ components:
             reference is hs:ProgramMonetaryValue
           items:
             $ref: nc.yaml#/components/schemas/ncItemValueType
+        '@context':
+          type: string
+          description: hsProgramAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/hsProgramAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/hsProgramAugmentationTypeContext.json
     hsChargeAugmentationType:
       type: object
       title: 'hs:ChargeAugmentationType'
       description: A data type for additional information about a charge.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: hsChargeAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/hsChargeAugmentationTypeContext.json
         chargeAllegationReportedDate:
           type: array
           description: >-
@@ -163,22 +153,27 @@ components:
             j:BailBond
           items:
             $ref: j.yaml#/components/schemas/jBailBondType
+        '@context':
+          type: string
+          description: hsChargeAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/hsChargeAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/hsChargeAugmentationTypeContext.json
     hsChargeAllegationCategoryCodeType:
       type: object
       title: 'hs:ChargeAllegationCategoryCodeType'
       description: >-
         A data type for a list of NCANDS (National Child Abuse and Neglect Data
         System) allegation categories.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: hs.yaml#/components/schemas/hsChargeAllegationCategoryCodeSimpleType
         '@context':
           type: string
           description: hsChargeAllegationCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/hsChargeAllegationCategoryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/hsChargeAllegationCategoryCodeTypeContext.json
-        simpleType:
-          $ref: hs.yaml#/components/schemas/hsChargeAllegationCategoryCodeSimpleType
     hsChargeAllegationCategoryCodeSimpleType:
       type: string
       description: >-
@@ -191,19 +186,12 @@ components:
         - PA
         - SA
     hsGoalObjectiveType:
+      title: 'hs:GoalObjectiveType'
+      description: A data type for describing a subset of a service plan goal.
       allOf:
         - $ref: nc.yaml#/components/schemas/ncActivityType
         - type: object
-          title: 'hs:GoalObjectiveType'
-          description: A data type for describing a subset of a service plan goal.
-          required:
-            - '@context'
           properties:
-            '@context':
-              type: string
-              description: hsGoalObjectiveType JSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/hsGoalObjectiveTypeContext.json
             task:
               type: array
               description: >-
@@ -212,18 +200,17 @@ components:
                 an appropriate authority. NIEM reference is nc:Task
               items:
                 $ref: nc.yaml#/components/schemas/ncTaskType
+            '@context':
+              type: string
+              description: hsGoalObjectiveType JSON-LD context
+              default: ../JSON-LD_Contexts/hsGoalObjectiveTypeContext.json
+              enum:
+                - ../JSON-LD_Contexts/hsGoalObjectiveTypeContext.json
     hsTaskAugmentationType:
       type: object
       title: 'hs:TaskAugmentationType'
       description: A data type for additional information about a task.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: hsTaskAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/hsTaskAugmentationTypeContext.json
         activityPersonAssociation:
           type: array
           description: >-
@@ -260,21 +247,19 @@ components:
             is hs:Service
           items:
             $ref: hs.yaml#/components/schemas/hsServiceType
+        '@context':
+          type: string
+          description: hsTaskAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/hsTaskAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/hsTaskAugmentationTypeContext.json
     hsActivityInvolvedPersonAssociationAugmentationType:
       type: object
       title: 'hs:ActivityInvolvedPersonAssociationAugmentationType'
       description: >-
         A data type for additional information about an activity and a person
         involved in that activity.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: hsActivityInvolvedPersonAssociationAugmentationType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/hsActivityInvolvedPersonAssociationAugmentationTypeContext.json
         isSignatureRequired:
           type: array
           description: >-
@@ -282,22 +267,23 @@ components:
             NIEM reference is hs:SignatureRequiredIndicator
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        '@context':
+          type: string
+          description: hsActivityInvolvedPersonAssociationAugmentationType JSON-LD context
+          default: >-
+            ../JSON-LD_Contexts/hsActivityInvolvedPersonAssociationAugmentationTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/hsActivityInvolvedPersonAssociationAugmentationTypeContext.json
     hsServiceType:
+      title: 'hs:ServiceType'
+      description: >-
+        A data type for describing the service that will be made available by
+        the agency.
       allOf:
         - $ref: nc.yaml#/components/schemas/ncActivityType
         - type: object
-          title: 'hs:ServiceType'
-          description: >-
-            A data type for describing the service that will be made available
-            by the agency.
-          required:
-            - '@context'
           properties:
-            '@context':
-              type: string
-              description: hsServiceType JSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/hsServiceTypeContext.json
             responsibilityForCost:
               type: array
               description: >-
@@ -361,6 +347,12 @@ components:
                 hs:UnprovidedServiceReasonCategoryText
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
+            '@context':
+              type: string
+              description: hsServiceType JSON-LD context
+              default: ../JSON-LD_Contexts/hsServiceTypeContext.json
+              enum:
+                - ../JSON-LD_Contexts/hsServiceTypeContext.json
     hsServiceCategoryCodeType:
       type: object
       title: 'hs:ServiceCategoryCodeType'
@@ -368,16 +360,15 @@ components:
         A data type for a kind of a service that will be provided as part of a
         case plan.  Categories include:  assessment, treatment, program,
         benefit, education, transportation, respite care.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: hs.yaml#/components/schemas/hsServiceCategoryCodeSimpleType
         '@context':
           type: string
           description: hsServiceCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/hsServiceCategoryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/hsServiceCategoryCodeTypeContext.json
-        simpleType:
-          $ref: hs.yaml#/components/schemas/hsServiceCategoryCodeSimpleType
     hsServiceCategoryCodeSimpleType:
       type: string
       description: >-
@@ -402,18 +393,18 @@ components:
       description: >-
         A data type for a kind of reason a service was not provided, e.g
         organizational barriers.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: hsUnprovidedServiceReasonCategoryCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/hsUnprovidedServiceReasonCategoryCodeTypeContext.json
         simpleType:
           $ref: >-
             hs.yaml#/components/schemas/hsUnprovidedServiceReasonCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: hsUnprovidedServiceReasonCategoryCodeType JSON-LD context
+          default: >-
+            ../JSON-LD_Contexts/hsUnprovidedServiceReasonCategoryCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/hsUnprovidedServiceReasonCategoryCodeTypeContext.json
     hsUnprovidedServiceReasonCategoryCodeSimpleType:
       type: string
       description: >-
@@ -439,14 +430,7 @@ components:
       type: object
       title: 'hs:TreatmentAugmentationType'
       description: A data type for additional information about a treatment.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: hsTreatmentAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/hsTreatmentAugmentationTypeContext.json
         juvenile:
           type: array
           description: >-
@@ -522,18 +506,17 @@ components:
             hs:TreatmentSupervisorEntity
           items:
             $ref: nc.yaml#/components/schemas/ncEntityType
+        '@context':
+          type: string
+          description: hsTreatmentAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/hsTreatmentAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/hsTreatmentAugmentationTypeContext.json
     hsJuvenileType:
       type: object
       title: 'hs:JuvenileType'
       description: A data type for a juvenile.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: hsJuvenileType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/hsJuvenileTypeContext.json
         isArrestedFriends:
           type: array
           description: >-
@@ -772,24 +755,30 @@ components:
             hs:JuvenileTroubledFriendsIndicator
           items:
             $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+        '@context':
+          type: string
+          description: hsJuvenileType JSON-LD context
+          default: ../JSON-LD_Contexts/hsJuvenileTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/hsJuvenileTypeContext.json
     hsJuvenileFamilyFinancialProblemCodeType:
       type: object
       title: 'hs:JuvenileFamilyFinancialProblemCodeType'
       description: >-
         A data type for describing whether a family suffers from financial
         problems.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: hsJuvenileFamilyFinancialProblemCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/hsJuvenileFamilyFinancialProblemCodeTypeContext.json
         simpleType:
           $ref: >-
             hs.yaml#/components/schemas/hsJuvenileFamilyFinancialProblemCodeSimpleType
+        '@context':
+          type: string
+          description: hsJuvenileFamilyFinancialProblemCodeType JSON-LD context
+          default: >-
+            ../JSON-LD_Contexts/hsJuvenileFamilyFinancialProblemCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/hsJuvenileFamilyFinancialProblemCodeTypeContext.json
     hsJuvenileFamilyFinancialProblemCodeSimpleType:
       type: string
       description: >-
@@ -806,16 +795,15 @@ components:
         A data type for an enumerated list from the Adoption and Foster Care
         Annual Reporting System, 45 CFR 1355, appendix B (Adoption Data
         Elements), section III (Special Needs Status).
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: hs.yaml#/components/schemas/hsJuvenileSpecialNeedCodeSimpleType
         '@context':
           type: string
           description: hsJuvenileSpecialNeedCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/hsJuvenileSpecialNeedCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/hsJuvenileSpecialNeedCodeTypeContext.json
-        simpleType:
-          $ref: hs.yaml#/components/schemas/hsJuvenileSpecialNeedCodeSimpleType
     hsJuvenileSpecialNeedCodeSimpleType:
       type: string
       description: >-
@@ -834,19 +822,12 @@ components:
         - Sibling Group
         - Visually or hearing impaired
     hsJuvenileAssessmentType:
+      title: 'hs:JuvenileAssessmentType'
+      description: A data type for a juvenile assessment.
       allOf:
         - $ref: nc.yaml#/components/schemas/ncAssessmentType
         - type: object
-          title: 'hs:JuvenileAssessmentType'
-          description: A data type for a juvenile assessment.
-          required:
-            - '@context'
           properties:
-            '@context':
-              type: string
-              description: hsJuvenileAssessmentType JSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/hsJuvenileAssessmentTypeContext.json
             administeringFacility:
               type: array
               description: >-
@@ -895,20 +876,19 @@ components:
                 hs:ReceivedByTrackingID
               items:
                 $ref: niem-xs.yaml#/components/schemas/niem-xsstring
+            '@context':
+              type: string
+              description: hsJuvenileAssessmentType JSON-LD context
+              default: ../JSON-LD_Contexts/hsJuvenileAssessmentTypeContext.json
+              enum:
+                - ../JSON-LD_Contexts/hsJuvenileAssessmentTypeContext.json
     hsAssessmentOutcomeType:
+      title: 'hs:AssessmentOutcomeType'
+      description: A data type for the outcome of an assessment.
       allOf:
         - $ref: nc.yaml#/components/schemas/ncActivityType
         - type: object
-          title: 'hs:AssessmentOutcomeType'
-          description: A data type for the outcome of an assessment.
-          required:
-            - '@context'
           properties:
-            '@context':
-              type: string
-              description: hsAssessmentOutcomeType JSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/hsAssessmentOutcomeTypeContext.json
             score:
               type: array
               description: >-
@@ -916,20 +896,19 @@ components:
                 is hs:AssessmentOutcomeScoreText
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
+            '@context':
+              type: string
+              description: hsAssessmentOutcomeType JSON-LD context
+              default: ../JSON-LD_Contexts/hsAssessmentOutcomeTypeContext.json
+              enum:
+                - ../JSON-LD_Contexts/hsAssessmentOutcomeTypeContext.json
     hsAssessmentRecommendationType:
+      title: 'hs:AssessmentRecommendationType'
+      description: A data type for the recommendation of an assessment.
       allOf:
         - $ref: nc.yaml#/components/schemas/ncActivityType
         - type: object
-          title: 'hs:AssessmentRecommendationType'
-          description: A data type for the recommendation of an assessment.
-          required:
-            - '@context'
           properties:
-            '@context':
-              type: string
-              description: hsAssessmentRecommendationType JSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/hsAssessmentRecommendationTypeContext.json
             assessmentRecommendedCourseOfAction:
               type: array
               description: >-
@@ -938,21 +917,19 @@ components:
               items:
                 $ref: >-
                   hs.yaml#/components/schemas/hsAssessmentRecommendedCourseOfActionType
+            '@context':
+              type: string
+              description: hsAssessmentRecommendationType JSON-LD context
+              default: ../JSON-LD_Contexts/hsAssessmentRecommendationTypeContext.json
+              enum:
+                - ../JSON-LD_Contexts/hsAssessmentRecommendationTypeContext.json
     hsAssessmentRecommendedCourseOfActionType:
+      title: 'hs:AssessmentRecommendedCourseOfActionType'
+      description: A data type for an action.
       allOf:
         - $ref: nc.yaml#/components/schemas/ncActivityType
         - type: object
-          title: 'hs:AssessmentRecommendedCourseOfActionType'
-          description: A data type for an action.
-          required:
-            - '@context'
           properties:
-            '@context':
-              type: string
-              description: hsAssessmentRecommendedCourseOfActionType JSON-LD context
-              enum:
-                - >-
-                  ../JSON-LD_Contexts/hsAssessmentRecommendedCourseOfActionTypeContext.json
             isAssessmentCourseOfActionWillBeTaken:
               type: array
               description: >-
@@ -969,24 +946,32 @@ components:
               items:
                 $ref: >-
                   hs.yaml#/components/schemas/hsAssessmentRecommendedCourseOfActionCategoryCodeType
+            '@context':
+              type: string
+              description: hsAssessmentRecommendedCourseOfActionType JSON-LD context
+              default: >-
+                ../JSON-LD_Contexts/hsAssessmentRecommendedCourseOfActionTypeContext.json
+              enum:
+                - >-
+                  ../JSON-LD_Contexts/hsAssessmentRecommendedCourseOfActionTypeContext.json
     hsAssessmentRecommendedCourseOfActionCategoryCodeType:
       type: object
       title: 'hs:AssessmentRecommendedCourseOfActionCategoryCodeType'
       description: A data type for describing courses of action.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: >-
+            hs.yaml#/components/schemas/hsAssessmentRecommendedCourseOfActionCategoryCodeSimpleType
         '@context':
           type: string
           description: >-
             hsAssessmentRecommendedCourseOfActionCategoryCodeType JSON-LD
             context
+          default: >-
+            ../JSON-LD_Contexts/hsAssessmentRecommendedCourseOfActionCategoryCodeTypeContext.json
           enum:
             - >-
               ../JSON-LD_Contexts/hsAssessmentRecommendedCourseOfActionCategoryCodeTypeContext.json
-        simpleType:
-          $ref: >-
-            hs.yaml#/components/schemas/hsAssessmentRecommendedCourseOfActionCategoryCodeSimpleType
     hsAssessmentRecommendedCourseOfActionCategoryCodeSimpleType:
       type: string
       description: A data type for describing a course of action.
@@ -1004,14 +989,7 @@ components:
       type: object
       title: 'hs:CaseworkerType'
       description: A data type for information about the caseworker.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: hsCaseworkerType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/hsCaseworkerTypeContext.json
         roleOfPerson:
           type: array
           description: >-
@@ -1040,20 +1018,25 @@ components:
           items:
             $ref: >-
               hs.yaml#/components/schemas/hsCaseworkerInvolvementCategoryCodeType
+        '@context':
+          type: string
+          description: hsCaseworkerType JSON-LD context
+          default: ../JSON-LD_Contexts/hsCaseworkerTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/hsCaseworkerTypeContext.json
     hsCaseWorkerCategoryCodeType:
       type: object
       title: 'hs:CaseWorkerCategoryCodeType'
       description: A data type for a kind of case worker.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: hs.yaml#/components/schemas/hsCaseWorkerCategoryCodeSimpleType
         '@context':
           type: string
           description: hsCaseWorkerCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/hsCaseWorkerCategoryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/hsCaseWorkerCategoryCodeTypeContext.json
-        simpleType:
-          $ref: hs.yaml#/components/schemas/hsCaseWorkerCategoryCodeSimpleType
     hsCaseWorkerCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of case worker.
@@ -1070,18 +1053,18 @@ components:
       description: >-
         A data type describing the specific involvement of a caseworker as
         related to a particular case
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: hsCaseworkerInvolvementCategoryCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/hsCaseworkerInvolvementCategoryCodeTypeContext.json
         simpleType:
           $ref: >-
             hs.yaml#/components/schemas/hsCaseworkerInvolvementCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: hsCaseworkerInvolvementCategoryCodeType JSON-LD context
+          default: >-
+            ../JSON-LD_Contexts/hsCaseworkerInvolvementCategoryCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/hsCaseworkerInvolvementCategoryCodeTypeContext.json
     hsCaseworkerInvolvementCategoryCodeSimpleType:
       type: string
       description: >-
@@ -1101,14 +1084,7 @@ components:
       description: >-
         A data type for describing the educational issues related to the court
         report and service plan of any participant  in the case.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: hsEducationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/hsEducationTypeContext.json
         alGoal:
           type: array
           description: >-
@@ -1130,18 +1106,17 @@ components:
             j:EducationAugmentation
           items:
             $ref: j.yaml#/components/schemas/jEducationAugmentationType
+        '@context':
+          type: string
+          description: hsEducationType JSON-LD context
+          default: ../JSON-LD_Contexts/hsEducationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/hsEducationTypeContext.json
     hsCourtOrderAugmentationType:
       type: object
       title: 'hs:CourtOrderAugmentationType'
       description: A data type for additional information about a court order.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: hsCourtOrderAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/hsCourtOrderAugmentationTypeContext.json
         organizationCaseID:
           type: array
           description: >-
@@ -1163,20 +1138,19 @@ components:
             hs:CourtOrderRenderedDate
           items:
             $ref: nc.yaml#/components/schemas/ncDateType
+        '@context':
+          type: string
+          description: hsCourtOrderAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/hsCourtOrderAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/hsCourtOrderAugmentationTypeContext.json
     hsReportingOrganizationType:
+      title: 'hs:ReportingOrganizationType'
+      description: A data type for an organization reporting information.
       allOf:
         - $ref: nc.yaml#/components/schemas/ncOrganizationType
         - type: object
-          title: 'hs:ReportingOrganizationType'
-          description: A data type for an organization reporting information.
-          required:
-            - '@context'
           properties:
-            '@context':
-              type: string
-              description: hsReportingOrganizationType JSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/hsReportingOrganizationTypeContext.json
             categoryCode:
               type: array
               description: >-
@@ -1207,22 +1181,28 @@ components:
                 is hs:ReportingOrganizationClassText
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
+            '@context':
+              type: string
+              description: hsReportingOrganizationType JSON-LD context
+              default: ../JSON-LD_Contexts/hsReportingOrganizationTypeContext.json
+              enum:
+                - ../JSON-LD_Contexts/hsReportingOrganizationTypeContext.json
     hsReportingOrganizationCategoryCodeType:
       type: object
       title: 'hs:ReportingOrganizationCategoryCodeType'
       description: A data type for a kind of an organization reporting information.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: hsReportingOrganizationCategoryCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/hsReportingOrganizationCategoryCodeTypeContext.json
         simpleType:
           $ref: >-
             hs.yaml#/components/schemas/hsReportingOrganizationCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: hsReportingOrganizationCategoryCodeType JSON-LD context
+          default: >-
+            ../JSON-LD_Contexts/hsReportingOrganizationCategoryCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/hsReportingOrganizationCategoryCodeTypeContext.json
     hsReportingOrganizationCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of an organization reporting information.
@@ -1260,18 +1240,17 @@ components:
       type: object
       title: 'hs:ReportingOrganizationClassCodeType'
       description: A data type for a class of an organization reporting information.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: hsReportingOrganizationClassCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/hsReportingOrganizationClassCodeTypeContext.json
         simpleType:
           $ref: >-
             hs.yaml#/components/schemas/hsReportingOrganizationClassCodeSimpleType
+        '@context':
+          type: string
+          description: hsReportingOrganizationClassCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/hsReportingOrganizationClassCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/hsReportingOrganizationClassCodeTypeContext.json
     hsReportingOrganizationClassCodeSimpleType:
       type: string
       description: A data type for a class of an organization reporting information.
@@ -1298,14 +1277,7 @@ components:
       description: >-
         A data type for additional information about a person's military
         service.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: hsMilitarySummaryAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/hsMilitarySummaryAugmentationTypeContext.json
         militaryInductionDate:
           type: array
           description: >-
@@ -1313,18 +1285,17 @@ components:
             service in a military. NIEM reference is hs:MilitaryInductionDate
           items:
             $ref: nc.yaml#/components/schemas/ncDateType
+        '@context':
+          type: string
+          description: hsMilitarySummaryAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/hsMilitarySummaryAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/hsMilitarySummaryAugmentationTypeContext.json
     hsPersonAugmentationType:
       type: object
       title: 'hs:PersonAugmentationType'
       description: A data type for additional information about a person.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: hsPersonAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/hsPersonAugmentationTypeContext.json
         locationStateName:
           type: array
           description: >-
@@ -1623,22 +1594,27 @@ components:
             reference is hs:RecentLivingSituationCategoryText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: hsPersonAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/hsPersonAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/hsPersonAugmentationTypeContext.json
     hsSSNVerificationIndicatorCodeType:
       type: object
       title: 'hs:SSNVerificationIndicatorCodeType'
       description: >-
         A data type for a verification of a SSN by the Social Security
         Administration (SSA).
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: hs.yaml#/components/schemas/hsSSNVerificationIndicatorCodeSimpleType
         '@context':
           type: string
           description: hsSSNVerificationIndicatorCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/hsSSNVerificationIndicatorCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/hsSSNVerificationIndicatorCodeTypeContext.json
-        simpleType:
-          $ref: hs.yaml#/components/schemas/hsSSNVerificationIndicatorCodeSimpleType
     hsSSNVerificationIndicatorCodeSimpleType:
       type: string
       description: >-
@@ -1663,14 +1639,7 @@ components:
       description: >-
         A data type for a set of programs for which a person may be considered
         for eligibility.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: hsEligibilityType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/hsEligibilityTypeContext.json
         servicesIndicatorCode:
           type: array
           description: >-
@@ -1700,22 +1669,28 @@ components:
             hs:TANFMonthsEligibilityQuantity
           items:
             $ref: nc.yaml#/components/schemas/ncQuantityType
+        '@context':
+          type: string
+          description: hsEligibilityType JSON-LD context
+          default: ../JSON-LD_Contexts/hsEligibilityTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/hsEligibilityTypeContext.json
     hsServicesEligibilityIndicatorCodeType:
       type: object
       title: 'hs:ServicesEligibilityIndicatorCodeType'
       description: A data type for a service for which a person is eligible.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: hsServicesEligibilityIndicatorCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/hsServicesEligibilityIndicatorCodeTypeContext.json
         simpleType:
           $ref: >-
             hs.yaml#/components/schemas/hsServicesEligibilityIndicatorCodeSimpleType
+        '@context':
+          type: string
+          description: hsServicesEligibilityIndicatorCodeType JSON-LD context
+          default: >-
+            ../JSON-LD_Contexts/hsServicesEligibilityIndicatorCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/hsServicesEligibilityIndicatorCodeTypeContext.json
     hsServicesEligibilityIndicatorCodeSimpleType:
       type: string
       description: A data type for a service for which a person is eligible.
@@ -1731,14 +1706,7 @@ components:
       type: object
       title: 'hs:HistoricalNarrativeType'
       description: A data type for the history of a participant of a case.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: hsHistoricalNarrativeType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/hsHistoricalNarrativeTypeContext.json
         competencyStatus:
           type: array
           description: >-
@@ -1783,20 +1751,19 @@ components:
             hs:PresentingProblemText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: hsHistoricalNarrativeType JSON-LD context
+          default: ../JSON-LD_Contexts/hsHistoricalNarrativeTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/hsHistoricalNarrativeTypeContext.json
     hsHealthDetailsType:
       type: object
       title: 'hs:HealthDetailsType'
       description: >-
         A data type for the details about a person's mental health, substance
         abuse, medical health and medications.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: hsHealthDetailsType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/hsHealthDetailsTypeContext.json
         medical:
           type: array
           description: >-
@@ -1834,20 +1801,19 @@ components:
             hs:SubstanceAbuseDetails
           items:
             $ref: hs.yaml#/components/schemas/hsSubstanceAbuseDetailsType
+        '@context':
+          type: string
+          description: hsHealthDetailsType JSON-LD context
+          default: ../JSON-LD_Contexts/hsHealthDetailsTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/hsHealthDetailsTypeContext.json
     hsMedicalHealthDetailsType:
+      title: 'hs:MedicalHealthDetailsType'
+      description: A data type for details about a person's medical health.
       allOf:
         - $ref: nc.yaml#/components/schemas/ncActivityType
         - type: object
-          title: 'hs:MedicalHealthDetailsType'
-          description: A data type for details about a person's medical health.
-          required:
-            - '@context'
           properties:
-            '@context':
-              type: string
-              description: hsMedicalHealthDetailsType JSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/hsMedicalHealthDetailsTypeContext.json
             dentalHistoryDescription:
               type: array
               description: >-
@@ -1885,22 +1851,21 @@ components:
                 hs:OtherPhysicalDisabilityIndicator
               items:
                 $ref: niem-xs.yaml#/components/schemas/niem-xsboolean
+            '@context':
+              type: string
+              description: hsMedicalHealthDetailsType JSON-LD context
+              default: ../JSON-LD_Contexts/hsMedicalHealthDetailsTypeContext.json
+              enum:
+                - ../JSON-LD_Contexts/hsMedicalHealthDetailsTypeContext.json
     hsMentalHealthDetailsType:
+      title: 'hs:MentalHealthDetailsType'
+      description: >-
+        A data type for details about a person's mental health including social
+        history and psychosocial information.
       allOf:
         - $ref: nc.yaml#/components/schemas/ncActivityType
         - type: object
-          title: 'hs:MentalHealthDetailsType'
-          description: >-
-            A data type for details about a person's mental health including
-            social history and psychosocial information.
-          required:
-            - '@context'
           properties:
-            '@context':
-              type: string
-              description: hsMentalHealthDetailsType JSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/hsMentalHealthDetailsTypeContext.json
             developmentalDisabilityCategoryCode:
               type: array
               description: >-
@@ -1932,20 +1897,25 @@ components:
                 hs:MentalHealthHistoryDescriptionText
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
+            '@context':
+              type: string
+              description: hsMentalHealthDetailsType JSON-LD context
+              default: ../JSON-LD_Contexts/hsMentalHealthDetailsTypeContext.json
+              enum:
+                - ../JSON-LD_Contexts/hsMentalHealthDetailsTypeContext.json
     hsDevelopmentalDisabilityCodeType:
       type: object
       title: 'hs:DevelopmentalDisabilityCodeType'
       description: A data type for describing a person's developmental disabilities
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: hs.yaml#/components/schemas/hsDevelopmentalDisabilityCodeSimpleType
         '@context':
           type: string
           description: hsDevelopmentalDisabilityCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/hsDevelopmentalDisabilityCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/hsDevelopmentalDisabilityCodeTypeContext.json
-        simpleType:
-          $ref: hs.yaml#/components/schemas/hsDevelopmentalDisabilityCodeSimpleType
     hsDevelopmentalDisabilityCodeSimpleType:
       type: string
       description: A data type for describing a person's developmental disabilities
@@ -1956,19 +1926,12 @@ components:
         - LEARNING
         - SPEECH
     hsMedicationUseType:
+      title: 'hs:MedicationUseType'
+      description: A data type for recording medication use for an individual.
       allOf:
         - $ref: nc.yaml#/components/schemas/ncActivityType
         - type: object
-          title: 'hs:MedicationUseType'
-          description: A data type for recording medication use for an individual.
-          required:
-            - '@context'
           properties:
-            '@context':
-              type: string
-              description: hsMedicationUseType JSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/hsMedicationUseTypeContext.json
             medication:
               type: array
               description: 'A medication in use. NIEM reference is hs:Medication'
@@ -2041,20 +2004,25 @@ components:
                 hours, etc. NIEM reference is hs:PrescriptionUseInstructionsText
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
+            '@context':
+              type: string
+              description: hsMedicationUseType JSON-LD context
+              default: ../JSON-LD_Contexts/hsMedicationUseTypeContext.json
+              enum:
+                - ../JSON-LD_Contexts/hsMedicationUseTypeContext.json
     hsMedicationUseFrequencyCodeType:
       type: object
       title: 'hs:MedicationUseFrequencyCodeType'
       description: A data type for describing the medication use frequency.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: hs.yaml#/components/schemas/hsMedicationUseFrequencyCodeSimpleType
         '@context':
           type: string
           description: hsMedicationUseFrequencyCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/hsMedicationUseFrequencyCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/hsMedicationUseFrequencyCodeTypeContext.json
-        simpleType:
-          $ref: hs.yaml#/components/schemas/hsMedicationUseFrequencyCodeSimpleType
     hsMedicationUseFrequencyCodeSimpleType:
       type: string
       description: A data type for describing the medication use frequency.
@@ -2065,22 +2033,15 @@ components:
         - Three Times Daily
         - Twice Daily
     hsPrescriptionType:
+      title: 'hs:PrescriptionType'
+      description: >-
+        A data type for the details of written instructions from a physician or
+        dentist to a druggist concerning the form and dosage of a drug to be
+        issued to a given patient
       allOf:
         - $ref: nc.yaml#/components/schemas/ncActivityType
         - type: object
-          title: 'hs:PrescriptionType'
-          description: >-
-            A data type for the details of written instructions from a physician
-            or dentist to a druggist concerning the form and dosage of a drug to
-            be issued to a given patient
-          required:
-            - '@context'
           properties:
-            '@context':
-              type: string
-              description: hsPrescriptionType JSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/hsPrescriptionTypeContext.json
             dispenser:
               type: array
               description: >-
@@ -2240,22 +2201,27 @@ components:
                 hs:TransmissionFormOfRxOriginText
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
+            '@context':
+              type: string
+              description: hsPrescriptionType JSON-LD context
+              default: ../JSON-LD_Contexts/hsPrescriptionTypeContext.json
+              enum:
+                - ../JSON-LD_Contexts/hsPrescriptionTypeContext.json
     hsDrugDosageUnitsCodeType:
       type: object
       title: 'hs:DrugDosageUnitsCodeType'
       description: >-
         A data type for the unit of measure for the quantity dispensed of a
         drug.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: hs.yaml#/components/schemas/hsDrugDosageUnitsCodeSimpleType
         '@context':
           type: string
           description: hsDrugDosageUnitsCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/hsDrugDosageUnitsCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/hsDrugDosageUnitsCodeTypeContext.json
-        simpleType:
-          $ref: hs.yaml#/components/schemas/hsDrugDosageUnitsCodeSimpleType
     hsDrugDosageUnitsCodeSimpleType:
       type: string
       description: >-
@@ -2269,16 +2235,15 @@ components:
       type: object
       title: 'hs:MethodOfPaymentCodeType'
       description: A data type for a method of payment.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: hs.yaml#/components/schemas/hsMethodOfPaymentCodeSimpleType
         '@context':
           type: string
           description: hsMethodOfPaymentCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/hsMethodOfPaymentCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/hsMethodOfPaymentCodeTypeContext.json
-        simpleType:
-          $ref: hs.yaml#/components/schemas/hsMethodOfPaymentCodeSimpleType
     hsMethodOfPaymentCodeSimpleType:
       type: string
       description: A data type for a method of payment.
@@ -2297,14 +2262,7 @@ components:
       description: >-
         A data type for a person who is professionally qualified to prepare and
         dispense medicinal drugs.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: hsPharmacistType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/hsPharmacistTypeContext.json
         NPIIdentification:
           type: array
           description: >-
@@ -2329,24 +2287,29 @@ components:
             nc:RoleOfPerson
           items:
             $ref: nc.yaml#/components/schemas/ncPersonType
+        '@context':
+          type: string
+          description: hsPharmacistType JSON-LD context
+          default: ../JSON-LD_Contexts/hsPharmacistTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/hsPharmacistTypeContext.json
     hsTransmissionFormOfRxOriginCodeType:
       type: object
       title: 'hs:TransmissionFormOfRxOriginCodeType'
       description: >-
         A data type for a transmission method by which a pharmacy receives a
         prescription.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: hsTransmissionFormOfRxOriginCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/hsTransmissionFormOfRxOriginCodeTypeContext.json
         simpleType:
           $ref: >-
             hs.yaml#/components/schemas/hsTransmissionFormOfRxOriginCodeSimpleType
+        '@context':
+          type: string
+          description: hsTransmissionFormOfRxOriginCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/hsTransmissionFormOfRxOriginCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/hsTransmissionFormOfRxOriginCodeTypeContext.json
     hsTransmissionFormOfRxOriginCodeSimpleType:
       type: string
       description: >-
@@ -2360,19 +2323,12 @@ components:
         - '05'
         - '99'
     hsSubstanceAbuseDetailsType:
+      title: 'hs:SubstanceAbuseDetailsType'
+      description: A data type for the details about a person's substance abuse.
       allOf:
         - $ref: nc.yaml#/components/schemas/ncActivityType
         - type: object
-          title: 'hs:SubstanceAbuseDetailsType'
-          description: A data type for the details about a person's substance abuse.
-          required:
-            - '@context'
           properties:
-            '@context':
-              type: string
-              description: hsSubstanceAbuseDetailsType JSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/hsSubstanceAbuseDetailsTypeContext.json
             drugUseAgeMeasure:
               type: array
               description: >-
@@ -2433,20 +2389,25 @@ components:
                 hs:SubstanceAbusePastDescriptionText
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
+            '@context':
+              type: string
+              description: hsSubstanceAbuseDetailsType JSON-LD context
+              default: ../JSON-LD_Contexts/hsSubstanceAbuseDetailsTypeContext.json
+              enum:
+                - ../JSON-LD_Contexts/hsSubstanceAbuseDetailsTypeContext.json
     hsDrugUseFrequencyCodeType:
       type: object
       title: 'hs:DrugUseFrequencyCodeType'
       description: A data type for describing the frequency with which a substance is used.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: hs.yaml#/components/schemas/hsDrugUseFrequencyCodeSimpleType
         '@context':
           type: string
           description: hsDrugUseFrequencyCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/hsDrugUseFrequencyCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/hsDrugUseFrequencyCodeTypeContext.json
-        simpleType:
-          $ref: hs.yaml#/components/schemas/hsDrugUseFrequencyCodeSimpleType
     hsDrugUseFrequencyCodeSimpleType:
       type: string
       description: A data type for describing the frequency with which a substance is used.
@@ -2458,19 +2419,12 @@ components:
         - TWO
         - ZERO
     hsHealthInsuranceType:
+      title: 'hs:HealthInsuranceType'
+      description: A data type for health insurance information.
       allOf:
         - $ref: nc.yaml#/components/schemas/ncInsuranceType
         - type: object
-          title: 'hs:HealthInsuranceType'
-          description: A data type for health insurance information.
-          required:
-            - '@context'
           properties:
-            '@context':
-              type: string
-              description: hsHealthInsuranceType JSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/hsHealthInsuranceTypeContext.json
             policyPrimaryInsuredFullName:
               type: array
               description: >-
@@ -2479,20 +2433,25 @@ components:
                 hs:HealthInsurancePolicyPrimaryInsuredFullName
               items:
                 $ref: nc.yaml#/components/schemas/ncPersonNameTextType
+            '@context':
+              type: string
+              description: hsHealthInsuranceType JSON-LD context
+              default: ../JSON-LD_Contexts/hsHealthInsuranceTypeContext.json
+              enum:
+                - ../JSON-LD_Contexts/hsHealthInsuranceTypeContext.json
     hsLivingSituationCategoryCodeType:
       type: object
       title: 'hs:LivingSituationCategoryCodeType'
       description: A data type for a kind of living situtation.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: hs.yaml#/components/schemas/hsLivingSituationCategoryCodeSimpleType
         '@context':
           type: string
           description: hsLivingSituationCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/hsLivingSituationCategoryCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/hsLivingSituationCategoryCodeTypeContext.json
-        simpleType:
-          $ref: hs.yaml#/components/schemas/hsLivingSituationCategoryCodeSimpleType
     hsLivingSituationCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of living situtation.
@@ -2523,18 +2482,17 @@ components:
       type: object
       title: 'hs:HousingPermanencyCategoryCodeType'
       description: A data type for a kind of housing at time of service.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: hsHousingPermanencyCategoryCodeType JSON-LD context
-          enum:
-            - >-
-              ../JSON-LD_Contexts/hsHousingPermanencyCategoryCodeTypeContext.json
         simpleType:
           $ref: >-
             hs.yaml#/components/schemas/hsHousingPermanencyCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: hsHousingPermanencyCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/hsHousingPermanencyCategoryCodeTypeContext.json
+          enum:
+            - >-
+              ../JSON-LD_Contexts/hsHousingPermanencyCategoryCodeTypeContext.json
     hsHousingPermanencyCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of housing at time of service.
@@ -2547,16 +2505,15 @@ components:
       type: object
       title: 'hs:PersonGenderIdentityCodeType'
       description: A data type for a gender of a person's identity.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: hs.yaml#/components/schemas/hsPersonGenderIdentityCodeSimpleType
         '@context':
           type: string
           description: hsPersonGenderIdentityCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/hsPersonGenderIdentityCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/hsPersonGenderIdentityCodeTypeContext.json
-        simpleType:
-          $ref: hs.yaml#/components/schemas/hsPersonGenderIdentityCodeSimpleType
     hsPersonGenderIdentityCodeSimpleType:
       type: string
       description: A data type for a gender of a person's identity.
@@ -2574,16 +2531,15 @@ components:
       type: object
       title: 'hs:PersonSexualOrientationCodeType'
       description: A data type for a target gender of the sexual interest of a person.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: hs.yaml#/components/schemas/hsPersonSexualOrientationCodeSimpleType
         '@context':
           type: string
           description: hsPersonSexualOrientationCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/hsPersonSexualOrientationCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/hsPersonSexualOrientationCodeTypeContext.json
-        simpleType:
-          $ref: hs.yaml#/components/schemas/hsPersonSexualOrientationCodeSimpleType
     hsPersonSexualOrientationCodeSimpleType:
       type: string
       description: A data type for a target gender of the sexual interest of a person.

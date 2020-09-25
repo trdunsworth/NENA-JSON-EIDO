@@ -4,16 +4,15 @@ components:
       type: object
       title: 'sar:TargetSectorCodeType'
       description: A data type for the broad categorization of infrastructure type.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: sar.yaml#/components/schemas/sarTargetSectorCodeSimpleType
         '@context':
           type: string
           description: sarTargetSectorCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/sarTargetSectorCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/sarTargetSectorCodeTypeContext.json
-        simpleType:
-          $ref: sar.yaml#/components/schemas/sarTargetSectorCodeSimpleType
     sarTargetSectorCodeSimpleType:
       type: string
       description: A data type for the broad categorization of infrastructure type.

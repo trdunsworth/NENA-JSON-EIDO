@@ -4,16 +4,15 @@ components:
       type: object
       title: 'census:USCountyCodeType'
       description: A data type for US county codes.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: census.yaml#/components/schemas/censusUSCountyCodeSimpleType
         '@context':
           type: string
           description: censusUSCountyCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/censusUSCountyCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/censusUSCountyCodeTypeContext.json
-        simpleType:
-          $ref: census.yaml#/components/schemas/censusUSCountyCodeSimpleType
     censusUSCountyCodeSimpleType:
       type: string
       description: A data type for US county codes.

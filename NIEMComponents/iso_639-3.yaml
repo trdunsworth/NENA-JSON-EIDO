@@ -4,16 +4,15 @@ components:
       type: object
       title: 'iso_639-3:LanguageCodeType'
       description: A data type for language codes.
-      required:
-        - '@context'
       properties:
+        simpleType:
+          $ref: iso_639-3.yaml#/components/schemas/iso_639-3LanguageCodeSimpleType
         '@context':
           type: string
           description: iso_639-3LanguageCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/iso_639-3LanguageCodeTypeContext.json
           enum:
             - ../JSON-LD_Contexts/iso_639-3LanguageCodeTypeContext.json
-        simpleType:
-          $ref: iso_639-3.yaml#/components/schemas/iso_639-3LanguageCodeSimpleType
     iso_639-3LanguageCodeSimpleType:
       type: string
       description: A data type for language codes.

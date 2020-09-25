@@ -1,21 +1,14 @@
 components:
   schemas:
     cbrnScheduleByWeekType:
+      title: 'cbrn:ScheduleByWeekType'
+      description: >-
+        A data type for a schedule where the hours are the same for all
+        weekdays.
       allOf:
         - $ref: cbrn.yaml#/components/schemas/cbrnRemarksComplexObjectType
         - type: object
-          title: 'cbrn:ScheduleByWeekType'
-          description: >-
-            A data type for a schedule where the hours are the same for all
-            weekdays.
-          required:
-            - '@context'
           properties:
-            '@context':
-              type: string
-              description: cbrnScheduleByWeekType JSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/cbrnScheduleByWeekTypeContext.json
             weekEndHours:
               type: array
               description: >-
@@ -30,18 +23,17 @@ components:
                 reference is cbrn:WeekDayHoursText
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
+            '@context':
+              type: string
+              description: cbrnScheduleByWeekType JSON-LD context
+              default: ../JSON-LD_Contexts/cbrnScheduleByWeekTypeContext.json
+              enum:
+                - ../JSON-LD_Contexts/cbrnScheduleByWeekTypeContext.json
     cbrnRemarksComplexObjectType:
       type: object
       title: 'cbrn:RemarksComplexObjectType'
       description: A data type providing a Remark via inheritance to applicable Types.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: cbrnRemarksComplexObjectType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/cbrnRemarksComplexObjectTypeContext.json
         remark:
           type: array
           description: >-
@@ -50,22 +42,21 @@ components:
             element. NIEM reference is cbrn:RemarkText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: cbrnRemarksComplexObjectType JSON-LD context
+          default: ../JSON-LD_Contexts/cbrnRemarksComplexObjectTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/cbrnRemarksComplexObjectTypeContext.json
     cbrnScheduleByWeekDayType:
+      title: 'cbrn:ScheduleByWeekDayType'
+      description: >-
+        A data type for a schedule where the hours are not the same for all
+        weekdays.
       allOf:
         - $ref: cbrn.yaml#/components/schemas/cbrnRemarksComplexObjectType
         - type: object
-          title: 'cbrn:ScheduleByWeekDayType'
-          description: >-
-            A data type for a schedule where the hours are not the same for all
-            weekdays.
-          required:
-            - '@context'
           properties:
-            '@context':
-              type: string
-              description: cbrnScheduleByWeekDayType JSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/cbrnScheduleByWeekDayTypeContext.json
             mondayHours:
               type: array
               description: >-
@@ -115,20 +106,19 @@ components:
                 reference is cbrn:SundayHoursText
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
+            '@context':
+              type: string
+              description: cbrnScheduleByWeekDayType JSON-LD context
+              default: ../JSON-LD_Contexts/cbrnScheduleByWeekDayTypeContext.json
+              enum:
+                - ../JSON-LD_Contexts/cbrnScheduleByWeekDayTypeContext.json
     cbrnOperatingScheduleType:
       type: object
       title: 'cbrn:OperatingScheduleType'
       description: >-
         A data type for a schedule providing the beginning and ending hours of
         operation by weekday, for a designated time period.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: cbrnOperatingScheduleType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/cbrnOperatingScheduleTypeContext.json
         scheduleStartDateTime:
           type: array
           description: >-
@@ -152,18 +142,17 @@ components:
             NIEM reference is cbrn:ScheduleTimeZoneText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: cbrnOperatingScheduleType JSON-LD context
+          default: ../JSON-LD_Contexts/cbrnOperatingScheduleTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/cbrnOperatingScheduleTypeContext.json
     cbrnSiteLocationAugmentationType:
       type: object
       title: 'cbrn:SiteLocationAugmentationType'
       description: A data type for additional information about a site location.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: cbrnSiteLocationAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/cbrnSiteLocationAugmentationTypeContext.json
         geographicPoint:
           type: array
           description: >-
@@ -215,26 +204,25 @@ components:
             reference is cbrn:SpecialEventSecurityArea
           items:
             $ref: geo.yaml#/components/schemas/geoPolygonType
+        '@context':
+          type: string
+          description: cbrnSiteLocationAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/cbrnSiteLocationAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/cbrnSiteLocationAugmentationTypeContext.json
     cbrnGeographicPointType:
+      title: 'cbrn:GeographicPointType'
+      description: >-
+        A data type for geographical coordinates of a point on the surface of
+        the earth. For latitudes, positive values correspond to Northern
+        latitudes, and negative values to Southern; for longitudes, positive
+        values are Eastern longitudes and negative are Western. The units of
+        measure for  elevation and positional accuracy elements is given by the
+        units attribute.
       allOf:
         - $ref: cbrn.yaml#/components/schemas/cbrnRemarksComplexObjectType
         - type: object
-          title: 'cbrn:GeographicPointType'
-          description: >-
-            A data type for geographical coordinates of a point on the surface
-            of the earth. For latitudes, positive values correspond to Northern
-            latitudes, and negative values to Southern; for longitudes, positive
-            values are Eastern longitudes and negative are Western. The units of
-            measure for  elevation and positional accuracy elements is given by
-            the units attribute.
-          required:
-            - '@context'
           properties:
-            '@context':
-              type: string
-              description: cbrnGeographicPointType JSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/cbrnGeographicPointTypeContext.json
             latitudeValue:
               description: >-
                 A point's latitude on the surface of the earth expressed as
@@ -292,20 +280,19 @@ components:
                 A unit of measure for a value element. If used, the unit of
                 measure shall be as stated in the documentation for the element.
                 NIEM reference is cbrn:unitsText
+            '@context':
+              type: string
+              description: cbrnGeographicPointType JSON-LD context
+              default: ../JSON-LD_Contexts/cbrnGeographicPointTypeContext.json
+              enum:
+                - ../JSON-LD_Contexts/cbrnGeographicPointTypeContext.json
     cbrnAngle90Type:
       type: object
       title: 'cbrn:Angle90Type'
       description: >-
         A data type for an inclination measure where the units are decimal
         degrees and the values range from +90.0 to -90.0.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: cbrnAngle90Type JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/cbrnAngle90TypeContext.json
         simpleType:
           $ref: cbrn.yaml#/components/schemas/cbrnAngle90SimpleType
         units:
@@ -314,36 +301,34 @@ components:
             A unit of measure for a value element. If used, the unit of measure
             shall be as stated in the documentation for the element. NIEM
             reference is cbrn:unitsText
+        '@context':
+          type: string
+          description: cbrnAngle90Type JSON-LD context
+          default: ../JSON-LD_Contexts/cbrnAngle90TypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/cbrnAngle90TypeContext.json
     cbrnAngle90SimpleType:
       type: object
       title: 'cbrn:Angle90SimpleType'
       description: >-
         A data type for an inclination measure where the units are decimal
         degrees and the values range from +90.0 to -90.0.
-      required:
-        - '@context'
       properties:
+        decimal:
+          type: string
         '@context':
           type: string
           description: cbrnAngle90SimpleType JSON-LD context
+          default: ../JSON-LD_Contexts/cbrnAngle90SimpleTypeContext.json
           enum:
             - ../JSON-LD_Contexts/cbrnAngle90SimpleTypeContext.json
-        decimal:
-          type: string
     cbrnAngle180Type:
       type: object
       title: 'cbrn:Angle180Type'
       description: >-
         A data type for an angle measure where the units are decimal degrees and
         the values range from +180.0 to -180.0.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: cbrnAngle180Type JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/cbrnAngle180TypeContext.json
         simpleType:
           $ref: cbrn.yaml#/components/schemas/cbrnAngle180SimpleType
         units:
@@ -352,38 +337,36 @@ components:
             A unit of measure for a value element. If used, the unit of measure
             shall be as stated in the documentation for the element. NIEM
             reference is cbrn:unitsText
+        '@context':
+          type: string
+          description: cbrnAngle180Type JSON-LD context
+          default: ../JSON-LD_Contexts/cbrnAngle180TypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/cbrnAngle180TypeContext.json
     cbrnAngle180SimpleType:
       type: object
       title: 'cbrn:Angle180SimpleType'
       description: >-
         A data type for an angle measure where the units are decimal degrees and
         the values range from +180.0 to -180.0.
-      required:
-        - '@context'
       properties:
+        decimal:
+          type: string
         '@context':
           type: string
           description: cbrnAngle180SimpleType JSON-LD context
+          default: ../JSON-LD_Contexts/cbrnAngle180SimpleTypeContext.json
           enum:
             - ../JSON-LD_Contexts/cbrnAngle180SimpleTypeContext.json
-        decimal:
-          type: string
     cbrnMapGuideLocationType:
+      title: 'cbrn:MapGuideLocationType'
+      description: >-
+        A data type for location information based on a Guide map published by a
+        vendor.
       allOf:
         - $ref: cbrn.yaml#/components/schemas/cbrnRemarksComplexObjectType
         - type: object
-          title: 'cbrn:MapGuideLocationType'
-          description: >-
-            A data type for location information based on a Guide map published
-            by a vendor.
-          required:
-            - '@context'
           properties:
-            '@context':
-              type: string
-              description: cbrnMapGuideLocationType JSON-LD context
-              enum:
-                - ../JSON-LD_Contexts/cbrnMapGuideLocationTypeContext.json
             mapGuideBrandCode:
               type: array
               description: >-
@@ -413,18 +396,17 @@ components:
                 NIEM reference is cbrn:MapGuideGridNumberID
               items:
                 $ref: niem-xs.yaml#/components/schemas/niem-xsstring
+            '@context':
+              type: string
+              description: cbrnMapGuideLocationType JSON-LD context
+              default: ../JSON-LD_Contexts/cbrnMapGuideLocationTypeContext.json
+              enum:
+                - ../JSON-LD_Contexts/cbrnMapGuideLocationTypeContext.json
     cbrnConveyanceAugmentationType:
       type: object
       title: 'cbrn:ConveyanceAugmentationType'
       description: A data type for additional information about a conveyance.
-      required:
-        - '@context'
       properties:
-        '@context':
-          type: string
-          description: cbrnConveyanceAugmentationType JSON-LD context
-          enum:
-            - ../JSON-LD_Contexts/cbrnConveyanceAugmentationTypeContext.json
         conveyanceKindCode:
           type: array
           description: >-
@@ -441,3 +423,9 @@ components:
             measure. NIEM reference is cbrn:ConveyanceWeightDescriptionText
           items:
             $ref: nc.yaml#/components/schemas/ncTextType
+        '@context':
+          type: string
+          description: cbrnConveyanceAugmentationType JSON-LD context
+          default: ../JSON-LD_Contexts/cbrnConveyanceAugmentationTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/cbrnConveyanceAugmentationTypeContext.json
