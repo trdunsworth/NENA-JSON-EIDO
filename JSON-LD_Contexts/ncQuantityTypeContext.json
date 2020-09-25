@@ -1,0 +1,8 @@
+{
+  "xs": "http://www.w3.org/2001/XMLSchema#",
+  "decimal": "xs:decimal",
+  "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+  "confidencePercent": "nc:confidencePercent",
+  "tolerance": "nc:toleranceNumeric",
+  "quantityUnit": "nc:quantityUnitText"
+}

@@ -1,0 +1,81 @@
+components:
+  schemas:
+    uspsUSStateCodeType:
+      type: object
+      title: 'usps:USStateCodeType'
+      description: A data type for states.
+      properties:
+        simpleType:
+          $ref: usps.yaml#/components/schemas/uspsUSStateCodeSimpleType
+        '@context':
+          type: string
+          description: uspsUSStateCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/uspsUSStateCodeTypeContext.json
+          enum:
+            - ../JSON-LD_Contexts/uspsUSStateCodeTypeContext.json
+    uspsUSStateCodeSimpleType:
+      type: string
+      description: A data type for states.
+      enum:
+        - AA
+        - AE
+        - AK
+        - AL
+        - AP
+        - AR
+        - AS
+        - AZ
+        - CA
+        - CO
+        - CT
+        - DC
+        - DE
+        - FL
+        - FM
+        - GA
+        - GU
+        - HI
+        - IA
+        - ID
+        - IL
+        - IN
+        - KS
+        - KY
+        - LA
+        - MA
+        - MD
+        - ME
+        - MH
+        - MI
+        - MN
+        - MO
+        - MP
+        - MS
+        - MT
+        - NC
+        - ND
+        - NE
+        - NH
+        - NJ
+        - NM
+        - NV
+        - NY
+        - OH
+        - OK
+        - OR
+        - PA
+        - PR
+        - PW
+        - RI
+        - SC
+        - SD
+        - TN
+        - TX
+        - UT
+        - VA
+        - VI
+        - VT
+        - WA
+        - WI
+        - WV
+        - WY

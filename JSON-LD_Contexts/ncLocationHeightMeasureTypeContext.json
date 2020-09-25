@@ -1,0 +1,7 @@
+{
+  "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+  "locationHeightVerticalDatumCode": "nc:LocationHeightVerticalDatumCode",
+  "locationHeightVerticalDatum": "nc:LocationHeightVerticalDatumText",
+  "nc-4.0.1": "http://publication.niem.gov/niem/niem-core/4.0/1/#",
+  "augmentation": "nc-4.0.1:LocationHeightMeasureAugmentation"
+}

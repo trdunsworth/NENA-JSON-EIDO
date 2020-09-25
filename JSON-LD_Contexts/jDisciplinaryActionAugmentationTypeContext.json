@@ -1,0 +1,5 @@
+{
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+  "disciplinaryActionFacility": "j:DisciplinaryActionFacility",
+  "disciplinaryActionSanction": "j:DisciplinaryActionSanction"
+}
