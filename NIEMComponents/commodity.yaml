@@ -11,10 +11,11 @@ components:
         '@context':
           type: string
           description: commodityConveyanceCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/commodityConveyanceCategoryCodeTypeContext.json
+          default: >-
+            ../JSON-LD_Contexts/commodityConveyanceCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/commodityConveyanceCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/commodityConveyanceCategoryCodeTypeContext.jsonld
     commodityConveyanceCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of conveyance.
@@ -68,10 +69,10 @@ components:
           type: string
           description: commodityElectronicEquipmentCategoryCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/commodityElectronicEquipmentCategoryCodeTypeContext.json
+            ../JSON-LD_Contexts/commodityElectronicEquipmentCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/commodityElectronicEquipmentCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/commodityElectronicEquipmentCategoryCodeTypeContext.jsonld
     commodityElectronicEquipmentCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of electronic equipment.
@@ -122,10 +123,10 @@ components:
           type: string
           description: commodityElectronicInstrumentCategoryCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/commodityElectronicInstrumentCategoryCodeTypeContext.json
+            ../JSON-LD_Contexts/commodityElectronicInstrumentCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/commodityElectronicInstrumentCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/commodityElectronicInstrumentCategoryCodeTypeContext.jsonld
     commodityElectronicInstrumentCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of electronic instrument.
@@ -164,9 +165,10 @@ components:
         '@context':
           type: string
           description: commodityMachineryCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/commodityMachineryCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/commodityMachineryCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/commodityMachineryCategoryCodeTypeContext.json
+            - >-
+              ../JSON-LD_Contexts/commodityMachineryCategoryCodeTypeContext.jsonld
     commodityMachineryCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of machinery.

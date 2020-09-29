@@ -12,10 +12,10 @@ components:
           type: string
           description: imImmigrationClassOfAdmissionCategoryCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/imImmigrationClassOfAdmissionCategoryCodeTypeContext.json
+            ../JSON-LD_Contexts/imImmigrationClassOfAdmissionCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/imImmigrationClassOfAdmissionCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/imImmigrationClassOfAdmissionCategoryCodeTypeContext.jsonld
     imImmigrationClassOfAdmissionCategoryCodeSimpleType:
       type: string
       description: A data type for Immigrant Class of Admission (COA) Codes
@@ -1026,9 +1026,9 @@ components:
         '@context':
           type: string
           description: imStatusAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/imStatusAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/imStatusAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/imStatusAugmentationTypeContext.json
+            - ../JSON-LD_Contexts/imStatusAugmentationTypeContext.jsonld
     imRelativeLocationAugmentationType:
       type: object
       title: 'im:RelativeLocationAugmentationType'
@@ -1044,9 +1044,10 @@ components:
         '@context':
           type: string
           description: imRelativeLocationAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/imRelativeLocationAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/imRelativeLocationAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/imRelativeLocationAugmentationTypeContext.json
+            - >-
+              ../JSON-LD_Contexts/imRelativeLocationAugmentationTypeContext.jsonld
     imLocationAugmentationType:
       type: object
       title: 'im:LocationAugmentationType'
@@ -1076,9 +1077,9 @@ components:
         '@context':
           type: string
           description: imLocationAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/imLocationAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/imLocationAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/imLocationAugmentationTypeContext.json
+            - ../JSON-LD_Contexts/imLocationAugmentationTypeContext.jsonld
     imPersonNameAugmentationType:
       type: object
       title: 'im:PersonNameAugmentationType'
@@ -1101,9 +1102,9 @@ components:
         '@context':
           type: string
           description: imPersonNameAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/imPersonNameAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/imPersonNameAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/imPersonNameAugmentationTypeContext.json
+            - ../JSON-LD_Contexts/imPersonNameAugmentationTypeContext.jsonld
     imProgramAugmentationType:
       type: object
       title: 'im:ProgramAugmentationType'
@@ -1148,9 +1149,9 @@ components:
         '@context':
           type: string
           description: imProgramAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/imProgramAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/imProgramAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/imProgramAugmentationTypeContext.json
+            - ../JSON-LD_Contexts/imProgramAugmentationTypeContext.jsonld
     imPersonEmploymentAssociationAugmentationType:
       type: object
       title: 'im:PersonEmploymentAssociationAugmentationType'
@@ -1207,10 +1208,10 @@ components:
           type: string
           description: imPersonEmploymentAssociationAugmentationType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/imPersonEmploymentAssociationAugmentationTypeContext.json
+            ../JSON-LD_Contexts/imPersonEmploymentAssociationAugmentationTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/imPersonEmploymentAssociationAugmentationTypeContext.json
+              ../JSON-LD_Contexts/imPersonEmploymentAssociationAugmentationTypeContext.jsonld
     imJudicialOfficialAugmentationType:
       type: object
       title: 'im:JudicialOfficialAugmentationType'
@@ -1226,9 +1227,10 @@ components:
         '@context':
           type: string
           description: imJudicialOfficialAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/imJudicialOfficialAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/imJudicialOfficialAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/imJudicialOfficialAugmentationTypeContext.json
+            - >-
+              ../JSON-LD_Contexts/imJudicialOfficialAugmentationTypeContext.jsonld
     imPersonAugmentationType:
       type: object
       title: 'im:PersonAugmentationType'
@@ -1244,6 +1246,6 @@ components:
         '@context':
           type: string
           description: imPersonAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/imPersonAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/imPersonAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/imPersonAugmentationTypeContext.json
+            - ../JSON-LD_Contexts/imPersonAugmentationTypeContext.jsonld

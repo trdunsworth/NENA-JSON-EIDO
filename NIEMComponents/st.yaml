@@ -194,9 +194,9 @@ components:
         '@context':
           type: string
           description: stLocationRoadwayType JSON-LD context
-          default: ../JSON-LD_Contexts/stLocationRoadwayTypeContext.json
+          default: ../JSON-LD_Contexts/stLocationRoadwayTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/stLocationRoadwayTypeContext.json
+            - ../JSON-LD_Contexts/stLocationRoadwayTypeContext.jsonld
     stFunctionalClassCodeType:
       type: object
       title: 'st:FunctionalClassCodeType'
@@ -207,9 +207,9 @@ components:
         '@context':
           type: string
           description: stFunctionalClassCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/stFunctionalClassCodeTypeContext.json
+          default: ../JSON-LD_Contexts/stFunctionalClassCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/stFunctionalClassCodeTypeContext.json
+            - ../JSON-LD_Contexts/stFunctionalClassCodeTypeContext.jsonld
     stFunctionalClassCodeSimpleType:
       type: string
       description: A data type indicating functional class of the segment
@@ -233,10 +233,10 @@ components:
           type: string
           description: stIntersectionJunctionTrafficControlCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/stIntersectionJunctionTrafficControlCodeTypeContext.json
+            ../JSON-LD_Contexts/stIntersectionJunctionTrafficControlCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/stIntersectionJunctionTrafficControlCodeTypeContext.json
+              ../JSON-LD_Contexts/stIntersectionJunctionTrafficControlCodeTypeContext.jsonld
     stIntersectionJunctionTrafficControlCodeSimpleType:
       type: string
       description: A data type indicating traffic control present at intersection/junction
@@ -262,9 +262,9 @@ components:
         '@context':
           type: string
           description: stRoadwayLightingCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/stRoadwayLightingCodeTypeContext.json
+          default: ../JSON-LD_Contexts/stRoadwayLightingCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/stRoadwayLightingCodeTypeContext.json
+            - ../JSON-LD_Contexts/stRoadwayLightingCodeTypeContext.jsonld
     stRoadwayLightingCodeSimpleType:
       type: string
       description: A data type for a kind of roadway illumination.

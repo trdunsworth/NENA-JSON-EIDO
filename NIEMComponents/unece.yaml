@@ -10,9 +10,9 @@ components:
         '@context':
           type: string
           description: uneceLengthCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/uneceLengthCodeTypeContext.json
+          default: ../JSON-LD_Contexts/uneceLengthCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/uneceLengthCodeTypeContext.json
+            - ../JSON-LD_Contexts/uneceLengthCodeTypeContext.jsonld
     uneceLengthCodeSimpleType:
       type: string
       description: A data type for units of measurements for a length value.
@@ -51,9 +51,9 @@ components:
         '@context':
           type: string
           description: uneceMassCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/uneceMassCodeTypeContext.json
+          default: ../JSON-LD_Contexts/uneceMassCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/uneceMassCodeTypeContext.json
+            - ../JSON-LD_Contexts/uneceMassCodeTypeContext.jsonld
     uneceMassCodeSimpleType:
       type: string
       description: A data type for units of measurement for a weight value.
@@ -89,9 +89,9 @@ components:
         '@context':
           type: string
           description: uneceVelocityCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/uneceVelocityCodeTypeContext.json
+          default: ../JSON-LD_Contexts/uneceVelocityCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/uneceVelocityCodeTypeContext.json
+            - ../JSON-LD_Contexts/uneceVelocityCodeTypeContext.jsonld
     uneceVelocityCodeSimpleType:
       type: string
       description: A data type for units of measurement for a speed or velocity.
@@ -116,9 +116,9 @@ components:
         '@context':
           type: string
           description: uneceTimeCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/uneceTimeCodeTypeContext.json
+          default: ../JSON-LD_Contexts/uneceTimeCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/uneceTimeCodeTypeContext.json
+            - ../JSON-LD_Contexts/uneceTimeCodeTypeContext.jsonld
     uneceTimeCodeSimpleType:
       type: string
       description: A data type for units of time.
@@ -145,9 +145,9 @@ components:
         '@context':
           type: string
           description: uneceVolumeUnitCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/uneceVolumeUnitCodeTypeContext.json
+          default: ../JSON-LD_Contexts/uneceVolumeUnitCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/uneceVolumeUnitCodeTypeContext.json
+            - ../JSON-LD_Contexts/uneceVolumeUnitCodeTypeContext.jsonld
     uneceVolumeUnitCodeSimpleType:
       type: string
       description: A data type for volume unit of measurement codes.

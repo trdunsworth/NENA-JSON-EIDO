@@ -10,9 +10,9 @@ components:
         '@context':
           type: string
           description: cbrnclMIMEContentCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/cbrnclMIMEContentCodeTypeContext.json
+          default: ../JSON-LD_Contexts/cbrnclMIMEContentCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/cbrnclMIMEContentCodeTypeContext.json
+            - ../JSON-LD_Contexts/cbrnclMIMEContentCodeTypeContext.jsonld
     cbrnclMIMEContentCodeSimpleType:
       type: string
       description: >-
@@ -216,9 +216,9 @@ components:
         '@context':
           type: string
           description: cbrnclMapGuideBrandCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/cbrnclMapGuideBrandCodeTypeContext.json
+          default: ../JSON-LD_Contexts/cbrnclMapGuideBrandCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/cbrnclMapGuideBrandCodeTypeContext.json
+            - ../JSON-LD_Contexts/cbrnclMapGuideBrandCodeTypeContext.jsonld
     cbrnclMapGuideBrandCodeSimpleType:
       type: string
       description: A data type that defines the codes for the brands of map guides.
@@ -235,9 +235,9 @@ components:
         '@context':
           type: string
           description: cbrnclConveyanceKindCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/cbrnclConveyanceKindCodeTypeContext.json
+          default: ../JSON-LD_Contexts/cbrnclConveyanceKindCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/cbrnclConveyanceKindCodeTypeContext.json
+            - ../JSON-LD_Contexts/cbrnclConveyanceKindCodeTypeContext.jsonld
     cbrnclConveyanceKindCodeSimpleType:
       type: string
       description: A data type for the kinds of conveyances.

@@ -10,9 +10,9 @@ components:
         '@context':
           type: string
           description: iso_4217CurrencyCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/iso_4217CurrencyCodeTypeContext.json
+          default: ../JSON-LD_Contexts/iso_4217CurrencyCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/iso_4217CurrencyCodeTypeContext.json
+            - ../JSON-LD_Contexts/iso_4217CurrencyCodeTypeContext.jsonld
     iso_4217CurrencyCodeSimpleType:
       type: string
       description: A data type for a currency that qualifies a monetary amount.

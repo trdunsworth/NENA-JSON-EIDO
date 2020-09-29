@@ -26,9 +26,9 @@ components:
             '@context':
               type: string
               description: cbrnScheduleByWeekType JSON-LD context
-              default: ../JSON-LD_Contexts/cbrnScheduleByWeekTypeContext.json
+              default: ../JSON-LD_Contexts/cbrnScheduleByWeekTypeContext.jsonld
               enum:
-                - ../JSON-LD_Contexts/cbrnScheduleByWeekTypeContext.json
+                - ../JSON-LD_Contexts/cbrnScheduleByWeekTypeContext.jsonld
     cbrnRemarksComplexObjectType:
       type: object
       title: 'cbrn:RemarksComplexObjectType'
@@ -45,9 +45,9 @@ components:
         '@context':
           type: string
           description: cbrnRemarksComplexObjectType JSON-LD context
-          default: ../JSON-LD_Contexts/cbrnRemarksComplexObjectTypeContext.json
+          default: ../JSON-LD_Contexts/cbrnRemarksComplexObjectTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/cbrnRemarksComplexObjectTypeContext.json
+            - ../JSON-LD_Contexts/cbrnRemarksComplexObjectTypeContext.jsonld
     cbrnScheduleByWeekDayType:
       title: 'cbrn:ScheduleByWeekDayType'
       description: >-
@@ -109,9 +109,9 @@ components:
             '@context':
               type: string
               description: cbrnScheduleByWeekDayType JSON-LD context
-              default: ../JSON-LD_Contexts/cbrnScheduleByWeekDayTypeContext.json
+              default: ../JSON-LD_Contexts/cbrnScheduleByWeekDayTypeContext.jsonld
               enum:
-                - ../JSON-LD_Contexts/cbrnScheduleByWeekDayTypeContext.json
+                - ../JSON-LD_Contexts/cbrnScheduleByWeekDayTypeContext.jsonld
     cbrnOperatingScheduleType:
       type: object
       title: 'cbrn:OperatingScheduleType'
@@ -145,9 +145,9 @@ components:
         '@context':
           type: string
           description: cbrnOperatingScheduleType JSON-LD context
-          default: ../JSON-LD_Contexts/cbrnOperatingScheduleTypeContext.json
+          default: ../JSON-LD_Contexts/cbrnOperatingScheduleTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/cbrnOperatingScheduleTypeContext.json
+            - ../JSON-LD_Contexts/cbrnOperatingScheduleTypeContext.jsonld
     cbrnSiteLocationAugmentationType:
       type: object
       title: 'cbrn:SiteLocationAugmentationType'
@@ -207,9 +207,9 @@ components:
         '@context':
           type: string
           description: cbrnSiteLocationAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/cbrnSiteLocationAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/cbrnSiteLocationAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/cbrnSiteLocationAugmentationTypeContext.json
+            - ../JSON-LD_Contexts/cbrnSiteLocationAugmentationTypeContext.jsonld
     cbrnGeographicPointType:
       title: 'cbrn:GeographicPointType'
       description: >-
@@ -283,9 +283,9 @@ components:
             '@context':
               type: string
               description: cbrnGeographicPointType JSON-LD context
-              default: ../JSON-LD_Contexts/cbrnGeographicPointTypeContext.json
+              default: ../JSON-LD_Contexts/cbrnGeographicPointTypeContext.jsonld
               enum:
-                - ../JSON-LD_Contexts/cbrnGeographicPointTypeContext.json
+                - ../JSON-LD_Contexts/cbrnGeographicPointTypeContext.jsonld
     cbrnAngle90Type:
       type: object
       title: 'cbrn:Angle90Type'
@@ -304,9 +304,9 @@ components:
         '@context':
           type: string
           description: cbrnAngle90Type JSON-LD context
-          default: ../JSON-LD_Contexts/cbrnAngle90TypeContext.json
+          default: ../JSON-LD_Contexts/cbrnAngle90TypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/cbrnAngle90TypeContext.json
+            - ../JSON-LD_Contexts/cbrnAngle90TypeContext.jsonld
     cbrnAngle90SimpleType:
       type: object
       title: 'cbrn:Angle90SimpleType'
@@ -319,9 +319,9 @@ components:
         '@context':
           type: string
           description: cbrnAngle90SimpleType JSON-LD context
-          default: ../JSON-LD_Contexts/cbrnAngle90SimpleTypeContext.json
+          default: ../JSON-LD_Contexts/cbrnAngle90SimpleTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/cbrnAngle90SimpleTypeContext.json
+            - ../JSON-LD_Contexts/cbrnAngle90SimpleTypeContext.jsonld
     cbrnAngle180Type:
       type: object
       title: 'cbrn:Angle180Type'
@@ -340,9 +340,9 @@ components:
         '@context':
           type: string
           description: cbrnAngle180Type JSON-LD context
-          default: ../JSON-LD_Contexts/cbrnAngle180TypeContext.json
+          default: ../JSON-LD_Contexts/cbrnAngle180TypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/cbrnAngle180TypeContext.json
+            - ../JSON-LD_Contexts/cbrnAngle180TypeContext.jsonld
     cbrnAngle180SimpleType:
       type: object
       title: 'cbrn:Angle180SimpleType'
@@ -355,9 +355,9 @@ components:
         '@context':
           type: string
           description: cbrnAngle180SimpleType JSON-LD context
-          default: ../JSON-LD_Contexts/cbrnAngle180SimpleTypeContext.json
+          default: ../JSON-LD_Contexts/cbrnAngle180SimpleTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/cbrnAngle180SimpleTypeContext.json
+            - ../JSON-LD_Contexts/cbrnAngle180SimpleTypeContext.jsonld
     cbrnMapGuideLocationType:
       title: 'cbrn:MapGuideLocationType'
       description: >-
@@ -399,9 +399,9 @@ components:
             '@context':
               type: string
               description: cbrnMapGuideLocationType JSON-LD context
-              default: ../JSON-LD_Contexts/cbrnMapGuideLocationTypeContext.json
+              default: ../JSON-LD_Contexts/cbrnMapGuideLocationTypeContext.jsonld
               enum:
-                - ../JSON-LD_Contexts/cbrnMapGuideLocationTypeContext.json
+                - ../JSON-LD_Contexts/cbrnMapGuideLocationTypeContext.jsonld
     cbrnConveyanceAugmentationType:
       type: object
       title: 'cbrn:ConveyanceAugmentationType'
@@ -426,6 +426,6 @@ components:
         '@context':
           type: string
           description: cbrnConveyanceAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/cbrnConveyanceAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/cbrnConveyanceAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/cbrnConveyanceAugmentationTypeContext.json
+            - ../JSON-LD_Contexts/cbrnConveyanceAugmentationTypeContext.jsonld

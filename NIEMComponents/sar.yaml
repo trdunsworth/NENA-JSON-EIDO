@@ -10,9 +10,9 @@ components:
         '@context':
           type: string
           description: sarTargetSectorCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/sarTargetSectorCodeTypeContext.json
+          default: ../JSON-LD_Contexts/sarTargetSectorCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/sarTargetSectorCodeTypeContext.json
+            - ../JSON-LD_Contexts/sarTargetSectorCodeTypeContext.jsonld
     sarTargetSectorCodeSimpleType:
       type: string
       description: A data type for the broad categorization of infrastructure type.

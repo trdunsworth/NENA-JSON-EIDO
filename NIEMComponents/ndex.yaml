@@ -12,9 +12,9 @@ components:
         '@context':
           type: string
           description: ndexApprovalStatusCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexApprovalStatusCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexApprovalStatusCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexApprovalStatusCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexApprovalStatusCodeTypeContext.jsonld
     ndexApprovalStatusCodeSimpleType:
       type: string
       description: >-
@@ -37,9 +37,9 @@ components:
         '@context':
           type: string
           description: ndexIncidentStatusCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexIncidentStatusCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexIncidentStatusCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexIncidentStatusCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexIncidentStatusCodeTypeContext.jsonld
     ndexIncidentStatusCodeSimpleType:
       type: string
       description: >-
@@ -70,10 +70,11 @@ components:
         '@context':
           type: string
           description: ndexSupervisedReleaseStatusCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexSupervisedReleaseStatusCodeTypeContext.json
+          default: >-
+            ../JSON-LD_Contexts/ndexSupervisedReleaseStatusCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexSupervisedReleaseStatusCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexSupervisedReleaseStatusCodeTypeContext.jsonld
     ndexSupervisedReleaseStatusCodeSimpleType:
       type: string
       description: >-
@@ -101,9 +102,9 @@ components:
         '@context':
           type: string
           description: ndexBinaryCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexBinaryCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexBinaryCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexBinaryCategoryCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexBinaryCategoryCodeTypeContext.jsonld
     ndexBinaryCategoryCodeSimpleType:
       type: string
       description: >-
@@ -153,9 +154,9 @@ components:
         '@context':
           type: string
           description: ndexLocationCategoryNDExCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexLocationCategoryNDExCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexLocationCategoryNDExCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexLocationCategoryNDExCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexLocationCategoryNDExCodeTypeContext.jsonld
     ndexLocationCategoryNDExCodeSimpleType:
       type: string
       description: >-
@@ -492,10 +493,11 @@ components:
         '@context':
           type: string
           description: ndexLocationGeneralCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexLocationGeneralCategoryCodeTypeContext.json
+          default: >-
+            ../JSON-LD_Contexts/ndexLocationGeneralCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexLocationGeneralCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexLocationGeneralCategoryCodeTypeContext.jsonld
     ndexLocationGeneralCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies the general type of location.
@@ -520,10 +522,10 @@ components:
           type: string
           description: ndexLocationSublocationCategoryCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/ndexLocationSublocationCategoryCodeTypeContext.json
+            ../JSON-LD_Contexts/ndexLocationSublocationCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexLocationSublocationCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexLocationSublocationCategoryCodeTypeContext.jsonld
     ndexLocationSublocationCategoryCodeSimpleType:
       type: string
       description: >-
@@ -627,10 +629,11 @@ components:
         '@context':
           type: string
           description: ndexTelephoneNumberCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexTelephoneNumberCategoryCodeTypeContext.json
+          default: >-
+            ../JSON-LD_Contexts/ndexTelephoneNumberCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexTelephoneNumberCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexTelephoneNumberCategoryCodeTypeContext.jsonld
     ndexTelephoneNumberCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of telephone number.
@@ -651,9 +654,9 @@ components:
         '@context':
           type: string
           description: ndexIndianNationCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexIndianNationCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexIndianNationCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexIndianNationCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexIndianNationCodeTypeContext.jsonld
     ndexIndianNationCodeSimpleType:
       type: string
       description: A data type for a code that identifies an American Indian nation.
@@ -712,9 +715,9 @@ components:
         '@context':
           type: string
           description: ndexOrganizationCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexOrganizationCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexOrganizationCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexOrganizationCategoryCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexOrganizationCategoryCodeTypeContext.jsonld
     ndexOrganizationCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies the type of organization.
@@ -752,9 +755,9 @@ components:
         '@context':
           type: string
           description: ndexArtObjectCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexArtObjectCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexArtObjectCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexArtObjectCategoryCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexArtObjectCategoryCodeTypeContext.jsonld
     ndexArtObjectCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies the type of art object.
@@ -778,10 +781,10 @@ components:
           type: string
           description: ndexAudioVisualRecordingCategoryCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/ndexAudioVisualRecordingCategoryCodeTypeContext.json
+            ../JSON-LD_Contexts/ndexAudioVisualRecordingCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexAudioVisualRecordingCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexAudioVisualRecordingCategoryCodeTypeContext.jsonld
     ndexAudioVisualRecordingCategoryCodeSimpleType:
       type: string
       description: >-
@@ -811,9 +814,9 @@ components:
         '@context':
           type: string
           description: ndexBicycleCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexBicycleCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexBicycleCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexBicycleCategoryCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexBicycleCategoryCodeTypeContext.jsonld
     ndexBicycleCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies the type of bicycle.
@@ -834,9 +837,9 @@ components:
         '@context':
           type: string
           description: ndexClothingCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexClothingCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexClothingCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexClothingCategoryCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexClothingCategoryCodeTypeContext.jsonld
     ndexClothingCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of clothing.
@@ -898,10 +901,10 @@ components:
           type: string
           description: ndexDataProcessingEquipmentCategoryCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/ndexDataProcessingEquipmentCategoryCodeTypeContext.json
+            ../JSON-LD_Contexts/ndexDataProcessingEquipmentCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexDataProcessingEquipmentCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexDataProcessingEquipmentCategoryCodeTypeContext.jsonld
     ndexDataProcessingEquipmentCategoryCodeSimpleType:
       type: string
       description: >-
@@ -1082,10 +1085,10 @@ components:
           type: string
           description: ndexConstructionMaterialCategoryCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/ndexConstructionMaterialCategoryCodeTypeContext.json
+            ../JSON-LD_Contexts/ndexConstructionMaterialCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexConstructionMaterialCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexConstructionMaterialCategoryCodeTypeContext.jsonld
     ndexConstructionMaterialCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of construction material.
@@ -1146,10 +1149,11 @@ components:
         '@context':
           type: string
           description: ndexConsumableGoodsCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexConsumableGoodsCategoryCodeTypeContext.json
+          default: >-
+            ../JSON-LD_Contexts/ndexConsumableGoodsCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexConsumableGoodsCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexConsumableGoodsCategoryCodeTypeContext.jsonld
     ndexConsumableGoodsCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of consumable goods.
@@ -1192,10 +1196,11 @@ components:
         '@context':
           type: string
           description: ndexCreditBankIDCardCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexCreditBankIDCardCategoryCodeTypeContext.json
+          default: >-
+            ../JSON-LD_Contexts/ndexCreditBankIDCardCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexCreditBankIDCardCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexCreditBankIDCardCategoryCodeTypeContext.jsonld
     ndexCreditBankIDCardCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of Credit/Bank/ID Card.
@@ -1241,10 +1246,10 @@ components:
           type: string
           description: ndexDrillingEquipmentCategoryCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/ndexDrillingEquipmentCategoryCodeTypeContext.json
+            ../JSON-LD_Contexts/ndexDrillingEquipmentCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexDrillingEquipmentCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexDrillingEquipmentCategoryCodeTypeContext.jsonld
     ndexDrillingEquipmentCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies the type of drilling tool.
@@ -1314,10 +1319,10 @@ components:
           type: string
           description: ndexEntertainmentDeviceCategoryCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/ndexEntertainmentDeviceCategoryCodeTypeContext.json
+            ../JSON-LD_Contexts/ndexEntertainmentDeviceCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexEntertainmentDeviceCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexEntertainmentDeviceCategoryCodeTypeContext.jsonld
     ndexEntertainmentDeviceCategoryCodeSimpleType:
       type: string
       description: >-
@@ -1449,10 +1454,10 @@ components:
           type: string
           description: ndexGamblingEquipmentCategoryCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/ndexGamblingEquipmentCategoryCodeTypeContext.json
+            ../JSON-LD_Contexts/ndexGamblingEquipmentCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexGamblingEquipmentCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexGamblingEquipmentCategoryCodeTypeContext.jsonld
     ndexGamblingEquipmentCategoryCodeSimpleType:
       type: string
       description: >-
@@ -1487,9 +1492,9 @@ components:
         '@context':
           type: string
           description: ndexGrainCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexGrainCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexGrainCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexGrainCategoryCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexGrainCategoryCodeTypeContext.jsonld
     ndexGrainCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of grain.
@@ -1524,10 +1529,10 @@ components:
           type: string
           description: ndexHouseholdFurnishingsCategoryCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/ndexHouseholdFurnishingsCategoryCodeTypeContext.json
+            ../JSON-LD_Contexts/ndexHouseholdFurnishingsCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexHouseholdFurnishingsCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexHouseholdFurnishingsCategoryCodeTypeContext.jsonld
     ndexHouseholdFurnishingsCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of household furnishings.
@@ -1582,9 +1587,9 @@ components:
         '@context':
           type: string
           description: ndexHousewaresCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexHousewaresCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexHousewaresCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexHousewaresCategoryCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexHousewaresCategoryCodeTypeContext.jsonld
     ndexHousewaresCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of household goods.
@@ -1672,9 +1677,9 @@ components:
         '@context':
           type: string
           description: ndexItemCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexItemCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexItemCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexItemCategoryCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexItemCategoryCodeTypeContext.jsonld
     ndexItemCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of property.
@@ -1713,9 +1718,9 @@ components:
         '@context':
           type: string
           description: ndexKeepsakeCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexKeepsakeCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexKeepsakeCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexKeepsakeCategoryCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexKeepsakeCategoryCodeTypeContext.jsonld
     ndexKeepsakeCategoryCodeSimpleType:
       type: string
       description: >-
@@ -1762,9 +1767,9 @@ components:
         '@context':
           type: string
           description: ndexKnifeCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexKnifeCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexKnifeCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexKnifeCategoryCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexKnifeCategoryCodeTypeContext.jsonld
     ndexKnifeCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a kind of knife.
@@ -1813,9 +1818,9 @@ components:
         '@context':
           type: string
           description: ndexLivestockCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexLivestockCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexLivestockCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexLivestockCategoryCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexLivestockCategoryCodeTypeContext.jsonld
     ndexLivestockCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of livestock/pet.
@@ -1863,10 +1868,10 @@ components:
           type: string
           description: ndexMusicalInstrumentCategoryCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/ndexMusicalInstrumentCategoryCodeTypeContext.json
+            ../JSON-LD_Contexts/ndexMusicalInstrumentCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexMusicalInstrumentCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexMusicalInstrumentCategoryCodeTypeContext.jsonld
     ndexMusicalInstrumentCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of musical instrument.
@@ -1925,10 +1930,11 @@ components:
         '@context':
           type: string
           description: ndexOfficeEquipmentCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexOfficeEquipmentCategoryCodeTypeContext.json
+          default: >-
+            ../JSON-LD_Contexts/ndexOfficeEquipmentCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexOfficeEquipmentCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexOfficeEquipmentCategoryCodeTypeContext.jsonld
     ndexOfficeEquipmentCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of office equipment.
@@ -2014,10 +2020,11 @@ components:
         '@context':
           type: string
           description: ndexOpticalEquipmentCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexOpticalEquipmentCategoryCodeTypeContext.json
+          default: >-
+            ../JSON-LD_Contexts/ndexOpticalEquipmentCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexOpticalEquipmentCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexOpticalEquipmentCategoryCodeTypeContext.jsonld
     ndexOpticalEquipmentCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of optical equipment.
@@ -2048,9 +2055,10 @@ components:
         '@context':
           type: string
           description: ndexPhotoEquipmentCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexPhotoEquipmentCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexPhotoEquipmentCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexPhotoEquipmentCategoryCodeTypeContext.json
+            - >-
+              ../JSON-LD_Contexts/ndexPhotoEquipmentCategoryCodeTypeContext.jsonld
     ndexPhotoEquipmentCategoryCodeSimpleType:
       type: string
       description: >-
@@ -2093,9 +2101,10 @@ components:
         '@context':
           type: string
           description: ndexServiceUtilityCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexServiceUtilityCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexServiceUtilityCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexServiceUtilityCategoryCodeTypeContext.json
+            - >-
+              ../JSON-LD_Contexts/ndexServiceUtilityCategoryCodeTypeContext.jsonld
     ndexServiceUtilityCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of public utility service.
@@ -2130,10 +2139,11 @@ components:
         '@context':
           type: string
           description: ndexSportsEquipmentCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexSportsEquipmentCategoryCodeTypeContext.json
+          default: >-
+            ../JSON-LD_Contexts/ndexSportsEquipmentCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexSportsEquipmentCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexSportsEquipmentCategoryCodeTypeContext.jsonld
     ndexSportsEquipmentCategoryCodeSimpleType:
       type: string
       description: >-
@@ -2194,9 +2204,9 @@ components:
         '@context':
           type: string
           description: ndexToolDeviceCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexToolDeviceCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexToolDeviceCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexToolDeviceCategoryCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexToolDeviceCategoryCodeTypeContext.jsonld
     ndexToolDeviceCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of tool.
@@ -2505,9 +2515,9 @@ components:
         '@context':
           type: string
           description: ndexItemGenderUseCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexItemGenderUseCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexItemGenderUseCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexItemGenderUseCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexItemGenderUseCodeTypeContext.jsonld
     ndexItemGenderUseCodeSimpleType:
       type: string
       description: >-
@@ -2533,9 +2543,9 @@ components:
         '@context':
           type: string
           description: ndexOffenseCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexOffenseCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexOffenseCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexOffenseCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexOffenseCodeTypeContext.jsonld
     ndexOffenseCodeSimpleType:
       type: string
       description: >-
@@ -3105,9 +3115,9 @@ components:
         '@context':
           type: string
           description: ndexOffenseCategoryNDExCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexOffenseCategoryNDExCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexOffenseCategoryNDExCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexOffenseCategoryNDExCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexOffenseCategoryNDExCodeTypeContext.jsonld
     ndexOffenseCategoryNDExCodeSimpleType:
       type: string
       description: A data type for a code that indicates the category of offense.
@@ -3128,10 +3138,11 @@ components:
         '@context':
           type: string
           description: ndexOffenseMOCrimeAndMotiveCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexOffenseMOCrimeAndMotiveCodeTypeContext.json
+          default: >-
+            ../JSON-LD_Contexts/ndexOffenseMOCrimeAndMotiveCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexOffenseMOCrimeAndMotiveCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexOffenseMOCrimeAndMotiveCodeTypeContext.jsonld
     ndexOffenseMOCrimeAndMotiveCodeSimpleType:
       type: string
       description: >-
@@ -3172,9 +3183,9 @@ components:
         '@context':
           type: string
           description: ndexBiasMotivationCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexBiasMotivationCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexBiasMotivationCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexBiasMotivationCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexBiasMotivationCodeTypeContext.jsonld
     ndexBiasMotivationCodeSimpleType:
       type: string
       description: >-
@@ -3232,9 +3243,9 @@ components:
         '@context':
           type: string
           description: ndexBiasMotivationCauseCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexBiasMotivationCauseCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexBiasMotivationCauseCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexBiasMotivationCauseCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexBiasMotivationCauseCodeTypeContext.jsonld
     ndexBiasMotivationCauseCodeSimpleType:
       type: string
       description: >-
@@ -3285,10 +3296,10 @@ components:
           type: string
           description: ndexCriminalActivityCategoryNDExCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/ndexCriminalActivityCategoryNDExCodeTypeContext.json
+            ../JSON-LD_Contexts/ndexCriminalActivityCategoryNDExCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexCriminalActivityCategoryNDExCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexCriminalActivityCategoryNDExCodeTypeContext.jsonld
     ndexCriminalActivityCategoryNDExCodeSimpleType:
       type: string
       description: >-
@@ -3335,9 +3346,9 @@ components:
         '@context':
           type: string
           description: ndexSecuritySystemStatusCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexSecuritySystemStatusCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexSecuritySystemStatusCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexSecuritySystemStatusCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexSecuritySystemStatusCodeTypeContext.jsonld
     ndexSecuritySystemStatusCodeSimpleType:
       type: string
       description: >-
@@ -3361,10 +3372,11 @@ components:
         '@context':
           type: string
           description: ndexPremiseSecurityCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexPremiseSecurityCategoryCodeTypeContext.json
+          default: >-
+            ../JSON-LD_Contexts/ndexPremiseSecurityCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexPremiseSecurityCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexPremiseSecurityCategoryCodeTypeContext.jsonld
     ndexPremiseSecurityCategoryCodeSimpleType:
       type: string
       description: >-
@@ -3406,9 +3418,9 @@ components:
         '@context':
           type: string
           description: ndexMethodOfAccessCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexMethodOfAccessCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexMethodOfAccessCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexMethodOfAccessCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexMethodOfAccessCodeTypeContext.jsonld
     ndexMethodOfAccessCodeSimpleType:
       type: string
       description: A data type for a method of access.
@@ -3479,10 +3491,11 @@ components:
         '@context':
           type: string
           description: ndexGangInvolvementCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexGangInvolvementCategoryCodeTypeContext.json
+          default: >-
+            ../JSON-LD_Contexts/ndexGangInvolvementCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexGangInvolvementCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexGangInvolvementCategoryCodeTypeContext.jsonld
     ndexGangInvolvementCategoryCodeSimpleType:
       type: string
       description: >-
@@ -3507,10 +3520,10 @@ components:
           type: string
           description: ndexLEOKAActivityCategoryNDExCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/ndexLEOKAActivityCategoryNDExCodeTypeContext.json
+            ../JSON-LD_Contexts/ndexLEOKAActivityCategoryNDExCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexLEOKAActivityCategoryNDExCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexLEOKAActivityCategoryNDExCodeTypeContext.jsonld
     ndexLEOKAActivityCategoryNDExCodeSimpleType:
       type: string
       description: >-
@@ -3544,9 +3557,9 @@ components:
         '@context':
           type: string
           description: ndexVictimMOWasCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexVictimMOWasCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexVictimMOWasCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexVictimMOWasCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexVictimMOWasCodeTypeContext.jsonld
     ndexVictimMOWasCodeSimpleType:
       type: string
       description: >-
@@ -3636,9 +3649,9 @@ components:
         '@context':
           type: string
           description: ndexVictimMODisposalCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexVictimMODisposalCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexVictimMODisposalCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexVictimMODisposalCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexVictimMODisposalCodeTypeContext.jsonld
     ndexVictimMODisposalCodeSimpleType:
       type: string
       description: >-
@@ -3661,9 +3674,9 @@ components:
         '@context':
           type: string
           description: ndexVictimMOApproachedCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexVictimMOApproachedCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexVictimMOApproachedCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexVictimMOApproachedCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexVictimMOApproachedCodeTypeContext.jsonld
     ndexVictimMOApproachedCodeSimpleType:
       type: string
       description: >-
@@ -3746,9 +3759,9 @@ components:
         '@context':
           type: string
           description: ndexVictimMOFoundClothedCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexVictimMOFoundClothedCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexVictimMOFoundClothedCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexVictimMOFoundClothedCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexVictimMOFoundClothedCodeTypeContext.jsonld
     ndexVictimMOFoundClothedCodeSimpleType:
       type: string
       description: >-
@@ -3779,10 +3792,11 @@ components:
         '@context':
           type: string
           description: ndexVictimMOGeneralLifestyleCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexVictimMOGeneralLifestyleCodeTypeContext.json
+          default: >-
+            ../JSON-LD_Contexts/ndexVictimMOGeneralLifestyleCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexVictimMOGeneralLifestyleCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexVictimMOGeneralLifestyleCodeTypeContext.jsonld
     ndexVictimMOGeneralLifestyleCodeSimpleType:
       type: string
       description: >-
@@ -3825,9 +3839,9 @@ components:
         '@context':
           type: string
           description: ndexVictimMORecoveryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexVictimMORecoveryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexVictimMORecoveryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexVictimMORecoveryCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexVictimMORecoveryCodeTypeContext.jsonld
     ndexVictimMORecoveryCodeSimpleType:
       type: string
       description: >-
@@ -3869,10 +3883,10 @@ components:
           type: string
           description: ndexVictimMOSubjectContactConclusionCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/ndexVictimMOSubjectContactConclusionCodeTypeContext.json
+            ../JSON-LD_Contexts/ndexVictimMOSubjectContactConclusionCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexVictimMOSubjectContactConclusionCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexVictimMOSubjectContactConclusionCodeTypeContext.jsonld
     ndexVictimMOSubjectContactConclusionCodeSimpleType:
       type: string
       description: >-
@@ -3897,9 +3911,9 @@ components:
         '@context':
           type: string
           description: ndexVictimMOBindingsCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexVictimMOBindingsCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexVictimMOBindingsCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexVictimMOBindingsCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexVictimMOBindingsCodeTypeContext.jsonld
     ndexVictimMOBindingsCodeSimpleType:
       type: string
       description: >-
@@ -3928,9 +3942,9 @@ components:
         '@context':
           type: string
           description: ndexInjuryLocationCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexInjuryLocationCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexInjuryLocationCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexInjuryLocationCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexInjuryLocationCodeTypeContext.jsonld
     ndexInjuryLocationCodeSimpleType:
       type: string
       description: >-
@@ -3990,9 +4004,9 @@ components:
         '@context':
           type: string
           description: ndexInjuryCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexInjuryCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexInjuryCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexInjuryCategoryCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexInjuryCategoryCodeTypeContext.jsonld
     ndexInjuryCategoryCodeSimpleType:
       type: string
       description: >-
@@ -4025,10 +4039,10 @@ components:
           type: string
           description: ndexAggravatedAssaultCircumstanceNDExCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/ndexAggravatedAssaultCircumstanceNDExCodeTypeContext.json
+            ../JSON-LD_Contexts/ndexAggravatedAssaultCircumstanceNDExCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexAggravatedAssaultCircumstanceNDExCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexAggravatedAssaultCircumstanceNDExCodeTypeContext.jsonld
     ndexAggravatedAssaultCircumstanceNDExCodeSimpleType:
       type: string
       description: >-
@@ -4108,9 +4122,9 @@ components:
         '@context':
           type: string
           description: ndexChargeCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexChargeCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexChargeCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexChargeCategoryCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexChargeCategoryCodeTypeContext.jsonld
     ndexChargeCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a type of charge.
@@ -4128,9 +4142,9 @@ components:
         '@context':
           type: string
           description: ndexBookingCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexBookingCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexBookingCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexBookingCategoryCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexBookingCategoryCodeTypeContext.jsonld
     ndexBookingCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies the type of booking conducted.
@@ -4150,9 +4164,9 @@ components:
         '@context':
           type: string
           description: ndexArrestCategoryJABSCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexArrestCategoryJABSCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexArrestCategoryJABSCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexArrestCategoryJABSCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexArrestCategoryJABSCodeTypeContext.jsonld
     ndexArrestCategoryJABSCodeSimpleType:
       type: string
       description: >-
@@ -4172,9 +4186,9 @@ components:
         '@context':
           type: string
           description: ndexMetalCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexMetalCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexMetalCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexMetalCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexMetalCodeTypeContext.jsonld
     ndexMetalCodeSimpleType:
       type: string
       description: A data type for a code that identifies a metal.
@@ -4286,9 +4300,9 @@ components:
         '@context':
           type: string
           description: ndexPreciousMetalCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexPreciousMetalCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexPreciousMetalCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexPreciousMetalCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexPreciousMetalCodeTypeContext.jsonld
     ndexPreciousMetalCodeSimpleType:
       type: string
       description: >-
@@ -4323,9 +4337,9 @@ components:
         '@context':
           type: string
           description: ndexCADCallCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexCADCallCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexCADCallCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexCADCallCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexCADCallCodeTypeContext.jsonld
     ndexCADCallCodeSimpleType:
       type: string
       description: A data type for a code that identifies the type of service call.
@@ -4419,9 +4433,9 @@ components:
         '@context':
           type: string
           description: ndexCADCallSourceCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexCADCallSourceCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexCADCallSourceCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexCADCallSourceCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexCADCallSourceCodeTypeContext.jsonld
     ndexCADCallSourceCodeSimpleType:
       type: string
       description: >-
@@ -4450,10 +4464,10 @@ components:
           type: string
           description: ndexSupervisedReleaseCategoryCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/ndexSupervisedReleaseCategoryCodeTypeContext.json
+            ../JSON-LD_Contexts/ndexSupervisedReleaseCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexSupervisedReleaseCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexSupervisedReleaseCategoryCodeTypeContext.jsonld
     ndexSupervisedReleaseCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a kind of supervised release.
@@ -4486,9 +4500,9 @@ components:
         '@context':
           type: string
           description: ndexAssignmentCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexAssignmentCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexAssignmentCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexAssignmentCategoryCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexAssignmentCategoryCodeTypeContext.jsonld
     ndexAssignmentCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies a subject's assignment category.
@@ -4530,9 +4544,10 @@ components:
         '@context':
           type: string
           description: ndexOffenseSummaryCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexOffenseSummaryCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexOffenseSummaryCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexOffenseSummaryCategoryCodeTypeContext.json
+            - >-
+              ../JSON-LD_Contexts/ndexOffenseSummaryCategoryCodeTypeContext.jsonld
     ndexOffenseSummaryCategoryCodeSimpleType:
       type: string
       description: A data type for a code that identifies an offense type being summarized.
@@ -4563,9 +4578,9 @@ components:
         '@context':
           type: string
           description: ndexRiskLevelCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexRiskLevelCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexRiskLevelCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexRiskLevelCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexRiskLevelCodeTypeContext.jsonld
     ndexRiskLevelCodeSimpleType:
       type: string
       description: >-
@@ -4592,9 +4607,9 @@ components:
         '@context':
           type: string
           description: ndexSubjectMOActionCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexSubjectMOActionCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexSubjectMOActionCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexSubjectMOActionCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexSubjectMOActionCodeTypeContext.jsonld
     ndexSubjectMOActionCodeSimpleType:
       type: string
       description: >-
@@ -4771,10 +4786,10 @@ components:
           type: string
           description: ndexSubjectMOGeneralLifestyleCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/ndexSubjectMOGeneralLifestyleCodeTypeContext.json
+            ../JSON-LD_Contexts/ndexSubjectMOGeneralLifestyleCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexSubjectMOGeneralLifestyleCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexSubjectMOGeneralLifestyleCodeTypeContext.jsonld
     ndexSubjectMOGeneralLifestyleCodeSimpleType:
       type: string
       description: >-
@@ -4810,9 +4825,9 @@ components:
         '@context':
           type: string
           description: ndexSubjectMOObservationCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexSubjectMOObservationCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexSubjectMOObservationCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexSubjectMOObservationCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexSubjectMOObservationCodeTypeContext.jsonld
     ndexSubjectMOObservationCodeSimpleType:
       type: string
       description: A data type for a code that identifies observations of the subject.
@@ -4860,10 +4875,11 @@ components:
         '@context':
           type: string
           description: ndexSubjectMOSexualPracticesCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexSubjectMOSexualPracticesCodeTypeContext.json
+          default: >-
+            ../JSON-LD_Contexts/ndexSubjectMOSexualPracticesCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexSubjectMOSexualPracticesCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexSubjectMOSexualPracticesCodeTypeContext.jsonld
     ndexSubjectMOSexualPracticesCodeSimpleType:
       type: string
       description: >-
@@ -4899,9 +4915,9 @@ components:
         '@context':
           type: string
           description: ndexPrenatalAgeUnitCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexPrenatalAgeUnitCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexPrenatalAgeUnitCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexPrenatalAgeUnitCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexPrenatalAgeUnitCodeTypeContext.jsonld
     ndexPrenatalAgeUnitCodeSimpleType:
       type: string
       description: >-
@@ -4922,9 +4938,9 @@ components:
         '@context':
           type: string
           description: ndexPersonBuildCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexPersonBuildCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexPersonBuildCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexPersonBuildCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexPersonBuildCodeTypeContext.jsonld
     ndexPersonBuildCodeSimpleType:
       type: string
       description: >-
@@ -4957,9 +4973,9 @@ components:
         '@context':
           type: string
           description: ndexPersonEyewearCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexPersonEyewearCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexPersonEyewearCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexPersonEyewearCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexPersonEyewearCodeTypeContext.jsonld
     ndexPersonEyewearCodeSimpleType:
       type: string
       description: >-
@@ -4984,9 +5000,9 @@ components:
         '@context':
           type: string
           description: ndexPersonFacialHairCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexPersonFacialHairCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexPersonFacialHairCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexPersonFacialHairCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexPersonFacialHairCodeTypeContext.jsonld
     ndexPersonFacialHairCodeSimpleType:
       type: string
       description: >-
@@ -5021,9 +5037,9 @@ components:
         '@context':
           type: string
           description: ndexPersonHairLengthCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexPersonHairLengthCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexPersonHairLengthCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexPersonHairLengthCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexPersonHairLengthCodeTypeContext.jsonld
     ndexPersonHairLengthCodeSimpleType:
       type: string
       description: A data type for a code that identifies the length of the person's hair.
@@ -5044,9 +5060,9 @@ components:
         '@context':
           type: string
           description: ndexPersonHairStyleCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexPersonHairStyleCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexPersonHairStyleCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexPersonHairStyleCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexPersonHairStyleCodeTypeContext.jsonld
     ndexPersonHairStyleCodeSimpleType:
       type: string
       description: A data type for a code that identifies the style of a person's hair.
@@ -5087,9 +5103,9 @@ components:
         '@context':
           type: string
           description: ndexRACCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexRACCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexRACCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexRACCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexRACCodeTypeContext.jsonld
     ndexRACCodeSimpleType:
       type: string
       description: A data type for a code that identifies the race of the person.
@@ -5110,9 +5126,9 @@ components:
         '@context':
           type: string
           description: ndexSEXCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexSEXCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexSEXCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexSEXCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexSEXCodeTypeContext.jsonld
     ndexSEXCodeSimpleType:
       type: string
       description: A data type for a code that identifies the gender or sex of the person.
@@ -5134,9 +5150,9 @@ components:
         '@context':
           type: string
           description: ndexMaritalStatusCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexMaritalStatusCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexMaritalStatusCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexMaritalStatusCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexMaritalStatusCodeTypeContext.jsonld
     ndexMaritalStatusCodeSimpleType:
       type: string
       description: A data type for a code that identifies marital status.
@@ -5164,10 +5180,10 @@ components:
           type: string
           description: ndexPersonDentalCharacteristicCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/ndexPersonDentalCharacteristicCodeTypeContext.json
+            ../JSON-LD_Contexts/ndexPersonDentalCharacteristicCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexPersonDentalCharacteristicCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexPersonDentalCharacteristicCodeTypeContext.jsonld
     ndexPersonDentalCharacteristicCodeSimpleType:
       type: string
       description: >-
@@ -5210,9 +5226,9 @@ components:
         '@context':
           type: string
           description: ndexPersonHandedCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexPersonHandedCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexPersonHandedCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexPersonHandedCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexPersonHandedCodeTypeContext.jsonld
     ndexPersonHandedCodeSimpleType:
       type: string
       description: >-
@@ -5236,9 +5252,9 @@ components:
         '@context':
           type: string
           description: ndexPersonSpeechCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexPersonSpeechCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ndexPersonSpeechCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ndexPersonSpeechCodeTypeContext.json
+            - ../JSON-LD_Contexts/ndexPersonSpeechCodeTypeContext.jsonld
     ndexPersonSpeechCodeSimpleType:
       type: string
       description: >-
@@ -5283,10 +5299,11 @@ components:
         '@context':
           type: string
           description: ndexPersonSexualOrientationCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ndexPersonSexualOrientationCodeTypeContext.json
+          default: >-
+            ../JSON-LD_Contexts/ndexPersonSexualOrientationCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/ndexPersonSexualOrientationCodeTypeContext.json
+              ../JSON-LD_Contexts/ndexPersonSexualOrientationCodeTypeContext.jsonld
     ndexPersonSexualOrientationCodeSimpleType:
       type: string
       description: >-

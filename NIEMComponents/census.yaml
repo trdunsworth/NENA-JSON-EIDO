@@ -10,9 +10,9 @@ components:
         '@context':
           type: string
           description: censusUSCountyCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/censusUSCountyCodeTypeContext.json
+          default: ../JSON-LD_Contexts/censusUSCountyCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/censusUSCountyCodeTypeContext.json
+            - ../JSON-LD_Contexts/censusUSCountyCodeTypeContext.jsonld
     censusUSCountyCodeSimpleType:
       type: string
       description: A data type for US county codes.
