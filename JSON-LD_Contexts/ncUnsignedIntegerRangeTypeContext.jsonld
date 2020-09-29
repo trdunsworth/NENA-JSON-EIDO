@@ -1,5 +1,7 @@
 {
-  "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
-  "rangeMinimumUnsignedIntegerValue": "nc:RangeMinimumUnsignedIntegerValue",
-  "rangeMaximumUnsignedIntegerValue": "nc:RangeMaximumUnsignedIntegerValue"
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "rangeMinimumUnsignedIntegerValue": "nc:RangeMinimumUnsignedIntegerValue",
+    "rangeMaximumUnsignedIntegerValue": "nc:RangeMaximumUnsignedIntegerValue"
+  }
 }

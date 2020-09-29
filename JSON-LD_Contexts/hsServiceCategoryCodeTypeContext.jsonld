@@ -1,4 +1,6 @@
 {
-  "hs": "http://release.niem.gov/niem/domains/humanServices/4.1/#",
-  "simpleType": "hs:ServiceCategoryCodeSimpleType"
+  "@context": {
+    "hs": "http://release.niem.gov/niem/domains/humanServices/4.1/#",
+    "simpleType": "hs:ServiceCategoryCodeSimpleType"
+  }
 }

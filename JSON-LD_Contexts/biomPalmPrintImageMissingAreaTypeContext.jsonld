@@ -1,5 +1,7 @@
 {
-  "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
-  "palmPositionCode": "biom:PalmPositionCode",
-  "palmMissingAreaReasonCode": "biom:PalmMissingAreaReasonCode"
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "palmPositionCode": "biom:PalmPositionCode",
+    "palmMissingAreaReasonCode": "biom:PalmMissingAreaReasonCode"
+  }
 }

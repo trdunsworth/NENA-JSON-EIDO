@@ -1,6 +1,8 @@
 {
-  "scr": "http://release.niem.gov/niem/domains/screening/4.1/#",
-  "borderCode": "scr:BorderCodeText",
-  "locationCategoryClassificationCode": "scr:LocationCategoryClassificationCode",
-  "portOfEntryCode": "scr:PortOfEntryCodeText"
+  "@context": {
+    "scr": "http://release.niem.gov/niem/domains/screening/4.1/#",
+    "borderCode": "scr:BorderCodeText",
+    "locationCategoryClassificationCode": "scr:LocationCategoryClassificationCode",
+    "portOfEntryCode": "scr:PortOfEntryCodeText"
+  }
 }

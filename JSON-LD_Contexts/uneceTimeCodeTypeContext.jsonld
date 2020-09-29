@@ -1,4 +1,6 @@
 {
-  "unece": "http://release.niem.gov/niem/codes/unece_rec20/4.0/#",
-  "simpleType": "unece:TimeCodeSimpleType"
+  "@context": {
+    "unece": "http://release.niem.gov/niem/codes/unece_rec20/4.0/#",
+    "simpleType": "unece:TimeCodeSimpleType"
+  }
 }

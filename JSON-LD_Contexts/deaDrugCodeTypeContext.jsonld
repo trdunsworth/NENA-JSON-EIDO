@@ -1,4 +1,6 @@
 {
-  "dea": "http://release.niem.gov/niem/codes/dea_ctlsub/4.0/#",
-  "simpleType": "dea:DrugCodeSimpleType"
+  "@context": {
+    "dea": "http://release.niem.gov/niem/codes/dea_ctlsub/4.0/#",
+    "simpleType": "dea:DrugCodeSimpleType"
+  }
 }

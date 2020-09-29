@@ -1,6 +1,8 @@
 {
-  "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
-  "longitudeDegreeValue": "nc:LongitudeDegreeValue",
-  "longitudeMinuteValue": "nc:LongitudeMinuteValue",
-  "longitudeSecondValue": "nc:LongitudeSecondValue"
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "longitudeDegreeValue": "nc:LongitudeDegreeValue",
+    "longitudeMinuteValue": "nc:LongitudeMinuteValue",
+    "longitudeSecondValue": "nc:LongitudeSecondValue"
+  }
 }

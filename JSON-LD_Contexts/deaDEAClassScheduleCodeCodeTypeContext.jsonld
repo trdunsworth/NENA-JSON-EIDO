@@ -1,4 +1,6 @@
 {
-  "dea": "http://release.niem.gov/niem/codes/dea_ctlsub/4.0/#",
-  "simpleType": "dea:DEAClassScheduleCodeCodeSimpleType"
+  "@context": {
+    "dea": "http://release.niem.gov/niem/codes/dea_ctlsub/4.0/#",
+    "simpleType": "dea:DEAClassScheduleCodeCodeSimpleType"
+  }
 }

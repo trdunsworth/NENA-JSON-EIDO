@@ -1,5 +1,7 @@
 {
-  "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
-  "levelCode": "biom:DNALaboratoryAccreditationLevelCode",
-  "scopeCode": "biom:DNALaboratoryAccreditationScopeCode"
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "levelCode": "biom:DNALaboratoryAccreditationLevelCode",
+    "scopeCode": "biom:DNALaboratoryAccreditationScopeCode"
+  }
 }

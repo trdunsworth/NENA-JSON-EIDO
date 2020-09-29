@@ -1,6 +1,8 @@
 {
-  "hs": "http://release.niem.gov/niem/domains/humanServices/4.1/#",
-  "programEligibleStartDate": "hs:ProgramEligibleStartDate",
-  "programEligibleEndDate": "hs:ProgramEligibleEndDate",
-  "programMonetaryValue": "hs:ProgramMonetaryValue"
+  "@context": {
+    "hs": "http://release.niem.gov/niem/domains/humanServices/4.1/#",
+    "programEligibleStartDate": "hs:ProgramEligibleStartDate",
+    "programEligibleEndDate": "hs:ProgramEligibleEndDate",
+    "programMonetaryValue": "hs:ProgramMonetaryValue"
+  }
 }

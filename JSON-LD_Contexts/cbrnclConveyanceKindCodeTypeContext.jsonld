@@ -1,4 +1,6 @@
 {
-  "cbrncl": "http://release.niem.gov/niem/codes/cbrncl/4.0/#",
-  "simpleType": "cbrncl:ConveyanceKindCodeSimpleType"
+  "@context": {
+    "cbrncl": "http://release.niem.gov/niem/codes/cbrncl/4.0/#",
+    "simpleType": "cbrncl:ConveyanceKindCodeSimpleType"
+  }
 }

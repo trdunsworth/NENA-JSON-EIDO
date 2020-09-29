@@ -1,4 +1,6 @@
 {
-  "mmucc": "http://release.niem.gov/niem/codes/mmucc/4.0/#",
-  "simpleType": "mmucc:DriverLicensePermitStatusCodeSimpleType"
+  "@context": {
+    "mmucc": "http://release.niem.gov/niem/codes/mmucc/4.0/#",
+    "simpleType": "mmucc:DriverLicensePermitStatusCodeSimpleType"
+  }
 }

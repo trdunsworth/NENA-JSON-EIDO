@@ -1,4 +1,6 @@
 {
-  "xs": "http://www.w3.org/2001/XMLSchema#",
-  "unsignedInt": "xs:unsignedInt"
+  "@context": {
+    "xs": "http://www.w3.org/2001/XMLSchema#",
+    "unsignedInt": "xs:unsignedInt"
+  }
 }

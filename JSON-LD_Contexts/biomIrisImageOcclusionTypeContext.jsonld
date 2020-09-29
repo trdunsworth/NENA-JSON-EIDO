@@ -1,6 +1,8 @@
 {
-  "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
-  "opacityCode": "biom:IrisImageOcclusionOpacityCode",
-  "categoryCode": "biom:IrisImageOcclusionCategoryCode",
-  "imageFeatureVertexQuantity": "biom:ImageFeatureVertexQuantity"
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "opacityCode": "biom:IrisImageOcclusionOpacityCode",
+    "categoryCode": "biom:IrisImageOcclusionCategoryCode",
+    "imageFeatureVertexQuantity": "biom:ImageFeatureVertexQuantity"
+  }
 }

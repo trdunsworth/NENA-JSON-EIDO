@@ -1,7 +1,9 @@
 {
-  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
-  "text": "j:ChargeEnhancingFactorText",
-  "description": "j:ChargeEnhancingFactorDescriptionText",
-  "referenceDate": "j:ChargeEnhancingFactorReferenceDate",
-  "status": "j:ChargeEnhancingFactorStatusText"
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "text": "j:ChargeEnhancingFactorText",
+    "description": "j:ChargeEnhancingFactorDescriptionText",
+    "referenceDate": "j:ChargeEnhancingFactorReferenceDate",
+    "status": "j:ChargeEnhancingFactorStatusText"
+  }
 }

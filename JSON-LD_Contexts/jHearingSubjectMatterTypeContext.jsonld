@@ -1,8 +1,10 @@
 {
-  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
-  "hearingSubjectOffMatterReason": "j:HearingSubjectOffMatterReasonText",
-  "category": "j:HearingSubjectMatterCategoryText",
-  "hearingSubjectOffMatterNotToExceedTime": "j:HearingSubjectOffMatterNotToExceedTimeText",
-  "hearingSubjectOffMatterOtherReason": "j:HearingSubjectOffMatterOtherReasonText",
-  "isOffCalendar": "j:HearingSubjectMatterOffCalendarIndicator"
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "hearingSubjectOffMatterReason": "j:HearingSubjectOffMatterReasonText",
+    "category": "j:HearingSubjectMatterCategoryText",
+    "hearingSubjectOffMatterNotToExceedTime": "j:HearingSubjectOffMatterNotToExceedTimeText",
+    "hearingSubjectOffMatterOtherReason": "j:HearingSubjectOffMatterOtherReasonText",
+    "isOffCalendar": "j:HearingSubjectMatterOffCalendarIndicator"
+  }
 }

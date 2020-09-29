@@ -1,3 +1,5 @@
 {
-  "polygon": "gml:Polygon"
+  "@context": {
+    "polygon": "gml:Polygon"
+  }
 }

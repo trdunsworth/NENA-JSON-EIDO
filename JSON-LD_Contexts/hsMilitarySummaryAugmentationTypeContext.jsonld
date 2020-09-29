@@ -1,4 +1,6 @@
 {
-  "hs": "http://release.niem.gov/niem/domains/humanServices/4.1/#",
-  "militaryInductionDate": "hs:MilitaryInductionDate"
+  "@context": {
+    "hs": "http://release.niem.gov/niem/domains/humanServices/4.1/#",
+    "militaryInductionDate": "hs:MilitaryInductionDate"
+  }
 }

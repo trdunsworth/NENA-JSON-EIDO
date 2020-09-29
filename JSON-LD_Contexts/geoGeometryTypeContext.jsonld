@@ -1,3 +1,5 @@
 {
-  "abstract": "gml:AbstractGeometry"
+  "@context": {
+    "abstract": "gml:AbstractGeometry"
+  }
 }

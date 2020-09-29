@@ -1,8 +1,10 @@
 {
-  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
-  "measure": "j:TestResultMeasure",
-  "testMonitorEntity": "j:TestMonitorEntity",
-  "category": "j:TestResultCategoryText",
-  "text": "j:TestResultText",
-  "testSpecimenID": "j:TestSpecimenID"
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "measure": "j:TestResultMeasure",
+    "testMonitorEntity": "j:TestMonitorEntity",
+    "category": "j:TestResultCategoryText",
+    "text": "j:TestResultText",
+    "testSpecimenID": "j:TestSpecimenID"
+  }
 }

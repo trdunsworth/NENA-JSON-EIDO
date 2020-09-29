@@ -1,7 +1,6 @@
-{"@context":
-  {
+{
+  "@context": {
     "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
-    "ncPersonType": "nc:PersonType",
     "accent": "nc:PersonAccentText",
     "ageDescription": "nc:PersonAgeDescriptionText",
     "ageMeasure": "nc:PersonAgeMeasure",

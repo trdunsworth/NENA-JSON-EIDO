@@ -1,9 +1,11 @@
 {
-  "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
-  "posePitchAngleMeasure": "biom:PosePitchAngleMeasure",
-  "posePitchUncertaintyValue": "biom:PosePitchUncertaintyValue",
-  "poseRollAngleMeasure": "biom:PoseRollAngleMeasure",
-  "poseRollUncertaintyValue": "biom:PoseRollUncertaintyValue",
-  "poseYawAngleMeasure": "biom:PoseYawAngleMeasure",
-  "poseYawUncertaintyValue": "biom:PoseYawUncertaintyValue"
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "posePitchAngleMeasure": "biom:PosePitchAngleMeasure",
+    "posePitchUncertaintyValue": "biom:PosePitchUncertaintyValue",
+    "poseRollAngleMeasure": "biom:PoseRollAngleMeasure",
+    "poseRollUncertaintyValue": "biom:PoseRollUncertaintyValue",
+    "poseYawAngleMeasure": "biom:PoseYawAngleMeasure",
+    "poseYawUncertaintyValue": "biom:PoseYawUncertaintyValue"
+  }
 }

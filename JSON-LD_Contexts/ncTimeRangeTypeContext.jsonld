@@ -1,5 +1,7 @@
 {
-  "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
-  "beginTime": "nc:BeginTime",
-  "endTime": "nc:EndTime"
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "beginTime": "nc:BeginTime",
+    "endTime": "nc:EndTime"
+  }
 }

@@ -1,6 +1,8 @@
 {
-  "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
-  "samplingFrequencyValue": "biom:MinutiaeRidgeWavelengthMapSamplingFrequencyValue",
-  "formatCode": "biom:MinutiaeRidgeWavelengthMapFormatCode",
-  "row": "biom:MinutiaeRidgeWavelengthMapRowText"
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "samplingFrequencyValue": "biom:MinutiaeRidgeWavelengthMapSamplingFrequencyValue",
+    "formatCode": "biom:MinutiaeRidgeWavelengthMapFormatCode",
+    "row": "biom:MinutiaeRidgeWavelengthMapRowText"
+  }
 }

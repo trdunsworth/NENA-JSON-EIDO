@@ -1,4 +1,6 @@
 {
-  "hl7": "http://release.niem.gov/niem/codes/hl7/4.0/#",
-  "simpleType": "hl7:ReligionCodeSimpleType"
+  "@context": {
+    "hl7": "http://release.niem.gov/niem/codes/hl7/4.0/#",
+    "simpleType": "hl7:ReligionCodeSimpleType"
+  }
 }

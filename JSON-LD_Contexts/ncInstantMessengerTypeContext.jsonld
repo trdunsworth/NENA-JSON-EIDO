@@ -1,5 +1,7 @@
 {
-  "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
-  "serviceName": "nc:InstantMessengerServiceName",
-  "screenID": "nc:InstantMessengerScreenID"
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "serviceName": "nc:InstantMessengerServiceName",
+    "screenID": "nc:InstantMessengerScreenID"
+  }
 }

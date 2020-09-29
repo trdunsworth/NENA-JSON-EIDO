@@ -1,3 +1,5 @@
 {
-  "curve": "gml:Curve"
+  "@context": {
+    "curve": "gml:Curve"
+  }
 }

@@ -1,3 +1,5 @@
 {
-  "ellipse": "xls:Ellipse"
+  "@context": {
+    "ellipse": "xls:Ellipse"
+  }
 }

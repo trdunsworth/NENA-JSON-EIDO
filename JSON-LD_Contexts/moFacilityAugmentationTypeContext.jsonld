@@ -1,4 +1,6 @@
 {
-  "mo": "http://release.niem.gov/niem/domains/militaryOperations/4.1/#",
-  "facilityAllegianceCountry": "mo:FacilityAllegianceCountry"
+  "@context": {
+    "mo": "http://release.niem.gov/niem/domains/militaryOperations/4.1/#",
+    "facilityAllegianceCountry": "mo:FacilityAllegianceCountry"
+  }
 }

@@ -1,4 +1,6 @@
 {
-  "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
-  "trackID": "biom:TrackID"
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "trackID": "biom:TrackID"
+  }
 }

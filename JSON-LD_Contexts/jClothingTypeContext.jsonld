@@ -1,7 +1,9 @@
 {
-  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
-  "category": "j:ClothingCategoryText",
-  "color": "j:ClothingColorText",
-  "description": "j:ClothingDescriptionText",
-  "style": "j:ClothingStyleText"
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "category": "j:ClothingCategoryText",
+    "color": "j:ClothingColorText",
+    "description": "j:ClothingDescriptionText",
+    "style": "j:ClothingStyleText"
+  }
 }

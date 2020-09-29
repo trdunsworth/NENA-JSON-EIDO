@@ -1,9 +1,11 @@
 {
-  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
-  "imageFacial": "j:ImageFacialText",
-  "isImageJuvenile": "j:ImageJuvenileIndicator",
-  "imageNCICIdentification": "j:ImageNCICIdentification",
-  "imagePoseCode": "j:ImagePoseCode",
-  "imagePose": "j:ImagePoseText",
-  "imageCategoryCode": "j:ImageCategoryCode"
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "imageFacial": "j:ImageFacialText",
+    "isImageJuvenile": "j:ImageJuvenileIndicator",
+    "imageNCICIdentification": "j:ImageNCICIdentification",
+    "imagePoseCode": "j:ImagePoseCode",
+    "imagePose": "j:ImagePoseText",
+    "imageCategoryCode": "j:ImageCategoryCode"
+  }
 }

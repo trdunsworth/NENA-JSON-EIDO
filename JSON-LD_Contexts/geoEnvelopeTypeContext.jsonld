@@ -1,3 +1,5 @@
 {
-  "envelope": "gml:Envelope"
+  "@context": {
+    "envelope": "gml:Envelope"
+  }
 }

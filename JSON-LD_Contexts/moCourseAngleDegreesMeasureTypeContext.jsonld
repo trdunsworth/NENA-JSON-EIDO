@@ -1,6 +1,8 @@
 {
-  "mo": "http://release.niem.gov/niem/domains/militaryOperations/4.1/#",
-  "angleDegreesMeasure": "mo:AngleDegreesMeasure",
-  "directionDatumCode": "mo:DirectionDatumCode",
-  "angularMeasureDecimalValue": "mo:AngularMeasureDecimalValue"
+  "@context": {
+    "mo": "http://release.niem.gov/niem/domains/militaryOperations/4.1/#",
+    "angleDegreesMeasure": "mo:AngleDegreesMeasure",
+    "directionDatumCode": "mo:DirectionDatumCode",
+    "angularMeasureDecimalValue": "mo:AngularMeasureDecimalValue"
+  }
 }

@@ -1,8 +1,10 @@
 {
-  "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
-  "referralApprovalAuthorityEntity": "j:ReferralApprovalAuthorityEntity",
-  "referralServiceDeliveryProgram": "j:ReferralServiceDeliveryProgram",
-  "referralDueDate": "j:ReferralDueDate",
-  "referralCourtOrder": "j:ReferralCourtOrder",
-  "referralConstraintDayTotalNumeric": "j:ReferralConstraintDayTotalNumeric"
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.1/#",
+    "referralApprovalAuthorityEntity": "j:ReferralApprovalAuthorityEntity",
+    "referralServiceDeliveryProgram": "j:ReferralServiceDeliveryProgram",
+    "referralDueDate": "j:ReferralDueDate",
+    "referralCourtOrder": "j:ReferralCourtOrder",
+    "referralConstraintDayTotalNumeric": "j:ReferralConstraintDayTotalNumeric"
+  }
 }

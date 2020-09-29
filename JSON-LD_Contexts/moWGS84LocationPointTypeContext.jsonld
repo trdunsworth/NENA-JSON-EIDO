@@ -1,3 +1,5 @@
 {
-  "point": "gml:Point"
+  "@context": {
+    "point": "gml:Point"
+  }
 }

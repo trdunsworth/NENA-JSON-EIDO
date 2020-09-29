@@ -1,6 +1,8 @@
 {
-  "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
-  "formatCode": "biom:DigitalMediaContainerFormatCode",
-  "externalReferenceCode": "biom:DigitalMediaContainerExternalReferenceCodeText",
-  "audioComment": "biom:AudioCommentText"
+  "@context": {
+    "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
+    "formatCode": "biom:DigitalMediaContainerFormatCode",
+    "externalReferenceCode": "biom:DigitalMediaContainerExternalReferenceCodeText",
+    "audioComment": "biom:AudioCommentText"
+  }
 }

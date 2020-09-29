@@ -1,4 +1,6 @@
 {
-  "ndex": "http://release.niem.gov/niem/codes/fbi_ndex/4.1/#",
-  "simpleType": "ndex:PersonHairStyleCodeSimpleType"
+  "@context": {
+    "ndex": "http://release.niem.gov/niem/codes/fbi_ndex/4.1/#",
+    "simpleType": "ndex:PersonHairStyleCodeSimpleType"
+  }
 }

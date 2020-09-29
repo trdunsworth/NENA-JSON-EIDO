@@ -1,7 +1,9 @@
 {
-  "m": "http://release.niem.gov/niem/domains/maritime/4.1/#",
-  "personBiometricURI": "m:PersonBiometricURI",
-  "personDeathLocation": "m:PersonDeathLocation",
-  "merchantMarinerDocument": "m:MerchantMarinerDocument",
-  "seamanLicense": "m:SeamanLicense"
+  "@context": {
+    "m": "http://release.niem.gov/niem/domains/maritime/4.1/#",
+    "personBiometricURI": "m:PersonBiometricURI",
+    "personDeathLocation": "m:PersonDeathLocation",
+    "merchantMarinerDocument": "m:MerchantMarinerDocument",
+    "seamanLicense": "m:SeamanLicense"
+  }
 }

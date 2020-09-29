@@ -1,4 +1,6 @@
 {
-  "xs": "http://www.w3.org/2001/XMLSchema#",
-  "base64Binary": "xs:base64Binary"
+  "@context": {
+    "xs": "http://www.w3.org/2001/XMLSchema#",
+    "base64Binary": "xs:base64Binary"
+  }
 }

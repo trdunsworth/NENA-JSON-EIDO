@@ -1,6 +1,8 @@
 {
-  "intel": "http://release.niem.gov/niem/domains/intelligence/4.1/#",
-  "agencyInterestCategory": "intel:AgencyInterestCategoryText",
-  "agencyInterestCategoryCode": "intel:AgencyInterestCategoryCodeText",
-  "agencyInterestCategoryDescription": "intel:AgencyInterestCategoryDescriptionText"
+  "@context": {
+    "intel": "http://release.niem.gov/niem/domains/intelligence/4.1/#",
+    "agencyInterestCategory": "intel:AgencyInterestCategoryText",
+    "agencyInterestCategoryCode": "intel:AgencyInterestCategoryCodeText",
+    "agencyInterestCategoryDescription": "intel:AgencyInterestCategoryDescriptionText"
+  }
 }

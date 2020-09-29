@@ -1,5 +1,7 @@
 {
-  "scr": "http://release.niem.gov/niem/domains/screening/4.1/#",
-  "description": "scr:ArrestMethodDescriptionText",
-  "code": "scr:ArrestMethodCode"
+  "@context": {
+    "scr": "http://release.niem.gov/niem/domains/screening/4.1/#",
+    "description": "scr:ArrestMethodDescriptionText",
+    "code": "scr:ArrestMethodCode"
+  }
 }
