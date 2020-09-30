@@ -1,18 +1,9 @@
 components:
   schemas:
     nc-4.0.1PolygonRegionAugmentationType:
-      type: object
+      type: string
       title: 'nc-4.0.1:PolygonRegionAugmentationType'
       description: A data type for additional information about a polygon.
-      properties:
-        '@context':
-          type: string
-          description: nc-4.0.1PolygonRegionAugmentationType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/nc-4.0.1PolygonRegionAugmentationTypeContext.jsonld
-          enum:
-            - >-
-              ../JSON-LD_Contexts/nc-4.0.1PolygonRegionAugmentationTypeContext.jsonld
     nc-4.0.1LocationHeightMeasureAugmentationType:
       type: object
       title: 'nc-4.0.1:LocationHeightMeasureAugmentationType'

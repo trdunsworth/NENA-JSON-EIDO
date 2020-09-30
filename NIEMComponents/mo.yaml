@@ -499,18 +499,9 @@ components:
         - MACHINE.PREDICTED
         - MACHINE.SIMULATED
     moGeospatialLocationAugmentationType:
-      type: object
+      type: string
       title: 'mo:GeospatialLocationAugmentationType'
       description: 'A data type for additional information about a nc:Location.'
-      properties:
-        '@context':
-          type: string
-          description: moGeospatialLocationAugmentationType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/moGeospatialLocationAugmentationTypeContext.jsonld
-          enum:
-            - >-
-              ../JSON-LD_Contexts/moGeospatialLocationAugmentationTypeContext.jsonld
     moImageAugmentationType:
       type: object
       title: 'mo:ImageAugmentationType'

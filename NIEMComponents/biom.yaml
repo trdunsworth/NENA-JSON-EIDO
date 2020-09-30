@@ -2363,16 +2363,9 @@ components:
           enum:
             - ../JSON-LD_Contexts/biomQualityScoreTypeContext.jsonld
     biomQualityScoreSimpleType:
-      type: object
+      type: string
       title: 'biom:QualityScoreSimpleType'
       description: A data type to define values for allowed quality scores
-      properties:
-        '@context':
-          type: string
-          description: biomQualityScoreSimpleType JSON-LD context
-          default: ../JSON-LD_Contexts/biomQualityScoreSimpleTypeContext.jsonld
-          enum:
-            - ../JSON-LD_Contexts/biomQualityScoreSimpleTypeContext.jsonld
     biomScaleUnitsCodeType:
       type: object
       title: 'biom:ScaleUnitsCodeType'
@@ -5556,16 +5549,9 @@ components:
           enum:
             - ../JSON-LD_Contexts/biomMajorCasePrintCodeTypeContext.jsonld
     biomMajorCasePrintCodeSimpleType:
-      type: object
+      type: string
       title: 'biom:MajorCasePrintCodeSimpleType'
       description: A data type for a segment location or finger view code
-      properties:
-        '@context':
-          type: string
-          description: biomMajorCasePrintCodeSimpleType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMajorCasePrintCodeSimpleTypeContext.jsonld
-          enum:
-            - ../JSON-LD_Contexts/biomMajorCasePrintCodeSimpleTypeContext.jsonld
     biomMajorCasePrintSegmentOffsetType:
       type: object
       title: 'biom:MajorCasePrintSegmentOffsetType'
@@ -5968,20 +5954,11 @@ components:
           enum:
             - ../JSON-LD_Contexts/biomFingerprintDeltaLocationTypeContext.jsonld
     biomFingerprintFeaturesFeedbackType:
-      type: object
+      type: string
       title: 'biom:FingerprintFeaturesFeedbackType'
       description: >-
         A data type for supplemental proprietary values describing minutiae and
         related information encoded from a fingerprint image.
-      properties:
-        '@context':
-          type: string
-          description: biomFingerprintFeaturesFeedbackType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomFingerprintFeaturesFeedbackTypeContext.jsonld
-          enum:
-            - >-
-              ../JSON-LD_Contexts/biomFingerprintFeaturesFeedbackTypeContext.jsonld
     biomMinutiaType:
       type: object
       title: 'biom:MinutiaType'
@@ -6649,19 +6626,12 @@ components:
       enum:
         - '50000'
     biomImageSegmentPolygonType:
-      type: object
+      type: string
       title: 'biom:ImageSegmentPolygonType'
       description: >-
         A data type for a set of vertices within an image describing a
         polygon-shaped region; the first and last vertices are assumed to be
         connected
-      properties:
-        '@context':
-          type: string
-          description: biomImageSegmentPolygonType JSON-LD context
-          default: ../JSON-LD_Contexts/biomImageSegmentPolygonTypeContext.jsonld
-          enum:
-            - ../JSON-LD_Contexts/biomImageSegmentPolygonTypeContext.jsonld
     biomFingerprintImageFingerprintOrientationType:
       type: object
       title: 'biom:FingerprintImageFingerprintOrientationType'
@@ -6798,18 +6768,9 @@ components:
             - >-
               ../JSON-LD_Contexts/biomLatentFrictionRidgePositionCodeTypeContext.jsonld
     biomLatentFrictionRidgePositionCodeSimpleType:
-      type: object
+      type: string
       title: 'biom:LatentFrictionRidgePositionCodeSimpleType'
       description: A data type for latent friction ridge positions
-      properties:
-        '@context':
-          type: string
-          description: biomLatentFrictionRidgePositionCodeSimpleType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomLatentFrictionRidgePositionCodeSimpleTypeContext.jsonld
-          enum:
-            - >-
-              ../JSON-LD_Contexts/biomLatentFrictionRidgePositionCodeSimpleTypeContext.jsonld
     biomFingerprintOffCenterCodeType:
       type: object
       title: 'biom:FingerprintOffCenterCodeType'
@@ -7729,16 +7690,9 @@ components:
           enum:
             - ../JSON-LD_Contexts/biomMinutiaeDotTypeContext.jsonld
     biomMinutiaeIncipientRidgeType:
-      type: object
+      type: string
       title: 'biom:MinutiaeIncipientRidgeType'
       description: A data type for an incipient ridge in a friction ridge image
-      properties:
-        '@context':
-          type: string
-          description: biomMinutiaeIncipientRidgeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMinutiaeIncipientRidgeTypeContext.jsonld
-          enum:
-            - ../JSON-LD_Contexts/biomMinutiaeIncipientRidgeTypeContext.jsonld
     biomMinutiaeFlexionCreaseType:
       type: object
       title: 'biom:MinutiaeFlexionCreaseType'
@@ -11831,20 +11785,11 @@ components:
             - >-
               ../JSON-LD_Contexts/biomExemplarFingerPositionCodeTypeContext.jsonld
     biomExemplarFingerPositionCodeSimpleType:
-      type: object
+      type: string
       title: 'biom:ExemplarFingerPositionCodeSimpleType'
       description: >-
         A data type union of basic finger positions and slap captures,
         standardly used for tenprint exemplar capture
-      properties:
-        '@context':
-          type: string
-          description: biomExemplarFingerPositionCodeSimpleType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomExemplarFingerPositionCodeSimpleTypeContext.jsonld
-          enum:
-            - >-
-              ../JSON-LD_Contexts/biomExemplarFingerPositionCodeSimpleTypeContext.jsonld
     biomFingerprintImageNISTQualityType:
       type: object
       title: 'biom:FingerprintImageNISTQualityType'
@@ -11886,18 +11831,11 @@ components:
           enum:
             - ../JSON-LD_Contexts/biomNISTQualityMeasureTypeContext.jsonld
     biomNISTQualityMeasureSimpleType:
-      type: object
+      type: string
       title: 'biom:NISTQualityMeasureSimpleType'
       description: >-
         A data type to measure the quality of a friction ridge capture, using
         the NIST scale
-      properties:
-        '@context':
-          type: string
-          description: biomNISTQualityMeasureSimpleType JSON-LD context
-          default: ../JSON-LD_Contexts/biomNISTQualityMeasureSimpleTypeContext.jsonld
-          enum:
-            - ../JSON-LD_Contexts/biomNISTQualityMeasureSimpleTypeContext.jsonld
     biomFingerprintImageQualityType:
       type: object
       title: 'biom:FingerprintImageQualityType'
@@ -12077,16 +12015,9 @@ components:
               enum:
                 - ../JSON-LD_Contexts/biomFingerprintImageTypeContext.jsonld
     biomFingerprintPositionListType:
-      type: object
+      type: string
       title: 'biom:FingerprintPositionListType'
       description: A data type for a list of finger positions
-      properties:
-        '@context':
-          type: string
-          description: biomFingerprintPositionListType JSON-LD context
-          default: ../JSON-LD_Contexts/biomFingerprintPositionListTypeContext.jsonld
-          enum:
-            - ../JSON-LD_Contexts/biomFingerprintPositionListTypeContext.jsonld
     biomFrictionRidgeDetailType:
       title: 'biom:FrictionRidgeDetailType'
       description: A data type for the details about a friction ridge image
@@ -13244,18 +13175,9 @@ components:
           enum:
             - ../JSON-LD_Contexts/biomLipCharacterizationCodeTypeContext.jsonld
     biomLipCharacterizationCodeSimpleType:
-      type: object
+      type: string
       title: 'biom:LipCharacterizationCodeSimpleType'
       description: A data type for lip print characterization code
-      properties:
-        '@context':
-          type: string
-          description: biomLipCharacterizationCodeSimpleType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomLipCharacterizationCodeSimpleTypeContext.jsonld
-          enum:
-            - >-
-              ../JSON-LD_Contexts/biomLipCharacterizationCodeSimpleTypeContext.jsonld
     biomLipContactLineDescriptorCodeType:
       type: object
       title: 'biom:LipContactLineDescriptorCodeType'
