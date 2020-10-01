@@ -5,7 +5,7 @@ components:
       title: 'niem-xs:string'
       description: A data type for character strings in XML.
       properties:
-        string:
+        value:
           type: string
         '@context':
           type: string
@@ -18,7 +18,7 @@ components:
       title: 'niem-xs:decimal'
       description: A data type for arbitrary precision decimal numbers.
       properties:
-        decimal:
+        value:
           type: number
         '@context':
           type: string
@@ -38,7 +38,7 @@ components:
         value space of double also contains the following three special values:
         positive and negative infinity and not-a-number (NaN).
       properties:
-        double:
+        value:
           type: number
         '@context':
           type: string
@@ -51,7 +51,7 @@ components:
       title: 'niem-xs:integer'
       description: A data type for the standard mathematical concept of integer numbers.
       properties:
-        integer:
+        value:
           type: number
         '@context':
           type: string
@@ -66,7 +66,7 @@ components:
         A data type that is derived from unsignedLong by setting the value of
         maxInclusive to be 4294967295.
       properties:
-        unsignedInt:
+        value:
           type: number
         '@context':
           type: string
@@ -79,7 +79,7 @@ components:
       title: 'niem-xs:date'
       description: A data type for a calendar date with the format CCYY-MM-DD.
       properties:
-        date:
+        value:
           type: string
         '@context':
           type: string
@@ -95,7 +95,7 @@ components:
         minute properties, a decimal-valued second property, and a boolean
         timezoned property.
       properties:
-        dateTime:
+        value:
           type: string
         '@context':
           type: string
@@ -113,7 +113,7 @@ components:
         set of calendar dates as defined in Section 3 of [ISO 8601].
         Specifically, it is a set of one-day long, monthly periodic instances.
       properties:
-        gDay:
+        value:
           type: string
         '@context':
           type: string
@@ -126,7 +126,7 @@ components:
       title: 'niem-xs:gYear'
       description: A data type for a Gregorian calendar year with the format CCYY.
       properties:
-        gYear:
+        value:
           type: string
         '@context':
           type: string
@@ -139,7 +139,7 @@ components:
       title: 'niem-xs:gMonth'
       description: A data type for a Gregorian month with the format --MM--.
       properties:
-        gMonth:
+        value:
           type: string
         '@context':
           type: string
@@ -152,7 +152,7 @@ components:
       title: 'niem-xs:gYearMonth'
       description: A data type for a specific gregorian month in a specific gregorian year.
       properties:
-        gYearMonth:
+        value:
           type: string
         '@context':
           type: string
@@ -169,7 +169,7 @@ components:
         of days, nH is the number of hours, nM is the number of minutes, and nS
         is the number of seconds. 
       properties:
-        duration:
+        value:
           type: string
         '@context':
           type: string
@@ -185,7 +185,7 @@ components:
         can be absolute or relative, and may have an optional fragment
         identifier (i.e., it may be a URI Reference).
       properties:
-        anyURI:
+        value:
           type: string
         '@context':
           type: string
@@ -198,7 +198,7 @@ components:
       title: 'niem-xs:nonNegativeInteger'
       description: A data type for an integer with a minimum value of 0.
       properties:
-        nonNegativeInteger:
+        value:
           type: number
         '@context':
           type: string
@@ -211,7 +211,7 @@ components:
       title: 'niem-xs:boolean'
       description: A data type for binary-valued logic (true/false).
       properties:
-        boolean:
+        value:
           type: boolean
         '@context':
           type: string
@@ -224,7 +224,7 @@ components:
       title: 'niem-xs:base64Binary'
       description: A data type for Base64-encoded binary data.
       properties:
-        base64Binary:
+        value:
           type: string
         '@context':
           type: string
@@ -237,7 +237,7 @@ components:
       title: 'niem-xs:hexBinary'
       description: A data type for hex-encoded binary data.
       properties:
-        hexBinary:
+        value:
           type: string
         '@context':
           type: string
@@ -250,7 +250,7 @@ components:
       title: 'niem-xs:time'
       description: 'A data type for an instant of time with the format hh:mm:ss.sss.'
       properties:
-        time:
+        value:
           type: string
         '@context':
           type: string
@@ -270,7 +270,7 @@ components:
         value space of float also contains the following three special values:
         positive and negative infinity and not-a-number (NaN).
       properties:
-        float:
+        value:
           type: number
         '@context':
           type: string
@@ -285,7 +285,7 @@ components:
         A data type that is derived from nonNegativeInteger by setting the value
         of minInclusive to be 1.
       properties:
-        positiveInteger:
+        value:
           type: number
         '@context':
           type: string
@@ -300,7 +300,7 @@ components:
         A data type that is derived from unsignedInt by setting the value of
         maxInclusive to be 65535.
       properties:
-        unsignedShort:
+        value:
           type: number
         '@context':
           type: string
@@ -313,7 +313,7 @@ components:
       title: 'niem-xs:token'
       description: A data type for tokenized strings.
       properties:
-        token:
+        value:
           type: string
         '@context':
           type: string

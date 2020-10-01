@@ -314,7 +314,7 @@ components:
         A data type for an inclination measure where the units are decimal
         degrees and the values range from +90.0 to -90.0.
       properties:
-        decimal:
+        value:
           type: string
         '@context':
           type: string
@@ -350,7 +350,7 @@ components:
         A data type for an angle measure where the units are decimal degrees and
         the values range from +180.0 to -180.0.
       properties:
-        decimal:
+        value:
           type: string
         '@context':
           type: string

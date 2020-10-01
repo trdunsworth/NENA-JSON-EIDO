@@ -2233,7 +2233,7 @@ components:
       title: 'nc:CodeType'
       description: A data type for a code with codes sourced from an external code list.
       properties:
-        token:
+        value:
           type: string
         codeListURI:
           type: string

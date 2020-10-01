@@ -1,6 +1,5 @@
 {
   "@context": {
-    "xs": "http://www.w3.org/2001/XMLSchema#",
-    "dateTime": "xs:dateTime"
+    "value": " http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
   }
 }
