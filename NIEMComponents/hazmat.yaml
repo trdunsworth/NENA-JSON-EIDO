@@ -12,9 +12,9 @@ components:
         '@context':
           type: string
           description: hazmatHazmatUNCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/hazmatHazmatUNCodeTypeContext.json
+          default: ../JSON-LD_Contexts/hazmatHazmatUNCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hazmatHazmatUNCodeTypeContext.json
+            - ../JSON-LD_Contexts/hazmatHazmatUNCodeTypeContext.jsonld
     hazmatHazmatUNCodeSimpleType:
       type: string
       description: >-

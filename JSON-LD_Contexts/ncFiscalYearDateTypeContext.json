@@ -1,6 +1,0 @@
-{
-  "xs": "http://www.w3.org/2001/XMLSchema#",
-  "gYear": "xs:gYear",
-  "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
-  "fiscalYearStartDate": "nc:fiscalYearStartDate"
-}

@@ -22,9 +22,9 @@ components:
         '@context':
           type: string
           description: itAddressAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/itAddressAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/itAddressAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/itAddressAugmentationTypeContext.json
+            - ../JSON-LD_Contexts/itAddressAugmentationTypeContext.jsonld
     itDocumentAugmentationType:
       type: object
       title: 'it:DocumentAugmentationType'
@@ -55,9 +55,9 @@ components:
         '@context':
           type: string
           description: itDocumentAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/itDocumentAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/itDocumentAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/itDocumentAugmentationTypeContext.json
+            - ../JSON-LD_Contexts/itDocumentAugmentationTypeContext.jsonld
     itObligationAugmentationType:
       type: object
       title: 'it:ObligationAugmentationType'
@@ -88,9 +88,9 @@ components:
         '@context':
           type: string
           description: itObligationAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/itObligationAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/itObligationAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/itObligationAugmentationTypeContext.json
+            - ../JSON-LD_Contexts/itObligationAugmentationTypeContext.jsonld
     itObligationGuaranteeType:
       type: object
       title: 'it:ObligationGuaranteeType'
@@ -114,9 +114,9 @@ components:
         '@context':
           type: string
           description: itObligationGuaranteeType JSON-LD context
-          default: ../JSON-LD_Contexts/itObligationGuaranteeTypeContext.json
+          default: ../JSON-LD_Contexts/itObligationGuaranteeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/itObligationGuaranteeTypeContext.json
+            - ../JSON-LD_Contexts/itObligationGuaranteeTypeContext.jsonld
     itPersonAugmentationType:
       type: object
       title: 'it:PersonAugmentationType'
@@ -133,6 +133,6 @@ components:
         '@context':
           type: string
           description: itPersonAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/itPersonAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/itPersonAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/itPersonAugmentationTypeContext.json
+            - ../JSON-LD_Contexts/itPersonAugmentationTypeContext.jsonld

@@ -10,9 +10,9 @@ components:
         '@context':
           type: string
           description: uspsUSStateCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/uspsUSStateCodeTypeContext.json
+          default: ../JSON-LD_Contexts/uspsUSStateCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/uspsUSStateCodeTypeContext.json
+            - ../JSON-LD_Contexts/uspsUSStateCodeTypeContext.jsonld
     uspsUSStateCodeSimpleType:
       type: string
       description: A data type for states.

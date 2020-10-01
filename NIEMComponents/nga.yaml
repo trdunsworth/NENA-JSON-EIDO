@@ -13,9 +13,9 @@ components:
         '@context':
           type: string
           description: ngaDirectionDatumCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ngaDirectionDatumCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ngaDirectionDatumCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ngaDirectionDatumCodeTypeContext.json
+            - ../JSON-LD_Contexts/ngaDirectionDatumCodeTypeContext.jsonld
     ngaDirectionDatumCodeSimpleType:
       type: string
       description: >-
@@ -37,9 +37,9 @@ components:
         '@context':
           type: string
           description: ngaVerticalDatumCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ngaVerticalDatumCodeTypeContext.json
+          default: ../JSON-LD_Contexts/ngaVerticalDatumCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/ngaVerticalDatumCodeTypeContext.json
+            - ../JSON-LD_Contexts/ngaVerticalDatumCodeTypeContext.jsonld
     ngaVerticalDatumCodeSimpleType:
       type: string
       description: A data type for vertical datum codes.

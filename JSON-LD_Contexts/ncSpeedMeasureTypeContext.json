@@ -1,6 +1,0 @@
-{
-  "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
-  "speedUnitCode": "nc:SpeedUnitCode",
-  "mo": "http://release.niem.gov/niem/domains/militaryOperations/4.1/#",
-  "augmentation": "mo:SpeedMeasureAugmentation"
-}

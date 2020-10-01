@@ -5,27 +5,27 @@ components:
       title: 'niem-xs:string'
       description: A data type for character strings in XML.
       properties:
-        string:
+        value:
           type: string
         '@context':
           type: string
           description: niem-xsstring JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsstringContext.json
+          default: ../JSON-LD_Contexts/niem-xsstringContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/niem-xsstringContext.json
+            - ../JSON-LD_Contexts/niem-xsstringContext.jsonld
     niem-xsdecimal:
       type: object
       title: 'niem-xs:decimal'
       description: A data type for arbitrary precision decimal numbers.
       properties:
-        decimal:
+        value:
           type: number
         '@context':
           type: string
           description: niem-xsdecimal JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsdecimalContext.json
+          default: ../JSON-LD_Contexts/niem-xsdecimalContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/niem-xsdecimalContext.json
+            - ../JSON-LD_Contexts/niem-xsdecimalContext.jsonld
     niem-xsdouble:
       type: object
       title: 'niem-xs:double'
@@ -38,27 +38,27 @@ components:
         value space of double also contains the following three special values:
         positive and negative infinity and not-a-number (NaN).
       properties:
-        double:
+        value:
           type: number
         '@context':
           type: string
           description: niem-xsdouble JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsdoubleContext.json
+          default: ../JSON-LD_Contexts/niem-xsdoubleContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/niem-xsdoubleContext.json
+            - ../JSON-LD_Contexts/niem-xsdoubleContext.jsonld
     niem-xsinteger:
       type: object
       title: 'niem-xs:integer'
       description: A data type for the standard mathematical concept of integer numbers.
       properties:
-        integer:
+        value:
           type: number
         '@context':
           type: string
           description: niem-xsinteger JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsintegerContext.json
+          default: ../JSON-LD_Contexts/niem-xsintegerContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/niem-xsintegerContext.json
+            - ../JSON-LD_Contexts/niem-xsintegerContext.jsonld
     niem-xsunsignedInt:
       type: object
       title: 'niem-xs:unsignedInt'
@@ -66,27 +66,27 @@ components:
         A data type that is derived from unsignedLong by setting the value of
         maxInclusive to be 4294967295.
       properties:
-        unsignedInt:
+        value:
           type: number
         '@context':
           type: string
           description: niem-xsunsignedInt JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsunsignedIntContext.json
+          default: ../JSON-LD_Contexts/niem-xsunsignedIntContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/niem-xsunsignedIntContext.json
+            - ../JSON-LD_Contexts/niem-xsunsignedIntContext.jsonld
     niem-xsdate:
       type: object
       title: 'niem-xs:date'
       description: A data type for a calendar date with the format CCYY-MM-DD.
       properties:
-        date:
+        value:
           type: string
         '@context':
           type: string
           description: niem-xsdate JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsdateContext.json
+          default: ../JSON-LD_Contexts/niem-xsdateContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/niem-xsdateContext.json
+            - ../JSON-LD_Contexts/niem-xsdateContext.jsonld
     niem-xsdateTime:
       type: object
       title: 'niem-xs:dateTime'
@@ -95,14 +95,14 @@ components:
         minute properties, a decimal-valued second property, and a boolean
         timezoned property.
       properties:
-        dateTime:
+        value:
           type: string
         '@context':
           type: string
           description: niem-xsdateTime JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsdateTimeContext.json
+          default: ../JSON-LD_Contexts/niem-xsdateTimeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/niem-xsdateTimeContext.json
+            - ../JSON-LD_Contexts/niem-xsdateTimeContext.jsonld
     niem-xsgDay:
       type: object
       title: 'niem-xs:gDay'
@@ -113,53 +113,53 @@ components:
         set of calendar dates as defined in Section 3 of [ISO 8601].
         Specifically, it is a set of one-day long, monthly periodic instances.
       properties:
-        gDay:
+        value:
           type: string
         '@context':
           type: string
           description: niem-xsgDay JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsgDayContext.json
+          default: ../JSON-LD_Contexts/niem-xsgDayContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/niem-xsgDayContext.json
+            - ../JSON-LD_Contexts/niem-xsgDayContext.jsonld
     niem-xsgYear:
       type: object
       title: 'niem-xs:gYear'
       description: A data type for a Gregorian calendar year with the format CCYY.
       properties:
-        gYear:
+        value:
           type: string
         '@context':
           type: string
           description: niem-xsgYear JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsgYearContext.json
+          default: ../JSON-LD_Contexts/niem-xsgYearContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/niem-xsgYearContext.json
+            - ../JSON-LD_Contexts/niem-xsgYearContext.jsonld
     niem-xsgMonth:
       type: object
       title: 'niem-xs:gMonth'
       description: A data type for a Gregorian month with the format --MM--.
       properties:
-        gMonth:
+        value:
           type: string
         '@context':
           type: string
           description: niem-xsgMonth JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsgMonthContext.json
+          default: ../JSON-LD_Contexts/niem-xsgMonthContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/niem-xsgMonthContext.json
+            - ../JSON-LD_Contexts/niem-xsgMonthContext.jsonld
     niem-xsgYearMonth:
       type: object
       title: 'niem-xs:gYearMonth'
       description: A data type for a specific gregorian month in a specific gregorian year.
       properties:
-        gYearMonth:
+        value:
           type: string
         '@context':
           type: string
           description: niem-xsgYearMonth JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsgYearMonthContext.json
+          default: ../JSON-LD_Contexts/niem-xsgYearMonthContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/niem-xsgYearMonthContext.json
+            - ../JSON-LD_Contexts/niem-xsgYearMonthContext.jsonld
     niem-xsduration:
       type: object
       title: 'niem-xs:duration'
@@ -169,14 +169,14 @@ components:
         of days, nH is the number of hours, nM is the number of minutes, and nS
         is the number of seconds. 
       properties:
-        duration:
+        value:
           type: string
         '@context':
           type: string
           description: niem-xsduration JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsdurationContext.json
+          default: ../JSON-LD_Contexts/niem-xsdurationContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/niem-xsdurationContext.json
+            - ../JSON-LD_Contexts/niem-xsdurationContext.jsonld
     niem-xsanyURI:
       type: object
       title: 'niem-xs:anyURI'
@@ -185,79 +185,79 @@ components:
         can be absolute or relative, and may have an optional fragment
         identifier (i.e., it may be a URI Reference).
       properties:
-        anyURI:
+        value:
           type: string
         '@context':
           type: string
           description: niem-xsanyURI JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsanyURIContext.json
+          default: ../JSON-LD_Contexts/niem-xsanyURIContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/niem-xsanyURIContext.json
+            - ../JSON-LD_Contexts/niem-xsanyURIContext.jsonld
     niem-xsnonNegativeInteger:
       type: object
       title: 'niem-xs:nonNegativeInteger'
       description: A data type for an integer with a minimum value of 0.
       properties:
-        nonNegativeInteger:
+        value:
           type: number
         '@context':
           type: string
           description: niem-xsnonNegativeInteger JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsnonNegativeIntegerContext.json
+          default: ../JSON-LD_Contexts/niem-xsnonNegativeIntegerContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/niem-xsnonNegativeIntegerContext.json
+            - ../JSON-LD_Contexts/niem-xsnonNegativeIntegerContext.jsonld
     niem-xsboolean:
       type: object
       title: 'niem-xs:boolean'
       description: A data type for binary-valued logic (true/false).
       properties:
-        boolean:
+        value:
           type: boolean
         '@context':
           type: string
           description: niem-xsboolean JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsbooleanContext.json
+          default: ../JSON-LD_Contexts/niem-xsbooleanContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/niem-xsbooleanContext.json
+            - ../JSON-LD_Contexts/niem-xsbooleanContext.jsonld
     niem-xsbase64Binary:
       type: object
       title: 'niem-xs:base64Binary'
       description: A data type for Base64-encoded binary data.
       properties:
-        base64Binary:
+        value:
           type: string
         '@context':
           type: string
           description: niem-xsbase64Binary JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsbase64BinaryContext.json
+          default: ../JSON-LD_Contexts/niem-xsbase64BinaryContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/niem-xsbase64BinaryContext.json
+            - ../JSON-LD_Contexts/niem-xsbase64BinaryContext.jsonld
     niem-xshexBinary:
       type: object
       title: 'niem-xs:hexBinary'
       description: A data type for hex-encoded binary data.
       properties:
-        hexBinary:
+        value:
           type: string
         '@context':
           type: string
           description: niem-xshexBinary JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xshexBinaryContext.json
+          default: ../JSON-LD_Contexts/niem-xshexBinaryContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/niem-xshexBinaryContext.json
+            - ../JSON-LD_Contexts/niem-xshexBinaryContext.jsonld
     niem-xstime:
       type: object
       title: 'niem-xs:time'
       description: 'A data type for an instant of time with the format hh:mm:ss.sss.'
       properties:
-        time:
+        value:
           type: string
         '@context':
           type: string
           description: niem-xstime JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xstimeContext.json
+          default: ../JSON-LD_Contexts/niem-xstimeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/niem-xstimeContext.json
+            - ../JSON-LD_Contexts/niem-xstimeContext.jsonld
     niem-xsfloat:
       type: object
       title: 'niem-xs:float'
@@ -270,14 +270,14 @@ components:
         value space of float also contains the following three special values:
         positive and negative infinity and not-a-number (NaN).
       properties:
-        float:
+        value:
           type: number
         '@context':
           type: string
           description: niem-xsfloat JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsfloatContext.json
+          default: ../JSON-LD_Contexts/niem-xsfloatContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/niem-xsfloatContext.json
+            - ../JSON-LD_Contexts/niem-xsfloatContext.jsonld
     niem-xspositiveInteger:
       type: object
       title: 'niem-xs:positiveInteger'
@@ -285,14 +285,14 @@ components:
         A data type that is derived from nonNegativeInteger by setting the value
         of minInclusive to be 1.
       properties:
-        positiveInteger:
+        value:
           type: number
         '@context':
           type: string
           description: niem-xspositiveInteger JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xspositiveIntegerContext.json
+          default: ../JSON-LD_Contexts/niem-xspositiveIntegerContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/niem-xspositiveIntegerContext.json
+            - ../JSON-LD_Contexts/niem-xspositiveIntegerContext.jsonld
     niem-xsunsignedShort:
       type: object
       title: 'niem-xs:unsignedShort'
@@ -300,24 +300,24 @@ components:
         A data type that is derived from unsignedInt by setting the value of
         maxInclusive to be 65535.
       properties:
-        unsignedShort:
+        value:
           type: number
         '@context':
           type: string
           description: niem-xsunsignedShort JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsunsignedShortContext.json
+          default: ../JSON-LD_Contexts/niem-xsunsignedShortContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/niem-xsunsignedShortContext.json
+            - ../JSON-LD_Contexts/niem-xsunsignedShortContext.jsonld
     niem-xstoken:
       type: object
       title: 'niem-xs:token'
       description: A data type for tokenized strings.
       properties:
-        token:
+        value:
           type: string
         '@context':
           type: string
           description: niem-xstoken JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xstokenContext.json
+          default: ../JSON-LD_Contexts/niem-xstokenContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/niem-xstokenContext.json
+            - ../JSON-LD_Contexts/niem-xstokenContext.jsonld

@@ -25,9 +25,9 @@ components:
         '@context':
           type: string
           description: hsDispositionAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/hsDispositionAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/hsDispositionAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hsDispositionAugmentationTypeContext.json
+            - ../JSON-LD_Contexts/hsDispositionAugmentationTypeContext.jsonld
     hsInformalDispositionCategoryCodeType:
       type: object
       title: 'hs:InformalDispositionCategoryCodeType'
@@ -40,10 +40,10 @@ components:
           type: string
           description: hsInformalDispositionCategoryCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/hsInformalDispositionCategoryCodeTypeContext.json
+            ../JSON-LD_Contexts/hsInformalDispositionCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/hsInformalDispositionCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/hsInformalDispositionCategoryCodeTypeContext.jsonld
     hsInformalDispositionCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of informal disposition.
@@ -65,9 +65,9 @@ components:
         '@context':
           type: string
           description: hsOrganizationAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/hsOrganizationAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/hsOrganizationAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hsOrganizationAugmentationTypeContext.json
+            - ../JSON-LD_Contexts/hsOrganizationAugmentationTypeContext.jsonld
     hsProgramAugmentationType:
       type: object
       title: 'hs:ProgramAugmentationType'
@@ -99,9 +99,9 @@ components:
         '@context':
           type: string
           description: hsProgramAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/hsProgramAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/hsProgramAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hsProgramAugmentationTypeContext.json
+            - ../JSON-LD_Contexts/hsProgramAugmentationTypeContext.jsonld
     hsChargeAugmentationType:
       type: object
       title: 'hs:ChargeAugmentationType'
@@ -156,9 +156,9 @@ components:
         '@context':
           type: string
           description: hsChargeAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/hsChargeAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/hsChargeAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hsChargeAugmentationTypeContext.json
+            - ../JSON-LD_Contexts/hsChargeAugmentationTypeContext.jsonld
     hsChargeAllegationCategoryCodeType:
       type: object
       title: 'hs:ChargeAllegationCategoryCodeType'
@@ -171,9 +171,10 @@ components:
         '@context':
           type: string
           description: hsChargeAllegationCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/hsChargeAllegationCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/hsChargeAllegationCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hsChargeAllegationCategoryCodeTypeContext.json
+            - >-
+              ../JSON-LD_Contexts/hsChargeAllegationCategoryCodeTypeContext.jsonld
     hsChargeAllegationCategoryCodeSimpleType:
       type: string
       description: >-
@@ -203,9 +204,9 @@ components:
             '@context':
               type: string
               description: hsGoalObjectiveType JSON-LD context
-              default: ../JSON-LD_Contexts/hsGoalObjectiveTypeContext.json
+              default: ../JSON-LD_Contexts/hsGoalObjectiveTypeContext.jsonld
               enum:
-                - ../JSON-LD_Contexts/hsGoalObjectiveTypeContext.json
+                - ../JSON-LD_Contexts/hsGoalObjectiveTypeContext.jsonld
     hsTaskAugmentationType:
       type: object
       title: 'hs:TaskAugmentationType'
@@ -250,9 +251,9 @@ components:
         '@context':
           type: string
           description: hsTaskAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/hsTaskAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/hsTaskAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hsTaskAugmentationTypeContext.json
+            - ../JSON-LD_Contexts/hsTaskAugmentationTypeContext.jsonld
     hsActivityInvolvedPersonAssociationAugmentationType:
       type: object
       title: 'hs:ActivityInvolvedPersonAssociationAugmentationType'
@@ -271,10 +272,10 @@ components:
           type: string
           description: hsActivityInvolvedPersonAssociationAugmentationType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/hsActivityInvolvedPersonAssociationAugmentationTypeContext.json
+            ../JSON-LD_Contexts/hsActivityInvolvedPersonAssociationAugmentationTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/hsActivityInvolvedPersonAssociationAugmentationTypeContext.json
+              ../JSON-LD_Contexts/hsActivityInvolvedPersonAssociationAugmentationTypeContext.jsonld
     hsServiceType:
       title: 'hs:ServiceType'
       description: >-
@@ -350,9 +351,9 @@ components:
             '@context':
               type: string
               description: hsServiceType JSON-LD context
-              default: ../JSON-LD_Contexts/hsServiceTypeContext.json
+              default: ../JSON-LD_Contexts/hsServiceTypeContext.jsonld
               enum:
-                - ../JSON-LD_Contexts/hsServiceTypeContext.json
+                - ../JSON-LD_Contexts/hsServiceTypeContext.jsonld
     hsServiceCategoryCodeType:
       type: object
       title: 'hs:ServiceCategoryCodeType'
@@ -366,9 +367,9 @@ components:
         '@context':
           type: string
           description: hsServiceCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/hsServiceCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/hsServiceCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hsServiceCategoryCodeTypeContext.json
+            - ../JSON-LD_Contexts/hsServiceCategoryCodeTypeContext.jsonld
     hsServiceCategoryCodeSimpleType:
       type: string
       description: >-
@@ -401,10 +402,10 @@ components:
           type: string
           description: hsUnprovidedServiceReasonCategoryCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/hsUnprovidedServiceReasonCategoryCodeTypeContext.json
+            ../JSON-LD_Contexts/hsUnprovidedServiceReasonCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/hsUnprovidedServiceReasonCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/hsUnprovidedServiceReasonCategoryCodeTypeContext.jsonld
     hsUnprovidedServiceReasonCategoryCodeSimpleType:
       type: string
       description: >-
@@ -509,9 +510,9 @@ components:
         '@context':
           type: string
           description: hsTreatmentAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/hsTreatmentAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/hsTreatmentAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hsTreatmentAugmentationTypeContext.json
+            - ../JSON-LD_Contexts/hsTreatmentAugmentationTypeContext.jsonld
     hsJuvenileType:
       type: object
       title: 'hs:JuvenileType'
@@ -758,9 +759,9 @@ components:
         '@context':
           type: string
           description: hsJuvenileType JSON-LD context
-          default: ../JSON-LD_Contexts/hsJuvenileTypeContext.json
+          default: ../JSON-LD_Contexts/hsJuvenileTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hsJuvenileTypeContext.json
+            - ../JSON-LD_Contexts/hsJuvenileTypeContext.jsonld
     hsJuvenileFamilyFinancialProblemCodeType:
       type: object
       title: 'hs:JuvenileFamilyFinancialProblemCodeType'
@@ -775,10 +776,10 @@ components:
           type: string
           description: hsJuvenileFamilyFinancialProblemCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/hsJuvenileFamilyFinancialProblemCodeTypeContext.json
+            ../JSON-LD_Contexts/hsJuvenileFamilyFinancialProblemCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/hsJuvenileFamilyFinancialProblemCodeTypeContext.json
+              ../JSON-LD_Contexts/hsJuvenileFamilyFinancialProblemCodeTypeContext.jsonld
     hsJuvenileFamilyFinancialProblemCodeSimpleType:
       type: string
       description: >-
@@ -801,9 +802,9 @@ components:
         '@context':
           type: string
           description: hsJuvenileSpecialNeedCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/hsJuvenileSpecialNeedCodeTypeContext.json
+          default: ../JSON-LD_Contexts/hsJuvenileSpecialNeedCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hsJuvenileSpecialNeedCodeTypeContext.json
+            - ../JSON-LD_Contexts/hsJuvenileSpecialNeedCodeTypeContext.jsonld
     hsJuvenileSpecialNeedCodeSimpleType:
       type: string
       description: >-
@@ -879,9 +880,9 @@ components:
             '@context':
               type: string
               description: hsJuvenileAssessmentType JSON-LD context
-              default: ../JSON-LD_Contexts/hsJuvenileAssessmentTypeContext.json
+              default: ../JSON-LD_Contexts/hsJuvenileAssessmentTypeContext.jsonld
               enum:
-                - ../JSON-LD_Contexts/hsJuvenileAssessmentTypeContext.json
+                - ../JSON-LD_Contexts/hsJuvenileAssessmentTypeContext.jsonld
     hsAssessmentOutcomeType:
       title: 'hs:AssessmentOutcomeType'
       description: A data type for the outcome of an assessment.
@@ -899,9 +900,9 @@ components:
             '@context':
               type: string
               description: hsAssessmentOutcomeType JSON-LD context
-              default: ../JSON-LD_Contexts/hsAssessmentOutcomeTypeContext.json
+              default: ../JSON-LD_Contexts/hsAssessmentOutcomeTypeContext.jsonld
               enum:
-                - ../JSON-LD_Contexts/hsAssessmentOutcomeTypeContext.json
+                - ../JSON-LD_Contexts/hsAssessmentOutcomeTypeContext.jsonld
     hsAssessmentRecommendationType:
       title: 'hs:AssessmentRecommendationType'
       description: A data type for the recommendation of an assessment.
@@ -920,9 +921,10 @@ components:
             '@context':
               type: string
               description: hsAssessmentRecommendationType JSON-LD context
-              default: ../JSON-LD_Contexts/hsAssessmentRecommendationTypeContext.json
+              default: ../JSON-LD_Contexts/hsAssessmentRecommendationTypeContext.jsonld
               enum:
-                - ../JSON-LD_Contexts/hsAssessmentRecommendationTypeContext.json
+                - >-
+                  ../JSON-LD_Contexts/hsAssessmentRecommendationTypeContext.jsonld
     hsAssessmentRecommendedCourseOfActionType:
       title: 'hs:AssessmentRecommendedCourseOfActionType'
       description: A data type for an action.
@@ -950,10 +952,10 @@ components:
               type: string
               description: hsAssessmentRecommendedCourseOfActionType JSON-LD context
               default: >-
-                ../JSON-LD_Contexts/hsAssessmentRecommendedCourseOfActionTypeContext.json
+                ../JSON-LD_Contexts/hsAssessmentRecommendedCourseOfActionTypeContext.jsonld
               enum:
                 - >-
-                  ../JSON-LD_Contexts/hsAssessmentRecommendedCourseOfActionTypeContext.json
+                  ../JSON-LD_Contexts/hsAssessmentRecommendedCourseOfActionTypeContext.jsonld
     hsAssessmentRecommendedCourseOfActionCategoryCodeType:
       type: object
       title: 'hs:AssessmentRecommendedCourseOfActionCategoryCodeType'
@@ -968,10 +970,10 @@ components:
             hsAssessmentRecommendedCourseOfActionCategoryCodeType JSON-LD
             context
           default: >-
-            ../JSON-LD_Contexts/hsAssessmentRecommendedCourseOfActionCategoryCodeTypeContext.json
+            ../JSON-LD_Contexts/hsAssessmentRecommendedCourseOfActionCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/hsAssessmentRecommendedCourseOfActionCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/hsAssessmentRecommendedCourseOfActionCategoryCodeTypeContext.jsonld
     hsAssessmentRecommendedCourseOfActionCategoryCodeSimpleType:
       type: string
       description: A data type for describing a course of action.
@@ -1021,9 +1023,9 @@ components:
         '@context':
           type: string
           description: hsCaseworkerType JSON-LD context
-          default: ../JSON-LD_Contexts/hsCaseworkerTypeContext.json
+          default: ../JSON-LD_Contexts/hsCaseworkerTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hsCaseworkerTypeContext.json
+            - ../JSON-LD_Contexts/hsCaseworkerTypeContext.jsonld
     hsCaseWorkerCategoryCodeType:
       type: object
       title: 'hs:CaseWorkerCategoryCodeType'
@@ -1034,9 +1036,9 @@ components:
         '@context':
           type: string
           description: hsCaseWorkerCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/hsCaseWorkerCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/hsCaseWorkerCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hsCaseWorkerCategoryCodeTypeContext.json
+            - ../JSON-LD_Contexts/hsCaseWorkerCategoryCodeTypeContext.jsonld
     hsCaseWorkerCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of case worker.
@@ -1061,10 +1063,10 @@ components:
           type: string
           description: hsCaseworkerInvolvementCategoryCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/hsCaseworkerInvolvementCategoryCodeTypeContext.json
+            ../JSON-LD_Contexts/hsCaseworkerInvolvementCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/hsCaseworkerInvolvementCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/hsCaseworkerInvolvementCategoryCodeTypeContext.jsonld
     hsCaseworkerInvolvementCategoryCodeSimpleType:
       type: string
       description: >-
@@ -1109,9 +1111,9 @@ components:
         '@context':
           type: string
           description: hsEducationType JSON-LD context
-          default: ../JSON-LD_Contexts/hsEducationTypeContext.json
+          default: ../JSON-LD_Contexts/hsEducationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hsEducationTypeContext.json
+            - ../JSON-LD_Contexts/hsEducationTypeContext.jsonld
     hsCourtOrderAugmentationType:
       type: object
       title: 'hs:CourtOrderAugmentationType'
@@ -1141,9 +1143,9 @@ components:
         '@context':
           type: string
           description: hsCourtOrderAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/hsCourtOrderAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/hsCourtOrderAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hsCourtOrderAugmentationTypeContext.json
+            - ../JSON-LD_Contexts/hsCourtOrderAugmentationTypeContext.jsonld
     hsReportingOrganizationType:
       title: 'hs:ReportingOrganizationType'
       description: A data type for an organization reporting information.
@@ -1184,9 +1186,9 @@ components:
             '@context':
               type: string
               description: hsReportingOrganizationType JSON-LD context
-              default: ../JSON-LD_Contexts/hsReportingOrganizationTypeContext.json
+              default: ../JSON-LD_Contexts/hsReportingOrganizationTypeContext.jsonld
               enum:
-                - ../JSON-LD_Contexts/hsReportingOrganizationTypeContext.json
+                - ../JSON-LD_Contexts/hsReportingOrganizationTypeContext.jsonld
     hsReportingOrganizationCategoryCodeType:
       type: object
       title: 'hs:ReportingOrganizationCategoryCodeType'
@@ -1199,10 +1201,10 @@ components:
           type: string
           description: hsReportingOrganizationCategoryCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/hsReportingOrganizationCategoryCodeTypeContext.json
+            ../JSON-LD_Contexts/hsReportingOrganizationCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/hsReportingOrganizationCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/hsReportingOrganizationCategoryCodeTypeContext.jsonld
     hsReportingOrganizationCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of an organization reporting information.
@@ -1247,10 +1249,11 @@ components:
         '@context':
           type: string
           description: hsReportingOrganizationClassCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/hsReportingOrganizationClassCodeTypeContext.json
+          default: >-
+            ../JSON-LD_Contexts/hsReportingOrganizationClassCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/hsReportingOrganizationClassCodeTypeContext.json
+              ../JSON-LD_Contexts/hsReportingOrganizationClassCodeTypeContext.jsonld
     hsReportingOrganizationClassCodeSimpleType:
       type: string
       description: A data type for a class of an organization reporting information.
@@ -1288,9 +1291,10 @@ components:
         '@context':
           type: string
           description: hsMilitarySummaryAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/hsMilitarySummaryAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/hsMilitarySummaryAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hsMilitarySummaryAugmentationTypeContext.json
+            - >-
+              ../JSON-LD_Contexts/hsMilitarySummaryAugmentationTypeContext.jsonld
     hsPersonAugmentationType:
       type: object
       title: 'hs:PersonAugmentationType'
@@ -1597,9 +1601,9 @@ components:
         '@context':
           type: string
           description: hsPersonAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/hsPersonAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/hsPersonAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hsPersonAugmentationTypeContext.json
+            - ../JSON-LD_Contexts/hsPersonAugmentationTypeContext.jsonld
     hsSSNVerificationIndicatorCodeType:
       type: object
       title: 'hs:SSNVerificationIndicatorCodeType'
@@ -1612,9 +1616,10 @@ components:
         '@context':
           type: string
           description: hsSSNVerificationIndicatorCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/hsSSNVerificationIndicatorCodeTypeContext.json
+          default: ../JSON-LD_Contexts/hsSSNVerificationIndicatorCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hsSSNVerificationIndicatorCodeTypeContext.json
+            - >-
+              ../JSON-LD_Contexts/hsSSNVerificationIndicatorCodeTypeContext.jsonld
     hsSSNVerificationIndicatorCodeSimpleType:
       type: string
       description: >-
@@ -1672,9 +1677,9 @@ components:
         '@context':
           type: string
           description: hsEligibilityType JSON-LD context
-          default: ../JSON-LD_Contexts/hsEligibilityTypeContext.json
+          default: ../JSON-LD_Contexts/hsEligibilityTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hsEligibilityTypeContext.json
+            - ../JSON-LD_Contexts/hsEligibilityTypeContext.jsonld
     hsServicesEligibilityIndicatorCodeType:
       type: object
       title: 'hs:ServicesEligibilityIndicatorCodeType'
@@ -1687,10 +1692,10 @@ components:
           type: string
           description: hsServicesEligibilityIndicatorCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/hsServicesEligibilityIndicatorCodeTypeContext.json
+            ../JSON-LD_Contexts/hsServicesEligibilityIndicatorCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/hsServicesEligibilityIndicatorCodeTypeContext.json
+              ../JSON-LD_Contexts/hsServicesEligibilityIndicatorCodeTypeContext.jsonld
     hsServicesEligibilityIndicatorCodeSimpleType:
       type: string
       description: A data type for a service for which a person is eligible.
@@ -1754,9 +1759,9 @@ components:
         '@context':
           type: string
           description: hsHistoricalNarrativeType JSON-LD context
-          default: ../JSON-LD_Contexts/hsHistoricalNarrativeTypeContext.json
+          default: ../JSON-LD_Contexts/hsHistoricalNarrativeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hsHistoricalNarrativeTypeContext.json
+            - ../JSON-LD_Contexts/hsHistoricalNarrativeTypeContext.jsonld
     hsHealthDetailsType:
       type: object
       title: 'hs:HealthDetailsType'
@@ -1804,9 +1809,9 @@ components:
         '@context':
           type: string
           description: hsHealthDetailsType JSON-LD context
-          default: ../JSON-LD_Contexts/hsHealthDetailsTypeContext.json
+          default: ../JSON-LD_Contexts/hsHealthDetailsTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hsHealthDetailsTypeContext.json
+            - ../JSON-LD_Contexts/hsHealthDetailsTypeContext.jsonld
     hsMedicalHealthDetailsType:
       title: 'hs:MedicalHealthDetailsType'
       description: A data type for details about a person's medical health.
@@ -1854,9 +1859,9 @@ components:
             '@context':
               type: string
               description: hsMedicalHealthDetailsType JSON-LD context
-              default: ../JSON-LD_Contexts/hsMedicalHealthDetailsTypeContext.json
+              default: ../JSON-LD_Contexts/hsMedicalHealthDetailsTypeContext.jsonld
               enum:
-                - ../JSON-LD_Contexts/hsMedicalHealthDetailsTypeContext.json
+                - ../JSON-LD_Contexts/hsMedicalHealthDetailsTypeContext.jsonld
     hsMentalHealthDetailsType:
       title: 'hs:MentalHealthDetailsType'
       description: >-
@@ -1900,9 +1905,9 @@ components:
             '@context':
               type: string
               description: hsMentalHealthDetailsType JSON-LD context
-              default: ../JSON-LD_Contexts/hsMentalHealthDetailsTypeContext.json
+              default: ../JSON-LD_Contexts/hsMentalHealthDetailsTypeContext.jsonld
               enum:
-                - ../JSON-LD_Contexts/hsMentalHealthDetailsTypeContext.json
+                - ../JSON-LD_Contexts/hsMentalHealthDetailsTypeContext.jsonld
     hsDevelopmentalDisabilityCodeType:
       type: object
       title: 'hs:DevelopmentalDisabilityCodeType'
@@ -1913,9 +1918,10 @@ components:
         '@context':
           type: string
           description: hsDevelopmentalDisabilityCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/hsDevelopmentalDisabilityCodeTypeContext.json
+          default: ../JSON-LD_Contexts/hsDevelopmentalDisabilityCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hsDevelopmentalDisabilityCodeTypeContext.json
+            - >-
+              ../JSON-LD_Contexts/hsDevelopmentalDisabilityCodeTypeContext.jsonld
     hsDevelopmentalDisabilityCodeSimpleType:
       type: string
       description: A data type for describing a person's developmental disabilities
@@ -2007,9 +2013,9 @@ components:
             '@context':
               type: string
               description: hsMedicationUseType JSON-LD context
-              default: ../JSON-LD_Contexts/hsMedicationUseTypeContext.json
+              default: ../JSON-LD_Contexts/hsMedicationUseTypeContext.jsonld
               enum:
-                - ../JSON-LD_Contexts/hsMedicationUseTypeContext.json
+                - ../JSON-LD_Contexts/hsMedicationUseTypeContext.jsonld
     hsMedicationUseFrequencyCodeType:
       type: object
       title: 'hs:MedicationUseFrequencyCodeType'
@@ -2020,9 +2026,9 @@ components:
         '@context':
           type: string
           description: hsMedicationUseFrequencyCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/hsMedicationUseFrequencyCodeTypeContext.json
+          default: ../JSON-LD_Contexts/hsMedicationUseFrequencyCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hsMedicationUseFrequencyCodeTypeContext.json
+            - ../JSON-LD_Contexts/hsMedicationUseFrequencyCodeTypeContext.jsonld
     hsMedicationUseFrequencyCodeSimpleType:
       type: string
       description: A data type for describing the medication use frequency.
@@ -2204,9 +2210,9 @@ components:
             '@context':
               type: string
               description: hsPrescriptionType JSON-LD context
-              default: ../JSON-LD_Contexts/hsPrescriptionTypeContext.json
+              default: ../JSON-LD_Contexts/hsPrescriptionTypeContext.jsonld
               enum:
-                - ../JSON-LD_Contexts/hsPrescriptionTypeContext.json
+                - ../JSON-LD_Contexts/hsPrescriptionTypeContext.jsonld
     hsDrugDosageUnitsCodeType:
       type: object
       title: 'hs:DrugDosageUnitsCodeType'
@@ -2219,9 +2225,9 @@ components:
         '@context':
           type: string
           description: hsDrugDosageUnitsCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/hsDrugDosageUnitsCodeTypeContext.json
+          default: ../JSON-LD_Contexts/hsDrugDosageUnitsCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hsDrugDosageUnitsCodeTypeContext.json
+            - ../JSON-LD_Contexts/hsDrugDosageUnitsCodeTypeContext.jsonld
     hsDrugDosageUnitsCodeSimpleType:
       type: string
       description: >-
@@ -2241,9 +2247,9 @@ components:
         '@context':
           type: string
           description: hsMethodOfPaymentCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/hsMethodOfPaymentCodeTypeContext.json
+          default: ../JSON-LD_Contexts/hsMethodOfPaymentCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hsMethodOfPaymentCodeTypeContext.json
+            - ../JSON-LD_Contexts/hsMethodOfPaymentCodeTypeContext.jsonld
     hsMethodOfPaymentCodeSimpleType:
       type: string
       description: A data type for a method of payment.
@@ -2290,9 +2296,9 @@ components:
         '@context':
           type: string
           description: hsPharmacistType JSON-LD context
-          default: ../JSON-LD_Contexts/hsPharmacistTypeContext.json
+          default: ../JSON-LD_Contexts/hsPharmacistTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hsPharmacistTypeContext.json
+            - ../JSON-LD_Contexts/hsPharmacistTypeContext.jsonld
     hsTransmissionFormOfRxOriginCodeType:
       type: object
       title: 'hs:TransmissionFormOfRxOriginCodeType'
@@ -2306,10 +2312,11 @@ components:
         '@context':
           type: string
           description: hsTransmissionFormOfRxOriginCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/hsTransmissionFormOfRxOriginCodeTypeContext.json
+          default: >-
+            ../JSON-LD_Contexts/hsTransmissionFormOfRxOriginCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/hsTransmissionFormOfRxOriginCodeTypeContext.json
+              ../JSON-LD_Contexts/hsTransmissionFormOfRxOriginCodeTypeContext.jsonld
     hsTransmissionFormOfRxOriginCodeSimpleType:
       type: string
       description: >-
@@ -2392,9 +2399,9 @@ components:
             '@context':
               type: string
               description: hsSubstanceAbuseDetailsType JSON-LD context
-              default: ../JSON-LD_Contexts/hsSubstanceAbuseDetailsTypeContext.json
+              default: ../JSON-LD_Contexts/hsSubstanceAbuseDetailsTypeContext.jsonld
               enum:
-                - ../JSON-LD_Contexts/hsSubstanceAbuseDetailsTypeContext.json
+                - ../JSON-LD_Contexts/hsSubstanceAbuseDetailsTypeContext.jsonld
     hsDrugUseFrequencyCodeType:
       type: object
       title: 'hs:DrugUseFrequencyCodeType'
@@ -2405,9 +2412,9 @@ components:
         '@context':
           type: string
           description: hsDrugUseFrequencyCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/hsDrugUseFrequencyCodeTypeContext.json
+          default: ../JSON-LD_Contexts/hsDrugUseFrequencyCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hsDrugUseFrequencyCodeTypeContext.json
+            - ../JSON-LD_Contexts/hsDrugUseFrequencyCodeTypeContext.jsonld
     hsDrugUseFrequencyCodeSimpleType:
       type: string
       description: A data type for describing the frequency with which a substance is used.
@@ -2436,9 +2443,9 @@ components:
             '@context':
               type: string
               description: hsHealthInsuranceType JSON-LD context
-              default: ../JSON-LD_Contexts/hsHealthInsuranceTypeContext.json
+              default: ../JSON-LD_Contexts/hsHealthInsuranceTypeContext.jsonld
               enum:
-                - ../JSON-LD_Contexts/hsHealthInsuranceTypeContext.json
+                - ../JSON-LD_Contexts/hsHealthInsuranceTypeContext.jsonld
     hsLivingSituationCategoryCodeType:
       type: object
       title: 'hs:LivingSituationCategoryCodeType'
@@ -2449,9 +2456,10 @@ components:
         '@context':
           type: string
           description: hsLivingSituationCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/hsLivingSituationCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/hsLivingSituationCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hsLivingSituationCategoryCodeTypeContext.json
+            - >-
+              ../JSON-LD_Contexts/hsLivingSituationCategoryCodeTypeContext.jsonld
     hsLivingSituationCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of living situtation.
@@ -2489,10 +2497,11 @@ components:
         '@context':
           type: string
           description: hsHousingPermanencyCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/hsHousingPermanencyCategoryCodeTypeContext.json
+          default: >-
+            ../JSON-LD_Contexts/hsHousingPermanencyCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/hsHousingPermanencyCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/hsHousingPermanencyCategoryCodeTypeContext.jsonld
     hsHousingPermanencyCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of housing at time of service.
@@ -2511,9 +2520,9 @@ components:
         '@context':
           type: string
           description: hsPersonGenderIdentityCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/hsPersonGenderIdentityCodeTypeContext.json
+          default: ../JSON-LD_Contexts/hsPersonGenderIdentityCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hsPersonGenderIdentityCodeTypeContext.json
+            - ../JSON-LD_Contexts/hsPersonGenderIdentityCodeTypeContext.jsonld
     hsPersonGenderIdentityCodeSimpleType:
       type: string
       description: A data type for a gender of a person's identity.
@@ -2537,9 +2546,10 @@ components:
         '@context':
           type: string
           description: hsPersonSexualOrientationCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/hsPersonSexualOrientationCodeTypeContext.json
+          default: ../JSON-LD_Contexts/hsPersonSexualOrientationCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hsPersonSexualOrientationCodeTypeContext.json
+            - >-
+              ../JSON-LD_Contexts/hsPersonSexualOrientationCodeTypeContext.jsonld
     hsPersonSexualOrientationCodeSimpleType:
       type: string
       description: A data type for a target gender of the sexual interest of a person.

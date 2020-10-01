@@ -13,9 +13,10 @@ components:
         '@context':
           type: string
           description: mmuccIntersectionCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/mmuccIntersectionCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/mmuccIntersectionCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/mmuccIntersectionCategoryCodeTypeContext.json
+            - >-
+              ../JSON-LD_Contexts/mmuccIntersectionCategoryCodeTypeContext.jsonld
     mmuccIntersectionCategoryCodeSimpleType:
       type: string
       description: >-
@@ -44,9 +45,9 @@ components:
         '@context':
           type: string
           description: mmuccRoadwayGradeCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/mmuccRoadwayGradeCodeTypeContext.json
+          default: ../JSON-LD_Contexts/mmuccRoadwayGradeCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/mmuccRoadwayGradeCodeTypeContext.json
+            - ../JSON-LD_Contexts/mmuccRoadwayGradeCodeTypeContext.jsonld
     mmuccRoadwayGradeCodeSimpleType:
       type: string
       description: >-
@@ -73,10 +74,10 @@ components:
           type: string
           description: mmuccRoadwayHorizontalAlignmentCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/mmuccRoadwayHorizontalAlignmentCodeTypeContext.json
+            ../JSON-LD_Contexts/mmuccRoadwayHorizontalAlignmentCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/mmuccRoadwayHorizontalAlignmentCodeTypeContext.json
+              ../JSON-LD_Contexts/mmuccRoadwayHorizontalAlignmentCodeTypeContext.jsonld
     mmuccRoadwayHorizontalAlignmentCodeSimpleType:
       type: string
       description: >-
@@ -97,9 +98,9 @@ components:
         '@context':
           type: string
           description: mmuccStandardSelectionCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/mmuccStandardSelectionCodeTypeContext.json
+          default: ../JSON-LD_Contexts/mmuccStandardSelectionCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/mmuccStandardSelectionCodeTypeContext.json
+            - ../JSON-LD_Contexts/mmuccStandardSelectionCodeTypeContext.jsonld
     mmuccStandardSelectionCodeSimpleType:
       type: string
       description: 'A data type for standard selection codes as yes, no, unknown.'
@@ -120,9 +121,10 @@ components:
         '@context':
           type: string
           description: mmuccPersonInjuryLocationCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/mmuccPersonInjuryLocationCodeTypeContext.json
+          default: ../JSON-LD_Contexts/mmuccPersonInjuryLocationCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/mmuccPersonInjuryLocationCodeTypeContext.json
+            - >-
+              ../JSON-LD_Contexts/mmuccPersonInjuryLocationCodeTypeContext.jsonld
     mmuccPersonInjuryLocationCodeSimpleType:
       type: string
       description: >-
@@ -151,9 +153,10 @@ components:
         '@context':
           type: string
           description: mmuccCrashWeatherConditionCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/mmuccCrashWeatherConditionCodeTypeContext.json
+          default: ../JSON-LD_Contexts/mmuccCrashWeatherConditionCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/mmuccCrashWeatherConditionCodeTypeContext.json
+            - >-
+              ../JSON-LD_Contexts/mmuccCrashWeatherConditionCodeTypeContext.jsonld
     mmuccAtmosphericConditionCodeSimpleType:
       type: string
       description: >-
@@ -184,9 +187,9 @@ components:
         '@context':
           type: string
           description: mmuccDrugTestResultCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/mmuccDrugTestResultCodeTypeContext.json
+          default: ../JSON-LD_Contexts/mmuccDrugTestResultCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/mmuccDrugTestResultCodeTypeContext.json
+            - ../JSON-LD_Contexts/mmuccDrugTestResultCodeTypeContext.jsonld
     mmuccDrugTestResultCodeSimpleType:
       type: string
       description: A data type for a Result of Drug Test.
@@ -204,9 +207,9 @@ components:
         '@context':
           type: string
           description: mmuccDrugTestCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/mmuccDrugTestCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/mmuccDrugTestCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/mmuccDrugTestCategoryCodeTypeContext.json
+            - ../JSON-LD_Contexts/mmuccDrugTestCategoryCodeTypeContext.jsonld
     mmuccDrugTestCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of Drug Test.
@@ -226,9 +229,9 @@ components:
         '@context':
           type: string
           description: mmuccVehicleUseCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/mmuccVehicleUseCodeTypeContext.json
+          default: ../JSON-LD_Contexts/mmuccVehicleUseCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/mmuccVehicleUseCodeTypeContext.json
+            - ../JSON-LD_Contexts/mmuccVehicleUseCodeTypeContext.jsonld
     mmuccVehicleUseCodeSimpleType:
       type: string
       description: >-
@@ -261,10 +264,10 @@ components:
           type: string
           description: mmuccDriverLicensePermitStatusCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/mmuccDriverLicensePermitStatusCodeTypeContext.json
+            ../JSON-LD_Contexts/mmuccDriverLicensePermitStatusCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/mmuccDriverLicensePermitStatusCodeTypeContext.json
+              ../JSON-LD_Contexts/mmuccDriverLicensePermitStatusCodeTypeContext.jsonld
     mmuccDriverLicensePermitStatusCodeSimpleType:
       type: string
       description: >-
@@ -291,9 +294,9 @@ components:
         '@context':
           type: string
           description: mmuccDrivingRestrictionCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/mmuccDrivingRestrictionCodeTypeContext.json
+          default: ../JSON-LD_Contexts/mmuccDrivingRestrictionCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/mmuccDrivingRestrictionCodeTypeContext.json
+            - ../JSON-LD_Contexts/mmuccDrivingRestrictionCodeTypeContext.jsonld
     mmuccDrivingRestrictionCodeSimpleType:
       type: string
       description: >-

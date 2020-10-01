@@ -15,9 +15,9 @@ components:
         '@context':
           type: string
           description: moPolygonRegionAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/moPolygonRegionAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/moPolygonRegionAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moPolygonRegionAugmentationTypeContext.json
+            - ../JSON-LD_Contexts/moPolygonRegionAugmentationTypeContext.jsonld
     moEllipseType:
       type: object
       title: 'mo:EllipseType'
@@ -50,9 +50,9 @@ components:
         '@context':
           type: string
           description: moEllipseType JSON-LD context
-          default: ../JSON-LD_Contexts/moEllipseTypeContext.json
+          default: ../JSON-LD_Contexts/moEllipseTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moEllipseTypeContext.json
+            - ../JSON-LD_Contexts/moEllipseTypeContext.jsonld
     moHorizontalAngularMeasureType:
       title: 'mo:HorizontalAngularMeasureType'
       description: A data type for a measure of an angle in the horizontal plane.
@@ -72,9 +72,10 @@ components:
             '@context':
               type: string
               description: moHorizontalAngularMeasureType JSON-LD context
-              default: ../JSON-LD_Contexts/moHorizontalAngularMeasureTypeContext.json
+              default: ../JSON-LD_Contexts/moHorizontalAngularMeasureTypeContext.jsonld
               enum:
-                - ../JSON-LD_Contexts/moHorizontalAngularMeasureTypeContext.json
+                - >-
+                  ../JSON-LD_Contexts/moHorizontalAngularMeasureTypeContext.jsonld
     moAngularMeasureAugmentationType:
       type: object
       title: 'mo:AngularMeasureAugmentationType'
@@ -103,9 +104,9 @@ components:
         '@context':
           type: string
           description: moAngularMeasureAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/moAngularMeasureAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/moAngularMeasureAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moAngularMeasureAugmentationTypeContext.json
+            - ../JSON-LD_Contexts/moAngularMeasureAugmentationTypeContext.jsonld
     moAngleUnitCodeType:
       type: object
       title: 'mo:AngleUnitCodeType'
@@ -116,9 +117,9 @@ components:
         '@context':
           type: string
           description: moAngleUnitCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/moAngleUnitCodeTypeContext.json
+          default: ../JSON-LD_Contexts/moAngleUnitCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moAngleUnitCodeTypeContext.json
+            - ../JSON-LD_Contexts/moAngleUnitCodeTypeContext.jsonld
     moAngleUnitCodeSimpleType:
       type: string
       description: A data type for a unit code for an azimuth value.
@@ -137,9 +138,9 @@ components:
         '@context':
           type: string
           description: moNATOMilType JSON-LD context
-          default: ../JSON-LD_Contexts/moNATOMilTypeContext.json
+          default: ../JSON-LD_Contexts/moNATOMilTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moNATOMilTypeContext.json
+            - ../JSON-LD_Contexts/moNATOMilTypeContext.jsonld
     moNATOMilSimpleType:
       type: string
       description: >-
@@ -160,9 +161,9 @@ components:
         '@context':
           type: string
           description: moWGS84EllipseType JSON-LD context
-          default: ../JSON-LD_Contexts/moWGS84EllipseTypeContext.json
+          default: ../JSON-LD_Contexts/moWGS84EllipseTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moWGS84EllipseTypeContext.json
+            - ../JSON-LD_Contexts/moWGS84EllipseTypeContext.jsonld
     moWGS84ExternalPolygonType:
       type: object
       title: 'mo:WGS84ExternalPolygonType'
@@ -175,37 +176,13 @@ components:
         '@context':
           type: string
           description: moWGS84ExternalPolygonType JSON-LD context
-          default: ../JSON-LD_Contexts/moWGS84ExternalPolygonTypeContext.json
+          default: ../JSON-LD_Contexts/moWGS84ExternalPolygonTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moWGS84ExternalPolygonTypeContext.json
+            - ../JSON-LD_Contexts/moWGS84ExternalPolygonTypeContext.jsonld
     moTelephoneNumberCategoryCodeType:
-      type: object
+      type: string
       title: 'mo:TelephoneNumberCategoryCodeType'
       description: A data type for a kind of telephone number.
-      properties:
-        simpleType:
-          $ref: mo.yaml#/components/schemas/moTelephoneNumberCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: moTelephoneNumberCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/moTelephoneNumberCategoryCodeTypeContext.json
-          enum:
-            - ../JSON-LD_Contexts/moTelephoneNumberCategoryCodeTypeContext.json
-    moTelephoneNumberCategoryCodeSimpleType:
-      type: object
-      title: 'mo:TelephoneNumberCategoryCodeSimpleType'
-      description: A data type for a kind of telephone number.
-      properties:
-        token:
-          type: string
-        '@context':
-          type: string
-          description: moTelephoneNumberCategoryCodeSimpleType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/moTelephoneNumberCategoryCodeSimpleTypeContext.json
-          enum:
-            - >-
-              ../JSON-LD_Contexts/moTelephoneNumberCategoryCodeSimpleTypeContext.json
     moContactInformationAugmentationType:
       type: object
       title: 'mo:ContactInformationAugmentationType'
@@ -236,10 +213,11 @@ components:
         '@context':
           type: string
           description: moContactInformationAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/moContactInformationAugmentationTypeContext.json
+          default: >-
+            ../JSON-LD_Contexts/moContactInformationAugmentationTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/moContactInformationAugmentationTypeContext.json
+              ../JSON-LD_Contexts/moContactInformationAugmentationTypeContext.jsonld
     moMGRSCoordinateStringType:
       type: object
       title: 'mo:MGRSCoordinateStringType'
@@ -254,9 +232,9 @@ components:
         '@context':
           type: string
           description: moMGRSCoordinateStringType JSON-LD context
-          default: ../JSON-LD_Contexts/moMGRSCoordinateStringTypeContext.json
+          default: ../JSON-LD_Contexts/moMGRSCoordinateStringTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moMGRSCoordinateStringTypeContext.json
+            - ../JSON-LD_Contexts/moMGRSCoordinateStringTypeContext.jsonld
     moMGRSCoordinateStringSimpleType:
       type: string
       description: >-
@@ -277,9 +255,9 @@ components:
         '@context':
           type: string
           description: moMGRSUPS1MeterCoordinateType JSON-LD context
-          default: ../JSON-LD_Contexts/moMGRSUPS1MeterCoordinateTypeContext.json
+          default: ../JSON-LD_Contexts/moMGRSUPS1MeterCoordinateTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moMGRSUPS1MeterCoordinateTypeContext.json
+            - ../JSON-LD_Contexts/moMGRSUPS1MeterCoordinateTypeContext.jsonld
     moMGRSUPS1MeterCoordinateSimpleType:
       type: string
       description: A data type for a 1-meter precision level MGRS UPS coordinate.
@@ -296,9 +274,10 @@ components:
         '@context':
           type: string
           description: moMGRSUTM100000MeterCoordinateType JSON-LD context
-          default: ../JSON-LD_Contexts/moMGRSUTM100000MeterCoordinateTypeContext.json
+          default: ../JSON-LD_Contexts/moMGRSUTM100000MeterCoordinateTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moMGRSUTM100000MeterCoordinateTypeContext.json
+            - >-
+              ../JSON-LD_Contexts/moMGRSUTM100000MeterCoordinateTypeContext.jsonld
     moMGRSUTM100000MeterCoordinateSimpleType:
       type: string
       description: 'A data type for a 100,000-meter precision level MGRS UTM coordinate.'
@@ -315,9 +294,10 @@ components:
         '@context':
           type: string
           description: moMGRSUTM10000MeterCoordinateType JSON-LD context
-          default: ../JSON-LD_Contexts/moMGRSUTM10000MeterCoordinateTypeContext.json
+          default: ../JSON-LD_Contexts/moMGRSUTM10000MeterCoordinateTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moMGRSUTM10000MeterCoordinateTypeContext.json
+            - >-
+              ../JSON-LD_Contexts/moMGRSUTM10000MeterCoordinateTypeContext.jsonld
     moMGRSUTM10000MeterCoordinateSimpleType:
       type: string
       description: 'A data type for a 10,000-meter precision level MGRS UTM coordinate.'
@@ -335,9 +315,9 @@ components:
         '@context':
           type: string
           description: moMGRSUTM1000MeterCoordinateType JSON-LD context
-          default: ../JSON-LD_Contexts/moMGRSUTM1000MeterCoordinateTypeContext.json
+          default: ../JSON-LD_Contexts/moMGRSUTM1000MeterCoordinateTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moMGRSUTM1000MeterCoordinateTypeContext.json
+            - ../JSON-LD_Contexts/moMGRSUTM1000MeterCoordinateTypeContext.jsonld
     moMGRSUTM1000MeterCoordinateSimpleType:
       type: string
       description: 'A data type for a 1,000-meter precision level MGRS UTM coordinate.'
@@ -355,9 +335,9 @@ components:
         '@context':
           type: string
           description: moMGRSUTM100MeterCoordinateType JSON-LD context
-          default: ../JSON-LD_Contexts/moMGRSUTM100MeterCoordinateTypeContext.json
+          default: ../JSON-LD_Contexts/moMGRSUTM100MeterCoordinateTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moMGRSUTM100MeterCoordinateTypeContext.json
+            - ../JSON-LD_Contexts/moMGRSUTM100MeterCoordinateTypeContext.jsonld
     moMGRSUTM100MeterCoordinateSimpleType:
       type: string
       description: A data type for a 100-meter precision level MGRS UTM coordinate.
@@ -375,9 +355,9 @@ components:
         '@context':
           type: string
           description: moMGRSUTM10MeterCoordinateType JSON-LD context
-          default: ../JSON-LD_Contexts/moMGRSUTM10MeterCoordinateTypeContext.json
+          default: ../JSON-LD_Contexts/moMGRSUTM10MeterCoordinateTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moMGRSUTM10MeterCoordinateTypeContext.json
+            - ../JSON-LD_Contexts/moMGRSUTM10MeterCoordinateTypeContext.jsonld
     moMGRSUTM10MeterCoordinateSimpleType:
       type: string
       description: A data type for a 10-meter precision level MGRS UTM coordinate.
@@ -395,9 +375,9 @@ components:
         '@context':
           type: string
           description: moMGRSUTM1MeterCoordinateType JSON-LD context
-          default: ../JSON-LD_Contexts/moMGRSUTM1MeterCoordinateTypeContext.json
+          default: ../JSON-LD_Contexts/moMGRSUTM1MeterCoordinateTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moMGRSUTM1MeterCoordinateTypeContext.json
+            - ../JSON-LD_Contexts/moMGRSUTM1MeterCoordinateTypeContext.jsonld
     moMGRSUTM1MeterCoordinateSimpleType:
       type: string
       description: A data type for a 1-meter precision level MGRS UTM coordinate.
@@ -442,9 +422,9 @@ components:
         '@context':
           type: string
           description: moWGS84LocationCylinderType JSON-LD context
-          default: ../JSON-LD_Contexts/moWGS84LocationCylinderTypeContext.json
+          default: ../JSON-LD_Contexts/moWGS84LocationCylinderTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moWGS84LocationCylinderTypeContext.json
+            - ../JSON-LD_Contexts/moWGS84LocationCylinderTypeContext.jsonld
     moWGS84LocationPointType:
       type: object
       title: 'mo:WGS84LocationPointType'
@@ -457,9 +437,9 @@ components:
         '@context':
           type: string
           description: moWGS84LocationPointType JSON-LD context
-          default: ../JSON-LD_Contexts/moWGS84LocationPointTypeContext.json
+          default: ../JSON-LD_Contexts/moWGS84LocationPointTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moWGS84LocationPointTypeContext.json
+            - ../JSON-LD_Contexts/moWGS84LocationPointTypeContext.jsonld
     moLocationCreationCodeType:
       type: object
       title: 'mo:LocationCreationCodeType'
@@ -472,9 +452,9 @@ components:
         '@context':
           type: string
           description: moLocationCreationCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/moLocationCreationCodeTypeContext.json
+          default: ../JSON-LD_Contexts/moLocationCreationCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moLocationCreationCodeTypeContext.json
+            - ../JSON-LD_Contexts/moLocationCreationCodeTypeContext.jsonld
     moLocationCreationCodeSimpleType:
       type: string
       description: >-
@@ -494,17 +474,9 @@ components:
         - MACHINE.PREDICTED
         - MACHINE.SIMULATED
     moGeospatialLocationAugmentationType:
-      type: object
+      type: string
       title: 'mo:GeospatialLocationAugmentationType'
       description: 'A data type for additional information about a nc:Location.'
-      properties:
-        '@context':
-          type: string
-          description: moGeospatialLocationAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/moGeospatialLocationAugmentationTypeContext.json
-          enum:
-            - >-
-              ../JSON-LD_Contexts/moGeospatialLocationAugmentationTypeContext.json
     moImageAugmentationType:
       type: object
       title: 'mo:ImageAugmentationType'
@@ -558,9 +530,9 @@ components:
         '@context':
           type: string
           description: moImageAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/moImageAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/moImageAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moImageAugmentationTypeContext.json
+            - ../JSON-LD_Contexts/moImageAugmentationTypeContext.jsonld
     moFacilityAugmentationType:
       type: object
       title: 'mo:FacilityAugmentationType'
@@ -576,9 +548,9 @@ components:
         '@context':
           type: string
           description: moFacilityAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/moFacilityAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/moFacilityAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moFacilityAugmentationTypeContext.json
+            - ../JSON-LD_Contexts/moFacilityAugmentationTypeContext.jsonld
     moLocationAugmentationType:
       type: object
       title: 'mo:LocationAugmentationType'
@@ -594,9 +566,9 @@ components:
         '@context':
           type: string
           description: moLocationAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/moLocationAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/moLocationAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moLocationAugmentationTypeContext.json
+            - ../JSON-LD_Contexts/moLocationAugmentationTypeContext.jsonld
     moSpeedMeasureAugmentationType:
       type: object
       title: 'mo:SpeedMeasureAugmentationType'
@@ -611,9 +583,9 @@ components:
         '@context':
           type: string
           description: moSpeedMeasureAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/moSpeedMeasureAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/moSpeedMeasureAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moSpeedMeasureAugmentationTypeContext.json
+            - ../JSON-LD_Contexts/moSpeedMeasureAugmentationTypeContext.jsonld
     moTaskAugmentationType:
       type: object
       title: 'mo:TaskAugmentationType'
@@ -665,9 +637,9 @@ components:
         '@context':
           type: string
           description: moTaskAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/moTaskAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/moTaskAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moTaskAugmentationTypeContext.json
+            - ../JSON-LD_Contexts/moTaskAugmentationTypeContext.jsonld
     moUUIDType:
       type: object
       title: 'mo:UUIDType'
@@ -678,9 +650,9 @@ components:
         '@context':
           type: string
           description: moUUIDType JSON-LD context
-          default: ../JSON-LD_Contexts/moUUIDTypeContext.json
+          default: ../JSON-LD_Contexts/moUUIDTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moUUIDTypeContext.json
+            - ../JSON-LD_Contexts/moUUIDTypeContext.jsonld
     moUUIDSimpleType:
       type: string
       description: A data type for a 128 bit Universally Unique ID (UUID)
@@ -808,9 +780,9 @@ components:
         '@context':
           type: string
           description: moUnitType JSON-LD context
-          default: ../JSON-LD_Contexts/moUnitTypeContext.json
+          default: ../JSON-LD_Contexts/moUnitTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moUnitTypeContext.json
+            - ../JSON-LD_Contexts/moUnitTypeContext.jsonld
     moForceManagementIDType:
       type: object
       title: 'mo:ForceManagementIDType'
@@ -824,9 +796,9 @@ components:
         '@context':
           type: string
           description: moForceManagementIDType JSON-LD context
-          default: ../JSON-LD_Contexts/moForceManagementIDTypeContext.json
+          default: ../JSON-LD_Contexts/moForceManagementIDTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moForceManagementIDTypeContext.json
+            - ../JSON-LD_Contexts/moForceManagementIDTypeContext.jsonld
     moForceManagementIDSimpleType:
       type: string
       description: >-
@@ -846,9 +818,9 @@ components:
         '@context':
           type: string
           description: moSixAlphaNumericIDType JSON-LD context
-          default: ../JSON-LD_Contexts/moSixAlphaNumericIDTypeContext.json
+          default: ../JSON-LD_Contexts/moSixAlphaNumericIDTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moSixAlphaNumericIDTypeContext.json
+            - ../JSON-LD_Contexts/moSixAlphaNumericIDTypeContext.jsonld
     moUnitLineNumberIDSimpleType:
       type: string
       description: >-
@@ -868,9 +840,9 @@ components:
         '@context':
           type: string
           description: moUnitNameType JSON-LD context
-          default: ../JSON-LD_Contexts/moUnitNameTypeContext.json
+          default: ../JSON-LD_Contexts/moUnitNameTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moUnitNameTypeContext.json
+            - ../JSON-LD_Contexts/moUnitNameTypeContext.jsonld
     moUnitNameSimpleType:
       type: string
       description: A data type for a character string assigned to represent a unit name.
@@ -887,9 +859,9 @@ components:
         '@context':
           type: string
           description: moAbbreviatedNameType JSON-LD context
-          default: ../JSON-LD_Contexts/moAbbreviatedNameTypeContext.json
+          default: ../JSON-LD_Contexts/moAbbreviatedNameTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moAbbreviatedNameTypeContext.json
+            - ../JSON-LD_Contexts/moAbbreviatedNameTypeContext.jsonld
     moAbbreviatedNameSimpleType:
       type: string
       description: A data type for a shortened name.
@@ -908,9 +880,9 @@ components:
         '@context':
           type: string
           description: moUnitShortNameType JSON-LD context
-          default: ../JSON-LD_Contexts/moUnitShortNameTypeContext.json
+          default: ../JSON-LD_Contexts/moUnitShortNameTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moUnitShortNameTypeContext.json
+            - ../JSON-LD_Contexts/moUnitShortNameTypeContext.jsonld
     moUnitShortNameSimpleType:
       type: string
       description: >-
@@ -931,9 +903,9 @@ components:
         '@context':
           type: string
           description: moUnitTypeCodeTextType JSON-LD context
-          default: ../JSON-LD_Contexts/moUnitTypeCodeTextTypeContext.json
+          default: ../JSON-LD_Contexts/moUnitTypeCodeTextTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moUnitTypeCodeTextTypeContext.json
+            - ../JSON-LD_Contexts/moUnitTypeCodeTextTypeContext.jsonld
     moUnitTypeCodeTextSimpleType:
       type: string
       description: >-
@@ -977,9 +949,9 @@ components:
         '@context':
           type: string
           description: moCourseAngleDegreesMeasureType JSON-LD context
-          default: ../JSON-LD_Contexts/moCourseAngleDegreesMeasureTypeContext.json
+          default: ../JSON-LD_Contexts/moCourseAngleDegreesMeasureTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moCourseAngleDegreesMeasureTypeContext.json
+            - ../JSON-LD_Contexts/moCourseAngleDegreesMeasureTypeContext.jsonld
     moUnitOperationalStatusCodeType:
       type: object
       title: 'mo:UnitOperationalStatusCodeType'
@@ -990,9 +962,9 @@ components:
         '@context':
           type: string
           description: moUnitOperationalStatusCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/moUnitOperationalStatusCodeTypeContext.json
+          default: ../JSON-LD_Contexts/moUnitOperationalStatusCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moUnitOperationalStatusCodeTypeContext.json
+            - ../JSON-LD_Contexts/moUnitOperationalStatusCodeTypeContext.jsonld
     moUnitOperationalStatusCodeSimpleType:
       type: string
       description: A data type that describes the operational status of a military entity.
@@ -1013,9 +985,9 @@ components:
         '@context':
           type: string
           description: moUnitStatusQualifierCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/moUnitStatusQualifierCodeTypeContext.json
+          default: ../JSON-LD_Contexts/moUnitStatusQualifierCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moUnitStatusQualifierCodeTypeContext.json
+            - ../JSON-LD_Contexts/moUnitStatusQualifierCodeTypeContext.jsonld
     moUnitStatusQualifierCodeSimpleType:
       type: string
       description: A data type that qualifies the status of a unit.
@@ -1040,9 +1012,9 @@ components:
         '@context':
           type: string
           description: moUnitReinforcementCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/moUnitReinforcementCodeTypeContext.json
+          default: ../JSON-LD_Contexts/moUnitReinforcementCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moUnitReinforcementCodeTypeContext.json
+            - ../JSON-LD_Contexts/moUnitReinforcementCodeTypeContext.jsonld
     moUnitReinforcementCodeSimpleType:
       type: string
       description: >-
@@ -1073,6 +1045,6 @@ components:
         '@context':
           type: string
           description: moAircraftAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/moAircraftAugmentationTypeContext.json
+          default: ../JSON-LD_Contexts/moAircraftAugmentationTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/moAircraftAugmentationTypeContext.json
+            - ../JSON-LD_Contexts/moAircraftAugmentationTypeContext.jsonld

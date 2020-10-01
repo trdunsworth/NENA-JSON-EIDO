@@ -10,9 +10,9 @@ components:
         '@context':
           type: string
           description: deaDrugCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/deaDrugCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/deaDrugCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/deaDrugCategoryCodeTypeContext.json
+            - ../JSON-LD_Contexts/deaDrugCategoryCodeTypeContext.jsonld
     deaDrugCategoryCodeSimpleType:
       type: string
       description: A data type for a kind of substance by which a person is intoxicated.
@@ -78,9 +78,9 @@ components:
         '@context':
           type: string
           description: deaDrugCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/deaDrugCodeTypeContext.json
+          default: ../JSON-LD_Contexts/deaDrugCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/deaDrugCodeTypeContext.json
+            - ../JSON-LD_Contexts/deaDrugCodeTypeContext.jsonld
     deaDrugCodeSimpleType:
       type: string
       description: A data type for drug codes.
@@ -449,9 +449,9 @@ components:
         '@context':
           type: string
           description: deaDEAClassScheduleCodeCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/deaDEAClassScheduleCodeCodeTypeContext.json
+          default: ../JSON-LD_Contexts/deaDEAClassScheduleCodeCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/deaDEAClassScheduleCodeCodeTypeContext.json
+            - ../JSON-LD_Contexts/deaDEAClassScheduleCodeCodeTypeContext.jsonld
     deaDEAClassScheduleCodeCodeSimpleType:
       type: string
       description: >-

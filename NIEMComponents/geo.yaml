@@ -10,9 +10,9 @@ components:
         '@context':
           type: string
           description: geoGeometryType JSON-LD context
-          default: ../JSON-LD_Contexts/geoGeometryTypeContext.json
+          default: ../JSON-LD_Contexts/geoGeometryTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/geoGeometryTypeContext.json
+            - ../JSON-LD_Contexts/geoGeometryTypeContext.jsonld
     geoEllipseType:
       type: object
       title: 'geo:EllipseType'
@@ -25,9 +25,9 @@ components:
         '@context':
           type: string
           description: geoEllipseType JSON-LD context
-          default: ../JSON-LD_Contexts/geoEllipseTypeContext.json
+          default: ../JSON-LD_Contexts/geoEllipseTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/geoEllipseTypeContext.json
+            - ../JSON-LD_Contexts/geoEllipseTypeContext.jsonld
     geoPointType:
       type: object
       title: 'geo:PointType'
@@ -41,9 +41,9 @@ components:
         '@context':
           type: string
           description: geoPointType JSON-LD context
-          default: ../JSON-LD_Contexts/geoPointTypeContext.json
+          default: ../JSON-LD_Contexts/geoPointTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/geoPointTypeContext.json
+            - ../JSON-LD_Contexts/geoPointTypeContext.jsonld
     geoCurveType:
       type: object
       title: 'geo:CurveType'
@@ -58,9 +58,9 @@ components:
         '@context':
           type: string
           description: geoCurveType JSON-LD context
-          default: ../JSON-LD_Contexts/geoCurveTypeContext.json
+          default: ../JSON-LD_Contexts/geoCurveTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/geoCurveTypeContext.json
+            - ../JSON-LD_Contexts/geoCurveTypeContext.jsonld
     geoEnvelopeType:
       type: object
       title: 'geo:EnvelopeType'
@@ -75,9 +75,9 @@ components:
         '@context':
           type: string
           description: geoEnvelopeType JSON-LD context
-          default: ../JSON-LD_Contexts/geoEnvelopeTypeContext.json
+          default: ../JSON-LD_Contexts/geoEnvelopeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/geoEnvelopeTypeContext.json
+            - ../JSON-LD_Contexts/geoEnvelopeTypeContext.jsonld
     geoPolygonType:
       type: object
       title: 'geo:PolygonType'
@@ -92,9 +92,9 @@ components:
         '@context':
           type: string
           description: geoPolygonType JSON-LD context
-          default: ../JSON-LD_Contexts/geoPolygonTypeContext.json
+          default: ../JSON-LD_Contexts/geoPolygonTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/geoPolygonTypeContext.json
+            - ../JSON-LD_Contexts/geoPolygonTypeContext.jsonld
     geoFeatureType:
       type: object
       title: 'geo:FeatureType'
@@ -105,6 +105,6 @@ components:
         '@context':
           type: string
           description: geoFeatureType JSON-LD context
-          default: ../JSON-LD_Contexts/geoFeatureTypeContext.json
+          default: ../JSON-LD_Contexts/geoFeatureTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/geoFeatureTypeContext.json
+            - ../JSON-LD_Contexts/geoFeatureTypeContext.jsonld

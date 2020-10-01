@@ -10,9 +10,9 @@ components:
         '@context':
           type: string
           description: occsFacilityUsageCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/occsFacilityUsageCodeTypeContext.json
+          default: ../JSON-LD_Contexts/occsFacilityUsageCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/occsFacilityUsageCodeTypeContext.json
+            - ../JSON-LD_Contexts/occsFacilityUsageCodeTypeContext.jsonld
     occsFacilityUsageCodeSimpleType:
       type: string
       description: A data type for the categories of facilities.
@@ -773,9 +773,9 @@ components:
         '@context':
           type: string
           description: occsFacilityUsageLevel1CodeType JSON-LD context
-          default: ../JSON-LD_Contexts/occsFacilityUsageLevel1CodeTypeContext.json
+          default: ../JSON-LD_Contexts/occsFacilityUsageLevel1CodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/occsFacilityUsageLevel1CodeTypeContext.json
+            - ../JSON-LD_Contexts/occsFacilityUsageLevel1CodeTypeContext.jsonld
     occsFacilityUsageLevel1CodeSimpleType:
       type: string
       description: A data type for Level 1 facility usage codes.
@@ -810,9 +810,9 @@ components:
         '@context':
           type: string
           description: occsFacilityUsageLevel2CodeType JSON-LD context
-          default: ../JSON-LD_Contexts/occsFacilityUsageLevel2CodeTypeContext.json
+          default: ../JSON-LD_Contexts/occsFacilityUsageLevel2CodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/occsFacilityUsageLevel2CodeTypeContext.json
+            - ../JSON-LD_Contexts/occsFacilityUsageLevel2CodeTypeContext.jsonld
     occsFacilityUsageLevel2CodeSimpleType:
       type: string
       description: A data type for Level 2 facility usage codes.

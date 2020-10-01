@@ -1,5 +1,0 @@
-{
-  "cbrn": "http://release.niem.gov/niem/domains/cbrn/4.1/#",
-  "simpleType": "cbrn:Angle90SimpleType",
-  "units": "cbrn:unitsText"
-}

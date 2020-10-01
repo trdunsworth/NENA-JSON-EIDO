@@ -12,9 +12,9 @@ components:
         '@context':
           type: string
           description: hl7ReligionCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/hl7ReligionCodeTypeContext.json
+          default: ../JSON-LD_Contexts/hl7ReligionCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/hl7ReligionCodeTypeContext.json
+            - ../JSON-LD_Contexts/hl7ReligionCodeTypeContext.jsonld
     hl7ReligionCodeSimpleType:
       type: string
       description: >-

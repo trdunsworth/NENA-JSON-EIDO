@@ -11,9 +11,10 @@ components:
         '@context':
           type: string
           description: nletsOrganizationCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/nletsOrganizationCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/nletsOrganizationCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/nletsOrganizationCategoryCodeTypeContext.json
+            - >-
+              ../JSON-LD_Contexts/nletsOrganizationCategoryCodeTypeContext.jsonld
     nletsOrganizationCategoryCodeSimpleType:
       type: string
       description: A data type for the functional kinds of an organization.
@@ -40,9 +41,9 @@ components:
         '@context':
           type: string
           description: nletsAgencyServiceHoursCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/nletsAgencyServiceHoursCodeTypeContext.json
+          default: ../JSON-LD_Contexts/nletsAgencyServiceHoursCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/nletsAgencyServiceHoursCodeTypeContext.json
+            - ../JSON-LD_Contexts/nletsAgencyServiceHoursCodeTypeContext.jsonld
     nletsAgencyServiceHoursCodeSimpleType:
       type: string
       description: A data type for the availability of an agency.
@@ -62,9 +63,9 @@ components:
         '@context':
           type: string
           description: nletsAgencyAuthorizationCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/nletsAgencyAuthorizationCodeTypeContext.json
+          default: ../JSON-LD_Contexts/nletsAgencyAuthorizationCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/nletsAgencyAuthorizationCodeTypeContext.json
+            - ../JSON-LD_Contexts/nletsAgencyAuthorizationCodeTypeContext.jsonld
     nletsAgencyAuthorizationCodeSimpleType:
       type: string
       description: A data type for an agency's access category to data.

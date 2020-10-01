@@ -1,7 +1,0 @@
-{
-  "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
-  "deviceDescription": "biom:DeviceDescriptionText",
-  "deviceMake": "biom:DeviceMakeText",
-  "deviceModel": "biom:DeviceModelText",
-  "deviceSerialNumber": "biom:DeviceSerialNumberText"
-}

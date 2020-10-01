@@ -1,5 +1,0 @@
-{
-  "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
-  "rangeMinimumDoubleValue": "nc:RangeMinimumDoubleValue",
-  "rangeMaximumDoubleValue": "nc:RangeMaximumDoubleValue"
-}

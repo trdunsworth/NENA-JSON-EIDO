@@ -12,10 +12,10 @@ components:
           type: string
           description: dod_jcs-pub2.0DocumentIntelligenceCategoryCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/dod_jcs-pub2.0DocumentIntelligenceCategoryCodeTypeContext.json
+            ../JSON-LD_Contexts/dod_jcs-pub2.0DocumentIntelligenceCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/dod_jcs-pub2.0DocumentIntelligenceCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/dod_jcs-pub2.0DocumentIntelligenceCategoryCodeTypeContext.jsonld
     dod_jcs-pub2.0DocumentIntelligenceCategoryCodeSimpleType:
       type: string
       description: A data type for natures or genres of a document or resource.

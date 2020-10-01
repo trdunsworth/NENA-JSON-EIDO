@@ -10,9 +10,9 @@ components:
         '@context':
           type: string
           description: apcoIncidentCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/apcoIncidentCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/apcoIncidentCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/apcoIncidentCategoryCodeTypeContext.json
+            - ../JSON-LD_Contexts/apcoIncidentCategoryCodeTypeContext.jsonld
     apcoIncidentCategoryCodeSimpleType:
       type: string
       description: A data type for incident codes.
@@ -224,9 +224,9 @@ components:
         '@context':
           type: string
           description: apcoAlarmEventCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/apcoAlarmEventCategoryCodeTypeContext.json
+          default: ../JSON-LD_Contexts/apcoAlarmEventCategoryCodeTypeContext.jsonld
           enum:
-            - ../JSON-LD_Contexts/apcoAlarmEventCategoryCodeTypeContext.json
+            - ../JSON-LD_Contexts/apcoAlarmEventCategoryCodeTypeContext.jsonld
     apcoAlarmEventCategoryCodeSimpleType:
       type: string
       description: A data type for kinds of alarm events.
@@ -248,10 +248,10 @@ components:
           type: string
           description: apcoAlarmEventLocationCategoryCodeType JSON-LD context
           default: >-
-            ../JSON-LD_Contexts/apcoAlarmEventLocationCategoryCodeTypeContext.json
+            ../JSON-LD_Contexts/apcoAlarmEventLocationCategoryCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/apcoAlarmEventLocationCategoryCodeTypeContext.json
+              ../JSON-LD_Contexts/apcoAlarmEventLocationCategoryCodeTypeContext.jsonld
     apcoAlarmEventLocationCategoryCodeSimpleType:
       type: string
       description: A data type for the kinds of location at which an alarm event occurs.
@@ -269,10 +269,11 @@ components:
         '@context':
           type: string
           description: apcoAlarmEventResponseActionCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/apcoAlarmEventResponseActionCodeTypeContext.json
+          default: >-
+            ../JSON-LD_Contexts/apcoAlarmEventResponseActionCodeTypeContext.jsonld
           enum:
             - >-
-              ../JSON-LD_Contexts/apcoAlarmEventResponseActionCodeTypeContext.json
+              ../JSON-LD_Contexts/apcoAlarmEventResponseActionCodeTypeContext.jsonld
     apcoAlarmEventResponseActionCodeSimpleType:
       type: string
       description: A data type for actions requested of an alarm event responder.

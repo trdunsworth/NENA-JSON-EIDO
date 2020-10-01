@@ -1,8 +1,0 @@
-{
-  "xs": "http://www.w3.org/2001/XMLSchema#",
-  "token": "xs:token",
-  "cli": "http://reference.niem.gov/niem/specification/code-lists/4.0/code-lists-instance/#",
-  "codeListURI": "cli:codeListURI",
-  "codeListColumnName": "cli:codeListColumnName",
-  "isCodeListConstraining": "cli:codeListConstrainingIndicator"
-}
