@@ -3772,6 +3772,9 @@ components:
             cbrn:SiteLocationAugmentation
           items:
             $ref: cbrn.yaml#/components/schemas/cbrnSiteLocationAugmentationType
+        nenaAugmentation:
+          items:
+            $ref: nena.yaml#/components/schemas/nenaLocationAugmentationType
         '@context':
           type: string
           description: ncLocationType JSON-LD context

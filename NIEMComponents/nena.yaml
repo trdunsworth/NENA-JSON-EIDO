@@ -1,0 +1,14 @@
+components:
+  schemas:
+    nenaLocationAugmentationType:
+      type: object
+      properties:
+        Floor: 
+          $ref: nena.yaml#/components/schemas/nenaFloorType
+    nenaFloorType:
+      type: object
+      properties:
+        floorLabel: 
+          type: string
+        floorInteger
+          type: integer
