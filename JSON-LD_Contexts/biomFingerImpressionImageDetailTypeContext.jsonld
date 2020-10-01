@@ -71,6 +71,7 @@
     "personEyeColor": "nc:PersonEyeColorText",
     "hairColorCode": "biom:HairColorCode",
     "personHairColor": "biom:PersonHairColorText",
+    "2DFeaturePoint": "biom:FaceImage2DFeaturePoint",
     "featurePointTierCode": "biom:FaceImageFeaturePointTierCode",
     "featurePointTierNumeric": "biom:FaceImageFeaturePointTierNumeric",
     "3DFeaturePoint": "biom:FaceImage3DFeaturePoint",

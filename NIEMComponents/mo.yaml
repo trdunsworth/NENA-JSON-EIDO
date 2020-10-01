@@ -180,34 +180,9 @@ components:
           enum:
             - ../JSON-LD_Contexts/moWGS84ExternalPolygonTypeContext.jsonld
     moTelephoneNumberCategoryCodeType:
-      type: object
+      type: string
       title: 'mo:TelephoneNumberCategoryCodeType'
       description: A data type for a kind of telephone number.
-      properties:
-        simpleType:
-          $ref: mo.yaml#/components/schemas/moTelephoneNumberCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: moTelephoneNumberCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/moTelephoneNumberCategoryCodeTypeContext.jsonld
-          enum:
-            - >-
-              ../JSON-LD_Contexts/moTelephoneNumberCategoryCodeTypeContext.jsonld
-    moTelephoneNumberCategoryCodeSimpleType:
-      type: object
-      title: 'mo:TelephoneNumberCategoryCodeSimpleType'
-      description: A data type for a kind of telephone number.
-      properties:
-        token:
-          type: string
-        '@context':
-          type: string
-          description: moTelephoneNumberCategoryCodeSimpleType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/moTelephoneNumberCategoryCodeSimpleTypeContext.jsonld
-          enum:
-            - >-
-              ../JSON-LD_Contexts/moTelephoneNumberCategoryCodeSimpleTypeContext.jsonld
     moContactInformationAugmentationType:
       type: object
       title: 'mo:ContactInformationAugmentationType'

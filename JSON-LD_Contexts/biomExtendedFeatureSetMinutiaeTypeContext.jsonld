@@ -11,6 +11,7 @@
     "minutiaeRidgeWavelengthMap": "biom:MinutiaeRidgeWavelengthMap",
     "frictionRidgeImageTonalReversalCode": "biom:FrictionRidgeImageTonalReversalCode",
     "frictionRidgeImageLateralReversalCode": "biom:FrictionRidgeImageLateralReversalCode",
+    "imageQuality": "biom:ImageQuality",
     "minutiaeGrowthOrShrinkage": "biom:MinutiaeGrowthOrShrinkage",
     "isMinutiaeNoCoresPresent": "biom:MinutiaeNoCoresPresentIndicator",
     "minutiaeCore": "biom:MinutiaeCore",

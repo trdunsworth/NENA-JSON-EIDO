@@ -1134,109 +1134,21 @@ components:
           enum:
             - ../JSON-LD_Contexts/ncUnsignedIntegerRangeTypeContext.jsonld
     ncDecimalListType:
-      type: object
+      type: string
       title: 'nc:DecimalListType'
       description: A data type for a white space-delimited list of decimal.
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncDecimalListSimpleType
-        '@context':
-          type: string
-          description: ncDecimalListType JSON-LD context
-          default: ../JSON-LD_Contexts/ncDecimalListTypeContext.jsonld
-          enum:
-            - ../JSON-LD_Contexts/ncDecimalListTypeContext.jsonld
-    ncDecimalListSimpleType:
-      type: object
-      title: 'nc:DecimalListSimpleType'
-      description: A data type for a white space-delimited list of decimal.
-      properties:
-        decimal:
-          type: string
-        '@context':
-          type: string
-          description: ncDecimalListSimpleType JSON-LD context
-          default: ../JSON-LD_Contexts/ncDecimalListSimpleTypeContext.jsonld
-          enum:
-            - ../JSON-LD_Contexts/ncDecimalListSimpleTypeContext.jsonld
     ncDoubleListType:
-      type: object
+      type: string
       title: 'nc:DoubleListType'
       description: A data type for a white space-delimited list of double.
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncDoubleListSimpleType
-        '@context':
-          type: string
-          description: ncDoubleListType JSON-LD context
-          default: ../JSON-LD_Contexts/ncDoubleListTypeContext.jsonld
-          enum:
-            - ../JSON-LD_Contexts/ncDoubleListTypeContext.jsonld
-    ncDoubleListSimpleType:
-      type: object
-      title: 'nc:DoubleListSimpleType'
-      description: A data type for a white space-delimited list of double.
-      properties:
-        double:
-          type: string
-        '@context':
-          type: string
-          description: ncDoubleListSimpleType JSON-LD context
-          default: ../JSON-LD_Contexts/ncDoubleListSimpleTypeContext.jsonld
-          enum:
-            - ../JSON-LD_Contexts/ncDoubleListSimpleTypeContext.jsonld
     ncIntegerListType:
-      type: object
+      type: string
       title: 'nc:IntegerListType'
       description: A data type for a list of integers.
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncIntegerListSimpleType
-        '@context':
-          type: string
-          description: ncIntegerListType JSON-LD context
-          default: ../JSON-LD_Contexts/ncIntegerListTypeContext.jsonld
-          enum:
-            - ../JSON-LD_Contexts/ncIntegerListTypeContext.jsonld
-    ncIntegerListSimpleType:
-      type: object
-      title: 'nc:IntegerListSimpleType'
-      description: A data type for a list of integers.
-      properties:
-        integer:
-          type: string
-        '@context':
-          type: string
-          description: ncIntegerListSimpleType JSON-LD context
-          default: ../JSON-LD_Contexts/ncIntegerListSimpleTypeContext.jsonld
-          enum:
-            - ../JSON-LD_Contexts/ncIntegerListSimpleTypeContext.jsonld
     ncStringListType:
-      type: object
+      type: string
       title: 'nc:StringListType'
       description: A data type for a white space-delimited list of string.
-      properties:
-        simpleType:
-          $ref: nc.yaml#/components/schemas/ncStringListSimpleType
-        '@context':
-          type: string
-          description: ncStringListType JSON-LD context
-          default: ../JSON-LD_Contexts/ncStringListTypeContext.jsonld
-          enum:
-            - ../JSON-LD_Contexts/ncStringListTypeContext.jsonld
-    ncStringListSimpleType:
-      type: object
-      title: 'nc:StringListSimpleType'
-      description: A data type for a white space-delimited list of string.
-      properties:
-        string:
-          type: string
-        '@context':
-          type: string
-          description: ncStringListSimpleType JSON-LD context
-          default: ../JSON-LD_Contexts/ncStringListSimpleTypeContext.jsonld
-          enum:
-            - ../JSON-LD_Contexts/ncStringListSimpleTypeContext.jsonld
     ncDateType:
       type: object
       title: 'nc:DateType'
@@ -2248,13 +2160,7 @@ components:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncTextType
         - type: object
-          properties:
-            '@context':
-              type: string
-              description: ncProperNameTextType JSON-LD context
-              default: ../JSON-LD_Contexts/ncProperNameTextTypeContext.jsonld
-              enum:
-                - ../JSON-LD_Contexts/ncProperNameTextTypeContext.jsonld
+          properties: {}
     ncCountryType:
       type: object
       title: 'nc:CountryType'
@@ -9986,10 +9892,4 @@ components:
       allOf:
         - $ref: nc.yaml#/components/schemas/ncMeasureType
         - type: object
-          properties:
-            '@context':
-              type: string
-              description: ncConsumptionRateMeasureType JSON-LD context
-              default: ../JSON-LD_Contexts/ncConsumptionRateMeasureTypeContext.jsonld
-              enum:
-                - ../JSON-LD_Contexts/ncConsumptionRateMeasureTypeContext.jsonld
+          properties: {}

@@ -2350,21 +2350,8 @@ components:
       enum:
         - '2'
     biomQualityScoreType:
-      type: object
-      title: 'biom:QualityScoreType'
-      description: A data type to define values for allowed quality scores
-      properties:
-        simpleType:
-          $ref: biom.yaml#/components/schemas/biomQualityScoreSimpleType
-        '@context':
-          type: string
-          description: biomQualityScoreType JSON-LD context
-          default: ../JSON-LD_Contexts/biomQualityScoreTypeContext.jsonld
-          enum:
-            - ../JSON-LD_Contexts/biomQualityScoreTypeContext.jsonld
-    biomQualityScoreSimpleType:
       type: string
-      title: 'biom:QualityScoreSimpleType'
+      title: 'biom:QualityScoreType'
       description: A data type to define values for allowed quality scores
     biomScaleUnitsCodeType:
       type: object
@@ -5536,21 +5523,8 @@ components:
             - >-
               ../JSON-LD_Contexts/biomFingerprintImageMajorCasePrintTypeContext.jsonld
     biomMajorCasePrintCodeType:
-      type: object
-      title: 'biom:MajorCasePrintCodeType'
-      description: A data type for a segment location or finger view code
-      properties:
-        simpleType:
-          $ref: biom.yaml#/components/schemas/biomMajorCasePrintCodeSimpleType
-        '@context':
-          type: string
-          description: biomMajorCasePrintCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMajorCasePrintCodeTypeContext.jsonld
-          enum:
-            - ../JSON-LD_Contexts/biomMajorCasePrintCodeTypeContext.jsonld
-    biomMajorCasePrintCodeSimpleType:
       type: string
-      title: 'biom:MajorCasePrintCodeSimpleType'
+      title: 'biom:MajorCasePrintCodeType'
       description: A data type for a segment location or finger view code
     biomMajorCasePrintSegmentOffsetType:
       type: object
@@ -5947,6 +5921,13 @@ components:
             biom:ImageFeatureVertex
           items:
             $ref: biom.yaml#/components/schemas/biomVertexType
+        smallThetaAngleMeasure:
+          type: array
+          description: >-
+            An angle between 0 and 179 degrees NIEM reference is
+            biom:SmallThetaAngleMeasure
+          items:
+            $ref: biom.yaml#/components/schemas/biomSmallAngleMeasureType
         '@context':
           type: string
           description: biomFingerprintDeltaLocationType JSON-LD context
@@ -6197,6 +6178,13 @@ components:
           items:
             $ref: >-
               biom.yaml#/components/schemas/biomFrictionRidgeImageLateralReversalCodeType
+        imageQuality:
+          type: array
+          description: >-
+            A set of details about the quality of an image NIEM reference is
+            biom:ImageQuality
+          items:
+            $ref: biom.yaml#/components/schemas/biomImageQualityType
         minutiaeGrowthOrShrinkage:
           type: array
           description: >-
@@ -6626,12 +6614,26 @@ components:
       enum:
         - '50000'
     biomImageSegmentPolygonType:
-      type: string
+      type: object
       title: 'biom:ImageSegmentPolygonType'
       description: >-
         A data type for a set of vertices within an image describing a
         polygon-shaped region; the first and last vertices are assumed to be
         connected
+      properties:
+        positionPolygonVertex:
+          type: array
+          description: >-
+            A vertex in a position polygon NIEM reference is
+            biom:PositionPolygonVertex
+          items:
+            $ref: biom.yaml#/components/schemas/biomVertexType
+        '@context':
+          type: string
+          description: biomImageSegmentPolygonType JSON-LD context
+          default: ../JSON-LD_Contexts/biomImageSegmentPolygonTypeContext.jsonld
+          enum:
+            - ../JSON-LD_Contexts/biomImageSegmentPolygonTypeContext.jsonld
     biomFingerprintImageFingerprintOrientationType:
       type: object
       title: 'biom:FingerprintImageFingerprintOrientationType'
@@ -6752,24 +6754,8 @@ components:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeFrictionRidgeLocationTypeContext.jsonld
     biomLatentFrictionRidgePositionCodeType:
-      type: object
-      title: 'biom:LatentFrictionRidgePositionCodeType'
-      description: A data type for latent friction ridge positions
-      properties:
-        simpleType:
-          $ref: >-
-            biom.yaml#/components/schemas/biomLatentFrictionRidgePositionCodeSimpleType
-        '@context':
-          type: string
-          description: biomLatentFrictionRidgePositionCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomLatentFrictionRidgePositionCodeTypeContext.jsonld
-          enum:
-            - >-
-              ../JSON-LD_Contexts/biomLatentFrictionRidgePositionCodeTypeContext.jsonld
-    biomLatentFrictionRidgePositionCodeSimpleType:
       type: string
-      title: 'biom:LatentFrictionRidgePositionCodeSimpleType'
+      title: 'biom:LatentFrictionRidgePositionCodeType'
       description: A data type for latent friction ridge positions
     biomFingerprintOffCenterCodeType:
       type: object
@@ -7593,6 +7579,13 @@ components:
       title: 'biom:MinutiaeRidgeCountConfidenceType'
       description: A data type for a confidence in a ridge count between two points
       properties:
+        imageFeatureVertex:
+          type: array
+          description: >-
+            A vertex in a position path NIEM reference is
+            biom:ImageFeatureVertex
+          items:
+            $ref: biom.yaml#/components/schemas/biomVertexType
         minutiaeRidgeCountMethodCode:
           type: array
           description: >-
@@ -7690,14 +7683,35 @@ components:
           enum:
             - ../JSON-LD_Contexts/biomMinutiaeDotTypeContext.jsonld
     biomMinutiaeIncipientRidgeType:
-      type: string
+      type: object
       title: 'biom:MinutiaeIncipientRidgeType'
       description: A data type for an incipient ridge in a friction ridge image
+      properties:
+        imageFeatureVertex:
+          type: array
+          description: >-
+            A vertex in a position path NIEM reference is
+            biom:ImageFeatureVertex
+          items:
+            $ref: biom.yaml#/components/schemas/biomVertexType
+        '@context':
+          type: string
+          description: biomMinutiaeIncipientRidgeType JSON-LD context
+          default: ../JSON-LD_Contexts/biomMinutiaeIncipientRidgeTypeContext.jsonld
+          enum:
+            - ../JSON-LD_Contexts/biomMinutiaeIncipientRidgeTypeContext.jsonld
     biomMinutiaeFlexionCreaseType:
       type: object
       title: 'biom:MinutiaeFlexionCreaseType'
       description: A data type for a permanent flexion crease
       properties:
+        imageFeatureVertex:
+          type: array
+          description: >-
+            A vertex in a position path NIEM reference is
+            biom:ImageFeatureVertex
+          items:
+            $ref: biom.yaml#/components/schemas/biomVertexType
         categoryCode:
           type: array
           description: >-
@@ -10110,6 +10124,13 @@ components:
             biom:PositionPolygonVertexQuantity
           items:
             $ref: biom.yaml#/components/schemas/biomImageFeatureVertexQuantityType
+        positionPolygonVertex:
+          type: array
+          description: >-
+            A vertex in a position polygon NIEM reference is
+            biom:PositionPolygonVertex
+          items:
+            $ref: biom.yaml#/components/schemas/biomVertexType
         '@context':
           type: string
           description: biomImageSegmentType JSON-LD context
@@ -10474,6 +10495,14 @@ components:
                 biom:PersonHairColorText
               items:
                 $ref: nc.yaml#/components/schemas/ncTextType
+            2DFeaturePoint:
+              type: array
+              description: >-
+                A set of attributes describing 2D, MPEG4 facial feature points
+                and their locations NIEM reference is
+                biom:FaceImage2DFeaturePoint
+              items:
+                $ref: biom.yaml#/components/schemas/biomFaceImageFeaturePointType
             featurePointTierCode:
               type: array
               description: >-
@@ -10905,6 +10934,13 @@ components:
             biom:PositionPolygonVertexQuantity
           items:
             $ref: biom.yaml#/components/schemas/biomImageFeatureVertexQuantityType
+        positionPolygonVertex:
+          type: array
+          description: >-
+            A vertex in a position polygon NIEM reference is
+            biom:PositionPolygonVertex
+          items:
+            $ref: biom.yaml#/components/schemas/biomVertexType
         '@context':
           type: string
           description: biomFaceImageBoundaryType JSON-LD context
@@ -10986,6 +11022,66 @@ components:
         - STR
         - WHI
         - XXX
+    biomFaceImageFeaturePointType:
+      type: object
+      title: 'biom:FaceImageFeaturePointType'
+      description: >-
+        A data type for a set of attributes describing 2D, MPEG4 facial feature
+        points and their locations
+      properties:
+        featurePointHorizontalCoordinateValue:
+          type: array
+          description: >-
+            An X coordinate of a facial feature point NIEM reference is
+            biom:FeaturePointHorizontalCoordinateValue
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsnonNegativeInteger
+        featurePointID:
+          type: array
+          description: >-
+            An identifier for a particular feature point, defined by ISO/IEC
+            14496-2 NIEM reference is biom:FeaturePointID
+          items:
+            $ref: nc.yaml#/components/schemas/ncTextType
+        featurePointCategoryCode:
+          type: array
+          description: >-
+            A kind of feature point of a captured facial image NIEM reference is
+            biom:FeaturePointCategoryCode
+          items:
+            $ref: biom.yaml#/components/schemas/biomFeaturePointCategoryCodeType
+        featurePointVerticalCoordinateValue:
+          type: array
+          description: >-
+            A Y coordinate of a facial feature point NIEM reference is
+            biom:FeaturePointVerticalCoordinateValue
+          items:
+            $ref: niem-xs.yaml#/components/schemas/niem-xsnonNegativeInteger
+        '@context':
+          type: string
+          description: biomFaceImageFeaturePointType JSON-LD context
+          default: ../JSON-LD_Contexts/biomFaceImageFeaturePointTypeContext.jsonld
+          enum:
+            - ../JSON-LD_Contexts/biomFaceImageFeaturePointTypeContext.jsonld
+    biomFeaturePointCategoryCodeType:
+      type: object
+      title: 'biom:FeaturePointCategoryCodeType'
+      description: A data type for a kind of feature point of a captured facial image
+      properties:
+        simpleType:
+          $ref: biom.yaml#/components/schemas/biomFeaturePointCategoryCodeSimpleType
+        '@context':
+          type: string
+          description: biomFeaturePointCategoryCodeType JSON-LD context
+          default: ../JSON-LD_Contexts/biomFeaturePointCategoryCodeTypeContext.jsonld
+          enum:
+            - ../JSON-LD_Contexts/biomFeaturePointCategoryCodeTypeContext.jsonld
+    biomFeaturePointCategoryCodeSimpleType:
+      type: string
+      description: A data type for a kind of feature point of a captured facial image
+      enum:
+        - '1'
+        - '2'
     biomFaceImageFeaturePointTierCodeType:
       type: object
       title: 'biom:FaceImageFeaturePointTierCodeType'
@@ -11063,66 +11159,6 @@ components:
               enum:
                 - >-
                   ../JSON-LD_Contexts/biomFaceImage3DFeaturePointTypeContext.jsonld
-    biomFaceImageFeaturePointType:
-      type: object
-      title: 'biom:FaceImageFeaturePointType'
-      description: >-
-        A data type for a set of attributes describing 2D, MPEG4 facial feature
-        points and their locations
-      properties:
-        featurePointHorizontalCoordinateValue:
-          type: array
-          description: >-
-            An X coordinate of a facial feature point NIEM reference is
-            biom:FeaturePointHorizontalCoordinateValue
-          items:
-            $ref: niem-xs.yaml#/components/schemas/niem-xsnonNegativeInteger
-        featurePointID:
-          type: array
-          description: >-
-            An identifier for a particular feature point, defined by ISO/IEC
-            14496-2 NIEM reference is biom:FeaturePointID
-          items:
-            $ref: nc.yaml#/components/schemas/ncTextType
-        featurePointCategoryCode:
-          type: array
-          description: >-
-            A kind of feature point of a captured facial image NIEM reference is
-            biom:FeaturePointCategoryCode
-          items:
-            $ref: biom.yaml#/components/schemas/biomFeaturePointCategoryCodeType
-        featurePointVerticalCoordinateValue:
-          type: array
-          description: >-
-            A Y coordinate of a facial feature point NIEM reference is
-            biom:FeaturePointVerticalCoordinateValue
-          items:
-            $ref: niem-xs.yaml#/components/schemas/niem-xsnonNegativeInteger
-        '@context':
-          type: string
-          description: biomFaceImageFeaturePointType JSON-LD context
-          default: ../JSON-LD_Contexts/biomFaceImageFeaturePointTypeContext.jsonld
-          enum:
-            - ../JSON-LD_Contexts/biomFaceImageFeaturePointTypeContext.jsonld
-    biomFeaturePointCategoryCodeType:
-      type: object
-      title: 'biom:FeaturePointCategoryCodeType'
-      description: A data type for a kind of feature point of a captured facial image
-      properties:
-        simpleType:
-          $ref: biom.yaml#/components/schemas/biomFeaturePointCategoryCodeSimpleType
-        '@context':
-          type: string
-          description: biomFeaturePointCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomFeaturePointCategoryCodeTypeContext.jsonld
-          enum:
-            - ../JSON-LD_Contexts/biomFeaturePointCategoryCodeTypeContext.jsonld
-    biomFeaturePointCategoryCodeSimpleType:
-      type: string
-      description: A data type for a kind of feature point of a captured facial image
-      enum:
-        - '1'
-        - '2'
     biomFaceImageContourType:
       type: object
       title: 'biom:FaceImageContourType'
@@ -11142,6 +11178,13 @@ components:
             biom:PositionPolygonVertexQuantity
           items:
             $ref: biom.yaml#/components/schemas/biomImageFeatureVertexQuantityType
+        positionPolygonVertex:
+          type: array
+          description: >-
+            A vertex in a position polygon NIEM reference is
+            biom:PositionPolygonVertex
+          items:
+            $ref: biom.yaml#/components/schemas/biomVertexType
         '@context':
           type: string
           description: biomFaceImageContourType JSON-LD context
@@ -11206,6 +11249,13 @@ components:
             biom:PositionPolygonVertexQuantity
           items:
             $ref: biom.yaml#/components/schemas/biomImageFeatureVertexQuantityType
+        positionPolygonVertex:
+          type: array
+          description: >-
+            A vertex in a position polygon NIEM reference is
+            biom:PositionPolygonVertex
+          items:
+            $ref: biom.yaml#/components/schemas/biomVertexType
         '@context':
           type: string
           description: biomFaceImageOcclusionType JSON-LD context
@@ -11768,28 +11818,11 @@ components:
         - '8'
         - '9'
     biomExemplarFingerPositionCodeType:
-      type: object
+      type: string
       title: 'biom:ExemplarFingerPositionCodeType'
       description: >-
         A data type for basic finger positions and slap captures, standardly
         used for tenprint exemplar capture
-      properties:
-        simpleType:
-          $ref: >-
-            biom.yaml#/components/schemas/biomExemplarFingerPositionCodeSimpleType
-        '@context':
-          type: string
-          description: biomExemplarFingerPositionCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomExemplarFingerPositionCodeTypeContext.jsonld
-          enum:
-            - >-
-              ../JSON-LD_Contexts/biomExemplarFingerPositionCodeTypeContext.jsonld
-    biomExemplarFingerPositionCodeSimpleType:
-      type: string
-      title: 'biom:ExemplarFingerPositionCodeSimpleType'
-      description: >-
-        A data type union of basic finger positions and slap captures,
-        standardly used for tenprint exemplar capture
     biomFingerprintImageNISTQualityType:
       type: object
       title: 'biom:FingerprintImageNISTQualityType'
@@ -11816,26 +11849,11 @@ components:
             - >-
               ../JSON-LD_Contexts/biomFingerprintImageNISTQualityTypeContext.jsonld
     biomNISTQualityMeasureType:
-      type: object
+      type: string
       title: 'biom:NISTQualityMeasureType'
       description: >-
         A data type for the measure of the quality of a friction ridge capture,
         using the NIST scale
-      properties:
-        simpleType:
-          $ref: biom.yaml#/components/schemas/biomNISTQualityMeasureSimpleType
-        '@context':
-          type: string
-          description: biomNISTQualityMeasureType JSON-LD context
-          default: ../JSON-LD_Contexts/biomNISTQualityMeasureTypeContext.jsonld
-          enum:
-            - ../JSON-LD_Contexts/biomNISTQualityMeasureTypeContext.jsonld
-    biomNISTQualityMeasureSimpleType:
-      type: string
-      title: 'biom:NISTQualityMeasureSimpleType'
-      description: >-
-        A data type to measure the quality of a friction ridge capture, using
-        the NIST scale
     biomFingerprintImageQualityType:
       type: object
       title: 'biom:FingerprintImageQualityType'
@@ -11908,6 +11926,13 @@ components:
             biom:PositionPolygonVertexQuantity
           items:
             $ref: biom.yaml#/components/schemas/biomImageFeatureVertexQuantityType
+        positionPolygonVertex:
+          type: array
+          description: >-
+            A vertex in a position polygon NIEM reference is
+            biom:PositionPolygonVertex
+          items:
+            $ref: biom.yaml#/components/schemas/biomVertexType
         '@context':
           type: string
           description: biomFingerprintImageSegmentPositionPolygonType JSON-LD context
@@ -12015,9 +12040,21 @@ components:
               enum:
                 - ../JSON-LD_Contexts/biomFingerprintImageTypeContext.jsonld
     biomFingerprintPositionListType:
-      type: string
+      type: object
       title: 'biom:FingerprintPositionListType'
       description: A data type for a list of finger positions
+      properties:
+        fingerPositionCode:
+          type: array
+          description: 'A finger position code NIEM reference is biom:FingerPositionCode'
+          items:
+            $ref: biom.yaml#/components/schemas/biomFingerPositionCodeType
+        '@context':
+          type: string
+          description: biomFingerprintPositionListType JSON-LD context
+          default: ../JSON-LD_Contexts/biomFingerprintPositionListTypeContext.jsonld
+          enum:
+            - ../JSON-LD_Contexts/biomFingerprintPositionListTypeContext.jsonld
     biomFrictionRidgeDetailType:
       title: 'biom:FrictionRidgeDetailType'
       description: A data type for the details about a friction ridge image
@@ -12059,6 +12096,14 @@ components:
               items:
                 $ref: >-
                   biom.yaml#/components/schemas/biomFrictionRidgeCaptureTechnologyCodeType
+            latentFrictionRidgePositionCode:
+              type: array
+              description: >-
+                A code for latent friction ridge positions NIEM reference is
+                biom:LatentFrictionRidgePositionCode
+              items:
+                $ref: >-
+                  biom.yaml#/components/schemas/biomLatentFrictionRidgePositionCodeType
             fingerprintImageMajorCasePrint:
               type: array
               description: >-
@@ -12623,6 +12668,13 @@ components:
             reference is biom:ImageFeatureVertexQuantity
           items:
             $ref: biom.yaml#/components/schemas/biomImageFeatureVertexQuantityType
+        imageFeatureVertex:
+          type: array
+          description: >-
+            A vertex in a position path NIEM reference is
+            biom:ImageFeatureVertex
+          items:
+            $ref: biom.yaml#/components/schemas/biomVertexType
         '@context':
           type: string
           description: biomIrisImageIrisBoundaryType JSON-LD context
@@ -12655,6 +12707,13 @@ components:
             reference is biom:ImageFeatureVertexQuantity
           items:
             $ref: biom.yaml#/components/schemas/biomImageFeatureVertexQuantityType
+        imageFeatureVertex:
+          type: array
+          description: >-
+            A vertex in a position path NIEM reference is
+            biom:ImageFeatureVertex
+          items:
+            $ref: biom.yaml#/components/schemas/biomVertexType
         '@context':
           type: string
           description: biomIrisImageOcclusionType JSON-LD context
@@ -13162,21 +13221,8 @@ components:
             - >-
               ../JSON-LD_Contexts/biomLipCharacterizationCodeListTypeContext.jsonld
     biomLipCharacterizationCodeType:
-      type: object
-      title: 'biom:LipCharacterizationCodeType'
-      description: A data type for lip print characterization code
-      properties:
-        simpleType:
-          $ref: biom.yaml#/components/schemas/biomLipCharacterizationCodeSimpleType
-        '@context':
-          type: string
-          description: biomLipCharacterizationCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomLipCharacterizationCodeTypeContext.jsonld
-          enum:
-            - ../JSON-LD_Contexts/biomLipCharacterizationCodeTypeContext.jsonld
-    biomLipCharacterizationCodeSimpleType:
       type: string
-      title: 'biom:LipCharacterizationCodeSimpleType'
+      title: 'biom:LipCharacterizationCodeType'
       description: A data type for lip print characterization code
     biomLipContactLineDescriptorCodeType:
       type: object
@@ -13626,6 +13672,13 @@ components:
             biom:PositionPolygonVertexQuantity
           items:
             $ref: biom.yaml#/components/schemas/biomImageFeatureVertexQuantityType
+        positionPolygonVertex:
+          type: array
+          description: >-
+            A vertex in a position polygon NIEM reference is
+            biom:PositionPolygonVertex
+          items:
+            $ref: biom.yaml#/components/schemas/biomVertexType
         '@context':
           type: string
           description: biomPlantarImageSegmentToePositionPolygonType JSON-LD context

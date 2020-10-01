@@ -2,6 +2,7 @@
   "@context": {
     "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
     "shapeCode": "biom:FaceImageBoundaryShapeCode",
-    "positionPolygonVertexQuantity": "biom:PositionPolygonVertexQuantity"
+    "positionPolygonVertexQuantity": "biom:PositionPolygonVertexQuantity",
+    "positionPolygonVertex": "biom:PositionPolygonVertex"
   }
 }

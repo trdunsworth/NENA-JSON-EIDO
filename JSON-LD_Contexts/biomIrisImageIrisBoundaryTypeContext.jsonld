@@ -2,6 +2,7 @@
   "@context": {
     "biom": "http://release.niem.gov/niem/domains/biometrics/4.1/#",
     "irisBoundaryShapeCode": "biom:IrisBoundaryShapeCode",
-    "imageFeatureVertexQuantity": "biom:ImageFeatureVertexQuantity"
+    "imageFeatureVertexQuantity": "biom:ImageFeatureVertexQuantity",
+    "imageFeatureVertex": "biom:ImageFeatureVertex"
   }
 }
