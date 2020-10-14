@@ -11,8 +11,6 @@ components:
         '@context':
           type: string
           description: scrConveyanceIdentificationCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/scrConveyanceIdentificationCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/scrConveyanceIdentificationCategoryCodeTypeContext.jsonld
@@ -34,8 +32,6 @@ components:
         '@context':
           type: string
           description: scrPersonDesignatorCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/scrPersonDesignatorCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/scrPersonDesignatorCategoryCodeTypeContext.jsonld
@@ -124,7 +120,6 @@ components:
         '@context':
           type: string
           description: scrIdentificationAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/scrIdentificationAugmentationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/scrIdentificationAugmentationTypeContext.jsonld
@@ -138,7 +133,6 @@ components:
         '@context':
           type: string
           description: scrDocumentCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/scrDocumentCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/scrDocumentCategoryCodeTypeContext.jsonld
     scrDocumentCategoryCodeSimpleType:
@@ -354,7 +348,6 @@ components:
         '@context':
           type: string
           description: scrAddressAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/scrAddressAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/scrAddressAugmentationTypeContext.jsonld
     scrAddressClassificationType:
@@ -379,7 +372,6 @@ components:
         '@context':
           type: string
           description: scrAddressClassificationType JSON-LD context
-          default: ../JSON-LD_Contexts/scrAddressClassificationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/scrAddressClassificationTypeContext.jsonld
     scrAddressCategoryCodeType:
@@ -392,7 +384,6 @@ components:
         '@context':
           type: string
           description: scrAddressCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/scrAddressCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/scrAddressCategoryCodeTypeContext.jsonld
     scrAddressCategoryCodeSimpleType:
@@ -426,7 +417,6 @@ components:
         '@context':
           type: string
           description: scrLocationElementType JSON-LD context
-          default: ../JSON-LD_Contexts/scrLocationElementTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/scrLocationElementTypeContext.jsonld
     scrLocationElementClassificationType:
@@ -453,8 +443,6 @@ components:
         '@context':
           type: string
           description: scrLocationElementClassificationType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/scrLocationElementClassificationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/scrLocationElementClassificationTypeContext.jsonld
@@ -469,7 +457,6 @@ components:
         '@context':
           type: string
           description: scrLocationElementCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/scrLocationElementCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/scrLocationElementCategoryCodeTypeContext.jsonld
@@ -497,8 +484,6 @@ components:
         '@context':
           type: string
           description: scrCountrySubdivisionCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/scrCountrySubdivisionCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/scrCountrySubdivisionCategoryCodeTypeContext.jsonld
@@ -521,7 +506,6 @@ components:
         '@context':
           type: string
           description: scrLocationCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/scrLocationCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/scrLocationCategoryCodeTypeContext.jsonld
     scrLocationCategoryCodeSimpleType:
@@ -585,7 +569,6 @@ components:
         '@context':
           type: string
           description: scrTelephoneNumberAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/scrTelephoneNumberAugmentationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/scrTelephoneNumberAugmentationTypeContext.jsonld
@@ -621,7 +604,6 @@ components:
         '@context':
           type: string
           description: scrLocationAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/scrLocationAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/scrLocationAugmentationTypeContext.jsonld
     scrDocumentStatusCategoryCodeType:
@@ -634,7 +616,6 @@ components:
         '@context':
           type: string
           description: scrDocumentStatusCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/scrDocumentStatusCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/scrDocumentStatusCategoryCodeTypeContext.jsonld
@@ -683,7 +664,6 @@ components:
         '@context':
           type: string
           description: scrPersonNameAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/scrPersonNameAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/scrPersonNameAugmentationTypeContext.jsonld
     scrPersonNameDesignationCategoryCodeType:
@@ -699,8 +679,6 @@ components:
         '@context':
           type: string
           description: scrPersonNameDesignationCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/scrPersonNameDesignationCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/scrPersonNameDesignationCategoryCodeTypeContext.jsonld
@@ -747,7 +725,6 @@ components:
         '@context':
           type: string
           description: scrPersonNameTextAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/scrPersonNameTextAugmentationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/scrPersonNameTextAugmentationTypeContext.jsonld
@@ -830,7 +807,6 @@ components:
         '@context':
           type: string
           description: scrOrganizationAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/scrOrganizationAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/scrOrganizationAugmentationTypeContext.jsonld
     scrOrganizationStatusCategoryCodeType:
@@ -846,8 +822,6 @@ components:
         '@context':
           type: string
           description: scrOrganizationStatusCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/scrOrganizationStatusCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/scrOrganizationStatusCategoryCodeTypeContext.jsonld
@@ -873,7 +847,6 @@ components:
         '@context':
           type: string
           description: scrOrganizationCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/scrOrganizationCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/scrOrganizationCategoryCodeTypeContext.jsonld
     scrOrganizationCategoryCodeSimpleType:
@@ -956,8 +929,6 @@ components:
         '@context':
           type: string
           description: scrPersonEmploymentAssociationAugmentationType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/scrPersonEmploymentAssociationAugmentationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/scrPersonEmploymentAssociationAugmentationTypeContext.jsonld
@@ -998,7 +969,6 @@ components:
         '@context':
           type: string
           description: scrChargeAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/scrChargeAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/scrChargeAugmentationTypeContext.jsonld
     scrChargeCategoryCodeType:
@@ -1011,7 +981,6 @@ components:
         '@context':
           type: string
           description: scrChargeCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/scrChargeCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/scrChargeCategoryCodeTypeContext.jsonld
     scrChargeCategoryCodeSimpleType:
@@ -3520,7 +3489,6 @@ components:
         '@context':
           type: string
           description: scrArrestAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/scrArrestAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/scrArrestAugmentationTypeContext.jsonld
     scrArrestMethodType:
@@ -3543,7 +3511,6 @@ components:
         '@context':
           type: string
           description: scrArrestMethodType JSON-LD context
-          default: ../JSON-LD_Contexts/scrArrestMethodTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/scrArrestMethodTypeContext.jsonld
     scrArrestMethodCategoryCodeType:
@@ -3556,7 +3523,6 @@ components:
         '@context':
           type: string
           description: scrArrestMethodCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/scrArrestMethodCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/scrArrestMethodCategoryCodeTypeContext.jsonld
     scrArrestMethodCategoryCodeSimpleType:
@@ -3605,7 +3571,6 @@ components:
         '@context':
           type: string
           description: scrAlertAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/scrAlertAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/scrAlertAugmentationTypeContext.jsonld
     scrAlertCategoryCodeType:
@@ -3618,7 +3583,6 @@ components:
         '@context':
           type: string
           description: scrAlertCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/scrAlertCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/scrAlertCategoryCodeTypeContext.jsonld
     scrAlertCategoryCodeSimpleType:
@@ -3701,7 +3665,6 @@ components:
         '@context':
           type: string
           description: scrWarrantAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/scrWarrantAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/scrWarrantAugmentationTypeContext.jsonld
     scrWarrantClassificationType:
@@ -3724,7 +3687,6 @@ components:
         '@context':
           type: string
           description: scrWarrantClassificationType JSON-LD context
-          default: ../JSON-LD_Contexts/scrWarrantClassificationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/scrWarrantClassificationTypeContext.jsonld
     scrWarrantCategoryCodeType:
@@ -3737,7 +3699,6 @@ components:
         '@context':
           type: string
           description: scrWarrantCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/scrWarrantCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/scrWarrantCategoryCodeTypeContext.jsonld
     scrWarrantCategoryCodeSimpleType:
@@ -3757,7 +3718,6 @@ components:
         '@context':
           type: string
           description: scrEthnicityCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/scrEthnicityCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/scrEthnicityCategoryCodeTypeContext.jsonld
     scrEthnicityCategoryCodeSimpleType:
@@ -3828,8 +3788,6 @@ components:
         '@context':
           type: string
           description: scrMedicalConditionAugmentationType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/scrMedicalConditionAugmentationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/scrMedicalConditionAugmentationTypeContext.jsonld
@@ -3845,7 +3803,6 @@ components:
         '@context':
           type: string
           description: scrPersonMedicalConditionCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/scrPersonMedicalConditionCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/scrPersonMedicalConditionCodeTypeContext.jsonld
@@ -3887,8 +3844,6 @@ components:
             '@context':
               type: string
               description: scrPersonMedicalConditionStatusType JSON-LD context
-              default: >-
-                ../JSON-LD_Contexts/scrPersonMedicalConditionStatusTypeContext.jsonld
               enum:
                 - >-
                   ../JSON-LD_Contexts/scrPersonMedicalConditionStatusTypeContext.jsonld
@@ -3905,8 +3860,6 @@ components:
         '@context':
           type: string
           description: scrPersonMedicalConditionStatusCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/scrPersonMedicalConditionStatusCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/scrPersonMedicalConditionStatusCategoryCodeTypeContext.jsonld
@@ -3963,7 +3916,6 @@ components:
         '@context':
           type: string
           description: scrVehicleAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/scrVehicleAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/scrVehicleAugmentationTypeContext.jsonld
     scrConveyanceCategoryCodeType:
@@ -3976,7 +3928,6 @@ components:
         '@context':
           type: string
           description: scrConveyanceCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/scrConveyanceCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/scrConveyanceCategoryCodeTypeContext.jsonld
     scrConveyanceCategoryCodeSimpleType:
@@ -4002,8 +3953,6 @@ components:
         '@context':
           type: string
           description: scrConveyanceIDIssuingJurisdictionCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/scrConveyanceIDIssuingJurisdictionCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/scrConveyanceIDIssuingJurisdictionCategoryCodeTypeContext.jsonld

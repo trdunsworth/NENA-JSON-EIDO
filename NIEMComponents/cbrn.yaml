@@ -26,7 +26,6 @@ components:
             '@context':
               type: string
               description: cbrnScheduleByWeekType JSON-LD context
-              default: ../JSON-LD_Contexts/cbrnScheduleByWeekTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/cbrnScheduleByWeekTypeContext.jsonld
     cbrnRemarksComplexObjectType:
@@ -45,7 +44,6 @@ components:
         '@context':
           type: string
           description: cbrnRemarksComplexObjectType JSON-LD context
-          default: ../JSON-LD_Contexts/cbrnRemarksComplexObjectTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/cbrnRemarksComplexObjectTypeContext.jsonld
     cbrnScheduleByWeekDayType:
@@ -109,7 +107,6 @@ components:
             '@context':
               type: string
               description: cbrnScheduleByWeekDayType JSON-LD context
-              default: ../JSON-LD_Contexts/cbrnScheduleByWeekDayTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/cbrnScheduleByWeekDayTypeContext.jsonld
     cbrnOperatingScheduleType:
@@ -145,7 +142,6 @@ components:
         '@context':
           type: string
           description: cbrnOperatingScheduleType JSON-LD context
-          default: ../JSON-LD_Contexts/cbrnOperatingScheduleTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/cbrnOperatingScheduleTypeContext.jsonld
     cbrnSiteLocationAugmentationType:
@@ -207,7 +203,6 @@ components:
         '@context':
           type: string
           description: cbrnSiteLocationAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/cbrnSiteLocationAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/cbrnSiteLocationAugmentationTypeContext.jsonld
     cbrnGeographicPointType:
@@ -283,7 +278,6 @@ components:
             '@context':
               type: string
               description: cbrnGeographicPointType JSON-LD context
-              default: ../JSON-LD_Contexts/cbrnGeographicPointTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/cbrnGeographicPointTypeContext.jsonld
     cbrnAngle90Type:
@@ -304,7 +298,6 @@ components:
         '@context':
           type: string
           description: cbrnAngle90Type JSON-LD context
-          default: ../JSON-LD_Contexts/cbrnAngle90TypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/cbrnAngle90TypeContext.jsonld
     cbrnAngle90SimpleType:
@@ -319,7 +312,6 @@ components:
         '@context':
           type: string
           description: cbrnAngle90SimpleType JSON-LD context
-          default: ../JSON-LD_Contexts/cbrnAngle90SimpleTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/cbrnAngle90SimpleTypeContext.jsonld
     cbrnAngle180Type:
@@ -340,7 +332,6 @@ components:
         '@context':
           type: string
           description: cbrnAngle180Type JSON-LD context
-          default: ../JSON-LD_Contexts/cbrnAngle180TypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/cbrnAngle180TypeContext.jsonld
     cbrnAngle180SimpleType:
@@ -355,7 +346,6 @@ components:
         '@context':
           type: string
           description: cbrnAngle180SimpleType JSON-LD context
-          default: ../JSON-LD_Contexts/cbrnAngle180SimpleTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/cbrnAngle180SimpleTypeContext.jsonld
     cbrnMapGuideLocationType:
@@ -399,7 +389,6 @@ components:
             '@context':
               type: string
               description: cbrnMapGuideLocationType JSON-LD context
-              default: ../JSON-LD_Contexts/cbrnMapGuideLocationTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/cbrnMapGuideLocationTypeContext.jsonld
     cbrnConveyanceAugmentationType:
@@ -426,6 +415,5 @@ components:
         '@context':
           type: string
           description: cbrnConveyanceAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/cbrnConveyanceAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/cbrnConveyanceAugmentationTypeContext.jsonld

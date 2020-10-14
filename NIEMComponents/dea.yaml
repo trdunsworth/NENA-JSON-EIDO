@@ -10,7 +10,6 @@ components:
         '@context':
           type: string
           description: deaDrugCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/deaDrugCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/deaDrugCategoryCodeTypeContext.jsonld
     deaDrugCategoryCodeSimpleType:
@@ -78,7 +77,6 @@ components:
         '@context':
           type: string
           description: deaDrugCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/deaDrugCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/deaDrugCodeTypeContext.jsonld
     deaDrugCodeSimpleType:
@@ -449,7 +447,6 @@ components:
         '@context':
           type: string
           description: deaDEAClassScheduleCodeCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/deaDEAClassScheduleCodeCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/deaDEAClassScheduleCodeCodeTypeContext.jsonld
     deaDEAClassScheduleCodeCodeSimpleType:

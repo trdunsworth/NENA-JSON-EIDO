@@ -52,8 +52,6 @@ components:
         '@context':
           type: string
           description: intelIdentificationAugmentationType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/intelIdentificationAugmentationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/intelIdentificationAugmentationTypeContext.jsonld
@@ -72,8 +70,6 @@ components:
         '@context':
           type: string
           description: intelContactInformationAugmentationType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/intelContactInformationAugmentationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/intelContactInformationAugmentationTypeContext.jsonld
@@ -99,7 +95,6 @@ components:
         '@context':
           type: string
           description: intelLocationAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/intelLocationAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/intelLocationAugmentationTypeContext.jsonld
     intelBiometricAugmentationType:
@@ -117,7 +112,6 @@ components:
         '@context':
           type: string
           description: intelBiometricAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/intelBiometricAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/intelBiometricAugmentationTypeContext.jsonld
     intelCapabilityAugmentationType:
@@ -135,7 +129,6 @@ components:
         '@context':
           type: string
           description: intelCapabilityAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/intelCapabilityAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/intelCapabilityAugmentationTypeContext.jsonld
     intelPersonAugmentationType:
@@ -228,7 +221,6 @@ components:
         '@context':
           type: string
           description: intelPersonAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/intelPersonAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/intelPersonAugmentationTypeContext.jsonld
     intelAgencySubjectInterestType:
@@ -286,7 +278,6 @@ components:
         '@context':
           type: string
           description: intelAgencySubjectInterestType JSON-LD context
-          default: ../JSON-LD_Contexts/intelAgencySubjectInterestTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/intelAgencySubjectInterestTypeContext.jsonld
     intelAgencyInterestCategoryType:
@@ -331,7 +322,6 @@ components:
         '@context':
           type: string
           description: intelAgencyInterestCategoryType JSON-LD context
-          default: ../JSON-LD_Contexts/intelAgencyInterestCategoryTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/intelAgencyInterestCategoryTypeContext.jsonld
     intelAgencyInterestOtherCategoryType:
@@ -368,8 +358,6 @@ components:
         '@context':
           type: string
           description: intelAgencyInterestOtherCategoryType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/intelAgencyInterestOtherCategoryTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/intelAgencyInterestOtherCategoryTypeContext.jsonld
@@ -395,7 +383,6 @@ components:
         '@context':
           type: string
           description: intelAgencySubjectHandlingType JSON-LD context
-          default: ../JSON-LD_Contexts/intelAgencySubjectHandlingTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/intelAgencySubjectHandlingTypeContext.jsonld
     intelSubjectHandlingType:
@@ -430,7 +417,6 @@ components:
         '@context':
           type: string
           description: intelSubjectHandlingType JSON-LD context
-          default: ../JSON-LD_Contexts/intelSubjectHandlingTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/intelSubjectHandlingTypeContext.jsonld
     intelPersonCitizenshipDetailsType:
@@ -467,7 +453,6 @@ components:
         '@context':
           type: string
           description: intelPersonCitizenshipDetailsType JSON-LD context
-          default: ../JSON-LD_Contexts/intelPersonCitizenshipDetailsTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/intelPersonCitizenshipDetailsTypeContext.jsonld
@@ -497,6 +482,5 @@ components:
         '@context':
           type: string
           description: intelPersonEducationDetailsType JSON-LD context
-          default: ../JSON-LD_Contexts/intelPersonEducationDetailsTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/intelPersonEducationDetailsTypeContext.jsonld

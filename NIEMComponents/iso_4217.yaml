@@ -10,7 +10,6 @@ components:
         '@context':
           type: string
           description: iso_4217CurrencyCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/iso_4217CurrencyCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/iso_4217CurrencyCodeTypeContext.jsonld
     iso_4217CurrencyCodeSimpleType:

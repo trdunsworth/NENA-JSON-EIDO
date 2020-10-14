@@ -10,7 +10,6 @@ components:
         '@context':
           type: string
           description: dolOccupationCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/dolOccupationCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/dolOccupationCodeTypeContext.jsonld
     dolOccupationCodeSimpleType:

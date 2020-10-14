@@ -27,8 +27,6 @@ components:
         '@context':
           type: string
           description: nc-4.0.1LocationHeightMeasureAugmentationType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/nc-4.0.1LocationHeightMeasureAugmentationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/nc-4.0.1LocationHeightMeasureAugmentationTypeContext.jsonld

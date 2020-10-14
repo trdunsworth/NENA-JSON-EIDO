@@ -896,3 +896,11 @@ components:
                 are listed here
               items:
                 $ref: '#/components/schemas/EmergencyResourceType'
+            '@context':
+              type: object
+              description: JSON-LD context
+              properties:
+                '@vocab': 
+                  type: string
+                  enum:
+                    - './JSON-LD_Contexts/EmergencyIncidentDataObjectType.jsonld'

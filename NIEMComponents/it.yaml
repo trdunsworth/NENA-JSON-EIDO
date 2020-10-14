@@ -22,7 +22,6 @@ components:
         '@context':
           type: string
           description: itAddressAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/itAddressAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/itAddressAugmentationTypeContext.jsonld
     itDocumentAugmentationType:
@@ -55,7 +54,6 @@ components:
         '@context':
           type: string
           description: itDocumentAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/itDocumentAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/itDocumentAugmentationTypeContext.jsonld
     itObligationAugmentationType:
@@ -88,7 +86,6 @@ components:
         '@context':
           type: string
           description: itObligationAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/itObligationAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/itObligationAugmentationTypeContext.jsonld
     itObligationGuaranteeType:
@@ -114,7 +111,6 @@ components:
         '@context':
           type: string
           description: itObligationGuaranteeType JSON-LD context
-          default: ../JSON-LD_Contexts/itObligationGuaranteeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/itObligationGuaranteeTypeContext.jsonld
     itPersonAugmentationType:
@@ -133,6 +129,5 @@ components:
         '@context':
           type: string
           description: itPersonAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/itPersonAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/itPersonAugmentationTypeContext.jsonld

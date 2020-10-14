@@ -194,7 +194,6 @@ components:
         '@context':
           type: string
           description: stLocationRoadwayType JSON-LD context
-          default: ../JSON-LD_Contexts/stLocationRoadwayTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/stLocationRoadwayTypeContext.jsonld
     stFunctionalClassCodeType:
@@ -207,7 +206,6 @@ components:
         '@context':
           type: string
           description: stFunctionalClassCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/stFunctionalClassCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/stFunctionalClassCodeTypeContext.jsonld
     stFunctionalClassCodeSimpleType:
@@ -232,8 +230,6 @@ components:
         '@context':
           type: string
           description: stIntersectionJunctionTrafficControlCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/stIntersectionJunctionTrafficControlCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/stIntersectionJunctionTrafficControlCodeTypeContext.jsonld
@@ -262,7 +258,6 @@ components:
         '@context':
           type: string
           description: stRoadwayLightingCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/stRoadwayLightingCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/stRoadwayLightingCodeTypeContext.jsonld
     stRoadwayLightingCodeSimpleType:

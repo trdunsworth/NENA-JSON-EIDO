@@ -11,8 +11,6 @@ components:
         '@context':
           type: string
           description: dod_jcs-pub2.0DocumentIntelligenceCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/dod_jcs-pub2.0DocumentIntelligenceCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/dod_jcs-pub2.0DocumentIntelligenceCategoryCodeTypeContext.jsonld

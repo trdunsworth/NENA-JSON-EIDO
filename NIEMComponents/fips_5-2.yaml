@@ -11,7 +11,6 @@ components:
         '@context':
           type: string
           description: fips_5-2USStateNumericCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/fips_5-2USStateNumericCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/fips_5-2USStateNumericCodeTypeContext.jsonld
     fips_5-2USStateNumericCodeSimpleType:

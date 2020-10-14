@@ -10,7 +10,6 @@ components:
         '@context':
           type: string
           description: cbrnclMIMEContentCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/cbrnclMIMEContentCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/cbrnclMIMEContentCodeTypeContext.jsonld
     cbrnclMIMEContentCodeSimpleType:
@@ -216,7 +215,6 @@ components:
         '@context':
           type: string
           description: cbrnclMapGuideBrandCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/cbrnclMapGuideBrandCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/cbrnclMapGuideBrandCodeTypeContext.jsonld
     cbrnclMapGuideBrandCodeSimpleType:
@@ -235,7 +233,6 @@ components:
         '@context':
           type: string
           description: cbrnclConveyanceKindCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/cbrnclConveyanceKindCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/cbrnclConveyanceKindCodeTypeContext.jsonld
     cbrnclConveyanceKindCodeSimpleType:

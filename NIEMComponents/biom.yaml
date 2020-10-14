@@ -11,8 +11,6 @@ components:
         '@context':
           type: string
           description: biomGeodeticDatumCoordinateSystemCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomGeodeticDatumCoordinateSystemCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomGeodeticDatumCoordinateSystemCodeTypeContext.jsonld
@@ -66,7 +64,6 @@ components:
         '@context':
           type: string
           description: biomImageAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/biomImageAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomImageAugmentationTypeContext.jsonld
     biomImageHashValueType:
@@ -81,7 +78,6 @@ components:
         '@context':
           type: string
           description: biomImageHashValueType JSON-LD context
-          default: ../JSON-LD_Contexts/biomImageHashValueTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomImageHashValueTypeContext.jsonld
     biomImageHashValueSimpleType:
@@ -363,7 +359,6 @@ components:
         '@context':
           type: string
           description: biomBiometricDataType JSON-LD context
-          default: ../JSON-LD_Contexts/biomBiometricDataTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomBiometricDataTypeContext.jsonld
     biomANSIRecordCategoryCodeType:
@@ -376,7 +371,6 @@ components:
         '@context':
           type: string
           description: biomANSIRecordCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomANSIRecordCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomANSIRecordCategoryCodeTypeContext.jsonld
     biomANSIRecordCategoryCodeSimpleType:
@@ -440,7 +434,6 @@ components:
         '@context':
           type: string
           description: biomBiometricClassificationType JSON-LD context
-          default: ../JSON-LD_Contexts/biomBiometricClassificationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomBiometricClassificationTypeContext.jsonld
     biomBiometricCategoryCodeType:
@@ -453,7 +446,6 @@ components:
         '@context':
           type: string
           description: biomBiometricCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomBiometricCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomBiometricCategoryCodeTypeContext.jsonld
     biomBiometricCategoryCodeSimpleType:
@@ -630,7 +622,6 @@ components:
         '@context':
           type: string
           description: biomDNASampleType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDNASampleTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomDNASampleTypeContext.jsonld
     biomBiometricCaptureType:
@@ -728,7 +719,6 @@ components:
         '@context':
           type: string
           description: biomBiometricCaptureType JSON-LD context
-          default: ../JSON-LD_Contexts/biomBiometricCaptureTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomBiometricCaptureTypeContext.jsonld
     biomGeographicSampleAcquisitionLocationType:
@@ -793,8 +783,6 @@ components:
         '@context':
           type: string
           description: biomGeographicSampleAcquisitionLocationType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomGeographicSampleAcquisitionLocationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomGeographicSampleAcquisitionLocationTypeContext.jsonld
@@ -874,7 +862,6 @@ components:
         '@context':
           type: string
           description: biomDeviceType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDeviceTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomDeviceTypeContext.jsonld
     biomSourceAcquisitionType:
@@ -937,7 +924,6 @@ components:
         '@context':
           type: string
           description: biomSourceAcquisitionType JSON-LD context
-          default: ../JSON-LD_Contexts/biomSourceAcquisitionTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomSourceAcquisitionTypeContext.jsonld
     biomAcquisitionSourceCodeType:
@@ -950,7 +936,6 @@ components:
         '@context':
           type: string
           description: biomAcquisitionSourceCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomAcquisitionSourceCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomAcquisitionSourceCodeTypeContext.jsonld
     biomAcquisitionSourceCodeSimpleType:
@@ -1017,7 +1002,6 @@ components:
         '@context':
           type: string
           description: biomBiometricCaptureMetricType JSON-LD context
-          default: ../JSON-LD_Contexts/biomBiometricCaptureMetricTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomBiometricCaptureMetricTypeContext.jsonld
     biomDNALaboratoryType:
@@ -1069,7 +1053,6 @@ components:
             '@context':
               type: string
               description: biomDNALaboratoryType JSON-LD context
-              default: ../JSON-LD_Contexts/biomDNALaboratoryTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/biomDNALaboratoryTypeContext.jsonld
     biomDNALaboratoryUnitCategoryCodeType:
@@ -1083,8 +1066,6 @@ components:
         '@context':
           type: string
           description: biomDNALaboratoryUnitCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomDNALaboratoryUnitCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomDNALaboratoryUnitCategoryCodeTypeContext.jsonld
@@ -1107,7 +1088,6 @@ components:
         '@context':
           type: string
           description: biomDNALaboratoryCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDNALaboratoryCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomDNALaboratoryCategoryCodeTypeContext.jsonld
@@ -1145,7 +1125,6 @@ components:
         '@context':
           type: string
           description: biomDNALaboratoryAccreditationType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDNALaboratoryAccreditationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomDNALaboratoryAccreditationTypeContext.jsonld
@@ -1160,8 +1139,6 @@ components:
         '@context':
           type: string
           description: biomDNALaboratoryAccreditationLevelCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomDNALaboratoryAccreditationLevelCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomDNALaboratoryAccreditationLevelCodeTypeContext.jsonld
@@ -1188,8 +1165,6 @@ components:
         '@context':
           type: string
           description: biomDNALaboratoryAccreditationScopeCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomDNALaboratoryAccreditationScopeCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomDNALaboratoryAccreditationScopeCodeTypeContext.jsonld
@@ -1211,7 +1186,6 @@ components:
         '@context':
           type: string
           description: biomDNAAnalysisQuantityCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDNAAnalysisQuantityCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomDNAAnalysisQuantityCodeTypeContext.jsonld
     biomDNAAnalysisQuantityCodeSimpleType:
@@ -1266,7 +1240,6 @@ components:
             '@context':
               type: string
               description: biomDNADonorType JSON-LD context
-              default: ../JSON-LD_Contexts/biomDNADonorTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/biomDNADonorTypeContext.jsonld
     biomDNADonorCategoryCodeType:
@@ -1279,7 +1252,6 @@ components:
         '@context':
           type: string
           description: biomDNADonorCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDNADonorCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomDNADonorCategoryCodeTypeContext.jsonld
     biomDNADonorCategoryCodeSimpleType:
@@ -1300,8 +1272,6 @@ components:
         '@context':
           type: string
           description: biomDNADonorDentalRecordsAvailableCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomDNADonorDentalRecordsAvailableCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomDNADonorDentalRecordsAvailableCodeTypeContext.jsonld
@@ -1322,7 +1292,6 @@ components:
         '@context':
           type: string
           description: biomDNADonorStatusCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDNADonorStatusCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomDNADonorStatusCodeTypeContext.jsonld
     biomDNADonorStatusCodeSimpleType:
@@ -1342,7 +1311,6 @@ components:
         '@context':
           type: string
           description: biomDNARelationshipCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDNARelationshipCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomDNARelationshipCodeTypeContext.jsonld
     biomDNARelationshipCodeSimpleType:
@@ -1416,7 +1384,6 @@ components:
         '@context':
           type: string
           description: biomDNAPedigreeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDNAPedigreeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomDNAPedigreeTypeContext.jsonld
     biomDNAPedigreeMemberStatusCodeType:
@@ -1430,8 +1397,6 @@ components:
         '@context':
           type: string
           description: biomDNAPedigreeMemberStatusCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomDNAPedigreeMemberStatusCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomDNAPedigreeMemberStatusCodeTypeContext.jsonld
@@ -1451,7 +1416,6 @@ components:
         '@context':
           type: string
           description: biomInteger0to999Type JSON-LD context
-          default: ../JSON-LD_Contexts/biomInteger0to999TypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomInteger0to999TypeContext.jsonld
     biomInteger0to999SimpleType:
@@ -1481,7 +1445,6 @@ components:
         '@context':
           type: string
           description: biomDNASampleOriginType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDNASampleOriginTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomDNASampleOriginTypeContext.jsonld
     biomDNACellularCategoryCodeType:
@@ -1496,7 +1459,6 @@ components:
         '@context':
           type: string
           description: biomDNACellularCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDNACellularCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomDNACellularCategoryCodeTypeContext.jsonld
     biomDNACellularCategoryCodeSimpleType:
@@ -1527,7 +1489,6 @@ components:
         '@context':
           type: string
           description: biomDNASampleOriginCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDNASampleOriginCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomDNASampleOriginCodeTypeContext.jsonld
     biomDNASampleOriginCodeSimpleType:
@@ -1548,8 +1509,6 @@ components:
         '@context':
           type: string
           description: biomDNATypingTechnologyCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomDNATypingTechnologyCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomDNATypingTechnologyCategoryCodeTypeContext.jsonld
@@ -1603,7 +1562,6 @@ components:
         '@context':
           type: string
           description: biomDNAProfileType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDNAProfileTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomDNAProfileTypeContext.jsonld
     biomDNAProfileCategoryCodeType:
@@ -1616,7 +1574,6 @@ components:
         '@context':
           type: string
           description: biomDNAProfileCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDNAProfileCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomDNAProfileCategoryCodeTypeContext.jsonld
     biomDNAProfileCategoryCodeSimpleType:
@@ -1635,7 +1592,6 @@ components:
         '@context':
           type: string
           description: biomDNAProfileResultCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDNAProfileResultCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomDNAProfileResultCodeTypeContext.jsonld
     biomDNAProfileResultCodeSimpleType:
@@ -1746,7 +1702,6 @@ components:
         '@context':
           type: string
           description: biomDNASTRProfileType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDNASTRProfileTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomDNASTRProfileTypeContext.jsonld
     biomDNASTRProfileCategoryCodeType:
@@ -1760,7 +1715,6 @@ components:
         '@context':
           type: string
           description: biomDNASTRProfileCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDNASTRProfileCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomDNASTRProfileCategoryCodeTypeContext.jsonld
@@ -1781,7 +1735,6 @@ components:
         '@context':
           type: string
           description: biomInteger1to999Type JSON-LD context
-          default: ../JSON-LD_Contexts/biomInteger1to999TypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomInteger1to999TypeContext.jsonld
     biomInteger1to999SimpleType:
@@ -1823,7 +1776,6 @@ components:
         '@context':
           type: string
           description: biomDNAKitType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDNAKitTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomDNAKitTypeContext.jsonld
     biomDNAMitochondrialDataType:
@@ -1896,7 +1848,6 @@ components:
         '@context':
           type: string
           description: biomDNAMitochondrialDataType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDNAMitochondrialDataTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomDNAMitochondrialDataTypeContext.jsonld
     biomInteger1to99Type:
@@ -1909,7 +1860,6 @@ components:
         '@context':
           type: string
           description: biomInteger1to99Type JSON-LD context
-          default: ../JSON-LD_Contexts/biomInteger1to99TypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomInteger1to99TypeContext.jsonld
     biomInteger1to99SimpleType:
@@ -1961,7 +1911,6 @@ components:
         '@context':
           type: string
           description: biomDNAElectropherogramType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDNAElectropherogramTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomDNAElectropherogramTypeContext.jsonld
     biomImageType:
@@ -2158,7 +2107,6 @@ components:
             '@context':
               type: string
               description: biomImageType JSON-LD context
-              default: ../JSON-LD_Contexts/biomImageTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/biomImageTypeContext.jsonld
     biomImageCaptureType:
@@ -2195,7 +2143,6 @@ components:
             '@context':
               type: string
               description: biomImageCaptureType JSON-LD context
-              default: ../JSON-LD_Contexts/biomImageCaptureTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/biomImageCaptureTypeContext.jsonld
     biomCaptureDeviceMonitoringModeCodeType:
@@ -2209,8 +2156,6 @@ components:
         '@context':
           type: string
           description: biomCaptureDeviceMonitoringModeCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomCaptureDeviceMonitoringModeCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomCaptureDeviceMonitoringModeCodeTypeContext.jsonld
@@ -2233,7 +2178,6 @@ components:
         '@context':
           type: string
           description: biomCSPCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomCSPCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomCSPCodeTypeContext.jsonld
     biomCSPCodeSimpleType:
@@ -2257,8 +2201,6 @@ components:
         '@context':
           type: string
           description: biomImageCompressionAlgorithmCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomImageCompressionAlgorithmCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomImageCompressionAlgorithmCodeTypeContext.jsonld
@@ -2286,8 +2228,6 @@ components:
         '@context':
           type: string
           description: biomLargeLineLengthPixelQuantityType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomLargeLineLengthPixelQuantityTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomLargeLineLengthPixelQuantityTypeContext.jsonld
@@ -2328,7 +2268,6 @@ components:
         '@context':
           type: string
           description: biomImageQualityType JSON-LD context
-          default: ../JSON-LD_Contexts/biomImageQualityTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomImageQualityTypeContext.jsonld
     biomHexDoubleByteType:
@@ -2341,7 +2280,6 @@ components:
         '@context':
           type: string
           description: biomHexDoubleByteType JSON-LD context
-          default: ../JSON-LD_Contexts/biomHexDoubleByteTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomHexDoubleByteTypeContext.jsonld
     biomHexDoubleByteSimpleType:
@@ -2365,7 +2303,6 @@ components:
         '@context':
           type: string
           description: biomScaleUnitsCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomScaleUnitsCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomScaleUnitsCodeTypeContext.jsonld
     biomScaleUnitsCodeSimpleType:
@@ -2387,7 +2324,6 @@ components:
         '@context':
           type: string
           description: biomPersonImageCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomPersonImageCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomPersonImageCategoryCodeTypeContext.jsonld
     biomPersonImageCategoryCodeSimpleType:
@@ -2452,7 +2388,6 @@ components:
         '@context':
           type: string
           description: biomImageDistortionType JSON-LD context
-          default: ../JSON-LD_Contexts/biomImageDistortionTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomImageDistortionTypeContext.jsonld
     biomImageDistortionCategoryCodeType:
@@ -2466,8 +2401,6 @@ components:
         '@context':
           type: string
           description: biomImageDistortionCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomImageDistortionCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomImageDistortionCategoryCodeTypeContext.jsonld
@@ -2491,8 +2424,6 @@ components:
         '@context':
           type: string
           description: biomImageDistortionMeasurementCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomImageDistortionMeasurementCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomImageDistortionMeasurementCodeTypeContext.jsonld
@@ -2515,8 +2446,6 @@ components:
         '@context':
           type: string
           description: biomImageDistortionSeverityCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomImageDistortionSeverityCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomImageDistortionSeverityCodeTypeContext.jsonld
@@ -2537,7 +2466,6 @@ components:
         '@context':
           type: string
           description: biomDecimal2DigitPrecisionType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDecimal2DigitPrecisionTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomDecimal2DigitPrecisionTypeContext.jsonld
     biomDecimal2DigitPrecisionSimpleType:
@@ -2560,8 +2488,6 @@ components:
         '@context':
           type: string
           description: biomScanningResolutionCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomScanningResolutionCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomScanningResolutionCategoryCodeTypeContext.jsonld
@@ -2584,8 +2510,6 @@ components:
         '@context':
           type: string
           description: biomDNAGenotypeDistributionCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomDNAGenotypeDistributionCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomDNAGenotypeDistributionCodeTypeContext.jsonld
@@ -2628,7 +2552,6 @@ components:
         '@context':
           type: string
           description: biomDNAGenotypeAllelePairType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDNAGenotypeAllelePairTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomDNAGenotypeAllelePairTypeContext.jsonld
     biomLocusGenotypeProbabilityValueType:
@@ -2646,8 +2569,6 @@ components:
         '@context':
           type: string
           description: biomLocusGenotypeProbabilityValueType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomLocusGenotypeProbabilityValueTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomLocusGenotypeProbabilityValueTypeContext.jsonld
@@ -2748,7 +2669,6 @@ components:
         '@context':
           type: string
           description: biomForensicDentalOralDetailType JSON-LD context
-          default: ../JSON-LD_Contexts/biomForensicDentalOralDetailTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomForensicDentalOralDetailTypeContext.jsonld
     biomForensicDentalSettingType:
@@ -2798,7 +2718,6 @@ components:
         '@context':
           type: string
           description: biomForensicDentalSettingType JSON-LD context
-          default: ../JSON-LD_Contexts/biomForensicDentalSettingTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomForensicDentalSettingTypeContext.jsonld
     biomForensicAnalystCategoryCodeType:
@@ -2814,8 +2733,6 @@ components:
         '@context':
           type: string
           description: biomForensicAnalystCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomForensicAnalystCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomForensicAnalystCategoryCodeTypeContext.jsonld
@@ -2924,7 +2841,6 @@ components:
         '@context':
           type: string
           description: biomDentalSubjectInformationType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDentalSubjectInformationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomDentalSubjectInformationTypeContext.jsonld
     biomExistentialStatusCodeType:
@@ -2937,7 +2853,6 @@ components:
         '@context':
           type: string
           description: biomExistentialStatusCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomExistentialStatusCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomExistentialStatusCodeTypeContext.jsonld
     biomExistentialStatusCodeSimpleType:
@@ -2960,8 +2875,6 @@ components:
         '@context':
           type: string
           description: biomSubjectDNARecordsAvailableCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomSubjectDNARecordsAvailableCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomSubjectDNARecordsAvailableCodeTypeContext.jsonld
@@ -3023,8 +2936,6 @@ components:
         '@context':
           type: string
           description: biomDentalEncodingSystemInformationType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomDentalEncodingSystemInformationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomDentalEncodingSystemInformationTypeContext.jsonld
@@ -3038,7 +2949,6 @@ components:
         '@context':
           type: string
           description: biomSystemNameCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomSystemNameCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomSystemNameCodeTypeContext.jsonld
     biomSystemNameCodeSimpleType:
@@ -3068,8 +2978,6 @@ components:
         '@context':
           type: string
           description: biomToothPermanenceCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomToothPermanenceCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomToothPermanenceCategoryCodeTypeContext.jsonld
@@ -3097,8 +3005,6 @@ components:
         '@context':
           type: string
           description: biomRestorationDataGranularityCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomRestorationDataGranularityCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomRestorationDataGranularityCodeTypeContext.jsonld
@@ -3127,8 +3033,6 @@ components:
         '@context':
           type: string
           description: biomMorphologyPositionalNumberingCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomMorphologyPositionalNumberingCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMorphologyPositionalNumberingCodeTypeContext.jsonld
@@ -3168,8 +3072,6 @@ components:
         '@context':
           type: string
           description: biomDentalHistoryDataInformationType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomDentalHistoryDataInformationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomDentalHistoryDataInformationTypeContext.jsonld
@@ -3241,7 +3143,6 @@ components:
         '@context':
           type: string
           description: biomToothDataInformationType JSON-LD context
-          default: ../JSON-LD_Contexts/biomToothDataInformationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomToothDataInformationTypeContext.jsonld
     biomToothDataADAReferenceCodeListType:
@@ -3261,8 +3162,6 @@ components:
         '@context':
           type: string
           description: biomToothDataADAReferenceCodeListType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomToothDataADAReferenceCodeListTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomToothDataADAReferenceCodeListTypeContext.jsonld
@@ -3278,7 +3177,6 @@ components:
         '@context':
           type: string
           description: biomToothIDCertaintyCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomToothIDCertaintyCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomToothIDCertaintyCodeTypeContext.jsonld
     biomToothIDCertaintyCodeSimpleType:
@@ -3330,7 +3228,6 @@ components:
         '@context':
           type: string
           description: biomMouthDataInformationType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMouthDataInformationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomMouthDataInformationTypeContext.jsonld
     biomMouthDataADAReferenceCodeListType:
@@ -3350,8 +3247,6 @@ components:
         '@context':
           type: string
           description: biomMouthDataADAReferenceCodeListType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomMouthDataADAReferenceCodeListTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMouthDataADAReferenceCodeListTypeContext.jsonld
@@ -3395,8 +3290,6 @@ components:
         '@context':
           type: string
           description: biomDentalStudyToothImprintInformationType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomDentalStudyToothImprintInformationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomDentalStudyToothImprintInformationTypeContext.jsonld
@@ -3410,7 +3303,6 @@ components:
         '@context':
           type: string
           description: biomDentalStudyReferenceCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDentalStudyReferenceCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomDentalStudyReferenceCodeTypeContext.jsonld
     biomDentalStudyReferenceCodeSimpleType:
@@ -3692,8 +3584,6 @@ components:
         '@context':
           type: string
           description: biomForensicInvestigatoryVoiceDetailType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomForensicInvestigatoryVoiceDetailTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomForensicInvestigatoryVoiceDetailTypeContext.jsonld
@@ -3725,8 +3615,6 @@ components:
             '@context':
               type: string
               description: biomSegmentGeographicalLocationType JSON-LD context
-              default: >-
-                ../JSON-LD_Contexts/biomSegmentGeographicalLocationTypeContext.jsonld
               enum:
                 - >-
                   ../JSON-LD_Contexts/biomSegmentGeographicalLocationTypeContext.jsonld
@@ -3745,7 +3633,6 @@ components:
         '@context':
           type: string
           description: biomSegmentIDListType JSON-LD context
-          default: ../JSON-LD_Contexts/biomSegmentIDListTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomSegmentIDListTypeContext.jsonld
     biomAudioObjectDescriptorCodeType:
@@ -3759,7 +3646,6 @@ components:
         '@context':
           type: string
           description: biomAudioObjectDescriptorCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomAudioObjectDescriptorCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomAudioObjectDescriptorCodeTypeContext.jsonld
@@ -3812,7 +3698,6 @@ components:
         '@context':
           type: string
           description: biomRecordingSettingDetailType JSON-LD context
-          default: ../JSON-LD_Contexts/biomRecordingSettingDetailTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomRecordingSettingDetailTypeContext.jsonld
     biomRecordingSourceCategoryCodeType:
@@ -3828,8 +3713,6 @@ components:
         '@context':
           type: string
           description: biomRecordingSourceCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomRecordingSourceCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomRecordingSourceCategoryCodeTypeContext.jsonld
@@ -3880,7 +3763,6 @@ components:
         '@context':
           type: string
           description: biomRecordingContentDescriptorType JSON-LD context
-          default: ../JSON-LD_Contexts/biomRecordingContentDescriptorTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomRecordingContentDescriptorTypeContext.jsonld
@@ -3897,8 +3779,6 @@ components:
         '@context':
           type: string
           description: biomRecordingAssignedVoiceCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomRecordingAssignedVoiceCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomRecordingAssignedVoiceCategoryCodeTypeContext.jsonld
@@ -3923,7 +3803,6 @@ components:
         '@context':
           type: string
           description: biomSpeakerPluralityCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomSpeakerPluralityCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomSpeakerPluralityCodeTypeContext.jsonld
     biomSpeakerPluralityCodeSimpleType:
@@ -3944,7 +3823,6 @@ components:
         '@context':
           type: string
           description: biomLongCommentType JSON-LD context
-          default: ../JSON-LD_Contexts/biomLongCommentTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomLongCommentTypeContext.jsonld
     biomLongCommentSimpleType:
@@ -3990,7 +3868,6 @@ components:
         '@context':
           type: string
           description: biomAudioSourceRecorderType JSON-LD context
-          default: ../JSON-LD_Contexts/biomAudioSourceRecorderTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomAudioSourceRecorderTypeContext.jsonld
     biomRecordingDurationDetailType:
@@ -4026,7 +3903,6 @@ components:
         '@context':
           type: string
           description: biomRecordingDurationDetailType JSON-LD context
-          default: ../JSON-LD_Contexts/biomRecordingDurationDetailTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomRecordingDurationDetailTypeContext.jsonld
     biomPhysicalMediaObjectType:
@@ -4091,7 +3967,6 @@ components:
         '@context':
           type: string
           description: biomPhysicalMediaObjectType JSON-LD context
-          default: ../JSON-LD_Contexts/biomPhysicalMediaObjectTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomPhysicalMediaObjectTypeContext.jsonld
     biomTrackListType:
@@ -4109,7 +3984,6 @@ components:
         '@context':
           type: string
           description: biomTrackListType JSON-LD context
-          default: ../JSON-LD_Contexts/biomTrackListTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomTrackListTypeContext.jsonld
     biomDigitalMediaContainerType:
@@ -4148,7 +4022,6 @@ components:
         '@context':
           type: string
           description: biomDigitalMediaContainerType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDigitalMediaContainerTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomDigitalMediaContainerTypeContext.jsonld
     biomDigitalMediaContainerFormatCodeType:
@@ -4164,8 +4037,6 @@ components:
         '@context':
           type: string
           description: biomDigitalMediaContainerFormatCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomDigitalMediaContainerFormatCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomDigitalMediaContainerFormatCodeTypeContext.jsonld
@@ -4258,7 +4129,6 @@ components:
         '@context':
           type: string
           description: biomCodecDetailsType JSON-LD context
-          default: ../JSON-LD_Contexts/biomCodecDetailsTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomCodecDetailsTypeContext.jsonld
     biomCodecCategoryCodeType:
@@ -4273,7 +4143,6 @@ components:
         '@context':
           type: string
           description: biomCodecCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomCodecCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomCodecCategoryCodeTypeContext.jsonld
     biomCodecCategoryCodeSimpleType:
@@ -4300,7 +4169,6 @@ components:
         '@context':
           type: string
           description: biomInteger0to1024Type JSON-LD context
-          default: ../JSON-LD_Contexts/biomInteger0to1024TypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomInteger0to1024TypeContext.jsonld
     biomInteger0to1024SimpleType:
@@ -4321,7 +4189,6 @@ components:
         '@context':
           type: string
           description: biomEndianCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomEndianCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomEndianCodeTypeContext.jsonld
     biomEndianCodeSimpleType:
@@ -4343,7 +4210,6 @@ components:
         '@context':
           type: string
           description: biomInteger1to9999Type JSON-LD context
-          default: ../JSON-LD_Contexts/biomInteger1to9999TypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomInteger1to9999TypeContext.jsonld
     biomInteger1to9999SimpleType:
@@ -4384,7 +4250,6 @@ components:
         '@context':
           type: string
           description: biomAudioInformationType JSON-LD context
-          default: ../JSON-LD_Contexts/biomAudioInformationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomAudioInformationTypeContext.jsonld
     biomProcessingIndicatorCodeType:
@@ -4397,7 +4262,6 @@ components:
         '@context':
           type: string
           description: biomProcessingIndicatorCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomProcessingIndicatorCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomProcessingIndicatorCodeTypeContext.jsonld
     biomProcessingIndicatorCodeSimpleType:
@@ -4454,7 +4318,6 @@ components:
         '@context':
           type: string
           description: biomDiaryInformationType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDiaryInformationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomDiaryInformationTypeContext.jsonld
     biomContentInformationType:
@@ -4490,7 +4353,6 @@ components:
         '@context':
           type: string
           description: biomContentInformationType JSON-LD context
-          default: ../JSON-LD_Contexts/biomContentInformationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomContentInformationTypeContext.jsonld
     biomDiarizationIndicatorCodeType:
@@ -4503,7 +4365,6 @@ components:
         '@context':
           type: string
           description: biomDiarizationIndicatorCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDiarizationIndicatorCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomDiarizationIndicatorCodeTypeContext.jsonld
     biomDiarizationIndicatorCodeSimpleType:
@@ -4580,8 +4441,6 @@ components:
             '@context':
               type: string
               description: biomContentDiaryInformationType JSON-LD context
-              default: >-
-                ../JSON-LD_Contexts/biomContentDiaryInformationTypeContext.jsonld
               enum:
                 - >-
                   ../JSON-LD_Contexts/biomContentDiaryInformationTypeContext.jsonld
@@ -4626,7 +4485,6 @@ components:
         '@context':
           type: string
           description: biomVocalSegmentQualityValueType JSON-LD context
-          default: ../JSON-LD_Contexts/biomVocalSegmentQualityValueTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomVocalSegmentQualityValueTypeContext.jsonld
     biomSegmentProcessingPriorityType:
@@ -4649,7 +4507,6 @@ components:
         '@context':
           type: string
           description: biomSegmentProcessingPriorityType JSON-LD context
-          default: ../JSON-LD_Contexts/biomSegmentProcessingPriorityTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomSegmentProcessingPriorityTypeContext.jsonld
@@ -4663,7 +4520,6 @@ components:
         '@context':
           type: string
           description: biomInteger1to9Type JSON-LD context
-          default: ../JSON-LD_Contexts/biomInteger1to9TypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomInteger1to9TypeContext.jsonld
     biomInteger1to9SimpleType:
@@ -4744,7 +4600,6 @@ components:
         '@context':
           type: string
           description: biomSegmentContentInformationType JSON-LD context
-          default: ../JSON-LD_Contexts/biomSegmentContentInformationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomSegmentContentInformationTypeContext.jsonld
@@ -4871,8 +4726,6 @@ components:
         '@context':
           type: string
           description: biomSegmentSpeakerCharacteristicsInformationType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomSegmentSpeakerCharacteristicsInformationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomSegmentSpeakerCharacteristicsInformationTypeContext.jsonld
@@ -4889,7 +4742,6 @@ components:
         '@context':
           type: string
           description: biomSpeakerListType JSON-LD context
-          default: ../JSON-LD_Contexts/biomSpeakerListTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomSpeakerListTypeContext.jsonld
     biomType2CrossReferenceListType:
@@ -4909,7 +4761,6 @@ components:
         '@context':
           type: string
           description: biomType2CrossReferenceListType JSON-LD context
-          default: ../JSON-LD_Contexts/biomType2CrossReferenceListTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomType2CrossReferenceListTypeContext.jsonld
     biomInteger0to99Type:
@@ -4922,7 +4773,6 @@ components:
         '@context':
           type: string
           description: biomInteger0to99Type JSON-LD context
-          default: ../JSON-LD_Contexts/biomInteger0to99TypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomInteger0to99TypeContext.jsonld
     biomInteger0to99SimpleType:
@@ -4940,7 +4790,6 @@ components:
         '@context':
           type: string
           description: biomInteger0To5Type JSON-LD context
-          default: ../JSON-LD_Contexts/biomInteger0To5TypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomInteger0To5TypeContext.jsonld
     biomInteger0To5SimpleType:
@@ -4958,7 +4807,6 @@ components:
         '@context':
           type: string
           description: biomInteger0To9Type JSON-LD context
-          default: ../JSON-LD_Contexts/biomInteger0To9TypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomInteger0To9TypeContext.jsonld
     biomInteger0To9SimpleType:
@@ -4976,7 +4824,6 @@ components:
         '@context':
           type: string
           description: biomSpeechStyleCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomSpeechStyleCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomSpeechStyleCodeTypeContext.jsonld
     biomSpeechStyleCodeSimpleType:
@@ -5006,7 +4853,6 @@ components:
         '@context':
           type: string
           description: biomEmotionalStateCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomEmotionalStateCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomEmotionalStateCodeTypeContext.jsonld
     biomEmotionalStateCodeSimpleType:
@@ -5034,7 +4880,6 @@ components:
         '@context':
           type: string
           description: biomVocalStyleCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomVocalStyleCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomVocalStyleCodeTypeContext.jsonld
     biomVocalStyleCodeSimpleType:
@@ -5063,7 +4908,6 @@ components:
         '@context':
           type: string
           description: biomRecordingAwarenessCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomRecordingAwarenessCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomRecordingAwarenessCodeTypeContext.jsonld
     biomRecordingAwarenessCodeSimpleType:
@@ -5139,7 +4983,6 @@ components:
         '@context':
           type: string
           description: biomSegmentChannelInformationType JSON-LD context
-          default: ../JSON-LD_Contexts/biomSegmentChannelInformationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomSegmentChannelInformationTypeContext.jsonld
@@ -5155,7 +4998,6 @@ components:
         '@context':
           type: string
           description: biomAudioCaptureDeviceCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomAudioCaptureDeviceCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomAudioCaptureDeviceCodeTypeContext.jsonld
     biomAudioCaptureDeviceCodeSimpleType:
@@ -5185,7 +5027,6 @@ components:
         '@context':
           type: string
           description: biomTransducerPrincipleCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomTransducerPrincipleCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomTransducerPrincipleCodeTypeContext.jsonld
     biomTransducerPrincipleCodeSimpleType:
@@ -5207,7 +5048,6 @@ components:
         '@context':
           type: string
           description: biomInteger0to99999Type JSON-LD context
-          default: ../JSON-LD_Contexts/biomInteger0to99999TypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomInteger0to99999TypeContext.jsonld
     biomInteger0to99999SimpleType:
@@ -5387,7 +5227,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMinutiaeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomMinutiaeTypeContext.jsonld
     biomMinutiaeFingerLocationType:
@@ -5405,7 +5244,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeFingerLocationType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMinutiaeFingerLocationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomMinutiaeFingerLocationTypeContext.jsonld
     biomFingerPositionCodeType:
@@ -5418,7 +5256,6 @@ components:
         '@context':
           type: string
           description: biomFingerPositionCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomFingerPositionCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomFingerPositionCodeTypeContext.jsonld
     biomFingerPositionCodeSimpleType:
@@ -5461,8 +5298,6 @@ components:
         '@context':
           type: string
           description: biomFingerprintCaptureTechniqueType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomFingerprintCaptureTechniqueTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFingerprintCaptureTechniqueTypeContext.jsonld
@@ -5477,8 +5312,6 @@ components:
         '@context':
           type: string
           description: biomFingerprintCaptureTechniqueCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomFingerprintCaptureTechniqueCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFingerprintCaptureTechniqueCategoryCodeTypeContext.jsonld
@@ -5517,8 +5350,6 @@ components:
         '@context':
           type: string
           description: biomFingerprintImageMajorCasePrintType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomFingerprintImageMajorCasePrintTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFingerprintImageMajorCasePrintTypeContext.jsonld
@@ -5555,8 +5386,6 @@ components:
         '@context':
           type: string
           description: biomMajorCasePrintSegmentOffsetType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomMajorCasePrintSegmentOffsetTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMajorCasePrintSegmentOffsetTypeContext.jsonld
@@ -5598,7 +5427,6 @@ components:
         '@context':
           type: string
           description: biomFingerprintCoordinateType JSON-LD context
-          default: ../JSON-LD_Contexts/biomFingerprintCoordinateTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomFingerprintCoordinateTypeContext.jsonld
     biomSegmentLocationCodeType:
@@ -5611,7 +5439,6 @@ components:
         '@context':
           type: string
           description: biomSegmentLocationCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomSegmentLocationCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomSegmentLocationCodeTypeContext.jsonld
     biomSegmentLocationCodeSimpleType:
@@ -5633,7 +5460,6 @@ components:
         '@context':
           type: string
           description: biomFingerViewCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomFingerViewCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomFingerViewCodeTypeContext.jsonld
     biomFingerViewCodeSimpleType:
@@ -5705,8 +5531,6 @@ components:
         '@context':
           type: string
           description: biomFrictionRidgeImageSegmentPositionSquareType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomFrictionRidgeImageSegmentPositionSquareTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFrictionRidgeImageSegmentPositionSquareTypeContext.jsonld
@@ -5720,7 +5544,6 @@ components:
         '@context':
           type: string
           description: biomPalmPositionCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomPalmPositionCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomPalmPositionCodeTypeContext.jsonld
     biomPalmPositionCodeSimpleType:
@@ -5762,7 +5585,6 @@ components:
         '@context':
           type: string
           description: biomPlantarPositionCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomPlantarPositionCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomPlantarPositionCodeTypeContext.jsonld
     biomPlantarPositionCodeSimpleType:
@@ -5810,8 +5632,6 @@ components:
         '@context':
           type: string
           description: biomFingerprintImageFingerMissingType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomFingerprintImageFingerMissingTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFingerprintImageFingerMissingTypeContext.jsonld
@@ -5826,8 +5646,6 @@ components:
         '@context':
           type: string
           description: biomFingerprintImageMissingAreaReasonCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomFingerprintImageMissingAreaReasonCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFingerprintImageMissingAreaReasonCodeTypeContext.jsonld
@@ -5862,7 +5680,6 @@ components:
         '@context':
           type: string
           description: biomFingerprintFeatureLocationType JSON-LD context
-          default: ../JSON-LD_Contexts/biomFingerprintFeatureLocationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFingerprintFeatureLocationTypeContext.jsonld
@@ -5888,7 +5705,6 @@ components:
         '@context':
           type: string
           description: biomVertexType JSON-LD context
-          default: ../JSON-LD_Contexts/biomVertexTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomVertexTypeContext.jsonld
     biomSmallAngleMeasureType:
@@ -5901,7 +5717,6 @@ components:
         '@context':
           type: string
           description: biomSmallAngleMeasureType JSON-LD context
-          default: ../JSON-LD_Contexts/biomSmallAngleMeasureTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomSmallAngleMeasureTypeContext.jsonld
     biomSmallAngleMeasureSimpleType:
@@ -5931,7 +5746,6 @@ components:
         '@context':
           type: string
           description: biomFingerprintDeltaLocationType JSON-LD context
-          default: ../JSON-LD_Contexts/biomFingerprintDeltaLocationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomFingerprintDeltaLocationTypeContext.jsonld
     biomFingerprintFeaturesFeedbackType:
@@ -5988,7 +5802,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMinutiaTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomMinutiaTypeContext.jsonld
     biomImageSegmentVertexType:
@@ -6017,7 +5830,6 @@ components:
         '@context':
           type: string
           description: biomImageSegmentVertexType JSON-LD context
-          default: ../JSON-LD_Contexts/biomImageSegmentVertexTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomImageSegmentVertexTypeContext.jsonld
     biomThetaAngleMeasureType:
@@ -6032,7 +5844,6 @@ components:
         '@context':
           type: string
           description: biomThetaAngleMeasureType JSON-LD context
-          default: ../JSON-LD_Contexts/biomThetaAngleMeasureTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomThetaAngleMeasureTypeContext.jsonld
     biomThetaAngleMeasureSimpleType:
@@ -6052,7 +5863,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMinutiaCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomMinutiaCategoryCodeTypeContext.jsonld
     biomMinutiaCategoryCodeSimpleType:
@@ -6085,7 +5895,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaRidgeCountType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMinutiaRidgeCountTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomMinutiaRidgeCountTypeContext.jsonld
     biomExtendedFeatureSetMinutiaeType:
@@ -6489,7 +6298,6 @@ components:
         '@context':
           type: string
           description: biomExtendedFeatureSetMinutiaeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomExtendedFeatureSetMinutiaeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomExtendedFeatureSetMinutiaeTypeContext.jsonld
@@ -6506,8 +6314,6 @@ components:
         '@context':
           type: string
           description: biomExtendedFeatureSetProfileCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomExtendedFeatureSetProfileCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomExtendedFeatureSetProfileCodeTypeContext.jsonld
@@ -6572,8 +6378,6 @@ components:
         '@context':
           type: string
           description: biomFrictionRidgeImageRegionOfInterestType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomFrictionRidgeImageRegionOfInterestTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFrictionRidgeImageRegionOfInterestTypeContext.jsonld
@@ -6587,7 +6391,6 @@ components:
         '@context':
           type: string
           description: biomInteger1to50000Type JSON-LD context
-          default: ../JSON-LD_Contexts/biomInteger1to50000TypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomInteger1to50000TypeContext.jsonld
     biomInteger1to50000SimpleType:
@@ -6605,7 +6408,6 @@ components:
         '@context':
           type: string
           description: biomInteger0to50000Type JSON-LD context
-          default: ../JSON-LD_Contexts/biomInteger0to50000TypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomInteger0to50000TypeContext.jsonld
     biomInteger0to50000SimpleType:
@@ -6631,7 +6433,6 @@ components:
         '@context':
           type: string
           description: biomImageSegmentPolygonType JSON-LD context
-          default: ../JSON-LD_Contexts/biomImageSegmentPolygonTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomImageSegmentPolygonTypeContext.jsonld
     biomFingerprintImageFingerprintOrientationType:
@@ -6659,8 +6460,6 @@ components:
         '@context':
           type: string
           description: biomFingerprintImageFingerprintOrientationType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomFingerprintImageFingerprintOrientationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFingerprintImageFingerprintOrientationTypeContext.jsonld
@@ -6676,7 +6475,6 @@ components:
         '@context':
           type: string
           description: biomRelativeRotationMeasureType JSON-LD context
-          default: ../JSON-LD_Contexts/biomRelativeRotationMeasureTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomRelativeRotationMeasureTypeContext.jsonld
     biomRelativeRotationMeasureSimpleType:
@@ -6699,7 +6497,6 @@ components:
         '@context':
           type: string
           description: biomUncertaintyValueType JSON-LD context
-          default: ../JSON-LD_Contexts/biomUncertaintyValueTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomUncertaintyValueTypeContext.jsonld
     biomUncertaintyValueSimpleType:
@@ -6748,8 +6545,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeFrictionRidgeLocationType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomMinutiaeFrictionRidgeLocationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeFrictionRidgeLocationTypeContext.jsonld
@@ -6767,7 +6562,6 @@ components:
         '@context':
           type: string
           description: biomFingerprintOffCenterCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomFingerprintOffCenterCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomFingerprintOffCenterCodeTypeContext.jsonld
     biomFingerprintOffCenterCodeSimpleType:
@@ -6812,8 +6606,6 @@ components:
         '@context':
           type: string
           description: biomFingerprintPatternClassificationType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomFingerprintPatternClassificationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFingerprintPatternClassificationTypeContext.jsonld
@@ -6830,8 +6622,6 @@ components:
         '@context':
           type: string
           description: biomFingerprintPatternGeneralClassCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomFingerprintPatternGeneralClassCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFingerprintPatternGeneralClassCodeTypeContext.jsonld
@@ -6863,8 +6653,6 @@ components:
         '@context':
           type: string
           description: biomFingerprintPatternSubClassCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomFingerprintPatternSubClassCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFingerprintPatternSubClassCodeTypeContext.jsonld
@@ -6893,8 +6681,6 @@ components:
         '@context':
           type: string
           description: biomFingerprintPatternWhorlDeltaRelationshipCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomFingerprintPatternWhorlDeltaRelationshipCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFingerprintPatternWhorlDeltaRelationshipCodeTypeContext.jsonld
@@ -6940,7 +6726,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeRidgeQualityMapType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMinutiaeRidgeQualityMapTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomMinutiaeRidgeQualityMapTypeContext.jsonld
     biomMapSamplingFrequencyValueType:
@@ -6956,7 +6741,6 @@ components:
         '@context':
           type: string
           description: biomMapSamplingFrequencyValueType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMapSamplingFrequencyValueTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMapSamplingFrequencyValueTypeContext.jsonld
@@ -6981,8 +6765,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeRidgeQualityMapFormatCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomMinutiaeRidgeQualityMapFormatCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeRidgeQualityMapFormatCodeTypeContext.jsonld
@@ -7027,7 +6809,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeRidgeFlowMapType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMinutiaeRidgeFlowMapTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomMinutiaeRidgeFlowMapTypeContext.jsonld
     biomMinutiaeRidgeFlowMapFormatCodeType:
@@ -7041,8 +6822,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeRidgeFlowMapFormatCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomMinutiaeRidgeFlowMapFormatCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeRidgeFlowMapFormatCodeTypeContext.jsonld
@@ -7085,7 +6864,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeRidgeWavelengthMapType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMinutiaeRidgeWavelengthMapTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeRidgeWavelengthMapTypeContext.jsonld
@@ -7102,8 +6880,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeRidgeWavelengthMapFormatCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomMinutiaeRidgeWavelengthMapFormatCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeRidgeWavelengthMapFormatCodeTypeContext.jsonld
@@ -7125,8 +6901,6 @@ components:
         '@context':
           type: string
           description: biomFrictionRidgeImageTonalReversalCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomFrictionRidgeImageTonalReversalCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFrictionRidgeImageTonalReversalCodeTypeContext.jsonld
@@ -7150,8 +6924,6 @@ components:
         '@context':
           type: string
           description: biomFrictionRidgeImageLateralReversalCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomFrictionRidgeImageLateralReversalCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFrictionRidgeImageLateralReversalCodeTypeContext.jsonld
@@ -7190,7 +6962,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeGrowthOrShrinkageType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMinutiaeGrowthOrShrinkageTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeGrowthOrShrinkageTypeContext.jsonld
@@ -7208,8 +6979,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeGrowthOrShrinkageCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomMinutiaeGrowthOrShrinkageCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeGrowthOrShrinkageCodeTypeContext.jsonld
@@ -7260,7 +7029,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeCoreType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMinutiaeCoreTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomMinutiaeCoreTypeContext.jsonld
     biomDirectionMeasureType:
@@ -7273,7 +7041,6 @@ components:
         '@context':
           type: string
           description: biomDirectionMeasureType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDirectionMeasureTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomDirectionMeasureTypeContext.jsonld
     biomDirectionMeasureSimpleType:
@@ -7353,7 +7120,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeDeltaType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMinutiaeDeltaTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomMinutiaeDeltaTypeContext.jsonld
     biomDeltaDirectionMeasureType:
@@ -7366,7 +7132,6 @@ components:
         '@context':
           type: string
           description: biomDeltaDirectionMeasureType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDeltaDirectionMeasureTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomDeltaDirectionMeasureTypeContext.jsonld
     biomDeltaDirectionMeasureSimpleType:
@@ -7385,7 +7150,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeDeltaCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMinutiaeDeltaCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeDeltaCategoryCodeTypeContext.jsonld
@@ -7444,8 +7208,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeRidgeCountCoreToDeltaType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomMinutiaeRidgeCountCoreToDeltaTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeRidgeCountCoreToDeltaTypeContext.jsonld
@@ -7476,8 +7238,6 @@ components:
             '@context':
               type: string
               description: biomFrictionRidgeImageCenterType JSON-LD context
-              default: >-
-                ../JSON-LD_Contexts/biomFrictionRidgeImageCenterTypeContext.jsonld
               enum:
                 - >-
                   ../JSON-LD_Contexts/biomFrictionRidgeImageCenterTypeContext.jsonld
@@ -7494,8 +7254,6 @@ components:
         '@context':
           type: string
           description: biomFrictionRidgeImageCenterLocationMethodCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomFrictionRidgeImageCenterLocationMethodCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFrictionRidgeImageCenterLocationMethodCodeTypeContext.jsonld
@@ -7540,7 +7298,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeDistinctiveFeatureType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMinutiaeDistinctiveFeatureTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeDistinctiveFeatureTypeContext.jsonld
@@ -7555,8 +7312,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeDistinctiveFeatureCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomMinutiaeDistinctiveFeatureCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeDistinctiveFeatureCategoryCodeTypeContext.jsonld
@@ -7604,8 +7359,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeRidgeCountConfidenceType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomMinutiaeRidgeCountConfidenceTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeRidgeCountConfidenceTypeContext.jsonld
@@ -7620,8 +7373,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeRidgeCountMethodCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomMinutiaeRidgeCountMethodCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeRidgeCountMethodCodeTypeContext.jsonld
@@ -7645,8 +7396,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeRidgeCountConfidenceValueType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomMinutiaeRidgeCountConfidenceValueTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeRidgeCountConfidenceValueTypeContext.jsonld
@@ -7679,7 +7428,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeDotType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMinutiaeDotTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomMinutiaeDotTypeContext.jsonld
     biomMinutiaeIncipientRidgeType:
@@ -7697,7 +7445,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeIncipientRidgeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMinutiaeIncipientRidgeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomMinutiaeIncipientRidgeTypeContext.jsonld
     biomMinutiaeFlexionCreaseType:
@@ -7723,7 +7470,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeFlexionCreaseType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMinutiaeFlexionCreaseTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomMinutiaeFlexionCreaseTypeContext.jsonld
     biomMinutiaeFlexionCreaseCategoryCodeType:
@@ -7737,8 +7483,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeFlexionCreaseCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomMinutiaeFlexionCreaseCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeFlexionCreaseCategoryCodeTypeContext.jsonld
@@ -7786,8 +7530,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeRidgeEdgeOrDiscontinuityType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomMinutiaeRidgeEdgeOrDiscontinuityTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeRidgeEdgeOrDiscontinuityTypeContext.jsonld
@@ -7802,8 +7544,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeRidgeEdgeOrDiscontinuityCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomMinutiaeRidgeEdgeOrDiscontinuityCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeRidgeEdgeOrDiscontinuityCategoryCodeTypeContext.jsonld
@@ -7879,7 +7619,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeFeatureDetectionType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMinutiaeFeatureDetectionTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomMinutiaeFeatureDetectionTypeContext.jsonld
     biomMinutiaeFeatureDetectionMethodCodeType:
@@ -7895,8 +7634,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeFeatureDetectionMethodCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomMinutiaeFeatureDetectionMethodCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeFeatureDetectionMethodCodeTypeContext.jsonld
@@ -7923,8 +7660,6 @@ components:
         '@context':
           type: string
           description: biomLatentProcessingCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomLatentProcessingCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomLatentProcessingCategoryCodeTypeContext.jsonld
@@ -8036,7 +7771,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeValueAssessmentType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMinutiaeValueAssessmentTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomMinutiaeValueAssessmentTypeContext.jsonld
     biomMinutiaeValueAssessmentResultCodeType:
@@ -8052,8 +7786,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeValueAssessmentResultCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomMinutiaeValueAssessmentResultCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeValueAssessmentResultCodeTypeContext.jsonld
@@ -8078,8 +7810,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeAnalysisComplexityCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomMinutiaeAnalysisComplexityCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeAnalysisComplexityCodeTypeContext.jsonld
@@ -8112,7 +7842,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeFraudEvidenceType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMinutiaeFraudEvidenceTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomMinutiaeFraudEvidenceTypeContext.jsonld
     biomMinutiaeFraudEvidenceCategoryCodeType:
@@ -8126,8 +7855,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeFraudEvidenceCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomMinutiaeFraudEvidenceCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeFraudEvidenceCategoryCodeTypeContext.jsonld
@@ -8166,7 +7893,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeLatentSubstrateType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMinutiaeLatentSubstrateTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomMinutiaeLatentSubstrateTypeContext.jsonld
     biomMinutiaeLatentSubstrateCategoryCodeType:
@@ -8182,8 +7908,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeLatentSubstrateCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomMinutiaeLatentSubstrateCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeLatentSubstrateCategoryCodeTypeContext.jsonld
@@ -8239,7 +7963,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeLatentMatrixType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMinutiaeLatentMatrixTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomMinutiaeLatentMatrixTypeContext.jsonld
     biomMinutiaeLatentMatrixCategoryCodeType:
@@ -8255,8 +7978,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeLatentMatrixCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomMinutiaeLatentMatrixCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeLatentMatrixCategoryCodeTypeContext.jsonld
@@ -8307,7 +8028,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeLocalQualityIssuesType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMinutiaeLocalQualityIssuesTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeLocalQualityIssuesTypeContext.jsonld
@@ -8324,8 +8044,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeLocalQualityIssuesCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomMinutiaeLocalQualityIssuesCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeLocalQualityIssuesCategoryCodeTypeContext.jsonld
@@ -8387,8 +8105,6 @@ components:
         '@context':
           type: string
           description: biomFrictionRidgeImageAreaOfCorrespondenceType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomFrictionRidgeImageAreaOfCorrespondenceTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFrictionRidgeImageAreaOfCorrespondenceTypeContext.jsonld
@@ -8448,8 +8164,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeFeatureCorrespondenceType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomMinutiaeFeatureCorrespondenceTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeFeatureCorrespondenceTypeContext.jsonld
@@ -8466,8 +8180,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeFeatureCorrespondenceCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomMinutiaeFeatureCorrespondenceCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeFeatureCorrespondenceCategoryCodeTypeContext.jsonld
@@ -8497,8 +8209,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeFeatureCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomMinutiaeFeatureCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeFeatureCategoryCodeTypeContext.jsonld
@@ -8594,8 +8304,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeExaminerComparisonDeterminationType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomMinutiaeExaminerComparisonDeterminationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeExaminerComparisonDeterminationTypeContext.jsonld
@@ -8614,8 +8322,6 @@ components:
           description: >-
             biomMinutiaeExaminerComparisonDeterminationResultCodeType JSON-LD
             context
-          default: >-
-            ../JSON-LD_Contexts/biomMinutiaeExaminerComparisonDeterminationResultCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeExaminerComparisonDeterminationResultCodeTypeContext.jsonld
@@ -8646,8 +8352,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeExaminerProgressCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomMinutiaeExaminerProgressCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeExaminerProgressCodeTypeContext.jsonld
@@ -8692,8 +8396,6 @@ components:
         '@context':
           type: string
           description: biomFrictionRidgeImageRelativeRotationType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomFrictionRidgeImageRelativeRotationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFrictionRidgeImageRelativeRotationTypeContext.jsonld
@@ -8714,7 +8416,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeImageRidgePathType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMinutiaeImageRidgePathTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomMinutiaeImageRidgePathTypeContext.jsonld
     biomOpenPathSegmentType:
@@ -8734,7 +8435,6 @@ components:
         '@context':
           type: string
           description: biomOpenPathSegmentType JSON-LD context
-          default: ../JSON-LD_Contexts/biomOpenPathSegmentTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomOpenPathSegmentTypeContext.jsonld
     biomEFSMinutiaType:
@@ -8786,7 +8486,6 @@ components:
         '@context':
           type: string
           description: biomEFSMinutiaType JSON-LD context
-          default: ../JSON-LD_Contexts/biomEFSMinutiaTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomEFSMinutiaTypeContext.jsonld
     biomEFSRidgeCountAlgorithmCodeType:
@@ -8800,7 +8499,6 @@ components:
         '@context':
           type: string
           description: biomEFSRidgeCountAlgorithmCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomEFSRidgeCountAlgorithmCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomEFSRidgeCountAlgorithmCodeTypeContext.jsonld
@@ -8837,7 +8535,6 @@ components:
             '@context':
               type: string
               description: biomEFSRidgeCountItemType JSON-LD context
-              default: ../JSON-LD_Contexts/biomEFSRidgeCountItemTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/biomEFSRidgeCountItemTypeContext.jsonld
     biomMinutiaeRidgeCountItemType:
@@ -8869,7 +8566,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeRidgeCountItemType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMinutiaeRidgeCountItemTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomMinutiaeRidgeCountItemTypeContext.jsonld
     biomOctantNumericType:
@@ -8882,7 +8578,6 @@ components:
         '@context':
           type: string
           description: biomOctantNumericType JSON-LD context
-          default: ../JSON-LD_Contexts/biomOctantNumericTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomOctantNumericTypeContext.jsonld
     biomOctantNumericSimpleType:
@@ -8901,8 +8596,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeRidgeCountResidualCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomMinutiaeRidgeCountResidualCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomMinutiaeRidgeCountResidualCodeTypeContext.jsonld
@@ -8951,7 +8644,6 @@ components:
         '@context':
           type: string
           description: biomEFSTemporaryLineType JSON-LD context
-          default: ../JSON-LD_Contexts/biomEFSTemporaryLineTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomEFSTemporaryLineTypeContext.jsonld
     biomHexTripleByteType:
@@ -8964,7 +8656,6 @@ components:
         '@context':
           type: string
           description: biomHexTripleByteType JSON-LD context
-          default: ../JSON-LD_Contexts/biomHexTripleByteTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomHexTripleByteTypeContext.jsonld
     biomHexTripleByteSimpleType:
@@ -9022,7 +8713,6 @@ components:
         '@context':
           type: string
           description: biomEFSFeatureColorType JSON-LD context
-          default: ../JSON-LD_Contexts/biomEFSFeatureColorTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomEFSFeatureColorTypeContext.jsonld
     biomEFSFieldNumberCodeType:
@@ -9035,7 +8725,6 @@ components:
         '@context':
           type: string
           description: biomEFSFieldNumberCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomEFSFieldNumberCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomEFSFieldNumberCodeTypeContext.jsonld
     biomEFSFieldNumberCodeSimpleType:
@@ -9173,7 +8862,6 @@ components:
         '@context':
           type: string
           description: biomINCITSMinutiaeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomINCITSMinutiaeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomINCITSMinutiaeTypeContext.jsonld
     biomDeviceCertificationCodeType:
@@ -9188,7 +8876,6 @@ components:
         '@context':
           type: string
           description: biomDeviceCertificationCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDeviceCertificationCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomDeviceCertificationCodeTypeContext.jsonld
     biomDeviceCertificationCodeSimpleType:
@@ -9209,7 +8896,6 @@ components:
         '@context':
           type: string
           description: biomFingerViewNumericType JSON-LD context
-          default: ../JSON-LD_Contexts/biomFingerViewNumericTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomFingerViewNumericTypeContext.jsonld
     biomFingerViewNumericSimpleType:
@@ -9257,7 +8943,6 @@ components:
         '@context':
           type: string
           description: biomINCITSMinutiaType JSON-LD context
-          default: ../JSON-LD_Contexts/biomINCITSMinutiaTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomINCITSMinutiaTypeContext.jsonld
     biomINCITSMinutiaCategoryCodeType:
@@ -9273,7 +8958,6 @@ components:
         '@context':
           type: string
           description: biomINCITSMinutiaCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomINCITSMinutiaCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomINCITSMinutiaCategoryCodeTypeContext.jsonld
@@ -9296,7 +8980,6 @@ components:
         '@context':
           type: string
           description: biomInteger0to100Type JSON-LD context
-          default: ../JSON-LD_Contexts/biomInteger0to100TypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomInteger0to100TypeContext.jsonld
     biomInteger0to100SimpleType:
@@ -9328,7 +9011,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeRidgeCountType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMinutiaeRidgeCountTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomMinutiaeRidgeCountTypeContext.jsonld
     biomINCITSRidgeCountAlgorithmCodeType:
@@ -9344,8 +9026,6 @@ components:
         '@context':
           type: string
           description: biomINCITSRidgeCountAlgorithmCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomINCITSRidgeCountAlgorithmCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomINCITSRidgeCountAlgorithmCodeTypeContext.jsonld
@@ -9412,7 +9092,6 @@ components:
         '@context':
           type: string
           description: biomOtherMinutiaeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomOtherMinutiaeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomOtherMinutiaeTypeContext.jsonld
     biomMinutiaeAlgorithmType:
@@ -9437,7 +9116,6 @@ components:
         '@context':
           type: string
           description: biomMinutiaeAlgorithmType JSON-LD context
-          default: ../JSON-LD_Contexts/biomMinutiaeAlgorithmTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomMinutiaeAlgorithmTypeContext.jsonld
     biomNonPhotographicImageryDetailType:
@@ -9567,8 +9245,6 @@ components:
         '@context':
           type: string
           description: biomNonPhotographicImageryDetailType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomNonPhotographicImageryDetailTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomNonPhotographicImageryDetailTypeContext.jsonld
@@ -9605,7 +9281,6 @@ components:
         '@context':
           type: string
           description: biomSubjectExistentialDetailsType JSON-LD context
-          default: ../JSON-LD_Contexts/biomSubjectExistentialDetailsTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomSubjectExistentialDetailsTypeContext.jsonld
@@ -9619,7 +9294,6 @@ components:
         '@context':
           type: string
           description: biomSubjectBodyStatusCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomSubjectBodyStatusCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomSubjectBodyStatusCodeTypeContext.jsonld
     biomSubjectBodyStatusCodeSimpleType:
@@ -9638,7 +9312,6 @@ components:
         '@context':
           type: string
           description: biomSubjectBodyClassCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomSubjectBodyClassCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomSubjectBodyClassCodeTypeContext.jsonld
     biomSubjectBodyClassCodeSimpleType:
@@ -9684,8 +9357,6 @@ components:
         '@context':
           type: string
           description: biomDentalRadiographImageInformationType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomDentalRadiographImageInformationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomDentalRadiographImageInformationTypeContext.jsonld
@@ -9700,8 +9371,6 @@ components:
         '@context':
           type: string
           description: biomNonPhotographicImageCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomNonPhotographicImageCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomNonPhotographicImageCategoryCodeTypeContext.jsonld
@@ -9864,7 +9533,6 @@ components:
         '@context':
           type: string
           description: biomPhysicalFeatureDescriptionType JSON-LD context
-          default: ../JSON-LD_Contexts/biomPhysicalFeatureDescriptionTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomPhysicalFeatureDescriptionTypeContext.jsonld
@@ -9890,7 +9558,6 @@ components:
         '@context':
           type: string
           description: biomPhysicalFeatureColorDetailType JSON-LD context
-          default: ../JSON-LD_Contexts/biomPhysicalFeatureColorDetailTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomPhysicalFeatureColorDetailTypeContext.jsonld
@@ -9904,7 +9571,6 @@ components:
         '@context':
           type: string
           description: biomPhysicalFeatureColorCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomPhysicalFeatureColorCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomPhysicalFeatureColorCodeTypeContext.jsonld
     biomPhysicalFeatureColorCodeSimpleType:
@@ -9936,8 +9602,6 @@ components:
         '@context':
           type: string
           description: biomPhysicalFeatureCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomPhysicalFeatureCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomPhysicalFeatureCategoryCodeTypeContext.jsonld
@@ -9968,7 +9632,6 @@ components:
         '@context':
           type: string
           description: biomPhysicalFeatureClassCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomPhysicalFeatureClassCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomPhysicalFeatureClassCodeTypeContext.jsonld
     biomPhysicalFeatureClassCodeSimpleType:
@@ -9994,8 +9657,6 @@ components:
         '@context':
           type: string
           description: biomPhysicalFeatureSubClassCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomPhysicalFeatureSubClassCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomPhysicalFeatureSubClassCodeTypeContext.jsonld
@@ -10091,7 +9752,6 @@ components:
             '@context':
               type: string
               description: biomSegmentedImageType JSON-LD context
-              default: ../JSON-LD_Contexts/biomSegmentedImageTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/biomSegmentedImageTypeContext.jsonld
     biomImageSegmentType:
@@ -10134,7 +9794,6 @@ components:
         '@context':
           type: string
           description: biomImageSegmentType JSON-LD context
-          default: ../JSON-LD_Contexts/biomImageSegmentTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomImageSegmentTypeContext.jsonld
     biomImageFeatureVertexQuantityType:
@@ -10150,7 +9809,6 @@ components:
         '@context':
           type: string
           description: biomImageFeatureVertexQuantityType JSON-LD context
-          default: ../JSON-LD_Contexts/biomImageFeatureVertexQuantityTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomImageFeatureVertexQuantityTypeContext.jsonld
@@ -10209,7 +9867,6 @@ components:
             '@context':
               type: string
               description: biomCBEFFImageType JSON-LD context
-              default: ../JSON-LD_Contexts/biomCBEFFImageTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/biomCBEFFImageTypeContext.jsonld
     biomCBEFFCategoryCodeType:
@@ -10222,7 +9879,6 @@ components:
         '@context':
           type: string
           description: biomCBEFFCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomCBEFFCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomCBEFFCategoryCodeTypeContext.jsonld
     biomCBEFFCategoryCodeSimpleType:
@@ -10318,8 +9974,6 @@ components:
         '@context':
           type: string
           description: biomResolutionMethodInformationType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomResolutionMethodInformationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomResolutionMethodInformationTypeContext.jsonld
@@ -10333,7 +9987,6 @@ components:
         '@context':
           type: string
           description: biomResolutionMeansCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomResolutionMeansCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomResolutionMeansCodeTypeContext.jsonld
     biomResolutionMeansCodeSimpleType:
@@ -10358,7 +10011,6 @@ components:
         '@context':
           type: string
           description: biomResolutionScaleUnitCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomResolutionScaleUnitCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomResolutionScaleUnitCodeTypeContext.jsonld
     biomResolutionScaleUnitCodeSimpleType:
@@ -10619,7 +10271,6 @@ components:
             '@context':
               type: string
               description: biomFaceImageType JSON-LD context
-              default: ../JSON-LD_Contexts/biomFaceImageTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/biomFaceImageTypeContext.jsonld
     biomPoseAngleType:
@@ -10668,7 +10319,6 @@ components:
         '@context':
           type: string
           description: biomPoseAngleType JSON-LD context
-          default: ../JSON-LD_Contexts/biomPoseAngleTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomPoseAngleTypeContext.jsonld
     biomFaceImageAcquisitionProfileCodeType:
@@ -10684,8 +10334,6 @@ components:
         '@context':
           type: string
           description: biomFaceImageAcquisitionProfileCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomFaceImageAcquisitionProfileCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFaceImageAcquisitionProfileCodeTypeContext.jsonld
@@ -10735,7 +10383,6 @@ components:
         '@context':
           type: string
           description: biomFaceImageAttributeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomFaceImageAttributeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomFaceImageAttributeTypeContext.jsonld
     biomPhotoDescriptorCodeType:
@@ -10748,7 +10395,6 @@ components:
         '@context':
           type: string
           description: biomPhotoDescriptorCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomPhotoDescriptorCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomPhotoDescriptorCodeTypeContext.jsonld
     biomPhotoDescriptorCodeSimpleType:
@@ -10773,7 +10419,6 @@ components:
         '@context':
           type: string
           description: biomFaceImageDescriptionCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomFaceImageDescriptionCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomFaceImageDescriptionCodeTypeContext.jsonld
     biomFaceImageDescriptionCodeSimpleType:
@@ -10813,7 +10458,6 @@ components:
         '@context':
           type: string
           description: biomSubjectPoseCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomSubjectPoseCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomSubjectPoseCodeTypeContext.jsonld
     biomSubjectPoseCodeSimpleType:
@@ -10836,8 +10480,6 @@ components:
         '@context':
           type: string
           description: biomFacialImageMissingReasonCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomFacialImageMissingReasonCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFacialImageMissingReasonCodeTypeContext.jsonld
@@ -10887,7 +10529,6 @@ components:
         '@context':
           type: string
           description: biomFaceImageBoundingSquareType JSON-LD context
-          default: ../JSON-LD_Contexts/biomFaceImageBoundingSquareTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomFaceImageBoundingSquareTypeContext.jsonld
     biomFaceImageBoundingCategoryCodeType:
@@ -10901,8 +10542,6 @@ components:
         '@context':
           type: string
           description: biomFaceImageBoundingCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomFaceImageBoundingCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFaceImageBoundingCategoryCodeTypeContext.jsonld
@@ -10944,7 +10583,6 @@ components:
         '@context':
           type: string
           description: biomFaceImageBoundaryType JSON-LD context
-          default: ../JSON-LD_Contexts/biomFaceImageBoundaryTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomFaceImageBoundaryTypeContext.jsonld
     biomBoundaryShapeCodeType:
@@ -10957,7 +10595,6 @@ components:
         '@context':
           type: string
           description: biomBoundaryShapeCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomBoundaryShapeCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomBoundaryShapeCodeTypeContext.jsonld
     biomBoundaryShapeCodeSimpleType:
@@ -10978,8 +10615,6 @@ components:
         '@context':
           type: string
           description: biomFaceImageLightingArtifactsCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomFaceImageLightingArtifactsCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFaceImageLightingArtifactsCodeTypeContext.jsonld
@@ -11000,7 +10635,6 @@ components:
         '@context':
           type: string
           description: biomHairColorCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomHairColorCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomHairColorCodeTypeContext.jsonld
     biomHairColorCodeSimpleType:
@@ -11060,7 +10694,6 @@ components:
         '@context':
           type: string
           description: biomFaceImageFeaturePointType JSON-LD context
-          default: ../JSON-LD_Contexts/biomFaceImageFeaturePointTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomFaceImageFeaturePointTypeContext.jsonld
     biomFeaturePointCategoryCodeType:
@@ -11073,7 +10706,6 @@ components:
         '@context':
           type: string
           description: biomFeaturePointCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomFeaturePointCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomFeaturePointCategoryCodeTypeContext.jsonld
     biomFeaturePointCategoryCodeSimpleType:
@@ -11095,8 +10727,6 @@ components:
         '@context':
           type: string
           description: biomFaceImageFeaturePointTierCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomFaceImageFeaturePointTierCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFaceImageFeaturePointTierCodeTypeContext.jsonld
@@ -11124,8 +10754,6 @@ components:
         '@context':
           type: string
           description: biomFaceImageFeaturePointTierNumericType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomFaceImageFeaturePointTierNumericTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFaceImageFeaturePointTierNumericTypeContext.jsonld
@@ -11154,8 +10782,6 @@ components:
             '@context':
               type: string
               description: biomFaceImage3DFeaturePointType JSON-LD context
-              default: >-
-                ../JSON-LD_Contexts/biomFaceImage3DFeaturePointTypeContext.jsonld
               enum:
                 - >-
                   ../JSON-LD_Contexts/biomFaceImage3DFeaturePointTypeContext.jsonld
@@ -11188,7 +10814,6 @@ components:
         '@context':
           type: string
           description: biomFaceImageContourType JSON-LD context
-          default: ../JSON-LD_Contexts/biomFaceImageContourTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomFaceImageContourTypeContext.jsonld
     biomFaceImageContourCategoryCodeType:
@@ -11202,8 +10827,6 @@ components:
         '@context':
           type: string
           description: biomFaceImageContourCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomFaceImageContourCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFaceImageContourCategoryCodeTypeContext.jsonld
@@ -11259,7 +10882,6 @@ components:
         '@context':
           type: string
           description: biomFaceImageOcclusionType JSON-LD context
-          default: ../JSON-LD_Contexts/biomFaceImageOcclusionTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomFaceImageOcclusionTypeContext.jsonld
     biomImageOcclusionOpacityCodeType:
@@ -11273,7 +10895,6 @@ components:
         '@context':
           type: string
           description: biomImageOcclusionOpacityCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomImageOcclusionOpacityCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomImageOcclusionOpacityCodeTypeContext.jsonld
@@ -11296,7 +10917,6 @@ components:
         '@context':
           type: string
           description: biomImageOcclusionCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomImageOcclusionCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomImageOcclusionCategoryCodeTypeContext.jsonld
@@ -11334,7 +10954,6 @@ components:
         '@context':
           type: string
           description: biomPatternedInjuryDetailType JSON-LD context
-          default: ../JSON-LD_Contexts/biomPatternedInjuryDetailTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomPatternedInjuryDetailTypeContext.jsonld
     biomPhysicalFeatureSizeType:
@@ -11359,7 +10978,6 @@ components:
         '@context':
           type: string
           description: biomPhysicalFeatureSizeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomPhysicalFeatureSizeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomPhysicalFeatureSizeTypeContext.jsonld
     biomRulerScalePresenceInformationType:
@@ -11391,8 +11009,6 @@ components:
         '@context':
           type: string
           description: biomRulerScalePresenceInformationType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomRulerScalePresenceInformationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomRulerScalePresenceInformationTypeContext.jsonld
@@ -11408,7 +11024,6 @@ components:
         '@context':
           type: string
           description: biomRulerScaleUnitCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomRulerScaleUnitCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomRulerScaleUnitCodeTypeContext.jsonld
     biomRulerScaleUnitCodeSimpleType:
@@ -11442,7 +11057,6 @@ components:
         '@context':
           type: string
           description: biomFaceImageAcquisitionType JSON-LD context
-          default: ../JSON-LD_Contexts/biomFaceImageAcquisitionTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomFaceImageAcquisitionTypeContext.jsonld
     biomFaceImageAcquisitionCodeType:
@@ -11455,7 +11069,6 @@ components:
         '@context':
           type: string
           description: biomFaceImageAcquisitionCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomFaceImageAcquisitionCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomFaceImageAcquisitionCodeTypeContext.jsonld
     biomFaceImageAcquisitionCodeSimpleType:
@@ -11482,7 +11095,6 @@ components:
         '@context':
           type: string
           description: biomImageTransformationCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomImageTransformationCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomImageTransformationCodeTypeContext.jsonld
     biomImageTransformationCodeSimpleType:
@@ -11675,8 +11287,6 @@ components:
             '@context':
               type: string
               description: biomFingerImpressionImageDetailType JSON-LD context
-              default: >-
-                ../JSON-LD_Contexts/biomFingerImpressionImageDetailTypeContext.jsonld
               enum:
                 - >-
                   ../JSON-LD_Contexts/biomFingerImpressionImageDetailTypeContext.jsonld
@@ -11693,8 +11303,6 @@ components:
         '@context':
           type: string
           description: biomImpressionCaptureCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomImpressionCaptureCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomImpressionCaptureCategoryCodeTypeContext.jsonld
@@ -11751,7 +11359,6 @@ components:
         '@context':
           type: string
           description: biomImpressionCaptureCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomImpressionCaptureCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomImpressionCaptureCodeTypeContext.jsonld
     biomImpressionCaptureCodeSimpleType:
@@ -11783,8 +11390,6 @@ components:
         '@context':
           type: string
           description: biomFrictionRidgeCaptureTechnologyCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomFrictionRidgeCaptureTechnologyCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFrictionRidgeCaptureTechnologyCodeTypeContext.jsonld
@@ -11843,8 +11448,6 @@ components:
         '@context':
           type: string
           description: biomFingerprintImageNISTQualityType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomFingerprintImageNISTQualityTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFingerprintImageNISTQualityTypeContext.jsonld
@@ -11888,7 +11491,6 @@ components:
         '@context':
           type: string
           description: biomFingerprintImageQualityType JSON-LD context
-          default: ../JSON-LD_Contexts/biomFingerprintImageQualityTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomFingerprintImageQualityTypeContext.jsonld
     biomInteger1to255Type:
@@ -11901,7 +11503,6 @@ components:
         '@context':
           type: string
           description: biomInteger1to255Type JSON-LD context
-          default: ../JSON-LD_Contexts/biomInteger1to255TypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomInteger1to255TypeContext.jsonld
     biomInteger1to255SimpleType:
@@ -11936,8 +11537,6 @@ components:
         '@context':
           type: string
           description: biomFingerprintImageSegmentPositionPolygonType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomFingerprintImageSegmentPositionPolygonTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFingerprintImageSegmentPositionPolygonTypeContext.jsonld
@@ -11954,8 +11553,6 @@ components:
         '@context':
           type: string
           description: biomFingerprintImageAcquisitionProfileCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomFingerprintImageAcquisitionProfileCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFingerprintImageAcquisitionProfileCodeTypeContext.jsonld
@@ -12036,7 +11633,6 @@ components:
             '@context':
               type: string
               description: biomFingerprintImageType JSON-LD context
-              default: ../JSON-LD_Contexts/biomFingerprintImageTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/biomFingerprintImageTypeContext.jsonld
     biomFingerprintPositionListType:
@@ -12052,7 +11648,6 @@ components:
         '@context':
           type: string
           description: biomFingerprintPositionListType JSON-LD context
-          default: ../JSON-LD_Contexts/biomFingerprintPositionListTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomFingerprintPositionListTypeContext.jsonld
     biomFrictionRidgeDetailType:
@@ -12160,7 +11755,6 @@ components:
             '@context':
               type: string
               description: biomFrictionRidgeDetailType JSON-LD context
-              default: ../JSON-LD_Contexts/biomFrictionRidgeDetailTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/biomFrictionRidgeDetailTypeContext.jsonld
     biomFrictionRidgeImageQualityType:
@@ -12200,7 +11794,6 @@ components:
         '@context':
           type: string
           description: biomFrictionRidgeImageQualityType JSON-LD context
-          default: ../JSON-LD_Contexts/biomFrictionRidgeImageQualityTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomFrictionRidgeImageQualityTypeContext.jsonld
@@ -12366,7 +11959,6 @@ components:
             '@context':
               type: string
               description: biomIrisImageDetailType JSON-LD context
-              default: ../JSON-LD_Contexts/biomIrisImageDetailTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/biomIrisImageDetailTypeContext.jsonld
     biomEyePositionCodeType:
@@ -12379,7 +11971,6 @@ components:
         '@context':
           type: string
           description: biomEyePositionCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomEyePositionCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomEyePositionCodeTypeContext.jsonld
     biomEyePositionCodeSimpleType:
@@ -12411,7 +12002,6 @@ components:
         '@context':
           type: string
           description: biomIrisImageMissingType JSON-LD context
-          default: ../JSON-LD_Contexts/biomIrisImageMissingTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomIrisImageMissingTypeContext.jsonld
     biomIrisMissingCodeType:
@@ -12426,7 +12016,6 @@ components:
         '@context':
           type: string
           description: biomIrisMissingCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomIrisMissingCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomIrisMissingCodeTypeContext.jsonld
     biomIrisMissingCodeSimpleType:
@@ -12453,7 +12042,6 @@ components:
         '@context':
           type: string
           description: biomIrisImageMissingReasonCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomIrisImageMissingReasonCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomIrisImageMissingReasonCodeTypeContext.jsonld
@@ -12492,7 +12080,6 @@ components:
         '@context':
           type: string
           description: biomIrisImageCaptureType JSON-LD context
-          default: ../JSON-LD_Contexts/biomIrisImageCaptureTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomIrisImageCaptureTypeContext.jsonld
     biomImageOrientationCodeType:
@@ -12505,7 +12092,6 @@ components:
         '@context':
           type: string
           description: biomImageOrientationCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomImageOrientationCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomImageOrientationCodeTypeContext.jsonld
     biomImageOrientationCodeSimpleType:
@@ -12525,7 +12111,6 @@ components:
         '@context':
           type: string
           description: biomImageScanCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomImageScanCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomImageScanCategoryCodeTypeContext.jsonld
     biomImageScanCategoryCodeSimpleType:
@@ -12566,8 +12151,6 @@ components:
         '@context':
           type: string
           description: biomAcquisitionLightingSpectrumType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomAcquisitionLightingSpectrumTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomAcquisitionLightingSpectrumTypeContext.jsonld
@@ -12582,8 +12165,6 @@ components:
         '@context':
           type: string
           description: biomAcquisitionLightingSpectrumCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomAcquisitionLightingSpectrumCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomAcquisitionLightingSpectrumCodeTypeContext.jsonld
@@ -12609,8 +12190,6 @@ components:
         '@context':
           type: string
           description: biomIrisImageAcquisitionProfileCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomIrisImageAcquisitionProfileCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomIrisImageAcquisitionProfileCodeTypeContext.jsonld
@@ -12637,7 +12216,6 @@ components:
         '@context':
           type: string
           description: biomIrisImageStorageFormatCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomIrisImageStorageFormatCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomIrisImageStorageFormatCodeTypeContext.jsonld
@@ -12678,7 +12256,6 @@ components:
         '@context':
           type: string
           description: biomIrisImageIrisBoundaryType JSON-LD context
-          default: ../JSON-LD_Contexts/biomIrisImageIrisBoundaryTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomIrisImageIrisBoundaryTypeContext.jsonld
     biomIrisImageOcclusionType:
@@ -12717,7 +12294,6 @@ components:
         '@context':
           type: string
           description: biomIrisImageOcclusionType JSON-LD context
-          default: ../JSON-LD_Contexts/biomIrisImageOcclusionTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomIrisImageOcclusionTypeContext.jsonld
     biomPalmPrintImageDetailType:
@@ -12838,7 +12414,6 @@ components:
             '@context':
               type: string
               description: biomPalmPrintImageDetailType JSON-LD context
-              default: ../JSON-LD_Contexts/biomPalmPrintImageDetailTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/biomPalmPrintImageDetailTypeContext.jsonld
     biomPalmPrintImageMissingAreaType:
@@ -12864,7 +12439,6 @@ components:
         '@context':
           type: string
           description: biomPalmPrintImageMissingAreaType JSON-LD context
-          default: ../JSON-LD_Contexts/biomPalmPrintImageMissingAreaTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomPalmPrintImageMissingAreaTypeContext.jsonld
@@ -12904,7 +12478,6 @@ components:
         '@context':
           type: string
           description: biomPalmPrintImageQualityType JSON-LD context
-          default: ../JSON-LD_Contexts/biomPalmPrintImageQualityTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomPalmPrintImageQualityTypeContext.jsonld
     biomPalmPrintImageAcquisitionProfileCodeType:
@@ -12920,8 +12493,6 @@ components:
         '@context':
           type: string
           description: biomPalmPrintImageAcquisitionProfileCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomPalmPrintImageAcquisitionProfileCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomPalmPrintImageAcquisitionProfileCodeTypeContext.jsonld
@@ -13062,7 +12633,6 @@ components:
             '@context':
               type: string
               description: biomPhysicalFeatureImageType JSON-LD context
-              default: ../JSON-LD_Contexts/biomPhysicalFeatureImageTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/biomPhysicalFeatureImageTypeContext.jsonld
     biomCheiloscopicImageInformationType:
@@ -13195,8 +12765,6 @@ components:
         '@context':
           type: string
           description: biomCheiloscopicImageInformationType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomCheiloscopicImageInformationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomCheiloscopicImageInformationTypeContext.jsonld
@@ -13215,8 +12783,6 @@ components:
         '@context':
           type: string
           description: biomLipCharacterizationCodeListType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomLipCharacterizationCodeListTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomLipCharacterizationCodeListTypeContext.jsonld
@@ -13235,8 +12801,6 @@ components:
         '@context':
           type: string
           description: biomLipContactLineDescriptorCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomLipContactLineDescriptorCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomLipContactLineDescriptorCodeTypeContext.jsonld
@@ -13263,8 +12827,6 @@ components:
         '@context':
           type: string
           description: biomLipPrintPathologiesPeculiaritiesCodeListType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomLipPrintPathologiesPeculiaritiesCodeListTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomLipPrintPathologiesPeculiaritiesCodeListTypeContext.jsonld
@@ -13279,8 +12841,6 @@ components:
         '@context':
           type: string
           description: biomLipPrintPathologiesPeculiaritiesCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomLipPrintPathologiesPeculiaritiesCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomLipPrintPathologiesPeculiaritiesCodeTypeContext.jsonld
@@ -13319,7 +12879,6 @@ components:
         '@context':
           type: string
           description: biomLipPrintSurfaceCodeListType JSON-LD context
-          default: ../JSON-LD_Contexts/biomLipPrintSurfaceCodeListTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomLipPrintSurfaceCodeListTypeContext.jsonld
     biomLipPrintSurfaceCodeType:
@@ -13332,7 +12891,6 @@ components:
         '@context':
           type: string
           description: biomLipPrintSurfaceCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomLipPrintSurfaceCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomLipPrintSurfaceCodeTypeContext.jsonld
     biomLipPrintSurfaceCodeSimpleType:
@@ -13353,7 +12911,6 @@ components:
         '@context':
           type: string
           description: biomLipPrintMediumCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomLipPrintMediumCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomLipPrintMediumCodeTypeContext.jsonld
     biomLipPrintMediumCodeSimpleType:
@@ -13395,8 +12952,6 @@ components:
         '@context':
           type: string
           description: biomDentalVisualImageDataInformationType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomDentalVisualImageDataInformationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomDentalVisualImageDataInformationTypeContext.jsonld
@@ -13410,7 +12965,6 @@ components:
         '@context':
           type: string
           description: biomDentalVisualImageCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/biomDentalVisualImageCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomDentalVisualImageCodeTypeContext.jsonld
     biomDentalVisualImageCodeSimpleType:
@@ -13583,7 +13137,6 @@ components:
             '@context':
               type: string
               description: biomPlantarImageDetailType JSON-LD context
-              default: ../JSON-LD_Contexts/biomPlantarImageDetailTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/biomPlantarImageDetailTypeContext.jsonld
     biomPlantarImageMissingAreaType:
@@ -13609,7 +13162,6 @@ components:
         '@context':
           type: string
           description: biomPlantarImageMissingAreaType JSON-LD context
-          default: ../JSON-LD_Contexts/biomPlantarImageMissingAreaTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomPlantarImageMissingAreaTypeContext.jsonld
     biomPlantarImageQualityType:
@@ -13648,7 +13200,6 @@ components:
         '@context':
           type: string
           description: biomPlantarImageQualityType JSON-LD context
-          default: ../JSON-LD_Contexts/biomPlantarImageQualityTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/biomPlantarImageQualityTypeContext.jsonld
     biomPlantarImageSegmentToePositionPolygonType:
@@ -13682,8 +13233,6 @@ components:
         '@context':
           type: string
           description: biomPlantarImageSegmentToePositionPolygonType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomPlantarImageSegmentToePositionPolygonTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomPlantarImageSegmentToePositionPolygonTypeContext.jsonld
@@ -13700,8 +13249,6 @@ components:
         '@context':
           type: string
           description: biomPlantarImageAcquisitionProfileCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/biomPlantarImageAcquisitionProfileCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/biomPlantarImageAcquisitionProfileCodeTypeContext.jsonld

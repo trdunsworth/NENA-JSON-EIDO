@@ -10,7 +10,6 @@ components:
         '@context':
           type: string
           description: ucrLocationCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ucrLocationCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ucrLocationCategoryCodeTypeContext.jsonld
     ucrLocationCategoryCodeSimpleType:
@@ -75,7 +74,6 @@ components:
         '@context':
           type: string
           description: ucrArresteeWeaponCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ucrArresteeWeaponCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ucrArresteeWeaponCodeTypeContext.jsonld
     ucrArresteeWeaponCodeSimpleType:
@@ -107,7 +105,6 @@ components:
         '@context':
           type: string
           description: ucrPropertyCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ucrPropertyCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ucrPropertyCategoryCodeTypeContext.jsonld
     ucrPropertyCategoryCodeSimpleType:
@@ -192,7 +189,6 @@ components:
         '@context':
           type: string
           description: ucrOffenseCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ucrOffenseCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ucrOffenseCodeTypeContext.jsonld
     ucrOffenseCodeSimpleType:
@@ -273,8 +269,6 @@ components:
         '@context':
           type: string
           description: ucrCriminalActivityCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/ucrCriminalActivityCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/ucrCriminalActivityCategoryCodeTypeContext.jsonld
@@ -309,7 +303,6 @@ components:
         '@context':
           type: string
           description: ucrIncidentFactorCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ucrIncidentFactorCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ucrIncidentFactorCodeTypeContext.jsonld
     ucrIncidentFactorCodeSimpleType:
@@ -333,8 +326,6 @@ components:
         '@context':
           type: string
           description: ucrJustifiableHomicideFactorsCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/ucrJustifiableHomicideFactorsCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/ucrJustifiableHomicideFactorsCodeTypeContext.jsonld
@@ -362,8 +353,6 @@ components:
         '@context':
           type: string
           description: ucrAggravatedAssaultHomicideFactorsCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/ucrAggravatedAssaultHomicideFactorsCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/ucrAggravatedAssaultHomicideFactorsCodeTypeContext.jsonld
@@ -400,7 +389,6 @@ components:
         '@context':
           type: string
           description: ucrMethodOfEntryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ucrMethodOfEntryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ucrMethodOfEntryCodeTypeContext.jsonld
     ucrMethodOfEntryCodeSimpleType:
@@ -421,7 +409,6 @@ components:
         '@context':
           type: string
           description: ucrLEOKAActivityCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ucrLEOKAActivityCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ucrLEOKAActivityCategoryCodeTypeContext.jsonld
     ucrLEOKAActivityCategoryCodeSimpleType:
@@ -454,8 +441,6 @@ components:
         '@context':
           type: string
           description: ucrLEOKAOfficerAssignmentCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/ucrLEOKAOfficerAssignmentCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/ucrLEOKAOfficerAssignmentCategoryCodeTypeContext.jsonld
@@ -482,7 +467,6 @@ components:
         '@context':
           type: string
           description: ucrInjuryCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ucrInjuryCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ucrInjuryCategoryCodeTypeContext.jsonld
     ucrInjuryCategoryCodeSimpleType:
@@ -507,7 +491,6 @@ components:
         '@context':
           type: string
           description: ucrVictimCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ucrVictimCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ucrVictimCategoryCodeTypeContext.jsonld
     ucrVictimCategoryCodeSimpleType:
@@ -533,7 +516,6 @@ components:
         '@context':
           type: string
           description: ucrArrestCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ucrArrestCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ucrArrestCategoryCodeTypeContext.jsonld
     ucrArrestCategoryCodeSimpleType:
@@ -557,8 +539,6 @@ components:
         '@context':
           type: string
           description: ucrMultipleArresteeSegmentsCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/ucrMultipleArresteeSegmentsCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/ucrMultipleArresteeSegmentsCodeTypeContext.jsonld
@@ -582,7 +562,6 @@ components:
         '@context':
           type: string
           description: ucrDrugCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ucrDrugCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ucrDrugCategoryCodeTypeContext.jsonld
     ucrDrugCategoryCodeSimpleType:
@@ -619,7 +598,6 @@ components:
         '@context':
           type: string
           description: ucrDrugMeasurementCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ucrDrugMeasurementCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ucrDrugMeasurementCodeTypeContext.jsonld
     ucrDrugMeasurementCodeSimpleType:
@@ -650,8 +628,6 @@ components:
         '@context':
           type: string
           description: ucrIncidentExceptionalClearanceCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/ucrIncidentExceptionalClearanceCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/ucrIncidentExceptionalClearanceCodeTypeContext.jsonld
@@ -675,7 +651,6 @@ components:
         '@context':
           type: string
           description: ucrIncidentBiasMotivationCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ucrIncidentBiasMotivationCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/ucrIncidentBiasMotivationCodeTypeContext.jsonld
@@ -721,7 +696,6 @@ components:
         '@context':
           type: string
           description: ucrEthnicityCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ucrEthnicityCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ucrEthnicityCodeTypeContext.jsonld
     ucrEthnicityCodeSimpleType:
@@ -743,7 +717,6 @@ components:
         '@context':
           type: string
           description: ucrForceCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ucrForceCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ucrForceCategoryCodeTypeContext.jsonld
     ucrForceCategoryCodeSimpleType:
@@ -786,7 +759,6 @@ components:
         '@context':
           type: string
           description: ucrResidentCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ucrResidentCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ucrResidentCodeTypeContext.jsonld
     ucrResidentCodeSimpleType:

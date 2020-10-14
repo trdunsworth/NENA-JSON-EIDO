@@ -10,7 +10,6 @@ components:
         '@context':
           type: string
           description: apcoIncidentCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/apcoIncidentCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/apcoIncidentCategoryCodeTypeContext.jsonld
     apcoIncidentCategoryCodeSimpleType:
@@ -224,7 +223,6 @@ components:
         '@context':
           type: string
           description: apcoAlarmEventCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/apcoAlarmEventCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/apcoAlarmEventCategoryCodeTypeContext.jsonld
     apcoAlarmEventCategoryCodeSimpleType:
@@ -247,8 +245,6 @@ components:
         '@context':
           type: string
           description: apcoAlarmEventLocationCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/apcoAlarmEventLocationCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/apcoAlarmEventLocationCategoryCodeTypeContext.jsonld
@@ -269,8 +265,6 @@ components:
         '@context':
           type: string
           description: apcoAlarmEventResponseActionCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/apcoAlarmEventResponseActionCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/apcoAlarmEventResponseActionCodeTypeContext.jsonld

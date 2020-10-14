@@ -13,8 +13,6 @@ components:
         '@context':
           type: string
           description: itcodesDutyTaxPaymentMethodCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/itcodesDutyTaxPaymentMethodCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/itcodesDutyTaxPaymentMethodCodeTypeContext.jsonld

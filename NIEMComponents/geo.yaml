@@ -10,7 +10,6 @@ components:
         '@context':
           type: string
           description: geoGeometryType JSON-LD context
-          default: ../JSON-LD_Contexts/geoGeometryTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/geoGeometryTypeContext.jsonld
     geoEllipseType:
@@ -25,7 +24,6 @@ components:
         '@context':
           type: string
           description: geoEllipseType JSON-LD context
-          default: ../JSON-LD_Contexts/geoEllipseTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/geoEllipseTypeContext.jsonld
     geoPointType:
@@ -41,7 +39,6 @@ components:
         '@context':
           type: string
           description: geoPointType JSON-LD context
-          default: ../JSON-LD_Contexts/geoPointTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/geoPointTypeContext.jsonld
     geoCurveType:
@@ -58,7 +55,6 @@ components:
         '@context':
           type: string
           description: geoCurveType JSON-LD context
-          default: ../JSON-LD_Contexts/geoCurveTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/geoCurveTypeContext.jsonld
     geoEnvelopeType:
@@ -75,7 +71,6 @@ components:
         '@context':
           type: string
           description: geoEnvelopeType JSON-LD context
-          default: ../JSON-LD_Contexts/geoEnvelopeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/geoEnvelopeTypeContext.jsonld
     geoPolygonType:
@@ -92,7 +87,6 @@ components:
         '@context':
           type: string
           description: geoPolygonType JSON-LD context
-          default: ../JSON-LD_Contexts/geoPolygonTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/geoPolygonTypeContext.jsonld
     geoFeatureType:
@@ -105,6 +99,5 @@ components:
         '@context':
           type: string
           description: geoFeatureType JSON-LD context
-          default: ../JSON-LD_Contexts/geoFeatureTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/geoFeatureTypeContext.jsonld

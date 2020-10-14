@@ -10,7 +10,6 @@ components:
         '@context':
           type: string
           description: xCardTelephoneCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/xCardTelephoneCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/xCardTelephoneCategoryCodeTypeContext.jsonld
     xCardTelephoneCategoryCodeSimpleType:
