@@ -67,7 +67,7 @@ components:
             A globally unique identifier of the agent or automaton that updated
             the data component last
       description: A common prologue on each data component
-    AgencyType:
+  AgencyType:
       title: Agency Type
       description:
         A data type for an organization that owns or is otherwise related to an
@@ -78,13 +78,19 @@ components:
           required:
             - AgencyRoleDescriptionRegistryText
             - OrganizationIdentification
+            - AgencyType
           properties:
             agencyRoleDescriptionRegistryText:
               type: string
               description: Shall only contains values present in the Agency Role registry
             incidentOwningAgencyIndicator:
               type: boolean
-              description: True if an agency owns the emergency incident; false otherwise.
+              description: True if an agency owns the emergency incident; false otherwise
+            AgencyType:
+              type: array
+              items:
+                type: string
+              description: One or more members of a list of available provider and agency types such as Law Enforcement, Fire, EMS, Consolidated Dispatch, Ambulance Company, etc. Agency Types are defined in the IANA SOS- SubServices registry 
             organizationIdentification:
               type: string
               description:
@@ -96,7 +102,7 @@ components:
               description:
                 Reference to a Notes Data Component. Contains optional
                 alphanumeric text further describing the agency.
-    AgentType:
+  AgentType:
       title: Agent Type
       description: A data type for information about agents (e.g., call takers,
         dispatchers, supervisors, responding emergency resources, etc.) and
@@ -120,7 +126,9 @@ components:
                 generated an EIDO or contributed information contained in an
                 EIDO.
             agentRoleRegistryText:
-              type: string
+              type: array
+              items:
+                type: string
               description: Shall only contains values present in the Agent Role registry
             agencyReference:
               $ref: '#/components/schemas/ReferenceType'
@@ -374,7 +382,7 @@ components:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
-            - Vehicle
+            - ncVehicleComponent
             - VehicleRelationshipType
             - VehicleRelationshipTimeStamp
           properties:
@@ -422,6 +430,8 @@ components:
       allOf:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
+          required:
+            - incidentTypeCommonRegistryText
           properties:
             incidentTypeInternalCode:
               type: string
@@ -629,10 +639,12 @@ components:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
-            - Agent
+            - AgentReference
             - EmergencyResourceTypeCommonRegistryText
             - EnforcmentUnitName
             - PrimaryUnitStatusRegistryText
+            - ResourceAttributeRegistryText
+            - EnforcementUnitName
             - SecondaryUnitStatusRegistryText
           properties:
             ETA:
