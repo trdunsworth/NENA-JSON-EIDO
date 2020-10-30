@@ -46,22 +46,22 @@ components:
       title: Prologue
       required:
         - $id
-        - LastUpdateTimeStamp
+        - lastUpdateTimeStamp
       type: object
       properties:
         $id:
           type: string
           description: Globally unique identifier of the data component
-        LastUpdateTimeStamp:
+        lastUpdateTimeStamp:
           type: string
           description: Timestamp of the last time the data component was modified
           format: date-time
-        OwningAgencyIdentifier:
+        owningAgencyIdentifier:
           type: string
           description:
             Owning Agency Identifier. This includes private and public
             providers. Agencies are globally unique.
-        UpdatedByAgentIdentifier:
+        updatedByAgentIdentifier:
           type: string
           description:
             A globally unique identifier of the agent or automaton that updated
@@ -76,9 +76,9 @@ components:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
-            - AgencyRoleDescriptionRegistryText
-            - OrganizationIdentification
-            - AgencyType
+            - agencyRoleDescriptionRegistryText
+            - organizationIdentification
+            - agencyType
           properties:
             agencyRoleDescriptionRegistryText:
               type: string
@@ -111,8 +111,8 @@ components:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
-            - AgentIdentification
-            - PersonRoleRegistryText
+            - agentIdentification
+            - personRoleRegistryText
           properties:
             agentIdentification:
               type: string
@@ -154,8 +154,8 @@ components:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
-            - IncidentMergeDirectionCode
-            - IncidentTrackingIdentification
+            - incidentMergeDirectionCode
+            - incidentTrackingIdentification
           properties:
             incidentTrackingIdentification:
               type: string
@@ -182,8 +182,8 @@ components:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
-            - IncidentTrackingIdentification
-            - LinkDirectionCode
+            - incidentTrackingIdentification
+            - linkDirectionCode
           properties:
             incidentTrackingIdentification:
               type: string
@@ -209,7 +209,7 @@ components:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
-            - NotesActionComments
+            - notesActionComments
           properties:
             notesActionComments:
               type: string
@@ -246,7 +246,7 @@ components:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
-            - LocationTypeDescriptionRegistryText
+            - locationTypeDescriptionRegistryText
           properties:
             locationTypeDescriptionRegistryText:
               type: string
@@ -318,7 +318,7 @@ components:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
-            - PersonIncidentRoleRegistryText
+            - personIncidentRoleRegistryText
           properties:
             ncPersonComponent:
               $ref: 'NIEMComponents//nc.yaml#/components/schemas/ncPersonType'
@@ -355,7 +355,7 @@ components:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
-            - DispositionCommonRegistryCode
+            - dispositionCommonRegistryCode
           properties:
             dispositionCommonRegistryCode:
               type: string
@@ -383,8 +383,8 @@ components:
         - type: object
           required:
             - ncVehicleComponent
-            - VehicleRelationshipType
-            - VehicleRelationshipTimeStamp
+            - vehicleRelationshipType
+            - vehicleRelationshipTimeStamp
           properties:
             ncVehicleComponent:
               $ref: 'NIEMComponents//nc.yaml#/components/schemas/ncVehicleType'
@@ -526,7 +526,7 @@ components:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
-            - UpdatedCBNIdentifierURI
+            - updatedCBNIdentifierURI
           properties:
             updatedCBNIdentifierURI:
               type: string
@@ -549,10 +549,12 @@ components:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
-            - CallIdentifier
-            - CallStatusRegistryText
-            - CallTypeDescriptionRegistryText
-            - ActivityDateRange
+            - callIdentifier
+            - callStatusRegistryText
+            - callTypeDescriptionRegistryText
+            - activityDateRange
+            - deviceCallBackInformationURL
+            - deviceContactHeader
           properties:
             callIdentifier:
               type: string
@@ -595,12 +597,27 @@ components:
                 type: string
                 format: uri
             deviceCallBackInformationURL:
-              type: string
+              type: array
               description:
                 A URL containing limited duration information for a telephone
                 number or SIP equivalent for calling back a device that
-                initiated a call.
-              format: uri
+                initiated a call. URI(s) found in the P-Asserted-Identity 
+                header if provided else  the URI in the From header.
+              items:
+                type: string
+                format: uri
+            deviceContactHeader:
+              type: string
+              description: 
+                Content of the device contact header.
+            verstat:
+              type: string
+              description: 
+                Value of the verstat parameter. Required if known.
+            SIPIdentity:
+              type: string
+              description: 
+                Content of the SIP identity header. Required if known.
             callerCallBackInformationURL:
               type: string
               description:
@@ -639,13 +656,13 @@ components:
         - $ref: '#/components/schemas/PrologueType'
         - type: object
           required:
-            - AgentReference
-            - EmergencyResourceTypeCommonRegistryText
-            - EnforcmentUnitName
-            - PrimaryUnitStatusRegistryText
-            - ResourceAttributeRegistryText
-            - EnforcementUnitName
-            - SecondaryUnitStatusRegistryText
+            - agentReference
+            - emergencyResourceTypeCommonRegistryText
+            - enforcmentUnitName
+            - primaryUnitStatusRegistryText
+            - resourceAttributeRegistryText
+            - enforcementUnitName
+            - secondaryUnitStatusRegistryText
           properties:
             ETA:
               type: string
@@ -787,9 +804,9 @@ components:
         - type: object
           required:
             - EIDOVersion
-            - Agent
-            - IssuingElementIdentification
-            - ReasonForIssueRegistryText
+            - agentReference
+            - issuingElementIdentification
+            - reasonForIssueRegistryText
           properties:
             EIDOVersion:
               type: string
