@@ -10,5 +10,6 @@ components:
       properties:
         floorLabel: 
           type: string
-        floorInteger
+        floorInteger:
           type: integer
+          

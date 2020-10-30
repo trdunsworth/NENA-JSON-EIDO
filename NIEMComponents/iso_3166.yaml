@@ -13,7 +13,6 @@ components:
         '@context':
           type: string
           description: iso_3166CountryAlpha2CodeType JSON-LD context
-          default: ../JSON-LD_Contexts/iso_3166CountryAlpha2CodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/iso_3166CountryAlpha2CodeTypeContext.jsonld
     iso_3166CountryAlpha2CodeSimpleType:
@@ -284,7 +283,6 @@ components:
         '@context':
           type: string
           description: iso_3166CountryAlpha3CodeType JSON-LD context
-          default: ../JSON-LD_Contexts/iso_3166CountryAlpha3CodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/iso_3166CountryAlpha3CodeTypeContext.jsonld
     iso_3166CountryAlpha3CodeSimpleType:
@@ -555,7 +553,6 @@ components:
         '@context':
           type: string
           description: iso_3166CountryNumericCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/iso_3166CountryNumericCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/iso_3166CountryNumericCodeTypeContext.jsonld
     iso_3166CountryNumericCodeSimpleType:
@@ -827,7 +824,6 @@ components:
         '@context':
           type: string
           description: iso_3166CountrySubdivisionCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/iso_3166CountrySubdivisionCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/iso_3166CountrySubdivisionCodeTypeContext.jsonld

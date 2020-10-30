@@ -10,7 +10,6 @@ components:
         '@context':
           type: string
           description: ncicCountryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicCountryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicCountryCodeTypeContext.jsonld
     ncicCountryCodeSimpleType:
@@ -294,7 +293,6 @@ components:
         '@context':
           type: string
           description: ncicMNUCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicMNUCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicMNUCodeTypeContext.jsonld
     ncicMNUCodeSimpleType:
@@ -329,7 +327,6 @@ components:
         '@context':
           type: string
           description: ncicIMTCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicIMTCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicIMTCodeTypeContext.jsonld
     ncicIMTCodeSimpleType:
@@ -351,7 +348,6 @@ components:
         '@context':
           type: string
           description: ncicVSTCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicVSTCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicVSTCodeTypeContext.jsonld
     ncicVSTCodeSimpleType:
@@ -512,7 +508,6 @@ components:
         '@context':
           type: string
           description: ncicVCOCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicVCOCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicVCOCodeTypeContext.jsonld
     ncicVCOCodeSimpleType:
@@ -561,7 +556,6 @@ components:
         '@context':
           type: string
           description: ncicBC0CodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicBC0CodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicBC0CodeTypeContext.jsonld
     ncicBC0CodeSimpleType:
@@ -610,7 +604,6 @@ components:
         '@context':
           type: string
           description: ncicTYPAECodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicTYPAECodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicTYPAECodeTypeContext.jsonld
     ncicTYPAECodeSimpleType:
@@ -2181,7 +2174,6 @@ components:
         '@context':
           type: string
           description: ncicGTYPCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicGTYPCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicGTYPCodeTypeContext.jsonld
     ncicGTYPCodeSimpleType:
@@ -2221,7 +2213,6 @@ components:
         '@context':
           type: string
           description: ncicOFFCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicOFFCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicOFFCodeTypeContext.jsonld
     ncicOFFCodeSimpleType:
@@ -2704,7 +2695,6 @@ components:
         '@context':
           type: string
           description: ncicEYECodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicEYECodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicEYECodeTypeContext.jsonld
     ncicEYECodeSimpleType:
@@ -2735,7 +2725,6 @@ components:
         '@context':
           type: string
           description: ncicSMTCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicSMTCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicSMTCodeTypeContext.jsonld
     ncicSMTCodeSimpleType:
@@ -3683,7 +3672,6 @@ components:
         '@context':
           type: string
           description: ncicECRCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicECRCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicECRCodeTypeContext.jsonld
     ncicECRCodeSimpleType:
@@ -3711,7 +3699,6 @@ components:
         '@context':
           type: string
           description: ncicCMCCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicCMCCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicCMCCodeTypeContext.jsonld
     ncicCMCCodeSimpleType:
@@ -3746,7 +3733,6 @@ components:
         '@context':
           type: string
           description: ncicEXLCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicEXLCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicEXLCodeTypeContext.jsonld
     ncicEXLCodeSimpleType:
@@ -3777,7 +3763,6 @@ components:
         '@context':
           type: string
           description: ncicSEXCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicSEXCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicSEXCodeTypeContext.jsonld
     ncicSEXCodeSimpleType:
@@ -3799,7 +3784,6 @@ components:
         '@context':
           type: string
           description: ncicBLTCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicBLTCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicBLTCodeTypeContext.jsonld
     ncicBLTCodeSimpleType:
@@ -3829,7 +3813,6 @@ components:
         '@context':
           type: string
           description: ncicBXRCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicBXRCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicBXRCodeTypeContext.jsonld
     ncicBXRCodeSimpleType:
@@ -3851,7 +3834,6 @@ components:
         '@context':
           type: string
           description: ncicHAIRCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicHAIRCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicHAIRCodeTypeContext.jsonld
     ncicHAIRCodeSimpleType:
@@ -3885,7 +3867,6 @@ components:
         '@context':
           type: string
           description: ncicRACECodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicRACECodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicRACECodeTypeContext.jsonld
     ncicRACECodeSimpleType:
@@ -3911,7 +3892,6 @@ components:
         '@context':
           type: string
           description: ncicSKINCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicSKINCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicSKINCodeTypeContext.jsonld
     ncicSKINCodeSimpleType:
@@ -3945,7 +3925,6 @@ components:
         '@context':
           type: string
           description: ncicVMACodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicVMACodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicVMACodeTypeContext.jsonld
     ncicVMACodeSimpleType:
@@ -12473,7 +12452,6 @@ components:
         '@context':
           type: string
           description: ncicVMOCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicVMOCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicVMOCodeTypeContext.jsonld
     ncicVMOCodeSimpleType:
@@ -13920,7 +13898,6 @@ components:
         '@context':
           type: string
           description: ncicBMACodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicBMACodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicBMACodeTypeContext.jsonld
     ncicBMACodeSimpleType:
@@ -15561,7 +15538,6 @@ components:
         '@context':
           type: string
           description: ncicBTYCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicBTYCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicBTYCodeTypeContext.jsonld
     ncicBTYCodeSimpleType:
@@ -15591,7 +15567,6 @@ components:
         '@context':
           type: string
           description: ncicHULCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicHULCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicHULCodeTypeContext.jsonld
     ncicHULCodeSimpleType:
@@ -15612,7 +15587,6 @@ components:
         '@context':
           type: string
           description: ncicHSPCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicHSPCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicHSPCodeTypeContext.jsonld
     ncicHSPCodeSimpleType:
@@ -15638,7 +15612,6 @@ components:
         '@context':
           type: string
           description: ncicPR0CodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicPR0CodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicPR0CodeTypeContext.jsonld
     ncicPR0CodeSimpleType:
@@ -15663,7 +15636,6 @@ components:
         '@context':
           type: string
           description: ncicTrailersCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicTrailersCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicTrailersCodeTypeContext.jsonld
     ncicTrailersCodeSimpleType:
@@ -21465,7 +21437,6 @@ components:
         '@context':
           type: string
           description: ncicVehicleEPDCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicVehicleEPDCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicVehicleEPDCodeTypeContext.jsonld
     ncicVehicleEPDCodeSimpleType:
@@ -21489,7 +21460,6 @@ components:
         '@context':
           type: string
           description: ncicDCHCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncicDCHCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncicDCHCodeTypeContext.jsonld
     ncicDCHCodeSimpleType:

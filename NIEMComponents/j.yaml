@@ -44,7 +44,6 @@ components:
         '@context':
           type: string
           description: jJurisdictionAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jJurisdictionAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jJurisdictionAugmentationTypeContext.jsonld
     jItemTitleType:
@@ -172,7 +171,6 @@ components:
         '@context':
           type: string
           description: jItemTitleType JSON-LD context
-          default: ../JSON-LD_Contexts/jItemTitleTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jItemTitleTypeContext.jsonld
     jTitleStatusType:
@@ -191,7 +189,6 @@ components:
             '@context':
               type: string
               description: jTitleStatusType JSON-LD context
-              default: ../JSON-LD_Contexts/jTitleStatusTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jTitleStatusTypeContext.jsonld
     jItemStatusCodeType:
@@ -204,7 +201,6 @@ components:
         '@context':
           type: string
           description: jItemStatusCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/jItemStatusCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jItemStatusCodeTypeContext.jsonld
     jItemStatusCodeSimpleType:
@@ -271,7 +267,6 @@ components:
         '@context':
           type: string
           description: jLienType JSON-LD context
-          default: ../JSON-LD_Contexts/jLienTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jLienTypeContext.jsonld
     jIdentificationCategoryCodeType:
@@ -284,7 +279,6 @@ components:
         '@context':
           type: string
           description: jIdentificationCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/jIdentificationCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jIdentificationCategoryCodeTypeContext.jsonld
     jIdentificationCategoryCodeSimpleType:
@@ -335,7 +329,6 @@ components:
         '@context':
           type: string
           description: jBinaryAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jBinaryAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jBinaryAugmentationTypeContext.jsonld
     jBinaryHashValueType:
@@ -365,7 +358,6 @@ components:
         '@context':
           type: string
           description: jBinaryHashValueType JSON-LD context
-          default: ../JSON-LD_Contexts/jBinaryHashValueTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jBinaryHashValueTypeContext.jsonld
     jAddressAugmentationType:
@@ -388,7 +380,6 @@ components:
         '@context':
           type: string
           description: jAddressAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jAddressAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jAddressAugmentationTypeContext.jsonld
     jLocationAugmentationType:
@@ -442,7 +433,6 @@ components:
         '@context':
           type: string
           description: jLocationAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jLocationAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jLocationAugmentationTypeContext.jsonld
     jImageAugmentationType:
@@ -496,7 +486,6 @@ components:
         '@context':
           type: string
           description: jImageAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jImageAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jImageAugmentationTypeContext.jsonld
     jFacilityAugmentationType:
@@ -559,7 +548,6 @@ components:
         '@context':
           type: string
           description: jFacilityAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jFacilityAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jFacilityAugmentationTypeContext.jsonld
     jDocumentAugmentationType:
@@ -624,7 +612,6 @@ components:
         '@context':
           type: string
           description: jDocumentAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jDocumentAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jDocumentAugmentationTypeContext.jsonld
     jSignatureType:
@@ -676,7 +663,6 @@ components:
         '@context':
           type: string
           description: jSignatureType JSON-LD context
-          default: ../JSON-LD_Contexts/jSignatureTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jSignatureTypeContext.jsonld
     jPersonNameCategoryCodeType:
@@ -689,7 +675,6 @@ components:
         '@context':
           type: string
           description: jPersonNameCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/jPersonNameCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jPersonNameCategoryCodeTypeContext.jsonld
     jPersonNameCategoryCodeSimpleType:
@@ -731,7 +716,6 @@ components:
         '@context':
           type: string
           description: jPersonNameAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jPersonNameAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jPersonNameAugmentationTypeContext.jsonld
     jOrganizationAugmentationType:
@@ -870,7 +854,6 @@ components:
         '@context':
           type: string
           description: jOrganizationAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jOrganizationAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jOrganizationAugmentationTypeContext.jsonld
     jOrganizationAlternateNameType:
@@ -900,7 +883,6 @@ components:
         '@context':
           type: string
           description: jOrganizationAlternateNameType JSON-LD context
-          default: ../JSON-LD_Contexts/jOrganizationAlternateNameTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jOrganizationAlternateNameTypeContext.jsonld
     jItemAugmentationType:
@@ -1139,7 +1121,6 @@ components:
         '@context':
           type: string
           description: jItemAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jItemAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jItemAugmentationTypeContext.jsonld
     jLesseeType:
@@ -1193,7 +1174,6 @@ components:
         '@context':
           type: string
           description: jLesseeType JSON-LD context
-          default: ../JSON-LD_Contexts/jLesseeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jLesseeTypeContext.jsonld
     jLessorType:
@@ -1225,7 +1205,6 @@ components:
         '@context':
           type: string
           description: jLessorType JSON-LD context
-          default: ../JSON-LD_Contexts/jLessorTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jLessorTypeContext.jsonld
     jActivityAugmentationType:
@@ -1396,7 +1375,6 @@ components:
         '@context':
           type: string
           description: jActivityAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jActivityAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jActivityAugmentationTypeContext.jsonld
     jCaseLinkageType:
@@ -1424,7 +1402,6 @@ components:
         '@context':
           type: string
           description: jCaseLinkageType JSON-LD context
-          default: ../JSON-LD_Contexts/jCaseLinkageTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jCaseLinkageTypeContext.jsonld
     jIdentificationRangeType:
@@ -1449,7 +1426,6 @@ components:
         '@context':
           type: string
           description: jIdentificationRangeType JSON-LD context
-          default: ../JSON-LD_Contexts/jIdentificationRangeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jIdentificationRangeTypeContext.jsonld
     jItemSeizureType:
@@ -1537,7 +1513,6 @@ components:
             '@context':
               type: string
               description: jItemSeizureType JSON-LD context
-              default: ../JSON-LD_Contexts/jItemSeizureTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jItemSeizureTypeContext.jsonld
     jWarrantType:
@@ -1630,7 +1605,6 @@ components:
             '@context':
               type: string
               description: jWarrantType JSON-LD context
-              default: ../JSON-LD_Contexts/jWarrantTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jWarrantTypeContext.jsonld
     jCourtOrderType:
@@ -1883,7 +1857,6 @@ components:
             '@context':
               type: string
               description: jCourtOrderType JSON-LD context
-              default: ../JSON-LD_Contexts/jCourtOrderTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jCourtOrderTypeContext.jsonld
     jObligationAugmentationType:
@@ -1915,7 +1888,6 @@ components:
         '@context':
           type: string
           description: jObligationAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jObligationAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jObligationAugmentationTypeContext.jsonld
     jReferralAugmentationType:
@@ -1964,7 +1936,6 @@ components:
         '@context':
           type: string
           description: jReferralAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jReferralAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jReferralAugmentationTypeContext.jsonld
     jReleaseAugmentationType:
@@ -2043,7 +2014,6 @@ components:
         '@context':
           type: string
           description: jReleaseAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jReleaseAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jReleaseAugmentationTypeContext.jsonld
     jConveyanceAugmentationType:
@@ -2069,7 +2039,6 @@ components:
         '@context':
           type: string
           description: jConveyanceAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jConveyanceAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jConveyanceAugmentationTypeContext.jsonld
     jWitnessType:
@@ -2143,7 +2112,6 @@ components:
         '@context':
           type: string
           description: jWitnessType JSON-LD context
-          default: ../JSON-LD_Contexts/jWitnessTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jWitnessTypeContext.jsonld
     jProgramAugmentationType:
@@ -2334,7 +2302,6 @@ components:
         '@context':
           type: string
           description: jProgramAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jProgramAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jProgramAugmentationTypeContext.jsonld
     jStaffMemberType:
@@ -2444,7 +2411,6 @@ components:
         '@context':
           type: string
           description: jStaffMemberType JSON-LD context
-          default: ../JSON-LD_Contexts/jStaffMemberTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jStaffMemberTypeContext.jsonld
     jStaffMemberQualificationType:
@@ -2575,7 +2541,6 @@ components:
         '@context':
           type: string
           description: jStaffMemberQualificationType JSON-LD context
-          default: ../JSON-LD_Contexts/jStaffMemberQualificationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jStaffMemberQualificationTypeContext.jsonld
     jForceType:
@@ -2700,7 +2665,6 @@ components:
             '@context':
               type: string
               description: jForceType JSON-LD context
-              default: ../JSON-LD_Contexts/jForceTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jForceTypeContext.jsonld
     jSubjectType:
@@ -3292,7 +3256,6 @@ components:
         '@context':
           type: string
           description: jSubjectType JSON-LD context
-          default: ../JSON-LD_Contexts/jSubjectTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jSubjectTypeContext.jsonld
     jInvoluntaryMedicationActionType:
@@ -3330,8 +3293,6 @@ components:
             '@context':
               type: string
               description: jInvoluntaryMedicationActionType JSON-LD context
-              default: >-
-                ../JSON-LD_Contexts/jInvoluntaryMedicationActionTypeContext.jsonld
               enum:
                 - >-
                   ../JSON-LD_Contexts/jInvoluntaryMedicationActionTypeContext.jsonld
@@ -3383,7 +3344,6 @@ components:
             '@context':
               type: string
               description: jAssignmentType JSON-LD context
-              default: ../JSON-LD_Contexts/jAssignmentTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jAssignmentTypeContext.jsonld
     jAssignmentLocationDetailType:
@@ -3439,7 +3399,6 @@ components:
         '@context':
           type: string
           description: jAssignmentLocationDetailType JSON-LD context
-          default: ../JSON-LD_Contexts/jAssignmentLocationDetailTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jAssignmentLocationDetailTypeContext.jsonld
     jRiskType:
@@ -3464,7 +3423,6 @@ components:
         '@context':
           type: string
           description: jRiskType JSON-LD context
-          default: ../JSON-LD_Contexts/jRiskTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jRiskTypeContext.jsonld
     jEnforcementUnitType:
@@ -3515,7 +3473,6 @@ components:
             '@context':
               type: string
               description: jEnforcementUnitType JSON-LD context
-              default: ../JSON-LD_Contexts/jEnforcementUnitTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jEnforcementUnitTypeContext.jsonld
     jPersonEmploymentAssociationAugmentationType:
@@ -3628,8 +3585,6 @@ components:
         '@context':
           type: string
           description: jPersonEmploymentAssociationAugmentationType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/jPersonEmploymentAssociationAugmentationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/jPersonEmploymentAssociationAugmentationTypeContext.jsonld
@@ -3658,7 +3613,6 @@ components:
         '@context':
           type: string
           description: jPlanType JSON-LD context
-          default: ../JSON-LD_Contexts/jPlanTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jPlanTypeContext.jsonld
     jSupervisedReleaseType:
@@ -3741,7 +3695,6 @@ components:
             '@context':
               type: string
               description: jSupervisedReleaseType JSON-LD context
-              default: ../JSON-LD_Contexts/jSupervisedReleaseTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jSupervisedReleaseTypeContext.jsonld
     jSupervisionAugmentationType:
@@ -4049,7 +4002,6 @@ components:
         '@context':
           type: string
           description: jSupervisionAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jSupervisionAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jSupervisionAugmentationTypeContext.jsonld
     jEvaluationType:
@@ -4117,7 +4069,6 @@ components:
             '@context':
               type: string
               description: jEvaluationType JSON-LD context
-              default: ../JSON-LD_Contexts/jEvaluationTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jEvaluationTypeContext.jsonld
     jSupervisionHistoryType:
@@ -4190,7 +4141,6 @@ components:
         '@context':
           type: string
           description: jSupervisionHistoryType JSON-LD context
-          default: ../JSON-LD_Contexts/jSupervisionHistoryTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jSupervisionHistoryTypeContext.jsonld
     jOffenseType:
@@ -4540,7 +4490,6 @@ components:
             '@context':
               type: string
               description: jOffenseType JSON-LD context
-              default: ../JSON-LD_Contexts/jOffenseTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jOffenseTypeContext.jsonld
     jOffenseFactorType:
@@ -4600,7 +4549,6 @@ components:
         '@context':
           type: string
           description: jOffenseFactorType JSON-LD context
-          default: ../JSON-LD_Contexts/jOffenseFactorTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jOffenseFactorTypeContext.jsonld
     jPassagePointType:
@@ -4700,7 +4648,6 @@ components:
             '@context':
               type: string
               description: jPassagePointType JSON-LD context
-              default: ../JSON-LD_Contexts/jPassagePointTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jPassagePointTypeContext.jsonld
     jPassagePointMethodCodeType:
@@ -4713,7 +4660,6 @@ components:
         '@context':
           type: string
           description: jPassagePointMethodCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/jPassagePointMethodCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jPassagePointMethodCodeTypeContext.jsonld
     jPassagePointMethodCodeSimpleType:
@@ -4863,7 +4809,6 @@ components:
         '@context':
           type: string
           description: jStatuteType JSON-LD context
-          default: ../JSON-LD_Contexts/jStatuteTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jStatuteTypeContext.jsonld
     jSupervisionViolationType:
@@ -4970,7 +4915,6 @@ components:
             '@context':
               type: string
               description: jSupervisionViolationType JSON-LD context
-              default: ../JSON-LD_Contexts/jSupervisionViolationTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jSupervisionViolationTypeContext.jsonld
     jHearingType:
@@ -5367,7 +5311,6 @@ components:
             '@context':
               type: string
               description: jHearingType JSON-LD context
-              default: ../JSON-LD_Contexts/jHearingTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jHearingTypeContext.jsonld
     jHearingInvestigatorType:
@@ -5402,7 +5345,6 @@ components:
         '@context':
           type: string
           description: jHearingInvestigatorType JSON-LD context
-          default: ../JSON-LD_Contexts/jHearingInvestigatorTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jHearingInvestigatorTypeContext.jsonld
     jHearingReschedulingType:
@@ -5430,7 +5372,6 @@ components:
         '@context':
           type: string
           description: jHearingReschedulingType JSON-LD context
-          default: ../JSON-LD_Contexts/jHearingReschedulingTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jHearingReschedulingTypeContext.jsonld
     jEvidenceType:
@@ -5582,7 +5523,6 @@ components:
         '@context':
           type: string
           description: jEvidenceType JSON-LD context
-          default: ../JSON-LD_Contexts/jEvidenceTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jEvidenceTypeContext.jsonld
     jPersonEyeColorCodeType:
@@ -5595,7 +5535,6 @@ components:
         '@context':
           type: string
           description: jPersonEyeColorCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/jPersonEyeColorCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jPersonEyeColorCodeTypeContext.jsonld
     jPersonEyeColorCodeSimpleType:
@@ -5698,7 +5637,6 @@ components:
             '@context':
               type: string
               description: jCustodyTransferType JSON-LD context
-              default: ../JSON-LD_Contexts/jCustodyTransferTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jCustodyTransferTypeContext.jsonld
     jEnforcementOfficialType:
@@ -5799,7 +5737,6 @@ components:
         '@context':
           type: string
           description: jEnforcementOfficialType JSON-LD context
-          default: ../JSON-LD_Contexts/jEnforcementOfficialTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jEnforcementOfficialTypeContext.jsonld
     jLEOKACircumstanceCategoryCodeType:
@@ -5814,7 +5751,6 @@ components:
         '@context':
           type: string
           description: jLEOKACircumstanceCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/jLEOKACircumstanceCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/jLEOKACircumstanceCategoryCodeTypeContext.jsonld
@@ -5906,7 +5842,6 @@ components:
             '@context':
               type: string
               description: jHearingWitnessType JSON-LD context
-              default: ../JSON-LD_Contexts/jHearingWitnessTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jHearingWitnessTypeContext.jsonld
     jHearingSubjectMatterType:
@@ -5955,7 +5890,6 @@ components:
         '@context':
           type: string
           description: jHearingSubjectMatterType JSON-LD context
-          default: ../JSON-LD_Contexts/jHearingSubjectMatterTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jHearingSubjectMatterTypeContext.jsonld
     jVisitationType:
@@ -6099,7 +6033,6 @@ components:
             '@context':
               type: string
               description: jVisitationType JSON-LD context
-              default: ../JSON-LD_Contexts/jVisitationTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jVisitationTypeContext.jsonld
     jContrabandType:
@@ -6119,7 +6052,6 @@ components:
             '@context':
               type: string
               description: jContrabandType JSON-LD context
-              default: ../JSON-LD_Contexts/jContrabandTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jContrabandTypeContext.jsonld
     jJudicialOfficialType:
@@ -6188,7 +6120,6 @@ components:
         '@context':
           type: string
           description: jJudicialOfficialType JSON-LD context
-          default: ../JSON-LD_Contexts/jJudicialOfficialTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jJudicialOfficialTypeContext.jsonld
     jJudicialOfficialBarMembershipType:
@@ -6216,7 +6147,6 @@ components:
         '@context':
           type: string
           description: jJudicialOfficialBarMembershipType JSON-LD context
-          default: ../JSON-LD_Contexts/jJudicialOfficialBarMembershipTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/jJudicialOfficialBarMembershipTypeContext.jsonld
@@ -6286,7 +6216,6 @@ components:
             '@context':
               type: string
               description: jCourtType JSON-LD context
-              default: ../JSON-LD_Contexts/jCourtTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jCourtTypeContext.jsonld
     jPanelType:
@@ -6305,7 +6234,6 @@ components:
         '@context':
           type: string
           description: jPanelType JSON-LD context
-          default: ../JSON-LD_Contexts/jPanelTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jPanelTypeContext.jsonld
     jPanelMemberType:
@@ -6337,7 +6265,6 @@ components:
         '@context':
           type: string
           description: jPanelMemberType JSON-LD context
-          default: ../JSON-LD_Contexts/jPanelMemberTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jPanelMemberTypeContext.jsonld
     jIncidentAugmentationType:
@@ -6844,7 +6771,6 @@ components:
         '@context':
           type: string
           description: jIncidentAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jIncidentAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jIncidentAugmentationTypeContext.jsonld
     jArrestType:
@@ -7076,7 +7002,6 @@ components:
             '@context':
               type: string
               description: jArrestType JSON-LD context
-              default: ../JSON-LD_Contexts/jArrestTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jArrestTypeContext.jsonld
     jChargeType:
@@ -7470,7 +7395,6 @@ components:
         '@context':
           type: string
           description: jChargeType JSON-LD context
-          default: ../JSON-LD_Contexts/jChargeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jChargeTypeContext.jsonld
     jChargeDispositionType:
@@ -7507,7 +7431,6 @@ components:
             '@context':
               type: string
               description: jChargeDispositionType JSON-LD context
-              default: ../JSON-LD_Contexts/jChargeDispositionTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jChargeDispositionTypeContext.jsonld
     jSanctionType:
@@ -7685,7 +7608,6 @@ components:
             '@context':
               type: string
               description: jSanctionType JSON-LD context
-              default: ../JSON-LD_Contexts/jSanctionTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jSanctionTypeContext.jsonld
     jSeverityLevelType:
@@ -7740,7 +7662,6 @@ components:
         '@context':
           type: string
           description: jSeverityLevelType JSON-LD context
-          default: ../JSON-LD_Contexts/jSeverityLevelTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jSeverityLevelTypeContext.jsonld
     jSentencingGuidelineType:
@@ -7782,7 +7703,6 @@ components:
         '@context':
           type: string
           description: jSentencingGuidelineType JSON-LD context
-          default: ../JSON-LD_Contexts/jSentencingGuidelineTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jSentencingGuidelineTypeContext.jsonld
     jChargeEnhancingFactorType:
@@ -7821,7 +7741,6 @@ components:
         '@context':
           type: string
           description: jChargeEnhancingFactorType JSON-LD context
-          default: ../JSON-LD_Contexts/jChargeEnhancingFactorTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jChargeEnhancingFactorTypeContext.jsonld
     jConvictionType:
@@ -7920,7 +7839,6 @@ components:
             '@context':
               type: string
               description: jConvictionType JSON-LD context
-              default: ../JSON-LD_Contexts/jConvictionTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jConvictionTypeContext.jsonld
     jPleaType:
@@ -7974,7 +7892,6 @@ components:
             '@context':
               type: string
               description: jPleaType JSON-LD context
-              default: ../JSON-LD_Contexts/jPleaTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jPleaTypeContext.jsonld
     jSentenceType:
@@ -8122,7 +8039,6 @@ components:
             '@context':
               type: string
               description: jSentenceType JSON-LD context
-              default: ../JSON-LD_Contexts/jSentenceTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jSentenceTypeContext.jsonld
     jTermType:
@@ -8165,7 +8081,6 @@ components:
             '@context':
               type: string
               description: jTermType JSON-LD context
-              default: ../JSON-LD_Contexts/jTermTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jTermTypeContext.jsonld
     jVerdictType:
@@ -8232,7 +8147,6 @@ components:
             '@context':
               type: string
               description: jVerdictType JSON-LD context
-              default: ../JSON-LD_Contexts/jVerdictTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jVerdictTypeContext.jsonld
     jVictimType:
@@ -8450,7 +8364,6 @@ components:
         '@context':
           type: string
           description: jVictimType JSON-LD context
-          default: ../JSON-LD_Contexts/jVictimTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jVictimTypeContext.jsonld
     jVictimMOType:
@@ -8591,7 +8504,6 @@ components:
         '@context':
           type: string
           description: jVictimMOType JSON-LD context
-          default: ../JSON-LD_Contexts/jVictimMOTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jVictimMOTypeContext.jsonld
     jInjuryAugmentationType:
@@ -8672,7 +8584,6 @@ components:
         '@context':
           type: string
           description: jInjuryAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jInjuryAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jInjuryAugmentationTypeContext.jsonld
     jBailBondType:
@@ -8743,7 +8654,6 @@ components:
             '@context':
               type: string
               description: jBailBondType JSON-LD context
-              default: ../JSON-LD_Contexts/jBailBondTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jBailBondTypeContext.jsonld
     jBookingType:
@@ -8971,7 +8881,6 @@ components:
             '@context':
               type: string
               description: jBookingType JSON-LD context
-              default: ../JSON-LD_Contexts/jBookingTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jBookingTypeContext.jsonld
     jBookingTelephoneCallType:
@@ -8999,7 +8908,6 @@ components:
         '@context':
           type: string
           description: jBookingTelephoneCallType JSON-LD context
-          default: ../JSON-LD_Contexts/jBookingTelephoneCallTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jBookingTelephoneCallTypeContext.jsonld
     jParticipantType:
@@ -9031,7 +8939,6 @@ components:
         '@context':
           type: string
           description: jParticipantType JSON-LD context
-          default: ../JSON-LD_Contexts/jParticipantTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jParticipantTypeContext.jsonld
     jDrugAugmentationType:
@@ -9057,7 +8964,6 @@ components:
         '@context':
           type: string
           description: jDrugAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jDrugAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jDrugAugmentationTypeContext.jsonld
     jIncidentFormType:
@@ -9091,7 +8997,6 @@ components:
         '@context':
           type: string
           description: jIncidentFormType JSON-LD context
-          default: ../JSON-LD_Contexts/jIncidentFormTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jIncidentFormTypeContext.jsonld
     jServiceCallType:
@@ -9250,7 +9155,6 @@ components:
             '@context':
               type: string
               description: jServiceCallType JSON-LD context
-              default: ../JSON-LD_Contexts/jServiceCallTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jServiceCallTypeContext.jsonld
     jTargetType:
@@ -9324,7 +9228,6 @@ components:
         '@context':
           type: string
           description: jTargetType JSON-LD context
-          default: ../JSON-LD_Contexts/jTargetTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jTargetTypeContext.jsonld
     jIncidentLevelDisseminationCodeType:
@@ -9337,8 +9240,6 @@ components:
         '@context':
           type: string
           description: jIncidentLevelDisseminationCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/jIncidentLevelDisseminationCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/jIncidentLevelDisseminationCodeTypeContext.jsonld
@@ -9415,7 +9316,6 @@ components:
         '@context':
           type: string
           description: jIncidentFactorType JSON-LD context
-          default: ../JSON-LD_Contexts/jIncidentFactorTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jIncidentFactorTypeContext.jsonld
     jAssessmentAugmentationType:
@@ -9447,7 +9347,6 @@ components:
         '@context':
           type: string
           description: jAssessmentAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jAssessmentAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jAssessmentAugmentationTypeContext.jsonld
     jConditionalReleaseType:
@@ -9514,7 +9413,6 @@ components:
             '@context':
               type: string
               description: jConditionalReleaseType JSON-LD context
-              default: ../JSON-LD_Contexts/jConditionalReleaseTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jConditionalReleaseTypeContext.jsonld
     jSupervisionRestrictionType:
@@ -9562,7 +9460,6 @@ components:
             '@context':
               type: string
               description: jSupervisionRestrictionType JSON-LD context
-              default: ../JSON-LD_Contexts/jSupervisionRestrictionTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jSupervisionRestrictionTypeContext.jsonld
     jGoalType:
@@ -9632,7 +9529,6 @@ components:
         '@context':
           type: string
           description: jGoalType JSON-LD context
-          default: ../JSON-LD_Contexts/jGoalTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jGoalTypeContext.jsonld
     jTaskAugmentationType:
@@ -9684,7 +9580,6 @@ components:
         '@context':
           type: string
           description: jTaskAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jTaskAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jTaskAugmentationTypeContext.jsonld
     jAppointmentType:
@@ -9769,7 +9664,6 @@ components:
             '@context':
               type: string
               description: jAppointmentType JSON-LD context
-              default: ../JSON-LD_Contexts/jAppointmentTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jAppointmentTypeContext.jsonld
     jAlertNotificationAugmentationType:
@@ -9807,7 +9701,6 @@ components:
         '@context':
           type: string
           description: jAlertNotificationAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jAlertNotificationAugmentationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/jAlertNotificationAugmentationTypeContext.jsonld
@@ -9896,7 +9789,6 @@ components:
         '@context':
           type: string
           description: jNotificationAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jNotificationAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jNotificationAugmentationTypeContext.jsonld
     jSubjectAppealType:
@@ -9954,7 +9846,6 @@ components:
             '@context':
               type: string
               description: jSubjectAppealType JSON-LD context
-              default: ../JSON-LD_Contexts/jSubjectAppealTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jSubjectAppealTypeContext.jsonld
     jAppealType:
@@ -9976,7 +9867,6 @@ components:
             '@context':
               type: string
               description: jAppealType JSON-LD context
-              default: ../JSON-LD_Contexts/jAppealTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jAppealTypeContext.jsonld
     jSubjectAppealDecisionReviewType:
@@ -9998,8 +9888,6 @@ components:
             '@context':
               type: string
               description: jSubjectAppealDecisionReviewType JSON-LD context
-              default: >-
-                ../JSON-LD_Contexts/jSubjectAppealDecisionReviewTypeContext.jsonld
               enum:
                 - >-
                   ../JSON-LD_Contexts/jSubjectAppealDecisionReviewTypeContext.jsonld
@@ -10058,7 +9946,6 @@ components:
         '@context':
           type: string
           description: jNeedType JSON-LD context
-          default: ../JSON-LD_Contexts/jNeedTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jNeedTypeContext.jsonld
     jSubjectAssignmentType:
@@ -10156,7 +10043,6 @@ components:
             '@context':
               type: string
               description: jSubjectAssignmentType JSON-LD context
-              default: ../JSON-LD_Contexts/jSubjectAssignmentTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jSubjectAssignmentTypeContext.jsonld
     jCertificationType:
@@ -10214,7 +10100,6 @@ components:
             '@context':
               type: string
               description: jCertificationType JSON-LD context
-              default: ../JSON-LD_Contexts/jCertificationTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jCertificationTypeContext.jsonld
     jConfidentialInformationType:
@@ -10286,7 +10171,6 @@ components:
         '@context':
           type: string
           description: jConfidentialInformationType JSON-LD context
-          default: ../JSON-LD_Contexts/jConfidentialInformationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jConfidentialInformationTypeContext.jsonld
     jConfidentialityMaterialType:
@@ -10323,7 +10207,6 @@ components:
             '@context':
               type: string
               description: jConfidentialityMaterialType JSON-LD context
-              default: ../JSON-LD_Contexts/jConfidentialityMaterialTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jConfidentialityMaterialTypeContext.jsonld
     jFuneralType:
@@ -10343,7 +10226,6 @@ components:
             '@context':
               type: string
               description: jFuneralType JSON-LD context
-              default: ../JSON-LD_Contexts/jFuneralTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jFuneralTypeContext.jsonld
     jSubjectIntakeType:
@@ -10371,7 +10253,6 @@ components:
             '@context':
               type: string
               description: jSubjectIntakeType JSON-LD context
-              default: ../JSON-LD_Contexts/jSubjectIntakeTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jSubjectIntakeTypeContext.jsonld
     jIntakeType:
@@ -10398,7 +10279,6 @@ components:
             '@context':
               type: string
               description: jIntakeType JSON-LD context
-              default: ../JSON-LD_Contexts/jIntakeTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jIntakeTypeContext.jsonld
     jSubjectAssessmentType:
@@ -10740,7 +10620,6 @@ components:
             '@context':
               type: string
               description: jSubjectAssessmentType JSON-LD context
-              default: ../JSON-LD_Contexts/jSubjectAssessmentTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jSubjectAssessmentTypeContext.jsonld
     jAssignmentAssessmentType:
@@ -10864,7 +10743,6 @@ components:
         '@context':
           type: string
           description: jAssignmentAssessmentType JSON-LD context
-          default: ../JSON-LD_Contexts/jAssignmentAssessmentTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jAssignmentAssessmentTypeContext.jsonld
     jDevelopmentalDisabilityType:
@@ -10921,7 +10799,6 @@ components:
         '@context':
           type: string
           description: jDevelopmentalDisabilityType JSON-LD context
-          default: ../JSON-LD_Contexts/jDevelopmentalDisabilityTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jDevelopmentalDisabilityTypeContext.jsonld
     jAlcoholUseAssessmentType:
@@ -10988,7 +10865,6 @@ components:
             '@context':
               type: string
               description: jAlcoholUseAssessmentType JSON-LD context
-              default: ../JSON-LD_Contexts/jAlcoholUseAssessmentTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jAlcoholUseAssessmentTypeContext.jsonld
     jMentalHealthAssessmentType:
@@ -11202,7 +11078,6 @@ components:
             '@context':
               type: string
               description: jMentalHealthAssessmentType JSON-LD context
-              default: ../JSON-LD_Contexts/jMentalHealthAssessmentTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jMentalHealthAssessmentTypeContext.jsonld
     jMentalHealthAssessmentFactorType:
@@ -11227,7 +11102,6 @@ components:
         '@context':
           type: string
           description: jMentalHealthAssessmentFactorType JSON-LD context
-          default: ../JSON-LD_Contexts/jMentalHealthAssessmentFactorTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/jMentalHealthAssessmentFactorTypeContext.jsonld
@@ -11412,7 +11286,6 @@ components:
             '@context':
               type: string
               description: jMedicalAssessmentType JSON-LD context
-              default: ../JSON-LD_Contexts/jMedicalAssessmentTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jMedicalAssessmentTypeContext.jsonld
     jTreatmentAugmentationType:
@@ -11486,7 +11359,6 @@ components:
         '@context':
           type: string
           description: jTreatmentAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jTreatmentAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jTreatmentAugmentationTypeContext.jsonld
     jAcademicAssessmentType:
@@ -11538,7 +11410,6 @@ components:
             '@context':
               type: string
               description: jAcademicAssessmentType JSON-LD context
-              default: ../JSON-LD_Contexts/jAcademicAssessmentTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jAcademicAssessmentTypeContext.jsonld
     jEducationAugmentationType:
@@ -11577,7 +11448,6 @@ components:
         '@context':
           type: string
           description: jEducationAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jEducationAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jEducationAugmentationTypeContext.jsonld
     jEducationCourseType:
@@ -11704,7 +11574,6 @@ components:
         '@context':
           type: string
           description: jEducationCourseType JSON-LD context
-          default: ../JSON-LD_Contexts/jEducationCourseTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jEducationCourseTypeContext.jsonld
     jAcademicRecordType:
@@ -11771,7 +11640,6 @@ components:
         '@context':
           type: string
           description: jAcademicRecordType JSON-LD context
-          default: ../JSON-LD_Contexts/jAcademicRecordTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jAcademicRecordTypeContext.jsonld
     jAcademicSubjectMatterType:
@@ -11805,7 +11673,6 @@ components:
         '@context':
           type: string
           description: jAcademicSubjectMatterType JSON-LD context
-          default: ../JSON-LD_Contexts/jAcademicSubjectMatterTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jAcademicSubjectMatterTypeContext.jsonld
     jDestabilizingFactorType:
@@ -11838,7 +11705,6 @@ components:
         '@context':
           type: string
           description: jDestabilizingFactorType JSON-LD context
-          default: ../JSON-LD_Contexts/jDestabilizingFactorTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jDestabilizingFactorTypeContext.jsonld
     jPersonDisabilityType:
@@ -11918,7 +11784,6 @@ components:
         '@context':
           type: string
           description: jPersonDisabilityType JSON-LD context
-          default: ../JSON-LD_Contexts/jPersonDisabilityTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jPersonDisabilityTypeContext.jsonld
     jMedicalEquipmentType:
@@ -11956,7 +11821,6 @@ components:
             '@context':
               type: string
               description: jMedicalEquipmentType JSON-LD context
-              default: ../JSON-LD_Contexts/jMedicalEquipmentTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jMedicalEquipmentTypeContext.jsonld
     jParoleAssessmentType:
@@ -12041,7 +11905,6 @@ components:
             '@context':
               type: string
               description: jParoleAssessmentType JSON-LD context
-              default: ../JSON-LD_Contexts/jParoleAssessmentTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jParoleAssessmentTypeContext.jsonld
     jPersonCriminalHistorySummaryType:
@@ -12131,8 +11994,6 @@ components:
             '@context':
               type: string
               description: jPersonCriminalHistorySummaryType JSON-LD context
-              default: >-
-                ../JSON-LD_Contexts/jPersonCriminalHistorySummaryTypeContext.jsonld
               enum:
                 - >-
                   ../JSON-LD_Contexts/jPersonCriminalHistorySummaryTypeContext.jsonld
@@ -12172,7 +12033,6 @@ components:
         '@context':
           type: string
           description: jOffenseSummaryType JSON-LD context
-          default: ../JSON-LD_Contexts/jOffenseSummaryTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jOffenseSummaryTypeContext.jsonld
     jSubjectAssignedAssignmentDisabilityPlacementType:
@@ -12214,8 +12074,6 @@ components:
               description: >-
                 jSubjectAssignedAssignmentDisabilityPlacementType JSON-LD
                 context
-              default: >-
-                ../JSON-LD_Contexts/jSubjectAssignedAssignmentDisabilityPlacementTypeContext.jsonld
               enum:
                 - >-
                   ../JSON-LD_Contexts/jSubjectAssignedAssignmentDisabilityPlacementTypeContext.jsonld
@@ -12257,8 +12115,6 @@ components:
               description: >-
                 jSubjectAssignedDisabilityPlacementRestrictionType JSON-LD
                 context
-              default: >-
-                ../JSON-LD_Contexts/jSubjectAssignedDisabilityPlacementRestrictionTypeContext.jsonld
               enum:
                 - >-
                   ../JSON-LD_Contexts/jSubjectAssignedDisabilityPlacementRestrictionTypeContext.jsonld
@@ -12288,7 +12144,6 @@ components:
             '@context':
               type: string
               description: jSupervisionAssessmentType JSON-LD context
-              default: ../JSON-LD_Contexts/jSupervisionAssessmentTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jSupervisionAssessmentTypeContext.jsonld
     jDrugUseAssessmentType:
@@ -12398,7 +12253,6 @@ components:
             '@context':
               type: string
               description: jDrugUseAssessmentType JSON-LD context
-              default: ../JSON-LD_Contexts/jDrugUseAssessmentTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jDrugUseAssessmentTypeContext.jsonld
     jDrugTestType:
@@ -12437,7 +12291,6 @@ components:
             '@context':
               type: string
               description: jDrugTestType JSON-LD context
-              default: ../JSON-LD_Contexts/jDrugTestTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jDrugTestTypeContext.jsonld
     jTestType:
@@ -12481,7 +12334,6 @@ components:
             '@context':
               type: string
               description: jTestType JSON-LD context
-              default: ../JSON-LD_Contexts/jTestTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jTestTypeContext.jsonld
     jTestResultType:
@@ -12523,7 +12375,6 @@ components:
         '@context':
           type: string
           description: jTestResultType JSON-LD context
-          default: ../JSON-LD_Contexts/jTestResultTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jTestResultTypeContext.jsonld
     jSubjectSecurityClassificationType:
@@ -12560,7 +12411,6 @@ components:
         '@context':
           type: string
           description: jSubjectSecurityClassificationType JSON-LD context
-          default: ../JSON-LD_Contexts/jSubjectSecurityClassificationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/jSubjectSecurityClassificationTypeContext.jsonld
@@ -12617,8 +12467,6 @@ components:
             '@context':
               type: string
               description: jSubjectClassificationAssessmentType JSON-LD context
-              default: >-
-                ../JSON-LD_Contexts/jSubjectClassificationAssessmentTypeContext.jsonld
               enum:
                 - >-
                   ../JSON-LD_Contexts/jSubjectClassificationAssessmentTypeContext.jsonld
@@ -12696,7 +12544,6 @@ components:
         '@context':
           type: string
           description: jSubjectMOType JSON-LD context
-          default: ../JSON-LD_Contexts/jSubjectMOTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jSubjectMOTypeContext.jsonld
     jCriminalTraitDetailsType:
@@ -12827,7 +12674,6 @@ components:
         '@context':
           type: string
           description: jCriminalTraitDetailsType JSON-LD context
-          default: ../JSON-LD_Contexts/jCriminalTraitDetailsTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jCriminalTraitDetailsTypeContext.jsonld
     jCriminalOrganizationType:
@@ -12897,7 +12743,6 @@ components:
         '@context':
           type: string
           description: jCriminalOrganizationType JSON-LD context
-          default: ../JSON-LD_Contexts/jCriminalOrganizationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jCriminalOrganizationTypeContext.jsonld
     jContractType:
@@ -12920,7 +12765,6 @@ components:
             '@context':
               type: string
               description: jContractType JSON-LD context
-              default: ../JSON-LD_Contexts/jContractTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jContractTypeContext.jsonld
     jProgramEnrollmentType:
@@ -12943,7 +12787,6 @@ components:
             '@context':
               type: string
               description: jProgramEnrollmentType JSON-LD context
-              default: ../JSON-LD_Contexts/jProgramEnrollmentTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jProgramEnrollmentTypeContext.jsonld
     jDisciplinaryActionAugmentationType:
@@ -12968,8 +12811,6 @@ components:
         '@context':
           type: string
           description: jDisciplinaryActionAugmentationType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/jDisciplinaryActionAugmentationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/jDisciplinaryActionAugmentationTypeContext.jsonld
@@ -13057,7 +12898,6 @@ components:
             '@context':
               type: string
               description: jBailType JSON-LD context
-              default: ../JSON-LD_Contexts/jBailTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jBailTypeContext.jsonld
     jPersonBloodTypeCodeType:
@@ -13072,7 +12912,6 @@ components:
         '@context':
           type: string
           description: jPersonBloodTypeCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/jPersonBloodTypeCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jPersonBloodTypeCodeTypeContext.jsonld
     jPersonBloodTypeCodeSimpleType:
@@ -13104,7 +12943,6 @@ components:
         '@context':
           type: string
           description: jPersonEthnicityCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/jPersonEthnicityCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jPersonEthnicityCodeTypeContext.jsonld
     jPersonEthnicityCodeSimpleType:
@@ -13155,7 +12993,6 @@ components:
         '@context':
           type: string
           description: jPersonHairColorCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/jPersonHairColorCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jPersonHairColorCodeTypeContext.jsonld
     jPersonHairColorCodeSimpleType:
@@ -13235,7 +13072,6 @@ components:
         '@context':
           type: string
           description: jMilitarySummaryAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jMilitarySummaryAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jMilitarySummaryAugmentationTypeContext.jsonld
     jPersonRaceCodeType:
@@ -13248,7 +13084,6 @@ components:
         '@context':
           type: string
           description: jPersonRaceCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/jPersonRaceCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jPersonRaceCodeTypeContext.jsonld
     jPersonRaceCodeSimpleType:
@@ -13270,7 +13105,6 @@ components:
         '@context':
           type: string
           description: jPersonSexCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/jPersonSexCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jPersonSexCodeTypeContext.jsonld
     jPersonSexCodeSimpleType:
@@ -13293,7 +13127,6 @@ components:
         '@context':
           type: string
           description: jPersonSkinToneCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/jPersonSkinToneCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jPersonSkinToneCodeTypeContext.jsonld
     jPersonSkinToneCodeSimpleType:
@@ -13726,7 +13559,6 @@ components:
         '@context':
           type: string
           description: jCaseAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jCaseAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jCaseAugmentationTypeContext.jsonld
     jCourtEventType:
@@ -13795,7 +13627,6 @@ components:
             '@context':
               type: string
               description: jCourtEventType JSON-LD context
-              default: ../JSON-LD_Contexts/jCourtEventTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jCourtEventTypeContext.jsonld
     jCourtActivityType:
@@ -13848,7 +13679,6 @@ components:
             '@context':
               type: string
               description: jCourtActivityType JSON-LD context
-              default: ../JSON-LD_Contexts/jCourtActivityTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jCourtActivityTypeContext.jsonld
     jCourtAppearanceType:
@@ -13911,7 +13741,6 @@ components:
         '@context':
           type: string
           description: jCourtAppearanceType JSON-LD context
-          default: ../JSON-LD_Contexts/jCourtAppearanceTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jCourtAppearanceTypeContext.jsonld
     jCaseOfficialType:
@@ -13981,7 +13810,6 @@ components:
             '@context':
               type: string
               description: jCaseOfficialType JSON-LD context
-              default: ../JSON-LD_Contexts/jCaseOfficialTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jCaseOfficialTypeContext.jsonld
     jExhibitType:
@@ -14034,7 +13862,6 @@ components:
         '@context':
           type: string
           description: jExhibitType JSON-LD context
-          default: ../JSON-LD_Contexts/jExhibitTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jExhibitTypeContext.jsonld
     jJurorType:
@@ -14104,7 +13931,6 @@ components:
         '@context':
           type: string
           description: jJurorType JSON-LD context
-          default: ../JSON-LD_Contexts/jJurorTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jJurorTypeContext.jsonld
     jCaseConvictionReportingRequirementsType:
@@ -14139,8 +13965,6 @@ components:
         '@context':
           type: string
           description: jCaseConvictionReportingRequirementsType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/jCaseConvictionReportingRequirementsTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/jCaseConvictionReportingRequirementsTypeContext.jsonld
@@ -14312,7 +14136,6 @@ components:
         '@context':
           type: string
           description: jVehicleAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jVehicleAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jVehicleAugmentationTypeContext.jsonld
     jVehicleEmissionInspectionType:
@@ -14343,7 +14166,6 @@ components:
             '@context':
               type: string
               description: jVehicleEmissionInspectionType JSON-LD context
-              default: ../JSON-LD_Contexts/jVehicleEmissionInspectionTypeContext.jsonld
               enum:
                 - >-
                   ../JSON-LD_Contexts/jVehicleEmissionInspectionTypeContext.jsonld
@@ -14413,7 +14235,6 @@ components:
             '@context':
               type: string
               description: jVehicleInspectionType JSON-LD context
-              default: ../JSON-LD_Contexts/jVehicleInspectionTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jVehicleInspectionTypeContext.jsonld
     jVehicleSafetyInspectionType:
@@ -14434,7 +14255,6 @@ components:
             '@context':
               type: string
               description: jVehicleSafetyInspectionType JSON-LD context
-              default: ../JSON-LD_Contexts/jVehicleSafetyInspectionTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jVehicleSafetyInspectionTypeContext.jsonld
     jVehicleBrandType:
@@ -14524,7 +14344,6 @@ components:
         '@context':
           type: string
           description: jVehicleBrandType JSON-LD context
-          default: ../JSON-LD_Contexts/jVehicleBrandTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jVehicleBrandTypeContext.jsonld
     jVehicleBranderType:
@@ -14557,7 +14376,6 @@ components:
         '@context':
           type: string
           description: jVehicleBranderType JSON-LD context
-          default: ../JSON-LD_Contexts/jVehicleBranderTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jVehicleBranderTypeContext.jsonld
     jVesselAugmentationType:
@@ -14575,7 +14393,6 @@ components:
         '@context':
           type: string
           description: jVesselAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jVesselAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jVesselAugmentationTypeContext.jsonld
     jEngineDisplacementUnitCodeType:
@@ -14590,7 +14407,6 @@ components:
         '@context':
           type: string
           description: jEngineDisplacementUnitCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/jEngineDisplacementUnitCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jEngineDisplacementUnitCodeTypeContext.jsonld
     jEngineDisplacementUnitCodeSimpleType:
@@ -15449,7 +15265,6 @@ components:
         '@context':
           type: string
           description: jPersonAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/jPersonAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jPersonAugmentationTypeContext.jsonld
     jDriverLicenseType:
@@ -15587,7 +15402,6 @@ components:
             '@context':
               type: string
               description: jDriverLicenseType JSON-LD context
-              default: ../JSON-LD_Contexts/jDriverLicenseTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jDriverLicenseTypeContext.jsonld
     jDriverLicenseBaseType:
@@ -15661,7 +15475,6 @@ components:
         '@context':
           type: string
           description: jDriverLicenseBaseType JSON-LD context
-          default: ../JSON-LD_Contexts/jDriverLicenseBaseTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jDriverLicenseBaseTypeContext.jsonld
     jDriverLicenseMedicalCertificationType:
@@ -15756,8 +15569,6 @@ components:
         '@context':
           type: string
           description: jDriverLicenseMedicalCertificationType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/jDriverLicenseMedicalCertificationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/jDriverLicenseMedicalCertificationTypeContext.jsonld
@@ -15774,8 +15585,6 @@ components:
         '@context':
           type: string
           description: jDHSDriverLicenseIssuingCountryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/jDHSDriverLicenseIssuingCountryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/jDHSDriverLicenseIssuingCountryCodeTypeContext.jsonld
@@ -15847,7 +15656,6 @@ components:
             '@context':
               type: string
               description: jDriverLicensePermitType JSON-LD context
-              default: ../JSON-LD_Contexts/jDriverLicensePermitTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jDriverLicensePermitTypeContext.jsonld
     jDriverLicensePermitRestrictionType:
@@ -15868,8 +15676,6 @@ components:
             '@context':
               type: string
               description: jDriverLicensePermitRestrictionType JSON-LD context
-              default: >-
-                ../JSON-LD_Contexts/jDriverLicensePermitRestrictionTypeContext.jsonld
               enum:
                 - >-
                   ../JSON-LD_Contexts/jDriverLicensePermitRestrictionTypeContext.jsonld
@@ -15909,7 +15715,6 @@ components:
         '@context':
           type: string
           description: jDrivingRestrictionType JSON-LD context
-          default: ../JSON-LD_Contexts/jDrivingRestrictionTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jDrivingRestrictionTypeContext.jsonld
     jDriverLicensePermitEndorsementType:
@@ -15934,8 +15739,6 @@ components:
             '@context':
               type: string
               description: jDriverLicensePermitEndorsementType JSON-LD context
-              default: >-
-                ../JSON-LD_Contexts/jDriverLicensePermitEndorsementTypeContext.jsonld
               enum:
                 - >-
                   ../JSON-LD_Contexts/jDriverLicensePermitEndorsementTypeContext.jsonld
@@ -15989,7 +15792,6 @@ components:
         '@context':
           type: string
           description: jDriverLicenseBaseEndorsementType JSON-LD context
-          default: ../JSON-LD_Contexts/jDriverLicenseBaseEndorsementTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/jDriverLicenseBaseEndorsementTypeContext.jsonld
@@ -16006,7 +15808,6 @@ components:
         '@context':
           type: string
           description: jDriverLicenseHMEThreatCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/jDriverLicenseHMEThreatCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jDriverLicenseHMEThreatCodeTypeContext.jsonld
     jDriverLicenseHMEThreatCodeSimpleType:
@@ -16174,7 +15975,6 @@ components:
             '@context':
               type: string
               description: jDriverLicenseWithdrawalType JSON-LD context
-              default: ../JSON-LD_Contexts/jDriverLicenseWithdrawalTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jDriverLicenseWithdrawalTypeContext.jsonld
     jDriverLicenseRestrictionType:
@@ -16195,7 +15995,6 @@ components:
             '@context':
               type: string
               description: jDriverLicenseRestrictionType JSON-LD context
-              default: ../JSON-LD_Contexts/jDriverLicenseRestrictionTypeContext.jsonld
               enum:
                 - >-
                   ../JSON-LD_Contexts/jDriverLicenseRestrictionTypeContext.jsonld
@@ -16221,7 +16020,6 @@ components:
             '@context':
               type: string
               description: jDriverLicenseEndorsementType JSON-LD context
-              default: ../JSON-LD_Contexts/jDriverLicenseEndorsementTypeContext.jsonld
               enum:
                 - >-
                   ../JSON-LD_Contexts/jDriverLicenseEndorsementTypeContext.jsonld
@@ -16259,7 +16057,6 @@ components:
         '@context':
           type: string
           description: jClothingType JSON-LD context
-          default: ../JSON-LD_Contexts/jClothingTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jClothingTypeContext.jsonld
     jBirthType:
@@ -16301,7 +16098,6 @@ components:
             '@context':
               type: string
               description: jBirthType JSON-LD context
-              default: ../JSON-LD_Contexts/jBirthTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jBirthTypeContext.jsonld
     jPersonLivingSituationType:
@@ -16336,7 +16132,6 @@ components:
         '@context':
           type: string
           description: jPersonLivingSituationType JSON-LD context
-          default: ../JSON-LD_Contexts/jPersonLivingSituationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jPersonLivingSituationTypeContext.jsonld
     jDrivingIncidentType:
@@ -16538,7 +16333,6 @@ components:
             '@context':
               type: string
               description: jDrivingIncidentType JSON-LD context
-              default: ../JSON-LD_Contexts/jDrivingIncidentTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jDrivingIncidentTypeContext.jsonld
     jIntoxicationType:
@@ -16639,7 +16433,6 @@ components:
         '@context':
           type: string
           description: jIntoxicationType JSON-LD context
-          default: ../JSON-LD_Contexts/jIntoxicationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/jIntoxicationTypeContext.jsonld
     jPersonDeathType:
@@ -16725,7 +16518,6 @@ components:
             '@context':
               type: string
               description: jPersonDeathType JSON-LD context
-              default: ../JSON-LD_Contexts/jPersonDeathTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jPersonDeathTypeContext.jsonld
     jCauseOfDeathAssessmentType:
@@ -16824,6 +16616,5 @@ components:
             '@context':
               type: string
               description: jCauseOfDeathAssessmentType JSON-LD context
-              default: ../JSON-LD_Contexts/jCauseOfDeathAssessmentTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/jCauseOfDeathAssessmentTypeContext.jsonld

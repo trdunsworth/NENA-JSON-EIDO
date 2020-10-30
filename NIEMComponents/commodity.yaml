@@ -11,8 +11,6 @@ components:
         '@context':
           type: string
           description: commodityConveyanceCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/commodityConveyanceCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/commodityConveyanceCategoryCodeTypeContext.jsonld
@@ -68,8 +66,6 @@ components:
         '@context':
           type: string
           description: commodityElectronicEquipmentCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/commodityElectronicEquipmentCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/commodityElectronicEquipmentCategoryCodeTypeContext.jsonld
@@ -122,8 +118,6 @@ components:
         '@context':
           type: string
           description: commodityElectronicInstrumentCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/commodityElectronicInstrumentCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/commodityElectronicInstrumentCategoryCodeTypeContext.jsonld
@@ -165,7 +159,6 @@ components:
         '@context':
           type: string
           description: commodityMachineryCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/commodityMachineryCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/commodityMachineryCategoryCodeTypeContext.jsonld

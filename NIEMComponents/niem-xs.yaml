@@ -10,7 +10,6 @@ components:
         '@context':
           type: string
           description: niem-xsstring JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsstringContext.jsonld
           enum:
             - ../JSON-LD_Contexts/niem-xsstringContext.jsonld
     niem-xsdecimal:
@@ -23,7 +22,6 @@ components:
         '@context':
           type: string
           description: niem-xsdecimal JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsdecimalContext.jsonld
           enum:
             - ../JSON-LD_Contexts/niem-xsdecimalContext.jsonld
     niem-xsdouble:
@@ -43,7 +41,6 @@ components:
         '@context':
           type: string
           description: niem-xsdouble JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsdoubleContext.jsonld
           enum:
             - ../JSON-LD_Contexts/niem-xsdoubleContext.jsonld
     niem-xsinteger:
@@ -56,7 +53,6 @@ components:
         '@context':
           type: string
           description: niem-xsinteger JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsintegerContext.jsonld
           enum:
             - ../JSON-LD_Contexts/niem-xsintegerContext.jsonld
     niem-xsunsignedInt:
@@ -71,7 +67,6 @@ components:
         '@context':
           type: string
           description: niem-xsunsignedInt JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsunsignedIntContext.jsonld
           enum:
             - ../JSON-LD_Contexts/niem-xsunsignedIntContext.jsonld
     niem-xsdate:
@@ -84,7 +79,6 @@ components:
         '@context':
           type: string
           description: niem-xsdate JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsdateContext.jsonld
           enum:
             - ../JSON-LD_Contexts/niem-xsdateContext.jsonld
     niem-xsdateTime:
@@ -100,7 +94,6 @@ components:
         '@context':
           type: string
           description: niem-xsdateTime JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsdateTimeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/niem-xsdateTimeContext.jsonld
     niem-xsgDay:
@@ -118,7 +111,6 @@ components:
         '@context':
           type: string
           description: niem-xsgDay JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsgDayContext.jsonld
           enum:
             - ../JSON-LD_Contexts/niem-xsgDayContext.jsonld
     niem-xsgYear:
@@ -131,7 +123,6 @@ components:
         '@context':
           type: string
           description: niem-xsgYear JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsgYearContext.jsonld
           enum:
             - ../JSON-LD_Contexts/niem-xsgYearContext.jsonld
     niem-xsgMonth:
@@ -144,7 +135,6 @@ components:
         '@context':
           type: string
           description: niem-xsgMonth JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsgMonthContext.jsonld
           enum:
             - ../JSON-LD_Contexts/niem-xsgMonthContext.jsonld
     niem-xsgYearMonth:
@@ -157,7 +147,6 @@ components:
         '@context':
           type: string
           description: niem-xsgYearMonth JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsgYearMonthContext.jsonld
           enum:
             - ../JSON-LD_Contexts/niem-xsgYearMonthContext.jsonld
     niem-xsduration:
@@ -174,7 +163,6 @@ components:
         '@context':
           type: string
           description: niem-xsduration JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsdurationContext.jsonld
           enum:
             - ../JSON-LD_Contexts/niem-xsdurationContext.jsonld
     niem-xsanyURI:
@@ -190,7 +178,6 @@ components:
         '@context':
           type: string
           description: niem-xsanyURI JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsanyURIContext.jsonld
           enum:
             - ../JSON-LD_Contexts/niem-xsanyURIContext.jsonld
     niem-xsnonNegativeInteger:
@@ -203,7 +190,6 @@ components:
         '@context':
           type: string
           description: niem-xsnonNegativeInteger JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsnonNegativeIntegerContext.jsonld
           enum:
             - ../JSON-LD_Contexts/niem-xsnonNegativeIntegerContext.jsonld
     niem-xsboolean:
@@ -216,7 +202,6 @@ components:
         '@context':
           type: string
           description: niem-xsboolean JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsbooleanContext.jsonld
           enum:
             - ../JSON-LD_Contexts/niem-xsbooleanContext.jsonld
     niem-xsbase64Binary:
@@ -229,7 +214,6 @@ components:
         '@context':
           type: string
           description: niem-xsbase64Binary JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsbase64BinaryContext.jsonld
           enum:
             - ../JSON-LD_Contexts/niem-xsbase64BinaryContext.jsonld
     niem-xshexBinary:
@@ -242,7 +226,6 @@ components:
         '@context':
           type: string
           description: niem-xshexBinary JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xshexBinaryContext.jsonld
           enum:
             - ../JSON-LD_Contexts/niem-xshexBinaryContext.jsonld
     niem-xstime:
@@ -255,7 +238,6 @@ components:
         '@context':
           type: string
           description: niem-xstime JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xstimeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/niem-xstimeContext.jsonld
     niem-xsfloat:
@@ -275,7 +257,6 @@ components:
         '@context':
           type: string
           description: niem-xsfloat JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsfloatContext.jsonld
           enum:
             - ../JSON-LD_Contexts/niem-xsfloatContext.jsonld
     niem-xspositiveInteger:
@@ -290,7 +271,6 @@ components:
         '@context':
           type: string
           description: niem-xspositiveInteger JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xspositiveIntegerContext.jsonld
           enum:
             - ../JSON-LD_Contexts/niem-xspositiveIntegerContext.jsonld
     niem-xsunsignedShort:
@@ -305,7 +285,6 @@ components:
         '@context':
           type: string
           description: niem-xsunsignedShort JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xsunsignedShortContext.jsonld
           enum:
             - ../JSON-LD_Contexts/niem-xsunsignedShortContext.jsonld
     niem-xstoken:
@@ -318,6 +297,5 @@ components:
         '@context':
           type: string
           description: niem-xstoken JSON-LD context
-          default: ../JSON-LD_Contexts/niem-xstokenContext.jsonld
           enum:
             - ../JSON-LD_Contexts/niem-xstokenContext.jsonld

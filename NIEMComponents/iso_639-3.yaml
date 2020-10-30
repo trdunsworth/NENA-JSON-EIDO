@@ -10,7 +10,6 @@ components:
         '@context':
           type: string
           description: iso_639-3LanguageCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/iso_639-3LanguageCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/iso_639-3LanguageCodeTypeContext.jsonld
     iso_639-3LanguageCodeSimpleType:

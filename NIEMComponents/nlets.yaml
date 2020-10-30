@@ -11,7 +11,6 @@ components:
         '@context':
           type: string
           description: nletsOrganizationCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/nletsOrganizationCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/nletsOrganizationCategoryCodeTypeContext.jsonld
@@ -41,7 +40,6 @@ components:
         '@context':
           type: string
           description: nletsAgencyServiceHoursCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/nletsAgencyServiceHoursCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/nletsAgencyServiceHoursCodeTypeContext.jsonld
     nletsAgencyServiceHoursCodeSimpleType:
@@ -63,7 +61,6 @@ components:
         '@context':
           type: string
           description: nletsAgencyAuthorizationCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/nletsAgencyAuthorizationCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/nletsAgencyAuthorizationCodeTypeContext.jsonld
     nletsAgencyAuthorizationCodeSimpleType:

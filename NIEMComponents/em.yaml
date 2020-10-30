@@ -29,7 +29,6 @@ components:
         '@context':
           type: string
           description: emLocationAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/emLocationAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/emLocationAugmentationTypeContext.jsonld
     emServiceCallAugmentationType:
@@ -119,7 +118,6 @@ components:
         '@context':
           type: string
           description: emServiceCallAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/emServiceCallAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/emServiceCallAugmentationTypeContext.jsonld
     emServiceCallResponseLocationType:
@@ -178,8 +176,6 @@ components:
             '@context':
               type: string
               description: emServiceCallResponseLocationType JSON-LD context
-              default: >-
-                ../JSON-LD_Contexts/emServiceCallResponseLocationTypeContext.jsonld
               enum:
                 - >-
                   ../JSON-LD_Contexts/emServiceCallResponseLocationTypeContext.jsonld
@@ -246,7 +242,6 @@ components:
         '@context':
           type: string
           description: emDataLinkType JSON-LD context
-          default: ../JSON-LD_Contexts/emDataLinkTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/emDataLinkTypeContext.jsonld
     emStagingType:
@@ -285,7 +280,6 @@ components:
         '@context':
           type: string
           description: emStagingType JSON-LD context
-          default: ../JSON-LD_Contexts/emStagingTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/emStagingTypeContext.jsonld
     emNotificationType:
@@ -460,7 +454,6 @@ components:
             '@context':
               type: string
               description: emNotificationType JSON-LD context
-              default: ../JSON-LD_Contexts/emNotificationTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/emNotificationTypeContext.jsonld
     emNotifierType:
@@ -506,7 +499,6 @@ components:
         '@context':
           type: string
           description: emNotifierType JSON-LD context
-          default: ../JSON-LD_Contexts/emNotifierTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/emNotifierTypeContext.jsonld
     emAlarmNotificationType:
@@ -619,7 +611,6 @@ components:
         '@context':
           type: string
           description: emAlarmNotificationType JSON-LD context
-          default: ../JSON-LD_Contexts/emAlarmNotificationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/emAlarmNotificationTypeContext.jsonld
     emAlarmAudibleDescriptionCodeType:
@@ -632,7 +623,6 @@ components:
         '@context':
           type: string
           description: emAlarmAudibleDescriptionCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/emAlarmAudibleDescriptionCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/emAlarmAudibleDescriptionCodeTypeContext.jsonld
@@ -689,7 +679,6 @@ components:
         '@context':
           type: string
           description: emAlarmConfirmationType JSON-LD context
-          default: ../JSON-LD_Contexts/emAlarmConfirmationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/emAlarmConfirmationTypeContext.jsonld
     emAlarmPermitType:
@@ -710,7 +699,6 @@ components:
         '@context':
           type: string
           description: emAlarmPermitType JSON-LD context
-          default: ../JSON-LD_Contexts/emAlarmPermitTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/emAlarmPermitTypeContext.jsonld
     emAlarmEventType:
@@ -830,7 +818,6 @@ components:
             '@context':
               type: string
               description: emAlarmEventType JSON-LD context
-              default: ../JSON-LD_Contexts/emAlarmEventTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/emAlarmEventTypeContext.jsonld
     emAlertNotificationType:
@@ -942,7 +929,6 @@ components:
         '@context':
           type: string
           description: emAlertNotificationType JSON-LD context
-          default: ../JSON-LD_Contexts/emAlertNotificationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/emAlertNotificationTypeContext.jsonld
     emAlertCategoryCodeType:
@@ -955,7 +941,6 @@ components:
         '@context':
           type: string
           description: emAlertCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/emAlertCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/emAlertCategoryCodeTypeContext.jsonld
     emAlertCategoryCodeSimpleType:
@@ -1068,7 +1053,6 @@ components:
         '@context':
           type: string
           description: emAlertEventDetailsType JSON-LD context
-          default: ../JSON-LD_Contexts/emAlertEventDetailsTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/emAlertEventDetailsTypeContext.jsonld
     emAlertEventDetailsUrgencyCodeType:
@@ -1081,7 +1065,6 @@ components:
         '@context':
           type: string
           description: emAlertEventDetailsUrgencyCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/emAlertEventDetailsUrgencyCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/emAlertEventDetailsUrgencyCodeTypeContext.jsonld
@@ -1105,8 +1088,6 @@ components:
         '@context':
           type: string
           description: emAlertEventDetailsSeverityCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/emAlertEventDetailsSeverityCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/emAlertEventDetailsSeverityCodeTypeContext.jsonld
@@ -1130,8 +1111,6 @@ components:
         '@context':
           type: string
           description: emAlertEventDetailsCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/emAlertEventDetailsCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/emAlertEventDetailsCategoryCodeTypeContext.jsonld
@@ -1162,8 +1141,6 @@ components:
         '@context':
           type: string
           description: emAlertEventDetailsCertaintyCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/emAlertEventDetailsCertaintyCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/emAlertEventDetailsCertaintyCodeTypeContext.jsonld
@@ -1189,8 +1166,6 @@ components:
         '@context':
           type: string
           description: emAlertEventDetailsResponseRecommendationCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/emAlertEventDetailsResponseRecommendationCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/emAlertEventDetailsResponseRecommendationCodeTypeContext.jsonld
@@ -1233,7 +1208,6 @@ components:
             '@context':
               type: string
               description: emAlertAffectedLocationType JSON-LD context
-              default: ../JSON-LD_Contexts/emAlertAffectedLocationTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/emAlertAffectedLocationTypeContext.jsonld
     emAlertSupplementaryDigitalResourceType:
@@ -1252,8 +1226,6 @@ components:
         '@context':
           type: string
           description: emAlertSupplementaryDigitalResourceType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/emAlertSupplementaryDigitalResourceTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/emAlertSupplementaryDigitalResourceTypeContext.jsonld
@@ -1272,7 +1244,6 @@ components:
         '@context':
           type: string
           description: emGeneralNotificationType JSON-LD context
-          default: ../JSON-LD_Contexts/emGeneralNotificationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/emGeneralNotificationTypeContext.jsonld
     emIncidentNotificationType:
@@ -1297,7 +1268,6 @@ components:
         '@context':
           type: string
           description: emIncidentNotificationType JSON-LD context
-          default: ../JSON-LD_Contexts/emIncidentNotificationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/emIncidentNotificationTypeContext.jsonld
     emEmergencyIncidentType:
@@ -1416,7 +1386,6 @@ components:
             '@context':
               type: string
               description: emEmergencyIncidentType JSON-LD context
-              default: ../JSON-LD_Contexts/emEmergencyIncidentTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/emEmergencyIncidentTypeContext.jsonld
     emIncidentActionCodeType:
@@ -1429,7 +1398,6 @@ components:
         '@context':
           type: string
           description: emIncidentActionCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/emIncidentActionCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/emIncidentActionCodeTypeContext.jsonld
     emIncidentActionCodeSimpleType:
@@ -1463,7 +1431,6 @@ components:
         '@context':
           type: string
           description: emIncidentAuthorType JSON-LD context
-          default: ../JSON-LD_Contexts/emIncidentAuthorTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/emIncidentAuthorTypeContext.jsonld
     emServiceCallAssignedUnitType:
@@ -1491,7 +1458,6 @@ components:
             '@context':
               type: string
               description: emServiceCallAssignedUnitType JSON-LD context
-              default: ../JSON-LD_Contexts/emServiceCallAssignedUnitTypeContext.jsonld
               enum:
                 - >-
                   ../JSON-LD_Contexts/emServiceCallAssignedUnitTypeContext.jsonld
@@ -1519,8 +1485,6 @@ components:
         '@context':
           type: string
           description: emOperationalStatusNotificationType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/emOperationalStatusNotificationTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/emOperationalStatusNotificationTypeContext.jsonld
@@ -1548,7 +1512,6 @@ components:
         '@context':
           type: string
           description: emUnitLogoffNotificationType JSON-LD context
-          default: ../JSON-LD_Contexts/emUnitLogoffNotificationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/emUnitLogoffNotificationTypeContext.jsonld
     emUnitLogonNotificationType:
@@ -1575,7 +1538,6 @@ components:
         '@context':
           type: string
           description: emUnitLogonNotificationType JSON-LD context
-          default: ../JSON-LD_Contexts/emUnitLogonNotificationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/emUnitLogonNotificationTypeContext.jsonld
     emNotificationFunctionCategoryCodeType:
@@ -1589,8 +1551,6 @@ components:
         '@context':
           type: string
           description: emNotificationFunctionCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/emNotificationFunctionCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/emNotificationFunctionCategoryCodeTypeContext.jsonld
@@ -1633,8 +1593,6 @@ components:
         '@context':
           type: string
           description: emNotificationDistributionScopeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/emNotificationDistributionScopeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/emNotificationDistributionScopeTypeContext.jsonld
@@ -1651,8 +1609,6 @@ components:
         '@context':
           type: string
           description: emNotificationDistributionScopeCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/emNotificationDistributionScopeCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/emNotificationDistributionScopeCategoryCodeTypeContext.jsonld
@@ -1675,7 +1631,6 @@ components:
         '@context':
           type: string
           description: emNotificationCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/emNotificationCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/emNotificationCategoryCodeTypeContext.jsonld
     emNotificationCategoryCodeSimpleType:
@@ -1705,8 +1660,6 @@ components:
             '@context':
               type: string
               description: emNotificationTargetLocationType JSON-LD context
-              default: >-
-                ../JSON-LD_Contexts/emNotificationTargetLocationTypeContext.jsonld
               enum:
                 - >-
                   ../JSON-LD_Contexts/emNotificationTargetLocationTypeContext.jsonld
@@ -1723,8 +1676,6 @@ components:
         '@context':
           type: string
           description: emNotificationMessageStatusCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/emNotificationMessageStatusCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/emNotificationMessageStatusCodeTypeContext.jsonld
@@ -1773,6 +1724,5 @@ components:
         '@context':
           type: string
           description: emInsuranceAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/emInsuranceAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/emInsuranceAugmentationTypeContext.jsonld

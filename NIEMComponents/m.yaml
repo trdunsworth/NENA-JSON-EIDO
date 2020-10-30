@@ -64,7 +64,6 @@ components:
         '@context':
           type: string
           description: mLocationAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/mLocationAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/mLocationAugmentationTypeContext.jsonld
     mCOTPRegionCodeType:
@@ -77,7 +76,6 @@ components:
         '@context':
           type: string
           description: mCOTPRegionCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/mCOTPRegionCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/mCOTPRegionCodeTypeContext.jsonld
     mCOTPRegionCodeSimpleType:
@@ -292,7 +290,6 @@ components:
             '@context':
               type: string
               description: mPortType JSON-LD context
-              default: ../JSON-LD_Contexts/mPortTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/mPortTypeContext.jsonld
     mCaptainOfThePortZoneType:
@@ -333,7 +330,6 @@ components:
         '@context':
           type: string
           description: mCaptainOfThePortZoneType JSON-LD context
-          default: ../JSON-LD_Contexts/mCaptainOfThePortZoneTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/mCaptainOfThePortZoneTypeContext.jsonld
     mVesselAugmentationType:
@@ -947,7 +943,6 @@ components:
         '@context':
           type: string
           description: mVesselAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/mVesselAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/mVesselAugmentationTypeContext.jsonld
     mCertificateType:
@@ -997,7 +992,6 @@ components:
             '@context':
               type: string
               description: mCertificateType JSON-LD context
-              default: ../JSON-LD_Contexts/mCertificateTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/mCertificateTypeContext.jsonld
     mInternationalShipSecurityCertificateType:
@@ -1049,8 +1043,6 @@ components:
             '@context':
               type: string
               description: mInternationalShipSecurityCertificateType JSON-LD context
-              default: >-
-                ../JSON-LD_Contexts/mInternationalShipSecurityCertificateTypeContext.jsonld
               enum:
                 - >-
                   ../JSON-LD_Contexts/mInternationalShipSecurityCertificateTypeContext.jsonld
@@ -1088,7 +1080,6 @@ components:
         '@context':
           type: string
           description: mVesselMovementDetailsType JSON-LD context
-          default: ../JSON-LD_Contexts/mVesselMovementDetailsTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/mVesselMovementDetailsTypeContext.jsonld
     mVesselOperationalConditionOfEquipmentCodeType:
@@ -1102,8 +1093,6 @@ components:
         '@context':
           type: string
           description: mVesselOperationalConditionOfEquipmentCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/mVesselOperationalConditionOfEquipmentCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/mVesselOperationalConditionOfEquipmentCodeTypeContext.jsonld
@@ -1174,7 +1163,6 @@ components:
         '@context':
           type: string
           description: mLocationOnVesselType JSON-LD context
-          default: ../JSON-LD_Contexts/mLocationOnVesselTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/mLocationOnVesselTypeContext.jsonld
     mVoyageType:
@@ -1235,7 +1223,6 @@ components:
         '@context':
           type: string
           description: mVoyageType JSON-LD context
-          default: ../JSON-LD_Contexts/mVoyageTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/mVoyageTypeContext.jsonld
     mPersonAugmentationType:
@@ -1274,7 +1261,6 @@ components:
         '@context':
           type: string
           description: mPersonAugmentationType JSON-LD context
-          default: ../JSON-LD_Contexts/mPersonAugmentationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/mPersonAugmentationTypeContext.jsonld
     mMerchantMarinerDocumentType:
@@ -1456,7 +1442,6 @@ components:
         '@context':
           type: string
           description: mMerchantMarinerDocumentType JSON-LD context
-          default: ../JSON-LD_Contexts/mMerchantMarinerDocumentTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/mMerchantMarinerDocumentTypeContext.jsonld
     mSeamanLicenseType:
@@ -1638,6 +1623,5 @@ components:
         '@context':
           type: string
           description: mSeamanLicenseType JSON-LD context
-          default: ../JSON-LD_Contexts/mSeamanLicenseTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/mSeamanLicenseTypeContext.jsonld

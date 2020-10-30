@@ -811,7 +811,6 @@ components:
         '@context':
           type: string
           description: ncPersonType JSON-LD context
-          default: ../JSON-LD_Contexts/ncPersonTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncPersonTypeContext.jsonld
     ncTextType:
@@ -839,7 +838,6 @@ components:
             '@context':
               type: string
               description: ncTextType JSON-LD context
-              default: ../JSON-LD_Contexts/ncTextTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncTextTypeContext.jsonld
     ncTimeMeasureType:
@@ -866,7 +864,6 @@ components:
             '@context':
               type: string
               description: ncTimeMeasureType JSON-LD context
-              default: ../JSON-LD_Contexts/ncTimeMeasureTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncTimeMeasureTypeContext.jsonld
     ncMeasureType:
@@ -1030,7 +1027,6 @@ components:
         '@context':
           type: string
           description: ncMeasureType JSON-LD context
-          default: ../JSON-LD_Contexts/ncMeasureTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncMeasureTypeContext.jsonld
     ncDecimalRangeType:
@@ -1055,7 +1051,6 @@ components:
         '@context':
           type: string
           description: ncDecimalRangeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncDecimalRangeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncDecimalRangeTypeContext.jsonld
     ncDoubleRangeType:
@@ -1080,7 +1075,6 @@ components:
         '@context':
           type: string
           description: ncDoubleRangeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncDoubleRangeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncDoubleRangeTypeContext.jsonld
     ncIntegerRangeType:
@@ -1105,7 +1099,6 @@ components:
         '@context':
           type: string
           description: ncIntegerRangeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncIntegerRangeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncIntegerRangeTypeContext.jsonld
     ncUnsignedIntegerRangeType:
@@ -1130,7 +1123,6 @@ components:
         '@context':
           type: string
           description: ncUnsignedIntegerRangeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncUnsignedIntegerRangeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncUnsignedIntegerRangeTypeContext.jsonld
     ncDecimalListType:
@@ -1221,7 +1213,6 @@ components:
         '@context':
           type: string
           description: ncDateType JSON-LD context
-          default: ../JSON-LD_Contexts/ncDateTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncDateTypeContext.jsonld
     ncDateRangeType:
@@ -1242,7 +1233,6 @@ components:
         '@context':
           type: string
           description: ncDateRangeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncDateRangeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncDateRangeTypeContext.jsonld
     ncFiscalYearDateType:
@@ -1262,7 +1252,6 @@ components:
             '@context':
               type: string
               description: ncFiscalYearDateType JSON-LD context
-              default: ../JSON-LD_Contexts/ncFiscalYearDateTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncFiscalYearDateTypeContext.jsonld
     ncQuarterIDType:
@@ -1282,7 +1271,6 @@ components:
         '@context':
           type: string
           description: ncQuarterIDType JSON-LD context
-          default: ../JSON-LD_Contexts/ncQuarterIDTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncQuarterIDTypeContext.jsonld
     ncQuarterIDSimpleType:
@@ -1303,7 +1291,6 @@ components:
         '@context':
           type: string
           description: ncZuluDateTimeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncZuluDateTimeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncZuluDateTimeTypeContext.jsonld
     ncZuluDateTimeSimpleType:
@@ -1356,7 +1343,6 @@ components:
         '@context':
           type: string
           description: ncEntityType JSON-LD context
-          default: ../JSON-LD_Contexts/ncEntityTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncEntityTypeContext.jsonld
     ncItemType:
@@ -1942,7 +1928,6 @@ components:
         '@context':
           type: string
           description: ncItemType JSON-LD context
-          default: ../JSON-LD_Contexts/ncItemTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncItemTypeContext.jsonld
     ncIdentificationType:
@@ -2065,7 +2050,6 @@ components:
         '@context':
           type: string
           description: ncIdentificationType JSON-LD context
-          default: ../JSON-LD_Contexts/ncIdentificationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncIdentificationTypeContext.jsonld
     ncJurisdictionType:
@@ -2149,7 +2133,6 @@ components:
         '@context':
           type: string
           description: ncJurisdictionType JSON-LD context
-          default: ../JSON-LD_Contexts/ncJurisdictionTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncJurisdictionTypeContext.jsonld
     ncProperNameTextType:
@@ -2225,7 +2208,6 @@ components:
         '@context':
           type: string
           description: ncCountryType JSON-LD context
-          default: ../JSON-LD_Contexts/ncCountryTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncCountryTypeContext.jsonld
     ncCodeType:
@@ -2254,7 +2236,6 @@ components:
         '@context':
           type: string
           description: ncCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncCodeTypeContext.jsonld
     ncStateType:
@@ -2335,7 +2316,6 @@ components:
         '@context':
           type: string
           description: ncStateType JSON-LD context
-          default: ../JSON-LD_Contexts/ncStateTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncStateTypeContext.jsonld
     ncStatusType:
@@ -2427,7 +2407,6 @@ components:
         '@context':
           type: string
           description: ncStatusType JSON-LD context
-          default: ../JSON-LD_Contexts/ncStatusTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncStatusTypeContext.jsonld
     ncAmountType:
@@ -2453,7 +2432,6 @@ components:
         '@context':
           type: string
           description: ncAmountType JSON-LD context
-          default: ../JSON-LD_Contexts/ncAmountTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncAmountTypeContext.jsonld
     ncItemValueType:
@@ -2504,7 +2482,6 @@ components:
         '@context':
           type: string
           description: ncItemValueType JSON-LD context
-          default: ../JSON-LD_Contexts/ncItemValueTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncItemValueTypeContext.jsonld
     ncFinancialAccountNumberCategoryCodeType:
@@ -2518,8 +2495,6 @@ components:
         '@context':
           type: string
           description: ncFinancialAccountNumberCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/ncFinancialAccountNumberCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/ncFinancialAccountNumberCategoryCodeTypeContext.jsonld
@@ -2577,7 +2552,6 @@ components:
             '@context':
               type: string
               description: ncItemDispositionType JSON-LD context
-              default: ../JSON-LD_Contexts/ncItemDispositionTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncItemDispositionTypeContext.jsonld
     ncDispositionType:
@@ -2656,7 +2630,6 @@ components:
         '@context':
           type: string
           description: ncDispositionType JSON-LD context
-          default: ../JSON-LD_Contexts/ncDispositionTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncDispositionTypeContext.jsonld
     ncDocumentType:
@@ -3175,7 +3148,6 @@ components:
         '@context':
           type: string
           description: ncDocumentType JSON-LD context
-          default: ../JSON-LD_Contexts/ncDocumentTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncDocumentTypeContext.jsonld
     ncSoftwareNameType:
@@ -3193,7 +3165,6 @@ components:
             '@context':
               type: string
               description: ncSoftwareNameType JSON-LD context
-              default: ../JSON-LD_Contexts/ncSoftwareNameTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncSoftwareNameTypeContext.jsonld
     ncBinaryType:
@@ -3323,7 +3294,6 @@ components:
         '@context':
           type: string
           description: ncBinaryType JSON-LD context
-          default: ../JSON-LD_Contexts/ncBinaryTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncBinaryTypeContext.jsonld
     ncBinaryHashType:
@@ -3357,7 +3327,6 @@ components:
         '@context':
           type: string
           description: ncBinaryHashType JSON-LD context
-          default: ../JSON-LD_Contexts/ncBinaryHashTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncBinaryHashTypeContext.jsonld
     ncBinaryHashFunctionCodeType:
@@ -3372,7 +3341,6 @@ components:
         '@context':
           type: string
           description: ncBinaryHashFunctionCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncBinaryHashFunctionCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncBinaryHashFunctionCodeTypeContext.jsonld
     ncBinaryHashFunctionCodeSimpleType:
@@ -3399,7 +3367,6 @@ components:
         '@context':
           type: string
           description: ncNonNegativeDecimalType JSON-LD context
-          default: ../JSON-LD_Contexts/ncNonNegativeDecimalTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncNonNegativeDecimalTypeContext.jsonld
     ncNonNegativeDecimalSimpleType:
@@ -3772,13 +3739,9 @@ components:
             cbrn:SiteLocationAugmentation
           items:
             $ref: cbrn.yaml#/components/schemas/cbrnSiteLocationAugmentationType
-        nenaAugmentation:
-          items:
-            $ref: nena.yaml#/components/schemas/nenaLocationAugmentationType
         '@context':
           type: string
           description: ncLocationType JSON-LD context
-          default: ../JSON-LD_Contexts/ncLocationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncLocationTypeContext.jsonld
     ncAddressType:
@@ -3938,7 +3901,6 @@ components:
         '@context':
           type: string
           description: ncAddressType JSON-LD context
-          default: ../JSON-LD_Contexts/ncAddressTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncAddressTypeContext.jsonld
     ncStreetType:
@@ -3995,7 +3957,6 @@ components:
         '@context':
           type: string
           description: ncStreetType JSON-LD context
-          default: ../JSON-LD_Contexts/ncStreetTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncStreetTypeContext.jsonld
     ncAddressCategoryCodeType:
@@ -4008,7 +3969,6 @@ components:
         '@context':
           type: string
           description: ncAddressCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncAddressCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncAddressCategoryCodeTypeContext.jsonld
     ncAddressCategoryCodeSimpleType:
@@ -4049,7 +4009,6 @@ components:
         '@context':
           type: string
           description: ncCrossStreetType JSON-LD context
-          default: ../JSON-LD_Contexts/ncCrossStreetTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncCrossStreetTypeContext.jsonld
     ncRelativeLocationType:
@@ -4111,7 +4070,6 @@ components:
         '@context':
           type: string
           description: ncRelativeLocationType JSON-LD context
-          default: ../JSON-LD_Contexts/ncRelativeLocationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncRelativeLocationTypeContext.jsonld
     ncDirectionCodeType:
@@ -4124,7 +4082,6 @@ components:
         '@context':
           type: string
           description: ncDirectionCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncDirectionCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncDirectionCodeTypeContext.jsonld
     ncDirectionCodeSimpleType:
@@ -4172,7 +4129,6 @@ components:
             '@context':
               type: string
               description: ncLengthMeasureType JSON-LD context
-              default: ../JSON-LD_Contexts/ncLengthMeasureTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncLengthMeasureTypeContext.jsonld
     ncRelativeLocationHeadingType:
@@ -4187,7 +4143,6 @@ components:
         '@context':
           type: string
           description: ncRelativeLocationHeadingType JSON-LD context
-          default: ../JSON-LD_Contexts/ncRelativeLocationHeadingTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncRelativeLocationHeadingTypeContext.jsonld
     ncRelativeLocationHeadingSimpleType:
@@ -4222,7 +4177,6 @@ components:
         '@context':
           type: string
           description: ncAddressGridType JSON-LD context
-          default: ../JSON-LD_Contexts/ncAddressGridTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncAddressGridTypeContext.jsonld
     ncHighwayType:
@@ -4257,7 +4211,6 @@ components:
         '@context':
           type: string
           description: ncHighwayType JSON-LD context
-          default: ../JSON-LD_Contexts/ncHighwayTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncHighwayTypeContext.jsonld
     ncAreaType:
@@ -4324,7 +4277,6 @@ components:
         '@context':
           type: string
           description: ncAreaType JSON-LD context
-          default: ../JSON-LD_Contexts/ncAreaTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncAreaTypeContext.jsonld
     ncCircularRegionType:
@@ -4352,7 +4304,6 @@ components:
         '@context':
           type: string
           description: ncCircularRegionType JSON-LD context
-          default: ../JSON-LD_Contexts/ncCircularRegionTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncCircularRegionTypeContext.jsonld
     ncLocation2DGeospatialCoordinateType:
@@ -4383,8 +4334,6 @@ components:
         '@context':
           type: string
           description: ncLocation2DGeospatialCoordinateType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/ncLocation2DGeospatialCoordinateTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/ncLocation2DGeospatialCoordinateTypeContext.jsonld
@@ -4422,7 +4371,6 @@ components:
         '@context':
           type: string
           description: ncLatitudeCoordinateType JSON-LD context
-          default: ../JSON-LD_Contexts/ncLatitudeCoordinateTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncLatitudeCoordinateTypeContext.jsonld
     ncLatitudeDegreeType:
@@ -4435,7 +4383,6 @@ components:
         '@context':
           type: string
           description: ncLatitudeDegreeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncLatitudeDegreeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncLatitudeDegreeTypeContext.jsonld
     ncLatitudeDegreeSimpleType:
@@ -4456,7 +4403,6 @@ components:
         '@context':
           type: string
           description: ncAngularMinuteType JSON-LD context
-          default: ../JSON-LD_Contexts/ncAngularMinuteTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncAngularMinuteTypeContext.jsonld
     ncAngularMinuteSimpleType:
@@ -4479,7 +4425,6 @@ components:
         '@context':
           type: string
           description: ncAngularSecondType JSON-LD context
-          default: ../JSON-LD_Contexts/ncAngularSecondTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncAngularSecondTypeContext.jsonld
     ncAngularSecondSimpleType:
@@ -4524,7 +4469,6 @@ components:
         '@context':
           type: string
           description: ncLongitudeCoordinateType JSON-LD context
-          default: ../JSON-LD_Contexts/ncLongitudeCoordinateTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncLongitudeCoordinateTypeContext.jsonld
     ncLongitudeDegreeType:
@@ -4537,7 +4481,6 @@ components:
         '@context':
           type: string
           description: ncLongitudeDegreeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncLongitudeDegreeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncLongitudeDegreeTypeContext.jsonld
     ncLongitudeDegreeSimpleType:
@@ -4576,7 +4519,6 @@ components:
         '@context':
           type: string
           description: ncPolygonRegionType JSON-LD context
-          default: ../JSON-LD_Contexts/ncPolygonRegionTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncPolygonRegionTypeContext.jsonld
     ncAngularMeasureType:
@@ -4617,7 +4559,6 @@ components:
         '@context':
           type: string
           description: ncAngularMeasureType JSON-LD context
-          default: ../JSON-LD_Contexts/ncAngularMeasureTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncAngularMeasureTypeContext.jsonld
     ncAngleMeasureType:
@@ -4637,7 +4578,6 @@ components:
             '@context':
               type: string
               description: ncAngleMeasureType JSON-LD context
-              default: ../JSON-LD_Contexts/ncAngleMeasureTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncAngleMeasureTypeContext.jsonld
     ncContactInformationType:
@@ -4752,7 +4692,6 @@ components:
         '@context':
           type: string
           description: ncContactInformationType JSON-LD context
-          default: ../JSON-LD_Contexts/ncContactInformationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncContactInformationTypeContext.jsonld
     ncInstantMessengerType:
@@ -4780,7 +4719,6 @@ components:
         '@context':
           type: string
           description: ncInstantMessengerType JSON-LD context
-          default: ../JSON-LD_Contexts/ncInstantMessengerTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncInstantMessengerTypeContext.jsonld
     ncContactRadioType:
@@ -4814,7 +4752,6 @@ components:
         '@context':
           type: string
           description: ncContactRadioType JSON-LD context
-          default: ../JSON-LD_Contexts/ncContactRadioTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncContactRadioTypeContext.jsonld
     ncTelephoneNumberType:
@@ -4895,7 +4832,6 @@ components:
         '@context':
           type: string
           description: ncTelephoneNumberType JSON-LD context
-          default: ../JSON-LD_Contexts/ncTelephoneNumberTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncTelephoneNumberTypeContext.jsonld
     ncDirectDialTelephoneNumberType:
@@ -4925,7 +4861,6 @@ components:
         '@context':
           type: string
           description: ncDirectDialTelephoneNumberType JSON-LD context
-          default: ../JSON-LD_Contexts/ncDirectDialTelephoneNumberTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncDirectDialTelephoneNumberTypeContext.jsonld
     ncFullTelephoneNumberType:
@@ -4951,7 +4886,6 @@ components:
         '@context':
           type: string
           description: ncFullTelephoneNumberType JSON-LD context
-          default: ../JSON-LD_Contexts/ncFullTelephoneNumberTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncFullTelephoneNumberTypeContext.jsonld
     ncInternationalTelephoneNumberType:
@@ -4982,7 +4916,6 @@ components:
         '@context':
           type: string
           description: ncInternationalTelephoneNumberType JSON-LD context
-          default: ../JSON-LD_Contexts/ncInternationalTelephoneNumberTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/ncInternationalTelephoneNumberTypeContext.jsonld
@@ -5024,7 +4957,6 @@ components:
         '@context':
           type: string
           description: ncNANPTelephoneNumberType JSON-LD context
-          default: ../JSON-LD_Contexts/ncNANPTelephoneNumberTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncNANPTelephoneNumberTypeContext.jsonld
     ncContactInformationAvailabilityCodeType:
@@ -5040,8 +4972,6 @@ components:
         '@context':
           type: string
           description: ncContactInformationAvailabilityCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/ncContactInformationAvailabilityCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/ncContactInformationAvailabilityCodeTypeContext.jsonld
@@ -5107,7 +5037,6 @@ components:
         '@context':
           type: string
           description: ncCommentType JSON-LD context
-          default: ../JSON-LD_Contexts/ncCommentTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncCommentTypeContext.jsonld
     ncLocation3DGeospatialCoordinateType:
@@ -5143,8 +5072,6 @@ components:
             '@context':
               type: string
               description: ncLocation3DGeospatialCoordinateType JSON-LD context
-              default: >-
-                ../JSON-LD_Contexts/ncLocation3DGeospatialCoordinateTypeContext.jsonld
               enum:
                 - >-
                   ../JSON-LD_Contexts/ncLocation3DGeospatialCoordinateTypeContext.jsonld
@@ -5184,7 +5111,6 @@ components:
             '@context':
               type: string
               description: ncLocationHeightMeasureType JSON-LD context
-              default: ../JSON-LD_Contexts/ncLocationHeightMeasureTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncLocationHeightMeasureTypeContext.jsonld
     ncUTMCoordinateType:
@@ -5200,7 +5126,6 @@ components:
         '@context':
           type: string
           description: ncUTMCoordinateType JSON-LD context
-          default: ../JSON-LD_Contexts/ncUTMCoordinateTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncUTMCoordinateTypeContext.jsonld
     ncUTMCoordinateSimpleType:
@@ -5324,7 +5249,6 @@ components:
         '@context':
           type: string
           description: ncLocaleType JSON-LD context
-          default: ../JSON-LD_Contexts/ncLocaleTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncLocaleTypeContext.jsonld
     ncMapLocationType:
@@ -5401,7 +5325,6 @@ components:
         '@context':
           type: string
           description: ncMapLocationType JSON-LD context
-          default: ../JSON-LD_Contexts/ncMapLocationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncMapLocationTypeContext.jsonld
     ncNumericType:
@@ -5424,7 +5347,6 @@ components:
             '@context':
               type: string
               description: ncNumericType JSON-LD context
-              default: ../JSON-LD_Contexts/ncNumericTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncNumericTypeContext.jsonld
     ncFacilityType:
@@ -5599,7 +5521,6 @@ components:
         '@context':
           type: string
           description: ncFacilityType JSON-LD context
-          default: ../JSON-LD_Contexts/ncFacilityTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncFacilityTypeContext.jsonld
     ncSystemIdentificationType:
@@ -5621,7 +5542,6 @@ components:
             '@context':
               type: string
               description: ncSystemIdentificationType JSON-LD context
-              default: ../JSON-LD_Contexts/ncSystemIdentificationTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncSystemIdentificationTypeContext.jsonld
     ncScheduleType:
@@ -5678,7 +5598,6 @@ components:
         '@context':
           type: string
           description: ncScheduleType JSON-LD context
-          default: ../JSON-LD_Contexts/ncScheduleTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncScheduleTypeContext.jsonld
     ncScheduleDayType:
@@ -5759,7 +5678,6 @@ components:
         '@context':
           type: string
           description: ncScheduleDayType JSON-LD context
-          default: ../JSON-LD_Contexts/ncScheduleDayTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncScheduleDayTypeContext.jsonld
     ncDayOfWeekCodeType:
@@ -5772,7 +5690,6 @@ components:
         '@context':
           type: string
           description: ncDayOfWeekCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncDayOfWeekCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncDayOfWeekCodeTypeContext.jsonld
     ncDayOfWeekCodeSimpleType:
@@ -5804,7 +5721,6 @@ components:
         '@context':
           type: string
           description: ncTimeRangeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncTimeRangeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncTimeRangeTypeContext.jsonld
     ncImageType:
@@ -5860,7 +5776,6 @@ components:
             '@context':
               type: string
               description: ncImageType JSON-LD context
-              default: ../JSON-LD_Contexts/ncImageTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncImageTypeContext.jsonld
     ncImagePoseCodeType:
@@ -5873,7 +5788,6 @@ components:
         '@context':
           type: string
           description: ncImagePoseCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncImagePoseCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncImagePoseCodeTypeContext.jsonld
     ncImagePoseCodeSimpleType:
@@ -5898,7 +5812,6 @@ components:
             '@context':
               type: string
               description: ncQuantityType JSON-LD context
-              default: ../JSON-LD_Contexts/ncQuantityTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncQuantityTypeContext.jsonld
     ncDocumentStatusDetailsType:
@@ -5923,7 +5836,6 @@ components:
         '@context':
           type: string
           description: ncDocumentStatusDetailsType JSON-LD context
-          default: ../JSON-LD_Contexts/ncDocumentStatusDetailsTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncDocumentStatusDetailsTypeContext.jsonld
     ncPersonNameType:
@@ -6058,7 +5970,6 @@ components:
         '@context':
           type: string
           description: ncPersonNameType JSON-LD context
-          default: ../JSON-LD_Contexts/ncPersonNameTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncPersonNameTypeContext.jsonld
     ncPersonNameTextType:
@@ -6084,7 +5995,6 @@ components:
             '@context':
               type: string
               description: ncPersonNameTextType JSON-LD context
-              default: ../JSON-LD_Contexts/ncPersonNameTextTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncPersonNameTextTypeContext.jsonld
     ncPersonNameCategoryCodeType:
@@ -6097,7 +6007,6 @@ components:
         '@context':
           type: string
           description: ncPersonNameCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncPersonNameCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncPersonNameCategoryCodeTypeContext.jsonld
     ncPersonNameCategoryCodeSimpleType:
@@ -6367,7 +6276,6 @@ components:
         '@context':
           type: string
           description: ncOrganizationType JSON-LD context
-          default: ../JSON-LD_Contexts/ncOrganizationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncOrganizationTypeContext.jsonld
     ncWeightMeasureType:
@@ -6387,7 +6295,6 @@ components:
             '@context':
               type: string
               description: ncWeightMeasureType JSON-LD context
-              default: ../JSON-LD_Contexts/ncWeightMeasureTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncWeightMeasureTypeContext.jsonld
     ncActivityType:
@@ -6460,7 +6367,6 @@ components:
         '@context':
           type: string
           description: ncActivityType JSON-LD context
-          default: ../JSON-LD_Contexts/ncActivityTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncActivityTypeContext.jsonld
     ncConditionType:
@@ -6522,7 +6428,6 @@ components:
             '@context':
               type: string
               description: ncConditionType JSON-LD context
-              default: ../JSON-LD_Contexts/ncConditionTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncConditionTypeContext.jsonld
     ncDisciplinaryActionType:
@@ -6605,7 +6510,6 @@ components:
             '@context':
               type: string
               description: ncDisciplinaryActionType JSON-LD context
-              default: ../JSON-LD_Contexts/ncDisciplinaryActionTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncDisciplinaryActionTypeContext.jsonld
     ncObligationType:
@@ -6756,7 +6660,6 @@ components:
         '@context':
           type: string
           description: ncObligationType JSON-LD context
-          default: ../JSON-LD_Contexts/ncObligationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncObligationTypeContext.jsonld
     ncObligationExemptionType:
@@ -6781,7 +6684,6 @@ components:
         '@context':
           type: string
           description: ncObligationExemptionType JSON-LD context
-          default: ../JSON-LD_Contexts/ncObligationExemptionTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncObligationExemptionTypeContext.jsonld
     ncObligationRecurrenceType:
@@ -6806,7 +6708,6 @@ components:
         '@context':
           type: string
           description: ncObligationRecurrenceType JSON-LD context
-          default: ../JSON-LD_Contexts/ncObligationRecurrenceTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncObligationRecurrenceTypeContext.jsonld
     ncProgramType:
@@ -6935,7 +6836,6 @@ components:
             '@context':
               type: string
               description: ncProgramType JSON-LD context
-              default: ../JSON-LD_Contexts/ncProgramTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncProgramTypeContext.jsonld
     ncReferralType:
@@ -7006,7 +6906,6 @@ components:
             '@context':
               type: string
               description: ncReferralType JSON-LD context
-              default: ../JSON-LD_Contexts/ncReferralTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncReferralTypeContext.jsonld
     ncReleaseType:
@@ -7077,7 +6976,6 @@ components:
             '@context':
               type: string
               description: ncReleaseType JSON-LD context
-              default: ../JSON-LD_Contexts/ncReleaseTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncReleaseTypeContext.jsonld
     ncTransportationAssociationType:
@@ -7123,8 +7021,6 @@ components:
             '@context':
               type: string
               description: ncTransportationAssociationType JSON-LD context
-              default: >-
-                ../JSON-LD_Contexts/ncTransportationAssociationTypeContext.jsonld
               enum:
                 - >-
                   ../JSON-LD_Contexts/ncTransportationAssociationTypeContext.jsonld
@@ -7152,7 +7048,6 @@ components:
         '@context':
           type: string
           description: ncAssociationType JSON-LD context
-          default: ../JSON-LD_Contexts/ncAssociationTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncAssociationTypeContext.jsonld
     ncConveyanceType:
@@ -7223,7 +7118,6 @@ components:
             '@context':
               type: string
               description: ncConveyanceType JSON-LD context
-              default: ../JSON-LD_Contexts/ncConveyanceTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncConveyanceTypeContext.jsonld
     ncPersonEmploymentAssociationType:
@@ -7365,8 +7259,6 @@ components:
             '@context':
               type: string
               description: ncPersonEmploymentAssociationType JSON-LD context
-              default: >-
-                ../JSON-LD_Contexts/ncPersonEmploymentAssociationTypeContext.jsonld
               enum:
                 - >-
                   ../JSON-LD_Contexts/ncPersonEmploymentAssociationTypeContext.jsonld
@@ -7446,7 +7338,6 @@ components:
             '@context':
               type: string
               description: ncSupervisionType JSON-LD context
-              default: ../JSON-LD_Contexts/ncSupervisionTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncSupervisionTypeContext.jsonld
     ncStatuteCategoryCodeType:
@@ -7459,7 +7350,6 @@ components:
         '@context':
           type: string
           description: ncStatuteCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncStatuteCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncStatuteCategoryCodeTypeContext.jsonld
     ncStatuteCategoryCodeSimpleType:
@@ -7531,7 +7421,6 @@ components:
             '@context':
               type: string
               description: ncIncidentType JSON-LD context
-              default: ../JSON-LD_Contexts/ncIncidentTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncIncidentTypeContext.jsonld
     ncProgressType:
@@ -7575,7 +7464,6 @@ components:
             '@context':
               type: string
               description: ncProgressType JSON-LD context
-              default: ../JSON-LD_Contexts/ncProgressTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncProgressTypeContext.jsonld
     ncPleaCategoryCodeType:
@@ -7588,7 +7476,6 @@ components:
         '@context':
           type: string
           description: ncPleaCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncPleaCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncPleaCategoryCodeTypeContext.jsonld
     ncPleaCategoryCodeSimpleType:
@@ -7706,7 +7593,6 @@ components:
         '@context':
           type: string
           description: ncInjuryType JSON-LD context
-          default: ../JSON-LD_Contexts/ncInjuryTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncInjuryTypeContext.jsonld
     ncWeaponType:
@@ -7745,7 +7631,6 @@ components:
         '@context':
           type: string
           description: ncWeaponType JSON-LD context
-          default: ../JSON-LD_Contexts/ncWeaponTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncWeaponTypeContext.jsonld
     ncDrugType:
@@ -7806,7 +7691,6 @@ components:
             '@context':
               type: string
               description: ncDrugType JSON-LD context
-              default: ../JSON-LD_Contexts/ncDrugTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncDrugTypeContext.jsonld
     ncSubstanceType:
@@ -7895,7 +7779,6 @@ components:
             '@context':
               type: string
               description: ncSubstanceType JSON-LD context
-              default: ../JSON-LD_Contexts/ncSubstanceTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncSubstanceTypeContext.jsonld
     ncSubstanceMeasureType:
@@ -7915,7 +7798,6 @@ components:
             '@context':
               type: string
               description: ncSubstanceMeasureType JSON-LD context
-              default: ../JSON-LD_Contexts/ncSubstanceMeasureTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncSubstanceMeasureTypeContext.jsonld
     ncSpeedMeasureType:
@@ -7942,7 +7824,6 @@ components:
             '@context':
               type: string
               description: ncSpeedMeasureType JSON-LD context
-              default: ../JSON-LD_Contexts/ncSpeedMeasureTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncSpeedMeasureTypeContext.jsonld
     ncOffenseLevelCodeType:
@@ -7955,7 +7836,6 @@ components:
         '@context':
           type: string
           description: ncOffenseLevelCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncOffenseLevelCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncOffenseLevelCodeTypeContext.jsonld
     ncOffenseLevelCodeSimpleType:
@@ -8027,7 +7907,6 @@ components:
             '@context':
               type: string
               description: ncAssessmentType JSON-LD context
-              default: ../JSON-LD_Contexts/ncAssessmentTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncAssessmentTypeContext.jsonld
     ncSupervisionRestrictionCodeType:
@@ -8040,7 +7919,6 @@ components:
         '@context':
           type: string
           description: ncSupervisionRestrictionCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncSupervisionRestrictionCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncSupervisionRestrictionCodeTypeContext.jsonld
     ncSupervisionRestrictionCodeSimpleType:
@@ -8123,7 +8001,6 @@ components:
         '@context':
           type: string
           description: ncSupervisionLevelCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncSupervisionLevelCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncSupervisionLevelCodeTypeContext.jsonld
     ncSupervisionLevelCodeSimpleType:
@@ -8212,7 +8089,6 @@ components:
         '@context':
           type: string
           description: ncTaskType JSON-LD context
-          default: ../JSON-LD_Contexts/ncTaskTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncTaskTypeContext.jsonld
     ncActivityPersonAssociationType:
@@ -8253,8 +8129,6 @@ components:
             '@context':
               type: string
               description: ncActivityPersonAssociationType JSON-LD context
-              default: >-
-                ../JSON-LD_Contexts/ncActivityPersonAssociationTypeContext.jsonld
               enum:
                 - >-
                   ../JSON-LD_Contexts/ncActivityPersonAssociationTypeContext.jsonld
@@ -8453,7 +8327,6 @@ components:
         '@context':
           type: string
           description: ncMetadataType JSON-LD context
-          default: ../JSON-LD_Contexts/ncMetadataTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncMetadataTypeContext.jsonld
     ncPermitType:
@@ -8495,7 +8368,6 @@ components:
         '@context':
           type: string
           description: ncPermitType JSON-LD context
-          default: ../JSON-LD_Contexts/ncPermitTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncPermitTypeContext.jsonld
     ncTreatmentType:
@@ -8543,7 +8415,6 @@ components:
             '@context':
               type: string
               description: ncTreatmentType JSON-LD context
-              default: ../JSON-LD_Contexts/ncTreatmentTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncTreatmentTypeContext.jsonld
     ncFinancialAccountType:
@@ -8599,7 +8470,6 @@ components:
         '@context':
           type: string
           description: ncFinancialAccountType JSON-LD context
-          default: ../JSON-LD_Contexts/ncFinancialAccountTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncFinancialAccountTypeContext.jsonld
     ncFinancialAccountHolderType:
@@ -8619,7 +8489,6 @@ components:
             '@context':
               type: string
               description: ncFinancialAccountHolderType JSON-LD context
-              default: ../JSON-LD_Contexts/ncFinancialAccountHolderTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncFinancialAccountHolderTypeContext.jsonld
     ncFinancialAccountHolderCodeType:
@@ -8632,7 +8501,6 @@ components:
         '@context':
           type: string
           description: ncFinancialAccountHolderCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncFinancialAccountHolderCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncFinancialAccountHolderCodeTypeContext.jsonld
     ncFinancialAccountHolderCodeSimpleType:
@@ -8671,7 +8539,6 @@ components:
         '@context':
           type: string
           description: ncGenericEntityType JSON-LD context
-          default: ../JSON-LD_Contexts/ncGenericEntityTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncGenericEntityTypeContext.jsonld
     ncCapabilityType:
@@ -8745,7 +8612,6 @@ components:
         '@context':
           type: string
           description: ncCapabilityType JSON-LD context
-          default: ../JSON-LD_Contexts/ncCapabilityTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncCapabilityTypeContext.jsonld
     ncMedicalConditionType:
@@ -8812,7 +8678,6 @@ components:
         '@context':
           type: string
           description: ncMedicalConditionType JSON-LD context
-          default: ../JSON-LD_Contexts/ncMedicalConditionTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncMedicalConditionTypeContext.jsonld
     ncMilitarySummaryType:
@@ -8921,7 +8786,6 @@ components:
         '@context':
           type: string
           description: ncMilitarySummaryType JSON-LD context
-          default: ../JSON-LD_Contexts/ncMilitarySummaryTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncMilitarySummaryTypeContext.jsonld
     ncMilitaryDischargeCategoryCodeType:
@@ -8937,8 +8801,6 @@ components:
         '@context':
           type: string
           description: ncMilitaryDischargeCategoryCodeType JSON-LD context
-          default: >-
-            ../JSON-LD_Contexts/ncMilitaryDischargeCategoryCodeTypeContext.jsonld
           enum:
             - >-
               ../JSON-LD_Contexts/ncMilitaryDischargeCategoryCodeTypeContext.jsonld
@@ -9016,7 +8878,6 @@ components:
         '@context':
           type: string
           description: ncPhysicalFeatureType JSON-LD context
-          default: ../JSON-LD_Contexts/ncPhysicalFeatureTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncPhysicalFeatureTypeContext.jsonld
     ncPersonLanguageType:
@@ -9070,7 +8931,6 @@ components:
         '@context':
           type: string
           description: ncPersonLanguageType JSON-LD context
-          default: ../JSON-LD_Contexts/ncPersonLanguageTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncPersonLanguageTypeContext.jsonld
     ncPersonUnionStatusCodeType:
@@ -9085,7 +8945,6 @@ components:
         '@context':
           type: string
           description: ncPersonUnionStatusCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncPersonUnionStatusCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncPersonUnionStatusCodeTypeContext.jsonld
     ncPersonUnionStatusCodeSimpleType:
@@ -9175,7 +9034,6 @@ components:
             '@context':
               type: string
               description: ncCaseType JSON-LD context
-              default: ../JSON-LD_Contexts/ncCaseTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncCaseTypeContext.jsonld
     ncInsuranceType:
@@ -9275,7 +9133,6 @@ components:
         '@context':
           type: string
           description: ncInsuranceType JSON-LD context
-          default: ../JSON-LD_Contexts/ncInsuranceTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncInsuranceTypeContext.jsonld
     ncPersonUnionAssociationType:
@@ -9353,7 +9210,6 @@ components:
             '@context':
               type: string
               description: ncPersonUnionAssociationType JSON-LD context
-              default: ../JSON-LD_Contexts/ncPersonUnionAssociationTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncPersonUnionAssociationTypeContext.jsonld
     ncPersonAssociationType:
@@ -9371,7 +9227,6 @@ components:
             '@context':
               type: string
               description: ncPersonAssociationType JSON-LD context
-              default: ../JSON-LD_Contexts/ncPersonAssociationTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncPersonAssociationTypeContext.jsonld
     ncPersonUnionSeparationType:
@@ -9406,7 +9261,6 @@ components:
             '@context':
               type: string
               description: ncPersonUnionSeparationType JSON-LD context
-              default: ../JSON-LD_Contexts/ncPersonUnionSeparationTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncPersonUnionSeparationTypeContext.jsonld
     ncSeparationCategoryCodeType:
@@ -9421,7 +9275,6 @@ components:
         '@context':
           type: string
           description: ncSeparationCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncSeparationCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncSeparationCategoryCodeTypeContext.jsonld
     ncSeparationCategoryCodeSimpleType:
@@ -9466,7 +9319,6 @@ components:
             '@context':
               type: string
               description: ncPersonDisunionType JSON-LD context
-              default: ../JSON-LD_Contexts/ncPersonDisunionTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncPersonDisunionTypeContext.jsonld
     ncPersonUnionCategoryCodeType:
@@ -9479,7 +9331,6 @@ components:
         '@context':
           type: string
           description: ncPersonUnionCategoryCodeType JSON-LD context
-          default: ../JSON-LD_Contexts/ncPersonUnionCategoryCodeTypeContext.jsonld
           enum:
             - ../JSON-LD_Contexts/ncPersonUnionCategoryCodeTypeContext.jsonld
     ncPersonUnionCategoryCodeSimpleType:
@@ -9569,7 +9420,6 @@ components:
             '@context':
               type: string
               description: ncAircraftType JSON-LD context
-              default: ../JSON-LD_Contexts/ncAircraftTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncAircraftTypeContext.jsonld
     ncAirportType:
@@ -9589,7 +9439,6 @@ components:
             '@context':
               type: string
               description: ncAirportType JSON-LD context
-              default: ../JSON-LD_Contexts/ncAirportTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncAirportTypeContext.jsonld
     ncVesselType:
@@ -9684,7 +9533,6 @@ components:
             '@context':
               type: string
               description: ncVesselType JSON-LD context
-              default: ../JSON-LD_Contexts/ncVesselTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncVesselTypeContext.jsonld
     ncVehicleType:
@@ -9852,7 +9700,6 @@ components:
             '@context':
               type: string
               description: ncVehicleType JSON-LD context
-              default: ../JSON-LD_Contexts/ncVehicleTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncVehicleTypeContext.jsonld
     ncVolumeMeasureType:
@@ -9886,7 +9733,6 @@ components:
             '@context':
               type: string
               description: ncVolumeMeasureType JSON-LD context
-              default: ../JSON-LD_Contexts/ncVolumeMeasureTypeContext.jsonld
               enum:
                 - ../JSON-LD_Contexts/ncVolumeMeasureTypeContext.jsonld
     ncConsumptionRateMeasureType:
